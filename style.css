@@ -38,9 +38,13 @@ table th {
 }
 
 img {
-    border: none;
-    border-radius: 0;
-    padding: 0;
+	padding: 0px;
+	border: none;
+	-moz-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	box-shadow: none;
     display: block;
     width: auto;
     height: auto;
