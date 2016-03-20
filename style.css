@@ -1,0 +1,60 @@
+/*
+ Theme Name:     pinboard Child Theme
+ Theme URI:      https://www.onedesigns.com/wordpress-themes/pinboard
+ Description:    pinboard Child Theme
+ Author:         Elegant Themes
+ Author URI:     https://www.onedesigns.com
+ Template:       pinboard
+ Version:        1.0.0
+*/
+ 
+@import url("../pinboard/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+table tr:nth-child(even) {
+	background:#FFFFFF;
+}
+
+table { 
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: none;
+}
+
+table th,
+table td {
+	padding:0 0;
+	text-align: center;
+	vertical-align: center;
+}
+
+table, 
+table tr,
+table td,
+table th {
+	border: none;
+}
+
+img {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.center img {        
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+img.alignright {float:right; margin:0 0 0 0}
+img.alignleft {float:left; margin:0 0 0 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
