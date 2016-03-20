@@ -54,8 +54,34 @@ img {
 
 a{
 	cursor:pointer;
-	text-decoration:none
+	color:#21759b;
+	text-decoration:none;
+	transition: none;
 }
+
+.entry-content a img,
+#attachment-nav a img {
+	padding:0px;
+	box-shadow:none;
+	background:#FFFFFF;
+	border:none;
+}
+
+.wp-caption {
+	padding:0px;
+	margin-top: 0;
+	margin-bottom: 0;
+	box-shadow:none;
+	background:#FFFFFF;
+	border:none;
+}
+
+
+.entry-content a:hover img,
+#attachment-nav a:hover img {
+	background:#FFFFFF;
+}
+
 
 a img{
  	padding: 0px;
