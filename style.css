@@ -21,6 +21,13 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
     border: none;
+    margin: 0px auto;
+    width:auto;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
 }
 
 table th,
@@ -38,42 +45,39 @@ table th {
 }
 
 img {
- 	margin-top: 0;
- 	padding-top: 0;
- 	padding: 0px;
+ 	margin: 0px;
+ 	padding: 10px;
 	border: none;
 	-moz-border-radius: 0px;
 	-khtml-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
 	box-shadow: none;
-    display: block;
-    width: auto;
-    height: auto;
 }
 
 a{
 	cursor:pointer;
-	color:#21759b;
 	text-decoration:none;
 	transition: none;
 }
 
 .entry-content a img,
 #attachment-nav a img {
-	padding:0px;
+ 	margin: 0px;
+ 	padding: 0px;
 	box-shadow:none;
 	background:#FFFFFF;
 	border:none;
 }
 
 .wp-caption {
-	padding:0px;
-	margin-top: 0;
-	margin-bottom: 0;
+ 	margin: 0 auto; 
+ 	padding: 10px;
 	box-shadow:none;
 	background:#FFFFFF;
 	border:none;
+	text-align: center; 
+	display: block;
 }
 
 
@@ -82,21 +86,11 @@ a{
 	background:#FFFFFF;
 }
 
-
 a img{
+ 	margin: 0px;
  	padding: 0px;
 	border: none;
 	border-width: 0;
 	outline:none;
 	box-shadow: none;
-    display: block;
-    width: auto;
-    height: auto;
 }
-
-img.alignright {float:right; margin:0 0 0 0}
-img.alignleft {float:left; margin:0 0 0 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-.alignright {float:right; }
-.alignleft {float:left; }
-.aligncenter {display: block; margin-left: auto; margin-right: auto}
