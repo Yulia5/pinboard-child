@@ -78,6 +78,7 @@ a{
 	border:none;
 	text-align: center; 
 	display: block;
+	clear: both;
 }
 
 
@@ -93,4 +94,35 @@ a img{
 	border-width: 0;
 	outline:none;
 	box-shadow: none;
+}
+
+.jetpack_subscription_widget {
+	clear:both;
+	margin-bottom: 75px;
+}
+
+.jetpack_subscription_widget input[type="text"], .jetpack_subscription_widget input[type="email"] {
+	float: left;
+	margin-bottom: 0px;
+	width: 208px;
+	height: 40px;
+}
+
+.jetpack_subscription_widget input[type="submit"] {
+	float: right;
+	width: 40%;
+}
+
+.widget input[type="text"], .widget input[type="email"] {
+    font-size: 10px;
+    line-height: 18px;
+    margin: 5px 0 10px;
+    min-height: 18px;
+    position: relative;
+    text-transform: uppercase;
+    width: 20px;
+}
+
+.widget #subscribe-blog p {
+    margin-bottom: 0;
 }
