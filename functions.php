@@ -11,6 +11,28 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
+add_shortcode('li_image_credit', 'li_image_credit_shortcode');
+
+/**
+ * Arrow down for Germany post shortcut.
+ * The supported attributes for the shortcode are 'title' and 'hrf'.
+ *
+ * @since 2.6.0
+ *
+ * @param array $attr Attributes attributed to the shortcode.
+ * @param string $content Optional. Shortcode content.
+ * @return string
+ */
+function li_image_credit_shortcode($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'title' => '',
+		'hrf' => ''
+	), $attr));	
+ 
+	return '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>';
+}
+
 add_shortcode('DE_arrowD', 'DE_arrowD_shortcode');
 
 /**
@@ -29,8 +51,7 @@ function DE_arrowD_shortcode($attr, $content = null) {
 	extract(shortcode_atts(array(
 		'halign' => 'right',
 		'valign' => 'top'
-	), $attr));
-	
+	), $attr));	
  
 	return '<img style="clear:both; align' . $halign 
 	. '" src="http://www.yu51a5.com/wp-content/uploads/2015/01/arrowd.png" alt="" width="92" height="100" />';
