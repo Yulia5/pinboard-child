@@ -126,5 +126,8 @@ a img{
 #sidebar-header {
 	padding:0px;
 	margin-top:0px;
-	height:200px;
+	min-height: 200px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
