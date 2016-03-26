@@ -1,27 +1,22 @@
 <?php
 
 /* theme */
-function theme_enqueue_styles() {
-
-    $parent_style = 'parent-style';
-
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style )
-    );
-}
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
-/* Magnific popup - http://dimsemenov.com/plugins/magnific-popup/ */
-function enqueue_magnificpopup() {
+function enqueue_styles_and_scripts() {
 	
-    wp_enqueue_style('magnific_popup_style', get_stylesheet_directory_uri().'/magnific-popup/magnific-popup.css', array());
+	/* parent theme style */
+    $parent_style = 'parent-style';
+    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+	
+	/* Magnific popup - http://dimsemenov.com/plugins/magnific-popup/ */
+    $magnific_style = $parent_style; /* 'magnific-style';
+    wp_enqueue_style($magnific_style, get_stylesheet_directory_uri().'/magnific-popup/magnific-popup.css', array($parent_style));
     wp_enqueue_script('magnific_popup_script', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup.js', array('jquery'));
+    wp_enqueue_script('magnific_popup_script_custom', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup-custom.js', array('jquery'));*/
+		
+	/* child theme style */
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $magnific_style ) );
 }
-add_action('wp_enqueue_scripts', 'enqueue_magnificpopup');
-
-
+add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts' );
 
 
 add_shortcode('li_image_credit', 'li_image_credit_shortcode');
@@ -98,8 +93,8 @@ add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
 
 /**
  * The Caption shortcode equivalent.
- * The supported attributes for the shortcode are 'height', 'width', and
- * 'caption'.
+ * The supported attributes for the shortcode are 'height', 'width', 
+ * 'caption', 'source_hfr', 'source_title', 'author' and 'author_hrf'.
  *
  * @since 2.6.0
  *
@@ -112,15 +107,26 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 	extract(shortcode_atts(array(
 		'height' => '',
 		'width'	=> '',
-		'caption' => ''
+		'caption' => '',
+		'source_hfr' => '', 
+		'source_title' => '', 
+		'author' => '',
+		'author_hrf' => ''
 	), $attr));
 
-	if ( $height ) $height = 'height="' . (int) $height . '" ';
+	if ( $height ) $height = ' height="' . (int) $height . '" ';
+	$table_width = ' width="' . (10 + (int) $width) . 'px" ';
+	$image_width = ' width="' . (int) $width . 'px" ';
+	$alt = ' alt="' . str_replace(array('<br />','<br/>','<br>'), '', $caption) . '" ';
+	$hrf = '"' . $content  . '" ';
+	
+	/* '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>'; class="magnific-image" */
 
-	return '<table width="' . (10 + (int) $width) . '"> <tr> <td width="' . (10 + (int) $width) . '"> <a href="'
-	. $content . '"><img src="' . $content . '" alt=" ' . str_replace(array('<br />','<br/>','<br>'), '', $caption) . ' " width="' . (int) $width . '" ' . $height 
-	. ' /></a> </td></tr><tr> <td width="' . (10 + (int) $width)
-	. '"> <div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div></td></tr></table>';
+	return '<table' . $table_width . '> ' 
+	. '<tr><td' . $table_width . '><a href=' . $hrf . ' title="' . $caption . '. Source: .">'
+	. '<img src=' . $hrf . $alt . $image_width . $height . '/></a></td></tr>' 
+	. '<tr><td' . $table_width . '><div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div></td></tr>'
+	. '</table>';
 }
 
 ?>
