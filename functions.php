@@ -1,4 +1,6 @@
 <?php
+
+/* theme */
 function theme_enqueue_styles() {
 
     $parent_style = 'parent-style';
@@ -10,6 +12,17 @@ function theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+/* Magnific popup - http://dimsemenov.com/plugins/magnific-popup/ */
+function enqueue_magnificpopup() {
+	
+    wp_enqueue_style('magnific_popup_style', get_stylesheet_directory_uri().'/magnific-popup/magnific-popup.css', array());
+    wp_enqueue_script('magnific_popup_script', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup.js', array('jquery'));
+}
+add_action('wp_enqueue_scripts', 'enqueue_magnificpopup');
+
+
+
 
 add_shortcode('li_image_credit', 'li_image_credit_shortcode');
 
