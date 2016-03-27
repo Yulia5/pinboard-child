@@ -3,21 +3,24 @@
 /* theme */
 function enqueue_styles_and_scripts() {
 	
+	/* prevent jetpack from adding "scale" */
+	wp_dequeue_script( 'devicepx' );
+	
+	
 	/* parent theme style */
     $parent_style = 'parent-style';
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 	
 	/* Magnific popup - http://dimsemenov.com/plugins/magnific-popup/ */
-    $magnific_style = $parent_style; /* 'magnific-style';
+    $magnific_style = 'magnific-style';
     wp_enqueue_style($magnific_style, get_stylesheet_directory_uri().'/magnific-popup/magnific-popup.css', array($parent_style));
-    wp_enqueue_script('magnific_popup_script', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup.js', array('jquery'));
-    wp_enqueue_script('magnific_popup_script_custom', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup-custom.js', array('jquery'));*/
+    wp_enqueue_script('magnific_popup_script', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup.min.js', array('jquery'));
+    wp_enqueue_script('magnific_popup_script_custom', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup-custom.js', array('jquery'));
 		
 	/* child theme style */
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $magnific_style ) );
 }
-add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts' );
-
+add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 1 );
 
 add_shortcode('li_image_credit', 'li_image_credit_shortcode');
 
@@ -123,7 +126,7 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 	/* '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>'; class="magnific-image" */
 
 	return '<table' . $table_width . '> ' 
-	. '<tr><td' . $table_width . '><a href=' . $hrf . ' title="' . $caption . '. Source: .">'
+	. '<tr><td' . $table_width . '><a class="magnific-image" href=' . $hrf . ' title="' . $caption . '. Source: .">'
 	. '<img src=' . $hrf . $alt . $image_width . $height . '/></a></td></tr>' 
 	. '<tr><td' . $table_width . '><div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div></td></tr>'
 	. '</table>';
