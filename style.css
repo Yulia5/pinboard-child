@@ -116,12 +116,14 @@ a img{
 #header {
     background-color: #111;
     color: #ffffff;
+	min-height: 150px !important;
+    overflow: hidden !important;
 }
 
 #sidebar-header {
 	padding:0px;
-	min-height: 120px;
-    overflow: hidden;
+	min-height: 150px !important;
+    overflow: hidden !important;
     margin:0px !important;
 }
 
@@ -130,17 +132,22 @@ a img{
 }
 
 #header #searchform {
-	float:right;
+	float:left;
 	margin: 0px 20px 0px 20px;
 }
 
 #header #subscribe-blog-blog_subscription-2 {
 	float:left;
-	margin: 0px 20px 0px 20px;
+	margin: 0px;
 }
-
-.jetpack_subscription_widget h3{
+/*
+.widget-title{
 	margin: 0px 20px 0px 20px !important;
+}*/
+
+#blog_subscription-2 .success{
+	margin-top: 15px !important;
+	margin-right: 20px;
 }
 
 #header #sidebar-header #searchform {
@@ -171,8 +178,6 @@ textarea#comment {
     border: none;
     min-height: 18px;
     text-transform: uppercase;
-    box-shadow: none;
-    border-radius: none;
     background:#FFF;
 	color:#000;
 	outline: none;
@@ -203,14 +208,14 @@ input#searchsubmit {
 	font-family:"Open Sans", sans-serif;
 	font-size:13px;
 	text-align:center;
-	margin-right:0px;
+	margin:0px;
 	display: block;
 }
 
 input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
-input#searchsubmit {
+input#searchsubmit:hover {
 	box-shadow:none;
 	border:none;
 	outline: none;
