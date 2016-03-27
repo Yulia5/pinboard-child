@@ -113,36 +113,127 @@ a img{
  *                         Header and Widgets                                 *
  *****************************************************************************/
 
-.widget input[type="text"], .widget input[type="email"] {
-    font-size: 10px;
-    line-height: 18px;
-    margin: 0px;
-    min-height: 18px;
-    text-transform: uppercase;
-}
-
-#subscribe-submit {
-	display: block;
-}
-
-#subscribe-text {
-	display: block;
-	width: 45% !important;
-}
-
-#subscribe-email input {
-	display: block;
-	width: 45% !important;
+#header {
+    background-color: #111;
+    color: #ffffff;
 }
 
 #sidebar-header {
 	padding:0px;
-	margin-top:0px;
-	min-height: 200px;
-    overflow: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
+	min-height: 150px;
+    overflow: hidden;
+    margin:0px !important;
 }
+
+#header #searchform {
+	float:right;
+	margin: 0px 20px 0px 20px;
+}
+
+#header #subscribe-blog-blog_subscription-2 {
+	float:left;
+	margin: 0px 20px 0px 20px;
+}
+
+.jetpack_subscription_widget #h3{
+	margin: 0px 20px 0px 20px;
+}
+
+#header #sidebar-header #searchform {
+	margin-top: 0px;
+}
+
+.widget-area #s, #sidebar-left #s, #sidebar-right #s, #header input#s, .search-field, 
+.widget input[type="text"], .widget input[type="email"], input[type="text"], input[type="email"], textarea, 
+#header input#s:focus, input[type="text"]:focus, input[type="email"]:focus, textarea:focus,
+input#author:focus,
+input#email:focus,
+input#url:focus,
+textarea#comment:focus, #header input#s, input#author,
+input#email,
+input#url,
+textarea#comment {
+	max-width:auto !important;
+	width: auto;
+	display: block;
+	font-family:"Open Sans", sans-serif;
+	font-size: 10px;
+    line-height: 18px;
+    margin: 0px;
+    padding: 0px;
+    border-radius:0px;
+    text-indent: 10px !important;
+    box-shadow: none;
+    border: none;
+    min-height: 18px;
+    text-transform: uppercase;
+    box-shadow: none;
+    border-radius: none;
+    background:#FFF;
+	color:#000;
+	outline: none;
+  	-webkit-transition: none !important;
+  	-moz-transition: none !important;
+  	-o-transition: none !important;
+  	-ms-transition: none !important;
+  	transition: none !important;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button],
+input#searchsubmit {
+	padding:4px 15px;
+	width:auto;
+	border-radius:15px;
+	box-shadow:0 0 5px rgba(0, 0, 0, .1);
+	background:#F8F8F8;
+	background:-moz-linear-gradient(#FCFCFC, #F3F3F3);
+	background:-webkit-linear-gradient(#FCFCFC, #F3F3F3);
+	background:-o-linear-gradient(#FCFCFC, #F3F3F3);
+	background:-ms-linear-gradient(#FCFCFC, #F3F3F3);
+	background:linear-gradient(#FCFCFC, #F3F3F3);
+	border:none;
+	border-bottom:#DDD 1px solid;
+	color:#444;
+	font-family:"Open Sans", sans-serif;
+	font-size:13px;
+	text-align:center;
+	margin-right:0px;
+	display: block;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+input#searchsubmit {
+	box-shadow:none;
+	border:none;
+	outline: none;
+}
+
+input[type=submit]:focus,
+input[type=reset]:focus,
+input[type=button]:focus,
+input#searchsubmit:focus {
+	border:none;
+	box-shadow:none;
+	background:-moz-linear-gradient(#EEE, #F9F9F9);
+	background:-webkit-linear-gradient(#EEE, #F9F9F9);
+	background:-o-linear-gradient(#EEE, #F9F9F9);
+	background:-ms-linear-gradient(#EEE, #F9F9F9);
+	background:linear-gradient(#EEE, #F9F9F9);
+	outline: none;
+}
+
+#subscribe-email input, #header input {
+	margin-top: 20px;
+	width: 300px !important;
+}
+
+.widget_search #s-label, #subscribe-text {
+    display:none;
+}	
 
 /******************************************************************************
  *                            Magnific popup                                  *

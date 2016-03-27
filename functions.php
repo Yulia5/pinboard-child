@@ -20,7 +20,8 @@ function enqueue_styles_and_scripts() {
 	/* child theme style */
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $magnific_style ) );
 }
-add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 1 );
+add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 99 );
+
 
 add_shortcode('li_image_credit', 'li_image_credit_shortcode');
 
