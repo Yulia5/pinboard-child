@@ -120,9 +120,13 @@ a img{
 
 #sidebar-header {
 	padding:0px;
-	min-height: 150px;
+	min-height: 120px;
     overflow: hidden;
     margin:0px !important;
+}
+
+#site-title .home{
+    color: #ffffff !important;
 }
 
 #header #searchform {
@@ -135,8 +139,8 @@ a img{
 	margin: 0px 20px 0px 20px;
 }
 
-.jetpack_subscription_widget #h3{
-	margin: 0px 20px 0px 20px;
+.jetpack_subscription_widget h3{
+	margin: 0px 20px 0px 20px !important;
 }
 
 #header #sidebar-header #searchform {
@@ -186,7 +190,7 @@ input#searchsubmit {
 	padding:4px 15px;
 	width:auto;
 	border-radius:15px;
-	box-shadow:0 0 5px rgba(0, 0, 0, .1);
+	box-shadow:none;
 	background:#F8F8F8;
 	background:-moz-linear-gradient(#FCFCFC, #F3F3F3);
 	background:-webkit-linear-gradient(#FCFCFC, #F3F3F3);
