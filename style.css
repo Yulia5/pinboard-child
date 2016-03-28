@@ -128,38 +128,36 @@ a img{
     width:100%;
 }
 
-#sidebar-header img {
-	float:left; 
-	width=300px
-}
-
 #site-title  {
 	display:none;
 }
 
 #header #searchform {
-	float:left;
-	margin: 0px 20px 0px 20px;
+	margin: 0px 0px 0px 20px;
 }
 
 .jetpack_subscription_widget {
-	float:left;
-	margin: 0px;
+	margin: 0px 0px 0px 20px;
 }
 
 .widget_search .widget-title{
 	margin-bottom: 20px !important;
 }
 
+#header #searchform, #sidebar-header img, .jetpack_subscription_widget {
+	float:left; 
+}
+
+#sidebar-header img, .jetpack_subscription_widget .success, #subscribe-email input, #header input {
+	width: 300px !important;
+}
+
 .jetpack_subscription_widget .success{
 	margin-top: 15px !important;
-	width: 300px !important;
-	margin-right: 20px;
 }
 
 #subscribe-email input, #header input {
 	margin-top: 20px;
-	width: 300px !important;
 }
 
 .widget_search, .widget_search form {
