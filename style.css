@@ -117,18 +117,23 @@ a img{
     background-color: #111;
     color: #ffffff;
 	min-height: 150px !important;
-    overflow: hidden !important;
+    overflow: auto !important;
 }
 
 #sidebar-header {
 	padding:0px;
 	min-height: 150px !important;
-    overflow: hidden !important;
+    overflow: auto !important;
     margin:0px !important;
 }
 
-#site-title .home{
+#site-title .home {
+	display:none;
     color: #ffffff !important;
+}
+
+#site-title img {
+	 width=300px !important;
 }
 
 #header #searchform {
@@ -147,7 +152,13 @@ a img{
 
 .jetpack_subscription_widget .success{
 	margin-top: 15px !important;
+	width: 300px !important;
 	margin-right: 20px;
+}
+
+#subscribe-email input, #header input {
+	margin-top: 20px;
+	width: 300px !important;
 }
 
 .widget_search, .widget_search form {
@@ -235,14 +246,37 @@ input#searchsubmit:focus {
 	outline: none;
 }
 
-#subscribe-email input, #header input {
-	margin-top: 20px;
-	width: 300px !important;
-}
-
 .widget_search #s-label, #subscribe-text {
     display:none;
 }	
+
+#access a:hover,
+#access li.current_page_item > a,
+#access li.current-menu-item > a {
+	background:none !important;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+/******************************************************************************
+ *                            White Colour                                    *
+ *****************************************************************************/
+
+#wrapper, #sidebar-wide, #sidebar-footer-wide, #current-location, .entry, #comments, #respond, #posts-nav, .home .entry-meta, .blog .entry-meta, .archive .entry-meta, .search .entry-meta {
+	background: #ffffff  !important;
+}
+
+#access a, #access a:hover, #access li.current_page_item > a, #access li.current-menu-item > a, #sidebar, #sidebar-left, #sidebar-right, .widget-title {
+	color: #ffffff  !important;
+}
+
+#site-title a, #site-description {
+	color: #333  !important;
+}
+body.custom-background {
+	background-color: #ffffff  !important;
+}
+
 
 /******************************************************************************
  *                            Magnific popup                                  *
