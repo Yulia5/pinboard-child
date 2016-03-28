@@ -125,15 +125,16 @@ a img{
 	min-height: 150px !important;
     overflow: auto !important;
     margin:0px !important;
+    width:100%;
 }
 
-#site-title .home {
+#sidebar-header img {
+	float:left; 
+	width=300px
+}
+
+#site-title  {
 	display:none;
-    color: #ffffff !important;
-}
-
-#site-title img {
-	 width=300px !important;
 }
 
 #header #searchform {
