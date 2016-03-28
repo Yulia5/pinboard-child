@@ -136,22 +136,22 @@ a img{
 	margin: 0px 20px 0px 20px;
 }
 
-#header #subscribe-blog-blog_subscription-2 {
+.jetpack_subscription_widget {
 	float:left;
 	margin: 0px;
 }
-/*
-.widget-title{
-	margin: 0px 20px 0px 20px !important;
-}*/
 
-#blog_subscription-2 .success{
+.widget_search .widget-title{
+	margin-bottom: 20px !important;
+}
+
+.jetpack_subscription_widget .success{
 	margin-top: 15px !important;
 	margin-right: 20px;
 }
 
-#header #sidebar-header #searchform {
-	margin-top: 0px;
+.widget_search, .widget_search form {
+	margin-top: 0px !important;
 }
 
 .widget-area #s, #sidebar-left #s, #sidebar-right #s, #header input#s, .search-field, 
