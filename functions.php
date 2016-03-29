@@ -135,7 +135,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
 	. '<img style="padding: 0px 5px;" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
 	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
-	. '</div>' . $invisible_a_to_check_broken_links;
+	. $invisible_a_to_check_broken_links . '</div>';
 }
 
 /**
