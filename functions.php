@@ -118,24 +118,24 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 {
 	if ( $height ) 
 		$height = ' height="' . (int) $height . '" ';
-	$table_width = ' width="' . (10 + (int) $width) . 'px" ';
+	$table_width = 'width="' . (10 + (int) $width) . 'px" ';
 	$image_width = ' width="' . (int) $width . 'px" ';
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = '"' . $hrf  . '" ';
 	
 	/*$source = '';
-	if ($source_hfr && $source_title)
-		$source = get_a2($source_title, $source_hfr);
-	if ($source_hfr && (!$source_title))
-		$source = get_a2('this page', $source_hfr);
-	if ((!$source_hfr) && $source_title)
+	if ($source_hrf && $source_title)
+		$source = get_a2($source_title, $source_hrf);
+	if ($source_hrf && (!$source_title))
+		$source = get_a2('this page', $source_hrf);
+	if ((!$source_hrf) && $source_title)
 		$source = $source_title;
 	
 	$author = '';
 	if ($author_hrf && $author_name)
 		$author = get_a2($author_name, $author_hrf);
 	if ($author_hrf && (!$author_name))
-		$author = get_a2('this author', $source_hfr);
+		$author = get_a2('this author', $source_hrf);
 	if ((!$author_hrf) && $author_name)
 		$author = $author_name;
 	
@@ -150,7 +150,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	if ($source_and_author)
 		$source_and_author = 'Image credit: ' . $source_and_author . '';
 	else
-		$source_and_author = $source_hfr . 'm' . $source_title . 'm' . $author_hrf . 'm' . $author_name;*/
+		$source_and_author = $source_hrf . 'm' . $source_title . 'm' . $author_hrf . 'm' . $author_name;*/
 	
 	$alt = ' alt="' . $caption_no_br . '" ';
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
@@ -158,7 +158,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	
 	/* '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>'; class="magnific-image" */
 
-	return '<div' . $table_width . ' class="center"> ' 
+	return '<div max' . $table_width . ' ' . $table_width . ' class="center"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
 	. '<img style="padding: 0px 5px;" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
 	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
@@ -170,7 +170,7 @@ add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
 /**
  * The Caption shortcode equivalent.
  * The supported attributes for the shortcode are 'height', 'width', 
- * 'caption', 'source_hfr', 'source_title', 'author' and 'author_hrf'.
+ * 'caption', 'source_hrf', 'source_title', 'author' and 'author_hrf'.
  *
  * @param array $attr Attributes attributed to the shortcode.
  * @param string $content Optional. Shortcode content.

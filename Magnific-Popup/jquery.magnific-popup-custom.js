@@ -13,9 +13,28 @@ jQuery(document).ready(function($) {
 		image : {
 			verticalFit : true,
 			titleSrc : function(item) {
-				return '<strong>' + item.el.find('img').attr('caption') + '</strong><br>Image credit: <a title="' 
-				+ item.el.find('img').attr('sourcename') + '" href="' + item.el.find('img').attr('sourcehrf') + '" target="_blank">' 
-				+ item.el.find('img').attr('sourcename') + '</a>' ;
+				var sourcehrf = item.el.find('img').attr('sourcehrf');
+				var sourcename = item.el.find('img').attr('sourcename');			
+				var imagecredit = '.<br>Image credit: ';
+				
+				if (sourcehrf)
+				{
+					if (!sourcename)
+					{
+						sourcename = 'this website';
+					}
+					imagecredit += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' +  sourcename + '</a>';
+				}
+				else if (sourcename)
+				{
+					imagecredit += sourcename;
+				}
+				else
+				{
+					imagecredit = '';
+				}
+				
+				return '<strong>' + item.el.find('img').attr('caption') + '</strong>' + imagecredit;
 			}
 		}
 	});
