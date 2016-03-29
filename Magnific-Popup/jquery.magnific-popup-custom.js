@@ -6,25 +6,18 @@ jQuery(document).ready(function($) {
 	
 	$('.magnific-image').magnificPopup({
 		type : 'image',
-		closeBtnInside : false,
+		closeOnContentClick: true,
+		closeOnBgClick: true,
+		closeBtnInside: true,
 		mainClass : 'mfp-no-margins', // class to remove default margin from left and right side
 		image : {
-			verticalFit : true
+			verticalFit : true,
+			titleSrc : function(item) {
+				return '<strong>' + item.el.find('img').attr('caption') + '</strong><br>Image credit: <a title="' 
+				+ item.el.find('img').attr('sourcename') + '" href="' + item.el.find('img').attr('sourcehrf') + '" target="_blank">' 
+				+ item.el.find('img').attr('sourcename') + '</a>' ;
+			}
 		}
-	});
-	/*
-	$('a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]').each(function() {
-
-		
-			$(this).magnificPopup({				
-				type : 'image',
-				closeOnContentClick : true,
-				mainClass : 'mfp-no-margins',
-				image : {
-					verticalFit : true
-				}				
-			});
-
 	});
 
 	// initialize magnific popup galleries with titles and descriptions
@@ -49,5 +42,6 @@ jQuery(document).ready(function($) {
 			enabled : true,
 			navigateByImgClick : true
 		}
-	});*/
+	});
+	
 }); 

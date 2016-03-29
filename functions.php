@@ -1,11 +1,13 @@
 <?php
 
-/* theme */
+/******************************************************************************
+ *                                 theme                                      *
+ *****************************************************************************/
+ 
 function enqueue_styles_and_scripts() {
 	
-	/* prevent jetpack from adding "scale" */
-	wp_dequeue_script( 'devicepx' );
-	
+	/* prevent jetpack from adding "scale" 
+	wp_dequeue_script( 'devicepx' );*/
 	
 	/* parent theme style */
     $parent_style = 'parent-style';
@@ -22,6 +24,9 @@ function enqueue_styles_and_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 99 );
 
+/******************************************************************************
+ *                          Image Credit                                      *
+ *****************************************************************************/
 
 add_shortcode('li_image_credit', 'li_image_credit_shortcode');
 
@@ -46,6 +51,10 @@ function li_image_credit_shortcode($attr, $content = null) {
 }
 
 add_shortcode('DE_arrowD', 'DE_arrowD_shortcode');
+
+/******************************************************************************
+ *                          German Arrows                                     *
+ *****************************************************************************/
 
 /**
  * Arrow down for Germany post shortcut.
@@ -93,14 +102,75 @@ function DE_arrow_shortcode($attr, $content = null) {
 	. '" src="http://www.yu51a5.com/wp-content/uploads/2016/03/arrow' . $dir . '.png" alt="" width="100" />';
 }
  
+/******************************************************************************
+ *                          Image Caption                                     *
+ *****************************************************************************/
+ 
+function get_a2($a_text, $hrf, $title = null)
+{
+	if ( ! $title ) 
+		$title = $a_text;
+	$result = '<a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $a_text . '</a>';
+	return $result;
+}
+ 
+function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf/*, $author_name, $author_hrf*/)
+{
+	if ( $height ) 
+		$height = ' height="' . (int) $height . '" ';
+	$table_width = ' width="' . (10 + (int) $width) . 'px" ';
+	$image_width = ' width="' . (int) $width . 'px" ';
+	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
+	$hrf = '"' . $hrf  . '" ';
+	
+	/*$source = '';
+	if ($source_hfr && $source_title)
+		$source = get_a2($source_title, $source_hfr);
+	if ($source_hfr && (!$source_title))
+		$source = get_a2('this page', $source_hfr);
+	if ((!$source_hfr) && $source_title)
+		$source = $source_title;
+	
+	$author = '';
+	if ($author_hrf && $author_name)
+		$author = get_a2($author_name, $author_hrf);
+	if ($author_hrf && (!$author_name))
+		$author = get_a2('this author', $source_hfr);
+	if ((!$author_hrf) && $author_name)
+		$author = $author_name;
+	
+	$source_and_author = '';
+	if ($source && $author_name)
+		$source_and_author = $source . ' via ' . $author;
+	if ($source && (!$author))
+		$source_and_author = $source;
+	if ((!$source) && $author)
+		$source_and_author = $author;
+	
+	if ($source_and_author)
+		$source_and_author = 'Image credit: ' . $source_and_author . '';
+	else
+		$source_and_author = $source_hfr . 'm' . $source_title . 'm' . $author_hrf . 'm' . $author_name;*/
+	
+	$alt = ' alt="' . $caption_no_br . '" ';
+	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
+	
+	
+	/* '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>'; class="magnific-image" */
+
+	return '<div' . $table_width . ' class="center"> ' 
+	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
+	. '<img style="padding: 0px 5px;" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
+	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
+	. '</div>';
+}
+ 
 add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
 
 /**
  * The Caption shortcode equivalent.
  * The supported attributes for the shortcode are 'height', 'width', 
  * 'caption', 'source_hfr', 'source_title', 'author' and 'author_hrf'.
- *
- * @since 2.6.0
  *
  * @param array $attr Attributes attributed to the shortcode.
  * @param string $content Optional. Shortcode content.
@@ -112,25 +182,16 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 		'height' => '',
 		'width'	=> '',
 		'caption' => '',
-		'source_hfr' => '', 
-		'source_title' => '', 
-		'author' => '',
-		'author_hrf' => ''
+		'sourcename' => '', 
+		'sourcehrf' => ''/*, 
+		'author_name' => '',
+		'author_hrf' => ''*/
 	), $attr));
 
-	if ( $height ) $height = ' height="' . (int) $height . '" ';
-	$table_width = ' width="' . (10 + (int) $width) . 'px" ';
-	$image_width = ' width="' . (int) $width . 'px" ';
-	$alt = ' alt="' . str_replace(array('<br />','<br/>','<br>'), '', $caption) . '" ';
-	$hrf = '"' . $content  . '" ';
+	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf/*, $source_title, $author, $author_hrf */ );
 	
-	/* '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>'; class="magnific-image" */
-
-	return '<table' . $table_width . '> ' 
-	. '<tr><td' . $table_width . '><a class="magnific-image" href=' . $hrf . ' title="' . $caption . '. Source: .">'
-	. '<img src=' . $hrf . $alt . $image_width . $height . '/></a></td></tr>' 
-	. '<tr><td' . $table_width . '><div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div></td></tr>'
-	. '</table>';
+	return $result;
+	
 }
 
 ?>
