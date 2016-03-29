@@ -114,7 +114,7 @@ function get_a2($a_text, $hrf, $title = null)
 	return $result;
 }
  
-function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf/*, $author_name, $author_hrf*/)
+function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf)
 {
 	if ( $height ) 
 		$height = ' height="' . (int) $height . '" ';
@@ -123,54 +123,25 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = '"' . $hrf  . '" ';
 	
-	/*$source = '';
-	if ($source_hrf && $source_title)
-		$source = get_a2($source_title, $source_hrf);
-	if ($source_hrf && (!$source_title))
-		$source = get_a2('this page', $source_hrf);
-	if ((!$source_hrf) && $source_title)
-		$source = $source_title;
-	
-	$author = '';
-	if ($author_hrf && $author_name)
-		$author = get_a2($author_name, $author_hrf);
-	if ($author_hrf && (!$author_name))
-		$author = get_a2('this author', $source_hrf);
-	if ((!$author_hrf) && $author_name)
-		$author = $author_name;
-	
-	$source_and_author = '';
-	if ($source && $author_name)
-		$source_and_author = $source . ' via ' . $author;
-	if ($source && (!$author))
-		$source_and_author = $source;
-	if ((!$source) && $author)
-		$source_and_author = $author;
-	
-	if ($source_and_author)
-		$source_and_author = 'Image credit: ' . $source_and_author . '';
-	else
-		$source_and_author = $source_hrf . 'm' . $source_title . 'm' . $author_hrf . 'm' . $author_name;*/
-	
 	$alt = ' alt="' . $caption_no_br . '" ';
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
 	
-	
-	/* '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>'; class="magnific-image" */
+	if ( $sourcehrf )
+		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" />';
+	else
+		$invisible_a_to_check_broken_links = '';
 
 	return '<div max' . $table_width . ' ' . $table_width . ' class="center"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
 	. '<img style="padding: 0px 5px;" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
 	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
-	. '</div>';
+	. '</div>' + $invisible_a_to_check_broken_links;
 }
- 
-add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
 
 /**
  * The Caption shortcode equivalent.
  * The supported attributes for the shortcode are 'height', 'width', 
- * 'caption', 'source_hrf', 'source_title', 'author' and 'author_hrf'.
+ * 'caption', 'sourcename' and 'sourcehrf'.
  *
  * @param array $attr Attributes attributed to the shortcode.
  * @param string $content Optional. Shortcode content.
@@ -183,15 +154,36 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 		'width'	=> '',
 		'caption' => '',
 		'sourcename' => '', 
-		'sourcehrf' => ''/*, 
-		'author_name' => '',
-		'author_hrf' => ''*/
+		'sourcehrf' => ''
 	), $attr));
 
-	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf/*, $source_title, $author, $author_hrf */ );
-	
+	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf);	
 	return $result;
-	
 }
+add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
+
+/**
+ * The Caption shortcode equivalent for Wiki Commons.
+ * The supported attributes for the shortcode are 'height', 'width', 
+ * 'caption', 'filename'.
+ *
+ * @param array $attr Attributes attributed to the shortcode.
+ * @param string $content Optional. Shortcode content.
+ * @return string
+ */
+function MY_VERY_OWN_img_caption_shortcode_wiki($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'filename' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'Wikipedia Commons', 'https://commons.wikimedia.org/wiki/File:' . $filename);	
+	return $result;
+}
+add_shortcode('yu_caption_wiki', 'MY_VERY_OWN_img_caption_shortcode_wiki');
+
 
 ?>
