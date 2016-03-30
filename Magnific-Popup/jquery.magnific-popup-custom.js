@@ -4,6 +4,11 @@
 
 jQuery(document).ready(function($) {
 	
+	$('.images div a img').on('load', function() {
+		/*$(this).css('height', $(this).closest('.images').attr('imgheight'));*/
+		this.style.height = $(this).closest('.images').attr('imgheight');
+	});	
+    
 	$('.magnific-image').magnificPopup({
 		type : 'image',
 		closeOnContentClick: true,

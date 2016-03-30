@@ -3,6 +3,12 @@
 /******************************************************************************
  *                                 theme                                      *
  *****************************************************************************/
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+   wp_deregister_script('jquery');
+   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js", false, null);
+   wp_enqueue_script('jquery');
+} 
  
 function enqueue_styles_and_scripts() {
 	
@@ -22,7 +28,7 @@ function enqueue_styles_and_scripts() {
 	/* child theme style */
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $magnific_style ) );
 }
-add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 99 );
+add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
 
 /******************************************************************************
  *                          Image Credit                                      *
@@ -118,8 +124,16 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 {
 	if ( $height ) 
 		$height = ' height="' . (int) $height . '" ';
-	$table_width = 'width="' . (10 + (int) $width) . 'px" ';
-	$image_width = ' width="' . (int) $width . 'px" ';
+	if ( $width ) {
+		$image_width = ' width="' . (int) $width . 'px" ';
+		$div_width = 'width:' . (10 + (int) $width) . 'px; ';
+		$div_style = ' style = "display:inline-block; ' . $div_width . ' max-' . $div_width. '"';
+	}
+	else {
+		$image_width = '';
+		$table_width = '';	
+	}
+	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = '"' . $hrf  . '" ';
 	
@@ -127,11 +141,11 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
 	
 	if ( $sourcehrf )
-		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" />';
+		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" style="display:none">.</a>';
 	else
 		$invisible_a_to_check_broken_links = '';
 
-	return '<div max' . $table_width . ' ' . $table_width . ' class="center"> ' 
+	return '<div ' . $div_style . 'class="center"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
 	. '<img style="padding: 0px 5px;" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
 	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
