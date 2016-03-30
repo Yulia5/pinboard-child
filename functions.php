@@ -122,17 +122,22 @@ function get_a2($a_text, $hrf, $title = null)
  
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf)
 {
-	if ( $height ) 
-		$height = ' height="' . (int) $height . '" ';
+	if (! $width ) 
+		$height = 100;
+	
+	$img_style = 'style="padding: 0px 5px;';
+	$div_style = 'style = "vertical-align:top; display:inline-block; ';
+
+	if ( $height ) {
+		$img_style = $img_style . ' height: ' . (int) $height . 'px ';
+	}
 	if ( $width ) {
-		$image_width = ' width="' . (int) $width . 'px" ';
+		$img_style = $img_style . ' width:' . (int) $width . 'px ';
 		$div_width = 'width:' . (10 + (int) $width) . 'px; ';
-		$div_style = ' style = "display:inline-block; ' . $div_width . ' max-' . $div_width. '"';
+		$div_style = $div_style. $div_width . ' max-' . $div_width;
 	}
-	else {
-		$image_width = '';
-		$table_width = '';	
-	}
+	$div_style = $div_style . '" ';
+	$img_style = $img_style . '" ';
 	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = '"' . $hrf  . '" ';
@@ -145,9 +150,9 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	else
 		$invisible_a_to_check_broken_links = '';
 
-	return '<div ' . $div_style . 'class="center"> ' 
+	return '<div ' . $div_style . ' class="center"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
-	. '<img style="padding: 0px 5px;" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
+	. '<img '. $img_style . 'class="center" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
 	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
 	. $invisible_a_to_check_broken_links . '</div>';
 }

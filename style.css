@@ -18,8 +18,18 @@ h1 {
 }
 
 div .center, table .center{
-    margin-left:auto; 
-    margin-right:auto;
+    margin:auto;
+}
+
+img .center{
+    display:block;
+    margin:auto;
+}
+
+.images{
+    display: table; 
+    margin: 0 auto;
+    vertical-align: top;
 }
 
 /******************************************************************************
