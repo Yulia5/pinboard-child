@@ -48,8 +48,13 @@ jQuery(document).ready(function($) {
 			verticalFit : true,
 			titleSrc : function(item) {
 				var sourcehrf = item.el.find('img').attr('sourcehrf');
-				var sourcename = item.el.find('img').attr('sourcename');			
-				var imagecredit = '.<br>Image credit: ';
+				var sourcename = item.el.find('img').attr('sourcename');	
+				var caption = item.el.find('img').attr('caption');		
+				var imagecredit = 'Image credit: ';
+				if (caption)
+				{
+					imagecredit = '.<br>' + imagecredit;
+				}
 				
 				if (sourcehrf)
 				{
@@ -68,13 +73,13 @@ jQuery(document).ready(function($) {
 					imagecredit = '';
 				}
 				
-				return '<strong>' + item.el.find('img').attr('caption') + '</strong>' + imagecredit;
+				return '<strong>' + caption + '</strong>' + imagecredit;
 			}
 		}
 	});
 
 	// initialize magnific popup galleries with titles and descriptions
-	$('.gallery').magnificPopup({
+	$('.images').magnificPopup({
 		callbacks : {
 			open : function() {
 				$('.mfp-description').append(this.currItem.el.attr('title'));
@@ -83,12 +88,37 @@ jQuery(document).ready(function($) {
 				$('.mfp-description').empty().append(this.currItem.el.attr('title'));
 			}
 		},
-		delegate : 'a',
+		delegate : 'div a',
 		type : 'image',
 		image : {
-			markup : '<div class="mfp-figure">' + '<div class="mfp-close"></div>' + '<div class="mfp-img"></div>' + '<div class="mfp-bottom-bar">' + '<div class="mfp-title"></div>' + '<div class="mfp-description" style="text-align: left;font-size: 12px;line-height: 16px;color: #f3f3f3;word-break: break-word;padding-right: 36px;"></div>' + '<div class="mfp-counter"></div>' + '</div>' + '</div>',
 			titleSrc : function(item) {
-				return '<strong>' + item.el.find('img').attr('alt') + '</strong>';
+				var sourcehrf = item.el.find('img').attr('sourcehrf');
+				var sourcename = item.el.find('img').attr('sourcename');	
+				var caption = item.el.find('img').attr('caption');		
+				var imagecredit = 'Image credit: ';
+				if (caption)
+				{
+					imagecredit = '.<br>' + imagecredit;
+				}
+				
+				if (sourcehrf)
+				{
+					if (!sourcename)
+					{
+						sourcename = 'this website';
+					}
+					imagecredit += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' +  sourcename + '</a>';
+				}
+				else if (sourcename)
+				{
+					imagecredit += sourcename;
+				}
+				else
+				{
+					imagecredit = '';
+				}
+				
+				return '<strong>' + caption + '</strong>' + imagecredit;
 			}
 		},
 		gallery : {
