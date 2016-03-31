@@ -17,19 +17,24 @@ h1 {
 	text-decoration: underline; 
 }
 
-div .center, table .center{
+div .center, table .center, .wp-caption-text, .outside_image {
     margin:auto;
 }
 
-img .center{
+img .center {
     display:block;
     margin:auto;
 }
 
-.images{
+.images {
     display: table; 
     margin: 0 auto;
     vertical-align: top;
+}
+
+.images .outside_image {
+	display:inline-block; 
+	vertical-align:top; 
 }
 
 /******************************************************************************

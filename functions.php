@@ -125,8 +125,8 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	if (! $width ) 
 		$height = 100;
 	
-	$img_style = 'style="padding: 0px 5px;';
-	$div_style = 'style = "vertical-align:top; display:inline-block; ';
+	$img_style = 'style="padding: 0px 5px; margin:auto; ';
+	$div_style = 'style = "';
 
 	if ( $height ) {
 		$img_style = $img_style . ' height: ' . (int) $height . 'px ';
@@ -150,9 +150,9 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	else
 		$invisible_a_to_check_broken_links = '';
 
-	return '<div ' . $div_style . ' class="center"> ' 
+	return '<div ' . $div_style . ' class="outside_image"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
-	. '<img '. $img_style . 'class="center" src=' . $hrf . $alt . $alt2. $image_width . $height . '/></a>' 
+	. '<img '. $img_style . 'src=' . $hrf . $alt . $alt2. '/></a>' 
 	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
 	. $invisible_a_to_check_broken_links . '</div>';
 }
