@@ -13,8 +13,12 @@
 /* =Theme customization starts here
 ------------------------------------------------------- */
 
-h1 { 
+h1, h3 { 
 	text-decoration: underline; 
+}
+
+header h3 { 
+	text-decoration: none; 
 }
 
 div .center, table .center, .wp-caption-text, .outside_image {
@@ -35,6 +39,24 @@ img .center {
 .images .outside_image {
 	display:inline-block; 
 	vertical-align:top; 
+}
+
+.pwithinlineimgs:before,
+.pwithinlineimgs:after {
+  display: table;
+  content: "";
+}
+
+.pwithinlineimgs:after {
+  clear: both;
+}
+
+.pwithinlineimgs .images, .pwithinlineimgs .outside_image {
+	float: right;
+}
+
+.pwithinlineimgs .images .outside_image {
+	float: right;
 }
 
 /******************************************************************************
