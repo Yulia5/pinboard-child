@@ -1,10 +1,16 @@
 <?php if( is_active_sidebar( 1 ) ) : ?>
-	<div id="sidebar-header" class="widget-area" role="complementary">
-		<?php if ( ( '' != get_header_image() ) &&  ( false != get_header_image() ) ) : ?>
-			<a href="<?php echo home_url( '/' ); ?>" rel="home">
-				<img src="<?php header_image(); ?>" />
-			</a>
-		<?php endif; ?>
+	<div id="sidebar-header" class="widget-area" role="complementary">		
+		<aside id="another-site-title">
+			<div style="display: table; ">
+			<div id="headline" style="display:inline-block; vertical-align: middle;">
+				<div id="headline-1"> <a href="<?php echo home_url( '/' ); ?>" rel="home"><h3>yu51a5.com*</h3></a></div>				
+				<div id="headline-2"> </div>				
+				<div id="headline-3"> <a href="<?php echo home_url( '/' ); ?>" rel="home">*something to read while you have your coffee</a> </div>
+			</div> 
+			<div id="headlogo" style="display:inline-block; vertical-align: middle; min-width: 135px">				
+				<a href="<?php echo home_url( '/' ); ?>" rel="home"> <img style="display: block; margin:0; margin-left: 20px; width: 65px !important" src="http://www.yu51a5.com/wp-content/themes/pinboard-child/images/coffee.png" /></a>
+			</div></div>
+		</aside>				
 		<?php dynamic_sidebar( 1 ); ?>
 	</div><!-- #sidebar-header -->
 <?php else : ?>

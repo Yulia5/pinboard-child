@@ -59,6 +59,39 @@ img .center {
 	float: right;
 }
 
+#another-site-title {
+    float:left;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+#another-site-title {
+	margin-left: 10px
+}
+
+#another-site-title h3 {
+	margin-bottom:5px;
+}
+
+#headline {
+	width: 160px;
+}
+
+#headlogo {
+	width: 135px;
+	height: 100%;
+}
+
+#headlogo a img {
+	width: 87px;
+}
+
+#headline-2 {
+	height:2px;
+	width:100%;
+	clear:both;
+}
+
 /******************************************************************************
  *                                  Table                                     *
  *****************************************************************************/
@@ -116,7 +149,6 @@ a {
  	margin: 0px;
  	padding: 0px;
 	box-shadow:none;
-	background:#FFFFFF;
 	border:none;
 }
 
@@ -124,17 +156,10 @@ a {
  	margin: 0 auto; 
  	padding: 10px;
 	box-shadow:none;
-	background:#FFFFFF;
 	border:none;
 	text-align: center; 
 	display: block;
 	clear: both;
-}
-
-
-.entry-content a:hover img,
-#attachment-nav a:hover img {
-	background:#FFFFFF;
 }
 
 a img{
@@ -187,7 +212,7 @@ a img{
 	float:left; 
 }
 
-#sidebar-header img, .jetpack_subscription_widget .success, #subscribe-email input, #header input {
+#sidebar-header img, .jetpack_subscription_widget .success, #subscribe-email input, #header input, #another-site-title {
 	width: 300px !important;
 }
 
@@ -303,11 +328,11 @@ input#searchsubmit:focus {
  *                                 Colours                                    *
  *****************************************************************************/
 
-#wrapper, #sidebar-wide, #sidebar-footer-wide, #current-location, .entry, #comments, #respond, #posts-nav, .home .entry-meta, .blog .entry-meta, .archive .entry-meta, .search .entry-meta {
+.entry-content a:hover img, #attachment-nav a:hover img, .wp-caption, .entry-content a img, #attachment-nav a img, #wrapper, #sidebar-wide, #sidebar-footer-wide, #current-location, .entry, #comments, #respond, #posts-nav, .home .entry-meta, .blog .entry-meta, .archive .entry-meta, .search .entry-meta {
 	background: #ffffff  !important;
 }
 
-#access a, #sidebar, #sidebar-left, #sidebar-right, .widget-title {
+#access a, #sidebar, #sidebar-left, #sidebar-right, .widget-title, #headline-1 a, #headline-3 a {
 	color: #ffffff;
 }
 
@@ -321,6 +346,10 @@ body.custom-background {
 
 a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta a:hover, #access a:hover, #access li.current_page_item > a, #access li.current-menu-item > a {
 	color: #aac744; /*was: #d54e21*/
+}
+
+#headline-2 {
+	background: #aac744; /*was: #d54e21*/
 }
 
 #header, #nav, #access:target .menu, #copyright, #access {
