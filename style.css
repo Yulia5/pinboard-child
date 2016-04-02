@@ -63,10 +63,7 @@ img .center {
     float:left;
     margin: 0 auto;
     vertical-align: middle;
-}
-
-#another-site-title {
-	margin-left: 10px
+   	margin-left: 10px;
 }
 
 #another-site-title h3 {
@@ -75,21 +72,30 @@ img .center {
 
 #headline {
 	width: 160px;
+	display:inline-block; 
+	vertical-align: middle;
 }
 
 #headlogo {
-	width: 135px;
-	height: 100%;
+	display:inline-block; 
+	vertical-align: middle;
 }
 
-#headlogo a img {
-	width: 87px;
+#headlogo img {
+	display: block; 
+	margin:0; 
+	margin-left: 20px; 
+	width: 65px !important;
 }
 
 #headline-2 {
 	height:2px;
 	width:100%;
 	clear:both;
+}
+
+#another-site-title-table {
+	display: table;
 }
 
 /******************************************************************************
@@ -200,19 +206,15 @@ a img{
 	margin: 0px 0px 0px 20px;
 }
 
-#sidebar-header img {
-	margin: 30px 0px 0px 20px;
-}
-
 .widget_search .widget-title{
 	margin-bottom: 20px !important;
 }
 
-#header #searchform, #sidebar-header img, .jetpack_subscription_widget {
+#header #searchform, .jetpack_subscription_widget {
 	float:left; 
 }
 
-#sidebar-header img, .jetpack_subscription_widget .success, #subscribe-email input, #header input, #another-site-title {
+.jetpack_subscription_widget .success, #subscribe-email input, #header input, #another-site-title {
 	width: 300px !important;
 }
 
