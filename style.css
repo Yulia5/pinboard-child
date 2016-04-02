@@ -17,87 +17,6 @@ h1, h3 {
 	text-decoration: underline; 
 }
 
-header h3 { 
-	text-decoration: none; 
-}
-
-div .center, table .center, .wp-caption-text, .outside_image {
-    margin:auto;
-}
-
-img .center {
-    display:block;
-    margin:auto;
-}
-
-.images {
-    display: table; 
-    margin: 0 auto;
-    vertical-align: top;
-}
-
-.images .outside_image {
-	display:inline-block; 
-	vertical-align:top; 
-}
-
-.pwithinlineimgs:before,
-.pwithinlineimgs:after {
-  display: table;
-  content: "";
-}
-
-.pwithinlineimgs:after {
-  clear: both;
-}
-
-.pwithinlineimgs .images, .pwithinlineimgs .outside_image {
-	float: right;
-}
-
-.pwithinlineimgs .images .outside_image {
-	float: right;
-}
-
-#another-site-title {
-    float:left;
-    margin: 0 auto;
-    vertical-align: middle;
-   	margin-left: 10px;
-}
-
-#another-site-title h3 {
-	margin-bottom:5px;
-}
-
-#headline {
-	width: 160px;
-	display:inline-block; 
-	vertical-align: middle;
-}
-
-#headlogo {
-	display:inline-block; 
-	vertical-align: middle;
-}
-
-#headlogo img {
-	display: block; 
-	margin:0; 
-	margin-left: 20px; 
-	width: 65px !important;
-}
-
-#headline-2 {
-	height:2px;
-	width:100%;
-	clear:both;
-}
-
-#another-site-title-table {
-	display: table;
-}
-
 /******************************************************************************
  *                                  Table                                     *
  *****************************************************************************/
@@ -177,15 +96,93 @@ a img{
 	box-shadow: none;
 }
 
+div .center, table .center, .wp-caption-text, .outside_image {
+    margin:auto;
+}
+
+img .center {
+    display:block;
+    margin:auto;
+}
+
+.images {
+    display: table; 
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.images .outside_image {
+	display:inline-block; 
+	vertical-align:top; 
+}
+
+.pwithinlineimgs:before,
+.pwithinlineimgs:after {
+  display: table;
+  content: "";
+}
+
+.pwithinlineimgs:after {
+  clear: both;
+}
+
+.pwithinlineimgs .images, .pwithinlineimgs .outside_image {
+	float: right;
+}
+
+.pwithinlineimgs .images .outside_image {
+	float: right;
+}
+
 /******************************************************************************
  *                         Header and Widgets                                 *
  *****************************************************************************/
 
+header h3 { 
+	text-decoration: none; 
+}
+
+#another-site-title {
+    float:left;
+    margin: 0 auto;
+    vertical-align: middle;
+   	margin-left: 10px;
+}
+
+#another-site-title h3 {
+	margin-bottom:5px;
+}
+
+#headline {
+	width: 160px;
+	display:inline-block; 
+	vertical-align: middle;
+}
+
+#headlogo {
+	display:inline-block; 
+	vertical-align: middle;
+}
+
+#headlogo img {
+	display: block; 
+	margin:0; 
+	margin-left: 20px; 
+	width: 65px !important;
+}
+
+#headline-2 {
+	height:2px;
+	width:100%;
+	clear:both;
+}
+
+#another-site-title-table {
+	display: table;
+}
+
 #header {
 	border-top:none;
-}
-   
-#header {
 	min-height: 150px !important;
     overflow: auto !important;
 }
