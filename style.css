@@ -189,7 +189,7 @@ header h3 {
 
 #sidebar-header {
 	padding:0px;
-	min-height: 150px !important;
+	min-height: 120px !important;
     overflow: auto !important;
     margin:0px !important;
     width:100%;
@@ -199,7 +199,7 @@ header h3 {
 	display:none;
 }
 
-#header #searchform, .jetpack_subscription_widget {
+#header #searchform, #blog_subscription-2 {
 	margin: 0px 0px 0px 20px;
 }
 
@@ -211,8 +211,12 @@ header h3 {
 	float:left; 
 }
 
-.jetpack_subscription_widget .success, #subscribe-email input, #header input, #another-site-title {
-	width: 300px !important;
+#searchform, .jetpack_subscription_widget .success, #blog_subscription-2, #another-site-title {
+	width: 315px !important;
+}
+
+#header input[type="email"], #header input[type="text"] {
+	width: 250px !important;
 }
 
 .jetpack_subscription_widget .success{
@@ -305,6 +309,26 @@ input#searchsubmit:focus {
 	background:-ms-linear-gradient(#EEE, #F9F9F9);
 	background:linear-gradient(#EEE, #F9F9F9);
 	outline: none;
+}
+
+/*#searchform, #blog_subscription-2 { #subscribe-blog-blog_subscription-2, .jetpack_subscription_widget, 
+    background:red;
+} */
+
+#blog_subscription-2, #searchform { /*#blog_subscription-2, .jetpack_subscription_widget, */
+    position:relative;
+}
+
+#searchform input[type="submit"], #subscribe-blog-blog_subscription-2 input[type="submit"] {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    width: 32px !important;
+    height: 32px;
+    background: #00FF00 right center no-repeat;
+    display: inline;
+    padding: 0px;
+	border-radius: 0px;   
 }
 
 .widget_search #s-label, #subscribe-text {
