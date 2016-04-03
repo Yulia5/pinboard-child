@@ -31,37 +31,23 @@ function enqueue_styles_and_scripts() {
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
 
 /******************************************************************************
- *                          Image Credit                                      *
+ *                          Search Form                                       *
  *****************************************************************************/
 
-add_shortcode('li_image_credit', 'li_image_credit_shortcode');
-
-/**
- * Arrow down for Germany post shortcut.
- * The supported attributes for the shortcode are 'title' and 'hrf'.
- *
- * @since 2.6.0
- *
- * @param array $attr Attributes attributed to the shortcode.
- * @param string $content Optional. Shortcode content.
- * @return string
- */
-function li_image_credit_shortcode($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'title' => '',
-		'hrf' => ''
-	), $attr));	
+// Add to your init function
+add_filter('get_search_form', 'my_search_form');
  
-	return '<li>' . $title . ': <a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $hrf . '</a></li>';
+function my_search_form($text) {
+     $text = str_replace('value="Search"', 'value=""', $text);
+     return $text;
 }
-
-add_shortcode('DE_arrowD', 'DE_arrowD_shortcode');
 
 /******************************************************************************
  *                          German Arrows                                     *
  *****************************************************************************/
 
+add_shortcode('DE_arrowD', 'DE_arrowD_shortcode');
+ 
 /**
  * Arrow down for Germany post shortcut.
  * The supported attributes for the shortcode are 'halign' and
