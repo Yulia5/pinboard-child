@@ -5,7 +5,7 @@
 			<div id="headline">
 				<div id="headline-1"> <a href="<?php echo home_url( '/' ); ?>" rel="home"><h3>yu51a5.com*</h3></a></div>				
 				<div id="headline-2"> </div>				
-				<div id="headline-3"> <a href="<?php echo home_url( '/' ); ?>" rel="home">*something to read while you have your coffee</a> </div>
+				<div id="headline-3"> <a href="<?php echo home_url( '/' ); ?>" rel="home">*something to read while you have a coffee</a> </div>
 			</div> 
 			<div id="headlogo">				
 				<a href="<?php echo home_url( '/' ); ?>" rel="home"> <img src="http://www.yu51a5.com/wp-content/themes/pinboard-child/images/coffee.png" /></a>

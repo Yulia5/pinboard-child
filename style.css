@@ -183,36 +183,36 @@ header h3 {
 
 #header {
 	border-top:none;
-	min-height: 150px !important;
-    overflow: auto !important;
+	margin-bottom: 0px !important;
+	min-height: 130px !important;
+    overflow: hidden;
 }
 
 #sidebar-header {
 	padding:0px;
-	min-height: 120px !important;
+	min-height: 130px !important;
     overflow: auto !important;
     margin:0px !important;
     width:100%;
+	margin-bottom: 0px !important;
+    overflow: hidden;
 }
 
 #site-title  {
 	display:none;
 }
 
-#header #searchform, #blog_subscription-2 {
-	margin: 0px 0px 0px 20px;
-}
-
 .widget_search .widget-title{
 	margin-bottom: 20px !important;
 }
 
-#header #searchform, .jetpack_subscription_widget {
-	float:left; 
+#searchform, .jetpack_subscription_widget .success, #blog_subscription-2, #another-site-title {
+	width: 325px !important;
 }
 
-#searchform, .jetpack_subscription_widget .success, #blog_subscription-2, #another-site-title {
-	width: 315px !important;
+#blog_subscription-2, #subscribe-blog-blog_subscription-2, .jetpack_subscription_widget {
+	margin-bottom: 0px !important;
+	padding: 0 !important;
 }
 
 #header input[type="email"], #header input[type="text"] {
@@ -221,15 +221,16 @@ header h3 {
 
 .jetpack_subscription_widget .success{
 	margin-top: 15px !important;
+	margin-bottom: 0px !important;
 }
 
 #subscribe-email input, #header input {
 	margin-top: 20px;
 }
-
+/*
 .widget_search, .widget_search form {
 	margin-top: 0px !important;
-}
+}*/
 
 .widget-area #s, #sidebar-left #s, #sidebar-right #s, #header input#s, .search-field, 
 .widget input[type="text"], .widget input[type="email"], input[type="text"], input[type="email"], textarea, 
@@ -264,71 +265,38 @@ textarea#comment {
   	transition: none !important;
 }
 
-input[type=submit],
-input[type=reset],
-input[type=button],
-input#searchsubmit {
-	padding:4px 15px;
-	width:auto;
-	border-radius:15px;
-	box-shadow:none;
-	background:#F8F8F8;
-	background:-moz-linear-gradient(#FCFCFC, #F3F3F3);
-	background:-webkit-linear-gradient(#FCFCFC, #F3F3F3);
-	background:-o-linear-gradient(#FCFCFC, #F3F3F3);
-	background:-ms-linear-gradient(#FCFCFC, #F3F3F3);
-	background:linear-gradient(#FCFCFC, #F3F3F3);
-	border:none;
-	border-bottom:#DDD 1px solid;
-	color:#444;
-	font-family:"Open Sans", sans-serif;
-	font-size:13px;
-	text-align:center;
-	margin:0px;
-	display: block;
-}
-
-input[type=submit]:hover,
-input[type=reset]:hover,
-input[type=button]:hover,
-input#searchsubmit:hover {
-	box-shadow:none;
-	border:none;
-	outline: none;
-}
-
-input[type=submit]:focus,
-input[type=reset]:focus,
-input[type=button]:focus,
-input#searchsubmit:focus {
-	border:none;
-	box-shadow:none;
-	background:-moz-linear-gradient(#EEE, #F9F9F9);
-	background:-webkit-linear-gradient(#EEE, #F9F9F9);
-	background:-o-linear-gradient(#EEE, #F9F9F9);
-	background:-ms-linear-gradient(#EEE, #F9F9F9);
-	background:linear-gradient(#EEE, #F9F9F9);
-	outline: none;
-}
-
-/*#searchform, #blog_subscription-2 { #subscribe-blog-blog_subscription-2, .jetpack_subscription_widget, 
-    background:red;
-} */
-
-#blog_subscription-2, #searchform { /*#blog_subscription-2, .jetpack_subscription_widget, */
+#searchform, #blog_subscription-2 { /*#subscribe-blog-blog_subscription-2, .jetpack_subscription_widget, */
+    /*background:red;*/
+    margin-top: 10px !important;
     position:relative;
+	float:left; 
+	margin-bottom: 0px !important;
+	margin-left: 20px !important;
+	margin-right: 0px !important;
 }
 
-#searchform input[type="submit"], #subscribe-blog-blog_subscription-2 input[type="submit"] {
+#searchform input[type="submit"], #subscribe-blog-blog_subscription-2 input[type="submit"],
+#searchform input[type="submit"]:hover, #subscribe-blog-blog_subscription-2 input[type="submit"]:hover,
+#searchform input[type="submit"]:focus, #subscribe-blog-blog_subscription-2 input[type="submit"]:focus
+{
+	/*padding:4px 15px;
+	border-radius:15px;*/
     position: absolute;
     bottom: 20px;
     right: 0px;
-    width: 32px !important;
+    width: 62px !important;
     height: 32px;
-    background: #00FF00 right center no-repeat;
+    background: #aac744 right center no-repeat;
     display: inline;
     padding: 0px;
 	border-radius: 0px;   
+	box-shadow:none;
+	border:none;
+	outline: none;
+	color:#000;
+	font-family:"Open Sans", sans-serif;
+	font-size:13px;
+	text-align:center;
 }
 
 .widget_search #s-label, #subscribe-text {
