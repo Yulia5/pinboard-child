@@ -87,6 +87,10 @@ a {
 	clear: both;
 }
 
+.wp-caption-text {
+	padding: 0px 10px 10px 10px;
+}
+
 a img{
  	margin: 0px;
  	padding: 0px;
@@ -168,6 +172,7 @@ header h3 {
 	display: block; 
 	margin:0; 
 	margin-left: 60px; 
+	margin-top: 10px; 
 	width: 65px !important;
 }
 
@@ -184,13 +189,13 @@ header h3 {
 #header {
 	border-top:none;
 	margin-bottom: 0px !important;
-	min-height: 130px !important;
+	min-height: 115px !important;
     overflow: hidden;
 }
 
 #sidebar-header {
 	padding:0px;
-	min-height: 130px !important;
+	min-height: 115px !important;
     overflow: auto !important;
     margin:0px !important;
     width:100%;

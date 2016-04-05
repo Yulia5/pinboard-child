@@ -4,5 +4,5 @@
 	<label id="s-label" for="s" style="clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;"> Keyword(s) </label>
 		<input type="text" value="" required="required" class="required" placeholder="Keyword(s)" name="s" id="s" />
 	</p>
-	<input type="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'pinboard' ); ?>" />
+	<input type="submit" id="searchsubmit" value="" />
 </form>

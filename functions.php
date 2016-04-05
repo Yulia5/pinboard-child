@@ -31,18 +31,6 @@ function enqueue_styles_and_scripts() {
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
 
 /******************************************************************************
- *                          Search Form                                       *
- *****************************************************************************/
-
-// Add to your init function
-add_filter('get_search_form', 'my_search_form');
- 
-function my_search_form($text) {
-     $text = str_replace('value="Search"', 'value=""', $text);
-     return $text;
-}
-
-/******************************************************************************
  *                          German Arrows                                     *
  *****************************************************************************/
 
@@ -98,14 +86,6 @@ function DE_arrow_shortcode($attr, $content = null) {
  *                          Image Caption                                     *
  *****************************************************************************/
  
-function get_a2($a_text, $hrf, $title = null)
-{
-	if ( ! $title ) 
-		$title = $a_text;
-	$result = '<a title="' . $title . '" href="' . $hrf . '" target="_blank">' . $a_text . '</a>';
-	return $result;
-}
- 
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf)
 {
 	if (! $width ) 
@@ -132,14 +112,14 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
 	
 	if ( $sourcehrf )
-		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" style="display:none">.</a>';
+		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" style="display:none">Invisible, to aid broken links check</a>';
 	else
 		$invisible_a_to_check_broken_links = '';
 
 	return '<div ' . $div_style . ' class="outside_image"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
 	. '<img '. $img_style . 'src=' . $hrf . $alt . $alt2. '/></a>' 
-	. '<div style="padding: 0px 10px 10px 10px;" class="wp-caption-text">' . $caption . '</div>'
+	. '<div class="wp-caption-text">' . $caption . '</div>'
 	. $invisible_a_to_check_broken_links . '</div>';
 }
 
