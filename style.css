@@ -35,7 +35,7 @@ table {
 
 table th,
 table td {
-	padding:0 0;
+	padding: 0;
 	text-align: center;
 	vertical-align: center;
 }
@@ -51,14 +51,19 @@ table th {
  *                           Image and Anchor                                 *
  *****************************************************************************/
 
-img {
- 	margin: 0px;
- 	padding: 10px;
+img, a img {
+    display: block;
+    margin: 0 auto;
+   	padding: 10px;
 	border: none;
 	-moz-border-radius: 0px;
 	-khtml-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	border-radius: 0px;
+	box-shadow: none;
+	padding: 0px 5px;  
+	border-width: 0;
+	outline:none;
 	box-shadow: none;
 }
 
@@ -89,15 +94,6 @@ a {
 
 .wp-caption-text {
 	padding: 0px 10px 10px 10px;
-}
-
-a img{
- 	margin: 0px;
- 	padding: 0px;
-	border: none;
-	border-width: 0;
-	outline:none;
-	box-shadow: none;
 }
 
 div .center, table .center, .wp-caption-text, .outside_image {

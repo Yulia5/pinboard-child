@@ -89,10 +89,10 @@ function DE_arrow_shortcode($attr, $content = null) {
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf)
 {
 	if (! $width ) 
-		$height = 100;
+		$height = 200;
 	
-	$img_style = 'style="padding: 0px 5px; margin:auto; ';
-	$div_style = 'style = "';
+	$img_style = 'style="';
+	$div_style = 'style="';
 
 	if ( $height ) {
 		$img_style = $img_style . ' height: ' . (int) $height . 'px ';
@@ -105,6 +105,11 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	$div_style = $div_style . '" ';
 	$img_style = $img_style . '" ';
 	
+	if ((!$height) && (!$width)) {
+		$div_style = '';
+		$img_style = '';		
+	}
+	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = '"' . $hrf  . '" ';
 	
@@ -112,7 +117,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
 	
 	if ( $sourcehrf )
-		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" style="display:none">Invisible, to aid broken links check</a>';
+		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" style="display:none">Invisible, to help broken links check</a>';
 	else
 		$invisible_a_to_check_broken_links = '';
 
@@ -148,13 +153,7 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
 
 /**
- * The Caption shortcode equivalent for Wiki Commons.
- * The supported attributes for the shortcode are 'height', 'width', 
- * 'caption', 'filename'.
- *
- * @param array $attr Attributes attributed to the shortcode.
- * @param string $content Optional. Shortcode content.
- * @return string
+ * yu_caption_wiki
  */
 function MY_VERY_OWN_img_caption_shortcode_wiki($attr, $content = null) {
 
