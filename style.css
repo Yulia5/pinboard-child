@@ -51,7 +51,7 @@ table th {
  *                           Image and Anchor                                 *
  *****************************************************************************/
 
-img, a img {
+img, a img, .entry-content a img {
     display: block;
     margin: 0 auto;
    	padding: 10px;
@@ -72,14 +72,6 @@ a {
 	text-decoration:none;
 	transition: none;
     font-weight: bold;
-}
-
-.entry-content a img,
-#attachment-nav a img {
- 	margin: 0px;
- 	padding: 0px;
-	box-shadow:none;
-	border:none;
 }
 
 .wp-caption {
@@ -107,7 +99,7 @@ img .center {
 
 .images {
     display: table; 
-    margin: 0 auto;
+    margin: 5px auto;
     vertical-align: top;
 }
 
@@ -187,19 +179,20 @@ header h3 {
 	margin-bottom: 0px !important;
 	min-height: 115px !important;
     overflow: hidden;
+    height:auto;
 }
 
-#sidebar-header {
+#sidebar-header-custom {
 	padding:0px;
 	min-height: 115px !important;
-    overflow: auto !important;
+	height:auto;
     margin:0px !important;
     width:100%;
 	margin-bottom: 0px !important;
     overflow: hidden;
 }
 
-#site-title  {
+#site-title, #jetpack-subscribe-label  {
 	display:none;
 }
 
@@ -207,7 +200,7 @@ header h3 {
 	margin-bottom: 20px !important;
 }
 
-#searchform, .jetpack_subscription_widget .success, #blog_subscription-2, #another-site-title {
+#searchform, .jetpack_subscription_widget .success, #blog_subscription-2, #another-site-title-table, #blog_subscription-2-table {
 	width: 325px !important;
 }
 

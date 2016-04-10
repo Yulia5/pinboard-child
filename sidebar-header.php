@@ -1,5 +1,5 @@
 <?php if( is_active_sidebar( 1 ) ) : ?>
-	<div id="sidebar-header" class="widget-area" role="complementary">		
+	<div id="sidebar-header-custom" class="widget-area" role="complementary">		
 		<aside id="another-site-title">
 			<div id="another-site-title-table">
 			<div id="headline">
