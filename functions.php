@@ -187,6 +187,24 @@ function MY_VERY_OWN_img_caption_shortcode_RC($attr, $content = null) {
 add_shortcode('yu_caption_RC', 'MY_VERY_OWN_img_caption_shortcode_RC');
 
 /**
+ * yu_caption_BM
+ */
+function MY_VERY_OWN_img_caption_shortcode_BM($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, '© Trustees of the British Museum', 
+									'http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=' . $id . '&partId=1');	
+	return $result;
+}
+add_shortcode('yu_caption_BM', 'MY_VERY_OWN_img_caption_shortcode_BM');
+
+/**
  * MY_VERY_OWN_wiki_link
  */
 function MY_VERY_OWN_wiki_link($attr, $content = null) {
@@ -194,7 +212,8 @@ function MY_VERY_OWN_wiki_link($attr, $content = null) {
 	extract(shortcode_atts(array(
 		'text' => '',
 		'wikilink'	=> '',
-		'title' => ''
+		'title' => '',
+		'language' => ''
 	), $attr));
 	
 	if ( ! $wikilink ) {
@@ -203,8 +222,10 @@ function MY_VERY_OWN_wiki_link($attr, $content = null) {
 	if ( ! $title ) {
 		$title = $text;
 	}
-	
-	$result = '<a title="' . $title . '" href="http://en.wikipedia.org/wiki/' . $wikilink . '" target="_blank">' . $text . '</a>';	
+	if ( ! $language ) {
+		$language = 'en';
+	}	
+	$result = '<a title="' . $title . '" href="http://' . $language . '.wikipedia.org/wiki/' . $wikilink . '" target="_blank">' . $text . '</a>';	
 	return $result;
 }
 add_shortcode('yu_wiki', 'MY_VERY_OWN_wiki_link');

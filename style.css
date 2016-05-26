@@ -308,13 +308,18 @@ textarea#comment {
 	font-weight:bold;
 }
 
-#current-location{
+#current-location {
 	display: none;
 }
 
 /******************************************************************************
  *                                 Colours                                    *
  *****************************************************************************/
+
+h3 a, h3 a:hover {
+	color: #000000;
+	cursor: text;
+}
 
  /* custom green #aac744; custom brick red: #d54e21 ; custom links blue #21759b */
 
@@ -330,8 +335,8 @@ body.custom-background {
 	background-color: #ffffff  !important;
 }
 
-#access a:hover, a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta a:hover {
-	color: #d54e21;
+a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta a:hover {
+	color: #aac744;
 }
 
 #access li.current_page_item > a, #access li.current-menu-item > a {
@@ -351,11 +356,11 @@ body.custom-background {
 }
 
 #subscribe-blog-blog_subscription-2 input[type="submit"]:hover, #subscribe-blog-blog_subscription-2 input[type="submit"]:focus {
-	background: url(images/email_reply_red.png) right center no-repeat;
+	background: url(images/email_reply_green.png) right center no-repeat;
 }
 
 #searchform input[type="submit"]:hover, #searchform input[type="submit"]:focus {
-	background: url(images/search_button_red.png) right center no-repeat;
+	background: url(images/search_button_green.png) right center no-repeat;
 }
 
 #header, #nav, #access:target .menu, #copyright, #access {
