@@ -205,6 +205,24 @@ function MY_VERY_OWN_img_caption_shortcode_BM($attr, $content = null) {
 add_shortcode('yu_caption_BM', 'MY_VERY_OWN_img_caption_shortcode_BM');
 
 /**
+ * yu_caption_Getty
+ */
+function MY_VERY_OWN_img_caption_shortcode_Getty($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'The J. Paul Getty Museum Open Contents Program', 
+									'http://www.getty.edu/art/collection/objects/' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_Getty', 'MY_VERY_OWN_img_caption_shortcode_Getty');
+
+/**
  * MY_VERY_OWN_wiki_link
  */
 function MY_VERY_OWN_wiki_link($attr, $content = null) {
