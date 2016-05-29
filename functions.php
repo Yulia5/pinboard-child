@@ -222,6 +222,26 @@ function MY_VERY_OWN_img_caption_shortcode_Getty($attr, $content = null) {
 }
 add_shortcode('yu_caption_Getty', 'MY_VERY_OWN_img_caption_shortcode_Getty');
 
+
+/**
+ * yu_caption_RMN  
+ */
+function MY_VERY_OWN_img_caption_shortcode_RMN($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'Réunion des Musées Nationaux - Grand Palais', 
+									'http://www.photo.rmn.fr/archive/' . $id . '.html');	
+	return $result;
+}
+add_shortcode('yu_caption_RMN', 'MY_VERY_OWN_img_caption_shortcode_RMN');
+
+
 /**
  * MY_VERY_OWN_wiki_link
  */

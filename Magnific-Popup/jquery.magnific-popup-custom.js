@@ -73,13 +73,15 @@ jQuery(document).ready(function($) {
 					imagecredit = '';
 				}
 				
-				return '<strong>' + caption + '</strong>' + imagecredit;
+				return '<strong>' + caption + '</strong>' + imagecredit + '<br /> &nbsp';
 			}
 		}
 	});
 
+
 	// initialize magnific popup galleries with titles and descriptions
-	$('.images').magnificPopup({
+	$('.images').each(function() {
+      $(this).magnificPopup({
 		callbacks : {
 			open : function() {
 				$('.mfp-description').append(this.currItem.el.attr('title'));
@@ -88,7 +90,7 @@ jQuery(document).ready(function($) {
 				$('.mfp-description').empty().append(this.currItem.el.attr('title'));
 			}
 		},
-		delegate : 'div a',
+		delegate : 'a',
 		type : 'image',
 		image : {
 			titleSrc : function(item) {
@@ -118,13 +120,14 @@ jQuery(document).ready(function($) {
 					imagecredit = '';
 				}
 				
-				return '<strong>' + caption + '</strong>' + imagecredit;
+				return '<strong>' + caption + '</strong>' + imagecredit + '<br /> &nbsp';
 			}
 		},
 		gallery : {
 			enabled : true,
 			navigateByImgClick : true
 		}
+	  });
 	});
 	
 }); 
