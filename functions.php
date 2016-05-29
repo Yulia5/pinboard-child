@@ -268,4 +268,40 @@ function MY_VERY_OWN_wiki_link($attr, $content = null) {
 }
 add_shortcode('yu_wiki', 'MY_VERY_OWN_wiki_link');
 
+/**
+ * [yu_tube title = "" imdb_id = "" youtube_id = "" start = ""]
+ */
+function MY_VERY_OWN_youtube($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'title' => '',
+		'imdb_id' => '',
+		'youtube_id' => '',
+		'start' => ''
+	), $attr));
+	
+	$youtube_shortcode = '[youtube https://www.youtube.com/watch?v=' . $youtube_id . '&start=' . $start . ']';	
+	$result = '<a title="' . $title . '" href="http://www.imdb.com/title/' . $imdb_id . '/" target="_blank">"' . $title . '"</a>:
+
+<div style="width:500px; max-width:500px; display:block; margin: auto"> ' . do_shortcode($youtube_shortcode) . '</div>';
+
+	return $result;
+}
+add_shortcode('yu_tube', 'MY_VERY_OWN_youtube');
+
+/**
+ * [yu_amazon title = "" id = ""]
+ */
+function MY_VERY_OWN_amazon($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'title' => '',
+		'id' => ''
+	), $attr));
+	
+	$result = '<a title="' . $title . '" href="https://www.amazon.co.uk/dp/' . $id . '" target="_blank">"' . $title . '"</a>';
+	return $result;
+}
+add_shortcode('yu_amazon', 'MY_VERY_OWN_amazon');
+
 ?>
