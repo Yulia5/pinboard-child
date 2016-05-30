@@ -241,6 +241,23 @@ function MY_VERY_OWN_img_caption_shortcode_RMN($attr, $content = null) {
 }
 add_shortcode('yu_caption_RMN', 'MY_VERY_OWN_img_caption_shortcode_RMN');
 
+/**
+ * yu_caption_VA  
+ */
+function MY_VERY_OWN_img_caption_shortcode_VA($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, '© Victoria and Albert Museum, London', 
+									'http://collections.vam.ac.uk/item/' . $id . '/');	
+	return $result;
+}
+add_shortcode('yu_caption_VA', 'MY_VERY_OWN_img_caption_shortcode_VA');
 
 /**
  * MY_VERY_OWN_wiki_link
