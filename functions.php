@@ -187,6 +187,40 @@ function MY_VERY_OWN_img_caption_shortcode_RC($attr, $content = null) {
 add_shortcode('yu_caption_RC', 'MY_VERY_OWN_img_caption_shortcode_RC');
 
 /**
+ * yu_caption_Met
+ */
+function MY_VERY_OWN_img_caption_shortcode_Met($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Metropolitan Museum of Art', 'http://www.metmuseum.org/art/collection/search/' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_Met', 'MY_VERY_OWN_img_caption_shortcode_Met');
+
+/**
+ * yu_caption_RC
+ */
+function MY_VERY_OWN_img_caption_shortcode_RC($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Royal Collection', 'https://www.royalcollection.org.uk/collection/' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_RC', 'MY_VERY_OWN_img_caption_shortcode_RC');
+
+ *//**
  * yu_caption_BM
  */
 function MY_VERY_OWN_img_caption_shortcode_BM($attr, $content = null) {
