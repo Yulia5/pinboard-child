@@ -334,7 +334,13 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 	), $attr));
 	
 	$youtube_shortcode = '[youtube https://www.youtube.com/watch?v=' . $youtube_id . '&start=' . $start . ']';	
-	$result = '<a title="' . $title . '" href="http://www.imdb.com/title/' . $imdb_id . '/" target="_blank">"' . $title . '"</a>:
+	
+	if ( $imdb_id )
+		$before_video = '<a title="' . $title . '" href="http://www.imdb.com/title/' . $imdb_id . '/" target="_blank">"' . $title . '"</a>';
+	else
+		$before_video = $title;
+	
+	$result = $before_video . ':
 
 <div style="width:500px; max-width:500px; display:block; margin: auto"> ' . do_shortcode($youtube_shortcode) . '</div>';
 
