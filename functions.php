@@ -203,6 +203,41 @@ function MY_VERY_OWN_img_caption_shortcode_Met($attr, $content = null) {
 }
 add_shortcode('yu_caption_Met', 'MY_VERY_OWN_img_caption_shortcode_Met');
 
+/**
+ * yu_caption_ArtUK
+ */
+function MY_VERY_OWN_img_caption_shortcode_ArtUK($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'Art UK', 'http://artuk.org/discover/artworks/' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_ArtUK', 'MY_VERY_OWN_img_caption_shortcode_ArtUK');
+
+/**
+ * yu_caption_SDK
+ */
+function MY_VERY_OWN_img_caption_shortcode_SDK($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, '© Staatliche Kunstsammlungen Dresden',
+                                   'http://skd-online-collection.skd.museum/en/contents/showSearch?id=' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_SDK', 'MY_VERY_OWN_img_caption_shortcode_SDK');
+
  /**
  * yu_caption_BM
  */
