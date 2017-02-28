@@ -295,6 +295,25 @@ add_shortcode('yu_caption_Getty', 'MY_VERY_OWN_img_caption_shortcode_Getty');
 
 
 /**
+ * yu_caption_MFA
+ */
+function MY_VERY_OWN_img_caption_shortcode_MFA($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'Museum of Fine Arts, Boston', 
+									'http://www.mfa.org/collections/object/' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_MFA', 'MY_VERY_OWN_img_caption_shortcode_MFA');
+
+
+/**
  * yu_caption_RMN  
  */
 function MY_VERY_OWN_img_caption_shortcode_RMN($attr, $content = null) {
@@ -311,6 +330,24 @@ function MY_VERY_OWN_img_caption_shortcode_RMN($attr, $content = null) {
 	return $result;
 }
 add_shortcode('yu_caption_RMN', 'MY_VERY_OWN_img_caption_shortcode_RMN');
+
+/**
+ * yu_caption_HM  
+ */
+function MY_VERY_OWN_img_caption_shortcode_HM($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Hermitage Museum', 
+									'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/' . $id . '?lng=en');	
+	return $result;
+}
+add_shortcode('yu_caption_HM', 'MY_VERY_OWN_img_caption_shortcode_HM');
 
 /**
  * yu_caption_VA  
