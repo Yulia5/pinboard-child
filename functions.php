@@ -314,6 +314,43 @@ add_shortcode('yu_caption_MFA', 'MY_VERY_OWN_img_caption_shortcode_MFA');
 
 
 /**
+ * yu_caption_WAM  
+ */
+function MY_VERY_OWN_img_caption_shortcode_WAM($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Walters Art Museum', 
+									'http://art.thewalters.org/detail/' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_WAM', 'MY_VERY_OWN_img_caption_shortcode_WAM');
+
+/**
+ * yu_caption_CBd  
+ */
+function MY_VERY_OWN_img_caption_shortcode_CBd($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'Campbell Bonner Magical Gems Database (CBd)', 
+									'http://www2.szepmuveszeti.hu/talismans/cbd/' . $id);
+	return $result;
+}
+add_shortcode('yu_caption_CBd', 'MY_VERY_OWN_img_caption_shortcode_CBd');
+
+
+/**
  * yu_caption_RMN  
  */
 function MY_VERY_OWN_img_caption_shortcode_RMN($attr, $content = null) {
@@ -343,8 +380,8 @@ function MY_VERY_OWN_img_caption_shortcode_HM($attr, $content = null) {
 		'id' => ''
 	), $attr));
 
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Hermitage Museum', 
-									'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/' . $id . '?lng=en');	
+	$result = generate_caption_HTML($content, $height, $width, $caption, '© The State Hermitage Museum, St. Petersburg', 
+									'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/' . $id . '/?lng=en');	
 	return $result;
 }
 add_shortcode('yu_caption_HM', 'MY_VERY_OWN_img_caption_shortcode_HM');
