@@ -332,6 +332,42 @@ function MY_VERY_OWN_img_caption_shortcode_WAM($attr, $content = null) {
 add_shortcode('yu_caption_WAM', 'MY_VERY_OWN_img_caption_shortcode_WAM');
 
 /**
+ * yu_caption_KHM  
+ */
+function MY_VERY_OWN_img_caption_shortcode_KHM($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'Kunsthistorisches Museum Vienna', 
+									'https://www.khm.at/objektdb/detail/' . $id);
+	return $result;
+}
+add_shortcode('yu_caption_KHM', 'MY_VERY_OWN_img_caption_shortcode_KHM');
+
+/**
+ * yu_caption_HAM  
+ */
+function MY_VERY_OWN_img_caption_shortcode_HAM($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'Harvard Art Museums', 
+									'http://www.harvardartmuseums.org/collections/object/' . $id);
+	return $result;
+}
+add_shortcode('yu_caption_HAM', 'MY_VERY_OWN_img_caption_shortcode_HAM');
+
+/**
  * yu_caption_CBd  
  */
 function MY_VERY_OWN_img_caption_shortcode_CBd($attr, $content = null) {
