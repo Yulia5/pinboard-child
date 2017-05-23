@@ -81,6 +81,67 @@ function DE_arrow_shortcode($attr, $content = null) {
 	return '<img style="clear:both; vertical-align: ' . $valign 
 	. '" src="http://www.yu51a5.com/wp-content/uploads/2016/03/arrow' . $dir . '.png" alt="" width="100" />';
 }
+
+/******************************************************************************
+ *        Lines (old English and modern English) for Romeo and Juliet         *
+ *****************************************************************************/
+ 
+function generate_RJ_lines($hrf, $character, $directions)
+{
+	
+	$rest = strpos($hrf, '|');
+	$line_old = substr($hrf, 0, $separator_line);
+	$line_new = substr($hrf, $separator_line);
+	
+	if ( $directions )
+		$separator_dir = strpos($directions, '|');
+		$dir_old = substr($directions, 0, $separator_dir);
+		$dir_new = substr($directions, $separator_dir);
+		$line_old = '<i>(' . $dir_old . ')</i> ' . $line_old;
+		$line_new = '<i>(' . $dir_new . ')</i> ' . $line_new;
+		
+	$character = '<b>' . strtoupper($character) . '</b><br>';
+
+	return '<div class="oldEnglish">' . $character . $line_old . '</div> <div class="newEnglish">' . $character . $line_new . '</div>';
+}
+
+/**
+ * The shortcode for R lines.
+ * The supported attribute for the shortcode is 'directions' (optional).
+ *
+ * @param array $attr Attributes attributed to the shortcode.
+ * @param string $content Optional. Shortcode content.
+ * @return string
+ */
+function MY_VERY_OWN_R_lines($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'directions' => ''
+	), $attr));
+
+	$result = generate_RJ_lines($content, 'Romeo', $directions);	
+	return $result;
+}
+add_shortcode('R_lines', 'MY_VERY_OWN_R_lines');
+
+/**
+ * The shortcode for J lines.
+ * The supported attribute for the shortcode is 'directions' (optional).
+ *
+ * @param array $attr Attributes attributed to the shortcode.
+ * @param string $content Optional. Shortcode content.
+ * @return string
+ */
+function MY_VERY_OWN_J_lines($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'directions' => ''
+	), $attr));
+
+	$result = generate_RJ_lines($content, 'Juliet', $directions);	
+	return $result;
+}
+add_shortcode('J_lines', 'MY_VERY_OWN_J_lines');
  
 /******************************************************************************
  *                          Image Caption                                     *
