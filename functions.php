@@ -89,20 +89,21 @@ function DE_arrow_shortcode($attr, $content = null) {
 function generate_RJ_lines($hrf, $character, $directions)
 {
 	
-	$rest = strpos($hrf, '|');
+	$separator_line = strpos($hrf, '|');
 	$line_old = substr($hrf, 0, $separator_line);
-	$line_new = substr($hrf, $separator_line);
+	$line_new = substr($hrf, $separator_line+1);
 	
-	if ( $directions )
+	if ( strlen($directions) > 0 ) {
 		$separator_dir = strpos($directions, '|');
 		$dir_old = substr($directions, 0, $separator_dir);
-		$dir_new = substr($directions, $separator_dir);
+		$dir_new = substr($directions, $separator_dir + 1);
 		$line_old = '<i>(' . $dir_old . ')</i> ' . $line_old;
 		$line_new = '<i>(' . $dir_new . ')</i> ' . $line_new;
+	}
 		
 	$character = '<b>' . strtoupper($character) . '</b><br>';
 
-	return '<div class="oldEnglish">' . $character . $line_old . '</div> <div class="newEnglish">' . $character . $line_new . '</div>';
+	return '<div style="display: flex; padding: 0px;"><div class="oldEnglish">' . $character . $line_old . '</div><div class="newEnglish">' . $character . $line_new . '</div></div>';
 }
 
 /**
@@ -122,7 +123,7 @@ function MY_VERY_OWN_R_lines($attr, $content = null) {
 	$result = generate_RJ_lines($content, 'Romeo', $directions);	
 	return $result;
 }
-add_shortcode('R_lines', 'MY_VERY_OWN_R_lines');
+add_shortcode('r_lines', 'MY_VERY_OWN_R_lines');
 
 /**
  * The shortcode for J lines.
@@ -141,7 +142,7 @@ function MY_VERY_OWN_J_lines($attr, $content = null) {
 	$result = generate_RJ_lines($content, 'Juliet', $directions);	
 	return $result;
 }
-add_shortcode('J_lines', 'MY_VERY_OWN_J_lines');
+add_shortcode('j_lines', 'MY_VERY_OWN_J_lines');
  
 /******************************************************************************
  *                          Image Caption                                     *

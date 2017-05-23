@@ -400,10 +400,16 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 .oldEnglish, .newEnglish
 {
     width: 50%;
+    /* flex: 1; */
     display: inline-block;
     /* If worried about IE7 and IE6, add the two next lines */
     *display: inline;
     *zoom: 1;
+    padding: 0px;
+}
+
+.oldEnglish b, .newEnglish b {
+    font-weight: 700;
 }
 
 .oldEnglish
