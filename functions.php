@@ -85,7 +85,19 @@ function DE_arrow_shortcode($attr, $content = null) {
 /******************************************************************************
  *        Lines (old English and modern English) for Romeo and Juliet         *
  *****************************************************************************/
- 
+
+/**
+ * The shortcode for OM_Text.
+ *
+ * @return string
+ */
+function MY_VERY_OWN_OM_Text($attr, $content = null) {
+
+	$result = '<div style="display: flex; padding: 0px;"><div class="oldEnglish"><b><font color="gray">ORIGINAL TEXT</font></b></div><div class="newEnglish"><b><font color="gray">MODERN TEXT</font></b></div></div>';	
+	return $result;
+}
+add_shortcode('om_text', 'MY_VERY_OWN_OM_Text'); 
+  
 function generate_RJ_lines($hrf, $character, $directions)
 {
 	
