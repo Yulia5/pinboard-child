@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
   		$(this).closest("div").css('max-width', div_width);*/
 		
     	$(this).closest("div").find("div").css('width', div_width);
-  		$(this).closest("div").find("div").css('max-width', div_width);	
+  		/*$(this).closest("div").find("div").css('max-width', div_width);*/
   	});	
 	    
 	$('.magnific-image').magnificPopup({

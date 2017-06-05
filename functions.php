@@ -174,7 +174,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	if ( $width ) {
 		$img_style = $img_style . ' width:' . (int) $width . 'px ';
 		$div_width = 'width:' . (10 + (int) $width) . 'px; ';
-		$div_style = $div_style. $div_width . ' max-' . $div_width;
+		$div_style = $div_style. $div_width . '  max-width:100%; ';
 	}
 	$div_style = $div_style . '" ';
 	$img_style = $img_style . '" ';
@@ -561,7 +561,7 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 	
 	$result = $before_video . ':
 
-<div style="width:500px; max-width:500px; display:block; margin: auto"> ' . do_shortcode($youtube_shortcode) . '</div>';
+<div style="width:500px; max-width:100%; display:block; margin: auto"> ' . do_shortcode($youtube_shortcode) . '</div>';
 
 	return $result;
 }
