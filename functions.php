@@ -227,21 +227,6 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
 
 /**
- * generate_img_source_name_href
- */
-function generate_img_source_name_href($src, $id) {
-	switch ($src) {
-    	case "wiki":
-        	return 'Wikipedia Commons|https://commons.wikimedia.org/wiki/File:' . $id;
-    	case "RC":
-        	return 'The Royal Collection|https://www.royalcollection.org.uk/collection/' . $id;
-    	case "Met":
-        	return 'The Metropolitan Museum of Art|http://www.metmuseum.org/art/collection/search/' . $id;
-	}
-	return $src . '|' . $id;
-}
-
-/**
  * yu_image
  */
 function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
@@ -266,259 +251,47 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
 
 /**
- * yu_caption_ArtUK
+ * generate_img_source_name_href
  */
-function MY_VERY_OWN_img_caption_shortcode_ArtUK($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'Art UK', 'http://artuk.org/discover/artworks/' . $id);	
-	return $result;
+function generate_img_source_name_href($src, $id) {
+	switch ($src) {
+    	case "wiki":
+        	return 'Wikipedia Commons|https://commons.wikimedia.org/wiki/File:' . $id;
+    	case "RC":
+        	return 'The Royal Collection|https://www.royalcollection.org.uk/collection/' . $id;
+    	case "Met":
+        	return 'The Metropolitan Museum of Art|http://www.metmuseum.org/art/collection/search/' . $id;
+    	case "ArtUK": // yu_caption_ArtUK
+        	return 'Art UK|http://artuk.org/discover/artworks/' . $id;	
+		case "SDK": // yu_caption_SDK
+        	return '© Staatliche Kunstsammlungen Dresden|http://skd-online-collection.skd.museum/en/contents/showSearch?id=' . $id;	
+		case "BM": // yu_caption_BM
+        	return '© Trustees of the British Museum|http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=' . $id . '&partId=1';	
+		case "LA": // yu_caption_LA
+        	return 'The Los Angeles County Museum of Art|http://collections.lacma.org/node/' . $id;	
+		case "Getty": // yu_caption_Getty
+        	return 'The J. Paul Getty Museum Open Contents Program|http://www.getty.edu/art/collection/objects/' . $id;	
+		case "MFA": // yu_caption_MFA
+        	return 'Museum of Fine Arts, Boston|http://www.mfa.org/collections/object/' . $id;	
+		case "WAM": // yu_caption_WAM  
+        	return 'The Walters Art Museum|http://art.thewalters.org/detail/' . $id;	
+		case "KHM": // yu_caption_KHM  
+        	return 'Kunsthistorisches Museum Vienna|https://www.khm.at/objektdb/detail/' . $id;
+		case "HAM":// yu_caption_HAM  
+        	return  'Harvard Art Museums|http://www.harvardartmuseums.org/collections/object/' . $id;
+		case "CBd": // yu_caption_CBd  
+			return 'Campbell Bonner Magical Gems Database (CBd)|http://www2.szepmuveszeti.hu/talismans/cbd/' . $id;
+		case "RMN": // yu_caption_RMN  
+			return 'Réunion des Musées Nationaux - Grand Palais|http://www.photo.rmn.fr/archive/' . $id . '.html';	
+		case "HM": // yu_caption_HM  
+			return '© The State Hermitage Museum, St. Petersburg|https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/' . $id . '/?lng=en';	
+		case "VA": // yu_caption_VA  
+			return '© Victoria and Albert Museum, London|http://collections.vam.ac.uk/item/' . $id . '/';
+		case "Seals": // yu_caption_Seals 
+			return 'seals @ mernick.org.uk/seals|http://www.mernick.org.uk/seals/' . $id;	
+	}
+	return $src . '|http://' . $src . '/' . $id;
 }
-add_shortcode('yu_caption_ArtUK', 'MY_VERY_OWN_img_caption_shortcode_ArtUK');
-
-/**
- * yu_caption_SDK
- */
-function MY_VERY_OWN_img_caption_shortcode_SDK($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, '© Staatliche Kunstsammlungen Dresden',
-                                   'http://skd-online-collection.skd.museum/en/contents/showSearch?id=' . $id);	
-	return $result;
-}
-add_shortcode('yu_caption_SDK', 'MY_VERY_OWN_img_caption_shortcode_SDK');
-
- /**
- * yu_caption_BM
- */
-function MY_VERY_OWN_img_caption_shortcode_BM($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, '© Trustees of the British Museum', 
-									'http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=' . $id . '&partId=1');	
-	return $result;
-}
-add_shortcode('yu_caption_BM', 'MY_VERY_OWN_img_caption_shortcode_BM');
-
- /**
- * yu_caption_LA
- */
-function MY_VERY_OWN_img_caption_shortcode_LA($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Los Angeles County Museum of Art', 
-									'http://collections.lacma.org/node/' . $id);	
-	return $result;
-}
-add_shortcode('yu_caption_LA', 'MY_VERY_OWN_img_caption_shortcode_LA');
-
-
-/**
- * yu_caption_Getty
- */
-function MY_VERY_OWN_img_caption_shortcode_Getty($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'The J. Paul Getty Museum Open Contents Program', 
-									'http://www.getty.edu/art/collection/objects/' . $id);	
-	return $result;
-}
-add_shortcode('yu_caption_Getty', 'MY_VERY_OWN_img_caption_shortcode_Getty');
-
-
-/**
- * yu_caption_MFA
- */
-function MY_VERY_OWN_img_caption_shortcode_MFA($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'Museum of Fine Arts, Boston', 
-									'http://www.mfa.org/collections/object/' . $id);	
-	return $result;
-}
-add_shortcode('yu_caption_MFA', 'MY_VERY_OWN_img_caption_shortcode_MFA');
-
-
-/**
- * yu_caption_WAM  
- */
-function MY_VERY_OWN_img_caption_shortcode_WAM($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Walters Art Museum', 
-									'http://art.thewalters.org/detail/' . $id);	
-	return $result;
-}
-add_shortcode('yu_caption_WAM', 'MY_VERY_OWN_img_caption_shortcode_WAM');
-
-/**
- * yu_caption_KHM  
- */
-function MY_VERY_OWN_img_caption_shortcode_KHM($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'Kunsthistorisches Museum Vienna', 
-									'https://www.khm.at/objektdb/detail/' . $id);
-	return $result;
-}
-add_shortcode('yu_caption_KHM', 'MY_VERY_OWN_img_caption_shortcode_KHM');
-
-/**
- * yu_caption_HAM  
- */
-function MY_VERY_OWN_img_caption_shortcode_HAM($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'Harvard Art Museums', 
-									'http://www.harvardartmuseums.org/collections/object/' . $id);
-	return $result;
-}
-add_shortcode('yu_caption_HAM', 'MY_VERY_OWN_img_caption_shortcode_HAM');
-
-/**
- * yu_caption_CBd  
- */
-function MY_VERY_OWN_img_caption_shortcode_CBd($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'Campbell Bonner Magical Gems Database (CBd)', 
-									'http://www2.szepmuveszeti.hu/talismans/cbd/' . $id);
-	return $result;
-}
-add_shortcode('yu_caption_CBd', 'MY_VERY_OWN_img_caption_shortcode_CBd');
-
-
-/**
- * yu_caption_RMN  
- */
-function MY_VERY_OWN_img_caption_shortcode_RMN($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'Réunion des Musées Nationaux - Grand Palais', 
-									'http://www.photo.rmn.fr/archive/' . $id . '.html');	
-	return $result;
-}
-add_shortcode('yu_caption_RMN', 'MY_VERY_OWN_img_caption_shortcode_RMN');
-
-/**
- * yu_caption_HM  
- */
-function MY_VERY_OWN_img_caption_shortcode_HM($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, '© The State Hermitage Museum, St. Petersburg', 
-									'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/' . $id . '/?lng=en');	
-	return $result;
-}
-add_shortcode('yu_caption_HM', 'MY_VERY_OWN_img_caption_shortcode_HM');
-
-/**
- * yu_caption_VA  
- */
-function MY_VERY_OWN_img_caption_shortcode_VA($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, '© Victoria and Albert Museum, London', 
-									'http://collections.vam.ac.uk/item/' . $id . '/');	
-	return $result;
-}
-add_shortcode('yu_caption_VA', 'MY_VERY_OWN_img_caption_shortcode_VA');
-
-/**
- * yu_caption_Seals 
- */
-function MY_VERY_OWN_img_caption_shortcode_Seals($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'seals @ mernick.org.uk/seals', 
-									'http://www.mernick.org.uk/seals/' . $id);	
-	return $result;
-}
-add_shortcode('yu_caption_Seals', 'MY_VERY_OWN_img_caption_shortcode_Seals');
 
 /**
  * MY_VERY_OWN_wiki_link
