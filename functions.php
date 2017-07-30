@@ -227,55 +227,43 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
 
 /**
- * yu_caption_wiki
+ * generate_img_source_name_href
  */
-function MY_VERY_OWN_img_caption_shortcode_wiki($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'filename' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'Wikipedia Commons', 'https://commons.wikimedia.org/wiki/File:' . $filename);	
-	return $result;
+function generate_img_source_name_href($src, $id) {
+	switch ($src) {
+    	case "wiki":
+        	return 'Wikipedia Commons|https://commons.wikimedia.org/wiki/File:' . $id;
+    	case "RC":
+        	return 'The Royal Collection|https://www.royalcollection.org.uk/collection/' . $id;
+    	case "Met":
+        	return 'The Metropolitan Museum of Art|http://www.metmuseum.org/art/collection/search/' . $id;
+	}
+	return $src . '|' . $id;
 }
-add_shortcode('yu_caption_wiki', 'MY_VERY_OWN_img_caption_shortcode_wiki');
 
 /**
- * yu_caption_RC
+ * yu_image
  */
-function MY_VERY_OWN_img_caption_shortcode_RC($attr, $content = null) {
+function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 
 	extract(shortcode_atts(array(
 		'height' => '',
 		'width'	=> '',
 		'caption' => '',
+		'src' => '',
 		'id' => ''
 	), $attr));
+	
+	$name_href = generate_img_source_name_href($src, $id);
+	
+	$separator_line = strpos($name_href, '|');
+	$src_name = substr($name_href, 0, $separator_line);
+	$src_href = substr($name_href, $separator_line+1);	
 
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Royal Collection', 'https://www.royalcollection.org.uk/collection/' . $id);	
+	$result = generate_caption_HTML($content, $height, $width, $caption, $src_name, $src_href);	
 	return $result;
 }
-add_shortcode('yu_caption_RC', 'MY_VERY_OWN_img_caption_shortcode_RC');
-
-/**
- * yu_caption_Met
- */
-function MY_VERY_OWN_img_caption_shortcode_Met($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'id' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, 'The Metropolitan Museum of Art', 'http://www.metmuseum.org/art/collection/search/' . $id);	
-	return $result;
-}
-add_shortcode('yu_caption_Met', 'MY_VERY_OWN_img_caption_shortcode_Met');
+add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
 
 /**
  * yu_caption_ArtUK
@@ -513,6 +501,24 @@ function MY_VERY_OWN_img_caption_shortcode_VA($attr, $content = null) {
 	return $result;
 }
 add_shortcode('yu_caption_VA', 'MY_VERY_OWN_img_caption_shortcode_VA');
+
+/**
+ * yu_caption_Seals 
+ */
+function MY_VERY_OWN_img_caption_shortcode_Seals($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'height' => '',
+		'width'	=> '',
+		'caption' => '',
+		'id' => ''
+	), $attr));
+
+	$result = generate_caption_HTML($content, $height, $width, $caption, 'seals @ mernick.org.uk/seals', 
+									'http://www.mernick.org.uk/seals/' . $id);	
+	return $result;
+}
+add_shortcode('yu_caption_Seals', 'MY_VERY_OWN_img_caption_shortcode_Seals');
 
 /**
  * MY_VERY_OWN_wiki_link
