@@ -160,7 +160,7 @@ add_shortcode('j_lines', 'MY_VERY_OWN_J_lines');
  *                          Image Caption                                     *
  *****************************************************************************/
  
-function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf)
+function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp)
 {
 	if ((! $width ) && (! $height ))
 		$height = 200;
@@ -194,6 +194,9 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 		$invisible_a_to_check_broken_links = ' <a href="' . $sourcehrf . '" style="display:none">Invisible, to help broken links check</a>';
 	else
 		$invisible_a_to_check_broken_links = '';
+	
+	if ( $comp )
+		 $caption = 'COMPARANDUM: ' . $caption;
 
 	return '<div ' . $div_style . ' class="outside_image"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
@@ -218,10 +221,11 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 		'width'	=> '',
 		'caption' => '',
 		'sourcename' => '', 
-		'sourcehrf' => ''
+		'sourcehrf' => '',
+		'comp' => ''
 	), $attr));
 
-	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf);	
+	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf, $comp);	
 	return $result;
 }
 add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
@@ -236,7 +240,8 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 		'width'	=> '',
 		'caption' => '',
 		'src' => '',
-		'id' => ''
+		'id' => '',
+		'comp' => ''
 	), $attr));
 	
 	$name_href = generate_img_source_name_href($src, $id);
@@ -245,7 +250,7 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 	$src_name = substr($name_href, 0, $separator_line);
 	$src_href = substr($name_href, $separator_line+1);	
 
-	$result = generate_caption_HTML($content, $height, $width, $caption, $src_name, $src_href);	
+	$result = generate_caption_HTML($content, $height, $width, $caption, $src_name, $src_href, $comp);	
 	return $result;
 }
 add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
