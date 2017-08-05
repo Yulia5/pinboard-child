@@ -297,7 +297,7 @@ function generate_img_source_name_href($src, $id) {
 		case "numisbids": 
 			return 'NumisBids|https://www.numisbids.com/n.php?p=lot&' . $id;	
 		case "ikmk": 
-			return 'Münzkabinett, Staatliche Museen zu Berlin|http://ikmk.smb.museum/object?lang=en&' . $id;	
+			return 'Munzkabinett, Staatliche Museen zu Berlin|http://ikmk.smb.museum/object?lang=en&id=' . $id;	
 	}
 	return $src . '|http://' . $src . '/' . $id;
 }
