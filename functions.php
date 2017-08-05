@@ -294,6 +294,10 @@ function generate_img_source_name_href($src, $id) {
 			return '© Victoria and Albert Museum, London|http://collections.vam.ac.uk/item/' . $id . '/';
 		case "Seals": // yu_caption_Seals 
 			return 'seals @ mernick.org.uk/seals|http://www.mernick.org.uk/seals/' . $id;	
+		case "numisbids": 
+			return 'NumisBids|https://www.numisbids.com/n.php?p=lot&' . $id;	
+		case "ikmk": 
+			return 'Münzkabinett, Staatliche Museen zu Berlin|http://ikmk.smb.museum/object?lang=en&' . $id;	
 	}
 	return $src . '|http://' . $src . '/' . $id;
 }
