@@ -303,6 +303,20 @@ function generate_img_source_name_href($src, $id) {
 }
 
 /**
+ * MY_VERY_OWN_h
+ */
+function MY_VERY_OWN_h($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'a' => ''
+	), $attr));
+	
+	$result = '<h3><a name="' . $a . '"><span style="font-weight:normal;">' . v . '</span></a></h3>';	
+	return $result;
+}
+add_shortcode('yu_h', 'MY_VERY_OWN_h');
+
+/**
  * MY_VERY_OWN_wiki_link
  */
 function MY_VERY_OWN_wiki_link($attr, $content = null) {
