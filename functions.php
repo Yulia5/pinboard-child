@@ -269,7 +269,7 @@ function generate_img_source_name_href($src, $id) {
     	case "ArtUK": // yu_caption_ArtUK
         	return 'Art UK|http://artuk.org/discover/artworks/' . $id;	
 		case "SDK": // yu_caption_SDK
-        	return '© Staatliche Kunstsammlungen Dresden|http://skd-online-collection.skd.museum/en/contents/showSearch?id=' . $id;	
+        	return '© Staatliche Kunstsammlungen Dresden|https://skd-online-collection.skd.museum/Details/Index/' . $id;	
 		case "BM": // yu_caption_BM
         	return '© Trustees of the British Museum|http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=' . $id . '&partId=1';	
 		case "LA": // yu_caption_LA
@@ -311,7 +311,7 @@ function MY_VERY_OWN_h($attr, $content = null) {
 		'a' => ''
 	), $attr));
 	
-	$result = '<h3><a name="' . $a . '"><span style="font-weight:normal;">' . v . '</span></a></h3>';	
+	$result = '<h3><a name="' . $a . '"><span style="font-weight:normal;">' . $content . '</span></a></h3>';	
 	return $result;
 }
 add_shortcode('yu_h', 'MY_VERY_OWN_h');
