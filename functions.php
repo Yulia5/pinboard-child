@@ -298,6 +298,8 @@ function generate_img_source_name_href($src, $id) {
 			return 'NumisBids|https://www.numisbids.com/n.php?p=lot&' . $id;	
 		case "ikmk": 
 			return 'Munzkabinett, Staatliche Museen zu Berlin|http://ikmk.smb.museum/object?lang=en&id=' . $id;	
+		case "RJK": 
+			return 'Rijksmuseum Amsterdam|https://www.rijksmuseum.nl/en/collection/' . $id;	
 	}
 	return $src . '|http://' . $src . '/' . $id;
 }
