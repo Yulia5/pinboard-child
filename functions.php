@@ -185,6 +185,9 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	}
 	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
+	if ( substr( $hrf, 0, 7 ) !== "http://" ) {
+		$hrf = 'http://www.yu51a5.com/wp-content/uploads/' . $hrf;
+	}
 	$hrf = '"' . $hrf  . '" ';
 	
 	$alt = ' alt="' . $caption_no_br . '" ';
@@ -301,7 +304,7 @@ function generate_img_source_name_href($src, $id) {
 		case "RJK": 
 			return 'Rijksmuseum Amsterdam|https://www.rijksmuseum.nl/en/collection/' . $id;	
 	}
-	return $src . '|http://' . $src . '/' . $id;
+	return $src . '|';
 }
 
 /**
