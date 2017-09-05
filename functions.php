@@ -55,7 +55,7 @@ function DE_arrowD_shortcode($attr, $content = null) {
 	), $attr));	
  
 	return '<img style="clear:both; align' . $halign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/2015/01/arrowd.png" alt="" width="92" height="100" />';
+	. '" src="http://www.yu51a5.com/wp-content/uploads/arrowd.png" alt="" width="92" height="100" />';
 }
 
 add_shortcode('DE_arrow', 'DE_arrow_shortcode');
@@ -79,7 +79,7 @@ function DE_arrow_shortcode($attr, $content = null) {
 	), $attr));
 	
 	return '<img style="clear:both; vertical-align: ' . $valign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/2016/03/arrow' . $dir . '.png" alt="" width="100" />';
+	. '" src="http://www.yu51a5.com/wp-content/uploads/arrow' . $dir . '.png" alt="" width="100" />';
 }
 
 /******************************************************************************
@@ -185,6 +185,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	}
 	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
+	$hrf = trim($hrf, " ");
 	if ( substr( $hrf, 0, 7 ) !== "http://" ) {
 		$hrf = 'http://www.yu51a5.com/wp-content/uploads/' . $hrf;
 	}
