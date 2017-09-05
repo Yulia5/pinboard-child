@@ -390,4 +390,20 @@ function MY_VERY_OWN_amazon($attr, $content = null) {
 }
 add_shortcode('yu_amazon', 'MY_VERY_OWN_amazon');
 
+/**
+ * Remove standard image sizes so that these sizes are not
+ * created during the Media Upload process
+ *
+ * https://developer.wordpress.org/reference/functions/remove_image_size/
+ */
+function pinboard_child_theme_setup( $sizes) {
+		
+	$image_size_names = array('thumbnail', 'medium', 'large', 'slider-thumb', 'blog-thumb', 'teaser-thumb', 'gallery-1-thumb', 'gallery-2-thumb', 'gallery-3-thumb', 'image-thumb', 'video-thumb');
+	$image_size_names_length = count($image_size_names);
+	for($x = 0; $x < $image_size_names_length; $x++) {
+    	remove_image_size($image_size_names[$x]);
+	}	
+}
+add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
+
 ?>
