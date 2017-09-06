@@ -113,21 +113,21 @@ img .center {
 	vertical-align:top; 
 }
 
-.pwithinlineimgs:before,
-.pwithinlineimgs:after {
+.flushright:before,
+.flushright:after {
   display: table;
   content: "";
 }
 
-.pwithinlineimgs:after {
+.flushright:after {
   clear: both;
 }
 
-.pwithinlineimgs .images, .pwithinlineimgs .outside_image {
+.flushright .images, .flushright .outside_image {
 	float: right;
 }
 
-.pwithinlineimgs .images .outside_image {
+.flushright .images .outside_image {
 	float: right;
 }
 
