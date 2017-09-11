@@ -22,21 +22,46 @@ $(function() {
 
 jQuery(document).ready(function($) {
 	
-	$('.images div a img').on('load', function() {
-		/*$(this).css('height', $(this).closest('.images').attr('imgheight'));*/
-    	var old_height = $(this).height();
-		var old_width = $(this).width();
+	window.onload = function() {
+		$('img').each(function(i, obj) {
+	    resize_an_image($(this));
+		});
+	}
+	
+	window.onresize = function() {
+		$('img').each(function(i, obj) {
+	    resize_an_image($(this));
+		});
+	}
+	
+	function resize_an_image(an_image) {    
+    	var old_height = parseFloat(an_image.height());
+		var old_width = parseFloat(an_image.width());
+		var new_height = old_height;
+		var new_width = old_width;
 		
-		$(this).css('height', $(this).closest('.images').attr('imgheight'));
-		var new_height = $(this).height();
-		var div_width = ((Math.floor(new_height * old_width / old_height)).toString() +'px');
-		
-		/*$(this).closest("div").css('width', div_width);
-  		$(this).closest("div").css('max-width', div_width);*/
-		
-    	$(this).closest("div").find("div").css('width', div_width);
-  		/*$(this).closest("div").find("div").css('max-width', div_width);*/
-  	});	
+  		if ( an_image.closest('.images').length ) {
+    		var imgheight = an_image.closest('.images').attr('imgheight');
+			if (typeof imgheight !== typeof undefined && imgheight !== false) {
+    			new_height = parseFloat(imgheight);
+            	if (new_height !== old_height) {
+					new_width = Math.floor(old_width * (new_height / old_height));
+			    } 
+        	}
+		}    
+		var max_width = document.body.clientWidth;      
+    	if (max_width < new_width) {
+			new_height = Math.floor(new_height * (max_width / new_width));
+			new_width = max_width;
+		}
+	  	if (new_height !== old_height) {
+			an_image.css('height', new_height);
+		}
+		if (new_width !== old_width) {
+			an_image.css('width', new_width);
+		}
+    	return 0;
+	}
 	    
 	$('.magnific-image').magnificPopup({
 		type : 'image',
