@@ -49,7 +49,14 @@ jQuery(document).ready(function($) {
 			    } 
         	}
 		}    
-		var max_width = document.body.clientWidth;      
+		var max_width = document.body.clientWidth;
+  		if ( an_image.closest('.entry').length ) {
+    		var max_width_attr = an_image.closest('.entry').attr('width');
+			if (typeof max_width_attr !== typeof undefined && max_width_attr !== false) {
+    			max_width = parseFloat(max_width_attr);
+        	} 			
+  		}		
+		      
     	if (max_width < new_width) {
 			new_height = Math.floor(new_height * (max_width / new_width));
 			new_width = max_width;
@@ -60,6 +67,10 @@ jQuery(document).ready(function($) {
 		if (new_width !== old_width) {
 			an_image.css('width', new_width);
 		}
+		an_image.closest('.outside_image').children('.wp-caption-text').each(function () {
+    			$(this).css('width', new_width); // "this" is the current element in the loop
+			});
+		
     	return 0;
 	}
 	    

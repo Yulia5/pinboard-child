@@ -71,6 +71,10 @@ img, a img, .entry-content a img {
 	box-shadow: none;
 }
 
+.outside_image {
+    display:inline-block !important;
+}
+
 a {
 	cursor:pointer;
 	text-decoration:none;
