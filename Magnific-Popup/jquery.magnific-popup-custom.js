@@ -2,38 +2,20 @@
  * Source: http://dimsemenov.com/plugins/magnific-popup/
  * Copyright (c) 2016 Dmitry Semenov; */
 
-	
-
-    
-	/*
-$(function() {
-  $('.images div a img').on('load', function() {
-	$(this).style.height = $(this).closest('.images').attr('imgheight');
-  	var imgheight = $(this).closest('.images').attr('imgheight');
-  	var imgwidth = $(this).width * imgheight / $(this).height;
-  	alert($(this).width);
-  	alert(imgheight);
-  	alert($(this).height);
-  	/*this.parent().style.width = Math.floor($(this).closest('.images').attr('imgheight')).toString() +'px';
-  	
-    $(this).css('height', $(this).closest('.images').attr('imgheight'));
-  });
-});*/
-
 jQuery(document).ready(function($) {
 	
-	window.onload = function() {
-		$('img').each(function(i, obj) {
-	    resize_an_image($(this));
-		});
-	}
-	
 	window.onresize = function() {
-		$('img').each(function(i, obj) {
-	    resize_an_image($(this));
+		$('.images img').each(function(i, obj) {
+	    	resize_an_image($(this));
 		});
 	}
 	
+	$('.images img').each(function() {
+    	$(this).load(function() {
+      		resize_an_image($(this));
+    	});
+ 	});
+
 	function resize_an_image(an_image) {    
     	var old_height = parseFloat(an_image.height());
 		var old_width = parseFloat(an_image.width());
