@@ -55,7 +55,7 @@ function DE_arrowD_shortcode($attr, $content = null) {
 	), $attr));	
  
 	return '<img style="clear:both; align' . $halign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/arrowd.png" alt="" width="92" height="100" />';
+	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrowd.png" alt="" width="92" height="100" />';
 }
 
 add_shortcode('DE_arrow', 'DE_arrow_shortcode');
@@ -79,7 +79,7 @@ function DE_arrow_shortcode($attr, $content = null) {
 	), $attr));
 	
 	return '<img style="clear:both; vertical-align: ' . $valign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/arrow' . $dir . '.png" alt="" width="100" />';
+	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrow' . $dir . '.png" alt="" width="100" />';
 }
 
 /******************************************************************************
@@ -217,9 +217,12 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
         if ( ! empty( $post ) ) {
             $folder_name = post_ID_to_folder_name($post->ID);
         }
-    }    
-    $index_slash = strrpos($hrf, "/");
-    $hrf = '"' . substr($hrf, 0, $index_slash) . "/" . $folder_name . substr($hrf, $index_slash)  . '" ';
+    }
+    if (!! $folder_name) {
+        $index_slash = strrpos($hrf, "/");
+        $hrf = substr($hrf, 0, $index_slash) . "/" . $folder_name . substr($hrf, $index_slash);
+    }
+    $hrf = '"' . $hrf . '" ';
 	
 	$alt = ' alt="' . $caption_no_br . '" ';
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
