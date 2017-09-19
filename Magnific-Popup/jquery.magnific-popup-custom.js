@@ -37,19 +37,6 @@ jQuery(document).ready(function($) {
     }
 
 
-    $('img').each(function() {
-        var folder_name = get_attribute($(this), 'folder_name');
-        if (folder_name === false) {
-            folder_name = get_attribute($(this).closest('.root_folder_img'), 'folder_name');
-        }
-        if (folder_name !== false && folder_name !== "") {
-            var an_src = $(this).attr('src');
-            var index_slash = an_src.lastIndexOf("/");
-            an_src = an_src.substring(0, index_slash + 1) + folder_name + "/" + an_src.substring(index_slash + 1);
-            $(this).attr('src', an_src);
-            $(this).closest('a').attr('href', an_src);
-        }
-    });
 
     function resize_an_image(an_image) {
 

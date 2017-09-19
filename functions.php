@@ -160,7 +160,32 @@ add_shortcode('j_lines', 'MY_VERY_OWN_J_lines');
  *                          Image Caption                                     *
  *****************************************************************************/
  
-function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp)
+function post_ID_to_folder_name($post_id)
+{
+    switch ($post_id) {
+        case 376: 
+            return 'yoga';
+        case 8: 
+            return 'similar_different';
+        case 1895: 
+            return 'rj';
+        case 1522: 
+            return 'horsemen';
+        case 13: 
+            return 'hamlet';
+        case 10: 
+            return 'goldenbronzehorsemen';
+        case 205: 
+            return 'germany';
+        case 134: 
+            return 'berets';
+        case 652: 
+            return 'allchurch';
+    }
+    return '';
+} 
+ 
+function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name)
 {
 	if ((! $width ) && (! $height ))
 		$height = 200;
@@ -187,7 +212,14 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	if ( substr( $hrf, 0, 7 ) !== "http://" ) {
 		$hrf = 'http://www.yu51a5.com/wp-content/uploads/' . $hrf;
 	}
-	$hrf = '"' . $hrf  . '" ';
+    if (! $folder_name) {
+        $post = get_post();
+        if ( ! empty( $post ) ) {
+            $folder_name = post_ID_to_folder_name($post->ID);
+        }
+    }    
+    $index_slash = strrpos($hrf, "/");
+    $hrf = '"' . substr($hrf, 0, $index_slash) . "/" . $folder_name . substr($hrf, $index_slash)  . '" ';
 	
 	$alt = ' alt="' . $caption_no_br . '" ';
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
@@ -201,7 +233,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 
 	return '<div class="outside_image"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
-	. '<img '. $img_style . 'src=' . $hrf . $alt . $alt2. '/></a>' 
+	. '<img class="img-responsive" '. $img_style . 'src=' . $hrf . $alt . $alt2. '/></a>' 
 	. '<div class="wp-caption-text">' . $caption . '</div>'
 	. $invisible_a_to_check_broken_links . '</div>';
 }
@@ -223,10 +255,11 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 		'caption' => '',
 		'sourcename' => '', 
 		'sourcehrf' => '',
-		'comp' => ''
+		'comp' => '', 
+		'folder_name' => ''
 	), $attr));
 
-	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf, $comp);	
+	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name);	
 	return $result;
 }
 add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
@@ -242,7 +275,8 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 		'caption' => '',
 		'src' => '',
 		'id' => '',
-		'comp' => ''
+		'comp' => '', 
+        'folder_name' => ''
 	), $attr));
 	
 	$name_href = generate_img_source_name_href($src, $id);
@@ -251,7 +285,7 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 	$src_name = substr($name_href, 0, $separator_line);
 	$src_href = substr($name_href, $separator_line+1);	
 
-	$result = generate_caption_HTML($content, $height, $width, $caption, $src_name, $src_href, $comp);	
+	$result = generate_caption_HTML($content, $height, $width, $caption, $src_name, $src_href, $comp, $folder_name);	
 	return $result;
 }
 add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
@@ -394,190 +428,181 @@ add_shortcode('yu_amazon', 'MY_VERY_OWN_amazon');
  * https://developer.wordpress.org/reference/functions/remove_image_size/
  */
 function pinboard_child_theme_setup( $sizes) {
-		
+	/* remove all pre-existing image sizes */	
 	$image_size_names = array('thumbnail', 'medium', 'large', 'slider-thumb', 'blog-thumb', 'teaser-thumb', 'gallery-1-thumb', 'gallery-2-thumb', 'gallery-3-thumb', 'image-thumb', 'video-thumb');
 	$image_size_names_length = count($image_size_names);
 	for($x = 0; $x < $image_size_names_length; $x++) {
     	remove_image_size($image_size_names[$x]);
-	}	
+	}
+	/* add image sizes adapted to the most frequently encountered cases - resizing by height */
+	$image_heights = [150, 180, 200, 220, 250, 300, 400];	
+	$image_heights_count = count($image_heights);
+	for($x = 0; $x < $image_heights_count; $x++) {
+		add_image_size( 'h' . strval($image_heights[$x]), 9999, $image_heights[$x] );
+	}
+	add_image_size( 'w700', 700);
 }
 add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
 
-/*add_filter( 'wp_calculate_image_srcset', 'yu_add_custom_image_srcset', 10, 4 );*/
-function yu_add_custom_image_srcset( $size_array, $image_src, $image_meta, $attachment_id = 0 ) {
-    /**
-     * Let plugins pre-filter the image meta to be able to fix inconsistencies in the stored data.
-     *
-     * @since 4.5.0
-     *
-     * @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
-     * @param array  $size_array    Array of width and height values in pixels (in that order).
-     * @param string $image_src     The 'src' of the image.
-     * @param int    $attachment_id The image attachment ID or 0 if not supplied.
-     */
-    $image_meta = apply_filters( 'wp_calculate_image_srcset_meta', $image_meta, $size_array, $image_src, $attachment_id );
- 
-    if ( empty( $image_meta['sizes'] ) || ! isset( $image_meta['file'] ) || strlen( $image_meta['file'] ) < 4 ) {
-        return false;
-    }
- 
-    $image_sizes = $image_meta['sizes'];
- 
-    // Get the width and height of the image.
-    $image_width = (int) $size_array[0];
-    $image_height = (int) $size_array[1];
- 
-    // Bail early if error/no width.
-    if ( $image_width < 1 ) {
-        return false;
-    }
- 
-    $image_basename = wp_basename( $image_meta['file'] );
- 
-    /*
-     * WordPress flattens animated GIFs into one frame when generating intermediate sizes.
-     * To avoid hiding animation in user content, if src is a full size GIF, a srcset attribute is not generated.
-     * If src is an intermediate size GIF, the full size is excluded from srcset to keep a flattened GIF from becoming animated.
-     
-     * if ( ! isset( $image_sizes['thumbnail']['mime-type'] ) || 'image/gif' !== $image_sizes['thumbnail']['mime-type'] ) {
-     *     $image_sizes[] = array(
-     *         'width'  => $image_meta['width'],
-     *         'height' => $image_meta['height'],
-     *         'file'   => $image_basename,
-     *     );
-     * } elseif ( strpos( $image_src, $image_meta['file'] ) ) {
-     *      return false;
-    }*/
- 
-    // Retrieve the uploads sub-directory from the full size image.
-    $dirname = _wp_get_attachment_relative_path( $image_meta['file'] );
- 
-    if ( $dirname ) {
-        $dirname = trailingslashit( $dirname );
-    }
- 
-    $upload_dir = wp_get_upload_dir();
-    $image_baseurl = trailingslashit( $upload_dir['baseurl'] ) . $dirname;
- 
-    /*
-     * If currently on HTTPS, prefer HTTPS URLs when we know they're supported by the domain
-     * (which is to say, when they share the domain name of the current request).
-     *
-     * if ( is_ssl() && 'https' !== substr( $image_baseurl, 0, 5 ) && parse_url( $image_baseurl, PHP_URL_HOST ) === $_SERVER['HTTP_HOST'] ) {
-     *     $image_baseurl = set_url_scheme( $image_baseurl, 'https' );
-     * }*/
- 
-    /*
-     * Images that have been edited in WordPress after being uploaded will
-     * contain a unique hash. Look for that hash and use it later to filter
-     * out images that are leftovers from previous versions.
-     *
-     * $image_edited = preg_match( '/-e[0-9]{13}/', wp_basename( $image_src ), $image_edit_hash );
-	 * /
- 
-    /**
-     * Filters the maximum image width to be included in a 'srcset' attribute.
-     *
-     * @since 4.4.0
-     *
-     * @param int   $max_width  The maximum image width to be included in the 'srcset'. Default '1600'.
-     * @param array $size_array Array of width and height values in pixels (in that order).
-     */
-    $max_srcset_image_width = apply_filters( 'max_srcset_image_width', 1600, $size_array );
- 
-    // Array to hold URL candidates.
-    $sources = array();
- 
-    /**
-     * To make sure the ID matches our image src, we will check to see if any sizes in our attachment
-     * meta match our $image_src. If no matches are found we don't return a srcset to avoid serving
-     * an incorrect image. See #35045.
-     */
-    $src_matched = false;
- 
-    /*
-     * Loop through available images. Only use images that are resized
-     * versions of the same edit.
-     */
-    foreach ( $image_sizes as $image ) {
-        $is_src = false;
- 
-        // Check if image meta isn't corrupted.
-        if ( ! is_array( $image ) ) {
-            continue;
-        }
- 
-        // If the file name is part of the `src`, we've confirmed a match.
-        if ( ! $src_matched && false !== strpos( $image_src, $dirname . $image['file'] ) ) {
-            $src_matched = $is_src = true;
-        }
- 
-        // Filter out images that are from previous edits.
-        if ( $image_edited && ! strpos( $image['file'], $image_edit_hash[0] ) ) {
-            continue;
-        }
- 
-        /*
-         * Filters out images that are wider than '$max_srcset_image_width' unless
-         * that file is in the 'src' attribute.
-         */
-        if ( $max_srcset_image_width && $image['width'] > $max_srcset_image_width && ! $is_src ) {
-            continue;
-        }
- 
-        // If the image dimensions are within 1px of the expected size, use it.
-        if ( wp_image_matches_ratio( $image_width, $image_height, $image['width'], $image['height'] ) ) {
-            // Add the URL, descriptor, and value to the sources array to be returned.
-            $source = array(
-                'url'        => $image_baseurl . $image['file'],
-                'descriptor' => 'w',
-                'value'      => $image['width'],
-            );
- 
-            // The 'src' image has to be the first in the 'srcset', because of a bug in iOS8. See #35030.
-            if ( $is_src ) {
-                $sources = array( $image['width'] => $source ) + $sources;
-            } else {
-                $sources[ $image['width'] ] = $source;
-            }
-        }
-    }
- 
-    /**
-     * Filters an image's 'srcset' sources.
-     *
-     * @since 4.4.0
-     *
-     * @param array  $sources {
-     *     One or more arrays of source data to include in the 'srcset'.
-     *
-     *     @type array $width {
-     *         @type string $url        The URL of an image source.
-     *         @type string $descriptor The descriptor type used in the image candidate string,
-     *                                  either 'w' or 'x'.
-     *         @type int    $value      The source width if paired with a 'w' descriptor, or a
-     *                                  pixel density value if paired with an 'x' descriptor.
-     *     }
-     * }
-     * @param array  $size_array    Array of width and height values in pixels (in that order).
-     * @param string $image_src     The 'src' of the image.
-     * @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
-     * @param int    $attachment_id Image attachment ID or 0.
-     */
-    $sources = apply_filters( 'wp_calculate_image_srcset', $sources, $size_array, $image_src, $image_meta, $attachment_id );
- 
-    // Only return a 'srcset' value if there is more than one source.
-    if ( ! $src_matched || count( $sources ) < 2 ) {
-        return false;
-    }
- 
-    $srcset = '';
- 
-    foreach ( $sources as $source ) {
-        $srcset .= str_replace( ' ', '%20', $source['url'] ) . ' ' . $source['value'] . $source['descriptor'] . ', ';
-    }
- 
-    return rtrim( $srcset, ', ' );
+add_filter( 'wp_calculate_image_srcset', 'dq_add_custom_image_srcset', 10, 5 );
+function dq_add_custom_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ){
+			
+	error_log('Inside yu_add_custom_image_srcset');
+	$image_basename = wp_basename( $image_meta['file'] );
+    error_log('$image_basename is ' . $image_basename);
+	
+	error_log( print_r( $sources, true ) );
+    error_log( esc_html( get_the_title()));
+
+    error_log('---- ' . $image_basename);
+	
+	
+	//return sources with new srcset value
+	return $sources;
 }
+
+
+
+if ( ! function_exists( 'pinboard_widgets_init' ) ) :
+/**
+ * Registers theme widget areas
+ *
+ * @uses register_sidebar()
+ *
+ * @since Pinboard 1.0
+ */
+function  pinboard_widgets_init() {
+	$title_tag = pinboard_get_option( 'widget_title_tag' );
+	
+	register_sidebar(
+		array(
+			'name' => 'Header',
+			'id' => 'id_sidebar_Header',
+			'description' => 'Displays in the header. Intended exclusively for displaying ads of standard dimentions.',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget -->',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Sidebar Top',
+			'id' => 'id_sidebar_Sidebar_Top',
+			'description' => 'Displays in in the main sidebar stacked at the top.',
+			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget --></div>',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Sidebar Left',
+			'id' => 'id_sidebar_Sidebar_Left',
+			'description' => 'Displays in in the main sidebar floated to the left.',
+			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget --></div>',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Sidebar Right',
+			'id' => 'id_sidebar_Sidebar_Right',
+			'description' => 'Displays in in the main sidebar floated to the right.',
+			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget --></div>',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Sidebar Bottom',
+			'id' => 'id_sidebar_Sidebar_Bottom',
+			'description' => 'Displays in in the main sidebar stacked at the bottom.',
+			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget --></div>',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	$columns = pinboard_get_option( 'footer_columns' );
+	if( 1 == $columns )
+		$grid_class = 'onecol';
+	elseif( 2 == $columns )
+		$grid_class = 'twocol';
+	elseif( 3 == $columns )
+		$grid_class = 'threecol';
+	elseif( 4 == $columns )
+		$grid_class = 'fourcol';
+	register_sidebar(
+		array(
+			'name' => 'Footer',
+			'id' => 'id_sidebar_Footer',
+			'description' => 'Displays in in the footer area.',
+			'before_widget' => '<div class="column ' . $grid_class . '"><aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget --></div>',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => '404 Page',
+			'id' => 'id_sidebar_404_Page',
+			'description' => 'Displays on 404 Pages in the content area.',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget -->',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Wide',
+			'id' => 'id_sidebar_Wide',
+			'description' => 'Displays on the front page and spans full width.',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget -->',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	$columns = pinboard_get_option( 'boxes_columns' );
+	if( 1 == $columns )
+		$grid_class = 'onecol';
+	elseif( 2 == $columns )
+		$grid_class = 'twocol';
+	elseif( 3 == $columns )
+		$grid_class = 'threecol';
+	elseif( 4 == $columns )
+		$grid_class = 'fourcol';
+	register_sidebar(
+		array(
+			'name' => 'Boxes',
+			'id' => 'id_sidebar_Boxes',
+			'before_widget' => '<div class="column ' . $grid_class . '"><aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget --></div>',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Footer Wide',
+			'id' => 'id_sidebar_Footer_Wide',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside><!-- .widget -->',
+			'before_title' => '<' . $title_tag . ' class="widget-title">',
+			'after_title' => '</' . $title_tag . '>'
+		)
+	);
+}
+endif;
+
+add_action( 'widgets_init', 'pinboard_widgets_init' );
 
 ?>
