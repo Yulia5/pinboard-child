@@ -234,14 +234,9 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	if ( $comp )
 		 $caption = 'COMPARANDUM: ' . $caption;
     
-    $attachment_id = get_post_thumbnail_id( $post->ID ); 
-    $img_src = wp_get_attachment_image_url( $attachment_id, 'cover-size' ); 
-    $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'cover-size' );
-    
-
 	return '<div class="outside_image"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
-	. '<img class="img-responsive" '. $img_style . 'src=' . $hrf . $alt . $alt2. '/></a>' 
+	. '<img '. $img_style . 'src=' . $hrf . $alt . $alt2. '/></a>' 
 	. '<div class="wp-caption-text">' . $caption . '</div>'
 	. $invisible_a_to_check_broken_links . '</div>';
 }
@@ -455,10 +450,16 @@ add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
 /* got images metas given their names and folders */
 function get_images_meta_id( $filenames ) {
     
+    $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
+    $an_upload_dir_len = strlen($an_upload_dir);
+    
     $meta_query_array = array('relation' => 'OR');
     foreach ( $filenames as $fn ) {
+        if (strpos($fn, $an_upload_dir) !== 0) {
+            continue;
+        }        
         array_push($meta_query_array, array(
-                'value'   => '"' . $fn . '"',
+                'value'   => '"' . substr($fn, $an_upload_dir_len) . '"',
                 'compare' => 'LIKE',
                 'key'     => '_wp_attachment_metadata',
             ));
@@ -497,67 +498,35 @@ function get_images_meta_id( $filenames ) {
  */
 function yu_make_content_images_responsive( $content ) {
     error_log( " in wp_make_content_images_responsive" );
-     error_log( " content is " . $content );   
-    if ( ! preg_match_all( '/\[(yu_image|yu_caption)([^\[]+)\]([\s]*)([^\[]+)(?<!\s)([\s]*)\[/', $content, $matches ) ) { // /<img [^>]+>/
+    error_log( " content is " . $content );   
+    if ( ! preg_match_all( '/<img[^>]+src\s*=\s*\"([^\"]*)\"([^>]*)>/', $content, $matches ) ) { // /<img [^>]+>/
         return $content;
     }
     error_log( " 2. in wp_make_content_images_responsive" );
+    error_log( print_r($matches, true) );
 
-    foreach( $matches[4] as $image ) {
+    foreach( $matches[1] as $image ) {
         error_log( '*'. $image . '*' );  
     }
          
-    $image_count = count($matches[0]);
-    for($x = 0; $x < $image_count; $x++) {
-        $images_with_folder[$x] = $matches[4][$x];
-        preg_match('/folder_name(\s*)=(\s*)"[^"]+"/', $matches[0][$x], $matches_folder_name);
-        error_log('count($matches_folder_name) is ' . count($matches_folder_name));
-               
-        if (count($matches_folder_name) === 0) {
-            $post = get_post();
-            if ( ! empty( $post ) ) {
-                $folder_name = post_ID_to_folder_name($post->ID);
-            }
-            else {
-                $folder_name = false;
-            }
-        } else {
-            $folder_name = $matches_folder_name[-1];
-        }
-        if (!! $folder_name) {
-            $images_with_folder[$x] = $folder_name . "/" . $images_with_folder[$x];
-        }       
-    }
-    $image_metas = get_images_meta_id( $images_with_folder );
+    $image_metas = get_images_meta_id( $matches[1] );
     
-    $selected_images = $attachment_ids = array();
+    $selected_images_srcset = $attachment_ids = array();
     
     foreach ($image_metas as $image_with_folder => $image_meta) {        
         $attachment_id = $image_meta['attachment_id'];
-        error_log('wp_upload_dir() is ' . print_r(wp_upload_dir(), true) );
         $image_src =  '<img src="' . $image_with_folder . '">';
         error_log('image_src is ' . $image_src);
-        error_log( 'wp_image_add_srcset_and_sizes is ' . 
-            wp_image_add_srcset_and_sizes($image_src, $image_meta, $attachment_id ) );
-        $selected_images[ $image ] = $attachment_id;
+        $an_image_add_srcset_and_sizes 
+            = wp_image_add_srcset_and_sizes($image_src, $image_meta, $attachment_id );
+        if ( ! preg_match( '/srcset(\s*)=(\s*)\"([^\"]*)\"/', $an_image_add_srcset_and_sizes, $srcset ) ) { // /<img [^>]+>/
+            continue;
+        }
+        error_log('srcset[0] is ' . $srcset[0]);
+        $selected_images_srcset[ $image_with_folder ] = $srcset[0];
         // Overwrite the ID when the same image is included more than once.
         $attachment_ids[ $attachment_id ] = true;
     }
-
-    /*foreach( $matches[3] as $image ) {
-        
-        if ( false === strpos( $image, ' srcset=' ) && preg_match( '/wp-image-([0-9]+)/i', $image, $class_id ) &&
-            ( $attachment_id = absint( $class_id[1] ) ) ) {
-
-            /*
-             * If exactly the same image tag is used more than once, overwrite it.
-             * All identical tags will be replaced later with 'str_replace()'.
-             */
-            /*$selected_images[ $image ] = $attachment_id;
-            // Overwrite the ID when the same image is included more than once.
-            $attachment_ids[ $attachment_id ] = true;
-        }
-    }*/
 
     if ( count( $attachment_ids ) > 1 ) {
         /*
@@ -569,11 +538,16 @@ function yu_make_content_images_responsive( $content ) {
         update_meta_cache( 'post', array_keys( $attachment_ids ) );
     }
     
-    foreach ( $selected_images as $image => $attachment_id ) {
-        $image_meta = wp_get_attachment_metadata( $attachment_id );
-        $content = str_replace( $image, wp_image_add_srcset_and_sizes( $image, $image_meta, $attachment_id ), $content );
+    $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
+    foreach ( $selected_images_srcset as $image => $image_srcset) {
+        $pattern =  'src="' . $an_upload_dir . $image . '"';
+        error_log( '**'. $pattern . '**' ); 
+        error_log( '***'. $pattern . ' srcset="' . $image_srcset . '" ' . '***' ); 
+        $content = str_replace($pattern, $pattern . ' ' . $image_srcset . ' ', $content );
     }
-
+    
+    error_log( " content 2 is " . $content );   
+    
     return $content;
 }
 add_filter( 'the_content', 'yu_make_content_images_responsive', 20 )
