@@ -177,7 +177,7 @@ function post_ID_to_folder_name($post_id)
             return 'goldenbronzehorsemen';
         case 205: 
             return 'germany';
-        case 134: 
+        case 3209: 
             return 'berets';
         case 652: 
             return 'allchurch';
@@ -210,7 +210,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = trim($hrf, " ");
 	if ( substr( $hrf, 0, 7 ) !== "http://" ) {
-		$hrf = 'http://www.yu51a5.com/wp-content/uploads/' . $hrf;
+		$hrf = trailingslashit(wp_upload_dir()['url']) . $hrf;
 	}
     if (! $folder_name) {
         $post = get_post();
@@ -233,6 +233,11 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	
 	if ( $comp )
 		 $caption = 'COMPARANDUM: ' . $caption;
+    
+    $attachment_id = get_post_thumbnail_id( $post->ID ); 
+    $img_src = wp_get_attachment_image_url( $attachment_id, 'cover-size' ); 
+    $img_srcset = wp_get_attachment_image_srcset( $attachment_id, 'cover-size' );
+    
 
 	return '<div class="outside_image"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
@@ -447,33 +452,142 @@ function pinboard_child_theme_setup( $sizes) {
 }
 add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
 
-add_filter( 'wp_calculate_image_srcset', 'dq_add_custom_image_srcset', 10, 5 );
-function dq_add_custom_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ){
-			
-	error_log('Inside yu_add_custom_image_srcset');
-	$image_basename = wp_basename( $image_meta['file'] );
-    error_log('$image_basename is ' . $image_basename);
-	
-	error_log( print_r( $sources, true ) );
-    error_log( esc_html( get_the_title()));
-
-    error_log('---- ' . $image_basename);
-	
-	
-	//return sources with new srcset value
-	return $sources;
+/* got images metas given their names and folders */
+function get_images_meta_id( $filenames ) {
+    
+    $meta_query_array = array('relation' => 'OR');
+    foreach ( $filenames as $fn ) {
+        array_push($meta_query_array, array(
+                'value'   => '"' . $fn . '"',
+                'compare' => 'LIKE',
+                'key'     => '_wp_attachment_metadata',
+            ));
+    }
+    
+    $query_args = array(
+        'post_type'   => 'attachment',
+        'post_status' => 'inherit',
+        'fields'      => 'ids',
+        'meta_query'  => $meta_query_array
+    );
+    
+    $query = new WP_Query( $query_args ); 
+    error_log( '$query *' . print_r($query, true)  . '*');
+    $metas = array();
+    if ( $query->have_posts() ) {
+        foreach ( $query->posts as $post_id ) {
+            $meta = wp_get_attachment_metadata( $post_id );
+            $meta['attachment_id'] = $post_id;
+            $metas[$meta['file']] = $meta;
+        }
+    }
+    error_log( '$metas is ' . print_r($metas, true) );
+    return $metas;
 }
 
+/**
+ * Filters 'img' elements in post content to add 'srcset' and 'sizes' attributes.
+ *
+ * @since 4.4.0
+ *
+ * @see wp_image_add_srcset_and_sizes()
+ *
+ * @param string $content The raw post content to be filtered.
+ * @return string Converted content with 'srcset' and 'sizes' attributes added to images.
+ */
+function yu_make_content_images_responsive( $content ) {
+    error_log( " in wp_make_content_images_responsive" );
+     error_log( " content is " . $content );   
+    if ( ! preg_match_all( '/\[(yu_image|yu_caption)([^\[]+)\]([\s]*)([^\[]+)(?<!\s)([\s]*)\[/', $content, $matches ) ) { // /<img [^>]+>/
+        return $content;
+    }
+    error_log( " 2. in wp_make_content_images_responsive" );
+
+    foreach( $matches[4] as $image ) {
+        error_log( '*'. $image . '*' );  
+    }
+         
+    $image_count = count($matches[0]);
+    for($x = 0; $x < $image_count; $x++) {
+        $images_with_folder[$x] = $matches[4][$x];
+        preg_match('/folder_name(\s*)=(\s*)"[^"]+"/', $matches[0][$x], $matches_folder_name);
+        error_log('count($matches_folder_name) is ' . count($matches_folder_name));
+               
+        if (count($matches_folder_name) === 0) {
+            $post = get_post();
+            if ( ! empty( $post ) ) {
+                $folder_name = post_ID_to_folder_name($post->ID);
+            }
+            else {
+                $folder_name = false;
+            }
+        } else {
+            $folder_name = $matches_folder_name[-1];
+        }
+        if (!! $folder_name) {
+            $images_with_folder[$x] = $folder_name . "/" . $images_with_folder[$x];
+        }       
+    }
+    $image_metas = get_images_meta_id( $images_with_folder );
+    
+    $selected_images = $attachment_ids = array();
+    
+    foreach ($image_metas as $image_with_folder => $image_meta) {        
+        $attachment_id = $image_meta['attachment_id'];
+        error_log('wp_upload_dir() is ' . print_r(wp_upload_dir(), true) );
+        $image_src =  '<img src="' . $image_with_folder . '">';
+        error_log('image_src is ' . $image_src);
+        error_log( 'wp_image_add_srcset_and_sizes is ' . 
+            wp_image_add_srcset_and_sizes($image_src, $image_meta, $attachment_id ) );
+        $selected_images[ $image ] = $attachment_id;
+        // Overwrite the ID when the same image is included more than once.
+        $attachment_ids[ $attachment_id ] = true;
+    }
+
+    /*foreach( $matches[3] as $image ) {
+        
+        if ( false === strpos( $image, ' srcset=' ) && preg_match( '/wp-image-([0-9]+)/i', $image, $class_id ) &&
+            ( $attachment_id = absint( $class_id[1] ) ) ) {
+
+            /*
+             * If exactly the same image tag is used more than once, overwrite it.
+             * All identical tags will be replaced later with 'str_replace()'.
+             */
+            /*$selected_images[ $image ] = $attachment_id;
+            // Overwrite the ID when the same image is included more than once.
+            $attachment_ids[ $attachment_id ] = true;
+        }
+    }*/
+
+    if ( count( $attachment_ids ) > 1 ) {
+        /*
+         * Warm object cache for use with 'get_post_meta()'.
+         *
+         * To avoid making a database call for each image, a single query
+         * warms the object cache with the meta information for all images.
+         */
+        update_meta_cache( 'post', array_keys( $attachment_ids ) );
+    }
+    
+    foreach ( $selected_images as $image => $attachment_id ) {
+        $image_meta = wp_get_attachment_metadata( $attachment_id );
+        $content = str_replace( $image, wp_image_add_srcset_and_sizes( $image, $image_meta, $attachment_id ), $content );
+    }
+
+    return $content;
+}
+add_filter( 'the_content', 'yu_make_content_images_responsive', 20 )
 
 
-if ( ! function_exists( 'pinboard_widgets_init' ) ) :
+
+/*if ( ! function_exists( 'pinboard_widgets_init' ) ) :*/
 /**
  * Registers theme widget areas
  *
  * @uses register_sidebar()
  *
  * @since Pinboard 1.0
- */
+ *//*
 function  pinboard_widgets_init() {
 	$title_tag = pinboard_get_option( 'widget_title_tag' );
 	
@@ -606,6 +720,6 @@ function  pinboard_widgets_init() {
 }
 endif;
 
-add_action( 'widgets_init', 'pinboard_widgets_init' );
+add_action( 'widgets_init', 'pinboard_widgets_init' );*/
 
 ?>
