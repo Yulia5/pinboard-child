@@ -447,7 +447,7 @@ function get_images_meta_id( $filenames ) {
     $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
     $an_upload_dir_len = strlen($an_upload_dir);
     
-    $meta_query_array = array('relation' => 'OR');
+    $filenames_as_params = array();
     sort($filenames);
     $prev_fn = '';
     foreach ( $filenames as $fn ) {
@@ -455,30 +455,38 @@ function get_images_meta_id( $filenames ) {
             continue;
         }       
         $prev_fn = $fn;
-        array_push($meta_query_array, array(
+        array_push($filenames_as_params, array(
                 'value'   => '"' . substr($fn, $an_upload_dir_len) . '"',
                 'compare' => 'LIKE',
                 'key'     => '_wp_attachment_metadata',
             ));
     }
     
-    $query_args = array(
-        'post_type'   => 'attachment',
-        'post_status' => 'inherit',
-        'fields'      => 'ids',
-        'meta_query'  => $meta_query_array
-    );
-    
-    $query = new WP_Query( $query_args ); 
-    error_log( '$query *' . print_r($query, true)  . '*');
     $metas = array();
-    if ( $query->have_posts() ) {
-        foreach ( $query->posts as $post_id ) {
-            $meta = wp_get_attachment_metadata( $post_id );
-            $meta['attachment_id'] = $post_id;
-            $metas[$meta['file']] = $meta;
+    $counter = 0;
+    while($counter < count($filenames_as_params)) {
+        $meta_query_array = array_slice($filenames_as_params, $counter, 10);
+        $counter += 10;
+        $meta_query_array['relation'] = 'OR';
+        $query_args = array(
+            'post_type'   => 'attachment',
+            'post_status' => 'inherit',
+            'fields'      => 'ids',
+            'meta_query'  => $meta_query_array
+        );
+        
+        $query = new WP_Query( $query_args ); 
+        error_log( '$query *' . print_r($query, true)  . '*');
+        
+        if ( $query->have_posts() ) {
+            foreach ( $query->posts as $post_id ) {
+                $meta = wp_get_attachment_metadata( $post_id );
+                $meta['attachment_id'] = $post_id;
+                $metas[$meta['file']] = $meta;
+            }
         }
     }
+    
     error_log( '$metas is ' . print_r($metas, true) );
     return $metas;
 }
