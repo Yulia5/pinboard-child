@@ -476,7 +476,6 @@ function get_images_meta_id( $filenames ) {
         );
         
         $query = new WP_Query( $query_args ); 
-        error_log( '$query *' . print_r($query, true)  . '*');
         
         if ( $query->have_posts() ) {
             foreach ( $query->posts as $post_id ) {
@@ -487,7 +486,6 @@ function get_images_meta_id( $filenames ) {
         }
     }
     
-    error_log( '$metas is ' . print_r($metas, true) );
     return $metas;
 }
 
@@ -502,16 +500,8 @@ function get_images_meta_id( $filenames ) {
  * @return string Converted content with 'srcset' and 'sizes' attributes added to images.
  */
 function yu_make_content_images_responsive( $content ) {
-    error_log( " in wp_make_content_images_responsive" );
-    error_log( " content is " . $content );   
     if ( ! preg_match_all( '/<img[^>]+src\s*=\s*\"([^\"]*)\"([^>]*)>/', $content, $matches ) ) { // /<img [^>]+>/
         return $content;
-    }
-    error_log( " 2. in wp_make_content_images_responsive" );
-    error_log( print_r($matches, true) );
-
-    foreach( $matches[1] as $image ) {
-        error_log( '*'. $image . '*' );  
     }
          
     $image_metas = get_images_meta_id( $matches[1] );
@@ -521,13 +511,11 @@ function yu_make_content_images_responsive( $content ) {
     foreach ($image_metas as $image_with_folder => $image_meta) {        
         $attachment_id = $image_meta['attachment_id'];
         $image_src =  '<img src="' . $image_with_folder . '">';
-        error_log('image_src is ' . $image_src);
         $an_image_add_srcset_and_sizes 
             = wp_image_add_srcset_and_sizes($image_src, $image_meta, $attachment_id );
         if ( ! preg_match( '/srcset(\s*)=(\s*)\"([^\"]*)\"/', $an_image_add_srcset_and_sizes, $srcset ) ) { // /<img [^>]+>/
             continue;
         }
-        error_log('srcset[0] is ' . $srcset[0]);
         $selected_images_srcset[ $image_with_folder ] = $srcset[0];
         // Overwrite the ID when the same image is included more than once.
         $attachment_ids[ $attachment_id ] = true;
@@ -546,159 +534,11 @@ function yu_make_content_images_responsive( $content ) {
     $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
     foreach ( $selected_images_srcset as $image => $image_srcset) {
         $pattern =  'src="' . $an_upload_dir . $image . '"';
-        error_log( '**'. $pattern . '**' ); 
-        error_log( '***'. $pattern . ' srcset="' . $image_srcset . '" ' . '***' ); 
         $content = str_replace($pattern, $pattern . ' ' . $image_srcset . ' ', $content );
     }
     
-    error_log( " content 2 is " . $content );   
-    
     return $content;
 }
-add_filter( 'the_content', 'yu_make_content_images_responsive', 20 )
-
-
-
-/*if ( ! function_exists( 'pinboard_widgets_init' ) ) :*/
-/**
- * Registers theme widget areas
- *
- * @uses register_sidebar()
- *
- * @since Pinboard 1.0
- *//*
-function  pinboard_widgets_init() {
-	$title_tag = pinboard_get_option( 'widget_title_tag' );
-	
-	register_sidebar(
-		array(
-			'name' => 'Header',
-			'id' => 'id_sidebar_Header',
-			'description' => 'Displays in the header. Intended exclusively for displaying ads of standard dimentions.',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget -->',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	register_sidebar(
-		array(
-			'name' => 'Sidebar Top',
-			'id' => 'id_sidebar_Sidebar_Top',
-			'description' => 'Displays in in the main sidebar stacked at the top.',
-			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget --></div>',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	register_sidebar(
-		array(
-			'name' => 'Sidebar Left',
-			'id' => 'id_sidebar_Sidebar_Left',
-			'description' => 'Displays in in the main sidebar floated to the left.',
-			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget --></div>',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	register_sidebar(
-		array(
-			'name' => 'Sidebar Right',
-			'id' => 'id_sidebar_Sidebar_Right',
-			'description' => 'Displays in in the main sidebar floated to the right.',
-			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget --></div>',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	register_sidebar(
-		array(
-			'name' => 'Sidebar Bottom',
-			'id' => 'id_sidebar_Sidebar_Bottom',
-			'description' => 'Displays in in the main sidebar stacked at the bottom.',
-			'before_widget' => '<div class="column onecol"><aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget --></div>',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	$columns = pinboard_get_option( 'footer_columns' );
-	if( 1 == $columns )
-		$grid_class = 'onecol';
-	elseif( 2 == $columns )
-		$grid_class = 'twocol';
-	elseif( 3 == $columns )
-		$grid_class = 'threecol';
-	elseif( 4 == $columns )
-		$grid_class = 'fourcol';
-	register_sidebar(
-		array(
-			'name' => 'Footer',
-			'id' => 'id_sidebar_Footer',
-			'description' => 'Displays in in the footer area.',
-			'before_widget' => '<div class="column ' . $grid_class . '"><aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget --></div>',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	register_sidebar(
-		array(
-			'name' => '404 Page',
-			'id' => 'id_sidebar_404_Page',
-			'description' => 'Displays on 404 Pages in the content area.',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget -->',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	register_sidebar(
-		array(
-			'name' => 'Wide',
-			'id' => 'id_sidebar_Wide',
-			'description' => 'Displays on the front page and spans full width.',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget -->',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	$columns = pinboard_get_option( 'boxes_columns' );
-	if( 1 == $columns )
-		$grid_class = 'onecol';
-	elseif( 2 == $columns )
-		$grid_class = 'twocol';
-	elseif( 3 == $columns )
-		$grid_class = 'threecol';
-	elseif( 4 == $columns )
-		$grid_class = 'fourcol';
-	register_sidebar(
-		array(
-			'name' => 'Boxes',
-			'id' => 'id_sidebar_Boxes',
-			'before_widget' => '<div class="column ' . $grid_class . '"><aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget --></div>',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-	register_sidebar(
-		array(
-			'name' => 'Footer Wide',
-			'id' => 'id_sidebar_Footer_Wide',
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside><!-- .widget -->',
-			'before_title' => '<' . $title_tag . ' class="widget-title">',
-			'after_title' => '</' . $title_tag . '>'
-		)
-	);
-}
-endif;
-
-add_action( 'widgets_init', 'pinboard_widgets_init' );*/
+add_filter( 'the_content', 'yu_make_content_images_responsive', 20 );
 
 ?>
