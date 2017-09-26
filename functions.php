@@ -473,6 +473,7 @@ function get_images_meta_id( $filenames ) {
     );
     
     $query = new WP_Query( $query_args ); 
+    error_log( '$query *' . print_r($query, true)  . '*');
     $metas = array();
     if ( $query->have_posts() ) {
         foreach ( $query->posts as $post_id ) {
@@ -481,6 +482,7 @@ function get_images_meta_id( $filenames ) {
             $metas[$meta['file']] = $meta;
         }
     }
+    error_log( '$metas is ' . print_r($metas, true) );
     return $metas;
 }
 
@@ -495,9 +497,16 @@ function get_images_meta_id( $filenames ) {
  * @return string Converted content with 'srcset' and 'sizes' attributes added to images.
  */
 function yu_make_content_images_responsive( $content ) {
-
+    error_log( " in wp_make_content_images_responsive" );
+    error_log( " content is " . $content );   
     if ( ! preg_match_all( '/<img[^>]+src\s*=\s*\"([^\"]*)\"([^>]*)>/', $content, $matches ) ) { // /<img [^>]+>/
         return $content;
+    }
+    error_log( " 2. in wp_make_content_images_responsive" );
+    error_log( print_r($matches, true) );
+
+    foreach( $matches[1] as $image ) {
+        error_log( '*'. $image . '*' );  
     }
          
     $image_metas = get_images_meta_id( $matches[1] );
@@ -507,11 +516,13 @@ function yu_make_content_images_responsive( $content ) {
     foreach ($image_metas as $image_with_folder => $image_meta) {        
         $attachment_id = $image_meta['attachment_id'];
         $image_src =  '<img src="' . $image_with_folder . '">';
+        error_log('image_src is ' . $image_src);
         $an_image_add_srcset_and_sizes 
             = wp_image_add_srcset_and_sizes($image_src, $image_meta, $attachment_id );
         if ( ! preg_match( '/srcset(\s*)=(\s*)\"([^\"]*)\"/', $an_image_add_srcset_and_sizes, $srcset ) ) { // /<img [^>]+>/
             continue;
         }
+        error_log('srcset[0] is ' . $srcset[0]);
         $selected_images_srcset[ $image_with_folder ] = $srcset[0];
         // Overwrite the ID when the same image is included more than once.
         $attachment_ids[ $attachment_id ] = true;
@@ -530,9 +541,13 @@ function yu_make_content_images_responsive( $content ) {
     $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
     foreach ( $selected_images_srcset as $image => $image_srcset) {
         $pattern =  'src="' . $an_upload_dir . $image . '"';
+        error_log( '**'. $pattern . '**' ); 
+        error_log( '***'. $pattern . ' srcset="' . $image_srcset . '" ' . '***' ); 
         $content = str_replace($pattern, $pattern . ' ' . $image_srcset . ' ', $content );
     }
-        
+    
+    error_log( " content 2 is " . $content );   
+    
     return $content;
 }
 add_filter( 'the_content', 'yu_make_content_images_responsive', 20 )
