@@ -174,6 +174,7 @@ function post_ID_to_folder_name($post_id)
         case 13: 
             return 'hamlet';
         case 10: 
+        case 3217:
             return 'goldenbronzehorsemen';
         case 205: 
             return 'germany';
@@ -191,7 +192,6 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 		$height = 200;
 	
 	$img_style = 'style="';
-	$div_style = 'style="';
 
 	if ( $height ) {
 		$img_style = $img_style . ' height: ' . (int) $height . 'px ';
@@ -199,13 +199,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	if ( $width ) {
 		$img_style = $img_style . ' width:' . (int) $width . 'px ';
 	}
-	$div_style = $div_style . '" ';
 	$img_style = $img_style . '" ';
-	
-	if ((!$height) && (!$width)) {
-		$div_style = '';
-		$img_style = '';		
-	}
 	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = trim($hrf, " ");
@@ -454,10 +448,13 @@ function get_images_meta_id( $filenames ) {
     $an_upload_dir_len = strlen($an_upload_dir);
     
     $meta_query_array = array('relation' => 'OR');
+    sort($filenames);
+    $prev_fn = '';
     foreach ( $filenames as $fn ) {
-        if (strpos($fn, $an_upload_dir) !== 0) {
+        if ((strpos($fn, $an_upload_dir) !== 0) or ($fn === $prev_fn)) {
             continue;
-        }        
+        }       
+        $prev_fn = $fn;
         array_push($meta_query_array, array(
                 'value'   => '"' . substr($fn, $an_upload_dir_len) . '"',
                 'compare' => 'LIKE',

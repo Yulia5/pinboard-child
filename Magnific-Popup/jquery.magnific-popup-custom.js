@@ -7,12 +7,6 @@ jQuery(document).ready(function($) {
     //$(document).ready(function() {});
     //run a script when the document structure is ready, but before all of the images have loaded
 
-    window.onload = function() {
-        $('.images img').each(function(i, obj) {
-            resize_an_image($(this));
-        });
-    }
-
     window.onresize = function() {
         $('.images img').each(function(i, obj) {
             resize_an_image($(this));
@@ -20,6 +14,13 @@ jQuery(document).ready(function($) {
     }
 
     $('.images img').each(function() {
+        var imgheight = get_attribute($(this).closest('.images'),   'imgheight');
+        if (imgheight !== false) {
+            var new_height = parseFloat(imgheight);
+            var style_img = ' height: ' + new_height.toString() + 'px ';  
+            $(this).attr('style', style_img);
+        }
+        
         $(this).load(function() {
             resize_an_image($(this));
         });
