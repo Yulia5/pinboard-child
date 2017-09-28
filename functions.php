@@ -443,37 +443,37 @@ add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
 
 /* got images metas given their names and folders */
 function get_images_meta_id( $filenames ) {
-    error_log( 'metas started ' );
     
     $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
     $an_upload_dir_len = strlen($an_upload_dir);
     
     $filenames_as_params = array();
-    sort($filenames);
     $posts_per_filename = array();
+    sort($filenames);
     $prev_fn = '';
     foreach ( $filenames as $fn ) {
         if ((strpos($fn, $an_upload_dir) !== 0) or ($fn === $prev_fn)) {
             continue;
         }       
         $prev_fn = $fn;
+        $short_fn = substr($fn, $an_upload_dir_len);
         array_push($filenames_as_params, array(
-                'value'   => substr($fn, $an_upload_dir_len),
+                'value'   => $short_fn,
                 'compare' => 'IS',
                 'key'     => '_wp_attached_file',
             ));
-       $posts_per_filename[substr($fn, $an_upload_dir_len)] = 0;
+        $posts_per_filename[$short_fn] = 0;
     }
     
     $metas = array();
     $counter = 0;
-    $POSTS_PER_PAGE = 1000;
+    $POSTS_PER_BATCH = 1000;
     while($counter < count($filenames_as_params)) {
-        $meta_query_array = array_slice($filenames_as_params, $counter, $POSTS_PER_PAGE);
-        $counter += $POSTS_PER_PAGE;
+        $meta_query_array = array_slice($filenames_as_params, $counter, $POSTS_PER_BATCH);
+        $counter += $POSTS_PER_BATCH;
         $meta_query_array['relation'] = 'OR';
         $query_args = array(
-            'nopaging' => true,
+            'nopaging'    => true,
             'post_type'   => 'attachment',
             'post_status' => 'inherit',
             'fields'      => 'ids',
@@ -481,9 +481,6 @@ function get_images_meta_id( $filenames ) {
         );
         
         $query = new WP_Query( $query_args ); 
-        error_log("Search found ". $query->post_count . " results");
-        error_log("Search outputed ". $query->found_posts . " results");
-        
         if ( $query->have_posts() ) {
             foreach ( $query->posts as $post_id ) {
                 $meta = wp_get_attachment_metadata( $post_id );
@@ -497,12 +494,12 @@ function get_images_meta_id( $filenames ) {
             }
         }
     }
-    foreach ($posts_per_filename as $fn => $nb_metas) {
+    /*foreach ($posts_per_filename as $fn => $nb_metas) {
         if ($nb_metas !== 1) {
             error_log( 'found ' . $nb_metas. ' for file ' . $fn);
         }
     }
-    error_log( 'metas done ' );
+    error_log( 'metas done ' );*/
     return $metas;
 }
 
