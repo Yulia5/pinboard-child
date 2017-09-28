@@ -221,7 +221,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	$alt = ' alt="' . $caption_no_br . '" ';
 	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
 	
-	$invisible_a_to_check_broken_links = ' <a href="' . $hrf . '" style="display:none">Invisible, to help broken links check</a>';
+	$invisible_a_to_check_broken_links = ' <a href=' . $hrf . ' style="display:none">Invisible, to help broken links check</a>';
 	if ( $sourcehrf )
 		$invisible_a_to_check_broken_links = $invisible_a_to_check_broken_links . ' <a href="' . $sourcehrf . '" style="display:none">Invisible, to help broken links check</a>';
 	
@@ -450,6 +450,7 @@ function get_images_meta_id( $filenames ) {
     
     $filenames_as_params = array();
     sort($filenames);
+    $posts_per_filename = array();
     $prev_fn = '';
     foreach ( $filenames as $fn ) {
         if ((strpos($fn, $an_upload_dir) !== 0) or ($fn === $prev_fn)) {
@@ -457,10 +458,11 @@ function get_images_meta_id( $filenames ) {
         }       
         $prev_fn = $fn;
         array_push($filenames_as_params, array(
-                'value'   => '"' . substr($fn, $an_upload_dir_len) . '"',
-                'compare' => 'LIKE',
-                'key'     => '_wp_attachment_metadata',
+                'value'   => substr($fn, $an_upload_dir_len),
+                'compare' => 'IS',
+                'key'     => '_wp_attached_file',
             ));
+       $posts_per_filename[substr($fn, $an_upload_dir_len)] = 0;
     }
     
     $metas = array();
@@ -485,9 +487,19 @@ function get_images_meta_id( $filenames ) {
         if ( $query->have_posts() ) {
             foreach ( $query->posts as $post_id ) {
                 $meta = wp_get_attachment_metadata( $post_id );
-                $meta['attachment_id'] = $post_id;
-                $metas[$meta['file']] = $meta;
+                if (is_array($meta)) {
+                    if (array_key_exists('file', $meta)) {
+                        $meta['attachment_id'] = $post_id;
+                        $metas[$meta['file']] = $meta;
+                        $posts_per_filename[$meta['file']] += 1;
+                    }
+                }
             }
+        }
+    }
+    foreach ($posts_per_filename as $fn => $nb_metas) {
+        if ($nb_metas !== 1) {
+            error_log( 'found ' . $nb_metas. ' for file ' . $fn);
         }
     }
     error_log( 'metas done ' );
