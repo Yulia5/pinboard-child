@@ -443,6 +443,7 @@ add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
 
 /* got images metas given their names and folders */
 function get_images_meta_id( $filenames ) {
+    error_log( 'metas started ' );
     
     $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
     $an_upload_dir_len = strlen($an_upload_dir);
@@ -464,11 +465,13 @@ function get_images_meta_id( $filenames ) {
     
     $metas = array();
     $counter = 0;
+    $POSTS_PER_PAGE = 1000;
     while($counter < count($filenames_as_params)) {
-        $meta_query_array = array_slice($filenames_as_params, $counter, 10);
-        $counter += 10;
+        $meta_query_array = array_slice($filenames_as_params, $counter, $POSTS_PER_PAGE);
+        $counter += $POSTS_PER_PAGE;
         $meta_query_array['relation'] = 'OR';
         $query_args = array(
+            'nopaging' => true,
             'post_type'   => 'attachment',
             'post_status' => 'inherit',
             'fields'      => 'ids',
@@ -476,6 +479,8 @@ function get_images_meta_id( $filenames ) {
         );
         
         $query = new WP_Query( $query_args ); 
+        error_log("Search found ". $query->post_count . " results");
+        error_log("Search outputed ". $query->found_posts . " results");
         
         if ( $query->have_posts() ) {
             foreach ( $query->posts as $post_id ) {
@@ -485,7 +490,7 @@ function get_images_meta_id( $filenames ) {
             }
         }
     }
-    
+    error_log( 'metas done ' );
     return $metas;
 }
 

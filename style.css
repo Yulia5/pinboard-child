@@ -73,6 +73,7 @@ img, a img, .entry-content a img {
 
 .outside_image {
     display:inline-block !important;
+    text-align: center;
 }
 
 a {
