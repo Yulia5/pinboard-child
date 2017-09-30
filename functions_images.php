@@ -345,7 +345,7 @@ function yu_make_content_images_responsive( $content ) {
     return $content;
 }
 add_filter( 'the_content', 'yu_make_content_images_responsive', 20 );
-/*
+
 function create_table($new_table_name, $new_table_columns) {
     
     global $wpdb;
@@ -376,6 +376,13 @@ function register_table($new_table, $new_table_name) {
 
 function images_tables_create() {
 
+   create_table("images_sources", 
+           "src VARCHAR(16) NOT NULL ,
+            srcname NVARCHAR(1024) NOT NULL ,
+            srchref_before NVARCHAR(1024) NOT NULL ,
+            srchref_after  NVARCHAR(1024) NOT NULL DEFAULT '' ,
+            PRIMARY KEY (src)");
+
    create_table("images_sources_captions", 
            "filename NVARCHAR(1024) NOT NULL ,
             src VARCHAR(16) NULL ,
@@ -384,48 +391,79 @@ function images_tables_create() {
             srchref NVARCHAR(1024) NULL ,
             caption NVARCHAR(1024) NULL ,
             srcset  NVARCHAR(2048) NOT NULL DEFAULT '' ,
-            PRIMARY KEY (filename)");
-   create_table("images_sources", 
-           "src VARCHAR(16) NOT NULL ,
-            srcname NVARCHAR(1024) NOT NULL ,
-            srchref_before NVARCHAR(1024) NOT NULL ,
-            srchref_after  NVARCHAR(1024) NOT NULL DEFAULT '' ,
-            PRIMARY KEY (src)");
+            PRIMARY KEY (filename), 
+            FOREIGN KEY (src) REFERENCES images_sources(src)");
     global $wpdb;
     register_table($wpdb->images_sources_captions, "images_sources_captions");
     register_table($wpdb->images_sources, "images_sources");
+    generate_src();
 
 }
 //add_action( 'init', 'images_tables_create');
 
-function intert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
+function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     global $wpdb;
     $sql = "INSERT INTO {$wpdb->prefix}images_sources (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
-    // var_dump($sql); // debug
     $sql = $wpdb->prepare($sql, $src, $srcname, $srchref_before, $srchref_after);
-    // var_dump($sql); // debug
     $wpdb->query($sql);
 }
 
-function intert_into_images($filename, $src, $id, $caption = ''){
+/**
+ * generate_src
+ */
+function generate_src() {
+    insert_into_src("wiki",     'Wikipedia Commons',                            'https://commons.wikimedia.org/wiki/File:');
+    insert_into_src("RC",       'The Royal Collection',                         'https://www.royalcollection.org.uk/collection/');
+    insert_into_src("Met",      'The Metropolitan Museum of Art',               'http://www.metmuseum.org/art/collection/search/');
+    insert_into_src("ArtUK",    'Art UK',                                       'http://artuk.org/discover/artworks/');  
+    insert_into_src("SKD",      '© Staatliche Kunstsammlungen Dresden',         'https://skd-online-collection.skd.museum/Details/Index/');    
+    insert_into_src("BM",       '© Trustees of the British Museum',             'http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=', '&partId=1'); 
+    insert_into_src("LA",       'The Los Angeles County Museum of Art',         'http://collections.lacma.org/node/'); 
+    insert_into_src("Getty",    'The J.Paul Getty Museum Open Contents Program','http://www.getty.edu/art/collection/objects/'); 
+    insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'http://www.mfa.org/collections/object/');  
+    insert_into_src("WAM",      'The Walters Art Museum',                       'http://art.thewalters.org/detail/');    
+    insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objektdb/detail/');
+    insert_into_src("HAM",      'Harvard Art Museums',                          'http://www.harvardartmuseums.org/collections/object/');
+    insert_into_src("CBd",      'Campbell Bonner Magical Gems Database (CBd)',  'http://www2.szepmuveszeti.hu/talismans/cbd/');
+    insert_into_src("RMN",      'Réunion des Musées Nationaux - Grand Palais',  'http://www.photo.rmn.fr/archive/', '.html');  
+    insert_into_src("HM",       '© The State Hermitage Museum, St. Petersburg', 'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/', '/?lng=en');  
+    insert_into_src("VA",       '© Victoria and Albert Museum, London',         'http://collections.vam.ac.uk/item/', '/');
+    insert_into_src("Seals",    'Seals @ mernick.org.uk/seals',                 'http://www.mernick.org.uk/seals/');   
+    insert_into_src("numisbids",'NumisBids',                                    'https://www.numisbids.com/n.php?p=lot&');    
+    insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
+    insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/'); 
+}
+
+
+function insert_into_images($filename, $src, $id, $caption = ''){
     global $wpdb;
     $sql = "INSERT INTO {$wpdb->prefix}images_sources_captions (filename, src, id, caption) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s";
-    // var_dump($sql); // debug
     $sql = $wpdb->prepare($sql, $src, $srcname, $srchref_before, $srchref_after);
-    // var_dump($sql); // debug
     $wpdb->query($sql);
 }    
 
-function intert_into_images_any($filename, $srcname, $srchref, $caption = ''){
+function insert_into_images_any($filename, $srcname, $srchref, $caption = ''){
     global $wpdb;
     $sql = "INSERT INTO {$wpdb->prefix}images_sources_captions (filename, srcname, srchref, caption) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE srcname = %s, srchref = %s, caption = %s";
-    // var_dump($sql); // debug
     $sql = $wpdb->prepare($sql, $filename, $srcname, $srchref, $caption);
-    // var_dump($sql); // debug
     $wpdb->query($sql);
-} */
+} 
+
+function select_image($filename) {
+    global $wpdb;
+    $result = $wpdb->get_row( "SELECT 
+    caption, 
+    COALESCE(srcname, sources.srcname) AS srcname, 
+    COALESCE(srchref, CONCAT( sources.srchref_before, id, sources.srchref_after) ) AS srchref, 
+    srcset 
+    FROM {$wpdb->prefix}images_sources_captions INNER JOIN {$wpdb->prefix}images_sources sources ON src = sources.src
+    WHERE filename = " . $filename );
+    
+    return $result;
+    
+}
 
 ?>

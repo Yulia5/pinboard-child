@@ -37,20 +37,23 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
  *
  * https://developer.wordpress.org/reference/functions/remove_image_size/
  */
-function pinboard_child_theme_setup( $sizes) {
+function pinboard_child_theme_setup() {
+    
     /* remove all pre-existing image sizes */   
-    $image_size_names = array('thumbnail', 'medium', 'large', 'slider-thumb', 'blog-thumb', 'teaser-thumb', 'gallery-1-thumb', 'gallery-2-thumb', 'gallery-3-thumb', 'image-thumb', 'video-thumb');
-    $image_size_names_length = count($image_size_names);
-    for($x = 0; $x < $image_size_names_length; $x++) {
-        remove_image_size($image_size_names[$x]);
+    $image_size_names = array('thumbnail', 'medium', 'large', 'slider-thumb', 'blog-thumb', 'teaser-thumb', 
+                              'gallery-1-thumb', 'gallery-2-thumb', 'gallery-3-thumb', 'image-thumb', 'video-thumb');
+    foreach ($image_size_names as $image_size_name) {
+        remove_image_size($image_size_name);
     }
+    
     /* add image sizes adapted to the most frequently encountered cases - resizing by height */
     $image_heights = [150, 180, 200, 220, 250, 300, 400];   
-    $image_heights_count = count($image_heights);
-    for($x = 0; $x < $image_heights_count; $x++) {
-        add_image_size( 'h' . strval($image_heights[$x]), 9999, $image_heights[$x] );
+    foreach ($image_heights as $image_height) {
+        add_image_size( 'h' . strval($image_height), 9999, $image_heights );
     }
     add_image_size( 'w700', 700);
+    
+    /* include image-related collection of functions */
     locate_template( array( 'functions_images.php' ), true, true );
 }
 add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
