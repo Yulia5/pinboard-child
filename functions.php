@@ -1,7 +1,5 @@
 <?php
 
-require_once( __DIR__ . '/functions_image.php');
-
 /******************************************************************************
  *                                 theme                                      *
  *****************************************************************************/
@@ -31,6 +29,31 @@ function enqueue_styles_and_scripts() {
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $magnific_style ) );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
+
+
+/**
+ * Remove standard image sizes so that these sizes are not
+ * created during the Media Upload process
+ *
+ * https://developer.wordpress.org/reference/functions/remove_image_size/
+ */
+function pinboard_child_theme_setup( $sizes) {
+    /* remove all pre-existing image sizes */   
+    $image_size_names = array('thumbnail', 'medium', 'large', 'slider-thumb', 'blog-thumb', 'teaser-thumb', 'gallery-1-thumb', 'gallery-2-thumb', 'gallery-3-thumb', 'image-thumb', 'video-thumb');
+    $image_size_names_length = count($image_size_names);
+    for($x = 0; $x < $image_size_names_length; $x++) {
+        remove_image_size($image_size_names[$x]);
+    }
+    /* add image sizes adapted to the most frequently encountered cases - resizing by height */
+    $image_heights = [150, 180, 200, 220, 250, 300, 400];   
+    $image_heights_count = count($image_heights);
+    for($x = 0; $x < $image_heights_count; $x++) {
+        add_image_size( 'h' . strval($image_heights[$x]), 9999, $image_heights[$x] );
+    }
+    add_image_size( 'w700', 700);
+    locate_template( array( 'functions_images.php' ), true, true );
+}
+add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
 
 /******************************************************************************
  *        Lines (old English and modern English) for Romeo and Juliet         *

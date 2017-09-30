@@ -232,31 +232,6 @@ function generate_img_source_name_href($src, $id) {
 	return $src . '|';
 }
 
-
-
-/**
- * Remove standard image sizes so that these sizes are not
- * created during the Media Upload process
- *
- * https://developer.wordpress.org/reference/functions/remove_image_size/
- */
-function pinboard_child_theme_setup( $sizes) {
-	/* remove all pre-existing image sizes */	
-	$image_size_names = array('thumbnail', 'medium', 'large', 'slider-thumb', 'blog-thumb', 'teaser-thumb', 'gallery-1-thumb', 'gallery-2-thumb', 'gallery-3-thumb', 'image-thumb', 'video-thumb');
-	$image_size_names_length = count($image_size_names);
-	for($x = 0; $x < $image_size_names_length; $x++) {
-    	remove_image_size($image_size_names[$x]);
-	}
-	/* add image sizes adapted to the most frequently encountered cases - resizing by height */
-	$image_heights = [150, 180, 200, 220, 250, 300, 400];	
-	$image_heights_count = count($image_heights);
-	for($x = 0; $x < $image_heights_count; $x++) {
-		add_image_size( 'h' . strval($image_heights[$x]), 9999, $image_heights[$x] );
-	}
-	add_image_size( 'w700', 700);
-}
-add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
-
 /* got images metas given their names and folders */
 function get_images_meta_id( $filenames ) {
     
@@ -370,7 +345,7 @@ function yu_make_content_images_responsive( $content ) {
     return $content;
 }
 add_filter( 'the_content', 'yu_make_content_images_responsive', 20 );
-
+/*
 function create_table($new_table_name, $new_table_columns) {
     
     global $wpdb;
@@ -421,7 +396,7 @@ function images_tables_create() {
     register_table($wpdb->images_sources, "images_sources");
 
 }
-/*add_action( 'init', 'images_tables_create');*/
+//add_action( 'init', 'images_tables_create');
 
 function intert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     global $wpdb;
@@ -451,6 +426,6 @@ function intert_into_images_any($filename, $srcname, $srchref, $caption = ''){
     $sql = $wpdb->prepare($sql, $filename, $srcname, $srchref, $caption);
     // var_dump($sql); // debug
     $wpdb->query($sql);
-} 
+} */
 
 ?>
