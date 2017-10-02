@@ -363,7 +363,7 @@ function create_table($new_table_name, $new_table_columns) {
     }
 }
 
-function register_table($new_table, $new_table_name) {
+/*function register_table($new_table, $new_table_name) {
     global $wpdb;
     $table_name = $wpdb->prefix. $new_table_name;
     
@@ -374,7 +374,7 @@ function register_table($new_table, $new_table_name) {
         //add the shortcut so you can use $wpdb->stats
         $wpdb->tables[] = str_replace($wpdb->prefix, '', $table_name);
     }    
-}
+}*/
 
 function images_tables_create() {
 
@@ -402,31 +402,69 @@ function images_tables_create() {
     $wpdb->tables[] = "{$wpdb->prefix}images_sources_captions";
     $wpdb->tables[] = "{$wpdb->prefix}images_sources";
     
+    /*$sql = "DELETE FROM " . $wpdb->images_sources . " WHERE src = %s";
+    $sql = $wpdb->prepare($sql, "S");
+    $wpdb->query($sql);
+    
     error_log( 'wpdb->tables ' . var_export($wpdb->tables, true) );
     
     $count_images_sources_captions = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources_captions" );
     $count_images_sources          = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources" );
     error_log( 'count_images_sources_captions ' . var_export($count_images_sources_captions, true)
-                . ' ' . 'images_sources ' . var_export($count_images_sources, true));
+                . ' ' . 'images_sources ' . var_export($count_images_sources, true));*/
                 
-    $sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s)  ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
+    /*$sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s)  ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
     error_log( 'sql src 1 ' . var_export($sql, true) );
     $sql = $wpdb->prepare($sql, "S", "S", "S", "S", "S", "S", "S");
     error_log( 'sql src 2 ' . var_export($sql, true) );
     $wpdb->query($sql);
     $count_images_sources          = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources" );
     error_log( 'count_images_sources_captions ' . var_export($count_images_sources_captions, true)
-                . ' ' . 'images_sources ' . var_export($count_images_sources, true));
+                . ' ' . 'images_sources ' . var_export($count_images_sources, true));*/
     
     
          
     generate_src();
     populate_images();
-    $bronze = select_image("horsemen/bronze-horseman.jpg");
     $golden = select_image("horsemen/goldenhorseman.jpg");
+    $bronze = select_image("horsemen/bronze-horseman.jpg");
     
-    error_log( 'bronze ' . var_export($bronze, true) );
     error_log( 'golden ' . var_export($golden, true) );
+    error_log( 'bronze ' . var_export($bronze, true) );
+    
+    /*$filenames = $wpdb->get_results( "SELECT * FROM " . $wpdb->images_sources_captions);
+    error_log( 'all images_sources_captions ' . var_export($filenames, true) );   
+    
+    $filename = "horsemen/bronze-horseman.jpg";
+    $sql = "SELECT 
+        sources_tbl.srcname, images_tbl.filename, images_tbl.src
+        FROM " . $wpdb->images_sources . " AS sources_tbl, " . $wpdb->images_sources_captions . " AS images_tbl 
+        WHERE (sources_tbl.src = %s) AND (images_tbl.filename = %s)";
+    $sql = $wpdb->prepare($sql, "wiki", $filename);    
+    error_log( 'wiki sql' . var_export($sql, true) );
+    $result = $wpdb->get_row($sql); 
+    error_log( 'wiki ' . var_export($result, true) );
+    
+    $sql = "SELECT 
+        COALESCE(images_tbl.srcname, sources_tbl.srcname) AS srcname 
+        FROM " . $wpdb->images_sources_captions . " AS images_tbl 
+        INNER JOIN " . $wpdb->images_sources . " AS sources_tbl 
+        ON (images_tbl.src = sources_tbl.src)
+        WHERE images_tbl.filename = %s";
+    $sql = $wpdb->prepare($sql, $filename);    
+    $result = $wpdb->get_row($sql); 
+    error_log( 'sources_tbl.srcname ' . var_export($result, true) );
+    
+    $sql = "SELECT 
+        COALESCE(images_tbl.srchref, CONCAT( sources_tbl.srchref_before, images_tbl.id, sources_tbl.srchref_after) ) AS srchref
+        FROM " . $wpdb->images_sources_captions . " AS images_tbl 
+        INNER JOIN " . $wpdb->images_sources . " AS sources_tbl 
+        ON (images_tbl.src = sources_tbl.src)
+        WHERE images_tbl.filename = %s";
+    $sql = $wpdb->prepare($sql, $filename);    
+    $result = $wpdb->get_row($sql); 
+    error_log( 'images_tbl.id ' . var_export($result, true) );*/
+            
 }
 add_action( 'init', 'images_tables_create');
 
@@ -434,9 +472,9 @@ function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     global $wpdb;
     $sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
-    error_log( 'sql src 1 ' . var_export($sql, true) );
+    //error_log( 'sql src 1 ' . var_export($sql, true) );
     $sql = $wpdb->prepare($sql, $src, $srcname, $srchref_before, $srchref_after, $srcname, $srchref_before, $srchref_after);
-    error_log( 'sql src 2 ' . var_export($sql, true) );
+    //error_log( 'sql src 2 ' . var_export($sql, true) );
     $wpdb->query($sql);
 }
 
@@ -444,6 +482,7 @@ function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
  * generate_src
  */
 function generate_src() {
+    insert_into_src("",         '',                                             ''); // added to simplify select_image
     insert_into_src("wiki",     'Wikipedia Commons',                            'https://commons.wikimedia.org/wiki/File:');
     insert_into_src("RC",       'The Royal Collection',                         'https://www.royalcollection.org.uk/collection/');
     insert_into_src("Met",      'The Metropolitan Museum of Art',               'http://www.metmuseum.org/art/collection/search/');
@@ -469,19 +508,19 @@ function generate_src() {
 
 function insert_into_images($filename, $src, $id, $caption = ''){
     global $wpdb;
-    $sql = "INSERT INTO " . $wpdb->prefix . "images_sources_captions (filename, src, id, caption) VALUES (%s, %s, %s, %s) 
+    $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, src, id, caption) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s";
-    error_log(var_export($sql, true));
-    $sql = $wpdb->prepare($sql, $filename, $src, $id, $caption);
-    error_log(var_export($sql, true));
+    // error_log(var_export($sql, true));
+    $sql = $wpdb->prepare($sql, $filename, $src, $id, $caption, $src, $id, $caption);
+    // error_log(var_export($sql, true));
     $wpdb->query($sql);
 }    
 
 function insert_into_images_any($filename, $srcname = '', $srchref = '', $caption = ''){
     global $wpdb;
-    $sql = "INSERT INTO " . $wpdb->prefix . "images_sources_captions (filename, srcname, srchref, caption) VALUES (%s, %s, %s, %s) 
+    $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, srcname, srchref, caption) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE srcname = %s, srchref = %s, caption = %s";
-    $sql = $wpdb->prepare($sql, $filename, $srcname, $srchref, $caption);
+    $sql = $wpdb->prepare($sql, $filename, $srcname, $srchref, $caption, $srcname, $srchref, $caption);
     $wpdb->query($sql);
 } 
 
@@ -500,16 +539,17 @@ Dresden, Saxony (Germany)");
 
 function select_image($filename) {
     global $wpdb;
-    $result = $wpdb->get_row( 'SELECT 
-    caption, 
-    COALESCE(images_tbl.srcname, sources_tbl.srcname) AS srcname, 
-    COALESCE(images_tbl.srchref, CONCAT( sources_tbl.srchref_before, images_tbl.id, sources_tbl.srchref_after) ) AS srchref, 
-    srcset 
-    FROM ' . $wpdb->prefix . 'images_sources_captions images_tbl 
-    INNER JOIN ' . $wpdb->prefix . 'images_sources sources_tbl 
-    ON images_tbl.src = sources_tbl.src
-    WHERE filename = "' . $filename . '"');
-    
+    $sql = "SELECT 
+        caption, 
+        COALESCE(images_tbl.srcname, sources_tbl.srcname) AS srcname, 
+        COALESCE(images_tbl.srchref, CONCAT( sources_tbl.srchref_before, images_tbl.id, sources_tbl.srchref_after) ) AS srchref, 
+        srcset 
+        FROM " . $wpdb->images_sources_captions . " images_tbl 
+        INNER JOIN " . $wpdb->images_sources . " sources_tbl 
+        ON COALESCE(images_tbl.src, %s) = sources_tbl.src
+        WHERE filename = %s";
+    $sql = $wpdb->prepare($sql, '', $filename);    
+    $result = $wpdb->get_row($sql);    
     return $result; 
 }
 
