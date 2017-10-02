@@ -349,16 +349,18 @@ add_filter( 'the_content', 'yu_make_content_images_responsive', 20 );
 function create_table($new_table_name, $new_table_columns) {
     
     global $wpdb;
-    $table_name = $wpdb->prefix. $new_table_name;
+    $table_name = $wpdb->prefix . $new_table_name;
     global $charset_collate;
     $charset_collate = $wpdb->get_charset_collate();
-    global $db_version;  
+        
+    //$sql = "DROP TABLE IF EXISTS $table_name; DROP TABLE IF EXISTS $new_table_name; ";
+    //$wpdb->query($sql);
 
     if( $wpdb->get_var("SHOW TABLES LIKE '" . $table_name . "'") !==  $table_name) {
-        $create_sql = "CREATE TABLE " . $table_name . " ( " . $new_table_columns . ")" . $charset_collate;
+        $create_sql = "CREATE TABLE " . $table_name . " ( " . $new_table_columns . ") " . $charset_collate;   
+        require_once(ABSPATH . "wp-admin/includes/upgrade.php");
+        dbDelta( $create_sql );
     }
-    require_once(ABSPATH . "wp-admin/includes/upgrade.php");
-    dbDelta( $create_sql );
 }
 
 function register_table($new_table, $new_table_name) {
@@ -384,7 +386,7 @@ function images_tables_create() {
             PRIMARY KEY (src)");
 
    create_table("images_sources_captions", 
-           "filename NVARCHAR(1024) NOT NULL ,
+           "filename NVARCHAR(330) NOT NULL ,
             src VARCHAR(16) NULL ,
             id NVARCHAR(1024) NULL ,
             srcname NVARCHAR(1024) NULL ,
@@ -394,18 +396,47 @@ function images_tables_create() {
             PRIMARY KEY (filename), 
             FOREIGN KEY (src) REFERENCES images_sources(src)");
     global $wpdb;
-    register_table($wpdb->images_sources_captions, "images_sources_captions");
-    register_table($wpdb->images_sources, "images_sources");
+    
+    $wpdb->images_sources_captions = "{$wpdb->prefix}images_sources_captions";
+    $wpdb->images_sources = "{$wpdb->prefix}images_sources";
+    $wpdb->tables[] = "{$wpdb->prefix}images_sources_captions";
+    $wpdb->tables[] = "{$wpdb->prefix}images_sources";
+    
+    error_log( 'wpdb->tables ' . var_export($wpdb->tables, true) );
+    
+    $count_images_sources_captions = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources_captions" );
+    $count_images_sources          = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources" );
+    error_log( 'count_images_sources_captions ' . var_export($count_images_sources_captions, true)
+                . ' ' . 'images_sources ' . var_export($count_images_sources, true));
+                
+    $sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s)  ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
+    error_log( 'sql src 1 ' . var_export($sql, true) );
+    $sql = $wpdb->prepare($sql, "S", "S", "S", "S", "S", "S", "S");
+    error_log( 'sql src 2 ' . var_export($sql, true) );
+    $wpdb->query($sql);
+    $count_images_sources          = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources" );
+    error_log( 'count_images_sources_captions ' . var_export($count_images_sources_captions, true)
+                . ' ' . 'images_sources ' . var_export($count_images_sources, true));
+    
+    
+         
     generate_src();
-
+    populate_images();
+    $bronze = select_image("horsemen/bronze-horseman.jpg");
+    $golden = select_image("horsemen/goldenhorseman.jpg");
+    
+    error_log( 'bronze ' . var_export($bronze, true) );
+    error_log( 'golden ' . var_export($golden, true) );
 }
-//add_action( 'init', 'images_tables_create');
+add_action( 'init', 'images_tables_create');
 
 function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     global $wpdb;
-    $sql = "INSERT INTO {$wpdb->prefix}images_sources (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s) 
+    $sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
-    $sql = $wpdb->prepare($sql, $src, $srcname, $srchref_before, $srchref_after);
+    error_log( 'sql src 1 ' . var_export($sql, true) );
+    $sql = $wpdb->prepare($sql, $src, $srcname, $srchref_before, $srchref_after, $srcname, $srchref_before, $srchref_after);
+    error_log( 'sql src 2 ' . var_export($sql, true) );
     $wpdb->query($sql);
 }
 
@@ -438,32 +469,48 @@ function generate_src() {
 
 function insert_into_images($filename, $src, $id, $caption = ''){
     global $wpdb;
-    $sql = "INSERT INTO {$wpdb->prefix}images_sources_captions (filename, src, id, caption) VALUES (%s, %s, %s, %s) 
+    $sql = "INSERT INTO " . $wpdb->prefix . "images_sources_captions (filename, src, id, caption) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s";
-    $sql = $wpdb->prepare($sql, $src, $srcname, $srchref_before, $srchref_after);
+    error_log(var_export($sql, true));
+    $sql = $wpdb->prepare($sql, $filename, $src, $id, $caption);
+    error_log(var_export($sql, true));
     $wpdb->query($sql);
 }    
 
-function insert_into_images_any($filename, $srcname, $srchref, $caption = ''){
+function insert_into_images_any($filename, $srcname = '', $srchref = '', $caption = ''){
     global $wpdb;
-    $sql = "INSERT INTO {$wpdb->prefix}images_sources_captions (filename, srcname, srchref, caption) VALUES (%s, %s, %s, %s) 
+    $sql = "INSERT INTO " . $wpdb->prefix . "images_sources_captions (filename, srcname, srchref, caption) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE srcname = %s, srchref = %s, caption = %s";
     $sql = $wpdb->prepare($sql, $filename, $srcname, $srchref, $caption);
     $wpdb->query($sql);
 } 
 
+function populate_images(){
+    insert_into_images_any( "horsemen/bronze-horseman.jpg", 
+                            "Flickr - Andrey Korchagin", 
+                            "https://www.flickr.com/photos/peer_gynt/2442195479", 
+                            "Bronze Horseman, 1782,
+Saint-Petersburg, Russia");
+    insert_into_images(     "horsemen/goldenhorseman.jpg", 
+                            "wiki", 
+                            "Dresden_GoldenerReiter_(2005).jpg", 
+                            "Golden Horseman, 1735, 
+Dresden, Saxony (Germany)");
+}
+
 function select_image($filename) {
     global $wpdb;
-    $result = $wpdb->get_row( "SELECT 
+    $result = $wpdb->get_row( 'SELECT 
     caption, 
-    COALESCE(srcname, sources.srcname) AS srcname, 
-    COALESCE(srchref, CONCAT( sources.srchref_before, id, sources.srchref_after) ) AS srchref, 
+    COALESCE(images_tbl.srcname, sources_tbl.srcname) AS srcname, 
+    COALESCE(images_tbl.srchref, CONCAT( sources_tbl.srchref_before, images_tbl.id, sources_tbl.srchref_after) ) AS srchref, 
     srcset 
-    FROM {$wpdb->prefix}images_sources_captions INNER JOIN {$wpdb->prefix}images_sources sources ON src = sources.src
-    WHERE filename = " . $filename );
+    FROM ' . $wpdb->prefix . 'images_sources_captions images_tbl 
+    INNER JOIN ' . $wpdb->prefix . 'images_sources sources_tbl 
+    ON images_tbl.src = sources_tbl.src
+    WHERE filename = "' . $filename . '"');
     
-    return $result;
-    
+    return $result; 
 }
 
 ?>
