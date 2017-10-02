@@ -71,8 +71,11 @@ img, a img, .entry-content a img {
 	box-shadow: none;
 }
 
-.outside_image {
+.images .outside_image {
     display:inline-block !important;
+}
+
+.outside_image {
     text-align: center;
 }
 
