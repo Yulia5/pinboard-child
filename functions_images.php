@@ -82,6 +82,16 @@ function post_ID_to_folder_name($post_id)
     return '';
 } 
  
+function get_folder_name() {
+    $post = get_post();
+    if ( ! empty( $post ) ) {
+        $folder_name = post_ID_to_folder_name($post->ID);
+    } else {
+        $folder_name = null;
+    }
+    return $folder_name;
+}
+
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name)
 {
 	if ((! $width ) && (! $height ))
@@ -103,10 +113,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 		$hrf = trailingslashit(wp_upload_dir()['url']) . $hrf;
 	}
     if (! $folder_name) {
-        $post = get_post();
-        if ( ! empty( $post ) ) {
-            $folder_name = post_ID_to_folder_name($post->ID);
-        }
+        $folder_name = get_folder_name();
     }
     if (!! $folder_name) {
         $index_slash = strrpos($hrf, "/");
@@ -182,6 +189,36 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 	return $result;
 }
 add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
+
+/**
+ * yu_image_DB
+ */
+function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
+
+    extract(shortcode_atts(array(
+        'height' => '',
+        'width' => '',
+        'comp' => '', 
+        'folder_name' => ''
+    ), $attr));
+    
+    $content = trim($content);
+    if ((! $folder_name) && (strrpos($content, "/") !== false)) {
+        $folder_name = get_folder_name();
+    }
+    if (!! $folder_name) {
+        $filename = trailingslashit($folder_name) . $content;
+    } else {
+        $filename = $content;
+    }   
+    
+    $image_info_from_DB = select_image($filename);   
+
+    $result = generate_caption_HTML($content, $height, $width, 
+                    $image_info_from_DB->caption, $image_info_from_DB->srcname, $image_info_from_DB->srchref, $comp, $folder_name);    
+    return $result;
+}
+add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
 
 /**
  * generate_img_source_name_href
@@ -353,28 +390,12 @@ function create_table($new_table_name, $new_table_columns) {
     global $charset_collate;
     $charset_collate = $wpdb->get_charset_collate();
         
-    //$sql = "DROP TABLE IF EXISTS $table_name; DROP TABLE IF EXISTS $new_table_name; ";
-    //$wpdb->query($sql);
-
     if( $wpdb->get_var("SHOW TABLES LIKE '" . $table_name . "'") !==  $table_name) {
         $create_sql = "CREATE TABLE " . $table_name . " ( " . $new_table_columns . ") " . $charset_collate;   
         require_once(ABSPATH . "wp-admin/includes/upgrade.php");
         dbDelta( $create_sql );
     }
 }
-
-/*function register_table($new_table, $new_table_name) {
-    global $wpdb;
-    $table_name = $wpdb->prefix. $new_table_name;
-    
-    //register the new table with the wpdb object
-    if (!isset($new_table))
-    {
-        $new_table = $table_name;
-        //add the shortcut so you can use $wpdb->stats
-        $wpdb->tables[] = str_replace($wpdb->prefix, '', $table_name);
-    }    
-}*/
 
 function images_tables_create() {
 
@@ -402,69 +423,8 @@ function images_tables_create() {
     $wpdb->tables[] = "{$wpdb->prefix}images_sources_captions";
     $wpdb->tables[] = "{$wpdb->prefix}images_sources";
     
-    /*$sql = "DELETE FROM " . $wpdb->images_sources . " WHERE src = %s";
-    $sql = $wpdb->prepare($sql, "S");
-    $wpdb->query($sql);
-    
-    error_log( 'wpdb->tables ' . var_export($wpdb->tables, true) );
-    
-    $count_images_sources_captions = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources_captions" );
-    $count_images_sources          = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources" );
-    error_log( 'count_images_sources_captions ' . var_export($count_images_sources_captions, true)
-                . ' ' . 'images_sources ' . var_export($count_images_sources, true));*/
-                
-    /*$sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s)  ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
-    error_log( 'sql src 1 ' . var_export($sql, true) );
-    $sql = $wpdb->prepare($sql, "S", "S", "S", "S", "S", "S", "S");
-    error_log( 'sql src 2 ' . var_export($sql, true) );
-    $wpdb->query($sql);
-    $count_images_sources          = $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}images_sources" );
-    error_log( 'count_images_sources_captions ' . var_export($count_images_sources_captions, true)
-                . ' ' . 'images_sources ' . var_export($count_images_sources, true));*/
-    
-    
-         
     generate_src();
     populate_images();
-    $golden = select_image("horsemen/goldenhorseman.jpg");
-    $bronze = select_image("horsemen/bronze-horseman.jpg");
-    
-    error_log( 'golden ' . var_export($golden, true) );
-    error_log( 'bronze ' . var_export($bronze, true) );
-    
-    /*$filenames = $wpdb->get_results( "SELECT * FROM " . $wpdb->images_sources_captions);
-    error_log( 'all images_sources_captions ' . var_export($filenames, true) );   
-    
-    $filename = "horsemen/bronze-horseman.jpg";
-    $sql = "SELECT 
-        sources_tbl.srcname, images_tbl.filename, images_tbl.src
-        FROM " . $wpdb->images_sources . " AS sources_tbl, " . $wpdb->images_sources_captions . " AS images_tbl 
-        WHERE (sources_tbl.src = %s) AND (images_tbl.filename = %s)";
-    $sql = $wpdb->prepare($sql, "wiki", $filename);    
-    error_log( 'wiki sql' . var_export($sql, true) );
-    $result = $wpdb->get_row($sql); 
-    error_log( 'wiki ' . var_export($result, true) );
-    
-    $sql = "SELECT 
-        COALESCE(images_tbl.srcname, sources_tbl.srcname) AS srcname 
-        FROM " . $wpdb->images_sources_captions . " AS images_tbl 
-        INNER JOIN " . $wpdb->images_sources . " AS sources_tbl 
-        ON (images_tbl.src = sources_tbl.src)
-        WHERE images_tbl.filename = %s";
-    $sql = $wpdb->prepare($sql, $filename);    
-    $result = $wpdb->get_row($sql); 
-    error_log( 'sources_tbl.srcname ' . var_export($result, true) );
-    
-    $sql = "SELECT 
-        COALESCE(images_tbl.srchref, CONCAT( sources_tbl.srchref_before, images_tbl.id, sources_tbl.srchref_after) ) AS srchref
-        FROM " . $wpdb->images_sources_captions . " AS images_tbl 
-        INNER JOIN " . $wpdb->images_sources . " AS sources_tbl 
-        ON (images_tbl.src = sources_tbl.src)
-        WHERE images_tbl.filename = %s";
-    $sql = $wpdb->prepare($sql, $filename);    
-    $result = $wpdb->get_row($sql); 
-    error_log( 'images_tbl.id ' . var_export($result, true) );*/
-            
 }
 add_action( 'init', 'images_tables_create');
 
@@ -472,9 +432,7 @@ function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     global $wpdb;
     $sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE srcname = %s, srchref_before = %s, srchref_after = %s";
-    //error_log( 'sql src 1 ' . var_export($sql, true) );
     $sql = $wpdb->prepare($sql, $src, $srcname, $srchref_before, $srchref_after, $srcname, $srchref_before, $srchref_after);
-    //error_log( 'sql src 2 ' . var_export($sql, true) );
     $wpdb->query($sql);
 }
 
@@ -505,14 +463,11 @@ function generate_src() {
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/'); 
 }
 
-
 function insert_into_images($filename, $src, $id, $caption = ''){
     global $wpdb;
     $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, src, id, caption) VALUES (%s, %s, %s, %s) 
                 ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s";
-    // error_log(var_export($sql, true));
     $sql = $wpdb->prepare($sql, $filename, $src, $id, $caption, $src, $id, $caption);
-    // error_log(var_export($sql, true));
     $wpdb->query($sql);
 }    
 
