@@ -55,6 +55,7 @@ function pinboard_child_theme_setup() {
     
     /* include image-related collection of functions */
     locate_template( array( 'functions_images.php' ), true, true );
+    locate_template( array( 'functions_images_data.php' ), true, true );
 }
 add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
 
