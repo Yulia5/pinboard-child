@@ -92,20 +92,25 @@ function get_folder_name() {
     return $folder_name;
 }
 
-function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name)
+// Function for basic field validation (present and neither empty nor only white space)
+function is_empty_string($question) {
+    return (!isset($question) || trim($question)==='');
+}
+
+function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, $srcset = null)
 {
 	if ((! $width ) && (! $height ))
 		$height = 200;
 	
-	$img_style = 'style="';
+	$img_attr = 'style="';
 
 	if ( $height ) {
-		$img_style = $img_style . ' height: ' . (int) $height . 'px ';
+		$img_attr = $img_attr . ' height: ' . (int) $height . 'px ';
 	}
 	if ( $width ) {
-		$img_style = $img_style . ' width:' . (int) $width . 'px ';
+		$img_attr = $img_attr . ' width:' . (int) $width . 'px ';
 	}
-	$img_style = $img_style . '" ';
+	$img_attr = $img_attr . '" ';
 	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = trim($hrf, " ");
@@ -121,19 +126,29 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
     }
     $hrf = '"' . $hrf . '" ';
 	
-	$alt = ' alt="' . $caption_no_br . '" ';
-	$alt2 = ' caption="' . $caption_no_br . '" sourcename="' . $sourcename . '" sourcehrf="' . $sourcehrf . '" ';
-	
 	$invisible_a_to_check_broken_links = ' <a href=' . $hrf . ' style="display:none">Invisible, to help broken links check</a>';
-	if ( $sourcehrf )
-		$invisible_a_to_check_broken_links = $invisible_a_to_check_broken_links . ' <a href="' . $sourcehrf . '" style="display:none">Invisible, to help broken links check</a>';
-	
-	if ( $comp )
+    if (! is_empty_string($caption_no_br)) {
+        $img_attr = $img_attr . ' alt="' . $caption_no_br . '" caption="' . $caption_no_br . '"';
+    }
+    if (! is_empty_string($sourcename)) {
+        $img_attr = $img_attr . ' sourcename="' . $sourcename . '"';
+    }
+    if (! is_empty_string($sourcehrf)) {
+        $img_attr = $img_attr . ' sourcehrf="' . $sourcehrf . '"';
+        $invisible_a_to_check_broken_links = $invisible_a_to_check_broken_links 
+            . ' <a href="' . $sourcehrf . '" style="display:none">Invisible, to help broken links check</a>';
+    }    
+    if (! is_empty_string($srcset)) {
+        $img_attr = $img_attr . ' srcset="' . $srcset . '"';
+    }
+     	
+	if ( $comp ) {
 		 $caption = 'COMPARANDUM: ' . $caption;
+    }
     
 	return '<div class="outside_image"> ' 
 	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
-	. '<img '. $img_style . 'src=' . $hrf . $alt . $alt2. '/></a>' 
+	. '<img '. $img_attr . 'src=' . $hrf . '/></a>' 
 	. '<div class="wp-caption-text">' . $caption . '</div>'
 	. $invisible_a_to_check_broken_links . '</div>';
 }
@@ -180,12 +195,7 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 	), $attr));
 	
 	$name_href = generate_img_source_name_href($src, $id);
-	
-	$separator_line = strpos($name_href, '|');
-	$src_name = substr($name_href, 0, $separator_line);
-	$src_href = substr($name_href, $separator_line+1);	
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, $src_name, $src_href, $comp, $folder_name);	
+	$result = generate_caption_HTML($content, $height, $width, $caption, $name_href->srcname, $name_href->srchref, $comp, $folder_name);	
 	return $result;
 }
 add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
@@ -215,82 +225,29 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
     $image_info_from_DB = select_image($filename);   
 
     $result = generate_caption_HTML($content, $height, $width, 
-                    $image_info_from_DB->caption, $image_info_from_DB->srcname, $image_info_from_DB->srchref, $comp, $folder_name);    
+                    $image_info_from_DB->caption, $image_info_from_DB->srcname, $image_info_from_DB->srchref, 
+                    $comp, $folder_name, $image_info_from_DB->srcset);    
     return $result;
 }
 add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
 
-/**
- * generate_img_source_name_href
- */
-function generate_img_source_name_href($src, $id) {
-	switch ($src) {
-    	case "wiki":
-        	return 'Wikipedia Commons|https://commons.wikimedia.org/wiki/File:' . $id;
-    	case "RC":
-        	return 'The Royal Collection|https://www.royalcollection.org.uk/collection/' . $id;
-    	case "Met":
-        	return 'The Metropolitan Museum of Art|http://www.metmuseum.org/art/collection/search/' . $id;
-    	case "ArtUK": // yu_caption_ArtUK
-        	return 'Art UK|http://artuk.org/discover/artworks/' . $id;	
-		case "SKD": // yu_caption_SDK
-        	return '© Staatliche Kunstsammlungen Dresden|https://skd-online-collection.skd.museum/Details/Index/' . $id;	
-		case "BM": // yu_caption_BM
-        	return '© Trustees of the British Museum|http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=' . $id . '&partId=1';	
-		case "LA": // yu_caption_LA
-        	return 'The Los Angeles County Museum of Art|http://collections.lacma.org/node/' . $id;	
-		case "Getty": // yu_caption_Getty
-        	return 'The J. Paul Getty Museum Open Contents Program|http://www.getty.edu/art/collection/objects/' . $id;	
-		case "MFA": // yu_caption_MFA
-        	return 'Museum of Fine Arts, Boston|http://www.mfa.org/collections/object/' . $id;	
-		case "WAM": // yu_caption_WAM  
-        	return 'The Walters Art Museum|http://art.thewalters.org/detail/' . $id;	
-		case "KHM": // yu_caption_KHM  
-        	return 'Kunsthistorisches Museum Vienna|https://www.khm.at/objektdb/detail/' . $id;
-		case "HAM":// yu_caption_HAM  
-        	return  'Harvard Art Museums|http://www.harvardartmuseums.org/collections/object/' . $id;
-		case "CBd": // yu_caption_CBd  
-			return 'Campbell Bonner Magical Gems Database (CBd)|http://www2.szepmuveszeti.hu/talismans/cbd/' . $id;
-		case "RMN": // yu_caption_RMN  
-			return 'Réunion des Musées Nationaux - Grand Palais|http://www.photo.rmn.fr/archive/' . $id . '.html';	
-		case "HM": // yu_caption_HM  
-			return '© The State Hermitage Museum, St. Petersburg|https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/' . $id . '/?lng=en';	
-		case "VA": // yu_caption_VA  
-			return '© Victoria and Albert Museum, London|http://collections.vam.ac.uk/item/' . $id . '/';
-		case "Seals": // yu_caption_Seals 
-			return 'seals @ mernick.org.uk/seals|http://www.mernick.org.uk/seals/' . $id;	
-		case "numisbids": 
-			return 'NumisBids|https://www.numisbids.com/n.php?p=lot&' . $id;	
-		case "ikmk": 
-			return 'Munzkabinett, Staatliche Museen zu Berlin|http://ikmk.smb.museum/object?lang=en&id=' . $id;	
-		case "RJK": 
-			return 'Rijksmuseum Amsterdam|https://www.rijksmuseum.nl/en/collection/' . $id;	
-	}
-	return $src . '|';
-}
-
-/* got images metas given their names and folders */
-function get_images_meta_id( $filenames ) {
-    
-    $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
-    $an_upload_dir_len = strlen($an_upload_dir);
-    
+/* get images metas given their names and folders */
+function get_images_meta_id_srcset( $filenames ) {
+        
     $filenames_as_params = array();
     $posts_per_filename = array();
     sort($filenames);
     $prev_fn = '';
     foreach ( $filenames as $fn ) {
-        if ((strpos($fn, $an_upload_dir) !== 0) or ($fn === $prev_fn)) {
-            continue;
+        if ($fn === $prev_fn) {
+            continue; // a duplicate
         }       
-        $prev_fn = $fn;
-        $short_fn = substr($fn, $an_upload_dir_len);
         array_push($filenames_as_params, array(
-                'value'   => $short_fn,
+                'value'   => $fn,
                 'compare' => 'IS',
                 'key'     => '_wp_attached_file',
             ));
-        $posts_per_filename[$short_fn] = 0;
+        $posts_per_filename[$fn] = 0;
     }
     
     $metas = array();
@@ -322,13 +279,33 @@ function get_images_meta_id( $filenames ) {
             }
         }
     }
-    /*foreach ($posts_per_filename as $fn => $nb_metas) {
+    
+    $potential_problems = array();
+    foreach ($posts_per_filename as $fn => $nb_metas) {
         if ($nb_metas !== 1) {
-            error_log( 'found ' . $nb_metas. ' for file ' . $fn);
+            $potential_problems[$fn] = 'found ' . $nb_metas . ' metas';
         }
-    }
-    error_log( 'metas done ' );*/
-    return $metas;
+    }     
+    
+    $selected_images_srcset = $attachment_ids = array();
+    
+    foreach ($metas as $image_with_folder => $image_meta) {        
+        $attachment_id = $image_meta['attachment_id'];
+        $attachment_ids[ $attachment_id ] = true;
+
+        $image_src =  '<img src="' . $image_with_folder . '">';
+        $an_image_add_srcset_and_sizes 
+            = wp_image_add_srcset_and_sizes($image_src, $image_meta, $attachment_id );
+        if ( preg_match( '/srcset(\s*)=(\s*)\"([^\"]*)\"/', $an_image_add_srcset_and_sizes, $srcset ) ) {
+            $selected_images_srcset[ $image_with_folder ] = $srcset[0];
+        }       
+    } 
+    
+    $result['potential_problems'] = $potential_problems;   
+    $result['selected_images_srcset'] = $selected_images_srcset;   
+    $result['attachment_ids'] = array_keys($attachment_ids);   
+    
+    return $result;
 }
 
 /**
@@ -342,27 +319,16 @@ function get_images_meta_id( $filenames ) {
  * @return string Converted content with 'srcset' and 'sizes' attributes added to images.
  */
 function yu_make_content_images_responsive( $content ) {
-    if ( ! preg_match_all( '/<img[^>]+src\s*=\s*\"([^\"]*)\"([^>]*)>/', $content, $matches ) ) { // /<img [^>]+>/
+    $pattern = '/<img[^>]+src\s*=\s*\"' . preg_quote (trailingslashit(wp_upload_dir()['url']) ) . '([^\"]*)\"([^>]*)>/';
+    if ( ! preg_match_all( $pattern, $content, $matches ) ) {
         return $content;
     }
+    // extract src if not srcset ??? '/<img [^>]+>/'
          
-    $image_metas = get_images_meta_id( $matches[1] );
+    $image_ids_srcsets = get_images_meta_id_srcset( $matches[1]);
+    $attachment_ids = $image_ids_srcsets['attachment_ids'];
+    $selected_images_srcset = $image_ids_srcsets['selected_images_srcset'];
     
-    $selected_images_srcset = $attachment_ids = array();
-    
-    foreach ($image_metas as $image_with_folder => $image_meta) {        
-        $attachment_id = $image_meta['attachment_id'];
-        $image_src =  '<img src="' . $image_with_folder . '">';
-        $an_image_add_srcset_and_sizes 
-            = wp_image_add_srcset_and_sizes($image_src, $image_meta, $attachment_id );
-        if ( ! preg_match( '/srcset(\s*)=(\s*)\"([^\"]*)\"/', $an_image_add_srcset_and_sizes, $srcset ) ) { // /<img [^>]+>/
-            continue;
-        }
-        $selected_images_srcset[ $image_with_folder ] = $srcset[0];
-        // Overwrite the ID when the same image is included more than once.
-        $attachment_ids[ $attachment_id ] = true;
-    }
-
     if ( count( $attachment_ids ) > 1 ) {
         /*
          * Warm object cache for use with 'get_post_meta()'.
@@ -370,7 +336,7 @@ function yu_make_content_images_responsive( $content ) {
          * To avoid making a database call for each image, a single query
          * warms the object cache with the meta information for all images.
          */
-        update_meta_cache( 'post', array_keys( $attachment_ids ) );
+        update_meta_cache( 'post', $attachment_ids );
     }
     
     $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
@@ -436,60 +402,35 @@ function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     $wpdb->query($sql);
 }
 
-/**
- * generate_src
- */
-function generate_src() {
-    insert_into_src("",         '',                                             ''); // added to simplify select_image
-    insert_into_src("wiki",     'Wikipedia Commons',                            'https://commons.wikimedia.org/wiki/File:');
-    insert_into_src("RC",       'The Royal Collection',                         'https://www.royalcollection.org.uk/collection/');
-    insert_into_src("Met",      'The Metropolitan Museum of Art',               'http://www.metmuseum.org/art/collection/search/');
-    insert_into_src("ArtUK",    'Art UK',                                       'http://artuk.org/discover/artworks/');  
-    insert_into_src("SKD",      '© Staatliche Kunstsammlungen Dresden',         'https://skd-online-collection.skd.museum/Details/Index/');    
-    insert_into_src("BM",       '© Trustees of the British Museum',             'http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=', '&partId=1'); 
-    insert_into_src("LA",       'The Los Angeles County Museum of Art',         'http://collections.lacma.org/node/'); 
-    insert_into_src("Getty",    'The J.Paul Getty Museum Open Contents Program','http://www.getty.edu/art/collection/objects/'); 
-    insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'http://www.mfa.org/collections/object/');  
-    insert_into_src("WAM",      'The Walters Art Museum',                       'http://art.thewalters.org/detail/');    
-    insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objektdb/detail/');
-    insert_into_src("HAM",      'Harvard Art Museums',                          'http://www.harvardartmuseums.org/collections/object/');
-    insert_into_src("CBd",      'Campbell Bonner Magical Gems Database (CBd)',  'http://www2.szepmuveszeti.hu/talismans/cbd/');
-    insert_into_src("RMN",      'Réunion des Musées Nationaux - Grand Palais',  'http://www.photo.rmn.fr/archive/', '.html');  
-    insert_into_src("HM",       '© The State Hermitage Museum, St. Petersburg', 'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/', '/?lng=en');  
-    insert_into_src("VA",       '© Victoria and Albert Museum, London',         'http://collections.vam.ac.uk/item/', '/');
-    insert_into_src("Seals",    'Seals @ mernick.org.uk/seals',                 'http://www.mernick.org.uk/seals/');   
-    insert_into_src("numisbids",'NumisBids',                                    'https://www.numisbids.com/n.php?p=lot&');    
-    insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
-    insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/'); 
-}
-
-function insert_into_images($filename, $src, $id, $caption = ''){
+function insert_into_images($filename, $src_or_srcname, $id_or_srchref, $caption = ''){
     global $wpdb;
-    $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, src, id, caption) VALUES (%s, %s, %s, %s) 
-                ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s";
-    $sql = $wpdb->prepare($sql, $filename, $src, $id, $caption, $src, $id, $caption);
-    $wpdb->query($sql);
-}    
-
-function insert_into_images_any($filename, $srcname = '', $srchref = '', $caption = ''){
-    global $wpdb;
-    $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, srcname, srchref, caption) VALUES (%s, %s, %s, %s) 
-                ON DUPLICATE KEY UPDATE srcname = %s, srchref = %s, caption = %s";
-    $sql = $wpdb->prepare($sql, $filename, $srcname, $srchref, $caption, $srcname, $srchref, $caption);
+    $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, ";
+    if (($id_or_srchref === '') or ($id_or_srchref === null) or (strncmp($id_or_srchref, 'http', 4) === 0)  ) {
+        $sql = $sql . "srcname, srchref, caption) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE srcname = %s, srchref = %s, caption = %s";            
+    } else {
+        $sql = $sql . "src, id, caption) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s";
+    }
+    $sql = $wpdb->prepare($sql, $filename, 
+                            $src_or_srcname, $id_or_srchref, $caption, 
+                            $src_or_srcname, $id_or_srchref, $caption);
     $wpdb->query($sql);
 } 
 
-function populate_images(){
-    insert_into_images_any( "horsemen/bronze-horseman.jpg", 
-                            "Flickr - Andrey Korchagin", 
-                            "https://www.flickr.com/photos/peer_gynt/2442195479", 
-                            "Bronze Horseman, 1782,
-Saint-Petersburg, Russia");
-    insert_into_images(     "horsemen/goldenhorseman.jpg", 
-                            "wiki", 
-                            "Dresden_GoldenerReiter_(2005).jpg", 
-                            "Golden Horseman, 1735, 
-Dresden, Saxony (Germany)");
+function update_srcsets($force_update = false) { //not used
+    global $wpdb;
+    $sql = "SELECT filename FROM " . $wpdb->images_sources_captions;
+    if (! $force_update) {
+        $sql = $wpdb->prepare($sql . " WHERE srcset = %s", '');
+    }
+    $filenames_to_update = $wpdb->get_col($sql); 
+    
+    $images_meta_id_srcset = get_images_meta_id_srcset( $filenames_to_update );
+    $selected_images_srcset = $result['selected_images_srcset']; 
+    $sql = "UPDATE " . $wpdb->images_sources_captions . " SET srcset = %s WHERE filename = %s";
+    foreach($selected_images_srcset as $filename => $srcset) {
+        $sql2 = $wpdb->prepare($sql, $srcset, $filename);
+        $wpdb->query($sql2);
+    }  
 }
 
 function select_image($filename) {
@@ -504,6 +445,14 @@ function select_image($filename) {
         ON COALESCE(images_tbl.src, %s) = sources_tbl.src
         WHERE filename = %s";
     $sql = $wpdb->prepare($sql, '', $filename);    
+    $result = $wpdb->get_row($sql);    
+    return $result; 
+}
+
+function generate_img_source_name_href($src, $id) {
+    global $wpdb;
+    $sql = "SELECT srcname, CONCAT(srchref_before, %s, srchref_after) ) AS srchref FROM " . $wpdb->images_sources . " WHERE src = %s";
+    $sql = $wpdb->prepare($sql, $id, $src);    
     $result = $wpdb->get_row($sql);    
     return $result; 
 }
