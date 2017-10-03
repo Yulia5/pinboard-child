@@ -408,6 +408,10 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
     .mfp-with-zoom.mfp-removing.mfp-bg {
       opacity: 0;
     }
+
+/******************************************************************************
+ *                            Post - specific                                 *
+ *****************************************************************************/
     
 .oldEnglish, .newEnglish
 {
@@ -429,3 +433,18 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
     background: #F0F8FF;
 }
     
+#riddle_horsemen_table {
+    max-width:100%; 
+    margin: 0px auto;
+    /*display: block;*/
+    table-layout: fixed;
+}
+
+#riddle_horsemen_table img, #riddle_horsemen_table .wp-caption-text{
+    max-width:90%; 
+    width: 150px;
+}
+
+#riddle_horsemen_table td{
+    max-width:30%; 
+}

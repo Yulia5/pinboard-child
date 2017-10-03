@@ -99,8 +99,6 @@ function is_empty_string($question) {
 
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, $srcset = null)
 {
-	if ((! $width ) && (! $height ))
-		$height = 200;
 	
 	$img_attr = 'style="';
 

@@ -27,17 +27,15 @@ function generate_src() {
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/'); 
 } 
 
-function populate_images(){
-    insert_into_images( "horsemen/bronze-horseman.jpg", 
+function populate_images() {
+    insert_into_images("horsemen/bronze-horseman.jpg", 
                             "Flickr - Andrey Korchagin", 
                             "https://www.flickr.com/photos/peer_gynt/2442195479", 
-                            "Bronze Horseman, 1782,
-Saint-Petersburg, Russia");
-    insert_into_images(     "horsemen/goldenhorseman.jpg", 
+                            "Bronze Horseman, 1782, <br/>Saint-Petersburg, Russia");
+    insert_into_images("horsemen/goldenhorseman.jpg", 
                             "wiki", 
                             "Dresden_GoldenerReiter_(2005).jpg", 
-                            "Golden Horseman, 1735, 
-Dresden, Saxony (Germany)");
+                            "Golden Horseman, 1735, <br/>Dresden, Saxony (Germany)");
 }
 
 ?>
