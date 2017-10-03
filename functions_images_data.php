@@ -2660,7 +2660,7 @@ function populate_images() {
                             "Sasson Ancient Art", 
                             "http://www.sassonancientart.com/artwork_show_282_archive.html", 
                             "Bronze medallion with Saint George, <br/>9th–12th century");
-    insert_into_images("about/http://www.yu51a5.com/wp-content/uploads/rs2G9A1355-sml-narrow.jpg", 
+    insert_into_images("rs2G9A1355-sml-narrow.jpg", 
                             "Sergei Riaboff", 
                             "http://serhi001.weebly.com/", 
                             "Me, April 2017");
