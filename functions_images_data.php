@@ -24,7 +24,10 @@ function generate_src() {
     insert_into_src("Seals",    'Seals @ mernick.org.uk/seals',                 'http://www.mernick.org.uk/seals/');   
     insert_into_src("numisbids",'NumisBids',                                    'https://www.numisbids.com/n.php?p=lot&');    
     insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
-    insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/'); 
+    insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
+    insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
+    insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/');     
+    insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');     
 } 
 
 function populate_images() {
