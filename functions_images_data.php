@@ -31,14 +31,6 @@ function generate_src() {
 } 
 
 function populate_images() {
-    insert_into_images("horsemen/bronze-horseman.jpg", 
-                            "Flickr - Andrey Korchagin", 
-                            "https://www.flickr.com/photos/peer_gynt/2442195479", 
-                            "Bronze Horseman, 1782, <br/>Saint-Petersburg, Russia");
-    insert_into_images("horsemen/goldenhorseman.jpg", 
-                            "wiki", 
-                            "Dresden_GoldenerReiter_(2005).jpg", 
-                            "Golden Horseman, 1735, <br/>Dresden, Saxony (Germany)");
     insert_into_images("horsemen/00-008264.jpg", 
                             "RMN", 
                             "00-008264-2C6NU04TA59G", 
@@ -581,6 +573,7 @@ function populate_images() {
                             "Chalkous, <br/>cr. 425-350 BC, Pelinna, Thessaly");
     insert_into_images("horsemen/4082479429_f57aed4e0a_o.jpg", 
                             "No longer online", 
+                            "", 
                             "Large marble hero horseman relief from Thessaloniki, Greece, <br/>?");
     insert_into_images("horsemen/446513-1392386781.jpg", 
                             "RC", 
@@ -2424,23 +2417,32 @@ function populate_images() {
                             "VW Beetle, West Germany,<br/>1953");
     insert_into_images("rj/beforeSunset.jpg", 
                             "Movieman's Guide to the Movies", 
-                            "http://moviemansguide.com/main/2017/02/review-beforetrilogy-bd/2/");
+                            "http://moviemansguide.com/main/2017/02/review-beforetrilogy-bd/2/", 
+                            "");
     insert_into_images("horsemen/bellerophon-battles-chimaera-hermine-wang.jpg", 
                             "FineArtAmerica.com", 
                             "https://fineartamerica.com/featured/bellerophon-battles-chimaera-hermine-wang.html", 
                             "Bellerophon Battles Chimaera, <br/>2011, Hermine Wang, China");
     insert_into_images("goldenbronzehorsemen/bhmagnet.jpg", 
                             "Magnitizm", 
+                            "", 
                             "Bronze Horseman Magnet");
     insert_into_images("horsemen/bnf.png", 
                             "Médailles et Antiques de la Bibliothèque nationale de France", 
                             "http://medaillesetantiques.bnf.fr/ws/catalogue/app/collection/notices/record/ark:/12148/c33gbb3b", 
                             "The hunt of the king,<br/>591-632");
-    insert_into_images("yoga/bottomyoga.jpg");
+    insert_into_images("yoga/bottomyoga.jpg", 
+                            "", 
+                            "", 
+                            "");
     insert_into_images("hamlet/bouffes.jpg", 
                             "Societe Francaise Shakespeare", 
                             "https://shakespeare.revues.org/1060", 
                             "Peter Brook production Hamlet Stage Design, 2000");
+    insert_into_images("horsemen/bronze-horseman.jpg", 
+                            "Flickr - Andrey Korchagin", 
+                            "https://www.flickr.com/photos/peer_gynt/2442195479", 
+                            "Bronze Horseman, 1782,<br/>Saint-Petersburg, Russia");
     insert_into_images("horsemen/byzantine_museum_athens_-_sidamarna_sarcophagus_detail_-_photo_giovanni_dallorto_nov_12_2009.jpg", 
                             "wiki", 
                             "1834_-_Byzantine_Museum,_Athens_-_Sidamarna_sarcophagus,_detail_-_Photo_Giovanni_Dall%27Orto,_Nov_12_2009.jpg", 
@@ -2491,6 +2493,7 @@ function populate_images() {
                             "Commodus AV Aureus, <br/>181-182, Rome");
     insert_into_images("horsemen/commodus_vatican.jpg", 
                             "From a book", 
+                            "", 
                             "Equestrian statue of Commodus, <br/>2nd century AD, Vatican museums");
     insert_into_images("horsemen/constantine.jpg", 
                             "The Ashmolean Museum", 
@@ -2542,6 +2545,7 @@ function populate_images() {
                             "Fourth seal of Edward III (1341-60 and 1370-2)");
     insert_into_images("horsemen/electorGrof.jpg", 
                             "From a book", 
+                            "", 
                             "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks (detail),<br/>1714, Guillielmus de Grof");
     insert_into_images("horsemen/elizaveta.jpeg", 
                             "SKD", 
@@ -2627,7 +2631,13 @@ function populate_images() {
                             "Smithsonian Magazine", 
                             "http://www.smithsonianmag.com/arts-culture/true-colors-17888/?no-ist", 
                             "Detail of the Alexander Sarcophagus, <br/>circa 320BC, painted replica");
+    insert_into_images("horsemen/goldenhorseman.jpg", 
+                            "wiki", 
+                            "Dresden_GoldenerReiter_(2005).jpg", 
+                            "Golden Horseman, 1735, <br/>Dresden, Saxony (Germany)");
     insert_into_images("hamlet/hamlet-laertes.jpg", 
+                            "", 
+                            "", 
                             "Peter Brook's Hamlet and Laertes");
     insert_into_images("hamlet/hamlet.jpg", 
                             "1 More Film Blog", 
@@ -2651,6 +2661,7 @@ function populate_images() {
                             "Third seal of Henry VIII (1542-7)");
     insert_into_images("horsemen/hittite_pergamon.jpg", 
                             "Taken by me in Pergamon, Berlin", 
+                            "", 
                             "Relief sculpture of a soldier riding a horse, 10th-9th century BC, Aramean or Hittite, Tell Halaf, Syria");
     insert_into_images("horsemen/hm0000_h0419_01.jpg", 
                             "Meissen", 
@@ -2718,9 +2729,11 @@ function populate_images() {
                             "Equestrian portrait of Alexis of Russia, <br/>cr.1670-80, unknown");
     insert_into_images("germany/img_20150124_140912.jpg", 
                             "truly yours", 
+                            "", 
                             "VW Beetle");
     insert_into_images("germany/img_20150124_140942.jpg", 
                             "truly yours", 
+                            "", 
                             "VW Beetle's Label");
     insert_into_images("allchurch/img_20150412_172505.jpg", 
                             "Me", 
@@ -2738,7 +2751,10 @@ function populate_images() {
                             "Seals", 
                             "angevin/john.htm", 
                             "Seal of John Lackland before he became King (1177-1199)");
-    insert_into_images("yoga/keep.jpg");
+    insert_into_images("yoga/keep.jpg", 
+                            "", 
+                            "", 
+                            "");
     insert_into_images("horsemen/kickingHorse.png", 
                             "Getty", 
                             "1091", 
@@ -2781,6 +2797,7 @@ function populate_images() {
                             "High relief of king Louis XIII on horseback, <br/>1634 and 1818, Nicolas Jacques. The original bronze statue was destroyed at the Revolution (1792) and replaced with a stone copy (1818)");
     insert_into_images("horsemen/louisXIV_desjardins.jpg", 
                             "From a book", 
+                            "", 
                             "Equestrian group with Louis XIV, cr. 1690-4, Martin Desjardins (or his assistants)");
     insert_into_images("germany/luther-bible-double-page-spread_5441.jpg", 
                             "British Museum via a blog", 
@@ -2920,7 +2937,8 @@ function populate_images() {
                             "The Conspiracy of the Batavians under Claudius Civilis, <br/>1661–2, Rembrandt");
     insert_into_images("rj/romeo_juliet_bell.jpg", 
                             "Bell Shakespeare Theatre Company via abc.net.au", 
-                            "http://www.abc.net.au/news/2016-02-04/romeo-and-juliet-bell-shakespeare/7140222");
+                            "http://www.abc.net.au/news/2016-02-04/romeo-and-juliet-bell-shakespeare/7140222", 
+                            "");
     insert_into_images("horsemen/s-l1600.jpg", 
                             "eBay", 
                             "http://www.ebay.com/itm/261934752446", 
@@ -3051,9 +3069,11 @@ function populate_images() {
                             "Silver gilt icon of St George with the prostrate figure of Diocletian, <br/>?");
     insert_into_images("horsemen/tacca_savoy.jpg", 
                             "From a book", 
+                            "", 
                             "Equestrian monument of Carlo Emmanuele, Duke of Savoy,<br/>1619-21, Pietro Tacca");
     insert_into_images("horsemen/tacca_savoy.jpg", 
                             "From a book", 
+                            "", 
                             "Equestrian monument of Carlo Emmanuele, Duke of Savoy,<br/>1619-21, Pietro Tacca");
     insert_into_images("horsemen/talisman_809.jpg", 
                             "CBd", 
@@ -3138,4 +3158,3 @@ function populate_images() {
 }
 
 ?>
-                            
