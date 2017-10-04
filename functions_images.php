@@ -3,8 +3,45 @@
 /******************************************************************************
  *                          German Arrows                                     *
  *****************************************************************************/
+ 
+function DE_row_shortcode($attr, $content = null) {
 
-add_shortcode('DE_arrowD', 'DE_arrowD_shortcode');
+    extract(shortcode_atts(array(
+        'f1' => '',
+        'f11' => '',
+        'w1' => '',
+        'f2' => '',
+        'w2' => '',        
+        'dir' => ''), $attr)); 
+        
+    if (! $w1) {
+        $w1 = "225";
+    }
+    if (! $w2) {
+        $w2 = "225";
+    }
+    
+    $im1 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f1 . '[/yu_image_DB]');
+    $im2 = do_shortcode('[yu_image_DB width="' . $w2 . '"]' . $f2 . '[/yu_image_DB]');
+    if (!! $f11) {
+        $im11 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f11 . '[/yu_image_DB]');
+        $im1 = '<table id="table_g2"><tbody><tr><td>' . $im1 . '\n' . $im11 . '</td></tr></tbody></table>';       
+    } else {
+        $arrow_d = '<br/>' . do_shortcode('[yu_image_DB height="100"]arrowd.png[/yu_image_DB]');
+        if ($dir === 'R') {
+            $im2 = $im2 . $arrow_d; 
+        }
+        if ($dir === 'L') {
+            $im1 = $im1 . $arrow_d; 
+        }
+    }
+    $arrow_m = do_shortcode('[yu_image_DB width="100"]arrow' . $dir . '.png[/yu_image_DB]');
+    $result = '<tr><td>' . $im1 . '</td><td width="110" >' . $arrow_m . '</td><td >' . $im2 . '</td></tr>';
+  
+    return $result;
+}
+
+add_shortcode('DE_row', 'DE_row_shortcode');
  
 /**
  * Arrow down for Germany post shortcut.
@@ -24,8 +61,8 @@ function DE_arrowD_shortcode($attr, $content = null) {
 		'valign' => 'top'
 	), $attr));	
  
-	return '<img style="clear:both; align' . $halign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrowd.png" alt="" width="92" height="100" />';
+	return '<img style="align' . $halign 
+	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrowd.png" alt="-" height="100" />';
 }
 
 add_shortcode('DE_arrow', 'DE_arrow_shortcode');
@@ -48,8 +85,8 @@ function DE_arrow_shortcode($attr, $content = null) {
 		'dir' => ''
 	), $attr));
 	
-	return '<img style="clear:both; vertical-align: ' . $valign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrow' . $dir . '.png" alt="" width="100" />';
+	return '<img style="vertical-align: ' . $valign 
+	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrow' . $dir . '.png" alt="->" width="100" />';
 }
  
 /******************************************************************************
@@ -97,18 +134,27 @@ function is_empty_string($question) {
     return (!isset($question) || trim($question)==='');
 }
 
-function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, $srcset = null)
+function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, 
+                                $srcset = null, $style = null, $class = null)
 {
 	
 	$img_attr = 'style="';
 
+    if ( $style ) {
+        $img_attr = $img_attr . $style . ';';
+    }
+
 	if ( $height ) {
-		$img_attr = $img_attr . ' height: ' . (int) $height . 'px ';
+		$img_attr = $img_attr . ' height: ' . (int) $height . 'px;';
 	}
 	if ( $width ) {
-		$img_attr = $img_attr . ' width:' . (int) $width . 'px ';
+		$img_attr = $img_attr . ' width:' . (int) $width . 'px;';
 	}
 	$img_attr = $img_attr . '" ';
+    if ( $class ) {
+        $img_attr = $img_attr . ' class="' . $class . '"';
+    }
+    
 	
 	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
 	$hrf = trim($hrf, " ");
@@ -207,7 +253,9 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
         'height' => '',
         'width' => '',
         'comp' => '', 
-        'folder_name' => ''
+        'folder_name' => '',
+        'style' => '',
+        'class' => '' 
     ), $attr));
     
     $content = trim($content);
@@ -224,7 +272,7 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
 
     $result = generate_caption_HTML($content, $height, $width, 
                     $image_info_from_DB->caption, $image_info_from_DB->srcname, $image_info_from_DB->srchref, 
-                    $comp, $folder_name, $image_info_from_DB->srcset);    
+                    $comp, $folder_name, $image_info_from_DB->srcset, $style, $class);    
     return $result;
 }
 add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');

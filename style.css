@@ -51,6 +51,15 @@ table th {
 	border: none;
 }
 
+#table_g2, #table_g2 tr,#table_g2 td, #table_g2 th
+{
+    border: 5px solid #ebebeb;
+}
+
+#table_g1 td
+{
+    vertical-align: top;
+}
 /******************************************************************************
  *                           Image and Anchor                                 *
  *****************************************************************************/

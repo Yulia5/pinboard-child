@@ -3284,7 +3284,18 @@ function populate_images() {
                             "Yoga Outlet", 
                             "warrior-ii-pose-in-yoga", 
                             NULL);
-    
+    insert_into_images("germany/arrowd.png", 
+                            NULL, 
+                            NULL, 
+                            NULL);
+    insert_into_images("germany/arrowL.png", 
+                            NULL, 
+                            NULL, 
+                            NULL);                            
+    insert_into_images("germany/arrowR.png", 
+                            NULL, 
+                            NULL, 
+                            NULL);                                
 }
 
 ?>
