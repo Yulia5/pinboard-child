@@ -14,11 +14,11 @@ function DE_row_shortcode($attr, $content = null) {
         'w2' => '225',        
         'dir' => ''), $attr)); 
         
-    $im1 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f1 . '[/yu_image_DB]');
-    $im2 = do_shortcode('[yu_image_DB width="' . $w2 . '"]' . $f2 . '[/yu_image_DB]');
+    $im1 = '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f1 . '[/yu_image_DB]') . '</div>';
+    $im2 = '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w2 . '"]' . $f2 . '[/yu_image_DB]') . '</div>';
     if (!! $f11) {
-        $im11 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f11 . '[/yu_image_DB]');
-        $im1 = '<table id="table_g2"><tbody><tr><td>' . $im1 . '\n' . $im11 . '</td></tr></tbody></table>';       
+        $im11 = '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f11 . '[/yu_image_DB]') . '</div>';
+        $im1 = '<table id="table_g2"><tbody><tr><td>' . $im1 . '<br/>' . $im11 . '</td></tr></tbody></table>';       
     } else {
         $arrow_d = '<br/>' . do_shortcode('[yu_image_DB height="100"]arrowd.png[/yu_image_DB]');
         if ($dir === 'R') {
@@ -45,35 +45,13 @@ function DE_row_TB_shortcode($attr, $content = null) {
     
     $arrow_v = do_shortcode('[yu_image_DB width="100"                            ]arrow' . $dir . '.png[/yu_image_DB]');
     $arrow_iv= do_shortcode('[yu_image_DB width="100"  style="visibility: hidden"]arrow' . $dir . '.png[/yu_image_DB]');
-    $im      = do_shortcode('[yu_image_DB width="' . $w                      . '"]' . $f .            '[/yu_image_DB]');
+    $im      =  '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w . '"]' . $f . '[/yu_image_DB]') . '</div>';
 
-    $result = '<tr><td colspan="3"><table><tbody><tr><td style="vertical-align:'. va .';" >' . $arrow_v . '</td><td>'
+    $result = '<tr><td colspan="3"><table><tbody><tr><td style="vertical-align:'. $va .';" >' . $arrow_v . '</td><td>'
                          . $im . '</td><td>' . $arrow_iv . '</td></tr></tbody></table></td></tr>'; 
 	return $result;
 }
 add_shortcode('DE_row_TB', 'DE_row_TB_shortcode');
-
-/**
- * Arrows LR for Germany post shortcut.
- * The supported attributes for the shortcode are
- * 'valign' and 'dir'.
- *
- * @since 2.6.0
- *
- * @param array $attr Attributes attributed to the shortcode.
- * @param string $content Optional, ignored. Shortcode content.
- * @return string
- */
-function DE_arrow_shortcode($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'valign' => 'top',
-		'dir' => ''
-	), $attr));
-	
-	return '<img style="vertical-align: ' . $valign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrow' . $dir . '.png" alt="->" width="100" />';
-}
  
 /******************************************************************************
  *                          Image Caption                                     *
