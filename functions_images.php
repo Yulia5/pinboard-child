@@ -448,22 +448,38 @@ function select_image($filename) {
     $sql = "SELECT 
         caption, 
         COALESCE(images_tbl.srcname, sources_tbl.srcname) AS srcname, 
-        COALESCE(images_tbl.srchref, CONCAT( sources_tbl.srchref_before, images_tbl.id, sources_tbl.srchref_after) ) AS srchref, 
+        COALESCE(images_tbl.srchref, 
+                 CASE WHEN (images_tbl.srcname IS NOT NULL) THEN %s ELSE NULL END, 
+                 CONCAT( sources_tbl.srchref_before, images_tbl.id, sources_tbl.srchref_after) ) AS srchref, 
         srcset 
         FROM " . $wpdb->images_sources_captions . " images_tbl 
         INNER JOIN " . $wpdb->images_sources . " sources_tbl 
         ON COALESCE(images_tbl.src, %s) = sources_tbl.src
         WHERE filename = %s";
-    $sql = $wpdb->prepare($sql, '', $filename);    
+    $sql = $wpdb->prepare($sql, '', '', $filename);    
     $result = $wpdb->get_row($sql);    
+    if ($result === null) {
+        error_log('select_image 2 ' . $sql);
+        error_log('select_image result is null ');
+        $sql = "SELECT * FROM " . $wpdb->images_sources_captions . " images_tbl 
+                        WHERE filename = %s";
+        $sql = $wpdb->prepare($sql, $filename);    
+        $result = $wpdb->get_row($sql);                            
+        error_log('select_image 22 ' . $sql);
+        error_log('select_image 22 result ' . print_r($result, true));
+    }
     return $result; 
 }
 
 function generate_img_source_name_href($src, $id) {
     global $wpdb;
     $sql = "SELECT srcname, CONCAT(srchref_before, %s, srchref_after) ) AS srchref FROM " . $wpdb->images_sources . " WHERE src = %s";
-    $sql = $wpdb->prepare($sql, $id, $src);    
-    $result = $wpdb->get_row($sql);    
+    $sql = $wpdb->prepare($sql, $id, $src);        
+    $result = $wpdb->get_row($sql); 
+    if ($result === null) {
+        error_log('generate_img_source_name_href 2 ' . $sql);
+        error_log('generate_img_source_name_href result is null ');
+    }   
     return $result; 
 }
 
