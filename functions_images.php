@@ -9,18 +9,11 @@ function DE_row_shortcode($attr, $content = null) {
     extract(shortcode_atts(array(
         'f1' => '',
         'f11' => '',
-        'w1' => '',
+        'w1' => '225',
         'f2' => '',
-        'w2' => '',        
+        'w2' => '225',        
         'dir' => ''), $attr)); 
         
-    if (! $w1) {
-        $w1 = "225";
-    }
-    if (! $w2) {
-        $w2 = "225";
-    }
-    
     $im1 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f1 . '[/yu_image_DB]');
     $im2 = do_shortcode('[yu_image_DB width="' . $w2 . '"]' . $f2 . '[/yu_image_DB]');
     if (!! $f11) {
@@ -40,32 +33,25 @@ function DE_row_shortcode($attr, $content = null) {
   
     return $result;
 }
-
 add_shortcode('DE_row', 'DE_row_shortcode');
- 
-/**
- * Arrow down for Germany post shortcut.
- * The supported attributes for the shortcode are 'halign' and
- * 'valign'.
- *
- * @since 2.6.0
- *
- * @param array $attr Attributes attributed to the shortcode.
- * @param string $content Optional, ignored. Shortcode content.
- * @return string
- */
-function DE_arrowD_shortcode($attr, $content = null) {
+
+function DE_row_TB_shortcode($attr, $content = null) {
 
 	extract(shortcode_atts(array(
-		'halign' => 'right',
-		'valign' => 'top'
-	), $attr));	
- 
-	return '<img style="align' . $halign 
-	. '" src="http://www.yu51a5.com/wp-content/uploads/germany/arrowd.png" alt="-" height="100" />';
-}
+		'dir' => '',
+		'w' => '225',
+        'f' => '',
+		'va' => ''), $attr));	
+    
+    $arrow_v = do_shortcode('[yu_image_DB width="100"                            ]arrow' . $dir . '.png[/yu_image_DB]');
+    $arrow_iv= do_shortcode('[yu_image_DB width="100"  style="visibility: hidden"]arrow' . $dir . '.png[/yu_image_DB]');
+    $im      = do_shortcode('[yu_image_DB width="' . $w                      . '"]' . $f .            '[/yu_image_DB]');
 
-add_shortcode('DE_arrow', 'DE_arrow_shortcode');
+    $result = '<tr><td colspan="3"><table><tbody><tr><td style="vertical-align:'. va .';" >' . $arrow_v . '</td><td>'
+                         . $im . '</td><td>' . $arrow_iv . '</td></tr></tbody></table></td></tr>'; 
+	return $result;
+}
+add_shortcode('DE_row_TB', 'DE_row_TB_shortcode');
 
 /**
  * Arrows LR for Germany post shortcut.
