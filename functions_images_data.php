@@ -27,7 +27,8 @@ function generate_src() {
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/');     
-    insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');     
+    insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');  
+    insert_into_src("Yoga Outlet",       "Yoga Outlet",                         "http://www.yogaoutlet.com/guides/how-to-do-");    
 } 
 
 function populate_images() {
@@ -573,7 +574,7 @@ function populate_images() {
                             "Chalkous, <br/>cr. 425-350 BC, Pelinna, Thessaly");
     insert_into_images("horsemen/4082479429_f57aed4e0a_o.jpg", 
                             "No longer online", 
-                            "", 
+                            NULL, 
                             "Large marble hero horseman relief from Thessaloniki, Greece, <br/>?");
     insert_into_images("horsemen/446513-1392386781.jpg", 
                             "RC", 
@@ -2418,23 +2419,23 @@ function populate_images() {
     insert_into_images("rj/beforeSunset.jpg", 
                             "Movieman's Guide to the Movies", 
                             "http://moviemansguide.com/main/2017/02/review-beforetrilogy-bd/2/", 
-                            "");
+                            NULL);
     insert_into_images("horsemen/bellerophon-battles-chimaera-hermine-wang.jpg", 
                             "FineArtAmerica.com", 
                             "https://fineartamerica.com/featured/bellerophon-battles-chimaera-hermine-wang.html", 
                             "Bellerophon Battles Chimaera, <br/>2011, Hermine Wang, China");
     insert_into_images("goldenbronzehorsemen/bhmagnet.jpg", 
                             "Magnitizm", 
-                            "", 
+                            NULL, 
                             "Bronze Horseman Magnet");
     insert_into_images("horsemen/bnf.png", 
                             "Médailles et Antiques de la Bibliothèque nationale de France", 
                             "http://medaillesetantiques.bnf.fr/ws/catalogue/app/collection/notices/record/ark:/12148/c33gbb3b", 
                             "The hunt of the king,<br/>591-632");
     insert_into_images("yoga/bottomyoga.jpg", 
-                            "", 
-                            "", 
-                            "");
+                            NULL, 
+                            NULL, 
+                            NULL);
     insert_into_images("hamlet/bouffes.jpg", 
                             "Societe Francaise Shakespeare", 
                             "https://shakespeare.revues.org/1060", 
@@ -2493,7 +2494,7 @@ function populate_images() {
                             "Commodus AV Aureus, <br/>181-182, Rome");
     insert_into_images("horsemen/commodus_vatican.jpg", 
                             "From a book", 
-                            "", 
+                            NULL, 
                             "Equestrian statue of Commodus, <br/>2nd century AD, Vatican museums");
     insert_into_images("horsemen/constantine.jpg", 
                             "The Ashmolean Museum", 
@@ -2545,7 +2546,7 @@ function populate_images() {
                             "Fourth seal of Edward III (1341-60 and 1370-2)");
     insert_into_images("horsemen/electorGrof.jpg", 
                             "From a book", 
-                            "", 
+                            NULL, 
                             "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks (detail),<br/>1714, Guillielmus de Grof");
     insert_into_images("horsemen/elizaveta.jpeg", 
                             "SKD", 
@@ -2636,8 +2637,8 @@ function populate_images() {
                             "Dresden_GoldenerReiter_(2005).jpg", 
                             "Golden Horseman, 1735, <br/>Dresden, Saxony (Germany)");
     insert_into_images("hamlet/hamlet-laertes.jpg", 
-                            "", 
-                            "", 
+                            NULL, 
+                            NULL, 
                             "Peter Brook's Hamlet and Laertes");
     insert_into_images("hamlet/hamlet.jpg", 
                             "1 More Film Blog", 
@@ -2661,7 +2662,7 @@ function populate_images() {
                             "Third seal of Henry VIII (1542-7)");
     insert_into_images("horsemen/hittite_pergamon.jpg", 
                             "Taken by me in Pergamon, Berlin", 
-                            "", 
+                            NULL, 
                             "Relief sculpture of a soldier riding a horse, 10th-9th century BC, Aramean or Hittite, Tell Halaf, Syria");
     insert_into_images("horsemen/hm0000_h0419_01.jpg", 
                             "Meissen", 
@@ -2729,11 +2730,11 @@ function populate_images() {
                             "Equestrian portrait of Alexis of Russia, <br/>cr.1670-80, unknown");
     insert_into_images("germany/img_20150124_140912.jpg", 
                             "truly yours", 
-                            "", 
+                            NULL, 
                             "VW Beetle");
     insert_into_images("germany/img_20150124_140942.jpg", 
                             "truly yours", 
-                            "", 
+                            NULL, 
                             "VW Beetle's Label");
     insert_into_images("allchurch/img_20150412_172505.jpg", 
                             "Me", 
@@ -2752,9 +2753,9 @@ function populate_images() {
                             "angevin/john.htm", 
                             "Seal of John Lackland before he became King (1177-1199)");
     insert_into_images("yoga/keep.jpg", 
-                            "", 
-                            "", 
-                            "");
+                            NULL, 
+                            NULL, 
+                            NULL);
     insert_into_images("horsemen/kickingHorse.png", 
                             "Getty", 
                             "1091", 
@@ -2797,7 +2798,7 @@ function populate_images() {
                             "High relief of king Louis XIII on horseback, <br/>1634 and 1818, Nicolas Jacques. The original bronze statue was destroyed at the Revolution (1792) and replaced with a stone copy (1818)");
     insert_into_images("horsemen/louisXIV_desjardins.jpg", 
                             "From a book", 
-                            "", 
+                            NULL, 
                             "Equestrian group with Louis XIV, cr. 1690-4, Martin Desjardins (or his assistants)");
     insert_into_images("germany/luther-bible-double-page-spread_5441.jpg", 
                             "British Museum via a blog", 
@@ -2938,7 +2939,7 @@ function populate_images() {
     insert_into_images("rj/romeo_juliet_bell.jpg", 
                             "Bell Shakespeare Theatre Company via abc.net.au", 
                             "http://www.abc.net.au/news/2016-02-04/romeo-and-juliet-bell-shakespeare/7140222", 
-                            "");
+                            NULL);
     insert_into_images("horsemen/s-l1600.jpg", 
                             "eBay", 
                             "http://www.ebay.com/itm/261934752446", 
@@ -3069,11 +3070,11 @@ function populate_images() {
                             "Silver gilt icon of St George with the prostrate figure of Diocletian, <br/>?");
     insert_into_images("horsemen/tacca_savoy.jpg", 
                             "From a book", 
-                            "", 
+                            NULL, 
                             "Equestrian monument of Carlo Emmanuele, Duke of Savoy,<br/>1619-21, Pietro Tacca");
     insert_into_images("horsemen/tacca_savoy.jpg", 
                             "From a book", 
-                            "", 
+                            NULL, 
                             "Equestrian monument of Carlo Emmanuele, Duke of Savoy,<br/>1619-21, Pietro Tacca");
     insert_into_images("horsemen/talisman_809.jpg", 
                             "CBd", 
@@ -3155,6 +3156,135 @@ function populate_images() {
                             "Guardian", 
                             "http://www.theguardian.com/stage/2000/dec/02/peter-brook-hamlet-theatre", 
                             "Missing Yorick scene");
+    insert_into_images("horsemen/0b01e2c5402314588bb5520e72d01129.jpeg", 
+                            "Bonhams", 
+                            "11597/lot/245/", 
+                            "Greco-Scythian gold horseman appliqué, <br/>(?) cr. 4th century BC");
+    insert_into_images("horsemen/1193527.jpg", 
+                            "@Dantes, juzaphoto.com", 
+                            "http://www.juzaphoto.com/me.php?pg=111213&l=en", 
+                            "Statue of Victor Amadeus I, Duke of Savoy, <br/>1620s and 1660s, Andrea Rivalta and Federico Vanelli");
+    insert_into_images("horsemen/1280px-San_Romano_Battle_Paolo_Uccello_London_01.jpg", 
+                            "wiki", 
+                            "San_Romano_Battle_(Paolo_Uccello,_London)_01.jpg", 
+                            "The Battle of San Romano,<br/>cr.1438-40, Paolo Uccello, tempera on panel");
+    insert_into_images("horsemen/253796.png", 
+                            "Met", 
+                            "253796", 
+                            "Plasma scarabaeoid seal: Persian Horseman Slaying a Greek with a Spear, <br/>cr. 450-400 BC, Greek/Ionian");
+    insert_into_images("horsemen/776px-Count-Duke_of_Olivares.jpg", 
+                            "wiki", 
+                            "Count-Duke_of_Olivares.jpg", 
+                            "Equestrian Portrait Of The Count-Duke Of Olivares, <br/>1634, Diego Velázquez");
+    insert_into_images("horsemen/7b16450958a3ef2b014e52d64a66cfe8.jpg", 
+                            "Pinterest", 
+                            "https://uk.pinterest.com/pin/111323422012988372/", 
+                            "Statue of King Louis XIV, Gian Lorenzo Bernini, <br/>1665-84, Versailles");
+    insert_into_images("horsemen/866px-Jacques_Louis_David_-_Bonaparte_franchissant_le_Grand_Saint-Bernard_20_mai_1800_-_Google_Art_Project.jpg", 
+                            "wiki", 
+                            "Jacques_Louis_David_-_Bonaparte_franchissant_le_Grand_Saint-Bernard,_20_mai_1800_-_Google_Art_Project.jpg", 
+                            "Napoleon Crossing the Alps, <br/>1802, Jacques-Louis David");
+    insert_into_images("horsemen/AN01135806_001_l.jpg", 
+                            "BM", 
+                            "3437771", 
+                            "Henry IV by God's grace the king of France and Navarre aged 51 (1603),<br/>1585-1603, Robert Boissard, France");
+    insert_into_images("horsemen/Equestrian_portrait_of_Grand_Duchess_Catherine_Alexeevna_by_G.C.Grooth_c._1744_Russian_museum.jpg", 
+                            "wiki", 
+                            "Equestrian_portrait_of_Grand_Duchess_Catherine_Alexeevna_by_G.C.Grooth_(c._1744,_Russian_museum).jpg", 
+                            "Equestrian portrait of Grand Duchess Catherine Alexeevna, <br/>G.C.Grooth, 1744");
+    insert_into_images("horsemen/Equestrian_portrait_of_Peter_III_by_Grooth_1742-44_Russian_museum.jpg", 
+                            "wiki", 
+                            "Equestrian_portrait_of_Peter_III_by_Grooth_(1742-44_(%3F),_Russian_museum).jpg", 
+                            "Equestrian portrait of Peter III, <br/>G.C.Grooth, 1742-4");
+    insert_into_images("horsemen/H0046-L08660849.jpg", 
+                            "Sothebys", 
+                            "2008/old-master-paintings-and-drawings-pf8011/lot.50.html", 
+                            "Equestrian portrait of victorious Louis XIII, <br/>17th century, Claude Déruet (attributed to)");
+    insert_into_images("horsemen/Peter_Paul_Rubens_copy_of_the_lost_Battle_of_Anghiari.jpg", 
+                            "wiki", 
+                            "Peter_Paul_Ruben%27s_copy_of_the_lost_Battle_of_Anghiari.jpg", 
+                            "Copy of the lost Battle of Anghiari by Leonardo da Vinci, <br/>circa 1603, Peter Paul Rubens");
+    insert_into_images("horsemen/SCARAB_bellerophone.jpg", 
+                            "Christies", 
+                            "ancient-art-antiquities/an-etruscan-carnelian-scarab-and-gold-finger-5158072-details.aspx", 
+                            "Carnelian scarab and gold finger engraved with Bellerophon and the Chimaera, <br/>late 5th century BC, Etruscan");
+    insert_into_images("horsemen/a_meissen_ormolu-mounted_equestrian_figure_circa_1745-50_d5440168h.jpg", 
+                            "Christies", 
+                            "lot/a-meissen-ormolu-mounted-equestrian-figure-circa-1745-50-5440168-details.aspx", 
+                            "A Meissen Equestrian Figure,<br/>cr. 1745-50");
+    insert_into_images("horsemen/augustus-iii.jpg", 
+                            "Langeloh", 
+                            "http://www.yu51a5.com/wp-content/uploads/we_2753_reiterstandbild_eng.pdf", 
+                            "Augustus III porcelain figurine<br/>Model by Johann J. Kaendler,<br/>Meissen 1745");
+    insert_into_images("horsemen/ausutus1m.jpg", 
+                            "wiki", 
+                            "Dresden_Zwinger_Model_equestrian_statue_Augustus_III.JPG", 
+                            "Model for a 12m equestrian statue to Augustus III, <br/>123cm x 94cm x 117cm,<br/>1753, Johann Joachim Kändler");
+    insert_into_images("horsemen/bonhams.jpeg", 
+                            "Bonhams", 
+                            "13502/lot/55/", 
+                            "An equestrian portrait of a gentleman, <br/>?, Studio of Claude Déruet");
+    insert_into_images("horsemen/d3802122x.jpg", 
+                            "Christies", 
+                            "lot/at-sf-2-10-0-0-10-2-no3001-3802122-details.aspx", 
+                            "Equestrian portrait of a prince in armour, with the Order of the Golden Fleece, <br/>before 1684, Gonzales Coques");
+    insert_into_images("horsemen/d5425674a.jpg", 
+                            "Christies", 
+                            "sculptures-statues-figures/a-meissen-equestrian-figure-of-augustus-iii-5425674-details.aspx", 
+                            "Augustus III porcelain figurine,<br/>20th century, incised in 1796,<br/>after a model by Meyer");
+    insert_into_images("yoga/downwarddog.jpg", 
+                            "Yoga Outlet", 
+                            "downward-facing-dog-in-yoga", 
+                            NULL);
+    insert_into_images("horsemen/image.jpeg", 
+                            "Bonhams", 
+                            "21925/lot/212/", 
+                            "Tapestry roundel with horseman, <br/>5th-7th century, Coptic");
+    insert_into_images("horsemen/marcus_sotbeys.jpg", 
+                            "Sothebys", 
+                            "2013/arts-of-europe-l13301/lot.1.html", 
+                            "Dish depiting the sacrifice of Marcus Curtius, <br/>cr. 1550-60, workshop of Virgiliotto Calamelli, Faenza");
+    insert_into_images("horsemen/saint_george_ethiopia.jpeg", 
+                            "Minneapolis Institute of Art", 
+                            "https://github.com/artsmia/artstories.md/blob/master/stories/44-plates-from-a-christian-illuminated-album.md", 
+                            "Saint George from the ensemble of 44 leaves featuring Ethiopian saints and scenes from the Hebrew Scriptures and New Testament, painting on parchment,<br/>late 17th century");
+    insert_into_images("horsemen/saint_george_ethiopia_3.jpeg", 
+                            "Minneapolis Institute of Art", 
+                            "https://github.com/artsmia/artstories.md/blob/master/stories/44-plates-from-a-christian-illuminated-album.md", 
+                            "Saint George from the ensemble of 44 leaves featuring Ethiopian saints and scenes from the Hebrew Scriptures and New Testament, painting on parchment,<br/>late 17th century");
+    insert_into_images("horsemen/showImage.asp_.jpeg", 
+                            "Liechtenstein The Princely Collections", 
+                            "http://www.liechtensteincollections.at/de/pages/artbase_main.asp?module=browse&action=m_work&lang=de&sid=92343&oid=W-542005134758570", 
+                            "Grand duke Ferdinando II di Medici on Horseback, with the head of Peter the Great, <br/>1615-21, Pietro Tacca, Florence");
+    insert_into_images("horsemen/talisman_808.jpg", 
+                            "CBd", 
+                            "808", 
+                            "Magical pendant with Holy Rider on horseback, trampling over a dragon lying on the ground, <br/>5th century, Byzantian");
+    insert_into_images("horsemen/thomas_gainsborough_ra_after_sir_anthony_van_dyck_equestrian_portrait_d5639296h-1.jpg", 
+                            "Christies", 
+                            "paintings/thomas-gainsborough-ra-equestrian-portrait-of-albert-5639296-details.aspx", 
+                            "Equestrian portrait of the Duke of Arenberg (after Anthony van Dyck), <br/>1742-88, Thomas Gainsborough, England");
+    insert_into_images("yoga/yoga_chairposetwist_01_300x3501.jpg", 
+                            "Yoga Outlet", 
+                            "chair-pose-twist-in-yoga", 
+                            NULL);
+    insert_into_images("yoga/yoga_standingforwardfold.jpg", 
+                            "Yoga Outlet", 
+                            "standing-forward-fold-in-yoga", 
+                            NULL);
+    insert_into_images("yoga/yoga_threeleggeddownwarddog_01_300x350.jpg", 
+                            "Yoga Outlet", 
+                            "three-legged-downward-dog-in-yoga", 
+                            NULL);
+    insert_into_images("yoga/yoga_warriori_01_300x3501.jpg", 
+                            "Yoga Outlet", 
+                            "warrior-i-pose-in-yoga", 
+                            NULL);
+    insert_into_images("yoga/yoga_warriorii_02_300x350.jpg", 
+                            "Yoga Outlet", 
+                            "warrior-ii-pose-in-yoga", 
+                            NULL);
+    
 }
 
 ?>
