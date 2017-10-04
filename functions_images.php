@@ -211,7 +211,7 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
     ), $attr));
     
     $content = trim($content);
-    if ((! $folder_name) && (strrpos($content, "/") !== false)) {
+    if ((! $folder_name) && (strrpos($content, "/") === false)) {
         $folder_name = get_folder_name();
     }
     if (!! $folder_name) {
@@ -317,7 +317,7 @@ function get_images_meta_id_srcset( $filenames ) {
  * @return string Converted content with 'srcset' and 'sizes' attributes added to images.
  */
 function yu_make_content_images_responsive( $content ) {
-    $pattern = '/<img[^>]+src\s*=\s*\"' . preg_quote (trailingslashit(wp_upload_dir()['url']) ) . '([^\"]*)\"([^>]*)>/';
+    $pattern = '`<img[^>]+src\s*=\s*\"' . preg_quote (trailingslashit(wp_upload_dir()['url']), '/' ) . '([^\"]*)\"([^>]*)>`';
     if ( ! preg_match_all( $pattern, $content, $matches ) ) {
         return $content;
     }
