@@ -2909,8 +2909,8 @@ function populate_images() {
                             "http://www.fineartprintsondemand.com/artists/kneller/portrait_of_king_george_i.htm", 
                             "Portrait of King George I, <br/>1717, Godfrey Kneller");
     insert_into_images("berets/post-31427-1302988893.png", 
-                            "vignette2.wikia.nocookie.net", 
-                            "http://vignette2.wikia.nocookie.net/adeles/images/2/2e/Post-31427-1302988893.png/revision/latest?cb=20150117004736", 
+                            "Lauren Dukoff @ tumblr.com", 
+                            "http://laurendukoff.tumblr.com/post/38232595486/adele-santa-monica-ca", 
                             "Rembrandt Lighting for Adele");
     insert_into_images("horsemen/prancingHorse.png", 
                             "Getty", 
