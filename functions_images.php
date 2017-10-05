@@ -416,9 +416,9 @@ function insert_into_images($filename, $src_or_srcname, $id_or_srchref, $caption
     global $wpdb;
     $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, ";
     if (($id_or_srchref === '') or ($id_or_srchref === null) or (strncmp($id_or_srchref, 'http', 4) === 0)  ) {
-        $sql = $sql . "srcname, srchref, caption) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE srcname = %s, srchref = %s, caption = %s";            
+        $sql = $sql . "srcname, srchref, caption, src, id) VALUES (%s, %s, %s, %s, NULL, NULL) ON DUPLICATE KEY UPDATE srcname = %s, srchref = %s, caption = %s, src = NULL, id = NULL";            
     } else {
-        $sql = $sql . "src, id, caption) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s";
+        $sql = $sql . "src, id, caption, srcname, srchref) VALUES (%s, %s, %s, %s, NULL, NULL) ON DUPLICATE KEY UPDATE src = %s, id = %s, caption = %s, srcname = NULL, srchref = NULL";
     }
     $sql = $wpdb->prepare($sql, $filename, 
                             $src_or_srcname, $id_or_srchref, $caption, 
@@ -446,7 +446,7 @@ function update_srcsets($force_update = false) { //not used
 function select_image($filename) {
     global $wpdb;
     $sql = "SELECT 
-        caption, 
+        COALESCE(caption, %s) AS caption, 
         COALESCE(images_tbl.srcname, sources_tbl.srcname) AS srcname, 
         COALESCE(images_tbl.srchref, 
                  CASE WHEN (images_tbl.srcname IS NOT NULL) THEN %s ELSE NULL END, 
@@ -456,7 +456,7 @@ function select_image($filename) {
         INNER JOIN " . $wpdb->images_sources . " sources_tbl 
         ON COALESCE(images_tbl.src, %s) = sources_tbl.src
         WHERE filename = %s";
-    $sql = $wpdb->prepare($sql, '', '', $filename);    
+    $sql = $wpdb->prepare($sql, '', '', '', $filename);    
     $result = $wpdb->get_row($sql);    
     if ($result === null) {
         error_log('select_image 2 ' . $sql);
