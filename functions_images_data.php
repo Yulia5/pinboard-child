@@ -731,7 +731,7 @@ function populate_images() {
     insert_into_images("berets/790px-rembrandt_van_rijn_-_self-portrait_-_google_art_project.jpg", 
                             "wiki", 
                             "Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg", 
-                            "Rembrandt - Self-Portrait, <br/>1659");
+                            "Self-Portrait, <br/>1659, Rembrandt van Rijn");
     insert_into_images("allchurch/7_tokyo_story_moonviewing1.jpg", 
                             "Francis Hodgson", 
                             "http://francishodgson.com/2011/05/13/emily-allchurch-tokyo-story/", 
@@ -2895,7 +2895,7 @@ function populate_images() {
     insert_into_images("berets/picasso.jpg", 
                             "Getty Images", 
                             "http://www.gettyimages.co.uk/detail/news-photo/portrait-of-spanish-born-artist-pablo-picasso-in-a-winter-news-photo/3470918", 
-                            "Picasso, <br/>1950s");
+                            "Picasso, <br/>1950s, taken by an unknown photographer");
     insert_into_images("horsemen/picture-artwork-saint_georges_et_le_dragon-1000-1000-73800.jpg", 
                             "amorosart", 
                             "https://en.amorosart.com/artwork-dali-saint_georges_et_le_dragon-73800.html", 
@@ -3296,6 +3296,18 @@ function populate_images() {
                             NULL, 
                             NULL, 
                             NULL);                                
+    insert_into_images("berets/Leonardo_da_Vinci_LUCAN_self-portrait_PORTRAIT.jpg", 
+                            "wiki", 
+                            "Leonardo_da_Vinci_LUCAN_self-portrait_PORTRAIT.jpg", 
+                            "Self Portrait, a posthumous portrait or a forgery,  <br/>late 15th or early 16th century, Leonardo da Vinci(?)");                                
+    insert_into_images("berets/Self-Portrait-leonardo.jpg", 
+                            "reprodart.com", 
+                            "https://www.reprodart.com/a/leonardo-da-vinci/selfportrait-39.html", 
+                            "Self Portrait or a posthumous portrait, <br/>cr. 1500 (?) or cr. 1600, Leonardo da Vinci (?)");                                
+    insert_into_images("horsemen/tsipori-palestine-ca-4th.gif", 
+                            "classicgrandtour.com", 
+                            "https://classicgrandtour.com/2016/11/03/esta-chica-es-epica/", 
+                            "Mosaic with a scene of hunting Amazons, <br/>4th or 5th century, Nile House, Tzippori (or Sepphoris, or Zippori) National Park, Palestine (modern Israel)");                                
 }
 
 ?>
