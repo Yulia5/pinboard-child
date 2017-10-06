@@ -2908,7 +2908,7 @@ function populate_images() {
                             "www.fineartprintsondemand.com", 
                             "http://www.fineartprintsondemand.com/artists/kneller/portrait_of_king_george_i.htm", 
                             "Portrait of King George I, <br/>1717, Godfrey Kneller");
-    insert_into_images("berets/post-31427-1302988893.png", 
+    insert_into_images("berets/tumblr_inline_mf8k6j6qb71qaw235.jpg", 
                             "Lauren Dukoff @ tumblr.com", 
                             "http://laurendukoff.tumblr.com/post/38232595486/adele-santa-monica-ca", 
                             "Rembrandt Lighting for Adele");
