@@ -6,10 +6,22 @@ jQuery(document).ready(function($) {
 
     //$(document).ready(function() {});
     //run a script when the document structure is ready, but before all of the images have loaded
+    
+    window.onload = function() {
+        $('.images img').each(function(i, obj) {
+            resize_an_image($(this));
+        });
+        $('.outside_image img').each(function(i, obj) {
+            resize_a_caption($(this));
+        });
+    }
 
     window.onresize = function() {
         $('.images img').each(function(i, obj) {
             resize_an_image($(this));
+        });
+        $('.outside_image img').each(function(i, obj) {
+            resize_a_caption($(this));
         });
     }
 
@@ -23,6 +35,7 @@ jQuery(document).ready(function($) {
         
         $(this).load(function() {
             resize_an_image($(this));
+            resize_a_caption($(this));
         });
     });
 
@@ -36,8 +49,6 @@ jQuery(document).ready(function($) {
         };
         return false;
     }
-
-
 
     function resize_an_image(an_image) {
 
@@ -63,17 +74,18 @@ jQuery(document).ready(function($) {
             new_height = Math.floor(new_height * (max_width / new_width));
             new_width = max_width;
         }
-        if (new_height !== old_height) {
-            an_image.css('height', new_height);
-        }
-        if (new_width !== old_width) {
-            an_image.css('width', new_width);
-        }
+        an_image.css('height', new_height);
+        an_image.css('width', new_width);
+        return 0;
+    }       
+
+    function resize_a_caption(an_image) {
+
         an_image.closest('.outside_image').children('.wp-caption-text').each(function() {
-            $(this).css('width', new_width);
+            var _width = parseFloat(an_image.width());
+            $(this).css('width', _width);
             // "this" is the current element in the loop
         });
-
         return 0;
     }
 
