@@ -3203,7 +3203,7 @@ function populate_images() {
     insert_into_images("horsemen/Peter_Paul_Rubens_copy_of_the_lost_Battle_of_Anghiari.jpg", 
                             "wiki", 
                             "Peter_Paul_Ruben%27s_copy_of_the_lost_Battle_of_Anghiari.jpg", 
-                            "Copy of the lost Battle of Anghiari by Leonardo da Vinci, <br/>circa 1603, Peter Paul Rubens");
+                            "Copy of the lost Battle of Anghiari by Leonardo da Vinci, 1504-5, <br/>circa 1603, Peter Paul Rubens");
     insert_into_images("horsemen/SCARAB_bellerophone.jpg", 
                             "Christies", 
                             "ancient-art-antiquities/an-etruscan-carnelian-scarab-and-gold-finger-5158072-details.aspx", 
@@ -3296,6 +3296,18 @@ function populate_images() {
                             NULL, 
                             NULL, 
                             NULL);                                
+    insert_into_images("berets/Ultima_Cena_-_Da_Vinci_5.jpg", 
+                            "wiki", 
+                            "Última_Cena_-_Da_Vinci_5.jpg", 
+                            "The Last Supper,  <br/>1495-8, Leonardo da Vinci");                                
+    insert_into_images("berets/Rembrandt_-_Rembrandt_and_Saskia_in_the_Scene_of_the_Prodigal_Son_-_Google_Art_Project.jpg", 
+                            "wiki", 
+                            "Rembrandt_-_Rembrandt_and_Saskia_in_the_Scene_of_the_Prodigal_Son_-_Google_Art_Project.jpg", 
+                            "Rembrandt and Saskia in the parable of the Prodigal Son,  <br/>1635, Rembrandt");                                
+    insert_into_images("berets/guernica.jpg", 
+                            "Alejandro Mos Riera @ vimeo.com", 
+                            "https://vimeo.com/189104964", 
+                            "Guernica,  <br/>1937, Picasso");                                
     insert_into_images("berets/Leonardo_da_Vinci_LUCAN_self-portrait_PORTRAIT.jpg", 
                             "wiki", 
                             "Leonardo_da_Vinci_LUCAN_self-portrait_PORTRAIT.jpg", 
