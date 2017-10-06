@@ -35,6 +35,7 @@ table {
     border: none;
     margin: 0px auto;
     width:auto;
+    max-width:100%; 
 }
 
 table th,
@@ -51,8 +52,7 @@ table th {
 	border: none;
 }
 
-#table_g2, #table_g2 tr,#table_g2 td, #table_g2 th
-{
+#table_g2, #table_g2 tr,#table_g2 td, #table_g2 th {
     border: 5px solid #ebebeb;
 }
 
@@ -78,10 +78,6 @@ img, a img, .entry-content a img {
 	border-width: 0;
 	outline:none;
 	box-shadow: none;
-}
-
-.images .outside_image {
-    display:inline-block !important;
 }
 
 .outside_image {
@@ -116,6 +112,11 @@ div .center, table .center, .wp-caption-text, .outside_image {
 img .center {
     display:block;
     margin:auto;
+}
+
+
+table .images {
+    display:inline-block; 
 }
 
 .images {
@@ -443,13 +444,10 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 }
     
 #riddle_horsemen_table {
-    max-width:100%; 
-    margin: 0px auto;
-    /*display: block;*/
     table-layout: fixed;
 }
 
-#riddle_horsemen_table img, #riddle_horsemen_table .wp-caption-text{
+#riddle_horsemen_table img, #riddle_horsemen_table .wp-caption-text, #riddle_horsemen_table .outside_image{
     max-width:90%; 
     width: 150px;
 }

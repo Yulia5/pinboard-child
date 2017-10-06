@@ -14,10 +14,10 @@ function DE_row_shortcode($attr, $content = null) {
         'w2' => '225',        
         'dir' => ''), $attr)); 
         
-    $im1 = '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f1 . '[/yu_image_DB]') . '</div>';
-    $im2 = '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w2 . '"]' . $f2 . '[/yu_image_DB]') . '</div>';
+    $im1 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f1 . '[/yu_image_DB]');
+    $im2 = do_shortcode('[yu_image_DB width="' . $w2 . '"]' . $f2 . '[/yu_image_DB]');
     if (!! $f11) {
-        $im11 = '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f11 . '[/yu_image_DB]') . '</div>';
+        $im11 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f11 . '[/yu_image_DB]');
         $im1 = '<table id="table_g2"><tbody><tr><td>' . $im1 . '<br/>' . $im11 . '</td></tr></tbody></table>';       
     } else {
         $arrow_d = '<br/>' . do_shortcode('[yu_image_DB height="100"]arrowd.png[/yu_image_DB]');
@@ -45,7 +45,7 @@ function DE_row_TB_shortcode($attr, $content = null) {
     
     $arrow_v = do_shortcode('[yu_image_DB width="100"                            ]arrow' . $dir . '.png[/yu_image_DB]');
     $arrow_iv= do_shortcode('[yu_image_DB width="100"  style="visibility: hidden"]arrow' . $dir . '.png[/yu_image_DB]');
-    $im      =  '<div class="images">' . do_shortcode('[yu_image_DB width="' . $w . '"]' . $f . '[/yu_image_DB]') . '</div>';
+    $im      =  do_shortcode('[yu_image_DB width="' . $w . '"]' . $f . '[/yu_image_DB]');
 
     $result = '<tr><td colspan="3"><table><tbody><tr><td style="vertical-align:'. $va .';" >' . $arrow_v . '</td><td>'
                          . $im . '</td><td>' . $arrow_iv . '</td></tr></tbody></table></td></tr>'; 
