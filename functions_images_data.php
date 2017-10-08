@@ -3296,6 +3296,10 @@ function populate_images() {
                             NULL, 
                             NULL, 
                             NULL);                                
+    insert_into_images("berets/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg", 
+                            "wiki", 
+                            "Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg", 
+                            "Virgin of the Rocks,  <br/>1483-6, Leonardo da Vinci");                                
     insert_into_images("berets/Ultima_Cena_-_Da_Vinci_5.jpg", 
                             "wiki", 
                             "Última_Cena_-_Da_Vinci_5.jpg", 
@@ -3311,7 +3315,7 @@ function populate_images() {
     insert_into_images("berets/Leonardo_da_Vinci_LUCAN_self-portrait_PORTRAIT.jpg", 
                             "wiki", 
                             "Leonardo_da_Vinci_LUCAN_self-portrait_PORTRAIT.jpg", 
-                            "Self Portrait, a posthumous portrait or a forgery,  <br/>late 15th or early 16th century, Leonardo da Vinci(?)");                                
+                            "Self Portrait, a posthumous portrait or a forgery,  <br/>late 15th or early 16th century, Leonardo da Vinci (?)");                                
     insert_into_images("berets/Self-Portrait-leonardo.jpg", 
                             "reprodart.com", 
                             "https://www.reprodart.com/a/leonardo-da-vinci/selfportrait-39.html", 
@@ -3320,6 +3324,15 @@ function populate_images() {
                             "classicgrandtour.com", 
                             "https://classicgrandtour.com/2016/11/03/esta-chica-es-epica/", 
                             "Mosaic with a scene of hunting Amazons, <br/>4th or 5th century, Nile House, Tzippori (or Sepphoris, or Zippori) National Park, Palestine (modern Israel)");                                
+    insert_into_images("goldenbronzehorsemen/Man_silhouette.svg", 
+                            "wiki", 
+                            "Man_silhouette.svg", 
+                            "Jean-Joseph Vinache <br/>(1696 – 1754)");
+    insert_into_images("goldenbronzehorsemen/Lemoyne_the_Younger_-_Etienne_Maurice_Falconet.jpg", 
+                            "Met", 
+                            "418355", 
+                            "Étienne Maurice Falconet <br/>(1716 – 1791)");
+                            
 }
 
 ?>

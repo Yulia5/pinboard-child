@@ -215,4 +215,19 @@ function MY_VERY_OWN_amazon($attr, $content = null) {
 }
 add_shortcode('yu_amazon', 'MY_VERY_OWN_amazon');
 
+/**
+ * MY_VERY_OWN_self_link
+ */
+function MY_VERY_OWN_self_link($attr, $content = null) {
+
+    extract(shortcode_atts(array(
+        'text' => '',
+        'post' => ''
+    ), $attr));
+      
+    $result = '<a title="' . $text . '" href="http://www.yu51a5.com/' . $post . '" target="_blank">' . $text . '</a>';   
+    return $result;
+}
+add_shortcode('yu_self', 'MY_VERY_OWN_self_link');
+
 ?>
