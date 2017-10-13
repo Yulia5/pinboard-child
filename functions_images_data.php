@@ -2795,7 +2795,7 @@ function populate_images() {
     insert_into_images("horsemen/louisXII_reims.jpg", 
                             "wiki", 
                             "Equestrian_statue_of_Louis_XIII_(Reims).jpg", 
-                            "High relief of king Louis XIII on horseback, <br/>1634 and 1818, Nicolas Jacques. The original bronze statue was destroyed at the Revolution (1792) and replaced with a stone copy (1818)");
+                            "High relief of king Louis XIII on horseback, <br/>1818, Nicolas Jacques. The original bronze statue was destroyed at the Revolution (1792) and replaced with a stone copy (1818)");
     insert_into_images("horsemen/louisXIV_desjardins.jpg", 
                             "From a book", 
                             NULL, 
@@ -3296,6 +3296,18 @@ function populate_images() {
                             NULL, 
                             NULL, 
                             NULL);                                
+    insert_into_images("horsemen/Povillon_statue_de_Louis_XIII_le_juste.JPG", 
+                            "wiki", 
+                            "Povillon_statue_de_Louis_XIII_le_juste.JPG", 
+                            "Engraving of a bronze statue of Louis XIII on horseback, <br/>1636, Nicolas Jacques, engraving made in 1765. The original bronze statue was destroyed at the Revolution (1792) and replaced with a stone copy (1818)");
+    insert_into_images("horsemen/Giorgio_Vasari_-_The_battle_of_Marciano_in_Val_di_Chiana_-_Google_Art_Project.jpg", 
+                            "wiki", 
+                            "Giorgio_Vasari_-_The_battle_of_Marciano_in_Val_di_Chiana_-_Google_Art_Project.jpg", 
+                            "The battle of Marciano in Val di Chiana,  <br/>1570-1, Giorgio Vasari"); 
+    insert_into_images("berets/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg", 
+                            "wiki", 
+                            "Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg", 
+                            "Mona Lisa,  <br/>1503-6, Leonardo da Vinci");                                                                                           
     insert_into_images("berets/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg", 
                             "wiki", 
                             "Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg", 
