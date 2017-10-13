@@ -99,32 +99,14 @@ function is_empty_string($question) {
 }
 
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, 
-                                $srcset = null, $style = null, $class = null)
+                                $srcset = null, $style = null, $class = null, $no_image = null)
 {
-	
-	$img_attr = 'style="';
-
-    if ( $style ) {
-        $img_attr = $img_attr . $style . ';';
-    }
-
-	if ( $height ) {
-		$img_attr = $img_attr . ' height: ' . (int) $height . 'px;';
-	}
-	if ( $width ) {
-		$img_attr = $img_attr . ' width:' . (int) $width . 'px;';
-	}
-	$img_attr = $img_attr . '" ';
-    if ( $class ) {
-        $img_attr = $img_attr . ' class="' . $class . '"';
-    }
     
-	
-	$caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
-	$hrf = trim($hrf, " ");
-	if ( substr( $hrf, 0, 7 ) !== "http://" ) {
-		$hrf = trailingslashit(wp_upload_dir()['url']) . $hrf;
-	}
+    $caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
+    $hrf = trim($hrf, " ");
+    if ( substr( $hrf, 0, 7 ) !== "http://" ) {
+        $hrf = trailingslashit(wp_upload_dir()['url']) . $hrf;
+    }
     if (! $folder_name) {
         $folder_name = get_folder_name();
     }
@@ -133,8 +115,29 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
         $hrf = substr($hrf, 0, $index_slash) . "/" . $folder_name . substr($hrf, $index_slash);
     }
     $hrf = '"' . $hrf . '" ';
-	
-	$invisible_a_to_check_broken_links = ' <a href=' . $hrf . ' style="display:none">Invisible, to help broken links check</a>';
+    
+    $invisible_a_to_check_broken_links = ' <a href=' . $hrf . ' style="display:none">Invisible, to help broken links check</a>';                           
+    	
+	$img_attr = 'style="';
+    if ( $no_image ) {
+        $img_attr = $img_attr . ' display:none;';            
+    } else {
+        if ( $style ) {
+            $img_attr = $img_attr . $style . ';';
+        }
+       	if ( $height ) {
+    		$img_attr = $img_attr . ' height: ' . (int) $height . 'px;';
+    	}
+    	if ( $width ) {
+    		$img_attr = $img_attr . ' width:' . (int) $width . 'px;';
+    	}
+    }
+	$img_attr = $img_attr . '" ';
+    
+    if ( $class ) {
+        $img_attr = $img_attr . ' class="' . $class . '"';
+    }
+    
     if (! is_empty_string($caption_no_br)) {
         $img_attr = $img_attr . ' alt="' . $caption_no_br . '" caption="' . $caption_no_br . '"';
     }
@@ -154,11 +157,19 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 		 $caption = 'COMPARANDUM: ' . $caption;
     }
     
-	return '<div class="outside_image"> ' 
-	. '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
-	. '<img '. $img_attr . 'src=' . $hrf . '/></a>' 
-	. '<div class="wp-caption-text">' . $caption . '</div>'
-	. $invisible_a_to_check_broken_links . '</div>';
+    if ( $no_image ) {
+        $result_no_image = '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
+                    . $caption_no_br . '<img '. $img_attr . 'src=' . $hrf . '/></a>' . $invisible_a_to_check_broken_links;
+        return $result_no_image;
+    }
+    
+    $result_image = '<div class="outside_image"> ' 
+                    . '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
+                    . '<img '. $img_attr . 'src=' . $hrf . '/></a>' 
+                    . '<div class="wp-caption-text">' . $caption . '</div>'
+                    . $invisible_a_to_check_broken_links . '</div>';
+    
+	return $result_image;
 }
 
 /**
@@ -219,7 +230,8 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
         'comp' => '', 
         'folder_name' => '',
         'style' => '',
-        'class' => '' 
+        'class' => '',
+        'no_image' => '' 
     ), $attr));
     
     $content = trim($content);
@@ -236,7 +248,7 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
 
     $result = generate_caption_HTML($content, $height, $width, 
                     $image_info_from_DB->caption, $image_info_from_DB->srcname, $image_info_from_DB->srchref, 
-                    $comp, $folder_name, $image_info_from_DB->srcset, $style, $class);    
+                    $comp, $folder_name, $image_info_from_DB->srcset, $style, $class, $no_image);    
     return $result;
 }
 add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
