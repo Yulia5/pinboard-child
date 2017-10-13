@@ -2795,7 +2795,7 @@ function populate_images() {
     insert_into_images("horsemen/louisXII_reims.jpg", 
                             "wiki", 
                             "Equestrian_statue_of_Louis_XIII_(Reims).jpg", 
-                            "High relief of king Louis XIII on horseback, <br/>1818, Nicolas Jacques. The original bronze statue was destroyed at the Revolution (1792) and replaced with a stone copy (1818)");
+                            "High relief of king Louis XIII on horseback, <br/>1818, after the statue by Nicolas Jacques destroyed at the Revolution (1792)");
     insert_into_images("horsemen/louisXIV_desjardins.jpg", 
                             "From a book", 
                             NULL, 
@@ -3299,7 +3299,7 @@ function populate_images() {
     insert_into_images("horsemen/Povillon_statue_de_Louis_XIII_le_juste.JPG", 
                             "wiki", 
                             "Povillon_statue_de_Louis_XIII_le_juste.JPG", 
-                            "Engraving of a bronze statue of Louis XIII on horseback, <br/>1636, Nicolas Jacques, engraving made in 1765. The original bronze statue was destroyed at the Revolution (1792) and replaced with a stone copy (1818)");
+                            "Engraving of a bronze statue of Louis XIII on horseback, <br/>1636, Nicolas Jacques, engraving made in 1765. The original bronze statue was destroyed at the Revolution (1792)");
     insert_into_images("horsemen/Giorgio_Vasari_-_The_battle_of_Marciano_in_Val_di_Chiana_-_Google_Art_Project.jpg", 
                             "wiki", 
                             "Giorgio_Vasari_-_The_battle_of_Marciano_in_Val_di_Chiana_-_Google_Art_Project.jpg", 
