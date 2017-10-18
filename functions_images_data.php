@@ -91,7 +91,7 @@ function populate_images() {
     insert_into_images("horsemen/04-007446.jpg", 
                             "RMN", 
                             "04-007446-2C6NU04ADUMT", 
-                            "Bell krater showing a horseman crowned by Nike,<br/>cr. 420BC, Attic");
+                            "Bell krater showing a horseman crowned by Nike,<br/>cr. 420 BC, Attic");
     insert_into_images("horsemen/04-507585.jpg", 
                             "RMN", 
                             "04-507585-2C6NU00WQOXI", 
@@ -107,7 +107,7 @@ function populate_images() {
     insert_into_images("horsemen/04-511292.jpg", 
                             "RMN", 
                             "04-511292-2C6NU005HUJQ", 
-                            "Olpe with the depiction of a two horsemen,<br/>cr. 575-550BC, Corinthian");
+                            "Olpe with the depiction of a two horsemen,<br/>cr. 575-550 BC, Corinthian");
     insert_into_images("horsemen/044_Conrad_Cichorius_Die_Reliefs_der_Traianssaule_Tafel_XLIV.jpg", 
                             "wiki", 
                             "044_Conrad_Cichorius,_Die_Reliefs_der_Traianssäule,_Tafel_XLIV.jpg", 
@@ -123,7 +123,7 @@ function populate_images() {
     insert_into_images("horsemen/05-522282.jpg", 
                             "RMN", 
                             "05-522282-2C6NU07CV0NA", 
-                            "Neck-amphora with the depiction of a combat on an Amazone and a hoplite,<br/>cr. 500-490BC, Attica");
+                            "Neck-amphora with the depiction of a combat on an Amazone and a hoplite,<br/>cr. 500-490 BC, Attica");
     insert_into_images("horsemen/050_01.jpg", 
                             "John Moran", 
                             "http://www.johnmoran.com/auction-archive/2011/20110920/24120-lot-1050-a-dressel-kister-a-cie-porcelain-equestrian-figure-of-augustus-iii", 
@@ -199,7 +199,7 @@ function populate_images() {
     insert_into_images("horsemen/1024px-Alexander_Sarcophagus.jpg", 
                             "wiki", 
                             "Alexander_Sarcophagus.jpg", 
-                            "Detail of the Alexander Sarcophagus, <br/>circa 320BC");
+                            "Detail of the Alexander Sarcophagus, <br/>circa 320 BC");
     insert_into_images("horsemen/1024px-Augustai.jpg", 
                             "wiki", 
                             "Augustai.jpg", 
@@ -843,7 +843,7 @@ function populate_images() {
     insert_into_images("horsemen/861px-Rhesos_MNA_Naples.jpg", 
                             "wiki", 
                             "Rhesos_MNA_Naples.jpg", 
-                            "Situla with Odysseus (wearing the pilos hat) and Diomedes stealing the horses of Thracian king Rhesus they have just killed, <br/>360BC, Apulia");
+                            "Situla with Odysseus (wearing the pilos hat) and Diomedes stealing the horses of Thracian king Rhesus they have just killed, <br/>360 BC, Apulia");
     insert_into_images("horsemen/863px-Carlos_V_en_Muehlberg_by_Titian_from_Prado_in_Google_Earth.jpg", 
                             "wiki", 
                             "Carlos_V_en_Mühlberg,_by_Titian,_from_Prado_in_Google_Earth.jpg", 
@@ -927,7 +927,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00024409_001_l.jpg", 
                             "BM", 
                             "367917", 
-                            "Cylinder seals depicting hunting, <br/>cr. 750BC-300BC");
+                            "Cylinder seals depicting hunting, <br/>cr. 750 BC-300 BC");
     insert_into_images("horsemen/AN00032649_001_l.jpg", 
                             "BM", 
                             "368115", 
@@ -943,7 +943,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00036770_001_l.jpg", 
                             "BM", 
                             "461665", 
-                            "West Frieze of the Parthenon, Block II, <br/>438BC-432BC, Athens");
+                            "West Frieze of the Parthenon, Block II, <br/>438 BC-432 BC, Athens");
     insert_into_images("horsemen/AN00038779_001_l.jpg", 
                             "BM", 
                             "1346386", 
@@ -987,7 +987,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00151997_001_l.jpg", 
                             "BM", 
                             "276395", 
-                            "The Balawat Gates, <br/>bronze band depicting Shalmaneser III's campaign in Syria,<br/>858BC-824BC, Neo-Assyrian (Iraq)");
+                            "The Balawat Gates, <br/>bronze band depicting Shalmaneser III's campaign in Syria,<br/>858 BC-824 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00172892_001_l.jpg", 
                             "BM", 
                             "597733", 
@@ -1007,7 +1007,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00258520_001_l.jpg", 
                             "BM", 
                             "466941", 
-                            "Vessel-fitting, <br/>cr. 510BC-490BC");
+                            "Vessel-fitting, <br/>cr. 510 BC-490 BC");
     insert_into_images("horsemen/AN00267590_001_l.jpg", 
                             "BM", 
                             "282258", 
@@ -1015,7 +1015,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00279404_001_l.jpg", 
                             "BM", 
                             "460735", 
-                            "Neck-amphora with keles(?) scene, <br/>cr. 450BC-430BC, Attica, attributed to Polygnotos");
+                            "Neck-amphora with keles(?) scene, <br/>cr. 450 BC-430 BC, Attica, attributed to Polygnotos");
     insert_into_images("horsemen/AN00297125_001_l-1.jpg", 
                             "BM", 
                             "707784", 
@@ -1031,19 +1031,19 @@ function populate_images() {
     insert_into_images("horsemen/AN00313723_001_l.jpg", 
                             "BM", 
                             "282835", 
-                            "Cylinder seal depiciting a stag hunting, <br/>800BC-750BC, Neo-Assyrian (Iraq)");
+                            "Cylinder seal depiciting a stag hunting, <br/>800 BC-750 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00326006_001_l-1.jpg", 
                             "BM", 
                             "366948", 
-                            "King Ashurbanipal aiming an arrow, <br/>645-35BC, Neo-Assyrian (Iraq)");
+                            "King Ashurbanipal aiming an arrow, <br/>645-35 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00327633_001_l.jpg", 
                             "BM", 
                             "367046", 
-                            "Gypsum wall panel relief showing an Assyrian officials in a chariot pursue enemy horsemen,<br/>865BC-860BC, Neo-Assyrian (Iraq)");
+                            "Gypsum wall panel relief showing an Assyrian officials in a chariot pursue enemy horsemen,<br/>865 BC-860 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00368406_001_l-1.jpg", 
                             "BM", 
                             "459099", 
-                            "Panathenaic amphora, <br/>cr. 425BC-400BC, Attica, attributed to the Kuban Group");
+                            "Panathenaic amphora, <br/>cr. 425 BC-400 BC, Attica, attributed to the Kuban Group");
     insert_into_images("horsemen/AN00402545_001_l.jpg", 
                             "BM", 
                             "3081909", 
@@ -1051,27 +1051,27 @@ function populate_images() {
     insert_into_images("horsemen/AN00405656_001_l.jpg", 
                             "BM", 
                             "367898", 
-                            "Cylinder seal with a scene of a rider in Median dress with a spear and a dog chasing a fallow deer, <br/>538BC-331BC");
+                            "Cylinder seal with a scene of a rider in Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC");
     insert_into_images("horsemen/AN00405656_001_seal_only.jpg", 
                             "BM", 
                             "367898", 
-                            "Cylinder seal with a scene of a rider in Median dress with a spear and a dog chasing a fallow deer, <br/>538BC-331BC, Achaemenid Persia. <br/>The similarity of iconography is striking; it would be identical if not for the spear");
+                            "Cylinder seal with a scene of a rider in Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC, Achaemenid Persia. <br/>The similarity of iconography is striking; it would be identical if not for the spear");
     insert_into_images("horsemen/AN00420022_001_l.jpg", 
                             "BM", 
                             "461562", 
-                            "Hydria with Greeks fighting a mounted Persian, <br/>365-350BC, Attic");
+                            "Hydria with Greeks fighting a mounted Persian, <br/>365-350 BC, Attic");
     insert_into_images("horsemen/AN00424409_001_l-1.jpg", 
                             "BM", 
                             "399634", 
-                            "Panathenaic amphora, <br/>cr. 500BC-490BC, Attica, attributed to the Eucharides Painter");
+                            "Panathenaic amphora, <br/>cr. 500 BC-490 BC, Attica, attributed to the Eucharides Painter");
     insert_into_images("horsemen/AN00427924_001_l.jpg", 
                             "BM", 
                             "367038", 
-                            "Gypsum wall panel relief showing Assyrian cavalry and infantry attacking the enemy,<br/>865BC-860BC, Neo-Assyrian (Iraq)");
+                            "Gypsum wall panel relief showing Assyrian cavalry and infantry attacking the enemy,<br/>865 BC-860 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00431083_001_l-1.jpg", 
                             "BM", 
                             "366948", 
-                            "King Ashurbanipal killing a lion, <br/>645-35BC, Neo-Assyrian (Iraq)");
+                            "King Ashurbanipal killing a lion, <br/>645-35 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00449240_001_l.jpg", 
                             "BM", 
                             "3046707", 
@@ -1103,19 +1103,19 @@ function populate_images() {
     insert_into_images("horsemen/AN00472992_001_l.jpg", 
                             "BM", 
                             "400476", 
-                            "Furniture-fitting or chariot-fitting, <br/>cr. 540BC-520BC");
+                            "Furniture-fitting or chariot-fitting, <br/>cr. 540 BC-520 BC");
     insert_into_images("horsemen/AN00485256_001_l.jpg", 
                             "BM", 
                             "365975", 
-                            "Wall panel relief depicting two Assyrian cavalrymen charging against enemies, <br/>cr. 728BC, Neo-Assyrian (Iraq)");
+                            "Wall panel relief depicting two Assyrian cavalrymen charging against enemies, <br/>cr. 728 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00486051_001_l.jpg", 
                             "BM", 
                             "367006", 
-                            "Wall panel relief depicting a horseman attacked by two mounted Assyrians, <br/>cr. 728BC, Neo-Assyrian (Iraq)");
+                            "Wall panel relief depicting a horseman attacked by two mounted Assyrians, <br/>cr. 728 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00517573_001_l.jpg", 
                             "BM", 
                             "398969", 
-                            "Neck-amphora with the depiction of mounted warriors trampling an Amazon,<br/>cr. 510BC-500BC, Attica");
+                            "Neck-amphora with the depiction of mounted warriors trampling an Amazon,<br/>cr. 510 BC-500 BC, Attica");
     insert_into_images("horsemen/AN00540048_001_l.jpg", 
                             "BM", 
                             "460571", 
@@ -1143,7 +1143,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00893723_001_l.jpg", 
                             "BM", 
                             "466888", 
-                            "Antefix, <br/>cr. 525BC-500BC");
+                            "Antefix, <br/>cr. 525 BC-500 BC");
     insert_into_images("horsemen/AN00897519_001_l.jpg", 
                             "BM", 
                             "59629", 
@@ -1183,7 +1183,7 @@ function populate_images() {
     insert_into_images("horsemen/AN1613046498_l.jpg", 
                             "BM", 
                             "449047", 
-                            "Fragment of Clazomenian painted terracotta sarcophagus with youths riding horses below which run dogs, <br/>late 6th century BC, Klazomenian (modern Turkey)");
+                            "Fragment of Klazomenian painted terracotta sarcophagus with youths riding horses below which run dogs, <br/>late 6th century BC, Klazomenian (modern Turkey)");
     insert_into_images("horsemen/Abilai.jpg", 
                             "My Petropavlovsk", 
                             "http://mypiter.kz/albumpic-2036-dateD.html", 
@@ -1199,7 +1199,7 @@ function populate_images() {
     insert_into_images("horsemen/Akhilleus_Penthesileia_Staatliche_Antikensammlungen_1502.jpg", 
                             "wiki", 
                             "Akhilleus_Penthesileia_Staatliche_Antikensammlungen_1502.jpg", 
-                            "Amphora with Achilles and Penthesilea,<br/>cr. 520BC, Vulci (Attic production ?)");
+                            "Amphora with Achilles and Penthesilea,<br/>cr. 520 BC, Vulci (Attic production ?)");
     insert_into_images("horsemen/Aleksandrovo_kurgan.jpg", 
                             "wiki", 
                             "Aleksandrovo_kurgan.jpg", 
@@ -1227,7 +1227,7 @@ function populate_images() {
     insert_into_images("horsemen/Alexander_the_Great_mosaic.jpg", 
                             "wiki", 
                             "Alexander_the_Great_mosaic.jpg", 
-                            "Detail of the Alexander the Great Mosaic, <br/>circa 100BC, Pompeii");
+                            "Detail of the Alexander the Great Mosaic, <br/>circa 100 BC, Pompeii");
     insert_into_images("horsemen/Alexandr_Makedonsky.jpg", 
                             "wiki", 
                             "Alexandr_Makedonský.JPG", 
@@ -1411,7 +1411,7 @@ function populate_images() {
     insert_into_images("horsemen/DP104336.jpg", 
                             "Met", 
                             "247960", 
-                            "Panathenaic amphora, <br/>cr. 510BC, Attica, attributed to the Leagros Group");
+                            "Panathenaic amphora, <br/>cr. 510 BC, Attica, attributed to the Leagros Group");
     insert_into_images("horsemen/DP109243.jpg", 
                             "Met", 
                             "247945", 
@@ -1511,7 +1511,7 @@ function populate_images() {
     insert_into_images("horsemen/E6577.jpg", 
                             "MFA", 
                             "situla-with-an-amazonomachy-scene-154123", 
-                            "Situla with an Amazonomachy scene, <br/>340–330BC, Apulia");
+                            "Situla with an Amazonomachy scene, <br/>340–330 BC, Apulia");
     insert_into_images("horsemen/Edward_III_of_England_Order_of_the_Garter.jpg", 
                             "wiki", 
                             "Edward_III_of_England_(Order_of_the_Garter).jpg", 
@@ -1815,7 +1815,7 @@ function populate_images() {
     insert_into_images("horsemen/MANF1999_99_101_SEQ_001_P.jpg", 
                             "Cer.es", 
                             "http://ceres.mcu.es/pages/Main?idt=80872&inventary=1999/99/101&table=FMUS&museum=MAN", 
-                            "Bell krater showing a battle of two Amazons and one Greek,<br/>cr. 440BC, Attica");
+                            "Bell krater showing a battle of two Amazons and one Greek,<br/>cr. 440 BC, Attica");
     insert_into_images("horsemen/Macedonia-02786_-_Warrior_on_a_Horse_10904983734.jpg", 
                             "wiki", 
                             "Macedonia-02786_-_Warrior_on_a_Horse_(10904983734).jpg", 
@@ -1935,7 +1935,7 @@ function populate_images() {
     insert_into_images("horsemen/Peonia_patraos_tetradracma_335-315_ac_ca.jpg", 
                             "wiki", 
                             "Peonia,_patraos,_tetradracma,_335-315_ac_ca.JPG", 
-                            "Tetradrachm of the King Paionia, <br/>335–315, Paeonia");
+                            "Tetradrachm of the King Paionia, <br/>335–315 BC, Paeonia");
     insert_into_images("goldenbronzehorsemen/PeterI.jpg", 
                             "wiki", 
                             "Peter_I_by_Kneller.jpg", 
@@ -2035,7 +2035,7 @@ function populate_images() {
     insert_into_images("horsemen/SC247577.jpg", 
                             "MFA", 
                             "tetradrachm-of-kingdom-of-paionia-with-head-of-patraos-1308", 
-                            "Tetradrachm of the King Paionia, <br/>335–315, Paeonia");
+                            "Tetradrachm of the King Paionia, <br/>335–315 BC, Paeonia");
     insert_into_images("horsemen/SC249640.jpg", 
                             "MFA", 
                             "stater-of-kingdom-of-macedonia-with-horse-and-rider-struck-under-archelaos-i-2957", 
@@ -2183,14 +2183,14 @@ function populate_images() {
     insert_into_images("horsemen/Tampa-1986.41.jpg", 
                             "Perseus Digital Library Project", 
                             "http://www.perseus.tufts.edu/hopper/artifact?name=Tampa%201986.41&object=Vase", 
-                            "Oinochoe with the depiction of mounted warriors trampling a Scythian archer,<br/>cr. 510BC, Attica");
+                            "Oinochoe with the depiction of mounted warriors trampling a Scythian archer,<br/>cr. 510 BC, Attica");
     insert_into_images("horsemen/Teteven-History-museum-Thracian-god-3-century-BC.jpg", 
                             "wiki", 
                             "Teteven-History-museum-Thracian-god-3-century-BC.jpg", 
                             "Bas-relief of a Thracian horseman, <br/>3rd century BC");
     insert_into_images("horsemen/Tetradrachm_Evagoras_II_368-346BC.jpg", 
                             "wiki", 
-                            "Tetradrachm_Evagoras_II_368-346BC_obverse_CdM_Paris.jpg", 
+                            "Tetradrachm_Evagoras_II_368-346 BC_obverse_CdM_Paris.jpg", 
                             "Silver tetradrachm of Evagoras II Salamis of Cyprus with satrap on horseback, <br/>368–346 BC, Cyprus");
     insert_into_images("horsemen/Tetradrachm_Evagoras_II_368-346BC.jpg", 
                             "wiki", 
@@ -2211,7 +2211,7 @@ function populate_images() {
     insert_into_images("horsemen/Thracian_cavalrymen_vs_an_armored_Greek_food_soldier_-_Getty_Villa_Collection.jpg", 
                             "wiki", 
                             "Thracian_cavalrymen_vs_an_armored_Greek_food_soldier_-_Getty_Villa_Collection.jpg", 
-                            "Amphora with attle scene in which a hoplite, or heavily armed infantryman, falls to the ground between two cavalrymen,<br/>cr. 530-520BC, Attic");
+                            "Amphora with attle scene in which a hoplite, or heavily armed infantryman, falls to the ground between two cavalrymen,<br/>cr. 530-520 BC, Attic");
     insert_into_images("horsemen/Tomasso10112009T14841.jpg", 
                             "Tomasso Brothers Fine Arts", 
                             "http://www.tomassobrothers.co.uk/DesktopDefault.aspx?tabid=6&objectid=226680", 
@@ -2379,7 +2379,7 @@ function populate_images() {
     insert_into_images("horsemen/article-2676413-1F4CE33E00000578-568_634x350.jpg", 
                             "The Daily Mail", 
                             "http://www.dailymail.co.uk/travel/article-2676413", 
-                            "West Frieze of the Parthenon, Block X, <br/>438BC-432BC, Athens");
+                            "West Frieze of the Parthenon, Block X, <br/>438 BC-432 BC, Athens");
     insert_into_images("horsemen/at150728AlexanderTheGreat-NaplesArcheologicalMus.jpg", 
                             "KCRW", 
                             "http://www.kcrw.com/news-culture/shows/art-talk/golden-age-of-bronze", 
@@ -2527,7 +2527,7 @@ function populate_images() {
     insert_into_images("horsemen/de86d6162f2358da8191a446f9fe1ea8.jpg", 
                             "BM", 
                             "466942", 
-                            "Vessel-fitting, <br/>cr. 510BC-490BC");
+                            "Vessel-fitting, <br/>cr. 510 BC-490 BC");
     insert_into_images("horsemen/drachm-of-aspendos-with-horseman-hurling-spear-3297.jpg", 
                             "MFA", 
                             "drachm-of-aspendos-with-horseman-hurling-spear-3297", 
@@ -2563,7 +2563,7 @@ function populate_images() {
     insert_into_images("horsemen/f22f227e754b93409c8a70d4ad9599b5.jpg", 
                             "BM", 
                             "461496", 
-                            "Dinos with the depiction of a combat of Attic heroes with Amazons,<br/>440BC-430BC, Attica");
+                            "Dinos with the depiction of a combat of Attic heroes with Amazons,<br/>440 BC-430 BC, Attica");
     insert_into_images("horsemen/fcc6a2fc50c8d4ce4ece0357a745caea.jpg", 
                             "Médailles et Antiques de la Bibliothèque nationale de France", 
                             "http://medaillesetantiques.bnf.fr/ws/catalogue/app/collection/record/ark:/12148/c33gbqgtw", 
@@ -2631,7 +2631,7 @@ function populate_images() {
     insert_into_images("horsemen/gods_jul08_5.jpg__600x0_q85_upscale.jpg", 
                             "Smithsonian Magazine", 
                             "http://www.smithsonianmag.com/arts-culture/true-colors-17888/?no-ist", 
-                            "Detail of the Alexander Sarcophagus, <br/>circa 320BC, painted replica");
+                            "Detail of the Alexander Sarcophagus, <br/>circa 320 BC, painted replica");
     insert_into_images("horsemen/goldenhorseman.jpg", 
                             "wiki", 
                             "Dresden_GoldenerReiter_(2005).jpg", 
@@ -2775,7 +2775,7 @@ function populate_images() {
     insert_into_images("horsemen/l_ps1_4817_sideb_dd_t08.jpg", 
                             "WAM", 
                             "18168", 
-                            "Amphora with two armed horsemen clash on the battlefield, their horses rearing above a fallen warrior trapped beneath them,<br/>cr. 520BC, Attica");
+                            "Amphora with two armed horsemen clash on the battlefield, their horses rearing above a fallen warrior trapped beneath them,<br/>cr. 520 BC, Attica");
     insert_into_images("horsemen/l_ps1_542653_back_dd_t09.jpg", 
                             "WAM", 
                             "22369", 
@@ -2847,7 +2847,7 @@ function populate_images() {
     insert_into_images("horsemen/mfa_154065.jpg", 
                             "MFA", 
                             "pitcher-oinochoe-with-battle-of-the-greeks-and-amazons-154065", 
-                            "Pitcher (oinochoe) with battle of the Greeks and Amazons,<br/>about 320–310 B.C., Apulia");
+                            "Pitcher (oinochoe) with battle of the Greeks and Amazons,<br/>about 320–310 BC, Apulia");
     insert_into_images("berets/moulin-de-la-galette.jpg", 
                             "guggenheim.org", 
                             "http://www.guggenheim.org/new-york/collections/collection-online/artwork/3411", 
@@ -3296,6 +3296,18 @@ function populate_images() {
                             NULL, 
                             NULL, 
                             NULL);                                
+    insert_into_images("horsemen/AN00274931_001_l.jpg", 
+                            "BM", 
+                            "459343", 
+                            "Amphora with the Dioscuri on horseback, <br/>Attic, cr. 500 BC");
+    insert_into_images("horsemen/Edfu47.JPG", 
+                            "wiki", 
+                            "Edfu47.JPG", 
+                            "Wall relief of fight between Set and Horus where Horus spears Set (hippopotamus), <br/>Temple of Edfu, Egypt, 237 BC - 57 BC");
+    insert_into_images("horsemen/Edfu_temple_relief_by_John_Campana.jpg", 
+                            "wiki", 
+                            "Edfu_temple_relief_by_John_Campana.jpg", 
+                            "Wall relief of fight between Set and Horus where Horus spears Set (crocodile), <br/>Temple of Edfu, Egypt, 237 BC - 57 BC");
     insert_into_images("horsemen/Povillon_statue_de_Louis_XIII_le_juste.JPG", 
                             "wiki", 
                             "Povillon_statue_de_Louis_XIII_le_juste.JPG", 

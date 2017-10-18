@@ -230,4 +230,24 @@ function MY_VERY_OWN_self_link($attr, $content = null) {
 }
 add_shortcode('yu_self', 'MY_VERY_OWN_self_link');
 
+/**
+ * MY_VERY_OWN_academia_link
+ */
+function MY_VERY_OWN_academia_link($attr, $content = null) {
+
+    extract(shortcode_atts(array(
+        'title' => '',
+        'text' => '',
+        'id' => ''
+    ), $attr));
+      
+    if ( ! $title ) {
+        $title = $text;
+    }
+    
+    $result = '<a title="' . $title . '" href="https://www.academia.edu/' . $id . '" target="_blank">' . $text . '</a>';   
+    return $result;
+}
+add_shortcode('yu_acad', 'MY_VERY_OWN_academia_link');
+
 ?>
