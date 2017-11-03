@@ -9,6 +9,7 @@ function generate_src() {
     insert_into_src("RC",       'The Royal Collection',                         'https://www.royalcollection.org.uk/collection/');
     insert_into_src("Met",      'The Metropolitan Museum of Art',               'http://www.metmuseum.org/art/collection/search/');
     insert_into_src("ArtUK",    'Art UK',                                       'http://artuk.org/discover/artworks/');  
+
     insert_into_src("SKD",      '© Staatliche Kunstsammlungen Dresden',         'https://skd-online-collection.skd.museum/Details/Index/');    
     insert_into_src("BM",       '© Trustees of the British Museum',             'http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=', '&partId=1'); 
     insert_into_src("LA",       'The Los Angeles County Museum of Art',         'http://collections.lacma.org/node/'); 
@@ -17,6 +18,7 @@ function generate_src() {
     insert_into_src("WAM",      'The Walters Art Museum',                       'http://art.thewalters.org/detail/');    
     insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objektdb/detail/');
     insert_into_src("HAM",      'Harvard Art Museums',                          'http://www.harvardartmuseums.org/collections/object/');
+    insert_into_src("Ben",      '© Benaki Museum',                              'https://www.benaki.gr/index.php?option=com_collectionitems&amp;view=collectionitem&amp;id=', '&amp;lang=en');
     insert_into_src("CBd",      'Campbell Bonner Magical Gems Database',        'http://www2.szepmuveszeti.hu/talismans/cbd/');
     insert_into_src("RMN",      'Réunion des Musées Nationaux - Grand Palais',  'http://www.photo.rmn.fr/archive/', '.html');  
     insert_into_src("HM",       '© The State Hermitage Museum, St. Petersburg', 'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/', '/?lng=en');  
@@ -25,6 +27,8 @@ function generate_src() {
     insert_into_src("numisbids",'NumisBids',                                    'https://www.numisbids.com/n.php?p=lot&');    
     insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
+    insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
+
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/');     
     insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');  
@@ -3356,6 +3360,31 @@ function populate_images() {
                             "Met", 
                             "418355", 
                             "Étienne Maurice Falconet <br/>(1716 – 1791)");
+                            
+    insert_into_images("horsemen/benaki_solomon.jpg", 
+                            "Ben", 
+                            "108121", 
+                            "Seal-amulet with a representation of Solomon on horseback slaying a demon, <br/>5th-6th century, Byzantian");                                
+    insert_into_images("horsemen/303622_627795_1000_1000_inner.jpg", 
+                            "Ben", 
+                            "108370", 
+                            "Icon of St George the dragon-slayer on horseback, <br/>Late 16th century, Macedonia");                                
+    insert_into_images("horsemen/290485_502620_1000_1000_inner.jpg", 
+                            "Ben", 
+                            "108181", 
+                            "Cameo with a representation of St Theodoros the dragon-slayer on horseback, <br/>13th century, produced in Venice, copy of a Byzantine prototype");                                
+    insert_into_images("horsemen/279029_490179_1000_1000_inner.jpg", 
+                            "Ben", 
+                            "107593", 
+                            "Relief icon showing St George on horseback, <br/>15th century, Thrace (?)");                                
+    insert_into_images("horsemen/2008BR8707_jpg_l.jpg", 
+                            "VA", 
+                            "O119192", 
+                            "Saint George and the Dragon with two armorial reliefs, <br/>cr. 1500, Venice");                                
+    insert_into_images("horsemen/p23_chestercathedraldragon-20170412153656801_web.jpg", 
+                            "churchtimes.co.uk", 
+                            "https://www.churchtimes.co.uk/articles/2017/21-april/books-arts/book-reviews/glories-of-chester", 
+                            "St George and the dragon carved in pale oak, <br/>14th century, Chester, England");                                
                             
 }
 
