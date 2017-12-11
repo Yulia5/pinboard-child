@@ -3385,6 +3385,10 @@ function populate_images() {
                             "churchtimes.co.uk", 
                             "https://www.churchtimes.co.uk/articles/2017/21-april/books-arts/book-reviews/glories-of-chester", 
                             "St George and the dragon carved in pale oak, <br/>14th century, Chester, England");                                
+    insert_into_images("horsemen/aabar-harema.jpg", 
+                            "saudi-archaeology.com", 
+                            "http://saudi-archaeology.com/sites/bir-hima/", 
+                            "Petroglyphs, 2500-1000 BC, <br/>A'abar Harema, Bir Hima, Saudi Arabia");                                
                             
 }
 
