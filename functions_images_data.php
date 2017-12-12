@@ -2952,9 +2952,9 @@ function populate_images() {
                             "ebay.com", 
                             "http://www.ebay.com/itm/201594822410", 
                             "Empress Elisabeth of Russia on Horseback,<br/>after 1934, Johann Joachim Kaendler (after), Meissen, was on sale for $9900");
-    insert_into_images("germany/saint-luke.jpg", 
-                            "National Gallery of Art, Washington D.C.", 
-                            "http://www.nga.gov/exhibitions/1999/riemenschneider/013c.htm", 
+    insert_into_images("germany/1491_Riemenschneider_Evangelist_Lukas_anagoria.JPG", 
+                            "wiki", 
+                            "1491_Riemenschneider_Evangelist_Lukas_anagoria.JPG", 
                             "The Four Evangelists (Luke), Tilman Riemenschneider, 1490–2");
     insert_into_images("horsemen/salon_guerre.jpg", 
                             "wiki", 
