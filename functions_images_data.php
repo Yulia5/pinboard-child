@@ -179,7 +179,7 @@ function populate_images() {
     insert_into_images("horsemen/10-528983.jpg", 
                             "RMN", 
                             "10-528983-2C6NU0YLTKIZ", 
-                            "Funerary stella found near Pelinna, <br/>cr. 350-340 BC, Thessaly");
+                            "Funerary stela found near Pelinna, <br/>cr. 350-340 BC, Thessaly");
     insert_into_images("horsemen/10-539711.jpg", 
                             "RMN", 
                             "10-539711-2C6NU0YJC0AG", 
@@ -1015,7 +1015,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00267590_001_l.jpg", 
                             "BM", 
                             "282258", 
-                            "Sword-sheath depictiting a lion hunt, <br/>5th century BC (?), Achaemenid, Persia, Oxus Treasure");
+                            "Sword-sheath depicting a lion hunt, <br/>5th century BC (?), Achaemenid, Persia, Oxus Treasure");
     insert_into_images("horsemen/AN00279404_001_l.jpg", 
                             "BM", 
                             "460735", 
@@ -1143,7 +1143,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00859749_001_l.jpg", 
                             "BM", 
                             "459403", 
-                            "Funerary stella of Aristokles found near Athens, <br/>cr. 350 BC, Attic");
+                            "Funerary stela of Aristokles found near Athens, <br/>cr. 350 BC, Attic");
     insert_into_images("horsemen/AN00893723_001_l.jpg", 
                             "BM", 
                             "466888", 
@@ -1539,7 +1539,7 @@ function populate_images() {
     insert_into_images("horsemen/EstelaFunerariaConCombateNoroesteDeAtenasSigloIVAC.jpg", 
                             "wiki", 
                             "EstelaFunerariaConCombateNoroesteDeAtenasSigloIVAC.jpg", 
-                            "Funerary stella found near Athens, <br/>4th century BC, Attic");
+                            "Funerary stela found near Athens, <br/>4th century BC, Attic");
     insert_into_images("horsemen/Eugen_von_Savoyen_Reiterbildnis_ca_1725.jpg", 
                             "wiki", 
                             "Eugen_von_Savoyen_Reiterbildnis_ca_1725.jpg", 
@@ -1867,7 +1867,7 @@ function populate_images() {
     insert_into_images("horsemen/Monnaie_de_Bactriane_Eucratide_I_2_faces.jpg", 
                             "wiki", 
                             "Monnaie_de_Bactriane,_Eucratide_I,_2_faces.jpg", 
-                            "Gold 20-stater of Eucratides I, the largest gold coin ever minted in Antiquity (weight 169.2 grams, diameter of 58 millimeters), showing Dioscuri,<br/>cr. 171-145 BC, Bactrian (Hellenistic)");
+                            "Gold 20-stater of Eucratides I, the largest gold coin ever minted in Antiquity (weight 169.2 grams, diameter of 58 millimetres), showing Dioscuri, <br/>cr. 171-145 BC, Bactrian (Hellenistic)");
     insert_into_images("horsemen/Monreale-Duomo-North-Door-Barisano.jpg", 
                             "wondersofsicily.com", 
                             "http://www.wondersofsicily.com/palermo-monreale-cathedral.htm", 
@@ -2504,7 +2504,7 @@ function populate_images() {
     insert_into_images("horsemen/coin-of-thyatira-with-bust-of-severus-alexander-struck-under-mar-pollianus-264438.jpg", 
                             "MFA", 
                             "coin-of-thyatira-with-bust-of-severus-alexander-struck-under-mar-pollianus-264438", 
-                            "Coin with bust of Severus Alexander, reverse shows Bellerophon on Pegasus brandishing spear, <br/>222–235 AD, Thyatira, Lydia (modern Turkey), Roman culture");
+                            "Coin with a bust of Severus Alexander, reverse shows Bellerophon on Pegasus brandishing spear, <br/>222–235 AD, Thyatira, Lydia (modern Turkey), Roman culture");
     insert_into_images("horsemen/coloured_tombstone.jpeg", 
                             "Lancashire County Council", 
                             "http://collections.lancsmuseums.gov.uk/narratives/narrative.php?irn=95", 
