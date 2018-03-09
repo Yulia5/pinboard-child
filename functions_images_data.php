@@ -95,7 +95,7 @@ function populate_images() {
     insert_into_images("horsemen/04-007446.jpg", 
                             "RMN", 
                             "04-007446-2C6NU04ADUMT", 
-                            "Bell krater showing a horseman crowned by Nike,<br/>cr. 420 BC, Attic");
+                            "Bell-krater showing a horseman crowned by Nike,<br/>cr. 420 BC, Attic");
     insert_into_images("horsemen/04-507585.jpg", 
                             "RMN", 
                             "04-507585-2C6NU00WQOXI", 
@@ -279,7 +279,7 @@ function populate_images() {
     insert_into_images("horsemen/12-511872.jpg", 
                             "RMN", 
                             "12-511872-2C6NU0ZLJC0A", 
-                            "Cup with Bellerophon riding Pegasos and attacking the Chimaera, <br/>2nd quarter of the 6th century BC, Attic, Ancient Greece");
+                            "Cup with Bellerophon riding Pegasus and attacking the Chimaera, <br/>2nd quarter of the 6th century BC, Attic, Ancient Greece");
     insert_into_images("berets/1225px-rembrandt_van_rijn-de_nachtwacht-1642.jpg", 
                             "wiki", 
                             "The_Nightwatch_by_Rembrandt.jpg", 
@@ -483,7 +483,7 @@ function populate_images() {
     insert_into_images("horsemen/20131205_Istanbul_106.jpg", 
                             "wiki", 
                             "20131205_Istanbul_106.jpg", 
-                            "Lycian sarcophagus, <br/>end of 5th centuy BC, Chamber no. IV of the royal necropolis of Sidon, modern Lebanon");
+                            "Lycian sarcophagus, <br/>end of 5th century BC, Chamber no. IV of the royal necropolis of Sidon, modern Lebanon");
     insert_into_images("horsemen/2015_08_24_13_06_45.jpg", 
                             "@ZMKC, blogspot.co.uk", 
                             "http://zmkc.blogspot.co.uk/2015/08/the-wonders-of-vienna.html", 
@@ -963,7 +963,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00113857_001_l.jpg", 
                             "BM", 
                             "399074", 
-                            "Detail of the  the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek");
+                            "Detail of the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek");
     insert_into_images("horsemen/AN00118222_001_l-1.jpg", 
                             "BM", 
                             "1503554", 
@@ -999,7 +999,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00236669_001_l.jpg", 
                             "BM", 
                             "399045", 
-                            "Detail of the  the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek");
+                            "Detail of the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek");
     insert_into_images("horsemen/AN00244648_001_l.jpg", 
                             "BM", 
                             "367668", 
@@ -1015,7 +1015,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00267590_001_l.jpg", 
                             "BM", 
                             "282258", 
-                            "Sword-sheath depiciting a lion hunt, <br/>5th century BC (?), Achaemenid, Persia, Oxus Treasure");
+                            "Sword-sheath depictiting a lion hunt, <br/>5th century BC (?), Achaemenid, Persia, Oxus Treasure");
     insert_into_images("horsemen/AN00279404_001_l.jpg", 
                             "BM", 
                             "460735", 
@@ -1035,7 +1035,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00313723_001_l.jpg", 
                             "BM", 
                             "282835", 
-                            "Cylinder seal depiciting a stag hunting, <br/>800 BC-750 BC, Neo-Assyrian (Iraq)");
+                            "Cylinder seal depicting a stag hunting, <br/>800 BC-750 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00326006_001_l-1.jpg", 
                             "BM", 
                             "366948", 
@@ -1043,7 +1043,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00327633_001_l.jpg", 
                             "BM", 
                             "367046", 
-                            "Gypsum wall panel relief showing an Assyrian officials in a chariot pursue enemy horsemen,<br/>865 BC-860 BC, Neo-Assyrian (Iraq)");
+                            "Gypsum wall panel relief showing an Assyrian official in a chariot pursuing enemy horsemen,<br/>865 BC-860 BC, Neo-Assyrian (Iraq)");
     insert_into_images("horsemen/AN00368406_001_l-1.jpg", 
                             "BM", 
                             "459099", 
@@ -1055,7 +1055,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00405656_001_l.jpg", 
                             "BM", 
                             "367898", 
-                            "Cylinder seal with a scene of a rider in Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC");
+                            "Cylinder seal with a scene of a rider wearing a Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC");
     insert_into_images("horsemen/AN00405656_001_seal_only.jpg", 
                             "BM", 
                             "367898", 
@@ -1299,7 +1299,7 @@ function populate_images() {
     insert_into_images("horsemen/Bellerophon_Autun.jpg", 
                             "wiki", 
                             "Bellérophon_Autun.jpg", 
-                            "Mosaic depicting Bellerophon on rearing Pegasus trampling Chimaera, <br/>2nd hald of 2nd century BC, Autun, France (Roman culture)");
+                            "Mosaic depicting Bellerophon on rearing Pegasus trampling Chimaera, <br/>2nd half of 2nd century BC, Autun, France (Roman culture)");
     insert_into_images("horsemen/Bellerophon_killing_Chimaera_mosaic_from_Rhodes.jpg", 
                             "wiki", 
                             "Bellerophon_killing_Chimaera_mosaic_from_Rhodes.JPG", 
@@ -1619,7 +1619,7 @@ function populate_images() {
     insert_into_images("horsemen/Great_Elector_as_Saint_George_and_Bellerophon.jpg", 
                             "Staatliche Museen zu Berlin", 
                             "http://www.smb-digital.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=865070", 
-                            "The Great Elector as Saint George<br/>and Bellerophon, <br/>1680, Gottfried Leygebe, Prussia");
+                            "The Great Elector as Saint George and Bellerophon, <br/>1680, Gottfried Leygebe, Prussia");
     insert_into_images("horsemen/Gregorio_XVI_che_reca_il_Santissimo_Sacramento_nella_processione_del_Corpus_Domini.jpg", 
                             "wiki", 
                             "Gregorio_XVI_che_reca_il_Santissimo_Sacramento_nella_processione_del_Corpus_Domini.jpg", 
@@ -1647,7 +1647,7 @@ function populate_images() {
     insert_into_images("horsemen/House_of_the_Temple-1.jpg", 
                             "wiki", 
                             "House_of_the_Temple.JPG", 
-                            "House of the Temple in Washington, D.C., <br/>1911-5, design based on mausoleum at Halicarnassus");
+                            "House of the Temple in Washington, D.C., <br/>1911-5, design based on the mausoleum at Halicarnassus");
     insert_into_images("horsemen/Hunt_in_the_forest_by_paolo_uccello.jpg", 
                             "wiki", 
                             "Hunt_in_the_forest_by_paolo_uccello.jpg", 
@@ -1819,7 +1819,7 @@ function populate_images() {
     insert_into_images("horsemen/MANF1999_99_101_SEQ_001_P.jpg", 
                             "Cer.es", 
                             "http://ceres.mcu.es/pages/Main?idt=80872&inventary=1999/99/101&table=FMUS&museum=MAN", 
-                            "Bell krater showing a battle of two Amazons and one Greek,<br/>cr. 440 BC, Attica");
+                            "Bell-krater showing a battle of two Amazons and one Greek,<br/>cr. 440 BC, Attica");
     insert_into_images("horsemen/Macedonia-02786_-_Warrior_on_a_Horse_10904983734.jpg", 
                             "wiki", 
                             "Macedonia-02786_-_Warrior_on_a_Horse_(10904983734).jpg", 
@@ -1971,7 +1971,7 @@ function populate_images() {
     insert_into_images("horsemen/Pittore_di_baltimora_apulia_piatto_con_chimera_e_bellerofonte_su_pegaso_350-300_ac_ca._depositi_M._Naz._romano.jpg", 
                             "wiki", 
                             "Pittore_di_baltimora_(apulia),_piatto_con_chimera_e_bellerofonte_su_pegaso,_350-300_ac_ca._(depositi_M._Naz._romano).JPG", 
-                            "Plate with Bellerophon and Pegassus, <br/>cr. 350-300 BC, Apulia, Italy (Greek culture)");
+                            "Plate with Bellerophon and Pegasus, <br/>cr. 350-300 BC, Apulia, Italy (Greek culture)");
     insert_into_images("horsemen/Place_des_Victoires_Louis_XIV_2.jpg", 
                             "wiki", 
                             "Place_des_Victoires_Louis_XIV_(2).jpg", 
@@ -2031,7 +2031,7 @@ function populate_images() {
     insert_into_images("horsemen/SC115764.jpg", 
                             "MFA", 
                             "mixing-bowl-bell-krater-154121", 
-                            "Bell krater showing a battle of Troilos and Achilles,<br/>cr. 380–370 BC, the Hoppin Painter, Apulia");
+                            "Bell-krater showing a battle of Troilus and Achilles, <br/>cr. 380–370 BC, the Hoppin Painter, Apulia");
     insert_into_images("horsemen/SC246821.jpg", 
                             "MFA", 
                             "stater-of-taras-tarentum-with-the-dioskouroi-on-horses-struck-under-sodamos-957", 
@@ -2079,7 +2079,7 @@ function populate_images() {
     insert_into_images("horsemen/SC304264-1.jpg", 
                             "MFA", 
                             "scaraboid-with-bellerophon-riding-pegasos-and-attacking-the-chimaera-260168", 
-                            "Scaraboid with Bellerophon riding Pegasos and attacking the Chimaera, <br/>400–375 BC, Greek");
+                            "Scaraboid with Bellerophon riding Pegasus and attacking the Chimaera, <br/>400–375 BC, Greek");
     insert_into_images("horsemen/SC44777.jpg", 
                             "Met", 
                             "451043", 
@@ -2215,7 +2215,7 @@ function populate_images() {
     insert_into_images("horsemen/Thracian_cavalrymen_vs_an_armored_Greek_food_soldier_-_Getty_Villa_Collection.jpg", 
                             "wiki", 
                             "Thracian_cavalrymen_vs_an_armored_Greek_food_soldier_-_Getty_Villa_Collection.jpg", 
-                            "Amphora with attle scene in which a hoplite, or heavily armed infantryman, falls to the ground between two cavalrymen,<br/>cr. 530-520 BC, Attic");
+                            "Amphora with battle scene in which a hoplite, or heavily armed infantryman, falls to the ground between two cavalrymen,<br/>cr. 530-520 BC, Attic");
     insert_into_images("horsemen/Tomasso10112009T14841.jpg", 
                             "Tomasso Brothers Fine Arts", 
                             "http://www.tomassobrothers.co.uk/DesktopDefault.aspx?tabid=6&objectid=226680", 
@@ -2349,9 +2349,30 @@ function populate_images() {
                             "ZauerveydNA_Petr1UsmirDA19.jpg", 
                             "Peter I of Russia stops marauding soldiers after taking Narva in 1704, <br/>Nikolay Sauerweid, 1859");
     insert_into_images("horsemen/ZeugmaBellorophon1a.jpg", 
-                            "Current Archaeology", 
-                            "http://www.archaeology.co.uk/images/stories/cwa/issues/cwa12/cwa12.htm", 
+                            "National Taiwan University", 
+                            "http://www.education.ntu.edu.tw/school/history/News/2005/Jul-Sep/news20050720_3.htm", 
                             "Bellerophon on Pegasus, slaying the Chimera, <br/>cr. 260 AD, Palmyra, Syria (Roman culture)");
+    insert_into_images("horsemen/Palmyra_bellerophon.jpg", 
+                            "BazHum - bazhum.muzhp.pl", 
+                            "http://bazhum.muzhp.pl/media//files/Polish_Archaeology_in_the_Mediterranean/Polish_Archaeology_in_the_Mediterranean-r2003-t15/Polish_Archaeology_in_the_Mediterranean-r2003-t15-s313-324/Polish_Archaeology_in_the_Mediterranean-r2003-t15-s313-324.pdf", 
+                            "The tiger hunter, <br/>cr. 260 AD, Palmyra, Syria (Roman culture)");
+    insert_into_images("horsemen/cigarette-box.jpg", 
+                            "The Science Museum Group Collection", 
+                            "http://collection.sciencemuseum.org.uk/objects/co10362/cigarette-box-c-1930-cigarette-boxes", 
+                            "Bakelite cigarette box with a horseman spearing lion in Assyrian style, <br/>1930's, Birkby's Ltd., England");
+    insert_into_images("horsemen/galerie_tapisserie_de_bayeux.jpg", 
+                            "normandie-tourisme.fr", 
+                            "http://en.normandie-tourisme.fr/discover/normandy-must-sees/the-10-top-normandy-must-sees/bayeux-191-2.html", 
+                            "Bayeux Tapestry, <br/>France, probably 1070s");
+    insert_into_images("horsemen/tapisserie_de_bayeux_1.png", 
+                            "wiki", 
+                            "Tapisserie_de_Bayeux_31109.jpg", 
+                            "Bayeux Tapestry, <br/>France, probably 1070s");
+    insert_into_images("horsemen/tapisserie_de_bayeux_2.png", 
+                            "wiki", 
+                            "Tapisserie_de_Bayeux_31109.jpg", 
+                            "Bayeux Tapestry, <br/>France, probably 1070s");
+
     insert_into_images("horsemen/a296a29d21edce2a204402c21cbd12a4.jpg", 
                             "Pinterest", 
                             "https://uk.pinterest.com/pin/414260865700011938/", 
@@ -2703,7 +2724,7 @@ function populate_images() {
     insert_into_images("horsemen/ikmk-18250633.jpg", 
                             "ikmk", 
                             "18250633", 
-                            "Didrachme with Bellerophon on Pegasus, <br/>cr. 395-390 BC, Fenserni, Campania, Italy");
+                            "Didrachm with Bellerophon on Pegasus, <br/>cr. 395-390 BC, Fenserni, Campania, Italy");
     insert_into_images("horsemen/image00079.jpg", 
                             "numisbids", 
                             "sid=1172&lot=79", 
@@ -2767,7 +2788,7 @@ function populate_images() {
     insert_into_images("horsemen/kylix_bellerophon.jpg", 
                             "Met", 
                             "646263", 
-                            "Gilt silver kylix with Bellerophon riding Pegasos and attacking the Chimaera, <br/>late 5th century BC, Greek");
+                            "Gilt silver kylix with Bellerophon riding Pegasus and attacking the Chimaera, <br/>late 5th century BC, Greek");
     insert_into_images("horsemen/l_pl1_3616_opn_tr_t04v-2.jpg", 
                             "WAM", 
                             "38328", 
@@ -3087,7 +3108,7 @@ function populate_images() {
     insert_into_images("horsemen/tenma-01.jpg", 
                             "archeochianciano.blogspot.com", 
                             "http://archeochianciano.blogspot.co.uk/2008_08_01_archive.html", 
-                            "Calyx krater with Bellerophon, <br/>cr. 370 BC, Faliscan/Etruscan");
+                            "Calyx-krater with Bellerophon, <br/>cr. 370 BC, Faliscan/Etruscan");
     insert_into_images("hamlet/thetragedyofhamlet2002s.jpg", 
                             "1 More Film Blog", 
                             "http://www.patheos.com/blogs/1morefilmblog/the-tragedy-of-hamlet-brook-2002/", 
