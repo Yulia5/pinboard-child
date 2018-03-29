@@ -387,6 +387,7 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 
 .goog-te-gadget-icon {
 	content:url(images/GT.png);
+	background-image:none !important;
 	width: 293px !important;
 	height: 47px !important;
 	display: block !important;
