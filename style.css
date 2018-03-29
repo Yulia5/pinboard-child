@@ -223,11 +223,13 @@ header h3 {
 	margin-bottom: 20px !important;
 }
 
-#searchform, .jetpack_subscription_widget .success, #blog_subscription-2, #another-site-title-table, #blog_subscription-2-table {
+#searchform, .jetpack_subscription_widget .success, .widget.jetpack_subscription_widget, 
+.widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
+.goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value, #another-site-title-table {
 	width: 325px !important;
 }
 
-#blog_subscription-2, #subscribe-blog-blog_subscription-2, .jetpack_subscription_widget, .jetpack_subscription_widget .success, .jetpack_subscription_widget .success p {
+.widget.jetpack_subscription_widget, .jetpack_subscription_widget .success, .jetpack_subscription_widget .success p {
 	margin-bottom: 0px !important;
 	padding: 0 !important;
 }
@@ -258,7 +260,10 @@ input#url:focus,
 textarea#comment:focus, #header input#s, input#author,
 input#email,
 input#url,
-textarea#comment {
+textarea#comment, .widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
+.goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value, #another-site-title-table {
+	width: 325px !important;
+} {
 	width: auto;
 	display: block;
 	font-family:"Open Sans", sans-serif;
@@ -269,7 +274,7 @@ textarea#comment {
     border-radius:0px;
     text-indent: 10px !important;
     box-shadow: none;
-    border: none;
+    border: none !important;
     min-height: 18px;
     text-transform: uppercase;
     background:#FFF;
@@ -282,7 +287,11 @@ textarea#comment {
   	transition: none !important;
 }
 
-#searchform, #blog_subscription-2 { /*#subscribe-blog-blog_subscription-2, .jetpack_subscription_widget, */
+.goog-te-menu-value span {
+	border: none !important;
+}
+
+#searchform, .widget.jetpack_subscription_widget {
     /*background:red;*/
     margin-top: 10px !important;
     position:relative;
@@ -292,9 +301,9 @@ textarea#comment {
 	margin-right: 0px !important;
 }
 
-#searchform input[type="submit"], #subscribe-blog-blog_subscription-2 input[type="submit"],
-#searchform input[type="submit"]:hover, #subscribe-blog-blog_subscription-2 input[type="submit"]:hover,
-#searchform input[type="submit"]:focus, #subscribe-blog-blog_subscription-2 input[type="submit"]:focus
+#searchform input[type="submit"], .widget.jetpack_subscription_widget input[type="submit"], 
+#searchform input[type="submit"]:hover, .widget.jetpack_subscription_widget input[type="submit"]:hover,
+#searchform input[type="submit"]:focus, .widget.jetpack_subscription_widget input[type="submit"]:focus
 {
 	/*padding:4px 15px;
 	border-radius:15px;*/
@@ -371,7 +380,11 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 	background: #21759b;
 }
 
-#subscribe-blog-blog_subscription-2 input[type="submit"] {
+.goog-te-gadget-icon {
+	background: url(images/GT.png) right center no-repeat !important;
+}
+
+.widget.jetpack_subscription_widget input[type="submit"] {
 	background: url(images/email_reply_blue.png) right center no-repeat;
 }
 
@@ -379,7 +392,7 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 	background: url(images/search_button_blue.png) right center no-repeat;
 }
 
-#subscribe-blog-blog_subscription-2 input[type="submit"]:hover, #subscribe-blog-blog_subscription-2 input[type="submit"]:focus {
+.widget.jetpack_subscription_widget input[type="submit"]:hover, .widget.jetpack_subscription_widget input[type="submit"]:focus {
 	background: url(images/email_reply_green.png) right center no-repeat;
 }
 
@@ -387,9 +400,11 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 	background: url(images/search_button_green.png) right center no-repeat;
 }
 
-#header, #nav, #access:target .menu, #copyright, #access {
-    background-color: #000;
-    color: #ffffff;
+#header, #nav, #access:target .menu, #copyright, #access, .widget.jetpack_subscription_widget.error, 
+.widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
+.goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value{
+    background-color: #000 !important;
+    color: #ffffff !important;
 }
 
 /******************************************************************************
