@@ -227,7 +227,6 @@ header h3 {
 .widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
 .goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value, #another-site-title-table {
 	width: 325px !important;
-	position: static !important;
 	border: none !important;
 }
 
@@ -297,7 +296,7 @@ textarea#comment, .widget.widget_google_translate_widget, #google_translate_elem
 	border: none !important;
 }
 
-#searchform, .widget.jetpack_subscription_widget {
+#searchform, .widget.jetpack_subscription_widget, .widget.widget_google_translate_widget {
     /*background:red;*/
     margin-top: 10px !important;
     position:relative;
@@ -379,11 +378,11 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 }
 
 #access li.current_page_item > a, #access li.current-menu-item > a {
-	color: #21759b;
+	color: #498af2;
 }
 
 #headline-2 {
-	background: #21759b;
+	background: #498af2;
 }
 
 .goog-te-gadget-icon {
