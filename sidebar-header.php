@@ -8,7 +8,7 @@
 				<div id="headline-3"> <a href="<?php echo home_url( '/' ); ?>" rel="home">*Something to read <br />over a coffee</a> </div>
 			</div> 
 			<div id="headlogo">				
-				<a href="<?php echo home_url( '/' ); ?>" rel="home"> <img src="http://www.yu51a5.com/wp-content/themes/pinboard-child/images/coffee.png" /></a>
+				<a href="<?php echo home_url( '/' ); ?>" rel="home"> <img src="http://www.yu51a5.com/wp-content/themes/pinboard-child/images/coffee2.png" /></a>
 			</div>
 			</div>
 		</aside>				

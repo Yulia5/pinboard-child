@@ -241,6 +241,7 @@ header h3 {
 
 #header input[type="email"], #header input[type="text"] {
 	width: 270px !important;
+	margin-top: 20px;
 }
 
 .jetpack_subscription_widget .success{
@@ -248,16 +249,13 @@ header h3 {
 	margin-bottom: 0px !important;
 }
 
-#subscribe-email input, #header input {
-	margin-top: 20px;
-}
 /*
 .widget_search, .widget_search form {
 	margin-top: 0px !important;
 }*/
 
-.widget-area #s, #sidebar-left #s, #sidebar-right #s, #header input#s, .search-field, 
-.widget input[type="text"], .widget input[type="email"], input[type="text"], input[type="email"], textarea, 
+.widget-area #s, #sidebar-left #s, #sidebar-right #s, #header input #s, 
+input[type="text"], input[type="email"], textarea, 
 #header input#s:focus, input[type="text"]:focus, input[type="email"]:focus, textarea:focus,
 input#author:focus,
 input#email:focus,
@@ -267,9 +265,6 @@ input#email,
 input#url,
 textarea#comment, .widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
 .goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value, #another-site-title-table {
-	width: 325px !important;
-} {
-	width: auto;
 	display: block;
 	font-family:"Open Sans", sans-serif;
 	font-size: 10px;
@@ -292,6 +287,10 @@ textarea#comment, .widget.widget_google_translate_widget, #google_translate_elem
   	transition: none !important;
 }
 
+#another-site-title-table {
+	width: 325px !important;
+	background:#000;
+}
 .goog-te-menu-value span {
 	border: none !important;
 }
