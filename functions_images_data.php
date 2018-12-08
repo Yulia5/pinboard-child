@@ -3410,7 +3410,30 @@ function populate_images() {
                             "saudi-archaeology.com", 
                             "http://saudi-archaeology.com/sites/bir-hima/", 
                             "Petroglyphs, 2500-1000 BC, <br/>A'abar Harema, Bir Hima, Saudi Arabia");                                
-                            
-}
+    insert_into_images("persia_greece/Rembrandt-Belsazar.jpg", 
+                            "wiki", 
+                            "Rembrandt-Belsazar.jpg", 
+                            "Belshazzar's Feast, <br/>cr. 1635-8, Rembrandt");                                
+    insert_into_images("persia_greece/1024px-Freedom_Sculpture_at_night.jpg", 
+                            "wiki", 
+                            "Freedom_Sculpture_at_night.jpg", 
+                            "Freedom Sculpture (based on the Cyrus Cylinder), <br/>2017, Beverly Hills, CA");                                
+    insert_into_images("persia_greece/Illustrerad_Verldshistoria_band_I_Ill_058.jpg", 
+                            "wiki", 
+                            "Illustrerad_Verldshistoria_band_I_Ill_058.jpg", 
+                            "Bas-relief of Cyrus, Pasargadae, Iran (drawing), <br/>1875, Wilhelm Fredrik Meyer");                                
+    insert_into_images("persia_greece/AN00262857_001_l.jpg", 
+                            "BM", 
+                            "327188", 
+                            "The Cyrus Cylinder, after 539BC, <br/>Babylon (now Amran, modern Yemen)");   
+    insert_into_images("persia_greece/Cyrus-cylinder-at-Smithsonian1-HR.jpg", 
+                            "cyruscylinder2013.com", 
+                            "http://cyruscylinder2013.com/photos-of-the-tour-launch-event/", 
+                            "The Cyrus Cylinder U.S.A. tour launch event, <br/>2013, Washington"); 
+    insert_into_images("persia_greece/Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg", 
+                            "wiki", 
+                            "Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg", 
+                            "Scene at the Signing of the Constitution of the United States, <br/>1940, Howard Chandler Christy");                                
+ }
 
 ?>
