@@ -3433,7 +3433,59 @@ function populate_images() {
     insert_into_images("persia_greece/Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg", 
                             "wiki", 
                             "Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg", 
-                            "Scene at the Signing of the Constitution of the United States, <br/>1940, Howard Chandler Christy");                                
+                            "Scene at the Signing of the Constitution of the United States, <br/>1940, Howard Chandler Christy");
+    insert_into_images("persia_greece/AN00851421_001_l.jpg", 
+                            "BM", 
+                            "327143", 
+                            "The Nabonidus Cylinder, 556-539BC, <br/>Ur, Mesopotamia (now Tell el-Muqayyar, Iraq)");
+    insert_into_images("persia_greece/Vista_Acropolis_Atenas_2010.jpg", 
+                            "wiki", 
+                            "Vista_Acrópolis_Atenas_2010.jpg", 
+                            "Parthenon, 447-432 BC, <br/>As seen from Philopappos Hill in 2010, Athens, Greece");
+    insert_into_images("persia_greece/Ionian_Tribute_Bearers_on_the_Apadana_Staircase.jpg", 
+                            "wiki", 
+                            "Ionian_Tribute_Bearers_on_the_Apadana_Staircase_(Best_Viewed_Size_"Large")_(4688057305).jpg", 
+                            "Ionian Tribute Bearers Relief, 550-500 BC, <br/>Apadana Staircase, Persepolis, Iran");
+    insert_into_images("persia_greece/Ionic_entablature.jpg", 
+                            "wiki", 
+                            "Ionic_entablature.jpg", 
+                            "Entabluture that shows frieze, <br/>Source: A. Rosengarten, A Handbook of Architectural Styles, NY, 1898");
+    insert_into_images("persia_greece/AN00631923_001_l.jpg", 
+                            "BM", 
+                            "368264", 
+                            "The Standard of Ur, cr. 2500 BC, <br/>Ur, Mesopotamia (now Tell el-Muqayyar, Iraq)");
+    insert_into_images("persia_greece/AN00101852_001_l.jpg", 
+                            "BM", 
+                            "460187", 
+                            "Fragment of a marble frieze, Temple of Artemis, 550-510BC, <br/>Ephesus, Ionia (now Anatolia, Turkey)");
+    insert_into_images("persia_greece/AN00101852_001_l.jpg", 
+                            "BM", 
+                            "460187", 
+                            "Fragment of a marble frieze, Temple of Artemis, 550-510BC, <br/>Ephesus, Ionia (now Anatolia, Turkey)");
+    insert_into_images("persia_greece/panathenaic-procession-map.jpg", 
+                            "Pantrinitonia, Trinity College, Connecticut", 
+                            "https://commons.trincoll.edu/pantrinitonia/procession/", 
+                            "Map of Panathenaic Procession, <br/>Ancient Athens");
+    insert_into_images("persia_greece/proskynesis.jpg", 
+                            "Pantrinitonia, Trinity College, Connecticut", 
+                            "http://www.livius.org/pictures/iran/persepolis/persepolis-apadana/persepolis-apadana-north-stairs/persepolis-apadana-central-relief/proskynesis-relief/", 
+                            "Central Relief of the North Stairs, 550-500 BC, <br/>Apadana Staircase, Persepolis, Iran");
+    insert_into_images("persia_greece/AN00198257_001_l.jpg", 
+                            "BM", 
+                            "461733", 
+                            "Block V from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
+    insert_into_images("persia_greece/AN00446025_001_l.jpg", 
+                            "BM", 
+                            "461733", 
+                            "Block V from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
+    insert_into_images("persia_greece/AN00446030_001_l.jpg", 
+                            "BM", 
+                            "461733", 
+                            "Block IV from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
+    insert_into_images("persia_greece/AN00446028_001_l.jpg", 
+                            "BM", 
+                            "461733", 
+                            "Block IV from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
  }
 
 ?>
