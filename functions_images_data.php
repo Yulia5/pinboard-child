@@ -3444,7 +3444,7 @@ function populate_images() {
                             "Parthenon, 447-432 BC, <br/>As seen from Philopappos Hill in 2010, Athens, Greece");
     insert_into_images("persia_greece/Ionian_Tribute_Bearers_on_the_Apadana_Staircase.jpg", 
                             "wiki", 
-                            "Ionian_Tribute_Bearers_on_the_Apadana_Staircase_(Best_Viewed_Size_"Large")_(4688057305).jpg", 
+                            'Ionian_Tribute_Bearers_on_the_Apadana_Staircase_(Best_Viewed_Size_&quot;Large&quot;)_(4688057305).jpg', 
                             "Ionian Tribute Bearers Relief, 550-500 BC, <br/>Apadana Staircase, Persepolis, Iran");
     insert_into_images("persia_greece/Ionic_entablature.jpg", 
                             "wiki", 
@@ -3458,18 +3458,22 @@ function populate_images() {
                             "BM", 
                             "460187", 
                             "Fragment of a marble frieze, Temple of Artemis, 550-510BC, <br/>Ephesus, Ionia (now Anatolia, Turkey)");
-    insert_into_images("persia_greece/AN00101852_001_l.jpg", 
-                            "BM", 
-                            "460187", 
-                            "Fragment of a marble frieze, Temple of Artemis, 550-510BC, <br/>Ephesus, Ionia (now Anatolia, Turkey)");
     insert_into_images("persia_greece/panathenaic-procession-map.jpg", 
                             "Pantrinitonia, Trinity College, Connecticut", 
                             "https://commons.trincoll.edu/pantrinitonia/procession/", 
                             "Map of Panathenaic Procession, <br/>Ancient Athens");
     insert_into_images("persia_greece/proskynesis.jpg", 
-                            "Pantrinitonia, Trinity College, Connecticut", 
+                            "Livius.org", 
                             "http://www.livius.org/pictures/iran/persepolis/persepolis-apadana/persepolis-apadana-north-stairs/persepolis-apadana-central-relief/proskynesis-relief/", 
                             "Central Relief of the North Stairs, 550-500 BC, <br/>Apadana Staircase, Persepolis, Iran");
+    insert_into_images("persia_greece/05_babylonians_2.jpg", 
+                            "Livius.org", 
+                            "http://www.livius.org/pictures/iran/persepolis/persepolis-apadana/persepolis-apadana-east-stairs/persepolis-apadana-east-stairs-southern-part-babylonians-2/", 
+                            "Babylonians, Southern part of East Stairs, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
+    insert_into_images("persia_greece/01_medians_2.jpg", 
+                            "Livius.org", 
+                            "http://www.livius.org/pictures/iran/persepolis/persepolis-apadana/persepolis-apadana-east-stairs/persepolis-apadana-east-stairs-southern-part-medes-2/", 
+                            "Medes, Southern part of East Stairs, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
     insert_into_images("persia_greece/AN00198257_001_l.jpg", 
                             "BM", 
                             "461733", 
