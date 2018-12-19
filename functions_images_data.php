@@ -3486,6 +3486,10 @@ function populate_images() {
                             "BM", 
                             "461733", 
                             "Block IV from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
+    insert_into_images("persia_greece/Persepolis_BW.jpg", 
+                            "wiki", 
+                            "Persepolis_B%26W.jpg", 
+                            "Apadana, 550-500 BC, <br/>Persepolis, Iran");
  }
 
 ?>
