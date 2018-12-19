@@ -3445,15 +3445,15 @@ function populate_images() {
     insert_into_images("persia_greece/Ionian_Tribute_Bearers_on_the_Apadana_Staircase.jpg", 
                             "wiki", 
                             'Ionian_Tribute_Bearers_on_the_Apadana_Staircase_(Best_Viewed_Size_&quot;Large&quot;)_(4688057305).jpg', 
-                            "Ionian Tribute Bearers Relief, 550-500 BC, <br/>Apadana Staircase, Persepolis, Iran");
+                            "Ionian Tribute Bearers, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
     insert_into_images("persia_greece/Ionic_entablature.jpg", 
                             "wiki", 
                             "Ionic_entablature.jpg", 
-                            "Entabluture that shows frieze, <br/>Source: A. Rosengarten, A Handbook of Architectural Styles, NY, 1898");
+                            "Entablature that shows a frieze, <br/>Source: A. Rosengarten, A Handbook of Architectural Styles, NY, 1898");
     insert_into_images("persia_greece/AN00631923_001_l.jpg", 
                             "BM", 
                             "368264", 
-                            "The Standard of Ur, cr. 2500 BC, <br/>Ur, Mesopotamia (now Tell el-Muqayyar, Iraq)");
+                            "The Standard of Ur, cr. 2500 BC, <br/>Ur, Sumerian city-state in ancient Mesopotamia (now Tell el-Muqayyar, Iraq)");
     insert_into_images("persia_greece/AN00101852_001_l.jpg", 
                             "BM", 
                             "460187", 
@@ -3465,15 +3465,15 @@ function populate_images() {
     insert_into_images("persia_greece/proskynesis.jpg", 
                             "Livius.org", 
                             "http://www.livius.org/pictures/iran/persepolis/persepolis-apadana/persepolis-apadana-north-stairs/persepolis-apadana-central-relief/proskynesis-relief/", 
-                            "Central Relief of the North Stairs, 550-500 BC, <br/>Apadana Staircase, Persepolis, Iran");
+                            "Central Relief of the North Stairs showing Darius the Great, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
     insert_into_images("persia_greece/05_babylonians_2.jpg", 
                             "Livius.org", 
                             "http://www.livius.org/pictures/iran/persepolis/persepolis-apadana/persepolis-apadana-east-stairs/persepolis-apadana-east-stairs-southern-part-babylonians-2/", 
-                            "Babylonians, Southern part of East Stairs, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
+                            "Babylonian Tribute Bearers, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
     insert_into_images("persia_greece/01_medians_2.jpg", 
                             "Livius.org", 
                             "http://www.livius.org/pictures/iran/persepolis/persepolis-apadana/persepolis-apadana-east-stairs/persepolis-apadana-east-stairs-southern-part-medes-2/", 
-                            "Medes, Southern part of East Stairs, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
+                            "Median Tribute Bearers, 520 - 486 BC, <br/>Apadana Staircase, Persepolis, Iran");
     insert_into_images("persia_greece/AN00198257_001_l.jpg", 
                             "BM", 
                             "461733", 
@@ -3481,19 +3481,32 @@ function populate_images() {
     insert_into_images("persia_greece/AN00446025_001_l.jpg", 
                             "BM", 
                             "461733", 
-                            "Block V from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
+                            "Block V showing Zeus And Hera, East Parthenon frieze, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
     insert_into_images("persia_greece/AN00446030_001_l.jpg", 
                             "BM", 
                             "461733", 
-                            "Block IV from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
+                            "Block IV showing eponymous heroes or civic dignitaries, East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
     insert_into_images("persia_greece/AN00446028_001_l.jpg", 
                             "BM", 
                             "461733", 
-                            "Block IV from the East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
-    insert_into_images("persia_greece/Persepolis_BW.jpg", 
+                            "Block IV showing Hermes and other Greek gods, East frieze of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
+    insert_into_images("persia_greece/Persepolis_6208819350.jpg", 
                             "wiki", 
-                            "Persepolis_B%26W.jpg", 
+                            "Persepolis_6208819350.jpg", 
                             "Apadana, 550-500 BC, <br/>Persepolis, Iran");
+    insert_into_images("persia_greece/temple_Frieze_Delphi_Greece_9665603111.jpg", 
+                            "wiki", 
+                            'Temple_Frieze,_Delphi,_Greece_(9665603111).jpg', 
+                            "Frieze of Siphnian Treasury, cr.  525 BC, <br/>Delphi, Greece");
+    insert_into_images("persia_greece/Parthenon_3388138127.jpg", 
+                            "wiki", 
+                            'Parthenon_(3388138127).jpg', 
+                            "Parthenon, 447-432 BC, <br/>Athens, Greece");
+    insert_into_images("persia_greece/Miniaturk_009.jpg", 
+                            "wiki", 
+                            'Miniaturk_009.jpg', 
+                            "Modern model of the Third Temple of Artemis, <br/>Miniatürk Park, Istanbul, Turkey");
+
  }
 
 ?>
