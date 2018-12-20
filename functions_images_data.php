@@ -3506,6 +3506,10 @@ function populate_images() {
                             "wiki", 
                             'Miniaturk_009.jpg', 
                             "Modern model of the Third Temple of Artemis, <br/>Miniatürk Park, Istanbul, Turkey");
+    insert_into_images("persia_greece/parthenon_west_metopes1321732054731.jpg", 
+                            "fairfield.edu", 
+                            'http://faculty.fairfield.edu/rosivach/cl115/parthenon.htm', 
+                            "West Metopes of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
 
  }
 
