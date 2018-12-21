@@ -3562,6 +3562,10 @@ function populate_images() {
                             "wiki", 
                             "Artemisia_Gentileschi_-_Self-Portrait_5365.jpg", 
                             "Self-Portrait as Saint Catherine of Alexandria, cr. 1616, <br/>Artemisia Gentileschi, Italy");
+    insert_into_images("persia_greece/Anitkabir.JPG", 
+                            "wiki", 
+                            "Anıtkabir.JPG", 
+                            "Anıtkabir, the mausoleum of Mustafa Kemal Atatürk, 1944-53, <br/>Emin Onat and Ahmet Orhan Arda, Ankara, Turkey");
 }
 
 ?>
