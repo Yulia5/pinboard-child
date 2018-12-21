@@ -3510,7 +3510,58 @@ function populate_images() {
                             "fairfield.edu", 
                             'http://faculty.fairfield.edu/rosivach/cl115/parthenon.htm', 
                             "West Metopes of the Parthenon, 438 - 432 BC, <br/>Designed by Pheidias, Athens, Greece");
-
- }
+    insert_into_images("persia_greece/AN00314232_001_l.jpg", 
+                            "BM", 
+                            "460572", 
+                            "Marble statue from the Mausoleum of Halikarnassos, possibly Mausolus, cr. 350 BC, <br/>Halicarnassus, Caria, now Bodrum, Turkey");
+    insert_into_images("persia_greece/AN00198278_001_l.jpg", 
+                            "BM", 
+                            "460574", 
+                            "Marble statue from the Mausoleum of Halikarnassos, possibly Artemisia, cr. 350 BC, <br/>Halicarnassus, Caria, now Bodrum, Turkey");
+    insert_into_images("persia_greece/AN01174212_001_l.jpg", 
+                            "BM", 
+                            "459678", 
+                            "Marble statue from the Temple of Athena Polias, possibly Ada, cr. 350 BC - 325 BC, <br/>Priene, Ionia, now Güllübahçe, Turkey");
+    insert_into_images("persia_greece/Taj_Mahal_Edited.jpeg", 
+                            "wiki", 
+                            "Taj_Mahal_(Edited).jpeg", 
+                            "Taj Mahal, 1632–53, <br/>Ustad Ahmad Lahauri, Agra, India");
+    insert_into_images("persia_greece/Mauzoleumlenina_cropped.jpeg", 
+                            "wiki", 
+                            'Mauzoleumlenina_(cropped).jpeg', 
+                            "Lenin's Mauzoleum, 1924, <br/>Alexey Shchusev, Moscow, Russia");
+    insert_into_images("persia_greece/Master_Of_The_Story_Of_Griselda_-_Artemisia_-_WGA14632.jpg", 
+                            "wiki", 
+                            'Master_Of_The_Story_Of_Griselda_-_Artemisia_-_WGA14632.jpg', 
+                            "Artemisia, 1492, <br/>Master of the Griselda Legend, Italy");
+    insert_into_images("persia_greece/1280px-1868_Lawrence_Alma-Tadema_-_Phidias_Showing_the_Frieze_of_the_Parthenon_to_his_Friends.jpg", 
+                            "wiki", 
+                            "1868_Lawrence_Alma-Tadema_-_Phidias_Showing_the_Frieze_of_the_Parthenon_to_his_Friends.jpg", 
+                            "Phidias Showing the Frieze of the Parthenon to his Friends, 1868, <br/>Lawrence Alma-Tadema, Great Britain");
+    insert_into_images("persia_greece/15-592458.jpg", 
+                            "RMN", 
+                            '15-592458-2C6NU0AN9AC1K', 
+                            "Persepolis Apandana, Festival of the New Year, after 2000, <br/>Balogh Balage, U.S.A.");
+    insert_into_images("persia_greece/99-003149.jpg", 
+                            "RMN", 
+                            '99-003149-2C6NU0HGO7M6', 
+                            "Capital of a column from the Apadana, cr. 510 BC, <br/>Palace of Darius I, Susa, Persia, now Iran");
+    insert_into_images("persia_greece/Mausoleo_di_alicarnasso_ricostruzione_02.jpg", 
+                            "wiki", 
+                            'Mausoleo_di_alicarnasso,_ricostruzione_02.JPG', 
+                            "Model of the Mausoleum at Halicarnassus, <br/>Bodrum Museum of Underwater Archaeology");
+    insert_into_images("persia_greece/F8Fp3JtwmTlx.jpg", 
+                            "zimbio.com", 
+                            'http://www.zimbio.com/Beyond+the+Tube/articles/MxJGnf6t1Ru/Game+Thrones+Season+8+Predictions', 
+                            "Jon Snow and his aunt and partner Daenerys Targaryen, <br/>The Game of Thrones, season 7");
+    insert_into_images("persia_greece/macall_b._polay_-_hbo_photo_3_-_h_2017.jpg", 
+                            "hollywoodreporter.com", 
+                            'https://www.hollywoodreporter.com/live-feed/game-thrones-season-7-finale-recap-dragon-wolf-1032915', 
+                            "Cersei and her brother and partner Jaime Lannister, <br/>The Game of Thrones, season 7");
+    insert_into_images("persia_greece/Artemisia_Gentileschi_-_Self-Portrait_5365.jpg", 
+                            "wiki", 
+                            "Artemisia_Gentileschi_-_Self-Portrait_5365.jpg", 
+                            "Self-Portrait as Saint Catherine of Alexandria, cr. 1616, <br/>Artemisia Gentileschi, Italy");
+}
 
 ?>
