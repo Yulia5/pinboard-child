@@ -3566,6 +3566,22 @@ function populate_images() {
                             "wiki", 
                             "Anıtkabir.JPG", 
                             "Anıtkabir, the mausoleum of Mustafa Kemal Atatürk, 1944-53, <br/>Emin Onat and Ahmet Orhan Arda, Ankara, Turkey");
+    insert_into_images("persia_greece/AN00237000_001_l.jpg", 
+                            "BM", 
+                            "366859", 
+                            "The Banquet of Ashurbanipal, 645 BC - 635 BC, <br/>Nineveh, Assyria, now Mosul, Iraq");
+    insert_into_images("persia_greece/Beit-el-Wali-Temple-Relief.jpg", 
+                            "wiki", 
+                            "Ramses_II_audience.jpg", 
+                            "Plaster cast of a relief showing pharaon Ramesses II receiving produce of Nubia and the lands of tropical Africa, 1269 – 1213 BC, <br/>Temple of Beit el-Wali, Nubia, now Aswan, Egypt");
+    insert_into_images("persia_greece/Tomb_of_Cyrus_the_Great_Darafsh_2_58.jpg", 
+                            "wiki", 
+                            "Tomb_of_Cyrus_the_Great_Darafsh_2_(58).JPG", 
+                            "The Tomb of Cyrus the Great, 559 - 529 BC, <br/>Pasargadae, Persia, now Iran");
+    insert_into_images("persia_greece/The_Achaemenid_Empire_at_its_Greatest_Extent.jpg", 
+                            "wiki", 
+                            "The_Achaemenid_Empire_at_its_Greatest_Extent.jpg", 
+                            "A map of the Achaemenid Persian empire at its greatest extent, during the reign of Darius I around 500 BC");
 }
 
 ?>
