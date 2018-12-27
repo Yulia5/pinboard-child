@@ -3594,6 +3594,10 @@ function populate_images() {
                             "Garry Knight @ flickr.com", 
                             "https://www.flickr.com/photos/garryknight/11091029893", 
                             "Clock with a figurine of Saint George (detail), 1925, <br/>Liberty Department Store, London, United Kingdom");
+    insert_into_images("cyrus_conference.png", 
+                            "cyruscylinder2013.com", 
+                            "http://cyruscylinder2013.com/wp-content/uploads/2013/10/Cyrus-the-Great-Life-and-Lore-UCLA-10.28-29.2013.pdf", 
+                            '"Cyrus the Great: Life and Lore" conference prospectus (detail), 2013, <br/>UCLA, Los Angeles, U.S.A.');
 }
 
 ?>
