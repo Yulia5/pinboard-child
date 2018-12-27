@@ -127,7 +127,7 @@ function populate_images() {
     insert_into_images("horsemen/05-522282.jpg", 
                             "RMN", 
                             "05-522282-2C6NU07CV0NA", 
-                            "Neck-amphora with the depiction of a combat on an Amazone and a hoplite,<br/>cr. 500-490 BC, Attica");
+                            "Neck-amphora with the depiction of combat on an Amazone and a hoplite,<br/>cr. 500-490 BC, Attica");
     insert_into_images("horsemen/050_01.jpg", 
                             "John Moran", 
                             "http://www.johnmoran.com/auction-archive/2011/20110920/24120-lot-1050-a-dressel-kister-a-cie-porcelain-equestrian-figure-of-augustus-iii", 
