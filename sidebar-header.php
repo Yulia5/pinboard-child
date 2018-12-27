@@ -1,21 +1,8 @@
 <?php if( is_active_sidebar( 1 ) ) : ?>
-	<div id="sidebar-header-custom" class="widget-area" role="complementary">		
-		<aside id="another-site-title">
-			<div id="another-site-title-table">
-			<div id="headline">
-				<div id="headline-1"> <a href="<?php echo home_url( '/' ); ?>" rel="home"><h3>yu51a5.com*</h3></a></div>				
-				<div id="headline-2"> </div>				
-				<div id="headline-3"> <a href="<?php echo home_url( '/' ); ?>" rel="home">*Something to read <br />over a coffee</a> </div>
-			</div> 
-			<div id="headlogo">				
-				<a href="<?php echo home_url( '/' ); ?>" rel="home"> <img src="http://www.yu51a5.com/wp-content/themes/pinboard-child/images/coffee2.png" /></a>
-			</div>
-			</div>
-		</aside>				
+	<div id="sidebar-header-custom" class="widget-area" role="complementary">						
 		<?php dynamic_sidebar( 1 ); ?>
 	</div><!-- #sidebar-header -->
 <?php else : ?>
-	<?php get_search_form(); ?>
 	<?php if( '' != pinboard_get_option( 'facebook_link' ) || '' != pinboard_get_option( 'twitter_link' ) || '' != pinboard_get_option( 'pinterest_link' ) || '' != pinboard_get_option( 'vimeo_link' ) || '' != pinboard_get_option( 'youtube_link' ) || '' != pinboard_get_option( 'flickr_link' ) || '' != pinboard_get_option( 'googleplus_link' ) || '' != pinboard_get_option( 'dribble_link' ) || '' != pinboard_get_option( 'linkedin_link' ) ) : ?>
 		<div id="social-media-icons">
 			<?php if( '' != pinboard_get_option( 'facebook_link' ) ) : ?>

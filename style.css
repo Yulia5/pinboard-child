@@ -200,14 +200,12 @@ header h3 {
 #header {
 	border-top:none;
 	margin-bottom: 0px !important;
-	min-height: 115px !important;
-    overflow: hidden;
+	overflow: hidden;
     height:auto;
 }
 
 #sidebar-header-custom {
 	padding:0px;
-	min-height: 115px !important;
 	height:auto;
     margin:0px !important;
     width:100%;
