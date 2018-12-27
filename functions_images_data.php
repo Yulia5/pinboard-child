@@ -67,7 +67,7 @@ function populate_images() {
     insert_into_images("horsemen/02-000485.jpg", 
                             "RMN", 
                             "02-000485-2C6NU0GSQXZC", 
-                            "Falaieff with the depiction of a combat on an Amazone and two griffons,<br/>4th century BC, Attica");
+                            "Falaieff with the depiction of combat on an Amazone and two griffons,<br/>4th century BC, Attica");
     insert_into_images("horsemen/02-000930-1.jpg", 
                             "RMN", 
                             "02-000930-2C6NU0GSMNLE", 
@@ -3541,7 +3541,7 @@ function populate_images() {
     insert_into_images("persia_greece/15-592458.jpg", 
                             "RMN", 
                             '15-592458-2C6NU0AN9AC1K', 
-                            "Persepolis Apandana, Festival of the New Year, after 2000, <br/>Balogh Balage, U.S.A.");
+                            "Persepolis Apadana, Festival of the New Year, after 2000, <br/>Balogh Balage, U.S.A.");
     insert_into_images("persia_greece/99-003149.jpg", 
                             "RMN", 
                             '99-003149-2C6NU0HGO7M6', 
@@ -3597,7 +3597,7 @@ function populate_images() {
     insert_into_images("cyrus_conference.png", 
                             "cyruscylinder2013.com", 
                             "http://cyruscylinder2013.com/wp-content/uploads/2013/10/Cyrus-the-Great-Life-and-Lore-UCLA-10.28-29.2013.pdf", 
-                            '"Cyrus the Great: Life and Lore" conference prospectus (detail), 2013, <br/>UCLA, Los Angeles, U.S.A.');
+                            "'Cyrus the Great: Life and Lore' conference prospectus (detail), 2013, <br/>UCLA, Los Angeles, U.S.A.");
 }
 
 ?>
