@@ -3586,14 +3586,14 @@ function populate_images() {
                             "BM", 
                             "277770", 
                             "Complaint about the delivery of the wrong grade of copper (Ea-nasir tablet), cr. 1750 BC, <br/>Ur, Sumerian city-state in ancient Mesopotamia (now Tell el-Muqayyar, Iraq)");
-    insert_into_images("horsemen/Cyrus_I_seal.png", 
+    insert_into_images("horsemen/cyrus_ansan_seal.gif", 
                             "wiki", 
                             "Cyrus_I_seal.png", 
                             "Seal of Cyrus I, 600 - 580 BC, <br/>Persia, now Iran");
     insert_into_images("horsemen/liberty_clock.jpg", 
                             "Garry Knight @ flickr.com", 
                             "https://www.flickr.com/photos/garryknight/11091029893", 
-                            "Clock with a figurine of Saint George, 1925, <br/>Liberty Department Store, London, United Kingdom");
+                            "Clock with a figurine of Saint George (detail), 1925, <br/>Liberty Department Store, London, United Kingdom");
 }
 
 ?>
