@@ -39,7 +39,7 @@ function populate_images() {
     insert_into_images("horsemen/00-008264.jpg", 
                             "RMN", 
                             "00-008264-2C6NU04TA59G", 
-                            "Dinos with the depiction of a horse races and Amazonomachy,<br/>6th century BC, Attic");
+                            "Dinos with the depiction of horse races and Amazonomachy,<br/>6th century BC, Attic");
     insert_into_images("horsemen/00061001.jpg", 
                             "Getty", 
                             "563", 
@@ -111,7 +111,7 @@ function populate_images() {
     insert_into_images("horsemen/04-511292.jpg", 
                             "RMN", 
                             "04-511292-2C6NU005HUJQ", 
-                            "Olpe with the depiction of a two horsemen,<br/>cr. 575-550 BC, Corinthian");
+                            "Olpe with the depiction of two horsemen,<br/>cr. 575-550 BC, Corinthian");
     insert_into_images("horsemen/044_Conrad_Cichorius_Die_Reliefs_der_Traianssaule_Tafel_XLIV.jpg", 
                             "wiki", 
                             "044_Conrad_Cichorius,_Die_Reliefs_der_Traianssäule,_Tafel_XLIV.jpg", 
@@ -315,7 +315,7 @@ function populate_images() {
     insert_into_images("horsemen/13-538189.jpg", 
                             "RMN", 
                             "13-538189-2C6NU0DUQ302", 
-                            "Votive tablet showing Thracian horseman, <br/>1st quarter of the 3th century AD (?)");
+                            "Votive tablet showing Thracian horseman, <br/>1st quarter of the 3rd century AD (?)");
     insert_into_images("horsemen/13-554698.jpg", 
                             "RMN", 
                             "13-554698-2C6NU05YM0CF", 
@@ -391,7 +391,7 @@ function populate_images() {
     insert_into_images("horsemen/15-647264.jpg", 
                             "BM", 
                             "58712", 
-                            "Mosaic with a hunting (?) of a Vandal,<br/>Late 5th – early 6th century, Bord-Djedid, Carthage, Tunisia");
+                            "Mosaic with hunting (?) of a Vandal,<br/> Late 5th – early 6th century, Bord-Djedid, Carthage, Tunisia");
     insert_into_images("horsemen/15-article.jpg", 
                             "© Trustees of the British Museum", 
                             "http://www.teachinghistory100.org/objects/about_the_object/tombstone_of_a_roman_cavalryman", 
@@ -871,7 +871,7 @@ function populate_images() {
     insert_into_images("horsemen/88-004569-02.jpg", 
                             "RMN", 
                             "88-004569-02-2C6NU0HPE8TQ", 
-                            "Amphora known as the amphora of Milo: gigantomachy, including the depiction of Poseidon on a rearing horse,<br/>410-400 BC, Attica, attributed to painter of Suessula");
+                            "Amphora known as the amphora of Milo: gigantomachy, including the depiction of Poseidon on a rearing horse,<br/>410-400 BC, Attica, attributed to the painter of Suessula");
     insert_into_images("horsemen/905px-David_von_Krafft_circle_-_Karl_XII.jpg", 
                             "wiki", 
                             "David_von_Krafft_(circle)_-_Karl_XII.jpg", 
@@ -887,7 +887,7 @@ function populate_images() {
     insert_into_images("horsemen/93-006072-01.jpg", 
                             "RMN", 
                             "93-006072-01-2C6NU0HP2NVU", 
-                            "Sarcophagus with Amazonomachy scene, <br/>2nd century, Thessaloniki");
+                            "Sarcophagus with an Amazonomachy scene, <br/>2nd century, Thessaloniki");
     insert_into_images("horsemen/939-2.jpg", 
                             "qip.ru Postcards", 
                             "http://post.kards.qip.ru/celebration/show/157/9391069/", 
@@ -1251,7 +1251,7 @@ function populate_images() {
     insert_into_images("horsemen/Amazonomachia_Pio-Clementino_Inv896.jpg", 
                             "wiki", 
                             "Amazonomachia_Pio-Clementino_Inv896.jpg", 
-                            "Sarcophagus with Amazonomachy scene, <br/>cr. 160–170, Rome");
+                            "Sarcophagus with an Amazonomachy scene, <br/>cr. 160–170, Rome");
     insert_into_images("horsemen/Andres_Marzal_De_Sax_-_Retable_of_St_George_detail_-_WGA14171.jpg", 
                             "wiki", 
                             "Andrés_Marzal_De_Sax_-_Retable_of_St_George_(detail)_-_WGA14171.jpg", 
@@ -1923,7 +1923,7 @@ function populate_images() {
     insert_into_images("horsemen/Oinochoe_panathenaia_riders_Staatliche_Antikensammlungen.jpg", 
                             "wiki", 
                             "Oinochoe_panathenaia_riders_Staatliche_Antikensammlungen.jpg", 
-                            "Oinochoe showing a horseman and an amphora showing a horseman,<br/>beginning of the 4th century BC, Attic");
+                            "Oinochoe showing a horseman and an amphora showing a horseman,<br/> beginning of the 4th century BC, Attic");
     insert_into_images("horsemen/OrderStGeorgeNecklace.jpg", 
                             "BM", 
                             "70787", 
@@ -2047,15 +2047,15 @@ function populate_images() {
     insert_into_images("horsemen/SC249728.jpg", 
                             "MFA", 
                             "coin-of-kingdom-of-macedonia-with-filleted-head-struck-under-philip-ii-3782", 
-                            "Coin with filleted head, struck under Philip II, <br/>359–336 BC, Macedonia");
+                            "Coin with a filleted head, struck under Philip II, <br/>359–336 BC, Macedonia");
     insert_into_images("horsemen/SC250259.jpg", 
                             "MFA", 
                             "coin-of-kingdom-of-macedonia-with-male-head-struck-in-the-name-of-alexander-the-great-3979", 
-                            "Coin with male head, struck in the name of Alexander the Great, <br/>cr. 316–297 BC, Macedonia");
+                            "Coin with a male head, struck in the name of Alexander the Great, <br/>cr. 316–297 BC, Macedonia");
     insert_into_images("horsemen/SC250271.jpg", 
                             "MFA", 
                             "coin-of-kingdom-of-macedonia-with-head-of-apollo-struck-under-alexander-v-2971", 
-                            "Coin with head of Apollo, struck under Alexander V, <br/>295 BC, Macedonia");
+                            "Coin with the head of Apollo, struck under Alexander V, <br/>295 BC, Macedonia");
     insert_into_images("horsemen/SC250836.jpg", 
                             "MFA", 
                             "drachm-of-larissa-with-galloping-bull-3571", 
@@ -2067,15 +2067,15 @@ function populate_images() {
     insert_into_images("horsemen/SC250984.jpg", 
                             "MFA", 
                             "stater-of-pherai-with-head-of-hekate-struck-under-alexander-4050", 
-                            "Stater with head of Hekate, struck under Alexander, <br/>cr. 369–357 BC, Pherai, Thessaly");
+                            "Stater with the head of Hekate, struck under Alexander, <br/>cr. 369–357 BC, Pherai, Thessaly");
     insert_into_images("horsemen/SC263507.jpg", 
                             "MFA", 
                             "drachm-of-pharsalos-with-head-of-athena-signed-by-telephantos-3472", 
-                            "Drachm with head of Athena, signed by Telephantos,<br/>cr. 425–405 BC, Pharsalos, Thessaly");
+                            "Drachm with the head of Athena, signed by Telephantos, <br/>cr. 425–405 BC, Pharsalos, Thessaly");
     insert_into_images("horsemen/SC268043-1.jpg", 
                             "MFA", 
                             "stater-of-kingdom-of-macedonia-with-head-of-demetrios-poliorketes-3238", 
-                            "Stater with head of Demetrios Poliorketes, <br/>cr. 290–289 BC, Macedonia");
+                            "Stater with the head of Demetrios Poliorketes, <br/>cr. 290–289 BC, Macedonia");
     insert_into_images("horsemen/SC304264-1.jpg", 
                             "MFA", 
                             "scaraboid-with-bellerophon-riding-pegasos-and-attacking-the-chimaera-260168", 
@@ -2087,7 +2087,7 @@ function populate_images() {
     insert_into_images("horsemen/SC47844.jpg", 
                             "MFA", 
                             "drinking-cup-kylix-153712", 
-                            "Drinking cup (kylix) with the depiction of an Arimaspean on horseback and a griffin, <br/>cr. 4th century BC, Attica");
+                            "Drinking cup (kylix) with the depiction of an Arimaspean on horseback and a gryphon, <br/>cr. 4th century BC, Attica");
     insert_into_images("horsemen/SC70606.jpg", 
                             "MFA", 
                             "fragment-of-an-oinochoe-154084", 
@@ -2179,7 +2179,7 @@ function populate_images() {
     insert_into_images("horsemen/THAM-Amazonomachy_sarcophagus_4.jpg", 
                             "wiki", 
                             "THAM-Amazonomachy sarcophagus 4.jpg", 
-                            "Roman sarcophagus with an Amazonomachy scene, <br/>2nd quarter of the 3th century, Thessaloniki");
+                            "Roman sarcophagus with an Amazonomachy scene, <br/>2nd quarter of the 3rd century, Thessaloniki");
     insert_into_images("horsemen/Tabriz_Sasanian_Plate_2.jpg", 
                             "wiki", 
                             "Tabriz_Sasanian_Plate_2.jpg", 
@@ -2215,7 +2215,7 @@ function populate_images() {
     insert_into_images("horsemen/Thracian_cavalrymen_vs_an_armored_Greek_food_soldier_-_Getty_Villa_Collection.jpg", 
                             "wiki", 
                             "Thracian_cavalrymen_vs_an_armored_Greek_food_soldier_-_Getty_Villa_Collection.jpg", 
-                            "Amphora with battle scene in which a hoplite, or heavily armed infantryman, falls to the ground between two cavalrymen,<br/>cr. 530-520 BC, Attic");
+                            "Amphora with a battle scene in which a hoplite, or heavily armed infantryman, falls to the ground between two cavalrymen,<br/>cr. 530-520 BC, Attic");
     insert_into_images("horsemen/Tomasso10112009T14841.jpg", 
                             "Tomasso Brothers Fine Arts", 
                             "http://www.tomassobrothers.co.uk/DesktopDefault.aspx?tabid=6&objectid=226680", 
@@ -2500,7 +2500,7 @@ function populate_images() {
     insert_into_images("horsemen/coin-of-corinth-with-head-of-aphrodite-struck-under-q-caecilius-niger-and-c-heius-pamphilus-259879-1.jpg", 
                             "MFA", 
                             "coin-of-corinth-with-head-of-aphrodite-struck-under-q-caecilius-niger-and-c-heius-pamphilus-259879", 
-                            "Coin with head of Aphrodite, struck under Q. Caecilius Niger and C. Heius Pamphilus, <br/>34–31 BC, Corinth, Roman culture");
+                            "Coin with the head of Aphrodite, struck under Q. Caecilius Niger and C. Heius Pamphilus, <br/>34–31 BC, Corinth, Roman culture");
     insert_into_images("horsemen/coin-of-thyatira-with-bust-of-severus-alexander-struck-under-mar-pollianus-264438.jpg", 
                             "MFA", 
                             "coin-of-thyatira-with-bust-of-severus-alexander-struck-under-mar-pollianus-264438", 
@@ -2560,7 +2560,7 @@ function populate_images() {
     insert_into_images("horsemen/drachm-of-kibyra-with-head-of-youth-3507.jpg", 
                             "MFA", 
                             "drachm-of-kibyra-with-head-of-youth-3507", 
-                            "Drachm with head of youth, <br/>cr. 166–84 BC, Kibyra, Phrygia (Hellenistic)");
+                            "Drachm with the head of youth, <br/>cr. 166–84 BC, Kibyra, Phrygia (Hellenistic)");
     insert_into_images("germany/durers-rhino1.jpg", 
                             "SKD", 
                             "118842", 
@@ -2572,7 +2572,7 @@ function populate_images() {
     insert_into_images("horsemen/electorGrof.jpg", 
                             "From a book", 
                             NULL, 
-                            "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks (detail),<br/>1714, Guillielmus de Grof");
+                            "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks (detail), <br/>1714, Guillielmus de Grof");
     insert_into_images("horsemen/elizaveta.jpeg", 
                             "SKD", 
                             "118426", 
@@ -2588,7 +2588,7 @@ function populate_images() {
     insert_into_images("horsemen/f22f227e754b93409c8a70d4ad9599b5.jpg", 
                             "BM", 
                             "461496", 
-                            "Dinos with the depiction of a combat of Attic heroes with Amazons,<br/>440 BC-430 BC, Attica");
+                            "Dinos with the depiction of combat of Attic heroes with Amazons,<br/>440 BC-430 BC, Attica");
     insert_into_images("horsemen/fcc6a2fc50c8d4ce4ece0357a745caea.jpg", 
                             "Médailles et Antiques de la Bibliothèque nationale de France", 
                             "http://medaillesetantiques.bnf.fr/ws/catalogue/app/collection/record/ark:/12148/c33gbqgtw", 
@@ -2800,7 +2800,7 @@ function populate_images() {
     insert_into_images("horsemen/l_ps1_4817_sideb_dd_t08.jpg", 
                             "WAM", 
                             "18168", 
-                            "Amphora with two armed horsemen clash on the battlefield, their horses rearing above a fallen warrior trapped beneath them,<br/>cr. 520 BC, Attica");
+                            "Amphora with two armed horsemen clashing on the battlefield, their horses rearing above a fallen warrior trapped beneath them,<br/>cr. 520 BC, Attica");
     insert_into_images("horsemen/l_ps1_542653_back_dd_t09.jpg", 
                             "WAM", 
                             "22369", 
@@ -2872,7 +2872,7 @@ function populate_images() {
     insert_into_images("horsemen/mfa_154065.jpg", 
                             "MFA", 
                             "pitcher-oinochoe-with-battle-of-the-greeks-and-amazons-154065", 
-                            "Pitcher (oinochoe) with battle of the Greeks and Amazons,<br/>about 320–310 BC, Apulia");
+                            "Pitcher (oinochoe) with a battle of the Greeks and Amazons, <br/>cr. 320–310 BC, Apulia");
     insert_into_images("berets/moulin-de-la-galette.jpg", 
                             "guggenheim.org", 
                             "http://www.guggenheim.org/new-york/collections/collection-online/artwork/3411", 
@@ -3052,7 +3052,7 @@ function populate_images() {
     insert_into_images("horsemen/stater-of-kelenderis-with-youth-riding-horse-2761.jpg", 
                             "MFA", 
                             "stater-of-kelenderis-with-youth-riding-horse-2761", 
-                            "Stater with youth riding horse,<br/>450–400 BC, Kelenderis, Cilicia");
+                            "Stater with a youth riding horse,<br/>450–400 BC, Kelenderis, Cilicia");
     insert_into_images("horsemen/stater-of-kyzikos-with-horse-and-rider-above-tunny-fish-3299.jpg", 
                             "MFA", 
                             "stater-of-kyzikos-with-horse-and-rider-above-tunny-fish-3299", 
@@ -3068,15 +3068,15 @@ function populate_images() {
     insert_into_images("horsemen/stater-of-taras-tarentum-with-rider-vaulting-from-horse-942.jpg", 
                             "MFA", 
                             "stater-of-taras-tarentum-with-rider-vaulting-from-horse-942", 
-                            "Stater  with rider vaulting from horse,<br/>420–380 BC, Taras, Apulia");
+                            "Stater  with a rider vaulting from a horse,<br/>420–380 BC, Taras, Apulia");
     insert_into_images("horsemen/stater-of-taras-tarentum-with-rider-vaulting-from-horse-943.jpg", 
                             "MFA", 
                             "stater-of-taras-tarentum-with-rider-vaulting-from-horse-943", 
-                            "Stater with rider vaulting from horse,<br/>380–344 BC, Taras, Apulia");
+                            "Stater with a rider vaulting from a horse,<br/>380–344 BC, Taras, Apulia");
     insert_into_images("horsemen/stater-of-taras-tarentum-with-warrior-on-horseback-crowned-by-victory-struck-under-kallikrates-885.jpg", 
                             "MFA", 
                             "stater-of-taras-tarentum-with-warrior-on-horseback-crowned-by-victory-struck-under-kallikrates-885", 
-                            "Stater with warrior on horseback crowned by Victory, struck under Kallikrates,<br/>cr. 240–228 BC, Taras, Apulia");
+                            "Stater with a warrior on horseback crowned by Victory, struck under Kallikrates,<br/>cr. 240–228 BC, Taras, Apulia");
     insert_into_images("horsemen/stgeorgedragon1.jpg", 
                             "The Second Website of Bob Speel", 
                             "http://www.speel.me.uk/gp/stgeorgedragon.htm", 
