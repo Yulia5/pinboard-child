@@ -711,7 +711,7 @@ function populate_images() {
     insert_into_images("horsemen/755px-Battle_between_Novgorod_and_Suzdal.jpg", 
                             "wiki", 
                             "Battle_between_Novgorod_and_Suzdal.jpg", 
-                            "Battle between Novgorod and Suzdal in 1170 with the depiction of Saint George and other warrior saints in the bottom tier, <br/>second half of 15th century, Novgorod, Russia");
+                            "Battle between Novgorod and Suzdal in 1170 with the depiction of Saint George and other warrior saints in the bottom tier, <br/>second half of the 15th century, Novgorod, Russia");
     insert_into_images("horsemen/76ec23a1-48d3-4c96-b4e6-d03cea25538e.jpg", 
                             "Museo del Prado", 
                             "https://www.museodelprado.es/en/the-collection/art-work/fernando-of-tuscany-on-horseback/07849769-71e5-446b-a071-7279c9ecccf2?searchid=60cbe7de-4a15-a0b0-c734-ba46df853473", 
@@ -995,7 +995,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00172892_001_l.jpg", 
                             "BM", 
                             "597733", 
-                            "Painting on parchment depicting the Vigin Mary, the infant Christ, Saint Michael, Saint Gabriel and Saint George slaying a dragon, <br/>19th century");
+                            "Painting on parchment depicting the Virgin Mary, the infant Christ, Saint Michael, Saint Gabriel and Saint George slaying a dragon, <br/>19th century");
     insert_into_images("horsemen/AN00236669_001_l.jpg", 
                             "BM", 
                             "399045", 
@@ -1171,11 +1171,11 @@ function populate_images() {
     insert_into_images("horsemen/AN01507116_001_l.jpg", 
                             "BM", 
                             "1526424", 
-                            "Stamp-seal engraved with a nimbate ride who attacks hydra, possibly with a lance, <br/>5th century or later, Sasanian");
+                            "Stamp-seal showing a rider with a halo who attacks hydra, possibly with a lance, <br/>5th century or later, Sasanian");
     insert_into_images("horsemen/AN01511577_001_l.jpg", 
                             "BM", 
                             "1526428", 
-                            "Stamp-seal engraved with a nimbate ride who attacks hydra, <br/>5th century or later, Sasanian");
+                            "Stamp-seal showing a rider with a halo who attacks hydra, <br/>5th century or later, Sasanian");
     insert_into_images("horsemen/AN01592442_001_l.jpg", 
                             "BM", 
                             "459809", 
@@ -1567,7 +1567,7 @@ function populate_images() {
     insert_into_images("horsemen/Faenza_Bergantini_22019.jpg", 
                             "wiki", 
                             "Faenza_Bergantini_22019.JPG", 
-                            "Bergantini cup depicting the history of sacrifice of Marco Curcio, <br/>June 17, 1529, Pietro Bergantini, Faenza");
+                            "Bergantini cup depicting the history of the sacrifice of Marco Curcio, <br/>June 17, 1529, Pietro Bergantini, Faenza");
     insert_into_images("horsemen/Fragmento-de-mosaico-romano-escena-de-caza-Museo-Nacional-de-Arte-Romano-de-M-rida-Espa-a-Foto-de-archivo.jpg", 
                             "DOMVS ROMANA", 
                             "https://domus-romana.blogspot.co.uk/2012/12/otium-i-ars-venatoria.html", 
@@ -3012,7 +3012,7 @@ function populate_images() {
     insert_into_images("horsemen/shm0650.jpg", 
                             "Silk Road Seattle", 
                             "https://depts.washington.edu/silkroad/museums/shm/shmsasanian.html", 
-                            "Dish depicitng Varakhran hunting, <br/>cr. 390-420");
+                            "Dish depicting Varakhran hunting, <br/>cr. 390-420");
     insert_into_images("horsemen/sisinnius.jpg", 
                             "CBd", 
                             "1078", 
@@ -3268,7 +3268,7 @@ function populate_images() {
     insert_into_images("horsemen/marcus_sotbeys.jpg", 
                             "Sothebys", 
                             "2013/arts-of-europe-l13301/lot.1.html", 
-                            "Dish depiting the sacrifice of Marcus Curtius, <br/>cr. 1550-60, workshop of Virgiliotto Calamelli, Faenza");
+                            "Dish depicting the sacrifice of Marcus Curtius, <br/>cr. 1550-60, workshop of Virgiliotto Calamelli, Faenza");
     insert_into_images("horsemen/saint_george_ethiopia.jpeg", 
                             "Minneapolis Institute of Art", 
                             "https://github.com/artsmia/artstories.md/blob/master/stories/44-plates-from-a-christian-illuminated-album.md", 
@@ -3284,7 +3284,7 @@ function populate_images() {
     insert_into_images("horsemen/talisman_808.jpg", 
                             "CBd", 
                             "808", 
-                            "Magical pendant with Holy Rider on horseback, trampling over a dragon lying on the ground, <br/>5th century, Byzantian");
+                            "Magical pendant with Holy Rider on horseback, trampling over a dragon lying on the ground, <br/>5th century, Byzantine");
     insert_into_images("horsemen/thomas_gainsborough_ra_after_sir_anthony_van_dyck_equestrian_portrait_d5639296h-1.jpg", 
                             "Christies", 
                             "paintings/thomas-gainsborough-ra-equestrian-portrait-of-albert-5639296-details.aspx", 
@@ -3385,7 +3385,7 @@ function populate_images() {
     insert_into_images("horsemen/benaki_solomon.jpg", 
                             "Ben", 
                             "108121", 
-                            "Seal-amulet with a representation of Solomon on horseback slaying a demon, <br/>5th-6th century, Byzantian");                                
+                            "Seal-amulet with a representation of Solomon on horseback slaying a demon, <br/>5th-6th century, Byzantine");                                
     insert_into_images("horsemen/303622_627795_1000_1000_inner.jpg", 
                             "Ben", 
                             "108370", 
