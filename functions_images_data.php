@@ -467,7 +467,7 @@ function populate_images() {
     insert_into_images("horsemen/2008BT0526_2500.jpg", 
                             "VA", 
                             "O159931", 
-                            "Dish depicting a man carrying a spear on a horse, <br/>mid 16th century, possibly Mancini workshop, Deruta");
+                            "Dish depicting a man carrying a spear on a horse, <br/>mid-16th century, possibly Mancini workshop, Deruta");
     insert_into_images("horsemen/2008BT2745_2500.jpg", 
                             "VA", 
                             "O159656", 
@@ -1211,7 +1211,7 @@ function populate_images() {
     insert_into_images("horsemen/Alexander-the-Great.png", 
                             "Le Petit Palais", 
                             "http://www.petitpalais.paris.fr/en/collections/1506/livre-des-conquetes-et-faits-d%E2%80%99alexandre", 
-                            "How Alexander the Great Mounted Bucephalus (a manuscript illustration), <br/>mid 1400s, Burgundy");
+                            "How Alexander the Great Mounted Bucephalus (a manuscript illustration), <br/>mid-1400s, Burgundy");
     insert_into_images("horsemen/AlexanderCameo.jpg", 
                             "Hermitage Amsterdam", 
                             "https://www.hermitage.nl/en/tentoonstellingen/alexander_de_grote/achtergrond.htm", 
@@ -1435,7 +1435,7 @@ function populate_images() {
     insert_into_images("horsemen/DP324215.jpg", 
                             "Met", 
                             "459186", 
-                            "Study for the Equestrian Monument to Francesco Sforza,<br/>early to mid 1480s, Antonio Pollaiuolo");
+                            "Study for the Equestrian Monument to Francesco Sforza,<br/>early to mid-1480s, Antonio Pollaiuolo");
     insert_into_images("horsemen/DP366342.jpg", 
                             "Met", 
                             "646264", 
@@ -1467,7 +1467,7 @@ function populate_images() {
     insert_into_images("horsemen/DT11728.jpg", 
                             "Met", 
                             "317829", 
-                            "Double Diptych Icon Pendant depicting the Vigin Mary, the infant Christ, Saint Michael, Saint Gabriel and Saint George slaying a dragon, <br/>early 18th century");
+                            "Double Diptych Icon Pendant depicting the Virgin Mary, the infant Christ, Saint Michael, Saint Gabriel and Saint George slaying a dragon, <br/>early 18th century");
     insert_into_images("horsemen/DT156.jpg", 
                             "Met", 
                             "467746", 
@@ -2027,7 +2027,7 @@ function populate_images() {
     insert_into_images("horsemen/S.George_Novgorod_mid._14_c_GTG.jpg", 
                             "wiki", 
                             "S.George_(Novgorod,_mid._14_c,_GTG).jpg", 
-                            "The Miracle of Saint George and the Dragon, <br/>mid 14th century, Novgorod, Russia");
+                            "The Miracle of Saint George and the Dragon, <br/>mid-14th century, Novgorod, Russia");
     insert_into_images("horsemen/SC115764.jpg", 
                             "MFA", 
                             "mixing-bowl-bell-krater-154121", 
