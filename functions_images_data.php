@@ -919,7 +919,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00015893_001_l.jpg", 
                             "BM", 
                             "42241", 
-                            "Plate depicting a combat, <br/>1554, possibly Mancini workshop, Deruta");
+                            "Plate depicting a battle, <br/>1554, possibly Mancini workshop, Deruta");
     insert_into_images("horsemen/AN00019002_001_l.jpg", 
                             "BM", 
                             "41728", 
@@ -2540,7 +2540,7 @@ function populate_images() {
     insert_into_images("horsemen/d6bf073f4823439367dfdc7e25ba7263.jpg", 
                             "georgianjournal.ge", 
                             "http://www.georgianjournal.ge/arts-a-culture/30044-unique-bas-relief-in-georgian-monastery-two-images-of-saint-george-fight-a-dragon-and-an-emperor.html", 
-                            "Saint George slaying Diocletian and Saint Theodore slaying a serpent, <br/>bas-relief from a 9th-10th century Georgian monastery");
+                            "Saint George slaying Diocletian and Saint Theodore slaying a serpent, <br/>bas-relief from a 9th-10th-century Georgian monastery");
     insert_into_images("horsemen/d8c292099ae2528c989114fb3acece55.jpg", 
                             "BM", 
                             "421430", 
@@ -2968,7 +2968,7 @@ function populate_images() {
     insert_into_images("horsemen/s-l1600.jpg", 
                             "eBay", 
                             "http://www.ebay.com/itm/261934752446", 
-                            "Ethiopian coptic metal altar with the depiction of St. George,<br/>2010s, $75 off eBay");
+                            "Ethiopian Coptic metal altar with the depiction of St. George,<br/>2010s, $75 off eBay");
     insert_into_images("horsemen/s-l500.jpg", 
                             "ebay.com", 
                             "http://www.ebay.com/itm/201594822410", 
