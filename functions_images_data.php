@@ -371,7 +371,7 @@ function populate_images() {
     insert_into_images("horsemen/15-524838.jpg", 
                             "RMN", 
                             "15-524838-2C6NU0AOT28FY", 
-                            "Abduction of Deianira, <br/>beginning of 17 century, Germany");
+                            "Abduction of Deianira, <br/>beginning of the 17th century, Germany");
     insert_into_images("horsemen/15-524843.jpg", 
                             "RMN", 
                             "15-524843-2C6NU0AOT2BTJ", 
@@ -803,7 +803,7 @@ function populate_images() {
     insert_into_images("horsemen/83-001065.jpg", 
                             "RMN", 
                             "83-001065-2C6NU0ND0EK9", 
-                            "Horseman on a horse with fancy harness, <br/>Jacopo Bellini, Louvre 47r");
+                            "Horseman on a horse with a fancy harness, <br/>Jacopo Bellini, Louvre 47r");
     insert_into_images("horsemen/83-001106.jpg", 
                             "RMN", 
                             "83-001106-2C6NU0NDBDBD", 
@@ -891,11 +891,11 @@ function populate_images() {
     insert_into_images("horsemen/939-2.jpg", 
                             "qip.ru Postcards", 
                             "http://post.kards.qip.ru/celebration/show/157/9391069/", 
-                            "Peter I on horseback, <br/>unknown, end of 18 century");
+                            "Peter I on horseback, <br/>unknown, end of the 18th century");
     insert_into_images("horsemen/94-054443.jpg", 
                             "RMN", 
                             "94-054443-2C6NU00UG5SW", 
-                            "Henri IV on horseback bringing down his enemies, <br/>modelled in 1600 by Barthélémy Prieur, cast in the beginning of 17 century");
+                            "Henri IV on horseback bringing down his enemies, <br/>modelled in 1600 by Barthélémy Prieur, cast in the beginning of the 17th century");
     insert_into_images("horsemen/94-21-1.jpg", 
                             "Smithsonian National Museum of African Art", 
                             "https://africa.si.edu/exhibits/icons/94-21-1.html", 
@@ -1263,7 +1263,7 @@ function populate_images() {
     insert_into_images("horsemen/Anthonis_van_Dyck_038.jpg", 
                             "wiki", 
                             "Anthonis_van_Dyck_038.jpg", 
-                            "Portrait of a soldier, <br/>1st third of 17th century, Anthony van Dyck");
+                            "Portrait of a soldier, <br/>1st third of the 17th century, Anthony van Dyck");
     insert_into_images("horsemen/Anthony_van_Dyck_-_St_George_and_the_Dragon_-_WGA07444.jpg", 
                             "wiki", 
                             "Anthony_van_Dyck_-_St_George_and_the_Dragon_-_WGA07444.jpg", 
@@ -1395,7 +1395,7 @@ function populate_images() {
     insert_into_images("horsemen/Coques_Equestrian_Portrait_of_a_Couple.jpg", 
                             "wiki", 
                             "Coques_Equestrian_Portrait_of_a_Couple.jpg", 
-                            "Equestrian portrait of an elegant couple, <br/>second half of 17th century, Gonzales Coques");
+                            "Equestrian portrait of an elegant couple, <br/>second half of the 17th century, Gonzales Coques");
     insert_into_images("horsemen/Cornelis_Anthonisz._-_Reinoud_III_van_Brederode_ca._1550.jpg", 
                             "wiki", 
                             "Cornelis_Anthonisz._-_Reinoud_III_van_Brederode_(ca._1550).jpg", 
@@ -1555,7 +1555,7 @@ function populate_images() {
     insert_into_images("horsemen/Excellente_Cronyke_van_Vlaenderen_fol_372v.jpg", 
                             "wiki", 
                             "Excellente_Cronyke_van_Vlaenderen_fol_372v.jpg", 
-                            "Maria of Burgundy (a manuscript illustration), <br/>end of 15th century, Bruges");
+                            "Maria of Burgundy (a manuscript illustration), <br/>end of the 15th century, Bruges");
     insert_into_images("horsemen/F-1947-LF-4-open-png-12301.jpg", 
                             "The Courtauld Gallery", 
                             "http://courtauld.ac.uk/gallery/collection/decorative-arts/the-morelli-nerli-wedding-chests", 
@@ -1599,7 +1599,7 @@ function populate_images() {
     insert_into_images("horsemen/Gonzales_Coques_-_An_equestrian_portrait_of_an_elegant_gentleman_and_lady_in_a_wooded_landscape.jpg", 
                             "wiki", 
                             "Gonzales_Coques_-_An_equestrian_portrait_of_an_elegant_gentleman_and_lady_in_a_wooded_landscape.jpg", 
-                            "Equestrian portrait of an elegant gentleman and lady in a wooded landscape, <br/>second half of 17th century, Gonzales Coques");
+                            "Equestrian portrait of an elegant gentleman and lady in a wooded landscape, <br/>second half of the 17th century, Gonzales Coques");
     insert_into_images("horsemen/Gonzales_Coques_-_Equestrian_portrait_of_Louis_II_de_Bourbon_the_Grand_Conde_as_a_boy.jpg", 
                             "wiki", 
                             "Gonzales_Coques_-_Equestrian_portrait_of_Louis_II_de_Bourbon,_the_Grand_Condé,_as_a_boy.jpg", 
@@ -2339,7 +2339,7 @@ function populate_images() {
     insert_into_images("horsemen/Wooden_S.George_15th_c._Rostov_Kremlin_by_shakko_02.jpg", 
                             "wiki", 
                             "Wooden_S.George_(15th_c.,_Rostov_Kremlin)_by_shakko_02.jpg", 
-                            "Saint George and the Dragon, <br/>second half of 15th century, Moscow/Rostov, Russia");
+                            "Saint George and the Dragon, <br/>second half of the 15th century, Moscow/Rostov, Russia");
     insert_into_images("horsemen/Yuhanna-Mercurius.jpg", 
                             "wiki", 
                             "Yuhanna-Mercurius.jpg", 
@@ -2524,7 +2524,7 @@ function populate_images() {
     insert_into_images("horsemen/constantine.jpg", 
                             "The Ashmolean Museum", 
                             "http://www.ashmolean.org/ash/objectofmonth/2000-10/theobject.htm", 
-                            "Constantine the Great Beholds the Sign of the Cross, <br/>second half of 17th century, Gian Lorenzo Bernini or a later sculptor");
+                            "Constantine the Great Beholds the Sign of the Cross, <br/>second half of the 17th century, Gian Lorenzo Bernini or a later sculptor");
     insert_into_images("horsemen/corbridge-flavinus-tombstone.jpeg", 
                             "The English Heritage", 
                             "http://www.english-heritage.org.uk/visit/places/corbridge-roman-town-hadrians-wall/history/", 
