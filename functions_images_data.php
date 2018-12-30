@@ -331,7 +331,7 @@ function populate_images() {
     insert_into_images("horsemen/1352987_original.jpg", 
                             "history-gatchina.ru", 
                             "http://history-gatchina.ru/article/pavel_svita.htm", 
-                            "Emperor Pavel I with retinue,<br/>1799-1802, Johann Baptist von Lampi the Younger");
+                            "Emperor Pavel I with his retinue, <br/>1799-1802, Johann Baptist von Lampi the Younger");
     insert_into_images("horsemen/1354059_original.jpg", 
                             "catherine-catty.livejournal.com", 
                             "http://catherine-catty.livejournal.com/334284.html?thread=11889356", 
@@ -727,7 +727,7 @@ function populate_images() {
     insert_into_images("horsemen/781px-Lilly_Konig_Portrait_Franz_Joseph.jpg", 
                             "wiki", 
                             "Lilly_König_Portrait_Franz_Joseph.jpg", 
-                            "Portrait of the young Emperor Francis Joseph on horse,<br/>1855, Lilly Konig, Austria");
+                            "Portrait of the young Emperor Francis Joseph on a horse,<br/>1855, Lilly Konig, Austria");
     insert_into_images("horsemen/787px-Louis_XIV_Equestrian_Portrait.jpg", 
                             "wiki", 
                             "Louis_XIV_Equestrian_Portrait.jpg", 
@@ -895,7 +895,7 @@ function populate_images() {
     insert_into_images("horsemen/94-054443.jpg", 
                             "RMN", 
                             "94-054443-2C6NU00UG5SW", 
-                            "Henri IV on horseback bringing down his enemies, <br/>modelled in 1600 by Barthélémy Prieur, cast in the beginning of the 17th century");
+                            "Henri IV on horseback bringing down his enemies, <br/>modelled in 1600 by Barthélémy Prieur, cast at the beginning of the 17th century");
     insert_into_images("horsemen/94-21-1.jpg", 
                             "Smithsonian National Museum of African Art", 
                             "https://africa.si.edu/exhibits/icons/94-21-1.html", 
@@ -1755,7 +1755,7 @@ function populate_images() {
     insert_into_images("horsemen/LV_Rubens-1.jpg", 
                             "LOUIS VUITTON", 
                             "http://us.louisvuitton.com/eng-us/products/zippy-wallet-nvprod400147v", 
-                            "Zippy wallet with the reprocution of 'Tiger Hunt', <br/>2017, $1770, LOUIS VUITTON");
+                            "Zippy wallet with the reproduction of 'Tiger Hunt', <br/>2017, $1770, LOUIS VUITTON");
     insert_into_images("horsemen/LW_ECSH_J970154.jpg", 
                             "ArtUK", 
                             "the-moroccan-ambassador-178923", 
@@ -1795,7 +1795,7 @@ function populate_images() {
     insert_into_images("horsemen/Louis_XIII_Richelieu_devant_La_Rochelle.jpg", 
                             "wiki", 
                             "Louis_XIII_Richelieu_devant_La_Rochelle.jpg", 
-                            "Louis XIII and cardinal de Richelieu in front of La Rochelle,<br/>17th century, Unknown");
+                            "Louis XIII and Cardinal Richelieu in front of La Rochelle,<br/>17th century, Unknown");
     insert_into_images("horsemen/Louis_XIII_on_horseback_by_Juste_dEgmont.jpg", 
                             "wiki", 
                             "Louis_XIII_on_horseback_by_Juste_d%27Egmont.jpg", 
@@ -2596,7 +2596,7 @@ function populate_images() {
     insert_into_images("horsemen/fig.-3-archduke-maximilian-ii-emanuel-of-baveria-by-roger-schabol-signed-and-dated-1707-after-a-design-by-desjardin-1.jpg", 
                             "3rd Dimension", 
                             "http://3rd-dimensionpmsa.org.uk/interviews/2014-11-03-patricia-wengraf-in-conversation-with-3rd-dimension", 
-                            "Elector Maximilian II Emanuel of Bavaria on<br/>Horseback, <br/>1707, Roger Schabol, after a model by Desjardins");
+                            "Elector Maximilian II Emanuel of Bavaria on Horseback, <br/>1707, Roger Schabol, after a model by Desjardins");
     insert_into_images("germany/freimaurergruppe.jpg", 
                             "SKD", 
                             "118342", 
