@@ -671,7 +671,7 @@ function populate_images() {
     insert_into_images("horsemen/6576380263_64ea0b1706_o.jpg", 
                             "coinsweekly.com", 
                             "http://www.coinsweekly.com/en/Archive/8?&id=220&type=a", 
-                            "Tetradrachm of the King Teutamados, <br/>4th century BC (?), Paeonia");
+                            "Tetradrachm of King Teutamados, <br/>4th century BC (?), Paeonia");
     insert_into_images("horsemen/673px-Britain_Needs_You_at_Once_-_WWI_recruitment_poster_-_Parliamentary_Recruiting_Committee_Poster_No._108.jpg", 
                             "wiki", 
                             "Britain_Needs_You_at_Once_-_WWI_recruitment_poster_-_Parliamentary_Recruiting_Committee_Poster_No._108.jpg", 
@@ -1739,7 +1739,7 @@ function populate_images() {
     insert_into_images("horsemen/King_Henry_IV_of_France.jpg", 
                             "wiki", 
                             "King_Henry_IV_of_France.jpg", 
-                            "Portrait of the king Henri IV, <br/>before 1622, Frans Pourbus the younger");
+                            "Portrait of king Henri IV, <br/>before 1622, Frans Pourbus the younger");
     insert_into_images("horsemen/King_John_hunting_-_Statutes_of_England_14th_C_f.116_-_BL_Cotton_MS_Claudius_D_II.jpg", 
                             "wiki", 
                             "King_John_hunting_-_Statutes_of_England_(14th_C),_f.116_-_BL_Cotton_MS_Claudius_D_II.jpg", 
@@ -1803,7 +1803,7 @@ function populate_images() {
     insert_into_images("horsemen/Louis_XVI_roi_citoyen.png", 
                             "wiki", 
                             "Louis_XVI,_roi_citoyen.PNG", 
-                            "Louis XVI as a citizen-king, sporting the tricolor cockade on his hat, <br/>1791, Jean Baptiste François Carteaux");
+                            "Louis XVI as a citizen-king, sporting the tricolour cockade on his hat, <br/>1791, Jean Baptiste François Carteaux");
     insert_into_images("horsemen/Louis_de_Silvestre_-_August_III.jpg", 
                             "wiki", 
                             "Louis_de_Silvestre_-_August_III.jpg", 
@@ -1939,7 +1939,7 @@ function populate_images() {
     insert_into_images("horsemen/Peonia_patraos_tetradracma_335-315_ac_ca.jpg", 
                             "wiki", 
                             "Peonia,_patraos,_tetradracma,_335-315_ac_ca.JPG", 
-                            "Tetradrachm of the King Paionia, <br/>335–315 BC, Paeonia");
+                            "Tetradrachm of King Paionia, <br/>335–315 BC, Paeonia");
     insert_into_images("goldenbronzehorsemen/PeterI.jpg", 
                             "wiki", 
                             "Peter_I_by_Kneller.jpg", 
@@ -2039,7 +2039,7 @@ function populate_images() {
     insert_into_images("horsemen/SC247577.jpg", 
                             "MFA", 
                             "tetradrachm-of-kingdom-of-paionia-with-head-of-patraos-1308", 
-                            "Tetradrachm of the King Paionia, <br/>335–315 BC, Paeonia");
+                            "Tetradrachm of King Paionia, <br/>335–315 BC, Paeonia");
     insert_into_images("horsemen/SC249640.jpg", 
                             "MFA", 
                             "stater-of-kingdom-of-macedonia-with-horse-and-rider-struck-under-archelaos-i-2957", 
@@ -2740,7 +2740,7 @@ function populate_images() {
     insert_into_images("horsemen/image01781.jpg", 
                             "numisbids", 
                             "sid=1516&lot=1781", 
-                            "Return of the King Karl XII from the Turkish exile and his arrival in Stralsund on 11 November 1714,<br/>1714, silver medal (unsigned)");
+                            "Return of King Karl XII from the Turkish exile and his arrival in Stralsund on 11 November 1714,<br/>1714, silver medal (unsigned)");
     insert_into_images("horsemen/image168.jpg", 
                             "erenow.com", 
                             "http://erenow.com/ancient/the-complete-roman-army/18.html", 
