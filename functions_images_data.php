@@ -3598,6 +3598,26 @@ function populate_images() {
                             "cyruscylinder2013.com", 
                             "http://cyruscylinder2013.com/wp-content/uploads/2013/10/Cyrus-the-Great-Life-and-Lore-UCLA-10.28-29.2013.pdf", 
                             "'Cyrus the Great: Life and Lore' conference prospectus (detail), 2013, <br/>UCLA, Los Angeles, U.S.A.");
+    insert_into_images("persia_greece/ancient-greek-map-great-ancient-greece-map-in-the-aegean-area-a-map-of-influence-of-doric-of-ancient-greek-map.jpg", 
+                            "Pinterest", 
+                            "https://i.pinimg.com/originals/39/02/9b/39029b1db908d2554128a272865a0e1c.jpg", 
+                            "Map of Archaic Greece (750 -500 BC) showing Ionia and Caria");
+    insert_into_images("persia_greece/Ischtar_Tor_Babylonien_Pergamonmuseum_Berlin_Germany_-_panoramio_2.jpg", 
+                            "wiki", 
+                            "Ischtar_Tor_Babylonien_Pergamonmuseum_Berlin_Germany_-_panoramio_(2).jpg", 
+                            "Reconstructed Ishtar Gate, originally built in Babylon, <br/>cr. 575 BC by order of King Nebuchadnezzar II");
+    insert_into_images("Simple-indifference-curves.png", 
+                            "wiki", 
+                            "Simple-indifference-curves.svg", 
+                            "An example of an indifference map with three indifference curves represented. 'Good X' here represents patterns vocabulary volume and 'Good Y' represents the intelligence depth");
+    insert_into_images("tribbles.jpg", 
+                            "kisspng.com", 
+                            "https://www.kisspng.com/png-forest-landscape-photography-illustration-vector-f-179050/", 
+                            "Only valley tribbles will survive");
+    insert_into_images("tribbles_rain.jpg", 
+                            "freepik.com", 
+                            "https://www.freepik.com/free-vector/nature-raining-scene_3849170.htm", 
+                            "Only mountain tribbles will survive");
 }
 
 ?>
