@@ -3618,6 +3618,38 @@ function populate_images() {
                             "freepik.com", 
                             "https://www.freepik.com/free-vector/nature-raining-scene_3849170.htm", 
                             "Only mountain tribbles will survive");
+    insert_into_images("SelenaTwitter.png", 
+                            "freepik.com", 
+                            "https://zoomph.com/twitter-followers-profile/selenagomez/", 
+                            " ");
+    insert_into_images("selena4.jpg", 
+                            "celebmafia.com", 
+                            "https://celebmafia.com/wp-content/uploads/2019/05/selena-gomez-at-disneyland-in-anaheim-05-05-2019-3.jpg", 
+                            " ");
+    insert_into_images("Selena3.png", 
+                            "instagram.com", 
+                            "https://www.instagram.com/p/BlIp0SUgkpQ/", 
+                            " ");
+    insert_into_images("Selena2.jpg", 
+                            "dailymail.co.uk", 
+                            "https://www.dailymail.co.uk/tvshowbiz/article-5954679/Selena-Gomez-keeps-cozy-robe-fuzzy-blanket-girls-night-Vanessa-Hudgens.html", 
+                            " ");
+    insert_into_images("Selena1.png", 
+                            "instagram.com", 
+                            "https://www.instagram.com/p/Bv4q6GPAeML/", 
+                            " ");
+    insert_into_images("Selena0.jpg", 
+                            "celebritieswithoutmakeupz.wordpress.com", 
+                            "https://celebritieswithoutmakeupz.wordpress.com/2014/11/11/15-pictures-of-selena-gomez-without-makeup/", 
+                            " ");
+    insert_into_images("Selfies.jpg", 
+                            "arabianbusiness.com", 
+                            "https://www.arabianbusiness.com/media/393219-opinion-from-selfie-to-self-employed-the-uae-influencers", 
+                            " ");
+    insert_into_images("celebs-madoff.jpg", 
+                            "brstatic.com", 
+                            "https://media.brstatic.com/2017/05/16150724/celebs-scammed-by-madoff-1024x576.jpg", 
+                            " ");    
 }
 
 ?>
