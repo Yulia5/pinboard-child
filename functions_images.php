@@ -84,6 +84,11 @@ function post_ID_to_folder_name($post_id)
         case 3556:
         case 3641:
             return 'persia_greece';
+        case 3818:
+        case 3873:
+        case 3920:
+        case 4066:
+            return 'SocialScience';
     }
     return '';
 } 

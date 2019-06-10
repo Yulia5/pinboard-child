@@ -200,7 +200,8 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 		'title' => '',
 		'imdb_id' => '',
 		'youtube_id' => '',
-		'start' => ''
+		'start' => '',
+		'width' => '500px'
 	), $attr));
 	
 	$youtube_shortcode = '[youtube https://www.youtube.com/watch?v=' . $youtube_id . '&start=' . $start . ']';	
@@ -212,7 +213,7 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 	
 	$result = $before_video . ':
 
-<div style="width:500px; max-width:100%; display:block; margin: auto"> ' . do_shortcode($youtube_shortcode) . '</div>';
+    <div style="display: flex;justify-content: center;align-items: center;"><div style="width:' . $width . '"; max-width:100%; display:inline-block; margin: auto"> ' . do_shortcode($youtube_shortcode) . '</div></div>';
 
 	return $result;
 }
