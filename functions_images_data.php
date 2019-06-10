@@ -3606,50 +3606,86 @@ function populate_images() {
                             "wiki", 
                             "Ischtar_Tor_Babylonien_Pergamonmuseum_Berlin_Germany_-_panoramio_(2).jpg", 
                             "Reconstructed Ishtar Gate, originally built in Babylon, <br/>cr. 575 BC by order of King Nebuchadnezzar II");
-    insert_into_images("Simple-indifference-curves.png", 
+    insert_into_images("SocialScience/Simple-indifference-curves.png", 
                             "wiki", 
                             "Simple-indifference-curves.svg", 
                             "An example of an indifference map with three indifference curves represented. 'Good X' here represents patterns vocabulary volume and 'Good Y' represents the intelligence depth");
-    insert_into_images("tribbles.jpg", 
+    insert_into_images("SocialScience/tribbles.jpg", 
                             "kisspng.com", 
                             "https://www.kisspng.com/png-forest-landscape-photography-illustration-vector-f-179050/", 
                             "Only valley tribbles will survive");
-    insert_into_images("tribbles_rain.jpg", 
+    insert_into_images("SocialScience/tribbles_rain.jpg", 
                             "freepik.com", 
                             "https://www.freepik.com/free-vector/nature-raining-scene_3849170.htm", 
                             "Only mountain tribbles will survive");
-    insert_into_images("SelenaTwitter.png", 
+    insert_into_images("SocialScience/SelenaTwitter.png", 
                             "freepik.com", 
                             "https://zoomph.com/twitter-followers-profile/selenagomez/", 
                             " ");
-    insert_into_images("selena4.jpg", 
+    insert_into_images("SocialScience/selena4.jpg", 
                             "celebmafia.com", 
                             "https://celebmafia.com/wp-content/uploads/2019/05/selena-gomez-at-disneyland-in-anaheim-05-05-2019-3.jpg", 
                             " ");
-    insert_into_images("Selena3.png", 
+    insert_into_images("SocialScience/Selena3.png", 
                             "instagram.com", 
                             "https://www.instagram.com/p/BlIp0SUgkpQ/", 
                             " ");
-    insert_into_images("Selena2.jpg", 
+    insert_into_images("SocialScience/Selena2.jpg", 
                             "dailymail.co.uk", 
                             "https://www.dailymail.co.uk/tvshowbiz/article-5954679/Selena-Gomez-keeps-cozy-robe-fuzzy-blanket-girls-night-Vanessa-Hudgens.html", 
                             " ");
-    insert_into_images("Selena1.png", 
+    insert_into_images("SocialScience/Selena1.png", 
                             "instagram.com", 
                             "https://www.instagram.com/p/Bv4q6GPAeML/", 
                             " ");
-    insert_into_images("Selena0.jpg", 
+    insert_into_images("SocialScience/Selena0.jpg", 
                             "celebritieswithoutmakeupz.wordpress.com", 
                             "https://celebritieswithoutmakeupz.wordpress.com/2014/11/11/15-pictures-of-selena-gomez-without-makeup/", 
                             " ");
-    insert_into_images("Selfies.jpg", 
+    insert_into_images("SocialScience/Selfies.jpg", 
                             "arabianbusiness.com", 
                             "https://www.arabianbusiness.com/media/393219-opinion-from-selfie-to-self-employed-the-uae-influencers", 
                             " ");
-    insert_into_images("celebs-madoff.jpg", 
+    insert_into_images("SocialScience/celebs-madoff.jpg", 
                             "brstatic.com", 
                             "https://media.brstatic.com/2017/05/16150724/celebs-scammed-by-madoff-1024x576.jpg", 
                             " ");    
+    insert_into_images("SocialScience/Gorillas2.jpg", 
+                            "andbluesky.com", 
+                            "http://www.andbluesky.com/skeletons-museum-orlando/", 
+                            " ");
+    insert_into_images("SocialScience/Chimps2.jpg", 
+                            "andbluesky.com", 
+                            "http://www.andbluesky.com/skeletons-museum-orlando/", 
+                            " ");
+    insert_into_images("SocialScience/Gorillas_fight_over_a_tomato.jpg", 
+                            "Daily Mail", 
+                            "https://www.dailymail.co.uk/news/article-2779196/Gorillas-midst-Schoolboy-captures-shocking-moment-males-fight-UK-zoo-battle-tomato.html", 
+                            " ");
+    insert_into_images("SocialScience/Tamarin_GoldenLion.jpg", 
+                            "Holge Zoo", 
+                            "https://www.hoglezoo.org/meet_our_animals/animal_finder/ssp-data-for-golden-lion-tamarin/", 
+                            " ");
+    insert_into_images("SocialScience/Kate_marriage.jpg", 
+                            "Daily Mail", 
+                            "https://www.dailymail.co.uk/femail/article-2568763/Kate-Rothschild-heiress-rap-star-lover-photo-thats-alarmed-friends.html", 
+                            "Kate Rothschild and Ben Goldsmith, 2003-2013");
+    insert_into_images("SocialScience/2B5A7A2B00000578-0-image-a-4_1439594974634.jpg", 
+                            "traffic-club.info", 
+                            "https://traffic-club.info/2018jimage-jay-electronica-kate-rothschild.awp", 
+                            "Kate Rothschild and Jay Electronica, 2012-2014");
+    insert_into_images("SocialScience/kate_naughtyboy.jpg", 
+                            "gettyimages.co.uk", 
+                            "https://www.gettyimages.co.uk/detail/news-photo/kate-rothschild-and-naughty-boy-arrive-at-a-vip-performance-news-photo/505700916", 
+                            "Kate Rothschild and Naughty Boy, 2014-2017");
+    insert_into_images("SocialScience/GrandBudapestHote.jpg", 
+                            "variety.com", 
+                            "https://variety.com/2014/film/box-office/box-office-grand-budapest-hotel-builds-steam-with-6-7-mil-in-limited-release-1201143980/", 
+                            "A scene from 'The Grand Budapest Hotel'");
+    insert_into_images("SocialScience/JB.jpeg", 
+                            "aftenposten.no", 
+                            "https://www.aftenposten.no/verden/i/MLpQB/Lommerusk-avslorer-deg#&gid=1&pid=2", 
+                            "Promotional poster for 'Live and Let Die', the 8th Bond movie");
 }
 
 ?>
