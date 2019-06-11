@@ -161,53 +161,24 @@ table .images {
 header h3 { 
 	text-decoration: none; 
 }
-/*
-#another-site-title {
-    float:left;
-    margin: 0 auto;
-    vertical-align: middle;
-   	margin-left: 25px;
-}
 
-#another-site-title h3 {
-	margin-bottom:5px;
-}
-
-#headline {
-	width: 140px;
-	display:inline-block; 
-	vertical-align: middle;
-}
-
-#headlogo {
-	display:inline-block; 
-	vertical-align: middle;
-}
-
-#headlogo img {
-	display: block; 
-	margin:0; 
-	margin-left: 60px; 
-	margin-top: 10px; 
-	width: 65px !important;
-}
-
-#headline-2 {
-	height:2px;
-	width:100%;
-	clear:both;
-}
-
-#another-site-title-table {
-	display: table;
-}
-*/
 #header {
 	border-top:none;
 	margin-bottom: 0px !important;
 	overflow: hidden;
     height:auto;
-    min-height: 0px !important;
+    min-height: 42px !important;
+}
+
+#access:target .menu {
+	margin-top: 42px !important;
+}
+
+#access .nav-show,
+	#access a.nav-show:hover {
+		top: 5px !important;
+		/*background: url(images/nav.png) no-repeat;
+		display: block;*/
 }
 
 #sidebar-header-custom {
@@ -222,122 +193,7 @@ header h3 {
 #site-title, #jetpack-subscribe-label  {
 	display:none;
 }
-/*
-.widget_search .widget-title{
-	margin-bottom: 20px !important;
-}
 
-#searchform, .jetpack_subscription_widget .success, .widget.jetpack_subscription_widget, 
-.widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
-.goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value, #another-site-title-table {
-	width: 325px !important;
-	border: none !important;
-}
-
-.goog-te-gadget img {
-	display: inline;
-}
-
-.widget.jetpack_subscription_widget, .jetpack_subscription_widget .success, .jetpack_subscription_widget .success p {
-	margin-bottom: 0px !important;
-	padding: 0 !important;
-}
-
-#header input[type="email"], #header input[type="text"] {
-	width: 270px !important;
-	margin-top: 20px;
-}
-
-.jetpack_subscription_widget .success{
-	margin-top: 15px !important;
-	margin-bottom: 0px !important;
-}
-
-.widget_search, .widget_search form {
-	margin-top: 0px !important;
-}
-
-.widget-area #s, #sidebar-left #s, #sidebar-right #s, #header input #s, 
-input[type="text"], input[type="email"], textarea, 
-#header input#s:focus, input[type="text"]:focus, input[type="email"]:focus, textarea:focus,
-input#author:focus,
-input#email:focus,
-input#url:focus,
-textarea#comment:focus, #header input#s, input#author,
-input#email,
-input#url,
-textarea#comment, .widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
-.goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value, #another-site-title-table {
-	display: block;
-	font-family:"Open Sans", sans-serif;
-	font-size: 10px;
-    line-height: 18px;
-    margin: 0px;
-    padding: 0px;
-    border-radius:0px;
-    text-indent: 10px !important;
-    box-shadow: none;
-    border: none !important;
-    min-height: 18px;
-    text-transform: uppercase;
-    background:#FFF;
-	color:#000;
-	outline: none;
-  	-webkit-transition: none !important;
-  	-moz-transition: none !important;
-  	-o-transition: none !important;
-  	-ms-transition: none !important;
-  	transition: none !important;
-}
-
-#another-site-title-table {
-	width: 325px !important;
-	background:#000;
-}
-.goog-te-menu-value span {
-	border: none !important;
-}
-
-#searchform, .widget.jetpack_subscription_widget, .widget.widget_google_translate_widget {
-    margin-top: 10px !important;
-    position:relative;
-	float:left; 
-	margin-bottom: 0px !important;
-	margin-left: 20px !important;
-	margin-right: 0px !important;
-}
-
-#searchform input[type="submit"], .widget.jetpack_subscription_widget input[type="submit"], 
-#searchform input[type="submit"]:hover, .widget.jetpack_subscription_widget input[type="submit"]:hover,
-#searchform input[type="submit"]:focus, .widget.jetpack_subscription_widget input[type="submit"]:focus
-{
-	padding:4px 15px;
-	border-radius:15px;
-    position: absolute;
-    bottom: 20px;
-    right: 0px;
-    width: 32px !important;
-    height: 32px;
-    display: inline;
-    padding: 0px;
-	border-radius: 0px;   
-	box-shadow:none;
-	border:none;
-	outline: none;
-	color:#000;
-	font-family:"Open Sans", sans-serif;
-	font-size:13px;
-	text-align:center;
-}
-
-#searchform input[type="submit"], #searchform input[type="submit"]:hover, #searchform input[type="submit"]:focus {
-	bottom: 18px;
-}
-
-.widget_search #s-label, #subscribe-text {
-    display:none;
-}	
-*/
 #access a:hover,
 #access li.current_page_item > a,
 #access li.current-menu-item > a {
