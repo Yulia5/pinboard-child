@@ -161,7 +161,7 @@ table .images {
 header h3 { 
 	text-decoration: none; 
 }
-
+/*
 #another-site-title {
     float:left;
     margin: 0 auto;
@@ -201,12 +201,13 @@ header h3 {
 #another-site-title-table {
 	display: table;
 }
-
+*/
 #header {
 	border-top:none;
 	margin-bottom: 0px !important;
 	overflow: hidden;
     height:auto;
+    min-height: 0px !important;
 }
 
 #sidebar-header-custom {
@@ -221,7 +222,7 @@ header h3 {
 #site-title, #jetpack-subscribe-label  {
 	display:none;
 }
-
+/*
 .widget_search .widget-title{
 	margin-bottom: 20px !important;
 }
@@ -252,10 +253,9 @@ header h3 {
 	margin-bottom: 0px !important;
 }
 
-/*
 .widget_search, .widget_search form {
 	margin-top: 0px !important;
-}*/
+}
 
 .widget-area #s, #sidebar-left #s, #sidebar-right #s, #header input #s, 
 input[type="text"], input[type="email"], textarea, 
@@ -299,7 +299,6 @@ textarea#comment, .widget.widget_google_translate_widget, #google_translate_elem
 }
 
 #searchform, .widget.jetpack_subscription_widget, .widget.widget_google_translate_widget {
-    /*background:red;*/
     margin-top: 10px !important;
     position:relative;
 	float:left; 
@@ -312,8 +311,8 @@ textarea#comment, .widget.widget_google_translate_widget, #google_translate_elem
 #searchform input[type="submit"]:hover, .widget.jetpack_subscription_widget input[type="submit"]:hover,
 #searchform input[type="submit"]:focus, .widget.jetpack_subscription_widget input[type="submit"]:focus
 {
-	/*padding:4px 15px;
-	border-radius:15px;*/
+	padding:4px 15px;
+	border-radius:15px;
     position: absolute;
     bottom: 20px;
     right: 0px;
@@ -338,7 +337,7 @@ textarea#comment, .widget.widget_google_translate_widget, #google_translate_elem
 .widget_search #s-label, #subscribe-text {
     display:none;
 }	
-
+*/
 #access a:hover,
 #access li.current_page_item > a,
 #access li.current-menu-item > a {

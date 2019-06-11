@@ -15,7 +15,7 @@ function generate_src() {
     insert_into_src("LA",       'The Los Angeles County Museum of Art',         'http://collections.lacma.org/node/'); 
     insert_into_src("Getty",    'The J.Paul Getty Museum Open Contents Program','http://www.getty.edu/art/collection/objects/'); 
     insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'http://www.mfa.org/collections/object/');  
-    insert_into_src("WAM",      'The Walters Art Museum',                       'http://art.thewalters.org/detail/');    
+    insert_into_src("WAM",      'The Walters Art Museum',                       'https://art.thewalters.org/detail/');    
     insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objektdb/detail/');
     insert_into_src("HAM",      'Harvard Art Museums',                          'http://www.harvardartmuseums.org/collections/object/');
     insert_into_src("Ben",      '© Benaki Museum',                              'https://www.benaki.gr/index.php?option=com_collectionitems&amp;view=collectionitem&amp;id=', '&amp;lang=en');
