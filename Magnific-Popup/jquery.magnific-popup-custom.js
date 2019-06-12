@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
         var imgheight = get_attribute($(this).closest('.images'),   'imgheight');
         if (imgheight !== false) {
             var new_height = parseFloat(imgheight);
-            var style_img = ' height: ' + new_height.toString() + 'px ';  
+            var style_img = ' max-height: ' + new_height.toString() + 'px ';  
             $(this).attr('style', style_img);
         }
         
@@ -74,8 +74,8 @@ jQuery(document).ready(function($) {
             new_height = Math.floor(new_height * (max_width / new_width));
             new_width = max_width;
         }
-        an_image.css('height', new_height);
-        an_image.css('width', new_width);
+        an_image.css('max-height', new_height);
+        an_image.css('max-width', new_width);
         return 0;
     }       
 
