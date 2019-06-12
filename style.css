@@ -36,6 +36,7 @@ table {
     margin: 0px auto;
     width:auto;
     max-width:100%; 
+    table-layout:fixed;
 }
 
 table th,
@@ -43,6 +44,9 @@ table td {
 	padding: 0;
 	text-align: center;
 	vertical-align: center;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
 }
 
 table, 
@@ -50,6 +54,14 @@ table tr,
 table td,
 table th {
 	border: none;
+}
+
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .tablemobile {
+        overflow-x: auto;
+        display: block;
+    }
 }
 
 #table_g2, #table_g2 tr,#table_g2 td, #table_g2 th {
@@ -119,7 +131,6 @@ img .center {
     display:block;
     margin:auto;
 }
-
 
 table .images {
     display:inline-block; 
