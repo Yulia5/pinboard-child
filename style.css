@@ -61,15 +61,14 @@ table th {
     padding: 5px;
 }
 
-#table_g1 td
-{
+#table_g1 td {
     vertical-align: top;
 }
 /******************************************************************************
  *                           Image and Anchor                                 *
  *****************************************************************************/
 
-img, a img, .entry-content a img {
+a img, .entry-content a img {
     display: block;
     margin: 0 auto;
    	padding: 10px;
@@ -83,10 +82,12 @@ img, a img, .entry-content a img {
 	border-width: 0;
 	outline:none;
 	box-shadow: none;
+	object-fit: contain;
 }
 
 .outside_image {
     text-align: center;
+    max-width:95%;
 }
 
 a {
@@ -129,6 +130,7 @@ table .images {
     margin: 5px auto;
     vertical-align: top;
     text-align: center;
+    max-width:100%;
 }
 
 .images .outside_image {
@@ -146,11 +148,7 @@ table .images {
   clear: both;
 }
 
-.flushright .images, .flushright .outside_image {
-	float: right;
-}
-
-.flushright .images .outside_image {
+.flushright .images, .flushright .outside_image, .flushright .images .outside_image {
 	float: right;
 }
 
@@ -204,6 +202,19 @@ header h3 {
 
 #current-location {
 	display: none;
+}
+
+.outside_yu_tube {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	max-width:95%;
+}
+
+.inside_yu_tube {
+	max-width: 100%; 
+	display: inline-block; 
+	margin: auto
 }
 
 /******************************************************************************

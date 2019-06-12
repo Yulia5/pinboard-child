@@ -136,10 +136,10 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
             $img_attr = $img_attr . $style . ';';
         }
        	if ( $height ) {
-    		$img_attr = $img_attr . ' height: ' . (int) $height . 'px;';
+    		$img_attr = $img_attr . ' max-height: ' . (int) $height . 'px;';
     	}
     	if ( $width ) {
-    		$img_attr = $img_attr . ' width:' . (int) $width . 'px;';
+    		$img_attr = $img_attr . ' max-width:' . (int) $width . 'px;';
     	}
     }
 	$img_attr = $img_attr . '" ';

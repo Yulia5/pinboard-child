@@ -213,7 +213,7 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 	
 	$result = $before_video . ':
 
-    <div style="display: flex;justify-content: center;align-items: center;"><div style="width:' . $width . '"; max-width:100%; display:inline-block; margin: auto"> ' . do_shortcode($youtube_shortcode) . '</div></div>';
+    <div class="outside_yu_tube"><div class="inside_yu_tube" style="width:' . $width . '"> ' . do_shortcode($youtube_shortcode) . '</div></div>';
 
 	return $result;
 }
