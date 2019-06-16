@@ -231,7 +231,7 @@ function populate_images() {
     insert_into_images("horsemen/1024px-Statue_at_Mansudae_Art_Studio-1.jpg", 
                             "wiki", 
                             "Statue_at_Mansudae_Art_Studio.JPG", 
-                            "Statue of Kim Il-sung and Kim Jong-il, <br/>2012, Pyongyang");
+                            "Statue of Kim Il-sung and Kim Jong-il, <br/>2012, Pyongyang, North Korea");
     insert_into_images("horsemen/104_Conrad_Cichorius_Die_Reliefs_der_Traianssaule_Tafel_CIV.jpg", 
                             "wiki", 
                             "104_Conrad_Cichorius,_Die_Reliefs_der_Traianssäule,_Tafel_CIV.jpg", 
@@ -1235,7 +1235,7 @@ function populate_images() {
     insert_into_images("horsemen/Alexandr_Makedonsky.jpg", 
                             "wiki", 
                             "Alexandr_Makedonský.JPG", 
-                            "Alexander the Great and Bucephalus,<br/>1974, Thessaloniki");
+                            "Alexander the Great and Bucephalus,<br/>1974, Thessaloniki, Greece");
     insert_into_images("horsemen/AlexandraFeodorovna.jpeg", 
                             "SKD", 
                             "166852", 
@@ -1247,7 +1247,7 @@ function populate_images() {
     insert_into_images("horsemen/Amadeo.jpg", 
                             "Flickr, Ario Gaviore", 
                             "https://www.flickr.com/photos/ario_gaviore/2806448751", 
-                            "Monument to Amedeo of Savoy, Duke of Aosta,<br/>1902, Davide Calandra");
+                            "Monument to Amedeo of Savoy, Duke of Aosta,<br/>1902, Davide Calandra, Turin, Italy");
     insert_into_images("horsemen/Amazonomachia_Pio-Clementino_Inv896.jpg", 
                             "wiki", 
                             "Amazonomachia_Pio-Clementino_Inv896.jpg", 
@@ -1879,7 +1879,7 @@ function populate_images() {
     insert_into_images("horsemen/Monumento_al_General_San_Martin.jpg", 
                             "wiki", 
                             "Monumento_al_General_San_Martín.jpg", 
-                            "Monument to General San Martin, <br/>completed in 1860, dedicated in 1863, Buenos Aires");
+                            "Monument to General San Martin, <br/>completed in 1860, dedicated in 1863, Buenos Aires, Argentina");
     insert_into_images("horsemen/Murat_by_Gros.jpg", 
                             "wiki", 
                             "Murat_by_Gros.jpg", 
@@ -2376,11 +2376,11 @@ function populate_images() {
     insert_into_images("horsemen/a296a29d21edce2a204402c21cbd12a4.jpg", 
                             "Pinterest", 
                             "https://uk.pinterest.com/pin/414260865700011938/", 
-                            "Statue of David of Sassoun, <br/>1959, Yerevan");
+                            "Statue of David of Sassoun, <br/>1959, Yerevan, Armenia");
     insert_into_images("horsemen/a846fefc-c7f2-44c9-bc1f-7d08a8eb9540_l.jpg", 
                             "Waymarking", 
                             "http://www.waymarking.com/waymarks/WMC1XC_Pony_Express_Rider_Sacramento_CA", 
-                            "Pony Express Rider, <br/>1976, Sacramento");
+                            "Pony Express Rider, <br/>1976, Sacramento, U.S.A.");
     insert_into_images("horsemen/alexander3_2.jpg", 
                             "Seals", 
                             "scotland/scotlandmedieval.htm", 
@@ -3686,6 +3686,26 @@ function populate_images() {
                             "aftenposten.no", 
                             "https://www.aftenposten.no/verden/i/MLpQB/Lommerusk-avslorer-deg#&gid=1&pid=2", 
                             "Promotional poster for 'Live and Let Die', the 8th Bond movie");
-}
+    insert_into_images("horsemen/7818_Kelly-Tan-iPhone-Photos-9_w1120.jpg", 
+                            "iPhone Photography School", 
+                            "https://iphonephotographyschool.com/kelly-tan/", 
+                            "I Have A Dream, <br/>2014 or earlier, Kelly Tan");
+     insert_into_images("horsemen/Naprous_GoT.png", 
+                            "@anastasiatl", 
+                            "https://www.instagram.com/p/Bxc_bpinB0b/", 
+                            "The Game of Thrones Horsemaster, Camilla Naprous, exercises Moses, <br/>2019, photo by Anastasia Taylor-Lind");
+     insert_into_images("horsemen/MagrittePipe.jpg", 
+                            "Wikipedia", 
+                            "https://en.wikipedia.org/wiki/File:MagrittePipe.jpg", 
+                            "'This is not a pipe', <br/>1928-9, René Magritte");
+    insert_into_images("SocialScience/lizards.jpg", 
+                            "Barry Sinervo/UCSanta Cruz via forbes.com",
+                            "https://www.forbes.com/sites/grrlscientist/2016/06/15/rock-paper-lizard/", 
+                            "Three varieties of male side-blotched lizards");
+    insert_into_images("SocialScience/Utastansburiana.jpg", 
+                            "wiki", 
+                            "Utastansburiana.jpg", 
+                            "Female and male side-blotched lizards");
+ }
 
 ?>
