@@ -3694,10 +3694,6 @@ function populate_images() {
                             "@anastasiatl", 
                             "https://www.instagram.com/p/Bxc_bpinB0b/", 
                             "The Game of Thrones Horsemaster, Camilla Naprous, exercises Moses, <br/>2019, photo by Anastasia Taylor-Lind");
-     insert_into_images("horsemen/MagrittePipe.jpg", 
-                            "Wikipedia", 
-                            "https://en.wikipedia.org/wiki/File:MagrittePipe.jpg", 
-                            "'This is not a pipe', <br/>1928-9, René Magritte");
     insert_into_images("SocialScience/lizards.jpg", 
                             "Barry Sinervo/UCSanta Cruz via forbes.com",
                             "https://www.forbes.com/sites/grrlscientist/2016/06/15/rock-paper-lizard/", 
@@ -3705,7 +3701,35 @@ function populate_images() {
     insert_into_images("SocialScience/Utastansburiana.jpg", 
                             "wiki", 
                             "Utastansburiana.jpg", 
-                            "Female and male side-blotched lizards");
- }
+                            "A female and an orange-throated male side-blotched lizards");
+    insert_into_images("SocialScience/09042439PD_side-blotched.jpg", 
+                            "Wild Herps", 
+                            "http://www.wildherps.com/species/U.stansburiana.html", 
+                            "A female and a blue-throated male side-blotched lizards");
+      insert_into_images("horsemen/thoedore_roosevelt.jpg", 
+                            "The White House Historical Association", 
+                            "https://library.whitehousehistory.org/fotoweb/archives/5017-Digital-Library/Main%20Index/Portraits/1033.tif.info", 
+                            "Theodore Roosevelt as a Rough Rider,<br/>cr. 1909, Tadé Styka");
+     insert_into_images("horsemen/roosevelt-room-bush2-meeting.jpg", 
+                            "The White House Museum", 
+                            "http://www.whitehousemuseum.org/west-wing/roosevelt-room.htm", 
+                            "George W Bush meeting in the Roosevelt Room,<br/>2006");
+     insert_into_images("horsemen/Statue_questre_dArtagnan_Lupiac.jpg", 
+                            "wiki", 
+                            "https://en.wikipedia.org/wiki/File:Statue_équestre_d%27Artagnan_Lupiac.jpg", 
+                            "Equestrian statue of d'Artagnan, <br/>2015, Daphné Du Barry, Lupiac, France");
+     insert_into_images("horsemen/AN01386149_001_l.jpg", 
+                            "BM", 
+                            "3523768", 
+                            "Louis XVI Roi de France et de Navarre, <br/>cr. 1815-1820, Paris, France");
+     insert_into_images("horsemen/4854070eca8160d7e33228385e4bd1d6.jpg", 
+                            "rekishi-miryoku.com", 
+                            "https://rekishi-miryoku.com/article/shimazu_yoshihiro/", 
+                            "Shimazu Yoshihiro Oyake-zo, <br/>?, Kagoshima, Japan");
+     insert_into_images("horsemen/Japan-Odawara-Hojo-Soun.jpg", 
+                            "Equestrian Statue", 
+                            "http://equestrianstatue.org/hoj-soun/", 
+                            "Equestrian Statue of Hojó Soun,<br/>?, Odawara, Japan");
+}
 
 ?>
