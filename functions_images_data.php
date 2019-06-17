@@ -3730,6 +3730,22 @@ function populate_images() {
                             "Equestrian Statue", 
                             "http://equestrianstatue.org/hoj-soun/", 
                             "Equestrian Statue of Hojó Soun,<br/>?, Odawara, Japan");
-}
+    insert_into_images("SocialScience/4D48AD4E00000578-5849987-image-a-8_1529098376598.jpg", 
+                            "Daily Mail", 
+                            "https://i.dailymail.co.uk/i/newpix/2018/06/15/22/4D48AD4E00000578-5849987-image-a-8_1529098376598.jpg", 
+                            "Kate Rothschild and Paul Forkan, 2018-?");
+    insert_into_images("SocialScience/article-2153789-136B10D5000005DC-180_634x607.jpg", 
+                            "Daily Mail", 
+                            "https://www.dailymail.co.uk/femail/article-2153789/Rothschild-heiresss-marriage-Goldsmith-scion--falls-rapper-called-Jay-Electronica.html", 
+                            "Kate Rothschild and Ben Goldsmith, December 2010");
+    insert_into_images("horsemen/horse_sculpture-e1449637072440.png", 
+                            "The White House Historical Association", 
+                            "http://arthurmurch.com/portfolio/govetts-leap/", 
+                            "Govett’s Leap,<br/>1976, Arthur Murch, Australia");
+    insert_into_images("horsemen/Onur_Aniti.JPG", 
+                            "wiki", 
+                            "Onur_Anıtı.JPG", 
+                            "Statue of Honor (Atatürk Monument),<br/>1932, Samsun, Turkey");
+ }
 
 ?>
