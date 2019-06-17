@@ -201,7 +201,8 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 		'imdb_id' => '',
 		'youtube_id' => '',
 		'start' => '',
-		'width' => '500px'
+		'width' => '',
+		'caption' => ''
 	), $attr));
 	
 	$youtube_shortcode = '[youtube https://www.youtube.com/watch?v=' . $youtube_id . '&start=' . $start . ']';	
@@ -210,13 +211,25 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 		$before_video = '<a title="' . $title . '" href="http://www.imdb.com/title/' . $imdb_id . '/" target="_blank">"' . $title . '"</a>';
 	else
 		$before_video = $title;
-	
-	$result = $before_video . ':
 
-    <div class="outside_yu_tube"><div class="inside_yu_tube" style="width:' . $width . '"> ' . do_shortcode($youtube_shortcode) . '</div></div>';
+	if ( $caption )
+		$yu_caption = '
+
+	<div class="yu_tube_caption"><em>' . $caption . '</em></div>';  /**/
+	else
+		$yu_caption = '';
+
+	if ( $width )
+		$yu_width = ' style="width:' . $width . '"';
+	else
+		$yu_width = '';
+		
+	$result = $before_video . ':<br><div class="yu_tube_outside"><div class="yu_tube_inside"' . $yu_width . '> ' 
+                                       . do_shortcode($youtube_shortcode) . ' </div>' . $yu_caption . '</div>';
 
 	return $result;
 }
+
 add_shortcode('yu_tube', 'MY_VERY_OWN_youtube');
 
 /**

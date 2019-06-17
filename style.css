@@ -83,8 +83,7 @@ table th {
 a img, .entry-content a img {
     display: block;
     margin: 0 auto;
-   	padding: 10px;
-	border: none;
+   	border: none;
 	-moz-border-radius: 0px;
 	-khtml-border-radius: 0px;
 	-webkit-border-radius: 0px;
@@ -163,6 +162,12 @@ table .images {
 	float: right;
 }
 
+/*
+.flushright .images {
+	display: flex;
+	flex-wrap:wrap-reverse;
+}*/
+
 /******************************************************************************
  *                         Header and Widgets                                 *
  *****************************************************************************/
@@ -215,17 +220,24 @@ header h3 {
 	display: none;
 }
 
-.outside_yu_tube {
+.yu_tube_outside{
 	display: flex;
+	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center; 
-	max-width:95%;
+	padding: 10px;
+	max-width: 100%;
 }
 
-.inside_yu_tube {
+.yu_tube_inside, .yu_tube_caption {
 	max-width: 100%; 
+	width: 480px;
 	display: inline-block; 
-	margin: auto
+	margin: auto;
+}
+
+.yu_tube_caption {
+	padding-top: 10px;
 }
 
 /******************************************************************************
