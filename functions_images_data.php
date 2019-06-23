@@ -3738,6 +3738,26 @@ function populate_images() {
                             "Daily Mail", 
                             "https://www.dailymail.co.uk/femail/article-2153789/Rothschild-heiresss-marriage-Goldsmith-scion--falls-rapper-called-Jay-Electronica.html", 
                             "Kate Rothschild and Ben Goldsmith, December 2010");
+    insert_into_images("SocialScience/c4debate.jpg", 
+                            "The Sun", 
+                            "https://www.thesun.co.uk/wp-content/uploads/2019/06/AD-COMPOSITE-C4-Debate-Bias.jpg", 
+                            "Rory Stewart (right): 'Fundamental issue here is that there's a competition of machismo'. <br>British Conservative party leadership debate, June 2019");
+    insert_into_images("SocialScience/S7JAWE5QEEFLYT37OIZGWUGY3A.jpg", 
+                            "Popular Science", 
+                            "https://www.popsci.com/empathy-observed-in-rodents-too/", 
+                            "Highly social and monogamous prairie voles (consolation display)");
+    insert_into_images("SocialScience/little-vole-dude.jpg", 
+                            "animalia.bio", 
+                            "http://animalia.bio/meadow-vole", 
+                            "Notoriously promiscuous male meadow vole");
+    insert_into_images("SocialScience/alphas_preferences.jpg", 
+                            "The BBC", 
+                            "https://www.bbc.co.uk/news/stories-42460315", 
+                            "");
+    insert_into_images("SocialScience/08-james-bond-best-interiors-vogue.jpeg", 
+                            "The Vogue", 
+                            "https://www.vogue.com/article/homes-james-bond-movie-interiors-spectre-daniel-craig", 
+                            "");
     insert_into_images("horsemen/horse_sculpture-e1449637072440.png", 
                             "The White House Historical Association", 
                             "http://arthurmurch.com/portfolio/govetts-leap/", 
