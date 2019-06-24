@@ -3766,6 +3766,22 @@ function populate_images() {
                             "wiki", 
                             "Onur_Anıtı.JPG", 
                             "Statue of Honor (Atatürk Monument),<br/>1932, Samsun, Turkey");
- }
+    insert_into_images("blog_art.png", 
+                            "", 
+                            "", 
+                            "");
+    insert_into_images("blog_food.png", 
+                            "", 
+                            "", 
+                            "");
+    insert_into_images("blog_social.png", 
+                            "", 
+                            "", 
+                            "");
+    insert_into_images("blog_thebard.png", 
+                            "", 
+                            "", 
+                            "");
+}
 
 ?>
