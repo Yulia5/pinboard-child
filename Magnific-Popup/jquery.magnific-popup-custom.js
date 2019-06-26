@@ -21,15 +21,23 @@ jQuery(document).ready(function($) {
             set_max_size($(this), new_width, 'width');
             resize_outside_image($(this), new_width);
         }
+        var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
+        if (imgheight !== false) {
+            var new_height = parseFloat(imgheight);
+            set_max_size($(this), new_height, 'height');
+        }
 
         $(this).load(function() {
             var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
             if (imgheight !== false) {
                 var new_height = parseFloat(imgheight);
-                var old_height = parseFloat($(this).height());
-                var old_width = parseFloat($(this).width());
-                set_max_size($(this), new_height, 'height');
+                alert('new_height : ' + new_height.toString());
+                var old_height = parseFloat($(this).prop('naturalHeight'));
+                alert('old_height : ' + old_height.toString());
+                var old_width = parseFloat($(this).prop('naturalWidth'));
+                alert('old_width : ' + old_width.toString());
                 var new_width = Math.floor(old_width * (new_height / old_height));
+                alert('new_width : ' + new_width.toString());
                 resize_outside_image($(this), new_width);
            }
             resize_a_caption($(this));
