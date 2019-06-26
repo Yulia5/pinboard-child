@@ -96,13 +96,13 @@ a img, .entry-content a img {
 	object-fit: contain;
 }
 
-.outside_image a img {
+.outside_image a img, .wp-caption {
 	width:80%;
 }
 
 .outside_image {
     text-align: center;
-    max-width:95%;
+    width:95%;
 }
 
 a {

@@ -8,36 +8,43 @@ jQuery(document).ready(function($) {
     //run a script when the document structure is ready, but before all of the images have loaded
     
     window.onload = function() {
-        $('.images img').each(function(i, obj) {
-            resize_an_image($(this));
-        });
-        $('.outside_image img').each(function(i, obj) {
-            resize_a_caption($(this));
-        });
     }
 
     window.onresize = function() {
-        $('.images img').each(function(i, obj) {
-            resize_an_image($(this));
-        });
+        //alert('onresize');
         $('.outside_image img').each(function(i, obj) {
-            resize_a_caption($(this));
+            //resize_a_caption($(this));
         });
     }
 
     $('.images img').each(function() {
-        var imgheight = get_attribute($(this).closest('.images'),   'imgheight');
-        if (imgheight !== false) {
-            var new_height = parseFloat(imgheight);
-            var style_img = ' max-height: ' + new_height.toString() + 'px ';  
-            $(this).attr('style', style_img);
+
+        var imgwidth = get_attribute($(this).closest('.images'), 'imgwidth');
+        if (imgwidth !== false) {
+            var new_width = parseFloat(imgwidth);
+            set_max_size($(this), new_width, 'width');
+            resize_outside_image($(this), new_width);
         }
-        
+
         $(this).load(function() {
-            resize_an_image($(this));
+            var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
+            if (imgheight !== false) {
+                var new_height = parseFloat(imgheight);
+                var old_height = parseFloat($(this).height());
+                var old_width = parseFloat($(this).width());
+                set_max_size($(this), new_height, 'height');
+                var new_width = Math.floor(old_width * (new_height / old_height));
+                resize_outside_image($(this), new_width);
+           }
             resize_a_caption($(this));
         });
     });
+
+    function resize_outside_image(an_image, max_image_width) {
+        an_image.closest('.outside_image').each(function() {
+            set_max_size($(this), max_image_width + 25, 'width'); //$(this).css('max-width', a_width);
+        });
+    }
 
     function get_attribute(an_object, attr_name) {
         if ( typeof an_object !== typeof undefined && an_object !== false && an_object !== 0) {
@@ -50,45 +57,11 @@ jQuery(document).ready(function($) {
         return false;
     }
 
-    function resize_an_image(an_image) {
-
-        var old_height = parseFloat(an_image.height());
-        var old_width = parseFloat(an_image.width());
-        var new_height = old_height;
-        var new_width = old_width;
-        var imgheight = get_attribute(an_image.closest('.images'), 'imgheight');
-        if (imgheight !== false) {
-            new_height = parseFloat(imgheight);
-            if (new_height !== old_height) {
-                new_width = Math.floor(old_width * (new_height / old_height));
-            }
-        }
-
-        var max_width = document.body.clientWidth;
-        var max_width_attr = get_attribute(an_image.closest('.entry'), 'width');
-        if (max_width_attr !== false) {
-            max_width = parseFloat(max_width_attr);
-        }
-
-        if (max_width < new_width) {
-            new_height = Math.floor(new_height * (max_width / new_width));
-            new_width = max_width;
-        }
-        an_image.css('max-height', new_height);
-        an_image.css('max-width', new_width);
-        return 0;
-    }       
-
-    function resize_a_caption(an_image) {
-
-        an_image.closest('.outside_image').children('.wp-caption-text').each(function() {
-            var _width = parseFloat(an_image.width());
-            $(this).css('width', _width);
-            // "this" is the current element in the loop
-        });
+    function set_max_size(an_object, a_size, a_size_name) {
+        var style_img = ' max-' + a_size_name + ': ' + a_size.toString() + 'px ';  
+        an_object.attr('style', style_img);
         return 0;
     }
-
 
     $('.magnific-image').magnificPopup({
         type : 'image',
