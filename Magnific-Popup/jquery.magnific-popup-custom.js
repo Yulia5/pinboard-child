@@ -21,10 +21,12 @@ jQuery(document).ready(function($) {
             set_max_size($(this), new_width, 'width');
             resize_outside_image($(this), new_width);
         }
+
         var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
         if (imgheight !== false) {
             var new_height = parseFloat(imgheight);
             set_max_size($(this), new_height, 'height');
+            // resize_outside_image must happen after loading, when the image sizes are known
         }
 
         $(this).load(function() {
@@ -35,14 +37,13 @@ jQuery(document).ready(function($) {
                 var old_width = parseFloat($(this).prop('naturalWidth'));
                 var new_width = Math.floor(old_width * (new_height / old_height));
                 resize_outside_image($(this), new_width);
-           }
-            resize_a_caption($(this));
+            }
         });
     });
 
     function resize_outside_image(an_image, max_image_width) {
         an_image.closest('.outside_image').each(function() {
-            set_max_size($(this), max_image_width + 25, 'width'); //$(this).css('max-width', a_width);
+            set_max_size($(this), max_image_width + 5, 'width'); //$(this).css('max-width', a_width);
         });
     }
 
