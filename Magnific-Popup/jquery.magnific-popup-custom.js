@@ -11,10 +11,6 @@ jQuery(document).ready(function($) {
     }
 
     window.onresize = function() {
-        //alert('onresize');
-        $('.outside_image img').each(function(i, obj) {
-            //resize_a_caption($(this));
-        });
     }
 
     $('.images img').each(function() {
