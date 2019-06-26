@@ -31,13 +31,9 @@ jQuery(document).ready(function($) {
             var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
             if (imgheight !== false) {
                 var new_height = parseFloat(imgheight);
-                alert('new_height : ' + new_height.toString());
                 var old_height = parseFloat($(this).prop('naturalHeight'));
-                alert('old_height : ' + old_height.toString());
                 var old_width = parseFloat($(this).prop('naturalWidth'));
-                alert('old_width : ' + old_width.toString());
                 var new_width = Math.floor(old_width * (new_height / old_height));
-                alert('new_width : ' + new_width.toString());
                 resize_outside_image($(this), new_width);
            }
             resize_a_caption($(this));
