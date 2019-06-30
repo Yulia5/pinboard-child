@@ -4,15 +4,6 @@
 
 jQuery(document).ready(function($) {
 
-    //$(document).ready(function() {});
-    //run a script when the document structure is ready, but before all of the images have loaded
-    
-    window.onload = function() {
-    }
-
-    window.onresize = function() {
-    }
-
     function test_alert(an_element, a_message) {
         an_element.closest('.test').each(function() {
             alert(a_message);
@@ -23,12 +14,18 @@ jQuery(document).ready(function($) {
 
         var imgwidth = get_float_attribute($(this).closest('.images'), 'imgwidth');
         var imgheight = get_float_attribute($(this).closest('.images'), 'imgheight');
-        var nb_siblinds = 0;
-        //$(this).each(nb_siblinds, function(index, value) { //closest('.outside_image').siblings()
-            nb_siblinds = nb_siblinds + 1;
-        //} );
+        var nb_siblinds = $(this).closest('.outside_image').siblings('.outside_image').length;
+        var is_flushright = object_exists($(this).closest('.flushright').prop('outerHTML'));
+        //test_alert($(this), 'is_flushright: ' + is_flushright);
 
-        //test_alert($(this), 'nb_siblinds: ' + nb_siblinds.toString());
+        // default values
+        if (imgwidth == false && imgheight == false && nb_siblinds == 0) {
+            if (is_flushright == false) {
+                imgwidth = 500;
+            } else {
+                imgwidth = 300;
+            }
+        }
 
         if (imgwidth !== false) {
             set_max_size($(this), imgwidth, 'width');
@@ -67,8 +64,13 @@ jQuery(document).ready(function($) {
         });
     }
 
+    function object_exists(an_object) {
+        var result = ( typeof an_object !== typeof undefined && an_object !== false && an_object !== 0);
+        return result;
+    }
+
     function get_attribute(an_object, attr_name) {
-        if ( typeof an_object !== typeof undefined && an_object !== false && an_object !== 0) {
+        if (object_exists(an_object)) {
             var attr = an_object.attr(attr_name);
             // For some browsers, `attr` is undefined; for others, `attr` is false. Check for both.
             if ( typeof attr !== typeof undefined && attr !== false) {
@@ -101,26 +103,32 @@ jQuery(document).ready(function($) {
         image : {
             verticalFit : true,
             titleSrc : function(item) {
-                var sourcehrf = item.el.find('img').attr('sourcehrf');
-                var sourcename = item.el.find('img').attr('sourcename');
-                var caption = item.el.find('img').attr('caption');
-                var imagecredit = 'Image credit: ';
-                if (caption) {
-                    imagecredit = '.<br>' + imagecredit;
-                }
+                var an_image = item.el.find('img');
+                var sourcehrf = get_attribute(an_image, 'sourcehrf');
+                var sourcename = get_attribute(an_image, 'sourcename');
+                var caption = get_attribute(an_image, 'caption');
+                var result = 'Image credit: ';
 
                 if (sourcehrf) {
                     if (!sourcename) {
-                        sourcename = 'this website';
+                        sourcename = sourcehrf;
                     }
-                    imagecredit += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' + sourcename + '</a>';
+                    result += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' + sourcename + '</a>';
                 } else if (sourcename) {
-                    imagecredit += sourcename;
+                    result += sourcename;
                 } else {
-                    imagecredit = '';
+                    result += 'me';
                 }
 
-                return '<strong>' + caption + '</strong>' + imagecredit + '<br /> &nbsp';
+                if (caption) {
+                    result = '<strong>' + caption + '</strong>.<br>' + result;
+                }
+
+                if (result !== '') {
+                    result = result + '<br /> &nbsp';
+                }
+
+                return result; 
             }
         }
     });
