@@ -13,37 +13,65 @@ jQuery(document).ready(function($) {
     window.onresize = function() {
     }
 
+    function test_alert(an_element, a_message) {
+        an_element.closest('.test').each(function() {
+            alert(a_message);
+        } );
+    }
+
     $('.images img').each(function() {
 
         var imgwidth = get_attribute($(this).closest('.images'), 'imgwidth');
+        var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
+        var nb_siblinds = 0;
+        //$(this).each(nb_siblinds, function(index, value) { //closest('.outside_image').siblings()
+            nb_siblinds = nb_siblinds + 1;
+        //} );
+
+        //test_alert($(this), 'nb_siblinds: ' + nb_siblinds.toString());
+
         if (imgwidth !== false) {
             var new_width = parseFloat(imgwidth);
             set_max_size($(this), new_width, 'width');
             resize_outside_image($(this), new_width);
         }
 
-        var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
         if (imgheight !== false) {
             var new_height = parseFloat(imgheight);
             set_max_size($(this), new_height, 'height');
-            // resize_outside_image must happen after loading, when the image sizes are known
+
+            // resize_outside_image if the image sizes are known
+            if (this.complete) {
+                var new_width = calculate_max_width($(this), imgheight);
+                resize_outside_image($(this), new_width);
+            }
         }
 
-        $(this).load(function() {
+        $(this).load(function() {  
+            test_alert($(this), 'inside: ');       
             var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
+            test_alert($(this), 'imgheight: ' + imgheight.toString());
+
             if (imgheight !== false) {
-                var new_height = parseFloat(imgheight);
-                var old_height = parseFloat($(this).prop('naturalHeight'));
-                var old_width = parseFloat($(this).prop('naturalWidth'));
-                var new_width = Math.floor(old_width * (new_height / old_height));
+                test_alert($(this), 'inside 2: ');
+                var new_width = calculate_max_width($(this), imgheight);
+                test_alert($(this), 'new_width: ' + new_width.toString());
                 resize_outside_image($(this), new_width);
             }
         });
     });
 
+    function calculate_max_width(an_image, imgheight) {       
+        var new_height = parseFloat(imgheight);
+        var old_height = parseFloat(an_image.prop('naturalHeight'));
+        var old_width = parseFloat(an_image.prop('naturalWidth'));
+        var new_width = Math.floor(old_width * (new_height / old_height));        
+        return new_width;
+    }
+
     function resize_outside_image(an_image, max_image_width) {
         an_image.closest('.outside_image').each(function() {
-            set_max_size($(this), max_image_width + 5, 'width'); //$(this).css('max-width', a_width);
+            set_max_size($(this), max_image_width + 5, 'width'); 
         });
     }
 
@@ -60,7 +88,7 @@ jQuery(document).ready(function($) {
 
     function set_max_size(an_object, a_size, a_size_name) {
         var style_img = ' max-' + a_size_name + ': ' + a_size.toString() + 'px ';  
-        an_object.attr('style', style_img);
+        an_object.attr('style', style_img); //$(this).css('max-width', a_width);
         return 0;
     }
 

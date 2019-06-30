@@ -49,9 +49,10 @@ function pinboard_child_theme_setup() {
     /* add image sizes adapted to the most frequently encountered cases - resizing by height */
     $image_heights = [150, 180, 200, 220, 250, 300, 400];   
     foreach ($image_heights as $image_height) {
-        add_image_size( 'h' . strval($image_height), 9999, $image_heights );
+        add_image_size( 'h' . strval($image_height), 9999, $image_height);
     }
     add_image_size( 'w700', 700);
+    add_image_size( 'w500', 500);
     
     /* include image-related collection of functions */
     locate_template( array( 'functions_images.php' ), true, true );
