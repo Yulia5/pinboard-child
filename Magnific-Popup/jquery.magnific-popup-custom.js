@@ -21,8 +21,8 @@ jQuery(document).ready(function($) {
 
     $('.images img').each(function() {
 
-        var imgwidth = get_attribute($(this).closest('.images'), 'imgwidth');
-        var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
+        var imgwidth = get_float_attribute($(this).closest('.images'), 'imgwidth');
+        var imgheight = get_float_attribute($(this).closest('.images'), 'imgheight');
         var nb_siblinds = 0;
         //$(this).each(nb_siblinds, function(index, value) { //closest('.outside_image').siblings()
             nb_siblinds = nb_siblinds + 1;
@@ -31,14 +31,12 @@ jQuery(document).ready(function($) {
         //test_alert($(this), 'nb_siblinds: ' + nb_siblinds.toString());
 
         if (imgwidth !== false) {
-            var new_width = parseFloat(imgwidth);
-            set_max_size($(this), new_width, 'width');
-            resize_outside_image($(this), new_width);
+            set_max_size($(this), imgwidth, 'width');
+            resize_outside_image($(this), imgwidth);
         }
 
         if (imgheight !== false) {
-            var new_height = parseFloat(imgheight);
-            set_max_size($(this), new_height, 'height');
+            set_max_size($(this), imgheight, 'height');
 
             // resize_outside_image if the image sizes are known
             if (this.complete) {
@@ -48,24 +46,18 @@ jQuery(document).ready(function($) {
         }
 
         $(this).load(function() {  
-            test_alert($(this), 'inside: ');       
-            var imgheight = get_attribute($(this).closest('.images'), 'imgheight');
-            test_alert($(this), 'imgheight: ' + imgheight.toString());
-
+            var imgheight = get_float_attribute($(this).closest('.images'), 'imgheight');
             if (imgheight !== false) {
-                test_alert($(this), 'inside 2: ');
                 var new_width = calculate_max_width($(this), imgheight);
-                test_alert($(this), 'new_width: ' + new_width.toString());
                 resize_outside_image($(this), new_width);
             }
         });
     });
 
     function calculate_max_width(an_image, imgheight) {       
-        var new_height = parseFloat(imgheight);
         var old_height = parseFloat(an_image.prop('naturalHeight'));
         var old_width = parseFloat(an_image.prop('naturalWidth'));
-        var new_width = Math.floor(old_width * (new_height / old_height));        
+        var new_width = Math.floor(old_width * (imgheight / old_height));        
         return new_width;
     }
 
@@ -83,6 +75,14 @@ jQuery(document).ready(function($) {
                 return attr;
             };
         };
+        return false;
+    }
+
+    function get_float_attribute(an_object, attr_name) {
+        var text_attribute = get_attribute(an_object, attr_name);
+        if (text_attribute !== false) {
+            return parseFloat(text_attribute);
+        }
         return false;
     }
 
