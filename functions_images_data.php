@@ -3128,7 +3128,7 @@ function populate_images() {
     insert_into_images("horsemen/trump_cartoon.jpg", 
                             "The Guardian", 
                             "https://www.theguardian.com/commentisfree/picture/2017/jan/27/martin-rowson-on-the-may-trump-meeting-cartoon", 
-                            "May-Trump Meeting, <br/>January 2017, Martin Rowson (The Guardian), UK");
+                            "May-Trump Meeting, <br/>January 2017, Martin Rowson for the Guardian");
     insert_into_images("horsemen/tsereteli-peter2-bush_0.jpg", 
                             "exile.ru", 
                             "http://www.exile.ru/print.php?ARTICLE_ID=7895&IBLOCK_ID=35", 
@@ -3759,7 +3759,7 @@ function populate_images() {
                             "https://www.vogue.com/article/homes-james-bond-movie-interiors-spectre-daniel-craig", 
                             "");
     insert_into_images("horsemen/horse_sculpture-e1449637072440.png", 
-                            "The White House Historical Association", 
+                            "Arthur Murch's website", 
                             "http://arthurmurch.com/portfolio/govetts-leap/", 
                             "Govett’s Leap,<br/>1976, Arthur Murch, Australia");
     insert_into_images("horsemen/Onur_Aniti.JPG", 
@@ -3782,6 +3782,14 @@ function populate_images() {
                             "", 
                             "", 
                             "");
+    insert_into_images("horsemen/davos_rider.jpeg", 
+                            "The Financial Times", 
+                            "https://www.ft.com/content/7b5d6d18-20af-11e9-b2f7-97e4dbd3580d", 
+                            "Davos 2019: No more heroes for the global elite,<br/>2019, James Ferguson for the Financial Times");
+    insert_into_images("horsemen/Bond007_WilliamIII.png", 
+                            "The Moonraker", 
+                            "https://www.imdb.com/title/tt0079574", 
+                            "Portrait of King William III at the Battle of the Boyne in 1690,<br/>1690-1700, (circle of) Jan Wyck");
 }
 
 ?>
