@@ -162,7 +162,7 @@ table .images {
   clear: both;
 }
 
-.flushright .images, .flushright .outside_image, .flushright .images .outside_image {
+.flushright .images/*, .flushright .outside_image, .flushright .images .outside_image */{
 	float: right;
 }
 
