@@ -263,6 +263,53 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
 }
 add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
 
+/**
+ * yu_images_DB
+ */
+function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
+    extract(shortcode_atts(array(
+        'imgheight' => '',
+        'imgwidth' => '',
+        'flushright' => '' 
+    ), $attr));
+
+    $style = "";
+    if (!! $imgheight) {
+        $style = ' imgheight = "' . $imgheight . '"'. $style;
+    }
+    if (!! $imgwidth) {
+        $style = ' imgwidth = "' . $imgwidth . '"'. $style;
+    }
+    
+    // add a space for convenience
+    $content = $content . ' ';  
+    $content = preg_replace("/<br\W*?\/>/", "\n", $content);
+    preg_match_all('/([\s\r\t\n]+)(?!\s\r\t\n)/', $content, $matches, PREG_OFFSET_CAPTURE);
+    $start = 0;
+    $end = 0;
+    $result = '';
+    foreach($matches[0] as $match) {
+      $end = $match[1];
+      if ($start < $end) {
+          $ss = substr($content, $start, $end - $start);
+          $result = $result . do_shortcode('[yu_image_DB]' . $ss . "[/yu_image_DB]");
+      }
+      $result = $result . $match[0];
+      $start = $end + strlen($match[0]);
+    }
+    $content = str_replace("\n", "<br\>", $content);
+    
+    // adding div's
+    $result = '<div class="images" ' . $style . '>' . $result . "</div>";  
+    if (!! $flushright) {
+        $result = '<div class="flushright">' . $result . "</div>";
+    }   
+
+    return $result;
+}
+add_shortcode('yu_images_DB', 'MY_VERY_OWN_images_DB_shortcode');
+
+
 /* get images metas given their names and folders */
 function get_images_meta_id_srcset( $filenames ) {
         

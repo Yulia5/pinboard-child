@@ -3789,7 +3789,55 @@ function populate_images() {
     insert_into_images("horsemen/Bond007_WilliamIII.png", 
                             "The Moonraker", 
                             "https://www.imdb.com/title/tt0079574", 
-                            "Portrait of King William III at the Battle of the Boyne in 1690,<br/>1690-1700, (circle of) Jan Wyck");
+                            "Portrait of King William III at the Battle of the Boyne in 1690, <br/>1690-1700, (circle of) Jan Wyck");
+    insert_into_images("horsemen/george_msk-01.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+    insert_into_images("horsemen/george_msk-02.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+    insert_into_images("horsemen/george_msk-03.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+    insert_into_images("horsemen/george_msk-04.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+    insert_into_images("horsemen/george_msk-05.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+    insert_into_images("horsemen/george_msk-06.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+    insert_into_images("horsemen/skob-1912.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/48734.html", 
+                            "Monument to Saint George, <br/>1912, Petr Samonov, Moscow, Russia");
+    insert_into_images("horsemen/skobelev-2014.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/86859.html", 
+                            "Monument to General Skobelev, <br/>2014, Aleksandr Rukavishnikov, Moscow, Russia");
+    insert_into_images("horsemen/UN_GoodDefeats-Evil_StGeorge.jpg", 
+                            "The United Nations", 
+                            "https://www.un.org/ungifts/content/good-defeats-evil", 
+                            "Monument to Saint George, <br/>1990, Zurab Tsereteli, New York, the U.S.A.");
+    insert_into_images("horsemen/Shimazu_Yoshihiro.jpeg", 
+                            "excite.co.jp", 
+                            "https://www.excite.co.jp/news/article/BestTimes_8636/", 
+                            "Shimazu Yoshihiro, <br/>?, Hioki city, Kagoshima prefecture, Japan");
+    insert_into_images("20190629_101345.jpg", 
+                            "", 
+                            "", 
+                            "");
+    insert_into_images("20190627_152744-01.jpeg", 
+                            "", 
+                            "", 
+                            "");
 }
 
 ?>
