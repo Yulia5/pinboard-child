@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
         //test_alert($(this), 'is_flushright: ' + is_flushright);
 
         // default values
-        if (imgwidth == false && imgheight == false && nb_siblinds == 0) {
+        if (imgwidth == false && imgheight == false) {
             if (is_flushright == false) {
                 imgwidth = 500;
             } else {
