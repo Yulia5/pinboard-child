@@ -162,15 +162,9 @@ table .images {
   clear: both;
 }
 
-.flushright .images/*, .flushright .outside_image, .flushright .images .outside_image */{
+.flushright .images{
 	float: right;
 }
-
-/*
-.flushright .images {
-	display: flex;
-	flex-wrap:wrap-reverse;
-}*/
 
 /******************************************************************************
  *                         Header and Widgets                                 *
@@ -280,38 +274,9 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 	background: #498af2;
 }
 
-.goog-te-gadget-icon {
-	content:url(images/GT.png);
-	background-image:none !important;
-	width: 293px !important;
-	height: 47px !important;
-	display: block !important;
-	clear: both !important;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-}
 
-.widget.jetpack_subscription_widget input[type="submit"] {
-	background: url(images/email_reply_blue.png) right center no-repeat;
-}
 
-#searchform input[type="submit"] {
-	background: url(images/search_button_blue.png) right center no-repeat;
-}
-
-.widget.jetpack_subscription_widget input[type="submit"]:hover, .widget.jetpack_subscription_widget input[type="submit"]:focus {
-	background: url(images/email_reply_green.png) right center no-repeat;
-}
-
-#searchform input[type="submit"]:hover, #searchform input[type="submit"]:focus {
-	background: url(images/search_button_green.png) right center no-repeat;
-}
-
-#header, #nav, #access:target .menu, #copyright, #access, .widget.jetpack_subscription_widget.error, 
-.widget.widget_google_translate_widget, #google_translate_element, .skiptranslate.goog-te-gadget, .goog-te-gadget-simple, 
-.goog-te-menu-value:hover, .goog-te-menu-value:hover, .goog-te-menu-value, 
-.goog-te-menu-value span, .goog-te-menu-value span:hover, .goog-te-menu-value span:focus{
+#header, #nav, #access:target .menu, #copyright, #access{
     background-color: #000 !important;
     color: #ffffff !important;
 }
