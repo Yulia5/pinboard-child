@@ -193,6 +193,16 @@ function MY_VERY_OWN_instagram_link($attr, $content = null) {
 add_shortcode('yu_insta', 'MY_VERY_OWN_instagram_link');
 
 /**
+ * MY_VERY_OWN_clear
+ */
+function MY_VERY_OWN_clear($attr, $content = null) {
+
+	$result = '<p class="p_clear"></p>';	
+	return $result;
+}
+add_shortcode('yu_clear', 'MY_VERY_OWN_clear');
+
+/**
  * [yu_tube title = "" imdb_id = "" youtube_id = "" start = ""]
  */
 function MY_VERY_OWN_youtube($attr, $content = null) {
