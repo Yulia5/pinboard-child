@@ -16,14 +16,14 @@ jQuery(document).ready(function($) {
         var imgheight = get_float_attribute($(this).closest('.images'), 'imgheight');
         var nb_siblinds = $(this).closest('.outside_image').siblings('.outside_image').length;
         var is_flushright = object_exists($(this).closest('.flushright').prop('outerHTML'));
-        //test_alert($(this), 'is_flushright: ' + is_flushright);
+        var is_flushright2 = object_exists($(this).closest('.flushright2').prop('outerHTML'));
 
         // default values
         if (imgwidth == false && imgheight == false) {
-            if (is_flushright == false) {
-                imgwidth = 500;
-            } else {
+            if (is_flushright || is_flushright2) {
                 imgwidth = 300;
+            } else {
+                imgwidth = 500;
             }
         }
 

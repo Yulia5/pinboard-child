@@ -110,9 +110,9 @@ function is_empty_string($question) {
 
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, 
                                 $srcset = null, $style = null, $class = null, $no_image = null)
-{
-    
-    $caption_no_br = str_replace(array('<br />','<br/>','<br>'), '', $caption);
+{    
+    $caption_no_br = preg_replace("/<br\W*?\/>/", "\n", $caption);
+
     $hrf = trim($hrf, " ");
     if ( substr( $hrf, 0, 7 ) !== "http://" ) {
         $hrf = trailingslashit(wp_upload_dir()['url']) . $hrf;
@@ -281,9 +281,9 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
         $style = ' imgwidth = "' . $imgwidth . '"'. $style;
     }
     
-    // add a space for convenience
-    $content = $content . ' ';  
+    $content = $content . ' ';  // add a space for convenience, to avoid treating special case
     $content = preg_replace("/<br\W*?\/>/", "\n", $content);
+
     preg_match_all('/([\s\r\t\n]+)(?!\s\r\t\n)/', $content, $matches, PREG_OFFSET_CAPTURE);
     $start = 0;
     $end = 0;
@@ -294,15 +294,15 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
           $ss = substr($content, $start, $end - $start);
           $result = $result . do_shortcode('[yu_image_DB]' . $ss . "[/yu_image_DB]");
       }
-      $result = $result . $match[0];
+      $result = $result . $match[0]; // add spaces
       $start = $end + strlen($match[0]);
     }
-    $content = str_replace("\n", "<br\>", $content);
+    $result = str_replace("\n", "<br/>", $result);
     
     // adding div's
     $result = '<div class="images" ' . $style . '>' . $result . "</div>";  
     if (!! $flushright) {
-        $result = '<div class="flushright">' . $result . "</div>";
+        $result = '<div class="flushright2">' . $result . "</div>";
     }   
 
     return $result;

@@ -153,16 +153,18 @@ table .images {
 }
 
 .flushright:before,
-.flushright:after {
+.flushright:after,
+.flushright2:before,
+.flushright2:after {
   display: table;
   content: "";
 }
 
-.flushright:after {
+.flushright:after, .p_clear:after {
   clear: both;
 }
 
-.flushright .images{
+.flushright .images, .flushright2 .images {
 	float: right;
 }
 
