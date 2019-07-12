@@ -118,10 +118,6 @@ add_shortcode('r_lines', 'MY_VERY_OWN_R_lines');
 /**
  * The shortcode for J lines.
  * The supported attribute for the shortcode is 'directions' (optional).
- *
- * @param array $attr Attributes attributed to the shortcode.
- * @param string $content Optional. Shortcode content.
- * @return string
  */
 function MY_VERY_OWN_J_lines($attr, $content = null) {
 
@@ -133,6 +129,65 @@ function MY_VERY_OWN_J_lines($attr, $content = null) {
 	return $result;
 }
 add_shortcode('j_lines', 'MY_VERY_OWN_J_lines');
+
+/**
+ * The recept generator
+ */
+function replace_br($content) {
+	//$result = preg_replace('<br\W*?\/>*$','', $content);
+	$result = preg_replace("/<br\W*?\/>/", ";</li><li>", trim($content));
+	//remove ";</li><li>|" at the end of the line
+	$result = $result . '|';
+	$result = str_replace(";</li><li>|", "", $result);
+	$result = str_replace("|", "", $result);
+	return $result;
+}
+
+function MY_VERY_OWN_recept($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'last_section' => ''
+	), $attr));
+
+	$result = "";
+
+	$recept_parts = preg_replace("/\|<br\W*?\/>/", "|", $content);
+	$recept_parts = preg_replace("/#<br\W*?\/>/", "#", $recept_parts);
+	$recept_parts = preg_replace("/<br\W*?\/>\|/", "|", $recept_parts);
+	$recept_parts = preg_replace("/<br\W*?\/>#/", "#", $recept_parts);
+	$recept_parts = explode ('|', $recept_parts);	
+
+	if (!! $recept_parts[0]) {
+		$result = $result . do_shortcode("[yu_images_DB flushright='1']" . $recept_parts[0] . '[/yu_images_DB]');
+	}
+	if (!! $recept_parts[1]) {
+		$result = $result . '<h3>Utensils</h3><ul class="utensils_ul"><li>' . replace_br($recept_parts[1]) . '.</li></ul>';
+	}
+	if (!! $recept_parts[2]) {
+		$ingredients_parts = explode ('#', $recept_parts[2]);
+		$result = $result . '<h3>Ingredients</h3>';
+		if (!! $ingredients_parts[0]) {
+			$result = $result . '<ul class="ingredients_ul"><li>' . replace_br($ingredients_parts[0]) . '.</li></ul>';
+		}
+		if (!! $ingredients_parts[1]) {
+			$result = $result . '<ul class="spices_ul"><li>' . replace_br($ingredients_parts[1]) . '.</li></ul>';
+		}
+		if (!! $ingredients_parts[2]) {
+			$result = $result . '<ul class="to_serve_ul"><li>' . replace_br($ingredients_parts[2]) . '.</li></ul>';
+		}
+	}
+	if (!! $recept_parts[3]) {
+		$result = $result . '<h3>Directions</h3><ol><li>' . replace_br($recept_parts[3]) . '.</li></ol>';
+	}
+	if (!! $recept_parts[4]) {
+		$result = $result . '<h3>' . $last_section . '</h3><ul class="to_try"><li>' . replace_br($recept_parts[4]) . '.</li></ul>';
+	}
+/**/
+	return $result;
+}
+add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
+
+
 
 /**
  * MY_VERY_OWN_h

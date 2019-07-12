@@ -335,8 +335,7 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
     font-weight: 700;
 }
 
-.oldEnglish
-{
+.oldEnglish {
     background: #F0F8FF;
 }
     
@@ -347,4 +346,32 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 #riddle_horsemen_table td{
     max-width: 30%; 
     vertical-align: top;
+}
+
+.ingredients_ul, .utensils_ul, .spices_ul, .to_serve_ul, .to_try {
+ 	list-style: none;
+ 	li {
+    	padding-left: 1rem;
+    	text-indent: -0.7rem;
+	}
+}
+
+.ingredients_ul li::before {
+    content: "🥕 ";
+}
+
+.utensils_ul li::before {
+    content: "🥣 ";
+}
+
+.spices_ul li::before {
+    content: "🧂 ";
+}
+
+.to_serve_ul li::before {
+    content: "🍒 ";
+}
+
+.to_try li::before {
+    content: "😋 ";
 }
