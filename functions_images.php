@@ -266,6 +266,31 @@ add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
 /**
  * yu_images_DB
  */
+function add_db_images($image_params_name) {
+    $image_params_name_array = explode ('|', $image_params_name);
+    $image_name = array_pop($image_params_name_array);
+    $image_params = ' ' . implode(' ', $image_params_name_array);
+    $result = do_shortcode('[yu_image_DB' . $image_params . ']' . $image_name . "[/yu_image_DB]");
+    return $result;
+}
+
+function transform_regex($regex_pattern, $content, $transform_func) {
+    preg_match_all($regex_pattern, $content, $matches, PREG_OFFSET_CAPTURE);
+    $start = 0;
+    $end = 0;
+    $result = '';
+    foreach($matches[0] as $match) {
+      $end = $match[1];
+      if ($start < $end) {
+          $ss = substr($content, $start, $end - $start);
+          $result = $result . $transform_func($ss); // concatenate transformed unmatched part
+      }
+      $result = $result . $match[0]; // concatenate matched part
+      $start = $end + strlen($match[0]);
+    }
+    return $result;
+}
+
 function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
     extract(shortcode_atts(array(
         'imgheight' => '',
@@ -281,23 +306,13 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
         $style = ' imgwidth = "' . $imgwidth . '"'. $style;
     }
     
-    $content = $content . ' ';  // add a space for convenience, to avoid treating special case
-    $content = preg_replace("/<br\W*?\/>/", "\n", $content);
+    $content = $content . ' ';  // add a space at the back for convenience, to avoid treating special case
+    $content = preg_replace("/<br\W*?\/>/", "\n", $content); // again for convenience, 
+                                                             // not treating <br>'s as a special case in regex
+    // "(\[\s*yu_image_DB([^\]]*)\]([^\[]+)\[\s*\/\s*yu_image_DB\s*\])"
+    $result = transform_regex('/([\s\r\t\n]+)(?!\s\r\t\n)/', $content, 'add_db_images');
 
-    preg_match_all('/([\s\r\t\n]+)(?!\s\r\t\n)/', $content, $matches, PREG_OFFSET_CAPTURE);
-    $start = 0;
-    $end = 0;
-    $result = '';
-    foreach($matches[0] as $match) {
-      $end = $match[1];
-      if ($start < $end) {
-          $ss = substr($content, $start, $end - $start);
-          $result = $result . do_shortcode('[yu_image_DB]' . $ss . "[/yu_image_DB]");
-      }
-      $result = $result . $match[0]; // add spaces
-      $start = $end + strlen($match[0]);
-    }
-    $result = str_replace("\n", "<br/>", $result);
+    $result = str_replace("\n", "<br/>", $result); // adding <br>'s back
     
     // adding div's
     $result = '<div class="images" ' . $style . '>' . $result . "</div>";  

@@ -160,8 +160,14 @@ table .images {
   content: "";
 }
 
-.flushright:after, .p_clear:after {
+.flushright:after{
   clear: both;
+}
+
+h2:before, h1:before {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .flushright .images, .flushright2 .images {
@@ -338,12 +344,7 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
     table-layout: fixed;
 }
 
-#riddle_horsemen_table img, #riddle_horsemen_table .wp-caption-text, #riddle_horsemen_table .outside_image{
-    max-width:90%; 
-    width: 200px;
-}
-
 #riddle_horsemen_table td{
-    max-width:30%; 
+    max-width: 30%; 
     vertical-align: top;
 }
