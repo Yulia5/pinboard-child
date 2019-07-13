@@ -3849,11 +3849,19 @@ function populate_images() {
     insert_into_images("horsemen/Minamoto_no_Yoshitsune.jpg", 
                             "Komatsushima Navi", 
                             "https://www.city.komatsushima.tokushima.jp/komatsushima-navi/english/", 
-                            "Monument to Minamoto no Yoshitsune, <br/>1991 (?), Komatsushima, Tokushima, Japan");
+                            "Monument to Minamoto no Yoshitsune, <br/>1991 (?), Komatsushima city, Tokushima prefecture, Japan");
     insert_into_images("horsemen/Tbilisi_StGeorge.jpg", 
                             "wiki", 
                             "2014_Tbilisi,_Pomnik_Wolności_z_konnym_posągiem_świętego_Jerzego_(06).jpg", 
                             "The Freedom Monument (the St. George Statue), <br/>2006, Zurab Tsereteli, Tbilisi, Georgia");
+    insert_into_images("horsemen/Kajo-Central-Monument.png", 
+                            "The Hidden Japan", 
+                            "https://www.thehiddenjapan.com/yamagatacity", 
+                            "Mogami Yoshiaki statue, Yamagata Castle, <br/>?, Yamagata city, Yamagata prefecture, Japan");
+    insert_into_images("horsemen/Takemitsu.jpg", 
+                            "Kikuchi Story", 
+                            "https://www.city.kikuchi.lg.jp/kankou/en/aview/190/2038.html", 
+                            "Takemitsu statue, <br/>1992, Kikuchi city, Kumamoto prefecture, Japan");
 }
 
 ?>
