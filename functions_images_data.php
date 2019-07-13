@@ -3838,6 +3838,10 @@ function populate_images() {
                             "", 
                             "", 
                             "");
+    insert_into_images("whitworths.jpg", 
+                            "", 
+                            "", 
+                            "The original recipe");
 }
 
 ?>
