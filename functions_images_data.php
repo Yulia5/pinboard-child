@@ -3842,6 +3842,18 @@ function populate_images() {
                             "", 
                             "", 
                             "The original recipe");
+    insert_into_images("horsemen/Insta_Lannister.jpg", 
+                            "Olga Bazhutova @ Instagram", 
+                            "https://www.instagram.com/p/Br1xTWpAcV7", 
+                            "Instagram art, the Game of Thrones theme, <br/>2019, Olga Bazhutova, Moscow, Russia");
+    insert_into_images("horsemen/Minamoto_no_Yoshitsune.jpg", 
+                            "Komatsushima Navi", 
+                            "https://www.city.komatsushima.tokushima.jp/komatsushima-navi/english/", 
+                            "Monument to Minamoto no Yoshitsune, <br/>1991 (?), Komatsushima, Tokushima, Japan");
+    insert_into_images("horsemen/Tbilisi_StGeorge.jpg", 
+                            "wiki", 
+                            "2014_Tbilisi,_Pomnik_Wolności_z_konnym_posągiem_świętego_Jerzego_(06).jpg", 
+                            "The Freedom Monument (the St. George Statue), <br/>2006, Zurab Tsereteli, Tbilisi, Georgia");
 }
 
 ?>

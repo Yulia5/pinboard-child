@@ -198,7 +198,7 @@ function MY_VERY_OWN_h($attr, $content = null) {
 		'a' => ''
 	), $attr));
 	
-	$result = '<h3><a name="' . $a . '"><span style="font-weight:normal;">' . $content . '</span></a></h3>';	
+	$result = '<h1><a name="' . $a . '"><span style="font-weight:normal;">' . $content . '</span></a></h1>';	
 	return $result;
 }
 add_shortcode('yu_h', 'MY_VERY_OWN_h');
