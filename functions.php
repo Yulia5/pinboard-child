@@ -187,8 +187,6 @@ function MY_VERY_OWN_recept($attr, $content = null) {
 }
 add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
 
-
-
 /**
  * MY_VERY_OWN_h
  */
@@ -202,6 +200,16 @@ function MY_VERY_OWN_h($attr, $content = null) {
 	return $result;
 }
 add_shortcode('yu_h', 'MY_VERY_OWN_h');
+
+/**
+ * MY_VERY_OWN_clearfloats
+ */
+function MY_VERY_OWN_clearfloats($attr, $content = null) {
+	
+	$result = '<p class="clearfloats"></p>';	
+	return $result;
+}
+add_shortcode('yu_clearfloats', 'MY_VERY_OWN_clearfloats');
 
 /**
  * MY_VERY_OWN_wiki_link

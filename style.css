@@ -152,7 +152,7 @@ table .images {
 	vertical-align: top; 
 }
 
-h2:before, h1:before, .flushright:after {
+h2:before, h1:before, .flushright:after, .clearfloats:before {
   content: "";
   clear: both;
   display: table;

@@ -3790,30 +3790,22 @@ function populate_images() {
                             "The Moonraker", 
                             "https://www.imdb.com/title/tt0079574", 
                             "Portrait of King William III at the Battle of the Boyne in 1690, <br/>1690-1700, (circle of) Jan Wyck");
-    insert_into_images("horsemen/george_msk-01.jpg", 
-                            "Dimon_porter's Livejournal", 
-                            "https://dimon-porter.livejournal.com/49092.html", 
-                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
     insert_into_images("horsemen/george_msk-02.jpg", 
                             "Dimon_porter's Livejournal", 
                             "https://dimon-porter.livejournal.com/49092.html", 
-                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
-    insert_into_images("horsemen/george_msk-03.jpg", 
-                            "Dimon_porter's Livejournal", 
-                            "https://dimon-porter.livejournal.com/49092.html", 
-                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+                            "Monument to Saint George, Polkonnaja Gora, <br/>1995, Zurab Tsereteli, Moscow, Russia");
     insert_into_images("horsemen/george_msk-04.jpg", 
                             "Dimon_porter's Livejournal", 
                             "https://dimon-porter.livejournal.com/49092.html", 
-                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
-    insert_into_images("horsemen/george_msk-05.jpg", 
+                            "Monument to Saint George, Studio of Military Artists, <br/>1990-2012, Alexander Taratynov, Moscow, Russia");
+    insert_into_images("horsemen/george_msk-03.jpg", 
                             "Dimon_porter's Livejournal", 
                             "https://dimon-porter.livejournal.com/49092.html", 
-                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
-    insert_into_images("horsemen/george_msk-06.jpg", 
-                            "Dimon_porter's Livejournal", 
-                            "https://dimon-porter.livejournal.com/49092.html", 
-                            "Monument to Saint George, <br/>after 1990, Moscow, Russia");
+                            "Monument to Saint George, Komsomol'skaja Square, <br/>2012, Sergej Scherbakov, Moscow, Russia");
+    insert_into_images("horsemen/Monument__Railway_Stations_of_Moscow_.jpg", 
+                            "wiki", 
+                            'Monument_\"Railway_Stations_of_Moscow\".jpg', 
+                            "Monument to Saint George, Rijskij railway station, <br/>2014, Moscow, Russia");
     insert_into_images("horsemen/skob-1912.jpg", 
                             "Dimon_porter's Livejournal", 
                             "https://dimon-porter.livejournal.com/48734.html", 
@@ -3862,6 +3854,62 @@ function populate_images() {
                             "Kikuchi Story", 
                             "https://www.city.kikuchi.lg.jp/kankou/en/aview/190/2038.html", 
                             "Takemitsu statue, <br/>1992, Kikuchi city, Kumamoto prefecture, Japan");
+    insert_into_images("horsemen/kremlin_senate.jpg", 
+                            "wiki", 
+                            "Russia-2007-Moscow-Kremlin Senate at night.jpg", 
+                            "Kremlin Senate, with the Kremlin's Senatskaya Tower and Lenin's Mausoleum in the foreground, <br/>Red Square, Moscow, Russia");
+    insert_into_images("horsemen/george_msk-05.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George on a Kremlin Senate dome, <br/>1995, V.Tsigal' and A.Tsigal' (В.Е. и А.В. Цыгаль), Moscow, Russia");
+    insert_into_images("horsemen/StGeorge_Kremlin.jpg", 
+                            "Российские Вести", 
+                            "http://www.rosvesty.ru/2128/kremli-9/9242-pod-kupolom-ekaterininskogo-zala/", 
+                            "Monument to Saint George, Kremlin Senate domes with Spasskaya Tower in the background, <br/>1995, V.Tsigal' and A.Tsigal' (В.Е. и А.В. Цыгаль), Moscow, Russia");
+    insert_into_images("horsemen/george_msk-01.jpg", 
+                            "Dimon_porter's Livejournal", 
+                            "https://dimon-porter.livejournal.com/49092.html", 
+                            "Monument to Saint George on Manege Square (Манежная площадь), <br/>1997, Zurab Tsereteli, Moscow, Russia");
+    insert_into_images("horsemen/Moskwa_2.jpg", 
+                            "polityka.pl", 
+                            "https://portretymiast.blog.polityka.pl/2013/12/02/kijow-moskwa-geografia-miejskich-protestow/", 
+                            "Manege Square (Манежная площадь), <br/>Moscow, Russia");
+    insert_into_images("horsemen/NavarreGeorge.jpg", 
+                            "The Guardian", 
+                            "https://www.theguardian.com/world/2019/jun/21/botched-spanish-statue-st-george-lovingly-unrestored", 
+                            "Sculpture of Saint George at the church of Estella, <br/>before 2018 restoration, after 2018 restoration and after 2019 restoration, Spain");
+    insert_into_images("horsemen/Seal_of_Alexander_Nevsky_1236.png", 
+                            "wiki", 
+                            "Seal_of_Alexander_Nevsky_1236.svg", 
+                            "Seal of Alexander Nevsky, <br/>after 1236");
+    insert_into_images("horsemen/Seal_of_Ivan_3_–_Eagle_1472.png", 
+                            "wiki", 
+                            "Seal_of_Ivan_3_–_Eagle_1472.png", 
+                            "Seal of Ivan III, <br/>1472");
+    insert_into_images("horsemen/Coat_of_Arms_of_Moscow.png", 
+                            "wiki", 
+                            "Coat_of_Arms_of_Moscow.svg", 
+                            "Coat of Arms of Moscow, <br/>1993");
+    insert_into_images("horsemen/Coat_of_arms_of_Moscow_Oblast.png", 
+                            "wiki", 
+                            "Coat_of_arms_of_Moscow_Oblast_(large).svg", 
+                            "Coat of arms of Moscow Oblast, <br/>2005");
+    insert_into_images("horsemen/Moscow_COA_1781.png", 
+                            "wiki", 
+                            "Moscow_COA_1781.png", 
+                            "Coat of Arms of Moscow, <br/>1781");
+    insert_into_images("horsemen/Coat_of_Arms_of_Moscow_gubernia_Russian_empire.png", 
+                            "wiki", 
+                            "Coat_of_Arms_of_Moscow_gubernia_(Russian_empire).png", 
+                            "Coat of Arms of Moscow gubernia, <br/>mid 19th century");
+    insert_into_images("horsemen/Coat_of_Arms_of_the_Russian_Federation.svg_.png", 
+                            "wiki", 
+                            "Coat_of_Arms_of_the_Russian_Federation.svg", 
+                            "Coat of Arms of the Russian Federation, <br/>1993");
+    insert_into_images("horsemen/Lesser_Coat_of_Arms_of_Russian_Empire.svg_.png", 
+                            "wiki", 
+                            "Lesser_Coat_of_Arms_of_Russian_Empire.svg", 
+                            "Lesser Coat of Arms of the Russian Empire, <br/>1883");
 }
 
 ?>
