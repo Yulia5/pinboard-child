@@ -349,11 +349,11 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 }
 
 .utensils_ul li::before {
-    content: "🥣 ";
+    content: "🍳 ";
 }
 
 .spices_ul li::before {
-    content: "🧂 ";
+    content: "🌶 ";
 }
 
 .to_serve_ul li::before {
@@ -362,4 +362,18 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 
 .to_try li::before {
     content: "😋 ";
+}
+
+.directions_ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.directions_ol li {
+  counter-increment: my-awesome-counter;
+}
+.directions_ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #ff4040;
+  font-weight: bold;
+  font-family: 'Permanent Marker';
 }

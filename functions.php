@@ -27,6 +27,7 @@ function enqueue_styles_and_scripts() {
 		
 	/* child theme style */
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $magnific_style ) );
+	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css?family=Permanent Marker', false );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
 
@@ -177,7 +178,7 @@ function MY_VERY_OWN_recept($attr, $content = null) {
 		}
 	}
 	if (!! $recept_parts[3]) {
-		$result = $result . '<h3>Directions</h3><ol><li>' . replace_br($recept_parts[3]) . '.</li></ol>';
+		$result = $result . '<h3>Directions</h3><ol class="directions_ol"><li>' . replace_br($recept_parts[3]) . '.</li></ol>';
 	}
 	if (!! $recept_parts[4]) {
 		$result = $result . '<h3>' . $last_section . '</h3><ul class="to_try"><li>' . replace_br($recept_parts[4]) . '.</li></ul>';
