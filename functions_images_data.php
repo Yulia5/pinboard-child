@@ -3979,6 +3979,58 @@ function populate_images() {
                             "Sothebys", 
                             "2015/master-paintings-part-i-n09302/lot.75.html", 
                             "Marcus Curtius leaping into the abyss, <br/>1513,  Jacopo Carucci, called Pontormo, Florence");
+    insert_into_images("horsemen/Maiolica_di_urbino_sforza_di_marcantonio_marco_curzio_si_getta_nella_voragine_1544.jpeg", 
+                            "wiki", 
+                            "Maiolica_di_urbino,_sforza_di_marcantonio,_marco_curzio_si_getta_nella_voragine,_1544.JPG", 
+                            "Maiolica plate showing Marcus Curtius leaping into the abyss, <br/>1544, Urbino");
+    insert_into_images("horsemen/18-515962.jpg", 
+                            "RMN", 
+                            "18-515962-2C6NU0A07FTI1", 
+                            "Maiolica plate showing Marcus Curtius leaping into the abyss, <br/>1538, Urbino");
+    insert_into_images("horsemen/86-005464.jpg", 
+                            "RMN", 
+                            "86-005464-2C6NU0HLFA0F", 
+                            "Maiolica plate showing Marcus Curtius leaping into the abyss, <br/>cr. 1550, Urbino");
+    insert_into_images("horsemen/07-531221.jpg", 
+                            "RMN", 
+                            "07-531221-2C6NU0J36ZVS", 
+                            "Maiolica plate showing Marcus Curtius leaping into the abyss, <br/>1545, Urbino");
+    insert_into_images("horsemen/11-540119.jpg", 
+                            "RMN", 
+                            "11-540119-2C6NU0OZGJH6", 
+                            "Earthenware tiles showing Marcus Curtius leaping into the abyss, <br/>1542, Abaquesne Masséot, France");
+    insert_into_images("horsemen/09-523421.jpg", 
+                            "RMN", 
+                            "09-523421-2C6NU09C9X3S", 
+                            "Marcus Curtius' sacrifice, <br/>cr. 1540, Refinger Ludwig, Germany");
+    insert_into_images("horsemen/09-524700.jpg", 
+                            "RMN", 
+                            "09-524700-2C6NU09M7SOG", 
+                            "Marcus Curtius' sacrifice, <br/>cr. 1540, Refinger Ludwig, Germany");
+    insert_into_images("horsemen/Ngv,_maiolica_di_faenza,_piatto_con_il_salto_di_marco_curzio,_1525-30.JPG", 
+                            "wiki", 
+                            "Ngv_maiolica_di_faenza_piatto_con_il_salto_di_marco_curzio_1525-30.jpeg", 
+                            "Maiolica plate showing Marcus Curtius leaping into the abyss, <br/>cr. 1525, Faenza");
+    insert_into_images("horsemen/2008BV3859_jpg_l.jpg", 
+                            "VA", 
+                            "O129518", 
+                            "Casket showing Marcus Curtius leaping into the abyss, <br/>cr. 1500, Northern Italy");
+    insert_into_images("horsemen/2015HP6167_jpg_l.jpg", 
+                            "VA", 
+                            "O369129", 
+                            "Casket showing Marcus Curtius leaping into the abyss, <br/>1500-50, Italy");
+    insert_into_images("horsemen/093406d1-6349-4d2c-979d-72991f3c3c82.jpg", 
+                            "SKD", 
+                            "119026", 
+                            "The Roman Marcus Curtius over the fiery abyss, <br/>1591-5 (?), Egidius Lobenigk, Dresden (?)");
+    insert_into_images("horsemen/ANSA_XII_113_43777.jpg", 
+                            "KHM", 
+                            "73844", 
+                            "Victim's death of Marcus Curtius, <br/>cr. 1560, Francesco Tortorino, Milan");
+    insert_into_images("horsemen/f5376b07-a756-490f-b8b3-8f56be73c688.jpg", 
+                            "SKD", 
+                            "119026", 
+                            "Marcus Curtius rides into the abyss, <br/>1591-5 (?), Georg Pencz, Germany");
 }
 
 ?>
