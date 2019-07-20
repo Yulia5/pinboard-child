@@ -25,13 +25,14 @@ function generate_src() {
     insert_into_src("VA",       '© Victoria and Albert Museum, London',         'http://collections.vam.ac.uk/item/', '/');
     insert_into_src("Seals",    'Seals @ mernick.org.uk/seals',                 'http://www.mernick.org.uk/seals/');   
     insert_into_src("numisbids",'NumisBids',                                    'https://www.numisbids.com/n.php?p=lot&');    
+    insert_into_src("moneta",   'Монеты России (Coins of Russia)',              'http://moneta-russia.ru/');    
     insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
-    insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/');     
     insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');  
+
     insert_into_src("Yoga Outlet",       "Yoga Outlet",                         "http://www.yogaoutlet.com/guides/how-to-do-");    
 } 
 
@@ -1567,7 +1568,7 @@ function populate_images() {
     insert_into_images("horsemen/Faenza_Bergantini_22019.jpg", 
                             "wiki", 
                             "Faenza_Bergantini_22019.JPG", 
-                            "Bergantini cup depicting the history of the sacrifice of Marco Curcio, <br/>June 17, 1529, Pietro Bergantini, Faenza");
+                            "Bergantini cup depicting the history of the sacrifice of Marcus Curtius, <br/>1529, Pietro Bergantini, Faenza");
     insert_into_images("horsemen/Fragmento-de-mosaico-romano-escena-de-caza-Museo-Nacional-de-Arte-Romano-de-M-rida-Espa-a-Foto-de-archivo.jpg", 
                             "DOMVS ROMANA", 
                             "https://domus-romana.blogspot.co.uk/2012/12/otium-i-ars-venatoria.html", 
@@ -3804,7 +3805,7 @@ function populate_images() {
                             "Monument to Saint George, Komsomol'skaja Square, <br/>2012, Sergej Scherbakov, Moscow, Russia");
     insert_into_images("horsemen/Monument__Railway_Stations_of_Moscow_.jpg", 
                             "wiki", 
-                            'Monument_\"Railway_Stations_of_Moscow\".jpg', 
+                            'Monument_QuoteRailway_Stations_of_MoscowQuote.jpg', 
                             "Monument to Saint George, Rijskij railway station, <br/>2014, Moscow, Russia");
     insert_into_images("horsemen/skob-1912.jpg", 
                             "Dimon_porter's Livejournal", 
@@ -3877,7 +3878,7 @@ function populate_images() {
     insert_into_images("horsemen/NavarreGeorge.jpg", 
                             "The Guardian", 
                             "https://www.theguardian.com/world/2019/jun/21/botched-spanish-statue-st-george-lovingly-unrestored", 
-                            "Sculpture of Saint George at the church of Estella, <br/>before 2018 restoration, after 2018 restoration and after 2019 restoration, Spain");
+                            "Statue of Saint George at the church of Estella, <br/>16th-century, before 2018 restoration, after 2018 restoration and after 2019 restoration, Spain");
     insert_into_images("horsemen/Seal_of_Alexander_Nevsky_1236.png", 
                             "wiki", 
                             "Seal_of_Alexander_Nevsky_1236.svg", 
@@ -3910,6 +3911,74 @@ function populate_images() {
                             "wiki", 
                             "Lesser_Coat_of_Arms_of_Russian_Empire.svg", 
                             "Lesser Coat of Arms of the Russian Empire, <br/>1883");
+    insert_into_images("horsemen/2-kopeyki-1795.jpg", 
+                            "moneta", 
+                            "imperiya/ekaterina-2/mednye-monety-ekateriny-2.php", 
+                            "Russian kopek, Catherine II, <br/>1795");
+    insert_into_images("horsemen/petr-2-kopeyka.jpg", 
+                            "moneta", 
+                            "imperiya/petr-2/mednye-monety-petra-2.php", 
+                            "Russian kopek, Peter II, <br/>1728-9");
+    insert_into_images("horsemen/83353451.jpg", 
+                            "rarcoin.ru", 
+                            "http://rarcoin.ru/publ/petr_i_1700_1725/cena_monet_petra_i_1704_goda/1_kopejka_1704_goda/18-1-0-46", 
+                            "Russian kopek, Peter I, <br/>1704");
+    insert_into_images("horsemen/84267309.jpg", 
+                            "rarcoin.ru", 
+                            "http://rarcoin.ru/publ/petr_i_1700_1725/cena_monet_petra_i_1704_goda/1_kopejka_1704_goda/18-1-0-46", 
+                            "Russian kopek, Peter I, <br/>1704");
+    insert_into_images("horsemen/1997-01m-kr.jpg", 
+                            "moneta", 
+                            "sovremen/rossiya-1997/1-kopeyka-1997-goda-tsena.php", 
+                            "Russian kopek, Boris Yeltsin, <br/>1997");
+    insert_into_images("horsemen/1997-01m-ka.jpg", 
+                            "moneta", 
+                            "sovremen/rossiya-1997/1-kopeyka-1997-goda-tsena.php", 
+                            "Russian kopek, Boris Yeltsin, <br/>1997");
+    insert_into_images("horsemen/kopeks.jpg", 
+                            "learn-your-history.in.ua", 
+                            "http://www.learn-your-history.in.ua/index.php?route=information/information&information_id=18", 
+                            "Russian kopeks, Tzar Michael Romanov, <br/>1613-1645");
+    insert_into_images("horsemen/AN00134115_001_l.jpg", 
+                            "BM", 
+                            "1503745", 
+                            "Marcus Curtius, The Roman Heroes series, <br/>1586, Hendrik Goltzius");
+    insert_into_images("horsemen/AN00134115_001_l.jpg", 
+                            "BM", 
+                            "1503745", 
+                            "Marcus Curtius, The Roman Heroes series, <br/>1586, Hendrik Goltzius");
+    insert_into_images("horsemen/Goltzius_MarcusCurtius_Christies.png", 
+                            "Christies", 
+                            "paintings/circle-of-hendrick-goltzius-marcus-curtius-6009811-details.aspx", 
+                            "Marcus Curtius, The Roman Heroes series, <br/>1586-1617, circle of Hendrick Goltzius");
+    insert_into_images("horsemen/Goltzius_MarcusCurtius_Christies.png", 
+                            "Christies", 
+                            "paintings/circle-of-hendrick-goltzius-marcus-curtius-6009811-details.aspx", 
+                            "Marcus Curtius, The Roman Heroes series, <br/>1586-1617, circle of Hendrick Goltzius");
+    insert_into_images("horsemen/MORION_Christies.png", 
+                            "Christies", 
+                            "lot/a-fine-etched-and-gilt-morion-of-4711671-details.aspx", 
+                            "A morion of a guard of the Prince Electors of Saxony, <br/>cr. 1580-91, Dresden");
+    insert_into_images("horsemen/CASKET_Christies.png", 
+                            "Christies", 
+                            "lot/a-parcel-gilt-rectangular-carved-wood-and-ivory-4300767-details.aspx", 
+                            "Wood and ivory casket carved with scenes including Marcus Curtius sacrifice, <br/>cr. 1500, Italy");
+    insert_into_images("horsemen/COUPE_Christies.png", 
+                            "Christies", 
+                            "lot/coupe-et-son-couvercle-en-vermeil-peut-5157494-details.aspx", 
+                            "A lidded cup with scenes including Marcus Curtius sacrifice, <br/>cr. 1580,  Joerg (Georg) Plainchhiern (?), Landshut (?), Germany");
+    insert_into_images("horsemen/EWER_BY_ADAM_VAN_VIANEN_UTRECHT_1619_Christies.png", 
+                            "Christies", 
+                            "lot/an-exceptional-dutch-silver-ewer-by-adam-6137935-details.aspx", 
+                            "A Dutch silver ewer with scenes including Marcus Curtius sacrifice, <br/>1619,  Adam van Vianen,  Utrecht, Netherlands");
+    insert_into_images("horsemen/EWER_BY_ADAM_VAN_VIANEN_UTRECHT_1619_Christies_2.png", 
+                            "Christies", 
+                            "lot/an-exceptional-dutch-silver-ewer-by-adam-6137935-details.aspx", 
+                            "A Dutch silver ewer with scenes including Marcus Curtius sacrifice, <br/>1619,  Adam van Vianen,  Utrecht, Netherlands");
+    insert_into_images("horsemen/pontormo_carucci.png", 
+                            "Sothebys", 
+                            "2015/master-paintings-part-i-n09302/lot.75.html", 
+                            "Marcus Curtius leaping into the abyss, <br/>1513,  Jacopo Carucci, called Pontormo, Florence");
 }
 
 ?>
