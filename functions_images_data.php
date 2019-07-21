@@ -3958,7 +3958,7 @@ function populate_images() {
     insert_into_images("horsemen/MORION_Christies.png", 
                             "Christies", 
                             "lot/a-fine-etched-and-gilt-morion-of-4711671-details.aspx", 
-                            "A morion of a guard of the Prince Electors of Saxony, <br/>cr. 1580-91, Dresden");
+                            "A morion of a guard of the Prince Electors of Saxony showing Marcus Curtius sacrifice, <br/>cr. 1580-91, Dresden");
     insert_into_images("horsemen/CASKET_Christies.png", 
                             "Christies", 
                             "lot/a-parcel-gilt-rectangular-carved-wood-and-ivory-4300767-details.aspx", 
@@ -4002,12 +4002,12 @@ function populate_images() {
     insert_into_images("horsemen/09-523421.jpg", 
                             "RMN", 
                             "09-523421-2C6NU09C9X3S", 
-                            "Marcus Curtius' sacrifice, <br/>cr. 1540, Refinger Ludwig, Germany");
+                            "Marcus Curtius' sacrifice (detail), <br/>cr. 1540, Refinger Ludwig, Germany");
     insert_into_images("horsemen/09-524700.jpg", 
                             "RMN", 
                             "09-524700-2C6NU09M7SOG", 
                             "Marcus Curtius' sacrifice, <br/>cr. 1540, Refinger Ludwig, Germany");
-    insert_into_images("horsemen/Ngv,_maiolica_di_faenza,_piatto_con_il_salto_di_marco_curzio,_1525-30.JPG", 
+    insert_into_images("horsemen/Ngv_maiolica_di_faenza_piatto_con_il_salto_di_marco_curzio_1525-30JPG.jpg", 
                             "wiki", 
                             "Ngv_maiolica_di_faenza_piatto_con_il_salto_di_marco_curzio_1525-30.jpeg", 
                             "Maiolica plate showing Marcus Curtius leaping into the abyss, <br/>cr. 1525, Faenza");
@@ -4030,7 +4030,83 @@ function populate_images() {
     insert_into_images("horsemen/f5376b07-a756-490f-b8b3-8f56be73c688.jpg", 
                             "SKD", 
                             "119026", 
-                            "Marcus Curtius rides into the abyss, <br/>1591-5 (?), Georg Pencz, Germany");
+                            "Marcus Curtius rides into the abyss, <br/>cr. 1535, Georg Pencz, Germany");
+    insert_into_images("horsemen/N-1304-00-000017-wpu-1.jpg", 
+                            "The National Gallery", 
+                            "https://www.nationalgallery.org.uk/paintings/possibly-by-bacchiacca-marcus-curtius", 
+                            "Marcus Curtius, <br/>cr. 1520-30, possibly by Bacchiacca, Florence");
+    insert_into_images("horsemen/morion_windsor.jpg", 
+                            "RC", 
+                            "67340-a", 
+                            "'Spanish' morion with cartouches depicting Marcus Curtius and Mucius Scaevola, <br/>cr. 1570-80, Northern Italy, probably Milan");
+    insert_into_images("horsemen/Deruta_turk.png", 
+                            "vogue.com", 
+                            "https://www.vogue.com/article/hamish-bowles-deruta-ceramics-italy", 
+                            "Plate depicting a cavalryman, <br/>cr. 1550, Deruta");
+    insert_into_images("horsemen/AN1613279555_l.jpg", 
+                            "BM", 
+                            "32355", 
+                            "Cameo depicting the devotion of Marcus Curtius, <br/>16th century, Italy");
+    insert_into_images("horsemen/Cameo_MC.jpg", 
+                            "HM", 
+                            "18.%20carved%20stones/129952/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_R0dzQyNnQ28_J1NXQwc_YMCTIOc_dwNDE30w8EKDHAARwP9KGL041EQhd94L0IWAH1gVOTr7JuuH1WQWJKhm5mXlq8fYWihp5CcWFSWmqJQXJKfl1oMFDKytDQ1AjooCs1IT29zoJEhph7-_mHORs4mUAV4HFWQGxpR5eNhkOmoqAgAFsV4zg!!/dz/d5/L2dBISEvZ0FBIS9nQSEh", 
+                            "Cameo depicting the feat of Marcus Curtius, <br/>third quarter of the 16th century, Italy");
+    insert_into_images("horsemen/Cameo_MC.jpg", 
+                            "HM", 
+                            "18.%20carved%20stones/129952/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_R0dzQyNnQ28_J1NXQwc_YMCTIOc_dwNDE30w8EKDHAARwP9KGL041EQhd94L0IWAH1gVOTr7JuuH1WQWJKhm5mXlq8fYWihp5CcWFSWmqJQXJKfl1oMFDKytDQ1AjooCs1IT29zoJEhph7-_mHORs4mUAV4HFWQGxpR5eNhkOmoqAgAFsV4zg!!/dz/d5/L2dBISEvZ0FBIS9nQSEh", 
+                            "Cameo depicting the feat of Marcus Curtius, <br/>third quarter of the 16th century, probably Francesco Tortorino, Italy");
+    insert_into_images("horsemen/2006BE8104_jpg_ds.jpg", 
+                            "VA", 
+                            "O159665", 
+                            "Plate depicting the good Roman Curtius in his grim act devotion , <br/>1550, Italy");
+    insert_into_images("horsemen/HJRK_A_936_17551.jpg", 
+                            "KHM", 
+                            "373382", 
+                            "Balaclava with the depictions of Marcus Curtius and Horatius Cocles, <br/>1560, Milan");
+    insert_into_images("horsemen/SMB_Curtius.png", 
+                            "KHM", 
+                            "18200293", 
+                            "Medallion of Francisco II Gonzaga with the depiction of Marcus Curtius, <br/>1530, Bartulus Talpa, Mantua");
+    insert_into_images("horsemen/1483r.jpg", 
+                            "Met", 
+                            "461283", 
+                            "Self-sacrifice of Marcus Curtius, <br/>1596-1600, Paulus Willemsz van Vianen, Netherlands");
+    insert_into_images("horsemen/1483r.jpg", 
+                            "Met", 
+                            "461283", 
+                            "Self-sacrifice of Marcus Curtius, <br/>1596-1600, Paulus Willemsz van Vianen, Netherlands");
+    insert_into_images("horsemen/AN00606110_001_l.jpg", 
+                            "BM", 
+                            "1424395", 
+                            "Design for a pendant with the depiction of Marcus Curtius, <br/>1555-1562, Pierre Woeiriot, France");
+    insert_into_images("horsemen/AN00610899_001_l.jpg", 
+                            "BM", 
+                            "1512344", 
+                            "Roundel with Marcus Curtius, <br/>1540, Hans Brosamer, Germany");
+    insert_into_images("horsemen/AN00610940_001_l.jpg", 
+                            "BM", 
+                            "1512485", 
+                            "Roundel with naked Marcus Curtius, <br/>1529, Germany");
+    insert_into_images("horsemen/AN01188413_001_l.jpg", 
+                            "BM", 
+                            "43149", 
+                            "Panel of embossed iron showing Marcus Curtius leaping into the chasm, <br/>cr. 1570, Antwerp, Belgium");
+    insert_into_images("horsemen/AN01500283_001_l.jpg", 
+                            "BM", 
+                            "31701", 
+                            "The Griffin's claw cup showing Marcus Curtius leaping into the chasm and Lot and his daughters, <br/>1541-1583, Hans and Lorenz Faust, Mainz, Germany");
+    insert_into_images("horsemen/AN01500305_001_l.jpg", 
+                            "BM", 
+                            "31701", 
+                            "Detail of the Griffin's claw cup showing Marcus Curtius leaping into the chasm, <br/>1541-1583, Hans and Lorenz Faust, Mainz, Germany");
+    insert_into_images("horsemen/AN00083513_001_l.jpg", 
+                            "BM", 
+                            "1443797", 
+                            "Two large and four small pendants; St George on the large pendant on l, Marcus Curtius on r, <br/>1562, Erasmus Hornick, Nuremberg, Germany");
+    insert_into_images("horsemen/AN1613324649_l.jpg", 
+                            "BM", 
+                            "76662", 
+                            "A hat badge with the figure of Marcus Curtius leaping into the chasm, <br/>16th century, Italy");
 }
 
 ?>
