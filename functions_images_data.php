@@ -30,7 +30,7 @@ function generate_src() {
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
-    insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/');     
+    insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '');     
     insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');  
 
     insert_into_src("Yoga Outlet",       "Yoga Outlet",                         "http://www.yogaoutlet.com/guides/how-to-do-");    
@@ -3232,11 +3232,11 @@ function populate_images() {
                             "Copy of the lost Battle of Anghiari by Leonardo da Vinci, 1504-5, <br/>circa 1603, Peter Paul Rubens");
     insert_into_images("horsemen/SCARAB_bellerophone.jpg", 
                             "Christies", 
-                            "ancient-art-antiquities/an-etruscan-carnelian-scarab-and-gold-finger-5158072-details.aspx", 
+                            "an-etruscan-carnelian-scarab-and-gold-finger-5158072", 
                             "Carnelian scarab and gold finger engraved with Bellerophon and the Chimaera, <br/>late 5th century BC, Etruscan");
     insert_into_images("horsemen/a_meissen_ormolu-mounted_equestrian_figure_circa_1745-50_d5440168h.jpg", 
                             "Christies", 
-                            "lot/a-meissen-ormolu-mounted-equestrian-figure-circa-1745-50-5440168-details.aspx", 
+                            "a-meissen-ormolu-mounted-equestrian-figure-circa-1745-50-5440168", 
                             "A Meissen Equestrian Figure,<br/>cr. 1745-50");
     insert_into_images("horsemen/augustus-iii.jpg", 
                             "Langeloh", 
@@ -3252,11 +3252,11 @@ function populate_images() {
                             "An equestrian portrait of a gentleman, <br/>?, Studio of Claude Déruet");
     insert_into_images("horsemen/d3802122x.jpg", 
                             "Christies", 
-                            "lot/at-sf-2-10-0-0-10-2-no3001-3802122-details.aspx", 
+                            "at-sf-2-10-0-0-10-2-no3001-3802122", 
                             "Equestrian portrait of a prince in armour, with the Order of the Golden Fleece, <br/>before 1684, Gonzales Coques");
     insert_into_images("horsemen/d5425674a.jpg", 
                             "Christies", 
-                            "sculptures-statues-figures/a-meissen-equestrian-figure-of-augustus-iii-5425674-details.aspx", 
+                            "a-meissen-equestrian-figure-of-augustus-iii-5425674", 
                             "Augustus III porcelain figurine,<br/>20th century, incised in 1796,<br/>after a model by Meyer");
     insert_into_images("yoga/downwarddog.jpg", 
                             "Yoga Outlet", 
@@ -3288,7 +3288,7 @@ function populate_images() {
                             "Magical pendant with Holy Rider on horseback, trampling over a dragon lying on the ground, <br/>5th century, Byzantine");
     insert_into_images("horsemen/thomas_gainsborough_ra_after_sir_anthony_van_dyck_equestrian_portrait_d5639296h-1.jpg", 
                             "Christies", 
-                            "paintings/thomas-gainsborough-ra-equestrian-portrait-of-albert-5639296-details.aspx", 
+                            "thomas-gainsborough-ra-equestrian-portrait-of-albert-5639296", 
                             "Equestrian portrait of the Duke of Arenberg (after Anthony van Dyck), <br/>1742-88, Thomas Gainsborough, England");
     insert_into_images("yoga/yoga_chairposetwist_01_300x3501.jpg", 
                             "Yoga Outlet", 
@@ -3949,32 +3949,32 @@ function populate_images() {
                             "Marcus Curtius, The Roman Heroes series, <br/>1586, Hendrik Goltzius");
     insert_into_images("horsemen/Goltzius_MarcusCurtius_Christies.png", 
                             "Christies", 
-                            "paintings/circle-of-hendrick-goltzius-marcus-curtius-6009811-details.aspx", 
+                            "circle-of-hendrick-goltzius-marcus-curtius-6009811", 
                             "Marcus Curtius, The Roman Heroes series, <br/>1586-1617, circle of Hendrick Goltzius");
     insert_into_images("horsemen/Goltzius_MarcusCurtius_Christies.png", 
                             "Christies", 
-                            "paintings/circle-of-hendrick-goltzius-marcus-curtius-6009811-details.aspx", 
+                            "circle-of-hendrick-goltzius-marcus-curtius-6009811", 
                             "Marcus Curtius, The Roman Heroes series, <br/>1586-1617, circle of Hendrick Goltzius");
     insert_into_images("horsemen/MORION_Christies.png", 
                             "Christies", 
-                            "lot/a-fine-etched-and-gilt-morion-of-4711671-details.aspx", 
+                            "a-fine-etched-and-gilt-morion-of-4711671", 
                             "A morion of a guard of the Prince Electors of Saxony showing Marcus Curtius sacrifice, <br/>cr. 1580-91, Dresden");
     insert_into_images("horsemen/CASKET_Christies.png", 
                             "Christies", 
-                            "lot/a-parcel-gilt-rectangular-carved-wood-and-ivory-4300767-details.aspx", 
+                            "a-parcel-gilt-rectangular-carved-wood-and-ivory-4300767", 
                             "Wood and ivory casket carved with scenes including Marcus Curtius sacrifice, <br/>cr. 1500, Italy");
     insert_into_images("horsemen/COUPE_Christies.png", 
                             "Christies", 
-                            "lot/coupe-et-son-couvercle-en-vermeil-peut-5157494-details.aspx", 
-                            "A lidded cup with scenes including Marcus Curtius sacrifice, <br/>cr. 1580,  Joerg (Georg) Plainchhiern (?), Landshut (?), Germany");
+                            "coupe-et-son-couvercle-en-vermeil-peut-5157494", 
+                            "A lidded cup with scenes including Marcus Curtius sacrifice, <br/>cr. 1580, Joerg (Georg) Plainchhiern (?), Landshut (?), Germany");
     insert_into_images("horsemen/EWER_BY_ADAM_VAN_VIANEN_UTRECHT_1619_Christies.png", 
                             "Christies", 
-                            "lot/an-exceptional-dutch-silver-ewer-by-adam-6137935-details.aspx", 
+                            "an-exceptional-dutch-silver-ewer-by-adam-6137935", 
                             "A Dutch silver ewer with scenes including Marcus Curtius sacrifice, <br/>1619,  Adam van Vianen,  Utrecht, Netherlands");
     insert_into_images("horsemen/EWER_BY_ADAM_VAN_VIANEN_UTRECHT_1619_Christies_2.png", 
                             "Christies", 
-                            "lot/an-exceptional-dutch-silver-ewer-by-adam-6137935-details.aspx", 
-                            "A Dutch silver ewer with scenes including Marcus Curtius sacrifice, <br/>1619,  Adam van Vianen,  Utrecht, Netherlands");
+                            "an-exceptional-dutch-silver-ewer-by-adam-6137935", 
+                            "A Dutch silver ewer with scenes including Marcus Curtius sacrifice, <br/>1619, Adam van Vianen, Utrecht, Netherlands");
     insert_into_images("horsemen/pontormo_carucci.png", 
                             "Sothebys", 
                             "2015/master-paintings-part-i-n09302/lot.75.html", 
@@ -4050,15 +4050,11 @@ function populate_images() {
     insert_into_images("horsemen/Cameo_MC.jpg", 
                             "HM", 
                             "18.%20carved%20stones/129952/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_R0dzQyNnQ28_J1NXQwc_YMCTIOc_dwNDE30w8EKDHAARwP9KGL041EQhd94L0IWAH1gVOTr7JuuH1WQWJKhm5mXlq8fYWihp5CcWFSWmqJQXJKfl1oMFDKytDQ1AjooCs1IT29zoJEhph7-_mHORs4mUAV4HFWQGxpR5eNhkOmoqAgAFsV4zg!!/dz/d5/L2dBISEvZ0FBIS9nQSEh", 
-                            "Cameo depicting the feat of Marcus Curtius, <br/>third quarter of the 16th century, Italy");
-    insert_into_images("horsemen/Cameo_MC.jpg", 
-                            "HM", 
-                            "18.%20carved%20stones/129952/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_R0dzQyNnQ28_J1NXQwc_YMCTIOc_dwNDE30w8EKDHAARwP9KGL041EQhd94L0IWAH1gVOTr7JuuH1WQWJKhm5mXlq8fYWihp5CcWFSWmqJQXJKfl1oMFDKytDQ1AjooCs1IT29zoJEhph7-_mHORs4mUAV4HFWQGxpR5eNhkOmoqAgAFsV4zg!!/dz/d5/L2dBISEvZ0FBIS9nQSEh", 
                             "Cameo depicting the feat of Marcus Curtius, <br/>third quarter of the 16th century, probably Francesco Tortorino, Italy");
     insert_into_images("horsemen/2006BE8104_jpg_ds.jpg", 
                             "VA", 
                             "O159665", 
-                            "Plate depicting the good Roman Curtius in his grim act devotion , <br/>1550, Italy");
+                            "Plate depicting the good Roman Curtius in his grim act devotion, <br/>cr. 1550, Italy");
     insert_into_images("horsemen/HJRK_A_936_17551.jpg", 
                             "KHM", 
                             "373382", 
@@ -4067,10 +4063,6 @@ function populate_images() {
                             "KHM", 
                             "18200293", 
                             "Medallion of Francisco II Gonzaga with the depiction of Marcus Curtius, <br/>1530, Bartulus Talpa, Mantua");
-    insert_into_images("horsemen/1483r.jpg", 
-                            "Met", 
-                            "461283", 
-                            "Self-sacrifice of Marcus Curtius, <br/>1596-1600, Paulus Willemsz van Vianen, Netherlands");
     insert_into_images("horsemen/1483r.jpg", 
                             "Met", 
                             "461283", 
@@ -4107,6 +4099,30 @@ function populate_images() {
                             "BM", 
                             "76662", 
                             "A hat badge with the figure of Marcus Curtius leaping into the chasm, <br/>16th century, Italy");
+    insert_into_images("horsemen/TroyPlate_Christies.png", 
+                            "Christies", 
+                            "an-italian-maiolica-istoriato-charger-circa-1550-60-5436804", 
+                            "A maiolica plate showing ablazed Troy, <br/>cr. 1550-60, workshop of Virgiliotto Calamelli, Urbino or Faenza");
+    insert_into_images("horsemen/PlateBridge_Christies.png", 
+                            "Christies", 
+                            "an-urbino-istoriato-charger-piatto-di-pompa-4125688", 
+                            "A maiolica plate showing a battle on a drawbridge, <br/>cr. 1540, the workshop of Guido da Merlingo, Urbino");
+    insert_into_images("horsemen/Hunt_Urbino_Christies.png", 
+                            "Christies", 
+                            "an-urbino-istoriato-dish-late-16th-century-4125691", 
+                            "A maiolica plate showing a hunting scene, <br/>late 16th century, Urbino");
+    insert_into_images("horsemen/MC_SCHEUFFELIN-_Christies.png", 
+                            "Christies", 
+                            "an-urbino-maiolica-armorial-istoriato-dish-from-5680512", 
+                            "A maiolica plate from the Scheuffelin service showing the sacrifice of Marcus Curtius, <br/>cr. 1560, Urbino");
+    insert_into_images("horsemen/1951-107-3.jpg", 
+                            "Philadelphia Museum of Art", 
+                            "https://www.philamuseum.org/collections/permanent/52185.html", 
+                            "A maiolica plate showing the sacrifice of Marcus Curtius, <br/>cr. 1560-1570, workshop of Guido Durantino or of Orazio Fontana, Urbino");
+    insert_into_images("horsemen/mc_artic.jpg", 
+                            "Art Institute of Chicago", 
+                            "https://www.artic.edu/artworks/122101", 
+                            "Marcus Curtius Leaping into the Abyss, <br/>cr. 1530, Pseudo-Pacchia, Siena");
 }
 
 ?>
