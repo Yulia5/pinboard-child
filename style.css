@@ -14,11 +14,10 @@
 ------------------------------------------------------- */
 
 h1, h2, h3 { 
+	color: #000000;
+	cursor: text;
+	font-weight:normal;
 	text-decoration: underline; 
-}
-
-ul.checkmark li:before {
-    content:"\2713\0020";
 }
 
 /******************************************************************************
@@ -336,7 +335,7 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
     vertical-align: top;
 }
 
-.ingredients_ul, .utensils_ul, .spices_ul, .to_serve_ul, .to_try {
+.ingredients_ul, .utensils_ul, .spices_ul, .to_serve_ul, .to_try, .checkmark {
  	list-style: none;
  	li {
     	padding-left: 1rem;
@@ -362,6 +361,14 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 
 .to_try li::before {
     content: "😋 ";
+}
+
+.checkmark li::before {
+    content: "\2713\0020";
+}
+
+ul.checkmark li:before {
+    content:"\2713\0020";
 }
 
 .directions_ol {

@@ -4123,6 +4123,14 @@ function populate_images() {
                             "Art Institute of Chicago", 
                             "https://www.artic.edu/artworks/122101", 
                             "Marcus Curtius Leaping into the Abyss, <br/>cr. 1530, Pseudo-Pacchia, Siena");
+    insert_into_images("rs2G9A1355-sml-narrow.jpg", 
+                            "Sergei Riaboff", 
+                            "http://serhi001.weebly.com/", 
+                            "Me, April 2017");
+    insert_into_images("rs2G9A1355-sml-narrow.jpg", 
+                            "HAM", 
+                            "244723", 
+                            "Giovanni de Medici in a Duel, <br/>cr. 1578, Hendrick Goltzius, Siena");
 }
 
 ?>
