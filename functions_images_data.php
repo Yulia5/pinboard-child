@@ -296,7 +296,7 @@ function populate_images() {
     insert_into_images("horsemen/1280px-Giorgio_Vasari_-_The_rout_of_the_Pisans_at_Torre_San_Vincenzo_-_Google_Art_Project.jpg", 
                             "wiki", 
                             "Giorgio_Vasari_-_The_rout_of_the_Pisans_at_Torre_San_Vincenzo_-_Google_Art_Project.jpg", 
-                            "Defeat of the Pisans at the Tower of San Vincenzo,<br/>1568-71, Giorgio Vasari");
+                            "Defeat of the Pisans at the Tower of San Vincenzo,<br/>1568-71, Giorgio Vasari, Palazzo Vecchio, Florence");
     insert_into_images("horsemen/1280px-Monument_to_Peter_the_Great_in_Moscow.jpg", 
                             "Wikipedia", 
                             "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Monument_to_Peter_the_Great_in_Moscow.jpg", 
@@ -3341,7 +3341,7 @@ function populate_images() {
     insert_into_images("horsemen/Giorgio_Vasari_-_The_battle_of_Marciano_in_Val_di_Chiana_-_Google_Art_Project.jpg", 
                             "wiki", 
                             "Giorgio_Vasari_-_The_battle_of_Marciano_in_Val_di_Chiana_-_Google_Art_Project.jpg", 
-                            "The battle of Marciano in Val di Chiana,  <br/>1570-1, Giorgio Vasari"); 
+                            "The battle of Marciano in Val di Chiana,  <br/>1570-1, Giorgio Vasari, Palazzo Vecchio, Florence"); 
     insert_into_images("berets/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg", 
                             "wiki", 
                             "Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg", 
@@ -4159,6 +4159,18 @@ function populate_images() {
                             "VA", 
                             "O160308", 
                             "Plate depicting The Devotion of Marcus Curtius, <br/>cr. 1525, Faenza");
+    insert_into_images("horsemen/Palazzo_Vecchio.jpg", 
+                            "wiki", 
+                            "Firenze_Palazzo_della_Signoria,_better_known_as_the_Palazzo_Vecchio.jpg", 
+                            "Palazzo Vecchio (the town hall of Florence), <br/>Founded in 1314, Florence");
+    insert_into_images("horsemen/Francesco_salviati_storie_di_furio_camillo_1543-45_assalto_ai_galli_che_hanno_saccheggiato_roma_16_cavalli.jpg", 
+                            "wiki", 
+                            "Francesco_salviati,_storie_di_furio_camillo,_1543-45,_assalto_ai_galli_che_hanno_saccheggiato_roma,_16_cavalli.JPG", 
+                            "The stories of Furio Camillo (detail), <br/>1543-5, Francesco Salviati, Palazzo Vecchio, Florence");
+   insert_into_images("horsemen/Jan_Van_der_Straet_known_as_Giovanni_Stradano_-_Horse_joust_in_Piazza_Santa_Croce_-_Google_Art_Project.jpg", 
+                            "wiki", 
+                            "Jan_Van_der_Straet_(known_as_Giovanni_Stradano)_-_Horse_joust_in_Piazza_Santa_Croce_-_Google_Art_Project.jpg", 
+                            "Horse joust in Piazza Santa Croce, <br/>1561 - 1562, Stradanus, Palazzo Vecchio, Florence");
 }
 
 ?>
