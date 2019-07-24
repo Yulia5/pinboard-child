@@ -1444,27 +1444,27 @@ function populate_images() {
     insert_into_images("horsemen/DP857117.jpg", 
                             "Met", 
                             "400929", 
-                            "Emperor Gaius on Horseback, plate 4");
+                            "Emperor Gaius on Horseback, plate 4, <br/>1596, Antonio Tempesta");
     insert_into_images("horsemen/DP857123.jpg", 
                             "Met", 
                             "400925", 
-                            "Emperor Nero on Horseback, plate 6");
+                            "Emperor Nero on Horseback, plate 6, <br/>1596, Antonio Tempesta");
     insert_into_images("horsemen/DP857126.jpg", 
                             "Met", 
                             "400928", 
-                            "Emperor Julius Caesar on Horseback, plate 1");
+                            "Emperor Julius Caesar on Horseback, plate 1, <br/>1596, Antonio Tempesta");
     insert_into_images("horsemen/DP857129.jpg", 
                             "Met", 
                             "400937", 
-                            "Emperor Vitellus on Horseback, plate 9");
+                            "Emperor Vitellus on Horseback, plate 9, <br/>1596, Antonio Tempesta");
     insert_into_images("horsemen/DP857132.jpg", 
                             "Met", 
                             "400942", 
-                            "Emperor Vespasian on Horseback, plate 11");
+                            "Emperor Vespasian on Horseback, plate 11, <br/>1596, Antonio Tempesta");
     insert_into_images("horsemen/DP857134.jpg", 
                             "Met", 
                             "400932", 
-                            "Emperor Otho on Horseback, plate 8");
+                            "Emperor Otho on Horseback, plate 8, <br/>1596, Antonio Tempesta");
     insert_into_images("horsemen/DT11728.jpg", 
                             "Met", 
                             "317829", 
@@ -4127,10 +4127,38 @@ function populate_images() {
                             "Sergei Riaboff", 
                             "http://serhi001.weebly.com/", 
                             "Me, April 2017");
-    insert_into_images("rs2G9A1355-sml-narrow.jpg", 
+    insert_into_images("horsemen/20493560.jpeg", 
                             "HAM", 
                             "244723", 
-                            "Giovanni de Medici in a Duel, <br/>cr. 1578, Hendrick Goltzius, Siena");
+                            "Giovanni de Medici in a Duel, <br/>cr. 1578, Hendrick Goltzius, Netherlands");
+    insert_into_images("horsemen/AN01206591_001_l.jpg", 
+                            "BM", 
+                            "3473809", 
+                            "Portrait of Maurice of Nassau, Prince of Orange, <br/>cr. 1596-1637, Antonio Tempesta, Italy and Netherlands");
+    insert_into_images("horsemen/AN01135927_001_l.jpg", 
+                            "BM", 
+                            "3437711", 
+                            "Portrait of Henri IV, King of France, <br/>1589-1610, ?, after Hendrick Goltzius");
+    insert_into_images("horsemen/DP-13163-002.jpg", 
+                            "Met", 
+                            "24687", 
+                            "Cabasset with Marcus Curtius leaping into a fiery abyss, <br/>cr. 1575, Milan");
+    insert_into_images("horsemen/DERUTA-DISH-WITH-PORTRAIT-OF-A-TURK-ON-HORSEBACK.png", 
+                            "artvalue.fr", 
+                            "http://www.artvalue.fr/auctionresult--deruta-dish-with-portrait-of-a-turk-o-2866410.htm", 
+                            "Plate depicting a Turk on horseback, <br/>cr. 1520-50, Deruta");
+    insert_into_images("horsemen/Teller_Opfertod_des_Marcus_Curtius_KGM_K1923.jpg", 
+                            "wiki", 
+                            "Teller_Opfertod_des_Marcus_Curtius_KGM_K1923.jpg", 
+                            "Plate depicting Marcus Curtius, <br/>cr. 1550, Urbino");
+    insert_into_images("horsemen/DP317308.jpg", 
+                            "Met", 
+                            "197214", 
+                            "Plate with The Heroism of Marcus Curtius, <br/>1542, workshop of Guido de Merlino, Urbino");
+    insert_into_images("horsemen/2006BC7748_2500.jpg", 
+                            "VA", 
+                            "O160308", 
+                            "Plate depicting The Devotion of Marcus Curtius, <br/>cr. 1525, Faenza");
 }
 
 ?>
