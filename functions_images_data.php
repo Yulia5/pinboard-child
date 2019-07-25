@@ -2264,7 +2264,7 @@ function populate_images() {
     insert_into_images("horsemen/Veronese.Marcus_Curtius01.jpg", 
                             "wiki", 
                             "Veronese.Marcus_Curtius01.jpg", 
-                            "The sacrificial death of Marcus Curtius, <br/>1550-2, Paolo Veronese");
+                            "The sacrificial death of Marcus Curtius, <br/>1550-2, Paolo Veronese, Venice, Italy");
     insert_into_images("horsemen/Villa_romana_de_La_Olmeda_25100541284.jpg", 
                             "wiki", 
                             "Villa_romana_de_La_Olmeda_(25100541284).jpg", 
@@ -4203,6 +4203,26 @@ function populate_images() {
                             "BM", 
                             "1435368", 
                             "A knight and a soldier on horseback, <br/>1559, Franz Isaac Brun, Germany");
+    insert_into_images("horsemen/102628.jpg", 
+                            "NC State University", 
+                            "http://images.lib.ncsu.edu/luna/servlet/detail/NCSULIB~1~1~102628~190112", 
+                            "Playing card, the king of peacocks, <br/>cr. 1550, Virgil Solis, Nuremberg, Germany");
+    insert_into_images("horsemen/2011FD4867_jpg_l.jpg", 
+                            "VA", 
+                            "O760343", 
+                            "Hannibal mounted on a horse, <br/>1530-1562, Virgil Solis, Nuremberg, Germany");
+    insert_into_images("horsemen/144138v_0001.jpg", 
+                            "The Morgan Libra", 
+                            "https://www.themorgan.org/drawings/item/144138", 
+                            "Artybios on Horseback Attacking Onesilus, <br/>1510-1547, Jörg Breu the Younger, Augsburg, Germany");
+    insert_into_images("horsemen/144810v_0001.jpg", 
+                            "The Morgan Libra", 
+                            "https://www.themorgan.org/drawings/item/144810", 
+                            "Artybios on Horseback Attacking Onesilus, <br/>1510-1547, Jörg Breu the Younger, Augsburg, Germany");
+    insert_into_images("horsemen/AN00088197_001_l.jpg", 
+                            "BM", 
+                            "1486174", 
+                            "A captain on horseback, <br/>1530-1562, Virgil Solis, Nuremberg, Germany");
 }
 
 ?>
