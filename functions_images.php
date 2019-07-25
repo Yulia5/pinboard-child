@@ -320,6 +320,7 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
         $result = '<div class="flushright2">' . $result . "</div>";
     }   
 
+    $result = '<p class="clearfloats"></p>' . $result; // clear previous floats
     return $result;
 }
 add_shortcode('yu_images_DB', 'MY_VERY_OWN_images_DB_shortcode');

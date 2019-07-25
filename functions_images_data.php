@@ -4167,10 +4167,42 @@ function populate_images() {
                             "wiki", 
                             "Francesco_salviati,_storie_di_furio_camillo,_1543-45,_assalto_ai_galli_che_hanno_saccheggiato_roma,_16_cavalli.JPG", 
                             "The stories of Furio Camillo (detail), <br/>1543-5, Francesco Salviati, Palazzo Vecchio, Florence");
-   insert_into_images("horsemen/Jan_Van_der_Straet_known_as_Giovanni_Stradano_-_Horse_joust_in_Piazza_Santa_Croce_-_Google_Art_Project.jpg", 
+    insert_into_images("horsemen/Jan_Van_der_Straet_known_as_Giovanni_Stradano_-_Horse_joust_in_Piazza_Santa_Croce_-_Google_Art_Project.jpg", 
                             "wiki", 
                             "Jan_Van_der_Straet_(known_as_Giovanni_Stradano)_-_Horse_joust_in_Piazza_Santa_Croce_-_Google_Art_Project.jpg", 
                             "Horse joust in Piazza Santa Croce, <br/>1561 - 1562, Stradanus, Palazzo Vecchio, Florence");
+    insert_into_images("horsemen/AN01349906_001_l.jpg", 
+                            "BM", 
+                            "1349906001", 
+                            "Ghisi Shield, <br/>1554, Giorgio Ghisi, Mantua (?), Italy");
+    insert_into_images("horsemen/AN01349908_001_l.jpg", 
+                            "BM", 
+                            "1349906001", 
+                            "Ghisi Shield (detail), <br/>1554, Giorgio Ghisi, Mantua (?), Italy");
+    insert_into_images("horsemen/AN01466282_001_l.jpg", 
+                            "BM", 
+                            "39003", 
+                            "Hat-ornament with Saint George and Dragon, <br/>1550-1575, Germany and France");
+    insert_into_images("horsemen/AN00845863_001_l.jpg", 
+                            "BM", 
+                            "3292899", 
+                            "Playing card, the queen of peacocks, <br/>cr. 1550, Virgil Solis, Nuremberg, Germany");
+    insert_into_images("horsemen/AN00843020_001_l.jpg", 
+                            "BM", 
+                            "3479054", 
+                            "Playing card, the king of lions, <br/>cr. 1550, Virgil Solis, Nuremberg, Germany");
+    insert_into_images("horsemen/AN00843020_001_l.jpg", 
+                            "BM", 
+                            "1485834", 
+                            "A mounted officer, <br/>1530-1555, Virgil Solis, Nuremberg, Germany");
+    insert_into_images("horsemen/AN00491134_001_l.jpg", 
+                            "BM", 
+                            "1456360", 
+                            "Portrait of Elector Frederick IV, <br/>1592-1622, Jacques Granthomme, France");
+    insert_into_images("horsemen/AN00082408_001_l.jpg", 
+                            "BM", 
+                            "1435368", 
+                            "A knight and a soldier on horseback, <br/>1559, Franz Isaac Brun, Germany");
 }
 
 ?>
