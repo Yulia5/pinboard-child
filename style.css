@@ -364,7 +364,7 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 }
 
 .checkmark li::before {
-    content: "\2713\0020";
+    content: "✓ ";
 }
 
 ul.checkmark li:before {

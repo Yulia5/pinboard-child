@@ -2837,27 +2837,27 @@ function populate_images() {
     insert_into_images("horsemen/ma-31720562-WEB.jpg", 
                             "LA", 
                             "172165", 
-                            "Civilis Separates Germans and Dutch Troops, <br/>1612");
+                            "Civilis Separates Germans and Dutch Troops, <br/>1612, Antonio Tempesta, Florence, Italy");
     insert_into_images("horsemen/ma-31720744-WEB.jpg", 
                             "LA", 
                             "234355", 
-                            "Boar Hunt, <br/>16 century");
+                            "Boar Hunt, <br/>1570-1600, Antonio Tempesta, Florence, Italy");
     insert_into_images("horsemen/ma-31721766-WEB.jpg", 
                             "LA", 
                             "234493", 
-                            "Nessus Attempting to Take Dejanera from Hercules, <br/>1606");
+                            "Nessus Attempting to Take Dejanera from Hercules, <br/>1606, Antonio Tempesta, Florence, Italy");
     insert_into_images("horsemen/ma-31722319-WEB.jpg", 
                             "LA", 
                             "234574", 
-                            "Stag Hunt, <br/>16 century");
+                            "Stag Hunt, <br/>1570-1600, Antonio Tempesta, Florence, Italy");
     insert_into_images("horsemen/ma-31723208-WEB.jpg", 
                             "LA", 
                             "234397", 
-                            "Lion Hunt, <br/>16 century");
+                            "Lion Hunt, <br/>1570-1600, Antonio Tempesta, Florence, Italy");
     insert_into_images("horsemen/ma-31736056-WEB.jpg", 
                             "LA", 
                             "234368", 
-                            "Hercules and the Centaurs, <br/>1608");
+                            "Hercules and the Centaurs, <br/>1608, Antonio Tempesta, Florence, Italy");
     insert_into_images("horsemen/mainz_inscr_maris_lm2.jpg", 
                             "livius.org", 
                             "http://www.livius.org/pictures/germany/mainz-mogontiacum/mainz-museum-pieces/mainz-tombstone-of-maris/", 
@@ -4173,11 +4173,11 @@ function populate_images() {
                             "Horse joust in Piazza Santa Croce, <br/>1561 - 1562, Stradanus, Palazzo Vecchio, Florence");
     insert_into_images("horsemen/AN01349906_001_l.jpg", 
                             "BM", 
-                            "1349906001", 
+                            "39568", 
                             "Ghisi Shield, <br/>1554, Giorgio Ghisi, Mantua (?), Italy");
     insert_into_images("horsemen/AN01349908_001_l.jpg", 
                             "BM", 
-                            "1349906001", 
+                            "39568", 
                             "Ghisi Shield (detail), <br/>1554, Giorgio Ghisi, Mantua (?), Italy");
     insert_into_images("horsemen/AN01466282_001_l.jpg", 
                             "BM", 
