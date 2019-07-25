@@ -4191,7 +4191,7 @@ function populate_images() {
                             "BM", 
                             "3479054", 
                             "Playing card, the king of lions, <br/>cr. 1550, Virgil Solis, Nuremberg, Germany");
-    insert_into_images("horsemen/AN00843020_001_l.jpg", 
+    insert_into_images("horsemen/AN00088491_001_l.jpg", 
                             "BM", 
                             "1485834", 
                             "A mounted officer, <br/>1530-1555, Virgil Solis, Nuremberg, Germany");
@@ -4206,23 +4206,51 @@ function populate_images() {
     insert_into_images("horsemen/102628.jpg", 
                             "NC State University", 
                             "http://images.lib.ncsu.edu/luna/servlet/detail/NCSULIB~1~1~102628~190112", 
-                            "Playing card, the king of peacocks, <br/>cr. 1550, Virgil Solis, Nuremberg, Germany");
+                            "Playing card, the horse of peacocks, <br/>cr. 1550, Virgil Solis, Nuremberg, Germany");
     insert_into_images("horsemen/2011FD4867_jpg_l.jpg", 
                             "VA", 
                             "O760343", 
                             "Hannibal mounted on a horse, <br/>1530-1562, Virgil Solis, Nuremberg, Germany");
     insert_into_images("horsemen/144138v_0001.jpg", 
-                            "The Morgan Libra", 
+                            "The Morgan Library", 
                             "https://www.themorgan.org/drawings/item/144138", 
                             "Artybios on Horseback Attacking Onesilus, <br/>1510-1547, Jörg Breu the Younger, Augsburg, Germany");
     insert_into_images("horsemen/144810v_0001.jpg", 
-                            "The Morgan Libra", 
+                            "The Morgan Library", 
                             "https://www.themorgan.org/drawings/item/144810", 
                             "Artybios on Horseback Attacking Onesilus, <br/>1510-1547, Jörg Breu the Younger, Augsburg, Germany");
     insert_into_images("horsemen/AN00088197_001_l.jpg", 
                             "BM", 
                             "1486174", 
                             "A captain on horseback, <br/>1530-1562, Virgil Solis, Nuremberg, Germany");
+    insert_into_images("horsemen/AN00427680_001_l.jpg", 
+                            "BM", 
+                            "3023538", 
+                            "A horsemen in antique dress holding a shield in his left hand, <br/>1567, Abraham de Bruyn, Flanders");
+    insert_into_images("horsemen/AN00427683_001_l.jpg", 
+                            "BM", 
+                            "3023514", 
+                            "A horsemen in antique dress holding a shield in his left hand, with a dog, <br/>1567, Abraham de Bruyn, Flanders");
+    insert_into_images("horsemen/AN00427698_001_l.jpg", 
+                            "BM", 
+                            "3023528", 
+                            "A horsemen in antique dress holding a shield in his left hand, with a club in his right hand, <br/>1568, Abraham de Bruyn, Flanders");
+    insert_into_images("horsemen/AN00587174_001_l.jpg", 
+                            "BM", 
+                            "76663", 
+                            "A hat badge depicting Marcus Curtius leaping into gulf, <br/>16th century, Italy");
+    insert_into_images("horsemen/AN1613148492_l.jpg", 
+                            "BM", 
+                            "953531", 
+                            "A medal with Maximilian I and a horseman trampling foot soldier and pursuing another, <br/>1516-9, Hungary or Austria");
+    insert_into_images("horsemen/AN01052305_001_l.jpg", 
+                            "BM", 
+                            "3400067", 
+                            "A medal with François I and a horseman trampling a naked woman and holding a club, <br/>1537, Italy");
+    insert_into_images("horsemen/13-504421.jpg", 
+                            "RMN", 
+                            "13-504421-2C6NU0R27O9P", 
+                            "A cameo with a horseman trampling his enemies, <br/>3rd century (cameo) and 16th century (mount), Ancient Rome and Italy");
 }
 
 ?>
