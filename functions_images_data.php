@@ -4247,10 +4247,82 @@ function populate_images() {
                             "BM", 
                             "3400067", 
                             "A medal with François I and a horseman trampling a naked woman and holding a club, <br/>1537, Italy");
-    insert_into_images("horsemen/13-504421.jpg", 
-                            "RMN", 
-                            "13-504421-2C6NU0R27O9P", 
-                            "A cameo with a horseman trampling his enemies, <br/>3rd century (cameo) and 16th century (mount), Ancient Rome and Italy");
+    insert_into_images("horsemen/2009BX2963_jpg_l.jpg", 
+                            "VA", 
+                            "O125688", 
+                            "Backgammon board decorated with ebony and carved bone, <br/>1581-1600, probably Augsburg, Germany");
+    insert_into_images("horsemen/2015HJ8471_jpg_l.jpg", 
+                            "VA", 
+                            "O125688", 
+                            "Backgammon board decorated with ebony and carved bone (detail), <br/>1581-1600, probably Augsburg, Germany");
+    insert_into_images("horsemen/2010EG9183_jpg_l.jpg", 
+                            "VA", 
+                            "O377004", 
+                            "Gorget (armoured collar), front plate shows an officer on a rearing horse with a baton addressing a troop of pikemen, <br/>1600-25, Paris, France");
+    insert_into_images("horsemen/2010EG9184_jpg_l.jpg", 
+                            "VA", 
+                            "O377004", 
+                            "Gorget (armoured collar), back plate shows an officer on a rearing horse killing an enemy, <br/>1600-25, Paris, France");
+    insert_into_images("horsemen/AN00124011_001_l.jpg", 
+                            "BM", 
+                            "1538046", 
+                            "Three cavalrymen in full armour with drawn swords, riding to the right, <br/>after 1599, Jacques de Gheyn II, Netherlands");
+    insert_into_images("horsemen/AN00124012_001_l.jpg", 
+                            "BM", 
+                            "1538045", 
+                            "Three cavalrymen in full armour with drawn swords, riding to the left, <br/>after 1599, Jacques de Gheyn II, Netherlands");
+    insert_into_images("horsemen/AAN00123993_001_l.jpg", 
+                            "BM", 
+                            "1537958", 
+                            "A mounted trumpeter sounding his trumpet accompanied by a dog, <br/>after 1599, Jacques de Gheyn II, Netherlands");
+    insert_into_images("horsemen/AN00124013_001_l.jpg", 
+                            "BM", 
+                            "1538042", 
+                            "A cavalryman holding a pistol, on a rearing horse, to right, <br/>after 1599, Jacques de Gheyn II, Netherlands");
+    insert_into_images("horsemen/AN00124009_001_l.jpg", 
+                            "BM", 
+                            "1537941", 
+                            "A cavalryman raising his sword and charging to right, <br/>after 1599, Jacques de Gheyn II, Netherlands");
+    insert_into_images("horsemen/AN00124010_001_l.jpg", 
+                            "BM", 
+                            "1537934", 
+                            "A cavalryman holding a gun charging to left, <br/>after 1599, Jacques de Gheyn II, Netherlands");
+    insert_into_images("horsemen/AN00123029_001_l.jpg", 
+                            "BM", 
+                            "720687", 
+                            "Man on horseback holding a scroll or stick in his right hand, <br/>1490-4, Albrecht Dürer, Germany");
+    insert_into_images("horsemen/AN00445479_001_l.jpg", 
+                            "BM", 
+                            "34867", 
+                            "A pair of Limoges enamel candlesticks (detail), <br/>cr. 1560, Jean de Court, Limoges, France");
+    insert_into_images("horsemen/AN00445491_001_l.jpg", 
+                            "BM", 
+                            "34867", 
+                            "A pair of Limoges enamel candlesticks (detail), <br/>cr. 1560, Jean de Court, Limoges, France");
+    insert_into_images("horsemen/AN1612945301_l.jpg", 
+                            "BM", 
+                            "34867", 
+                            "A pair of Limoges enamel candlesticks, <br/>cr. 1560, Jean de Court, Limoges, France");
+    insert_into_images("horsemen/AN00304369_001_l.jpg", 
+                            "BM", 
+                            "55547", 
+                            "Sundial with Marcus Curtius on a prancing horse, <br/>1601, Andreas Pleninger, Regensburg, Germany");
+    insert_into_images("horsemen/AN00504028_001_l.jpg", 
+                            "BM", 
+                            "55547", 
+                            "Sundial with Marcus Curtius on a prancing horse (object reconstruction), <br/>1601, Andreas Pleninger, Regensburg, Germany");
+    insert_into_images("horsemen/AN1613212773_l.jpg", 
+                            "BM", 
+                            "3751271", 
+                            "Portrait of Roman emperor Domitian, <br/>1579-1637, Jan van der Straet, Italy and Frandres");
+    insert_into_images("horsemen/AN1613204275_l.jpg", 
+                            "BM", 
+                            "3751636", 
+                            "Portrait of Roman emperor Otho, <br/>1579-1637, Jan van der Straet, Italy and Frandres");
+    insert_into_images("horsemen/AN1613204208_l.jpg", 
+                            "BM", 
+                            "3751473", 
+                            "Portrait of Roman emperor Nero, <br/>1579-1637, Jan van der Straet, Italy and Frandres");
 }
 
 ?>
