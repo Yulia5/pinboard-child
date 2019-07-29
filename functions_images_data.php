@@ -2153,14 +2153,10 @@ function populate_images() {
                             "wiki", 
                             "St_George_spearing_Diocletian_(11th_c.,_Georgia).JPG", 
                             "St. George spearing a fallen warrior, possibly the emperor Diocletian, his prosecutor, <br/>11th century");
-    insert_into_images("horsemen/St_Isidore_BW.png", 
-                            "Alinari", 
-                            "http://images.alinari.it/img/480/ACA/ACA-F-020715-0000.jpg", 
+    insert_into_images("horsemen/Isidore.jpeg", 
+                            "culturaitalia.it", 
+                            "http://www.culturaitalia.it/viewItem.jsp?language=it&case=&id=oai%3Ascalarchives.com%3A0116766", 
                             "The Martyrdom of St. Isidore, <br/>cr. 1355, Mosaic, St Mark's Basilica, Venice");
-    insert_into_images("horsemen/St_Isidore_Colour.png", 
-                            "Getty Images", 
-                            "http://www.gettyimages.co.uk/detail/illustration/scene-from-the-life-of-st-isidore-st-isidors-chapel-st-stock-graphic/112190607", 
-                            "The Martyrdom of St. Isidore (fragment, to illustrate the colours), <br/>cr. 1355, Mosaic, St Mark's Basilica, Venice");
     insert_into_images("horsemen/Statue_Eugenio_of_Savoy_Heldenplatz_Vienna_Austria.jpg", 
                             "wiki", 
                             "Statue_Eugenio_of_Savoy_Heldenplatz_Vienna_Austria.jpg", 
