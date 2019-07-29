@@ -4267,7 +4267,7 @@ function populate_images() {
                             "BM", 
                             "1538045", 
                             "Three cavalrymen in full armour with drawn swords, riding to the left, <br/>after 1599, Jacques de Gheyn II, Netherlands");
-    insert_into_images("horsemen/AAN00123993_001_l.jpg", 
+    insert_into_images("horsemen/AN00123993_001_l.jpg", 
                             "BM", 
                             "1537958", 
                             "A mounted trumpeter sounding his trumpet accompanied by a dog, <br/>after 1599, Jacques de Gheyn II, Netherlands");
