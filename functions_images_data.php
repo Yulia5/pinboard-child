@@ -1850,9 +1850,9 @@ function populate_images() {
                             "http://www.residenz-muenchen-blog.de/?p=1267", 
                             "Maximilian II Emanuel, <br/>?, Ferdinand Karl Bruni");
     insert_into_images("horsemen/Maximilian_1470.png", 
-                            "wiki", 
-                            "Maximilian_1470.png", 
-                            "Young prince Maximilian hunting for birds as a horsed archer,<br/>1470, Albrecht Dürer and his pupils");
+                            "artsy.net", 
+                            "https://www.artsy.net/artwork/leonhard-beck-the-prince-at-the-bird-catching", 
+                            "The Prince at the Bird-Catching, <br/>1514-6, Leonhard Beck");
     insert_into_images("horsemen/Mercurius.jpg", 
                             "massarra.org", 
                             "http://home.massarra.org/samina/Saints/7_Icons/Martyrs/Mercurius.JPG", 
@@ -4323,6 +4323,38 @@ function populate_images() {
                             "BM", 
                             "3751473", 
                             "Portrait of Roman emperor Nero, <br/>1579-1637, Jan van der Straet, Italy and Frandres");
+    insert_into_images("horsemen/Vasari_and_Stradano_-_St_George_and_the_dragon.jpg", 
+                            "wiki", 
+                            "Vasari_and_Stradano_-_St_George_and_the_dragon.jpg", 
+                            "St. George and the Dragon, <br/>cr. 1560, Giorgio Vasari, Italy");
+    insert_into_images("horsemen/StGeorgeandtheDragonLelioOrsi.png", 
+                            "Google Arts And Culture", 
+                            "https://artsandculture.google.com/asset/ZQH5VlbtTTRUxg", 
+                            "St. George and the Dragon, <br/>1550, Lelio Orsi, Italy");
+    insert_into_images("horsemen/96-004222.jpg", 
+                            "RMN", 
+                            "96-004222-2C6NU0NM01PE", 
+                            "St. George fighting with the Dragon, <br/>cr. 1505, Raphael, Italy");
+    insert_into_images("horsemen/N-2919-00-000022-wpu.jpg", 
+                            "The National Gallery", 
+                            "https://www.nationalgallery.org.uk/paintings/raphael-the-procession-to-calvary", 
+                            "The Procession to Calvary, <br/>cr. 1504-5, Raphael, Italy");
+    insert_into_images("horsemen/uccello_st_georges.jpg", 
+                            "The Jacquemart-André Museum", 
+                            "https://www.musee-jacquemart-andre.com/en/oeuvres/saint-georges-and-dragon", 
+                            "St. George and the Dragon, <br/>cr. 1430-35, Paolo Uccello, Italy");
+    insert_into_images("horsemen/Pieter_Bruegel_the_Elder_-_Massacre_of_the_Innocents_-_Google_Art_Project.jpg", 
+                            "wiki", 
+                            "Pieter_Bruegel_the_Elder_-_Massacre_of_the_Innocents_-_Google_Art_Project.jpg", 
+                            "Massacre of the Innocents, <br/>1565-7, Pieter Bruegel the Elder, Netherlands");
+    insert_into_images("horsemen/Pieter_Bruegel_the_Elder_-_Massacre_of_the_Innocents_-_Google_Art_Project_detail.jpg", 
+                            "wiki", 
+                            "Pieter_Bruegel_the_Elder_-_Massacre_of_the_Innocents_-_Google_Art_Project.jpg", 
+                            "Massacre of the Innocents (detail), <br/>1565-7, Pieter Bruegel the Elder, Netherlands");
+    insert_into_images("horsemen/Paris_bordone_san_gkiorgio_uccide_il_drago_01.jpg", 
+                            "wiki", 
+                            "Paris_bordone,_san_gkiorgio_uccide_il_drago_01.JPG", 
+                            "St. George Killing the Dragon, <br/>1525, Paris Bordone, Italy");
 }
 
 ?>
