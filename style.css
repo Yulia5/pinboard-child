@@ -20,15 +20,6 @@ h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active, h2, h2 a, h2 a:link,
 	text-decoration: underline; 
 }
 
-h4 {
-	font-size: x-large;
-    font-weight: bold; /*normal;*/
-    font-family: 'Permanent Marker';
-  	cursor: text;
-	text-decoration: underline; 
-}
-
-
 /******************************************************************************
  *                                  Table                                     *
  *****************************************************************************/
@@ -380,7 +371,16 @@ ul.checkmark li:before {
 }
 .directions_ol li::before {
   content: counter(my-awesome-counter) ". ";
+}
+
+.directions_ol li::before, h4 {
   color: #ff4040;
   font-weight: bold;
   font-family: 'Permanent Marker';
+}
+
+h4 {
+	font-size: x-large;
+  	cursor: text;
+	text-decoration: underline; 
 }
