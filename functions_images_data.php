@@ -4351,6 +4351,30 @@ function populate_images() {
                             "wiki", 
                             "Paris_bordone,_san_gkiorgio_uccide_il_drago_01.JPG", 
                             "St. George Killing the Dragon, <br/>1525, Paris Bordone, Italy");
+    insert_into_images("horsemen/Bernhard_Strigel_003b.jpg", 
+                            "wiki", 
+                            "Bernhard_Strigel_003b.jpg", 
+                            "Emperor Maximilian I with Mary of Burgundy, their son and grandsons, <br/>after 1515, Bernhard Strigel, Austria");
+    insert_into_images("horsemen/DP815369.jpg", 
+                            "Met", 
+                            "391049", 
+                            "The Little Courier, <br/>cr. 1496, Albrecht Dürer, Germany");
+    insert_into_images("horsemen/DP816478.jpg", 
+                            "Met", 
+                            "388160", 
+                            "The Knight on the Horseback with Lansquenet, <br/>cr. 1496-7, Albrecht Dürer, Germany");
+    insert_into_images("horsemen/DP816772.jpg", 
+                            "Met", 
+                            "397057", 
+                            "Four Horsemen of the Apocalypse, <br/>cr. 1497-8, Albrecht Dürer, Germany");
+    insert_into_images("horsemen/DP816411.jpg", 
+                            "Met", 
+                            "387574", 
+                            "Saint George and the Dragon, <br/>cr. 1504, Albrecht Dürer, Germany");
+    insert_into_images("horsemen/DP815783.jpg", 
+                            "Met", 
+                            "391238", 
+                            "Abduction of Proserpine, <br/>1516, Albrecht Dürer, Germany");
 }
 
 ?>
