@@ -13,12 +13,21 @@
 /* =Theme customization starts here
 ------------------------------------------------------- */
 
-h1, h2, h3 { 
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active, h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover, h2 a:active, h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover, h3 a:active { 
 	color: #000000;
 	cursor: text;
 	font-weight:normal;
 	text-decoration: underline; 
 }
+
+h4 {
+	font-size: x-large;
+    font-weight: bold; /*normal;*/
+    font-family: 'Permanent Marker';
+  	cursor: text;
+	text-decoration: underline; 
+}
+
 
 /******************************************************************************
  *                                  Table                                     *
@@ -151,7 +160,7 @@ table .images {
 	vertical-align: top; 
 }
 
-h2:before, h1:before, .flushright:after, .clearfloats:before {
+h2:before, h1:before, h3:before, .flushright:after, .clearfloats:before {
   content: "";
   clear: both;
   display: table;
@@ -165,9 +174,6 @@ h2:before, h1:before, .flushright:after, .clearfloats:before {
  *                         Header and Widgets                                 *
  *****************************************************************************/
 
-header h1, h2, h3 { 
-	text-decoration: none; 
-}
 
 #header {
 	border-top:none;
@@ -236,12 +242,6 @@ header h1, h2, h3 {
 /******************************************************************************
  *                                 Colours                                    *
  *****************************************************************************/
-
-h3 a, h3 a:hover {
-	color: #000000;
-	cursor: text;
-	font-weight:normal;
-}
 
  /* custom green #aac744; custom brick red: #d54e21 ; custom links blue #21759b */
 
