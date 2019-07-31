@@ -3750,11 +3750,11 @@ function populate_images() {
     insert_into_images("SocialScience/alphas_preferences.jpg", 
                             "The BBC", 
                             "https://www.bbc.co.uk/news/stories-42460315", 
-                            "");
+                            "Successful women's perception of what they thought a 'successful' relationship should look like, 2018");
     insert_into_images("SocialScience/08-james-bond-best-interiors-vogue.jpeg", 
                             "The Vogue", 
                             "https://www.vogue.com/article/homes-james-bond-movie-interiors-spectre-daniel-craig", 
-                            "");
+                            "George Lazenby as James Bond in 'On Her Majesty's Secret Service', 1969");
     insert_into_images("horsemen/horse_sculpture-e1449637072440.png", 
                             "Arthur Murch's website", 
                             "http://arthurmurch.com/portfolio/govetts-leap/", 
@@ -4375,6 +4375,26 @@ function populate_images() {
                             "Met", 
                             "391238", 
                             "Abduction of Proserpine, <br/>1516, Albrecht Dürer, Germany");
+    insert_into_images("horsemen/leads.jpg", 
+                            "@insta_repeat, instagram.com", 
+                            "https://www.instagram.com/insta_repeat/", 
+                            "Ladies leading by the hand into the wild");
+    insert_into_images("SocialScience/Mae-West.jpeg", 
+                            "Old Time Radio Downloads", 
+                            "https://www.oldtimeradiodownloads.com/actors/mae-west", 
+                            "Mae West (1892-1980), promotional photo for 'She Done Him Wrong', 1933");
+    insert_into_images("SocialScience/QueenieJacob.jpeg", 
+                            "Pottermore Limited", 
+                            "https://www.pottermore.com/news/fantastic-beasts-dan-fogler-alison-sudol-interview", 
+                            "Queenie (Alison Sudol) and Jacob (Dan Fogler), promotional photo for 'Fantastic Beasts and Where to Find Them', 2016");
+    insert_into_images("SocialScience/InstaDan.png", 
+                            "@danbilzerian at instagram.com", 
+                            "https://www.instagram.com/p/Bvc0Rxmnser/", 
+                            "Photo of a 'palm' by @danbilzerian at instagram.com, 2019");
+    insert_into_images("SocialScience/kowalski.png", 
+                            "@maggiepolk at medium.com", 
+                            "https://medium.com/@maggiepolk/conflicting-characters-a86012c39bf7", 
+                            "Blanche (Vivien Leigh) and Stan (Marlon Brando), scene from 'A Streetcar Named Desire', 1951");
 }
 
 ?>
