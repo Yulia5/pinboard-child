@@ -3751,7 +3751,7 @@ function populate_images() {
                             "The BBC", 
                             "https://www.bbc.co.uk/news/stories-42460315", 
                             "Successful women's perception of what they thought a 'successful' relationship should look like, 2018");
-    insert_into_images("SocialScience/08-james-bond-best-interiors-vogue.jpeg", 
+    insert_into_images("SocialScience/JamesBond1969.jpg", 
                             "The Vogue", 
                             "https://www.vogue.com/article/homes-james-bond-movie-interiors-spectre-daniel-craig", 
                             "George Lazenby as James Bond in 'On Her Majesty's Secret Service', 1969");
@@ -4391,10 +4391,34 @@ function populate_images() {
                             "@danbilzerian at instagram.com", 
                             "https://www.instagram.com/p/Bvc0Rxmnser/", 
                             "Photo of a 'palm' by @danbilzerian at instagram.com, 2019");
-    insert_into_images("SocialScience/kowalski.png", 
-                            "@maggiepolk at medium.com", 
-                            "https://medium.com/@maggiepolk/conflicting-characters-a86012c39bf7", 
-                            "Blanche (Vivien Leigh) and Stan (Marlon Brando), scene from 'A Streetcar Named Desire', 1951");
+    insert_into_images("SocialScience/1967.jpg", 
+                            "Elle Japan", 
+                            "https://www.elle.com/jp/culture/celebphotos/g264882/cfea-cph-halloween-costume-ideas-movies-171013-hns/?slide=28", 
+                            "Bonnie Parker (Faye Dunaway) and Clyde Barrow (Warren Beatty), scene from 'Bonnie and Clyde', 1967");
+    insert_into_images("SocialScience/Sextette.jpg", 
+                            "filmcomment.com", 
+                            "https://www.filmcomment.com/article/go-west-old-mae-gilbert-adair/", 
+                            "Marlo Manners (Mae West), scene from 'Sextette', 1977");
+    insert_into_images("SocialScience/MaeWestLipsSofa.jpg", 
+                            "VA", 
+                            "O1441053", 
+                            "Mae West Lips sofa, Edward James (sofa), Salvador Dalí (paintting of Mae West design is based on), 1938");
+    insert_into_images("SocialScience/Hasselhoff.jpeg", 
+                            "people.com", 
+                            "https://people.com/tv/dancing-stars-forgotten-celebs/", 
+                            "David Hasselhoff, ABC's 'Dancing With The Stars' TV show, 2010");
+    insert_into_images("SocialScience/playboy.jpg", 
+                            "The Times", 
+                            "https://www.thetimes.co.uk/article/hugh-hefner-obituary-s3m2jqd90", 
+                            "Hugh Hefner with two bunnies at the Playboy Mansion, 2003");
+    insert_into_images("SocialScience/MerchantOfVenice.jpg", 
+                            "people.com", 
+                            "https://people.com/tv/dancing-stars-forgotten-celebs/", 
+                            "Portia (Lynn Collins) and Bassanio (Joseph Fiennes), scene from 'The Merchant of Venice', 1596-9 book, 2004 film");
+    insert_into_images("SocialScience/stardust.jpg", 
+                            "substreammagazine.com", 
+                            "https://substreammagazine.com/2017/08/ten-years-later-stardust/", 
+                            "Tristan Thorn (Charlie Cox) and Yvaine (Claire Danes), scene from 'Stardust', 1997 novel, 2007 film");
 }
 
 ?>

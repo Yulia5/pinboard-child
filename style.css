@@ -161,6 +161,10 @@ h2:before, h1:before, h3:before, .flushright:after, .clearfloats:before {
   display: table;
 }
 
+.clearfloats {
+	font-size: 1px;
+}
+
 .flushright .images, .flushright2 .images {
 	float: right;
 }
