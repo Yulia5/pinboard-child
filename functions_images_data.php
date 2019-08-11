@@ -266,13 +266,9 @@ function populate_images() {
                             "Peter_Paul_Rubens_-_Equestrian_Portrait_of_the_Duke_of_Buckingham_-_Google_Art_Project.jpg", 
                             "Equestrian Portrait of the Duke of Buckingham, <br/>1625, Peter Paul Rubens");
     insert_into_images("horsemen/1178209537b.jpg", 
-                            "msxlabs.org, Forum", 
-                            "https://www.msxlabs.org/forum/sanat-ww/487246-pietro-tacca.html", 
-                            "Equestrian statuette of Louis XIII, <br/>1615-17, Pietro Tacca");
-    insert_into_images("horsemen/1178209537b.jpg", 
-                            "msxlabs.org, Forum", 
-                            "https://www.msxlabs.org/forum/sanat-ww/487246-pietro-tacca.html", 
-                            "Equestrian statuette of Louis XIII, <br/>1615-17, Pietro Tacca");
+                            "La Repubblica", 
+                            "http://www.repubblica.it/2006/04/sezioni/arte/recensioni/bronzi-giambologna/bronzi-giambologna/bronzi-giambologna.html", 
+                            "Equestrian statuette of Louis XIII, <br/>1619-21, Pietro Tacca");
     insert_into_images("horsemen/1186806_640.jpg", 
                             "catherine-catty.livejournal.com", 
                             "http://catherine-catty.livejournal.com/304368.html", 
@@ -4402,7 +4398,7 @@ function populate_images() {
     insert_into_images("SocialScience/MaeWestLipsSofa.jpg", 
                             "VA", 
                             "O1441053", 
-                            "Mae West Lips sofa, Edward James (sofa), Salvador Dalí (paintting of Mae West design is based on), 1938");
+                            "Mae West Lips sofa, Edward James (sofa), Salvador Dalí (painting of Mae West the design is based on), 1938, now in Victoria and Albert museum, London");
     insert_into_images("SocialScience/Hasselhoff.jpeg", 
                             "people.com", 
                             "https://people.com/tv/dancing-stars-forgotten-celebs/", 
@@ -4412,13 +4408,65 @@ function populate_images() {
                             "https://www.thetimes.co.uk/article/hugh-hefner-obituary-s3m2jqd90", 
                             "Hugh Hefner with two bunnies at the Playboy Mansion, 2003");
     insert_into_images("SocialScience/MerchantOfVenice.jpg", 
-                            "people.com", 
-                            "https://people.com/tv/dancing-stars-forgotten-celebs/", 
+                            "telemagazyn.pl", 
+                            "https://www.telemagazyn.pl/film/kupiec-wenecki-1528537/", 
                             "Portia (Lynn Collins) and Bassanio (Joseph Fiennes), scene from 'The Merchant of Venice', 1596-9 book, 2004 film");
     insert_into_images("SocialScience/stardust.jpg", 
                             "substreammagazine.com", 
                             "https://substreammagazine.com/2017/08/ten-years-later-stardust/", 
                             "Tristan Thorn (Charlie Cox) and Yvaine (Claire Danes), scene from 'Stardust', 1997 novel, 2007 film");
+    insert_into_images("SocialScience/MartyJennifer.jpeg", 
+                            "claudiawells.com", 
+                            "https://www.claudiawells.com/store/p17/photo_8.html", 
+                            "Marty Mcfly (Michael J. Fox) and Jennifer Parker (Claudia Wells), scene from 'Back to the Future', 1985");
+    insert_into_images("SocialScience/GeriHalliwell.jpg", 
+                            "realnobody.com", 
+                            "https://realnobody.com/2018/04/05/i-wanna-really-really-really-wanna-zig-a-zig-ah-38/", 
+                            "Geri Halliwell, scene from 'Bag It Up', 1999");
+    insert_into_images("SocialScience/Madonna.png", 
+                            "vox.com", 
+                            "https://www.vox.com/2015/3/10/8182469/madonna-rebel-heart", 
+                            "Madonna performs 'Living for Love' at the Grammys, 2015");
+    insert_into_images("SocialScience/NickiMinaj.jpg", 
+                            "zimbio.com", 
+                            "http://www.zimbio.com/photos/Nicki+Minaj/2011+Victoria+Secret+Fashion+Show+Performance/Ev8AFWpMR4v", 
+                            "Nicki Minaj Victoria Secret Fashion Show Performance, 2011");
+    insert_into_images("SocialScience/thezumas_afp.jpg", 
+                            "bbc.com", 
+                            "https://www.bbc.com/news/world-africa-36386034", 
+                            "Jacob Zuma, the president of South Africa (2009-18) with his three wives, 2009");
+    insert_into_images("horsemen/AN00150545_001_l.jpg", 
+                            "BM", 
+                            "1350964", 
+                            "Equestrian portrait of Charles I, <br/>1655-1700, Pierre Lombart");
+    insert_into_images("horsemen/AN00150544_001_l.jpg", 
+                            "BM", 
+                            "1350970", 
+                            "Equestrian portrait of Oliver Cromwell, <br/>1655-1700, Pierre Lombart");
+    insert_into_images("horsemen/KK_6754_01.jpg", 
+                            "KHM", 
+                            "92765", 
+                            "Replaceable head (Archduke Leopold, later Emperor Leopold I), <br/>1600-1658, Caspar Gras");
+    insert_into_images("horsemen/KK_6020_13168.jpg", 
+                            "KHM", 
+                            "92027", 
+                            "Emperor Ferdinand III on horseback, <br/>2nd quarter of the 17th century, Caspar Gras");
+    insert_into_images("horsemen/KK_6753_01.jpg", 
+                            "KHM", 
+                            "92764", 
+                            "Replaceable head (Archduke Ferdinand Karl or Archduke Sigismund Franz), <br/>2nd quarter of the 17th century, Caspar Gras");
+    insert_into_images("horsemen/KK_6025_01.jpg", 
+                            "KHM", 
+                            "92032", 
+                            "Emperor Ferdinand II on horseback, <br/>2nd quarter of the 17th century, Caspar Gras");
+    insert_into_images("horsemen/KK_6000_1.jpg", 
+                            "KHM", 
+                            "92007", 
+                            "Archduke Leopold, later Emperor Leopold I, <br/>1600-1658, Caspar Gras");
+    insert_into_images("horsemen/KK_5989_1.jpg", 
+                            "KHM", 
+                            "91996", 
+                            "Emperor Ferdinand III on horseback, <br/>1630-1674, Caspar Gras");
 }
 
 ?>
