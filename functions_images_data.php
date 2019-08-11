@@ -4467,6 +4467,10 @@ function populate_images() {
                             "KHM", 
                             "91996", 
                             "Emperor Ferdinand III on horseback, <br/>1630-1674, Caspar Gras");
+    insert_into_images("SocialScience/pri_nick.jpg", 
+                            "independent.co.uk", 
+                            "https://www.independent.co.uk/life-style/fashion/priyanka-chopra-saree-power-instyle-india-magazine-cover-a8946751.html", 
+                            "Priyanka Chopra and Nick Jonas attend the Met Gala, <br/>2017, New York City");
 }
 
 ?>
