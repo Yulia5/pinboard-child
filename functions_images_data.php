@@ -4483,6 +4483,23 @@ function populate_images() {
                             "Hello Giggles", 
                             "https://hellogiggles.com/news/politics/barack-michelle-obama-so-in-love/", 
                             "Michelle and Barack Obama as his first Presidential inauguration, 2009");
+    insert_into_images("horsemen/square-1433780649-gallery-nrm-1423622388-love-around-the-world.jpg", 
+                            "cosmopolitan.com", 
+                            "https://www.cosmopolitan.com/sex-love/news/a41620/handholding-instagram-couple-wedding-photos/", 
+                            "Selection of #FollowMeTo photos by Murad Osmann and Natalia Zahkarova");
+    insert_into_images("horsemen/3D2E911A00000578-4221856-image-a-65_1487044226081.jpg", 
+                            "MY MODERN MET", 
+                            "https://mymodernmet.com/boyfriends-of-instagram/", 
+                            "Behind the scenes of a #FollowMeTo photo");
+    insert_into_images("horsemen/4TX9em47e0SK7qYEAPPODg.jpg", 
+                            "'Follow Me To' TV show", 
+                            "https://followmeto.travel/diary/nataly/follow-me-to-tv-show", 
+                            "Behind the scenes of a #FollowMeTo photo");
+    insert_into_images("horsemen/FollowMeTo2017.jpg", 
+                            "wiki", 
+                            "Web_Summit_2017_-_PandaConf_SD5_9150_(38184316236).jpg", 
+                            "Nataly Osmann and Murad Osmann, Web Summit 2017 in Lisbon");
+
 }
 
 ?>
