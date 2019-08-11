@@ -3747,7 +3747,7 @@ function populate_images() {
                             "The BBC", 
                             "https://www.bbc.co.uk/news/stories-42460315", 
                             "Successful women's perception of what they thought a 'successful' relationship should look like, 2018");
-    insert_into_images("SocialScience/JamesBond1969.jpg", 
+    insert_into_images("SocialScience/08-james-bond-best-interiors-vogue.jpeg", 
                             "The Vogue", 
                             "https://www.vogue.com/article/homes-james-bond-movie-interiors-spectre-daniel-craig", 
                             "George Lazenby as James Bond in 'On Her Majesty's Secret Service', 1969");
@@ -4383,7 +4383,7 @@ function populate_images() {
                             "Pottermore Limited", 
                             "https://www.pottermore.com/news/fantastic-beasts-dan-fogler-alison-sudol-interview", 
                             "Queenie (Alison Sudol) and Jacob (Dan Fogler), promotional photo for 'Fantastic Beasts and Where to Find Them', 2016");
-    insert_into_images("SocialScience/InstaDan.png", 
+    insert_into_images("SocialScience/InstaDan.jpg", 
                             "@danbilzerian at instagram.com", 
                             "https://www.instagram.com/p/Bvc0Rxmnser/", 
                             "Photo of a 'palm' by @danbilzerian at instagram.com, 2019");
@@ -4410,7 +4410,7 @@ function populate_images() {
     insert_into_images("SocialScience/MerchantOfVenice.jpg", 
                             "telemagazyn.pl", 
                             "https://www.telemagazyn.pl/film/kupiec-wenecki-1528537/", 
-                            "Portia (Lynn Collins) and Bassanio (Joseph Fiennes), scene from 'The Merchant of Venice', 1596-9 book, 2004 film");
+                            "Portia (Lynn Collins) and Bassanio (Joseph Fiennes), scene from 'The Merchant of Venice', 1596-9 play, 2004 film");
     insert_into_images("SocialScience/stardust.jpg", 
                             "substreammagazine.com", 
                             "https://substreammagazine.com/2017/08/ten-years-later-stardust/", 
@@ -4471,6 +4471,18 @@ function populate_images() {
                             "independent.co.uk", 
                             "https://www.independent.co.uk/life-style/fashion/priyanka-chopra-saree-power-instyle-india-magazine-cover-a8946751.html", 
                             "Priyanka Chopra and Nick Jonas attend the Met Gala, <br/>2017, New York City");
+    insert_into_images("SocialScience/gone-wind-8.jpg", 
+                            "Newsweek", 
+                            "https://www.newsweek.com/gone-wind-80th-anniversary-15-things-you-didnt-know-about-classic-movie-1314659", 
+                            "Vivien Leigh as Scarlett O'Hara in 'Gone with the Wind', 1936 novel, 1939 film");
+    insert_into_images("SocialScience/melanie_ashley.jpg", 
+                            "Graduatez", 
+                            "https://www.graduatez.com/view/facts-gone-with-the-wind/?page=21", 
+                            "Olivia de Havilland as Melanie Hamilton and Leslie Howard as Ashley Wilkes in 'Gone with the Wind', 1936 novel, 1939 film");
+    insert_into_images("SocialScience/obamas.jpg", 
+                            "Hello Giggles", 
+                            "https://hellogiggles.com/news/politics/barack-michelle-obama-so-in-love/", 
+                            "Michelle and Barack Obama as his first Presidential inauguration, 2009");
 }
 
 ?>
