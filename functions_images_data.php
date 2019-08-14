@@ -30,7 +30,7 @@ function generate_src() {
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
-    insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '');     
+    insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
     insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');  
 
     insert_into_src("Yoga Outlet",       "Yoga Outlet",                         "http://www.yogaoutlet.com/guides/how-to-do-");    
@@ -1784,7 +1784,7 @@ function populate_images() {
     insert_into_images("horsemen/Leopold_V_Archduke_of_Austria_-_Innsbruck.jpg", 
                             "wiki", 
                             "Leopold_V,_Archduke_of_Austria_-_Innsbruck_127.jpg", 
-                            "Equestrian statue of Archduke Leopold V, <br/>1631, Caspar Gras, Innsbruck");
+                            "Equestrian statue of Archduke Leopold V on top of Leopoldsbrunnen, <br/>1631, Caspar Gras, Innsbruck, Austria");
     insert_into_images("horsemen/Lomonosov_Poltava_1762_1764.jpg", 
                             "wiki", 
                             "Lomonosov_Poltava_1762_1764.jpg", 
@@ -1860,7 +1860,7 @@ function populate_images() {
     insert_into_images("horsemen/Mirabellgarten_Fountain_8407353161.jpg", 
                             "wiki", 
                             "Mirabellgarten_Fountain_(8407353161).jpg", 
-                            "Pegasus, <br/>1661, Caspar Gras, Austria");
+                            "Pegasus, <br/>1661, Caspar Gras, Salzburg, Austria");
     insert_into_images("horsemen/Monnaie_de_Bactriane_Eucratide_I_2_faces.jpg", 
                             "wiki", 
                             "Monnaie_de_Bactriane,_Eucratide_I,_2_faces.jpg", 
@@ -4374,7 +4374,7 @@ function populate_images() {
     insert_into_images("horsemen/leads.jpg", 
                             "@insta_repeat, instagram.com", 
                             "https://www.instagram.com/insta_repeat/", 
-                            "Ladies leading by the hand into the wild");
+                            "Ladies leading by the hand into the wild by various Instagram users");
     insert_into_images("SocialScience/Mae-West.jpeg", 
                             "Old Time Radio Downloads", 
                             "https://www.oldtimeradiodownloads.com/actors/mae-west", 
@@ -4490,16 +4490,35 @@ function populate_images() {
     insert_into_images("horsemen/3D2E911A00000578-4221856-image-a-65_1487044226081.jpg", 
                             "MY MODERN MET", 
                             "https://mymodernmet.com/boyfriends-of-instagram/", 
-                            "Behind the scenes of a #FollowMeTo photo");
-    insert_into_images("horsemen/4TX9em47e0SK7qYEAPPODg.jpg", 
+                            "Behind the scenes of a #FollowMeTo photo of an unknown Instagram user");
+    insert_into_images("horsemen/follow_me_to_india.jpg", 
                             "'Follow Me To' TV show", 
                             "https://followmeto.travel/diary/nataly/follow-me-to-tv-show", 
-                            "Behind the scenes of a #FollowMeTo photo");
+                            "Behind the scenes of one of #FollowMeTo photos made by Murad Osmann and Natalia Zahkarova");
     insert_into_images("horsemen/FollowMeTo2017.jpg", 
                             "wiki", 
                             "Web_Summit_2017_-_PandaConf_SD5_9150_(38184316236).jpg", 
                             "Nataly Osmann and Murad Osmann, Web Summit 2017 in Lisbon");
-
+    insert_into_images("horsemen/fmlac42487.jpg", 
+                            "© German Documentation Center for Art History", 
+                            "https://www.bildindex.de/document/obj20311108", 
+                            "Leopoldsbrunnen, photograph taken before 1941, <br/>1623-30, Position: 1893, Innsbruck, Austria");
+    insert_into_images("horsemen/cb06e904-8323-4871-ac80-77953e270258.png", 
+                            "© Dorotheum GmbH & Co KG", 
+                            "https://www.dorotheum.com/en/l/6007356/", 
+                            "Equestrian statuette of Emperor Leopold I on horseback, <br/>1665-70, Caspar Gras, Austria");
+    insert_into_images("horsemen/Gras_Christies.png", 
+                            "Christies", 
+                            "a-bronze-group-of-holy-roman-emperor-5984935-details", 
+                            "Equestrian statuette of Emperor Leopold I or Archduke Siegmund Franz on horseback, <br/>mid 17th century, Caspar Gras, Austria");
+    insert_into_images("horsemen/Gras_Artnet.png", 
+                            "© Worldwide Corporation", 
+                            "http://www.artnet.com/artists/caspar-gras/equestrian-portrait-of-archduke-ferdinand-karl-or-7OaOo7p2v9tQaskMrh-mMQ2", 
+                            "Equestrian statuette of Archduke Ferdinand Karl or Archduke Sigmund Franz von Habsburg on horseback, <br/>mid 17th century, Caspar Gras, Austria");
+    insert_into_images("horsemen/Elisabeth_zu_Pferd.png", 
+                            "© NEUMEISTER", 
+                            "https://www.neumeister.com/kunstwerksuche/kunstdatenbank/ergebnis/1064-18/Franz-Adam/", 
+                            "Empress Elisabeth of Austria on horseback, <br/>1857, Franz Adam, Austria");
 }
 
 ?>
