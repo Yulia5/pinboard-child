@@ -245,6 +245,10 @@ function populate_images() {
                             "wiki", 
                             "Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg", 
                             "The Adoration of the Magi,<br/>1480-2, Leonardo da Vinci");
+    insert_into_images("horsemen/Leonardo_magi_zoom.png", 
+                            "wiki", 
+                            "Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg", 
+                            "The Adoration of the Magi (detail), <br/>1480-2, Leonardo da Vinci");
     insert_into_images("horsemen/108767.jpg", 
                             "Minneapolis Institute of Art", 
                             "https://collections.artsmia.org/art/108767/album-leaf-ethiopia", 
@@ -2167,7 +2171,7 @@ function populate_images() {
                             "Tombstone for Roman cavalryman Comnisca, 1st century AD, discovered in Strasbourg, France");
     insert_into_images("horsemen/Stroganov_plate-lg.jpg", 
                             "The Smithsonian's Museum of Asian Art", 
-                            "http://www.asia.si.edu/explore/ancient-world/shapur-plate/default.asp", 
+                            "https://www.freersackler.si.edu/object/F1934.23/", 
                             "Shapur plate, <br/>4th century");
     insert_into_images("horsemen/THAM-Amazonomachy_sarcophagus_4.jpg", 
                             "wiki", 
@@ -2988,7 +2992,7 @@ function populate_images() {
                             "Sarcophagus and lid with husband and wife with two pairs of horsemen and foot soldiers in combat, <br/>350–300 BC, Italian/Etruscan");
     insert_into_images("horsemen/sasanian_hunt.jpg", 
                             "The Smithsonian's Museum of Asian Art", 
-                            "http://www.asia.si.edu/collections/edan/object.php?q=fsg_F1962.1", 
+                            "https://www.freersackler.si.edu/object/F1962.1/", 
                             "Bowl with the depiction of a king hunting ibices, <br/>4th-5th century");
     insert_into_images("horsemen/sasson_75.jpg", 
                             "Sasson Ancient Art", 
@@ -4519,6 +4523,90 @@ function populate_images() {
                             "© NEUMEISTER", 
                             "https://www.neumeister.com/kunstwerksuche/kunstdatenbank/ergebnis/1064-18/Franz-Adam/", 
                             "Empress Elisabeth of Austria on horseback, <br/>1857, Franz Adam, Austria");
+    insert_into_images("horsemen/05-510073.jpg", 
+                            "RMN", 
+                            "05-510073-2C6NU0788XX8", 
+                            "Second battle between Alexander the Great and Darius III, <br/>cr. 1470-75, France");
+    insert_into_images("horsemen/12-557771.jpg", 
+                            "RMN", 
+                            "12-557771-2C6NU08INCWP", 
+                            "Hunting scene, illustration of the collection of poems of Ali-Shir Navai, <br/>cr. 1525-50, Shiraz, Persia");
+    insert_into_images("horsemen/12-583985.jpg", 
+                            "RMN", 
+                            "12-583985-2C6NU02X1U5B", 
+                            "Battle between Manuchehre and Turanians, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1567, Shiraz, Persia");
+    insert_into_images("horsemen/12-556317.jpg", 
+                            "RMN", 
+                            "12-556317-2C6NU0835T16", 
+                            "Book cover showing courtly hunting scene, <br/>cr. 1560-88, Khorasan, Persia");
+    insert_into_images("horsemen/106738145.jpg", 
+                            "Princeton", 
+                            "http://etcweb.princeton.edu/shahnama/view-page.epl?page_id=61&page_num=", 
+                            "Giv Charges into Battle against Piran, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1544-1674, Shiraz, Persia");
+    insert_into_images("horsemen/106738145.jpg", 
+                            "Princeton", 
+                            "http://etcweb.princeton.edu/shahnama/view-page.epl?page_id=61&page_num=", 
+                            "Giv Charges into Battle against Piran, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1589–90, Shiraz, Persia");
+    insert_into_images("horsemen/DP107142.jpg", 
+                            "Met", 
+                            "452135", 
+                            "Siyavush Plays Polo before Afrasiyab, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1525–30, Shiraz, Persia");
+    insert_into_images("horsemen/sf11-39-2r.jpg", 
+                            "Met", 
+                            "446161", 
+                            "Akbar Hunting, illustration of History of Akbar by Abul-Fazl ibn Mubarak, <br/>late 16th century, Lahore, Mughal Empire");
+    insert_into_images("horsemen/DT4803.jpg", 
+                            "Met", 
+                            "452135", 
+                            "Krishna and Balarma Fighting the Enemy, illustration of Harivamsa, <br/>cr. 1590–95, Lahore, Mughal Empire");
+    insert_into_images("horsemen/DP215755.jpg", 
+                            "Met", 
+                            "451089", 
+                            "Battle Between Iranians and Turanians, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1562–83, Shiraz, Persia");
+    insert_into_images("horsemen/DP159385.jpg", 
+                            "Met", 
+                            "451089", 
+                            "Rustam Seizes Afrasiyab by the Girdle and Lifts him from the Saddle, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1430–40, India");
+    insert_into_images("horsemen/DT8442.jpg", 
+                            "Met", 
+                            "453276", 
+                            "The Battle of Shahbarghan, illustration of Padshahnama by Abdul Hamid Lahori, <br/>1646-1700, India");
+    insert_into_images("horsemen/AN00225812_001_l.jpg", 
+                            "BM", 
+                            "717305", 
+                            "Studies of military tank-like machines including one led by a horseman on a rearing horse pulling a contraption with revolving scythes, <br/>cr. 1485, Leonardo da Vinci, Florence");
+    insert_into_images("horsemen/AN00050860_001_l.jpg", 
+                            "BM", 
+                            "765099", 
+                            "Studies of horsemen for the Battle of Anghiari, <br/>cr. 1503, Leonardo da Vinci, Florence");
+    insert_into_images("horsemen/1971.61.jpg", 
+                            "The San Diego Museum of Art", 
+                            "http://collection.sdmart.org/Obj5305", 
+                            "Faramarz leads Borzu captive, illustration of Borzunameh, <br/>cr. 1500, Fars, Persia");
+    insert_into_images("horsemen/1972.222.jpg", 
+                            "The San Diego Museum of Art", 
+                            "http://collection.sdmart.org/Obj5294", 
+                            "Khosrow and Shirin hunting lions, illustration of Khamsa of Nizami, <br/>cr. 1580, Persia");
+    insert_into_images("horsemen/Ismail_Chingiz_Mehbaliyev.jpg", 
+                            "wiki", 
+                            "Ismail_declares_himself_shah_by_entering_Tabriz,_Chingiz_Mehbaliyev.jpg", 
+                            "Ismail declares himself shah by entering Tabriz, <br/>2005 or earlier, Chingiz Mehbaliyev, Azerbaijan");
+    insert_into_images("horsemen/AN00353274_001_l.jpg", 
+                            "BM", 
+                            "3068677", 
+                            "Satire: Louis XIV, holding out coins, runs after Charles II who holding the sceptre of peace and rides a prancing horse, <br/>1670-80, Romeyn de Hooghe, Netherlands");
+    insert_into_images("horsemen/Triptych-of-the-Adoration-of-the-Magi.jpg", 
+                            "wiki", 
+                            "Hieronymus_Bosch_-_Triptych_of_the_Adoration_of_the_Magi_-_WGA2606.jpg", 
+                            "The Adoration of the Magi, <br/>cr. 1495, Hieronymus Bosch, Netherlands");
+    insert_into_images("horsemen/Bosch_magi_zoom.png", 
+                            "wiki", 
+                            "Hieronymus_Bosch_-_Triptych_of_the_Adoration_of_the_Magi_-_WGA2606.jpg", 
+                            "The Adoration of the Magi (detail), <br/>cr. 1495, Hieronymus Bosch, Netherlands");
+    insert_into_images("horsemen/Santiago_a_caballo.jpg", 
+                            "wiki", 
+                            "El_Apóstol_Santiago_a_caballo_o_Santiago_Matamoros,_de_Francisco_Camilo_(Museo_del_Prado).jpg", 
+                            "The Apostle Santiago on horseback, or Santiago Matamoros, <br/>1649, Francisco Camilo, Spain");
 }
 
 ?>
