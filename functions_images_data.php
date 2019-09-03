@@ -1559,7 +1559,7 @@ function populate_images() {
                             "Maria of Burgundy (a manuscript illustration), <br/>end of the 15th century, Bruges");
     insert_into_images("horsemen/F-1947-LF-4-open-png-12301.jpg", 
                             "The Courtauld Gallery", 
-                            "http://courtauld.ac.uk/gallery/collection/decorative-arts/the-morelli-nerli-wedding-chests", 
+                            "https://courtauld.ac.uk/gallery/collection/decorative-arts/renaissance-decorative-arts-highlights/the-morelli-nerli-wedding-chests", 
                             "The Morelli-Nerli Wedding Chest,<br/>1472, Biagio di Antonio, Jacopo del Sellaio and Zanobi di Domenico");
     insert_into_images("horsemen/F0076_Louvre_Desjardins_Passage_du_Rhin_MR3382_rwk.jpg", 
                             "wiki", 
@@ -1816,7 +1816,7 @@ function populate_images() {
     insert_into_images("horsemen/Lucas_Cranach_crucifixion.jpg", 
                             "wiki", 
                             "Lucas_Cranach_d.Ä._-_Kreuzigung_mit_dem_gläubigen_Hauptmann_(Sevilla).jpg", 
-                            "The Crucifixion with the Converted Centurion, <br/>1538, Lucas Cranach the Elder");
+                            "The Crucifixion with the Converted Centurion, <br/>1538, Lucas Cranach the Elder, Germany");
     insert_into_images("horsemen/MANF1999_99_101_SEQ_001_P.jpg", 
                             "Cer.es", 
                             "http://ceres.mcu.es/pages/Main?idt=80872&inventary=1999/99/101&table=FMUS&museum=MAN", 
@@ -2123,7 +2123,7 @@ function populate_images() {
                             "Plate with King Hunting Lions,<br/>5th century");
     insert_into_images("horsemen/Screen-Shot-2016-05-27-at-18.19.35.png", 
                             "HAUM", 
-                            "http://www.haum.info/dib/Skulpturen%20und%20au%C3%9Fereurop%C3%A4ische%20Kunst/Bronze/index.html#Bro%20178.jpg", 
+                            "https://dib.haum.info/Skulpturen%20und%20au%C3%9Fereurop%C3%A4ische%20Kunst/Bronze/index.html#Bro%20178.jpg", 
                             "Duke Heinrich Julius of Braunschweig on horseback, <br/>1605, Adriaen de Vries, Prague");
     insert_into_images("horsemen/Sidamara_Archaeologisches_Museum_Istanbul.jpg", 
                             "wiki", 
@@ -2605,7 +2605,7 @@ function populate_images() {
     insert_into_images("horsemen/georg-desmarees-kurfurst-max-iii-josef-von-bayern-zu-pferde-um-1750.jpg", 
                             "bildergipfel.de", 
                             "http://www.bildergipfel.de/kunstdrucke/kunststile_und_epochen/barock/kurfuerst_max_iii_josef_von_bayern_zu_pferde_um_1750_georg_schule_desmarees", 
-                            "Elector Maximilian III Josef of Bavaria on horseback, cr.1750, George Desmarées");
+                            "Elector Maximilian III Josef of Bavaria on horseback, <br/>cr.1750, George Desmarées, Bavaria, Germany");
     insert_into_images("horsemen/george4.jpg", 
                             "Seals", 
                             "hanover/george4.htm", 
@@ -4542,10 +4542,6 @@ function populate_images() {
     insert_into_images("horsemen/106738145.jpg", 
                             "Princeton", 
                             "http://etcweb.princeton.edu/shahnama/view-page.epl?page_id=61&page_num=", 
-                            "Giv Charges into Battle against Piran, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1544-1674, Shiraz, Persia");
-    insert_into_images("horsemen/106738145.jpg", 
-                            "Princeton", 
-                            "http://etcweb.princeton.edu/shahnama/view-page.epl?page_id=61&page_num=", 
                             "Giv Charges into Battle against Piran, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1589–90, Shiraz, Persia");
     insert_into_images("horsemen/DP107142.jpg", 
                             "Met", 
@@ -4603,6 +4599,26 @@ function populate_images() {
                             "wiki", 
                             "Hieronymus_Bosch_-_Triptych_of_the_Adoration_of_the_Magi_-_WGA2606.jpg", 
                             "The Adoration of the Magi (detail), <br/>cr. 1495, Hieronymus Bosch, Netherlands");
+    insert_into_images("horsemen/Mathis_Gothart_Grunewald_Crucifixion.jpg", 
+                            "wiki", 
+                            "Mathis_Gothart_Grünewald_007.jpg", 
+                            "The Small Crucifixion, <br/>cr. 1511-20, Matthias Grünewald, Germany");
+    insert_into_images("horsemen/Budapest_Rearing_Horse.png", 
+                            "wiki", 
+                            "Budapest_Rearing_Horse_and_Mounted_Warrior,_right_side,_by_E.C.Rae.png", 
+                            "Rearing Horse and Mounted Warrior statuette, <br/>1516-9, Leonardo da Vinci, France");
+    insert_into_images("horsemen/81641b31-1a55-4521-bab7-cf12d63c535f.png", 
+                            "NEUMEISTER", 
+                            "https://www.neumeister.com/en/artwork-search/artwork-database/ergebnis/1006-18/Georges-Desmar%25C3%25A9es/", 
+                            "Elector Maximilian III Josef of Bavaria on horseback, <br/>1758, Georges Desmarées, Bavaria, Germany");
+    insert_into_images("horsemen/A_P1320195.jpeg", 
+                            "kunstbeziehung.goldecker.de", 
+                            "https://kunstbeziehung.goldecker.de/work.php?sd%5BwCode%5D=5c83b47e43728", 
+                            "Elector Karl Albrecht later Charles VII on horseback, <br/>1758, Georges Desmarées, Bavaria, Germany");
+    insert_into_images("horsemen/kipicipu0003.jpg", 
+                            "europeana.eu", 
+                            "https://www.europeana.eu/portal/en/record/9200416/BibliographicResource_3000116256574.html", 
+                            "Saint George killing the dragon, <br/>cr. 1600, Giuseppe Cesari, Rome, Italy");
     insert_into_images("horsemen/Santiago_a_caballo.jpg", 
                             "wiki", 
                             "El_Apóstol_Santiago_a_caballo_o_Santiago_Matamoros,_de_Francisco_Camilo_(Museo_del_Prado).jpg", 

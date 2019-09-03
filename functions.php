@@ -251,10 +251,30 @@ function MY_VERY_OWN_instagram_link($attr, $content = null) {
 	if ( ! $title ) {
 		$title = $account;
 	}
-	$result = '<a title="@' . $title . '" href="https://www.instagram.com/' . $account . '" target="_blank">@' . $account . '</a>';	
+	$result = '<a title="@' . $title . '" href="https://www.instagram.com/' . $account . '" target="_blank" rel="noopener noreferrer">@' . $account . '</a>';	
 	return $result;
 }
 add_shortcode('yu_insta', 'MY_VERY_OWN_instagram_link');
+
+/**
+ * MY_VERY_OWN_book
+ */
+function MY_VERY_OWN_book($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'id' => '',
+		'text' => '',
+		'title' => ''
+	), $attr));
+	
+	if ( ! $title ) {
+		$title = $text;
+	}
+
+	$result = '<a title="' . $title . '" href="https://www.worldcat.org/oclc/' . $id . '" target="_blank" rel="noopener noreferrer">' . $text . '</a>';	
+	return $result;
+}
+add_shortcode('yu_book', 'MY_VERY_OWN_book');
 
 /**
  * MY_VERY_OWN_clear
