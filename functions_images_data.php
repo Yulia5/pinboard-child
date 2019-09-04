@@ -172,7 +172,7 @@ function populate_images() {
     insert_into_images("horsemen/0_113499_f752414e_orig.jpg", 
                             "@lviza_neo, liveinternet.ru", 
                             "http://www.liveinternet.ru/users/lviza_neo/post134955175/", 
-                            "Future emperor Alexander II,<br/>1840, Franz Kruger");
+                            "Future emperor Alexander II of Russia, <br/>1840, Franz Kruger");
     insert_into_images("horsemen/0_Sarcofago_di_Helena_-_Museo_Pio-Clementino_-_Vatican_2c.jpg", 
                             "wiki", 
                             "0_Sarcofago_di_Helena_-_Museo_Pio-Clementino_-_Vatican_(2c).JPG", 
@@ -216,7 +216,7 @@ function populate_images() {
     insert_into_images("horsemen/1024px-Jackson_Statue_in_DC.jpg", 
                             "wiki", 
                             "Jackson_Statue_in_DC.JPG", 
-                            "Statue of Andrew Jackson, <br/>1852, Washington D.C.");
+                            "Statue of Andrew Jackson, <br/>1852, Clark Mills, Washington D.C., U.S.A.");
     insert_into_images("horsemen/1024px-Maximilian_Emanuel_2_Reiterstatue_Budapest.jpg", 
                             "wiki", 
                             "Maximilian_Emanuel_2_Reiterstatue_Budapest.jpg", 
@@ -1056,11 +1056,11 @@ function populate_images() {
     insert_into_images("horsemen/AN00405656_001_l.jpg", 
                             "BM", 
                             "367898", 
-                            "Cylinder seal with a scene of a rider wearing a Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC");
+                            "Cylinder seal with a scene of a rider in a Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC, Achaemenid Persia");
     insert_into_images("horsemen/AN00405656_001_seal_only.jpg", 
                             "BM", 
                             "367898", 
-                            "Cylinder seal with a scene of a rider in Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC, Achaemenid Persia. <br/>The similarity of iconography is striking; it would be identical if not for the spear");
+                            "Cylinder seal with a scene of a rider in a Median dress with a spear and a dog chasing a fallow deer, <br/>538 BC-331 BC, Achaemenid Persia");
     insert_into_images("horsemen/AN00420022_001_l.jpg", 
                             "BM", 
                             "461562", 
