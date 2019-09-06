@@ -2340,7 +2340,7 @@ function populate_images() {
     insert_into_images("horsemen/Yuhanna-Mercurius.jpg", 
                             "wiki", 
                             "Yuhanna-Mercurius.jpg", 
-                            "Saint Mercurius, <br/>cr. 1778, painted by Yuhanna al-Armani (cr. 1720-86)");
+                            "Saint Mercurius, <br/>cr. 1778, painted by Yuhanna al-Armani, Ottoman Egypt");
     insert_into_images("horsemen/ZauerveydNA_Petr1UsmirDA19.jpg", 
                             "wiki", 
                             "ZauerveydNA_Petr1UsmirDA19.jpg", 
