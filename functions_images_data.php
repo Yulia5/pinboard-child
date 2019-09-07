@@ -4623,6 +4623,18 @@ function populate_images() {
                             "wiki", 
                             "El_Apóstol_Santiago_a_caballo_o_Santiago_Matamoros,_de_Francisco_Camilo_(Museo_del_Prado).jpg", 
                             "The Apostle Santiago on horseback, or Santiago Matamoros, <br/>1649, Francisco Camilo, Spain");
+    insert_into_images("horsemen/Low_Countries_1700.png", 
+                            "wiki", 
+                            "Low_Countries_1700.png", 
+                            "Map of the Low Countries cr. 1700");
+    insert_into_images("horsemen/Flandres.png", 
+                            "Google Maps", 
+                            "https://www.google.com/maps/place/Flanders,+Belgium/@51.0747751,1.9854573,7z/", 
+                            "Map of Flandres, Belgium, 2019");
+    insert_into_images("horsemen/bridgeman-painting-of-santiago-558594.jpg", 
+                            "The British Library", 
+                            "https://www.bl.uk/collection-items/painting-of-santiago-the-moor-slayer", 
+                            "Altarpiece with St. James in the central panel, <br/>15th century, Segovia. Spain.");
 }
 
 ?>
