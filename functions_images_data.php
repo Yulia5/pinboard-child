@@ -4638,7 +4638,7 @@ function populate_images() {
     insert_into_images("horsemen/Paulus_Potter_-_Diederik_Tulp_-_WGA18205.jpg", 
                             "wiki", 
                             "Paulus_Potter_-_Diederik_Tulp_-_WGA18205.jpg", 
-                            "Diederik Tulp, <br/>1653, Paulus_Potter, Netherlands");
+                            "Diederik Tulp, <br/>1653, Paulus Potter, Netherlands");
     insert_into_images("horsemen/School_of_Thomas_de_Keyser_001.jpg", 
                             "wiki", 
                             "School_of_Thomas_de_Keyser_001.jpg", 
@@ -4687,6 +4687,9 @@ function populate_images() {
                             "wiki", 
                             "Rembrandt_Harmensz._van_Rijn_094.jpg", 
                             "Portrait of Frederick Rihel on Horseback, <br/>1663, Rembrandt, Netherlands");
+    insert_into_images("horsemen/De_berenjacht_Rijksmuseum_SK-A-316.jpeg", 
+                            "wiki", 
+                            "De_berenjacht_Rijksmuseum_SK-A-316.jpeg", 
+                            "The bear hunt, <br/>1649, Paulus Potter, Netherlands");
 }
-
 ?>
