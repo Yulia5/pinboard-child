@@ -4635,6 +4635,58 @@ function populate_images() {
                             "The British Library", 
                             "https://www.bl.uk/collection-items/painting-of-santiago-the-moor-slayer", 
                             "Altarpiece with St. James in the central panel, <br/>15th century, Segovia. Spain.");
+    insert_into_images("horsemen/Paulus_Potter_-_Diederik_Tulp_-_WGA18205.jpg", 
+                            "wiki", 
+                            "Paulus_Potter_-_Diederik_Tulp_-_WGA18205.jpg", 
+                            "Diederik Tulp, <br/>1653, Paulus_Potter, Netherlands");
+    insert_into_images("horsemen/School_of_Thomas_de_Keyser_001.jpg", 
+                            "wiki", 
+                            "School_of_Thomas_de_Keyser_001.jpg", 
+                            "Equestrian portrait of Johan Wolfart van Brederode, <br/>1640-70, School of Thomas de Keyser, Netherlands");
+    insert_into_images("horsemen/La_Bataille_dIssus_-_Jan_Brueghel.jpeg", 
+                            "wiki", 
+                            "0_La_Bataille_d%27Issus_-_Jan_Brueghel_l%27Ancien_(détail).JPG", 
+                            "The Battle of Issus or Arbela (zoom on Alexander the Great), <br/>1602, Jan Brueghel the Elder, Flemish school");
+    insert_into_images("horsemen/La_Bataille_dIssus_Jan_Brueghel.jpeg", 
+                            "wiki", 
+                            "0_La_Bataille_d%27Issus_-_Jan_Brueghel_l%27Ancien_(1).JPG", 
+                            "The Battle of Issus or Arbela, <br/>1602, Jan Brueghel the Elder, Flemish school");
+    insert_into_images("horsemen/Horatius_Cocles_Stopping_King_Porsenna_zoom.jpg", 
+                            "wiki", 
+                            "Horatius_Cocles_Stopping_King_Porsenna%27s_Army_outside_Rome_(Ludwig_Refinger)_-_Nationalmuseum_-_17244.tif", 
+                            "Horatius Cocles Stopping King Porsenna's Army outside Rome, <br/>1525-49, Ludwig Refinger, Bavaria, Germany");
+    insert_into_images("horsemen/Horatius_Cocles_Stopping_King_Porsennas_Army.jpg", 
+                            "wiki", 
+                            "Horatius_Cocles_Stopping_King_Porsenna%27s_Army_outside_Rome_(Ludwig_Refinger)_-_Nationalmuseum_-_17244.tif", 
+                            "The Battle of Issus or Arbela, <br/>1602, Jan Brueghel the Elder, Bavaria, Germany");
+    insert_into_images("horsemen/Albrecht_Altdorfer_Schlacht_bei_Issus.jpg", 
+                            "wiki", 
+                            "Albrecht_Altdorfer_-_Schlacht_bei_Issus_(Alte_Pinakothek,_München).jpg", 
+                            "The Battle of Alexander at Issus, <br/>1529, Albrecht Altdorfer, Bavaria, Germany");
+    insert_into_images("horsemen/Schlacht_bei_Issus_zoom.jpg", 
+                            "wiki", 
+                            "Albrecht_Altdorfer_-_Schlacht_bei_Issus_(Alte_Pinakothek,_München).jpg", 
+                            "The Battle of Alexander at Issus, <br/>1529, Albrecht Altdorfer, Bavaria, Germany");
+    insert_into_images("horsemen/AN00222003_001_l.jpg", 
+                            "BM", 
+                            "710506", 
+                            "A Mughal nobleman on horseback, <br/>cr. 1656-61, Rembrandt, Netherlands");
+    insert_into_images("horsemen/AN00170685_001_l.jpg", 
+                            "BM", 
+                            "367289", 
+                            "Plaque showing a heavily armoured horseman (cataphract) spearing a lion, <br/>3rd century BC - 2nd century, Parthian or Seleucid");
+    insert_into_images("horsemen/AN00708421_001_l.jpg", 
+                            "BM", 
+                            "3064200", 
+                            "William Cavendish on horseback, illustration of the dressage manual, <br/>1657, Abraham van Diepenbeeck, Netherlands");
+    insert_into_images("SocialScience/putin.jpg", 
+                            "iz.ru", 
+                            "https://iz.ru/919017/2019-09-07/putin-i-sobianin-priekhali-vo-dvoretc-khudozhestvennoi-gimnastiki", 
+                            "Vladimir Putin and Russian gymnasts, <br/>2019, Moscow, Russia");
+    insert_into_images("horsemen/Rembrandt_Harmensz_van_Rijn_094.jpg", 
+                            "wiki", 
+                            "Rembrandt_Harmensz._van_Rijn_094.jpg", 
+                            "Portrait of Frederick Rihel on Horseback, <br/>1663, Rembrandt, Netherlands");
 }
 
 ?>
