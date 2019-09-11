@@ -2693,7 +2693,7 @@ function populate_images() {
     insert_into_images("horsemen/holy_rider.png", 
                             "Sasson Ancient Art", 
                             "http://www.sassonancientart.com/artwork_show_282_archive.html", 
-                            "Bronze medallion with Saint George, <br/>9th–12th century");
+                            "Bronze medallion with Saint George, <br/>9th–12th century, Byzantine");
     insert_into_images("rs2G9A1355-sml-narrow.jpg", 
                             "Sergei Riaboff", 
                             "http://serhi001.weebly.com/", 
@@ -4055,8 +4055,8 @@ function populate_images() {
                             "KHM", 
                             "373382", 
                             "Balaclava with the depictions of Marcus Curtius and Horatius Cocles, <br/>1560, Milan");
-    insert_into_images("horsemen/SMB_Curtius.png", 
-                            "KHM", 
+    insert_into_images("horsemen/gonzaga_curtius.jpg", 
+                            "ikmk", 
                             "18200293", 
                             "Medallion of Francisco II Gonzaga with the depiction of Marcus Curtius, <br/>1530, Bartulus Talpa, Mantua");
     insert_into_images("horsemen/1483r.jpg", 
@@ -4691,5 +4691,17 @@ function populate_images() {
                             "wiki", 
                             "De_berenjacht_Rijksmuseum_SK-A-316.jpeg", 
                             "The bear hunt, <br/>1649, Paulus Potter, Netherlands");
+    insert_into_images("horsemen/Ciriaco_dAncona.jpg", 
+                            "wiki", 
+                            "Ciriaco_d%27Ancona_di_Benozzo_Gozzoli.jpg", 
+                            "Ciriaco de' Pizzicolli, detail of a painting in Cappella del Palazzo Medici-Ricciardi, <br/>1459, Florence, Italy");
+    insert_into_images("horsemen/olympics_medal.jpg", 
+                            "BM", 
+                            "938500", 
+                            "Olympic Games medal showing three classical figures and St George speaking the dragon, <br/>1908, Bertram Mackennal, British Isles");
+    insert_into_images("horsemen/sisinios_amulet.jpg", 
+                            "HAM", 
+                            "191293", 
+                            "Amulet with Holy Rider (St. Sisinios) and Virgin Enthroned, <br/>5th-7th century, Byzantium"); 
 }
 ?>
