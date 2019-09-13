@@ -23,6 +23,7 @@ function generate_src() {
     insert_into_src("RMN",      'Réunion des Musées Nationaux - Grand Palais',  'http://www.photo.rmn.fr/archive/', '.html');  
     insert_into_src("HM",       '© The State Hermitage Museum, St. Petersburg', 'https://www.hermitagemuseum.org/wps/portal/hermitage/digital-collection/', '/?lng=en');  
     insert_into_src("VA",       '© Victoria and Albert Museum, London',         'http://collections.vam.ac.uk/item/', '/');
+    insert_into_src("Prado",    'Museo del Prado',                              'https://www.museodelprado.es/en/the-collection/art-work/');
     insert_into_src("Seals",    'Seals @ mernick.org.uk/seals',                 'http://www.mernick.org.uk/seals/');   
     insert_into_src("numisbids",'NumisBids',                                    'https://www.numisbids.com/n.php?p=lot&');    
     insert_into_src("moneta",   'Монеты России (Coins of Russia)',              'http://moneta-russia.ru/');    
@@ -634,8 +635,8 @@ function populate_images() {
                             "https://new.liveauctioneers.com/item/54140228_salvador-dali-don-quichotte-quixote-signed", 
                             "Don Quixote,<br/>?, Salvador Dalí");
     insert_into_images("horsemen/544f0e17-78a8-42fd-ba5b-0338c3eb5995.jpg", 
-                            "Museo del Prado", 
-                            "https://www.museodelprado.es/en/the-collection/art-work/carlos-ii-on-horseback/fc3c7f9e-1b78-45b4-afab-b3b350f8f4f4", 
+                            "Prado", 
+                            "carlos-ii-on-horseback/fc3c7f9e-1b78-45b4-afab-b3b350f8f4f4", 
                             "Carlos II on Horseback, <br/>1698, G.B. Foggini, Prado, Madrid");
     insert_into_images("horsemen/5646824699_964b5e1568_b.jpg", 
                             "Lisa Fritsch @ flickr.com", 
@@ -714,8 +715,8 @@ function populate_images() {
                             "Battle_between_Novgorod_and_Suzdal.jpg", 
                             "Battle between Novgorod and Suzdal in 1170 with the depiction of Saint George and other warrior saints in the bottom tier, <br/>second half of the 15th century, Novgorod, Russia");
     insert_into_images("horsemen/76ec23a1-48d3-4c96-b4e6-d03cea25538e.jpg", 
-                            "Museo del Prado", 
-                            "https://www.museodelprado.es/en/the-collection/art-work/fernando-of-tuscany-on-horseback/07849769-71e5-446b-a071-7279c9ecccf2?searchid=60cbe7de-4a15-a0b0-c734-ba46df853473", 
+                            "Prado", 
+                            "fernando-of-tuscany-on-horseback/07849769-71e5-446b-a071-7279c9ecccf2?searchid=60cbe7de-4a15-a0b0-c734-ba46df853473", 
                             "Fernando of Tuscany on Horseback, <br/>1695, Giuseppe Piamontini");
     insert_into_images("horsemen/776-Roger-Freeing-Angelica-St.-George-and-the-Damsel-1970.jpg", 
                             "art-dali.com/", 
@@ -4654,11 +4655,11 @@ function populate_images() {
     insert_into_images("horsemen/Horatius_Cocles_Stopping_King_Porsenna_zoom.jpg", 
                             "wiki", 
                             "Horatius_Cocles_Stopping_King_Porsenna%27s_Army_outside_Rome_(Ludwig_Refinger)_-_Nationalmuseum_-_17244.tif", 
-                            "Horatius Cocles Stopping King Porsenna's Army outside Rome, <br/>1525-49, Ludwig Refinger, Bavaria, Germany");
+                            "Horatius Cocles Stopping King Porsenna's Army outside Rome (detail), <br/>1525-49, Ludwig Refinger, Bavaria, Germany");
     insert_into_images("horsemen/Horatius_Cocles_Stopping_King_Porsennas_Army.jpg", 
                             "wiki", 
                             "Horatius_Cocles_Stopping_King_Porsenna%27s_Army_outside_Rome_(Ludwig_Refinger)_-_Nationalmuseum_-_17244.tif", 
-                            "The Battle of Issus or Arbela, <br/>1602, Jan Brueghel the Elder, Bavaria, Germany");
+                            "Horatius Cocles Stopping King Porsenna's Army outside Rome, <br/>1525-49, Ludwig Refinger, Bavaria, Germany");
     insert_into_images("horsemen/Albrecht_Altdorfer_Schlacht_bei_Issus.jpg", 
                             "wiki", 
                             "Albrecht_Altdorfer_-_Schlacht_bei_Issus_(Alte_Pinakothek,_München).jpg", 
@@ -4703,5 +4704,70 @@ function populate_images() {
                             "HAM", 
                             "191293", 
                             "Amulet with Holy Rider (St. Sisinios) and Virgin Enthroned, <br/>5th-7th century, Byzantium"); 
+    insert_into_images("horsemen/Vase-with-hunting-scenes.jpg", 
+                            "Prado", 
+                            "vase-with-hunting-scenes/5a18363c-0ad2-462e-8a5a-6c3a4f1fe84e?searchid=13704edd-6a8c-e67a-dc8d-bfa4e5b8d2da", 
+                            "Vase with hunting scenes showing Meleager, <br/>1550-75, Francesco Tortorino, Milan, Italy"); 
+    insert_into_images("horsemen/Meleager_vase.png", 
+                            "Prado", 
+                            "vase-with-hunting-scenes/5a18363c-0ad2-462e-8a5a-6c3a4f1fe84e?searchid=13704edd-6a8c-e67a-dc8d-bfa4e5b8d2da", 
+                            "Vase with hunting scenes (detail showing Meleager), <br/>1550-75, Francesco Tortorino, Milan, Italy"); 
+    insert_into_images("horsemen/Meleagrus-Hunt.jpg", 
+                            "Prado", 
+                            "meleagrus-hunt/cdf09cb4-ad3f-4c02-80df-f5d849b4a682?searchid=13704edd-6a8c-e67a-dc8d-bfa4e5b8d2da", 
+                            "Meleagrus' Hunt statuette, <br/>1583-4, Giovanni di Benedetto Bandini, Florence/Urbino, Italy"); 
+    insert_into_images("horsemen/Meleager_model.png", 
+                            "Met", 
+                            "460471", 
+                            "Plaquette depicting Meleager on horseback hunting the Calydonian Boar, <br/>16th century, later cast, Pseudo-Melioli, Italy"); 
+    insert_into_images("horsemen/Vittore_carpaccio_san_giorgio_e_il_drago_01.jpg", 
+                            "wiki", 
+                            "Vittore_carpaccio,_san_giorgio_e_il_drago_01.jpg", 
+                            "Saint George and the Dragon, <br/>1502, Vittore Carpaccio, Venice, Italy");
+    insert_into_images("horsemen/san_giorgio_e_il_drago_02.jpg", 
+                            "wiki", 
+                            "Vittore_carpaccio,_san_giorgio_e_il_drago_02.jpg", 
+                            "Saint George and the Dragon, <br/>1516, Vittore Carpaccio, Venice, Italy");
+    insert_into_images("horsemen/St_George_fighting_the_dragon_Leonhard_Beck.jpg", 
+                            "wiki", 
+                            "St_George_fighting_the_dragon_Leonhard_Beck.jpg", 
+                            "Saint George and the Dragon, <br/>cr. 1515, Leonhard Beck, Germany");
+    insert_into_images("horsemen/VirginiaBotticelli.jpg", 
+                            "wiki", 
+                            "VirginiaBotticelli.jpg", 
+                            "The Story of Virginia, <br/>cr. 1496-1504, Sandro Botticelli, Florence, Germany");
+    insert_into_images("horsemen/Botticelli_Prado_103.jpg", 
+                            "wiki", 
+                            "Botticelli_Prado_103.jpg", 
+                            "The Story of Nastagio degli Onesti I, <br/>1482-3, Sandro Botticelli, Florence, Germany");
+    insert_into_images("horsemen/Sandro_Botticelli_075.jpg", 
+                            "wiki", 
+                            "Botticelli_Prado_103.jpg", 
+                            "The Story of Nastagio Degli Onesti: The Banquet in the Pine Forest, <br/>1482-3, Sandro Botticelli, Florence, Germany");
+    insert_into_images("horsemen/09-583431.jpg", 
+                            "RMN", 
+                            "09-583431-2C6NU0KNYVM6", 
+                            "Saint George Fighting the Dragon, <br/>1847, Delacroix Eugène, France");
+    insert_into_images("horsemen/Luca_Signorelli_-_Sint_Joris_en_de_draak.jpg", 
+                            "wiki", 
+                            "Luca_Signorelli_-_Sint_Joris_en_de_draak.jpg", 
+                            "Saint George And the Dragon, <br/>1495-1505, Workshop of Luca Signorelli, Tuscany, Italy");
+    insert_into_images("horsemen/3328201302140003.jpg", 
+                            "Fine Arts Museums of San Francisco", 
+                            "https://art.famsf.org/cornelis-cort/st-george-killing-dragon-19633036759", 
+                            "Saint George Killing the Dragon, <br/>cr. 1540, Giulio Clovio (Il Macedo), Rome, Italy");
+    insert_into_images("horsemen/MM26064.jpg", 
+                            "Met", 
+                            "368441", 
+                            "Saint George Killing the Dragon, <br/>1542, Giulio Clovio (Il Macedo), Rome, Italy");
+    insert_into_images("horsemen/Francesco_Salviati_-_Scenes_from_the_Life_of_Furius_Camillus_-_WGA20680.jpg", 
+                            "wiki", 
+                            "Francesco_Salviati_-_Scenes_from_the_Life_of_Furius_Camillus_-_WGA20680.jpg", 
+                            "The stories of Furio Camillo, <br/>1543-5, Francesco Salviati, Palazzo Vecchio, Florence");
+/*    insert_into_images("horsemen/Henri_IV_Arques_21_septembre_1589.jpeg", 
+                            "Met", 
+                            "368441", 
+                            "Saint George Killing the Dragon, <br/>1542, Giulio Clovio (Il Macedo), Rome, Italy");
+  */ 
 }
 ?>

@@ -162,11 +162,11 @@ function MY_VERY_OWN_recept($attr, $content = null) {
 		$result = $result . do_shortcode("[yu_images_DB flushright='1']" . $recept_parts[0] . '[/yu_images_DB]');
 	}
 	if (!! $recept_parts[1]) {
-		$result = $result . '<h4>Utensils</h4><ul class="utensils_ul"><li>' . replace_br($recept_parts[1]) . '.</li></ul>';
+		$result = $result . '<h9>Utensils</h9><ul class="utensils_ul"><li>' . replace_br($recept_parts[1]) . '.</li></ul>';
 	}
 	if (!! $recept_parts[2]) {
 		$ingredients_parts = explode ('#', $recept_parts[2]);
-		$result = $result . '<h4>Ingredients</h4>';
+		$result = $result . '<h9>Ingredients</h9>';
 		if (!! $ingredients_parts[0]) {
 			$result = $result . '<ul class="ingredients_ul"><li>' . replace_br($ingredients_parts[0]) . '.</li></ul>';
 		}
@@ -178,10 +178,10 @@ function MY_VERY_OWN_recept($attr, $content = null) {
 		}
 	}
 	if (!! $recept_parts[3]) {
-		$result = $result . '<h4>Directions</h4><ol class="directions_ol"><li>' . replace_br($recept_parts[3]) . '.</li></ol>';
+		$result = $result . '<h9>Directions</h9><ol class="directions_ol"><li>' . replace_br($recept_parts[3]) . '.</li></ol>';
 	}
 	if (!! $recept_parts[4]) {
-		$result = $result . '<h4>' . $last_section . '</h4><ul class="to_try"><li>' . replace_br($recept_parts[4]) . '.</li></ul>';
+		$result = $result . '<h9>' . $last_section . '</h9><ul class="to_try"><li>' . replace_br($recept_parts[4]) . '.</li></ul>';
 	}
 /**/
 	return $result;
