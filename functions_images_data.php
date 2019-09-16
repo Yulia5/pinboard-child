@@ -29,6 +29,7 @@ function generate_src() {
     insert_into_src("moneta",   'Монеты России (Coins of Russia)',              'http://moneta-russia.ru/');    
     insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
+    insert_into_src("MLM",      "The Morgan Library And Museum",                'https://www.themorgan.org/drawings/item/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
@@ -4209,12 +4210,12 @@ function populate_images() {
                             "O760343", 
                             "Hannibal mounted on a horse, <br/>1530-1562, Virgil Solis, Nuremberg, Germany");
     insert_into_images("horsemen/144138v_0001.jpg", 
-                            "The Morgan Library", 
-                            "https://www.themorgan.org/drawings/item/144138", 
+                            "MLM", 
+                            "144138", 
                             "Artybios on Horseback Attacking Onesilus, <br/>1510-1547, Jörg Breu the Younger, Augsburg, Germany");
     insert_into_images("horsemen/144810v_0001.jpg", 
-                            "The Morgan Library", 
-                            "https://www.themorgan.org/drawings/item/144810", 
+                            "MLM", 
+                            "144810", 
                             "Artybios on Horseback Attacking Onesilus, <br/>1510-1547, Jörg Breu the Younger, Augsburg, Germany");
     insert_into_images("horsemen/AN00088197_001_l.jpg", 
                             "BM", 
@@ -4744,10 +4745,6 @@ function populate_images() {
                             "wiki", 
                             "Botticelli_Prado_103.jpg", 
                             "The Story of Nastagio Degli Onesti: The Banquet in the Pine Forest, <br/>1482-3, Sandro Botticelli, Florence, Germany");
-    insert_into_images("horsemen/09-583431.jpg", 
-                            "RMN", 
-                            "09-583431-2C6NU0KNYVM6", 
-                            "Saint George Fighting the Dragon, <br/>1847, Delacroix Eugène, France");
     insert_into_images("horsemen/Luca_Signorelli_-_Sint_Joris_en_de_draak.jpg", 
                             "wiki", 
                             "Luca_Signorelli_-_Sint_Joris_en_de_draak.jpg", 
@@ -4764,10 +4761,53 @@ function populate_images() {
                             "wiki", 
                             "Francesco_Salviati_-_Scenes_from_the_Life_of_Furius_Camillus_-_WGA20680.jpg", 
                             "The stories of Furio Camillo, <br/>1543-5, Francesco Salviati, Palazzo Vecchio, Florence");
-/*    insert_into_images("horsemen/Henri_IV_Arques_21_septembre_1589.jpeg", 
-                            "Met", 
-                            "368441", 
-                            "Saint George Killing the Dragon, <br/>1542, Giulio Clovio (Il Macedo), Rome, Italy");
-  */ 
+    insert_into_images("horsemen/Carlo_Crivelli_-_Saint_George_Slaying_the_Dragon_1470.jpg", 
+                            "wiki", 
+                            "Carlo_Crivelli_-_Saint_George_Slaying_the_Dragon,_1470.jpg", 
+                            "Saint George And the Dragon, <br/>1470, Carlo Crivelli, Venice, Italy");
+    insert_into_images("horsemen/Carlo_Crivelli_078.jpg", 
+                            "wiki", 
+                            "Carlo_Crivelli_078.jpg", 
+                            "Saint George And the Dragon, <br/>1490, Carlo Crivelli, Venice, Italy");
+    insert_into_images("horsemen/09-583431.jpg", 
+                            "RMN", 
+                            "09-583431-2C6NU0KNYVM6", 
+                            "Saint George Fighting the Dragon, <br/>1847, Delacroix Eugène, France");
+    insert_into_images("horsemen/Jaguar_Attacking_a_Horseman_-_WGA6232.jpg", 
+                            "wiki", 
+                            "Eugène_Delacroix_-_Jaguar_Attacking_a_Horseman_-_WGA6232.jpg", 
+                            "Jaguar Attacking a Horseman, <br/>cr. 1855, Delacroix Eugène, France");
+    insert_into_images("horsemen/Moroccan_Horseman_Crossing_a_Ford_by_Eugène_Delacroix_c._1850.jpg", 
+                            "wiki", 
+                            "Moroccan_Horseman_Crossing_a_Ford_by_Eugène_Delacroix,_c._1850.JPG", 
+                            "Moroccan Horseman Crossing a Ford, <br/>cr. 1850, Delacroix Eugène, France");
+    insert_into_images("horsemen/Collision_of_Moorish_Horsemen_-_Walters_376.jpg", 
+                            "wiki", 
+                            "Eugène_Delacroix_-_Collision_of_Moorish_Horsemen_-_Walters_376.jpg", 
+                            "Collision of Moorish Horsemen, <br/>1843-4, Delacroix Eugène, France");
+    insert_into_images("horsemen/Arab-lion.jpg", 
+                            "wiki", 
+                            "Arab-lion.jpg", 
+                            "Arab Horseman Attacked by a Lion, <br/>1849-50, Delacroix Eugène, France");
+    insert_into_images("horsemen/A_Turk_Surrenders_to_a_Greek_Horseman_1856.jpg", 
+                            "wiki", 
+                            "Eugène_Delacroix_-_A_Turk_Surrenders_to_a_Greek_Horseman_(1856).jpg", 
+                            "A Turk Surrenders to a Greek Horseman, <br/>1856, Delacroix Eugène, France");
+    insert_into_images("horsemen/Delacroix_lion_hunt_1855.jpeg", 
+                            "wiki", 
+                            "Delacroix_lion_hunt_1855.JPG", 
+                            "Lion Hunt, <br/>1855, Delacroix Eugène, France");
+    insert_into_images("horsemen/Le_28_Juillet._La_Liberte_guidant_le_peuple.jpg", 
+                            "wiki", 
+                            "Eugène_Delacroix_-_Le_28_Juillet._La_Liberté_guidant_le_peuple.jpg", 
+                            "Liberty Leading the People, <br/>1830, Delacroix Eugène, France");
+    insert_into_images("horsemen/247009v_0001.jpg", 
+                            "MLM", 
+                            "247009", 
+                            "A Persian Horseman with a Lance, <br/>cr. 1820-7, Delacroix Eugène, France");
+    insert_into_images("horsemen/Henri_IV_Arques_21_septembre_1589.jpeg", 
+                            "wiki", 
+                            "Henri_IV_à_la_bataille_d%27Arques_21_septembre_1589.jpeg", 
+                            "Henri IV at the battle of Arques, <br/>cr. 1590, ?, France"); 
 }
 ?>
