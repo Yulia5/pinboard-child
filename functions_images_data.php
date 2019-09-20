@@ -4637,7 +4637,7 @@ function populate_images() {
     insert_into_images("horsemen/bridgeman-painting-of-santiago-558594.jpg", 
                             "The British Library", 
                             "https://www.bl.uk/collection-items/painting-of-santiago-the-moor-slayer", 
-                            "Altarpiece with St. James in the central panel, <br/>15th century, Segovia. Spain.");
+                            "Altarpiece with St. James in the central panel, <br/>15th century, Segovia, Spain");
     insert_into_images("horsemen/Paulus_Potter_-_Diederik_Tulp_-_WGA18205.jpg", 
                             "wiki", 
                             "Paulus_Potter_-_Diederik_Tulp_-_WGA18205.jpg", 
@@ -4858,16 +4858,12 @@ function populate_images() {
                             "mutualart.com", 
                             "https://www.mutualart.com/Artwork/Santiago-Matamoros/63A2D7343365365C", 
                             "Santiago Matamoros, <br/>18th century, colonial school"); 
-    insert_into_images("horsemen/543a6537b3204d5414e1b87b1aec251f.jpg", 
-                            "mutualart.com", 
-                            "https://www.mutualart.com/Artwork/Santiago-Matamoros/63A2D7343365365C", 
-                            "Santiago Matamoros, <br/>18th century, colonial school"); 
     insert_into_images("horsemen/20150506173808.jpg", 
-                            "http://abalartesubastas.com", 
+                            "abalartesubastas", 
                             "http://abalartesubastas.com/lote_elegido_nuevo.php?subasta=1&numero_lote=137&id=140&categoria=Pintura&seccion=%D3leo+sobre+tabla&orden=numero_lote&sentido=&offset=&limite=15&autor=&vendido=&activo=&idioma=en&tabla=", 
                             "Santiago Matamoros, <br/>18th century, colonial school"); 
     insert_into_images("horsemen/929.jpg", 
-                            "http://abalartesubastas.com", 
+                            "abalartesubastas", 
                             "http://abalartesubastas.com/lote_elegido_nuevo.php?subasta=1&numero_lote=137&id=140&categoria=Pintura&seccion=%D3leo+sobre+tabla&orden=numero_lote&sentido=&offset=&limite=15&autor=&vendido=&activo=&idioma=en&tabla=", 
                             "Santiago Matamoros, <br/>18th century, colonial school"); 
 
@@ -4916,5 +4912,17 @@ function populate_images() {
                             "wiki", 
                             "Spanish_America_XVIII_Century_(Most_Expansion).png", 
                             "Map of Spanish Americas at the end of the 18th century");
+    insert_into_images("horsemen/Political_Map_of_the_Americas.jpg", 
+                            "wiki", 
+                            "Spanish_America_XVIII_Century_(Most_Expansion).png", 
+                            "Contemporaty political map of Americas");
+    insert_into_images("horsemen/00_mdp_7.jpg", 
+                            "Xunta de Galicia", 
+                            "https://museos.xunta.gal/en/node/488/pezas-destacadas", 
+                            "Santiago the Spaniard-Slayer, <br/>mid 19th century or 17th century, Cuzco, Peru");
+    insert_into_images("horsemen/5c8a6cf1b322e.jpeg", 
+                            "elcomercio.pe", 
+                            "https://elcomercio.pe/somos/historias/imponente-camino-santiago-escenarios-gran-teatro-nacional-noticia-616675?foto=2", 
+                            "Demonstration calling to increase the budget of the culture sector, <br/>October 2017, Lima, Peru");
 }
 ?>
