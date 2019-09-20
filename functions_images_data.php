@@ -4904,17 +4904,17 @@ function populate_images() {
                             "wiki", 
                             "Peter_Paul_Rubens_137.jpg", 
                             "The death of Decius Mus in the battle, <br/>1618, Peter Paul Rubens, Flandres");
-    insert_into_images("horsemen/Peter_Paul_Rubens_137.jpg", 
-                            "wiki", 
-                            "Peter_Paul_Rubens_137.jpg", 
-                            "The death of Decius Mus in the battle, <br/>1618, Peter Paul Rubens, Flandres");
     insert_into_images("horsemen/SchoolOfTabriz4.jpg", 
                             "wiki", 
                             "SchoolOfTabriz4.jpg", 
-                            "Isfandiyar fights with the Wolves, illustration to Shah-nama, <br/>cr. 1370, Tabriz, Persia");
+                            "Isfandiyar fights with the Wolves, illustration to Shahnameh, <br/>cr. 1370, Tabriz, Persia");
     insert_into_images("horsemen/Jan_Wildens_-_Landscape_with_Hunt_of_Meleager_and_Atalanta.jpg", 
                             "wiki", 
                             "Jan_Wildens_-_Landscape_with_Hunt_of_Meleager_and_Atalanta.jpg", 
                             "Landscape with Hunt of Meleager and Atalanta, <br/>first half of the 17th century, Jan Wildens, Flandres");
+    insert_into_images("horsemen/Spanish_America_XVIII_Century_Most_Expansion.png", 
+                            "wiki", 
+                            "Spanish_America_XVIII_Century_(Most_Expansion).png", 
+                            "Map of Spanish Americas at the end of the 18th century");
 }
 ?>
