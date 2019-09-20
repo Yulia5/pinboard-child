@@ -30,6 +30,7 @@ function generate_src() {
     insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
     insert_into_src("MLM",      "The Morgan Library And Museum",                'https://www.themorgan.org/drawings/item/');
+    insert_into_src("Peru",     "ARCHI - Archivo Digital de Arte Peruano",      'http://www.archi.pe/index.php/foto/index/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
@@ -4809,5 +4810,111 @@ function populate_images() {
                             "wiki", 
                             "Henri_IV_à_la_bataille_d%27Arques_21_septembre_1589.jpeg", 
                             "Henri IV at the battle of Arques, <br/>cr. 1590, ?, France"); 
+    insert_into_images("horsemen/7P5M2591.jpg", 
+                            "Peru", 
+                            "8202", 
+                            "Santiago Matamoros with the Christ of the three spears, <br/>18th century, Peru"); 
+    insert_into_images("horsemen/83K97084.jpg", 
+                            "Peru", 
+                            "7998", 
+                            "Santiago Matamoros killing native Americans, <br/>18th century, Peru"); 
+    insert_into_images("horsemen/2012_8_9a.jpg", 
+                            "Peru", 
+                            "4891", 
+                            "Santiago Matamoros, <br/>1670-90, Peru"); 
+    insert_into_images("horsemen/82LF5699.jpg", 
+                            "Peru", 
+                            "4820", 
+                            "Santiago Matamoros and pastoral life scene, <br/>early 19th century, Peru"); 
+    insert_into_images("horsemen/SCN08301.jpg", 
+                            "Peru", 
+                            "6589", 
+                            "Patron Saint victorious over the moors, <br/>17th century, Peru"); 
+    insert_into_images("horsemen/82LF5702.jpg", 
+                            "Peru", 
+                            "4825", 
+                            "Santiago Matamoros (polychrome alabaster), <br/>20th century, Peru"); 
+    insert_into_images("horsemen/82LF5662.jpg", 
+                            "Peru", 
+                            "4828", 
+                            "Santiago Matamoros (alabaster), <br/>20th century, Peru"); 
+    insert_into_images("horsemen/82LF5991.jpg", 
+                            "Peru", 
+                            "4822", 
+                            "Santiago Matamoros (alabaster), <br/>20th century, Peru"); 
+    insert_into_images("horsemen/St_James_-Cristo_del_Rey.jpg", 
+                            "wiki", 
+                            "St_James_-Cristo_del_Rey.jpg", 
+                            "St. James panel from reredos in Cristo Rey Church, <br/>cr. 1760, Santa Fe, New Mexico, U.S.A."); 
+    insert_into_images("horsemen/Anonimo_-_Retrato_de_Felipe_V_convertido_en_Santiago.jpg", 
+                            "wiki", 
+                            "Anónimo_-_Retrato_de_Felipe_V_convertido_en_Santiago.jpg", 
+                            "Portrait of Philip V as Saint James, <br/>18th century, Bolivia"); 
+    insert_into_images("horsemen/Anonimo_Escuela_de_Caracas_000.jpg", 
+                            "wiki", 
+                            "Anonimo_Escuela_de_Caracas_000.jpg", 
+                            "Santiago Matamoros, <br/>second half of 18th century, Venezuela"); 
+    insert_into_images("horsemen/543a6537b3204d5414e1b87b1aec251f.jpg", 
+                            "mutualart.com", 
+                            "https://www.mutualart.com/Artwork/Santiago-Matamoros/63A2D7343365365C", 
+                            "Santiago Matamoros, <br/>18th century, colonial school"); 
+    insert_into_images("horsemen/543a6537b3204d5414e1b87b1aec251f.jpg", 
+                            "mutualart.com", 
+                            "https://www.mutualart.com/Artwork/Santiago-Matamoros/63A2D7343365365C", 
+                            "Santiago Matamoros, <br/>18th century, colonial school"); 
+    insert_into_images("horsemen/20150506173808.jpg", 
+                            "http://abalartesubastas.com", 
+                            "http://abalartesubastas.com/lote_elegido_nuevo.php?subasta=1&numero_lote=137&id=140&categoria=Pintura&seccion=%D3leo+sobre+tabla&orden=numero_lote&sentido=&offset=&limite=15&autor=&vendido=&activo=&idioma=en&tabla=", 
+                            "Santiago Matamoros, <br/>18th century, colonial school"); 
+    insert_into_images("horsemen/929.jpg", 
+                            "http://abalartesubastas.com", 
+                            "http://abalartesubastas.com/lote_elegido_nuevo.php?subasta=1&numero_lote=137&id=140&categoria=Pintura&seccion=%D3leo+sobre+tabla&orden=numero_lote&sentido=&offset=&limite=15&autor=&vendido=&activo=&idioma=en&tabla=", 
+                            "Santiago Matamoros, <br/>18th century, colonial school"); 
+
+
+    insert_into_images("horsemen/Battle_of_Agincourt_St_Albans_Chronicle_by_Thomas_Walsingham.jpg", 
+                            "wiki", 
+                            "Battle_of_Agincourt,_St._Alban%27s_Chronicle_by_Thomas_Walsingham.jpg", 
+                            "Battle of Agincourt, from the 'St. Alban's Chronicle' by Thomas Walsingham, <br/>15th century, English with Flemish illuminations"); 
+    insert_into_images("horsemen/Eugene_Delacroix_-_Chasse_au_tigre_1854.jpg", 
+                            "wiki", 
+                            "Eugène_Delacroix_-_Chasse_au_tigre_(1854).jpg", 
+                            "The Tiger Hunt, <br/>1854, Delacroix Eugène, France");
+    insert_into_images("horsemen/Eugene_Delacroix_-_Chasse_au_tigre_1854.jpg", 
+                            "wiki", 
+                            "Eugène_Delacroix_-_Chasse_au_tigre_(1854).jpg", 
+                            "The Tiger Hunt, <br/>1854, Delacroix Eugène, France");
+    insert_into_images("horsemen/Peter_Paul_Rubens_142.jpg", 
+                            "wiki", 
+                            "Peter_Paul_Rubens_142.jpg", 
+                            "The hunt of Meleagros and Atalante, <br/>1616-20, Peter Paul Rubens, Flandres");
+    insert_into_images("horsemen/8a2bb209331df2aafb39eca7d6c49d1f.jpg", 
+                            "Russian Museum", 
+                            "http://en.rusmuseum.ru/benois-wing/exhibitions/angels-of-the-21st-century/#rmPhoto[gallery9096]/0/", 
+                            "Archangel Michael, colored lithograph, <br/>1914, Natalia Goncharova, Russia");
+    insert_into_images("horsemen/864px-Buffi_-_Equestrian_portrait_of_Marie_Jeanne_of_Savoy-Nemours_-_Palazzo_Madama.jpg", 
+                            "wiki", 
+                            "Buffi_-_Equestrian_portrait_of_Marie_Jeanne_of_Savoy-Nemours_-_Palazzo_Madama.jpg", 
+                            "Equestian portrait of Maria Giovanna Battista di Savoia, <br/>1660-75, Giovanni Luigi Buffi, Duchy of Savoy");
+    insert_into_images("horsemen/AN00941716_001_l.jpg", 
+                            "BM", 
+                            "930274", 
+                            "Silver coin with helmeted warrior on horseback, king Philoxenus Anicetus, <br/>100-95 BC, minted in Afghanistan, Indo-Greek kingdom");
+    insert_into_images("horsemen/Peter_Paul_Rubens_137.jpg", 
+                            "wiki", 
+                            "Peter_Paul_Rubens_137.jpg", 
+                            "The death of Decius Mus in the battle, <br/>1618, Peter Paul Rubens, Flandres");
+    insert_into_images("horsemen/Peter_Paul_Rubens_137.jpg", 
+                            "wiki", 
+                            "Peter_Paul_Rubens_137.jpg", 
+                            "The death of Decius Mus in the battle, <br/>1618, Peter Paul Rubens, Flandres");
+    insert_into_images("horsemen/SchoolOfTabriz4.jpg", 
+                            "wiki", 
+                            "SchoolOfTabriz4.jpg", 
+                            "Isfandiyar fights with the Wolves, illustration to Shah-nama, <br/>cr. 1370, Tabriz, Persia");
+    insert_into_images("horsemen/Jan_Wildens_-_Landscape_with_Hunt_of_Meleager_and_Atalanta.jpg", 
+                            "wiki", 
+                            "Jan_Wildens_-_Landscape_with_Hunt_of_Meleager_and_Atalanta.jpg", 
+                            "Landscape with Hunt of Meleager and Atalanta, <br/>first half of the 17th century, Jan Wildens, Flandres");
 }
 ?>
