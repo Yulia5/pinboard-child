@@ -4817,7 +4817,7 @@ function populate_images() {
     insert_into_images("horsemen/83K97084.jpg", 
                             "Peru", 
                             "7998", 
-                            "Santiago Matamoros killing native Americans, <br/>18th century, Peru"); 
+                            "Santiago Mataindios, <br/>18th century, Peru"); 
     insert_into_images("horsemen/2012_8_9a.jpg", 
                             "Peru", 
                             "4891", 
@@ -4876,10 +4876,6 @@ function populate_images() {
                             "wiki", 
                             "Eugène_Delacroix_-_Chasse_au_tigre_(1854).jpg", 
                             "The Tiger Hunt, <br/>1854, Delacroix Eugène, France");
-    insert_into_images("horsemen/Eugene_Delacroix_-_Chasse_au_tigre_1854.jpg", 
-                            "wiki", 
-                            "Eugène_Delacroix_-_Chasse_au_tigre_(1854).jpg", 
-                            "The Tiger Hunt, <br/>1854, Delacroix Eugène, France");
     insert_into_images("horsemen/Peter_Paul_Rubens_142.jpg", 
                             "wiki", 
                             "Peter_Paul_Rubens_142.jpg", 
@@ -4891,7 +4887,7 @@ function populate_images() {
     insert_into_images("horsemen/864px-Buffi_-_Equestrian_portrait_of_Marie_Jeanne_of_Savoy-Nemours_-_Palazzo_Madama.jpg", 
                             "wiki", 
                             "Buffi_-_Equestrian_portrait_of_Marie_Jeanne_of_Savoy-Nemours_-_Palazzo_Madama.jpg", 
-                            "Equestian portrait of Maria Giovanna Battista di Savoia, <br/>1660-75, Giovanni Luigi Buffi, Duchy of Savoy");
+                            "Equestian portrait of Marie Jeanne Baptiste of Savoy-Nemours, <br/>1660-75, Giovanni Luigi Buffi, Duchy of Savoy");
     insert_into_images("horsemen/AN00941716_001_l.jpg", 
                             "BM", 
                             "930274", 
@@ -4924,5 +4920,102 @@ function populate_images() {
                             "elcomercio.pe", 
                             "https://elcomercio.pe/somos/historias/imponente-camino-santiago-escenarios-gran-teatro-nacional-noticia-616675?foto=2", 
                             "Demonstration calling to increase the budget of the culture sector, <br/>October 2017, Lima, Peru");
+    insert_into_images("horsemen/Santiago_Mataindios.jpg", 
+                            "wiki", 
+                            "Santiago_Mataindios.jpg", 
+                            "Santiago Mataindios, <br/>1690-1720, Cuzco School, Peru"); 
+    insert_into_images("horsemen/SANTIAGOMataindios.TallaIglesiaSantiagoTlatelolco.MEXICODF..jpg", 
+                            "vivirtlatelolco.blogspot.com", 
+                            "http://vivirtlatelolco.blogspot.com/2011/07/quien-es-el-senor-san-thiago-patrono-de.html", 
+                            "Santiago Mataindios, <br/>1610, Miguel Mauricio, Temple of Tlatelolco, Mexico"); 
+    insert_into_images("horsemen/Peru.png", 
+                            "Wikipedia", 
+                            "https://en.wikipedia.org/wiki/Cusco", 
+                            "Cusco, location within Peru"); 
+    insert_into_images("horsemen/Saint_James_the_Apostle_Church_Santiago_Acutzilapan_Atlacomulco_Mexico_State_Mexico_.jpg", 
+                            "wiki", 
+                            "Saint_James_the_Apostle_Church,_Santiago_Acutzilapan,_Atlacomulco,_Mexico_State,_Mexico_.jpg", 
+                            "Saint James the Apostle Church, <br/>contemporaty, Atlacomulco, Mexico"); 
+    insert_into_images("horsemen/Santiago_apostol_escultura_de_Abraham_Gonzalez.jpg", 
+                            "wiki", 
+                            "Santiago_apóstol,_escultura_de_Abraham_González.jpg", 
+                            "Sculpture of Saint James, <br/>1996, Abraham Gonzalez, Mexico"); 
+    insert_into_images("horsemen/MuseoRegionalTuxteco38.jpg",
+                            "wiki", 
+                            "MuseoRegionalTuxteco38.JPG", 
+                            "Sculpture of Saint James, <br/>colonial era, Mexico"); 
+    insert_into_images("horsemen/SantiagoMatamorosFranzMayer.jpg",
+                            "wiki", 
+                            "SantiagoMatamorosFranzMayer.jpg", 
+                            "Wood relief of Saint James, <br/>colonial era, Mexico"); 
+    insert_into_images("horsemen/Vincent-Adriaenssen-Leckerbetien-il-Manciola-Anversa-1595-1675-Roma-_-Battaglia-tra-cavalieri-turchi-e-cristiani-_-Paintings-oil-_-Christies.png",
+                            "Christies", 
+                            "vincent-adriaenssen-leckerbetien-il-manciola-battaglia-tra-5317258", 
+                            "Battle between Turkish and Christian horsemen, <br/>cr. 1610-1675, Vincent Adriaenssen, Fleminsh"); 
+    insert_into_images("horsemen/Vincent_Adriaenssen_-_Cavalry_battle_scene.jpg",
+                            "wiki", 
+                            "Vincent_Adriaenssen_-_Cavalry_battle_scene.jpg", 
+                            "Cavalry battle scene, <br/>cr. 1610-1675, Vincent Adriaenssen, Fleminsh"); 
+    insert_into_images("horsemen/Vincent_Adriaenssen_-_Cavalry_battle_between_Turks_and_Christians.jpg",
+                            "wiki", 
+                            "Vincent_Adriaenssen_-_Cavalry_battle_between_Turks_and_Christians.jpg", 
+                            "Cavalry battle between Turkishs and Christians, <br/>cr. 1610-1675, Vincent Adriaenssen, Fleminsh"); 
+    insert_into_images("horsemen/Martin_de_Mujica.jpg",
+                            "wiki", 
+                            "Martin_de_Mujica.jpg", 
+                            "Martín de Mujica, Chile's spaniard governator, represented as Santiago, (1646-1649), <br/>1646, Alonso de Ovalle, Chile"); 
+    insert_into_images("horsemen/Dl8cgL0WwAAKdlB.jpg",
+                            "cfariasvega @ twitter.com", 
+                            "https://twitter.com/cfariasvega/status/1035577824449572866?lang=en-gb", 
+                            "Allegory Of Santiago In The History Of Chile (1646-1649), <br/>?, Alonso de Ovalle, Chile"); 
+    insert_into_images("horsemen/Vicente_Carducho_Socorro_de_la_plaza_de_Constanza..jpg",
+                            "wiki", 
+                            "Vicente_Carducho,_Socorro_de_la_plaza_de_Constanza..jpg", 
+                            "Relief from Constance Square, <br/>1634, Vincenzo Carducci, Italian"); 
+    insert_into_images("horsemen/Frederik_Hendrik_and_Maurits_as_generals_by_Thomas_Willeboirts_Bosschaert.jpg",
+                            "wiki", 
+                            "Frederik_Hendrik_and_Maurits_as_generals,_by_Thomas_Willeboirts_Bosschaert.jpg", 
+                            "Frederik Hendrik and Maurits as generals, with the Battle of Flanders in the distance, <br/>1650, Thomas Willeboirts Bosschaert, Fleminsh"); 
+    insert_into_images("horsemen/Maurits_1567-1625_prins_van_Oranje_in_de_slag_bij_Nieuwpoort_1600.jpg",
+                            "wiki", 
+                            "Maurits_(1567-1625),_prins_van_Oranje,_in_de_slag_bij_Nieuwpoort_(1600).jpg", 
+                            "Prince Maurice of Orange during the Battle of Nieuwpoort (1600), <br/>cr. 1620-60, Henri Ambrosius Pacx, Dutch"); 
+    insert_into_images("horsemen/Sebastiaan_Vrancx_1573-1647_-_De_plundering_van_Wommelgem_1625-1630_-_Düsseldorf_Museum_Kunstpalast_15-08-2012_15-08-12.jpeg",
+                            "wiki", 
+                            "Sebastiaan_Vrancx_(1573-1647)_-_De_plundering_van_Wommelgem_(1625-1630)_-_Düsseldorf_Museum_Kunstpalast_15-08-2012_15-08-12.JPG", 
+                            "Looting of a village, possibly Wommelgem in 1589, <br/>cr. 1600-1650, Sebastiaen Vrancx, Fleminsh"); 
+    insert_into_images("horsemen/Sebastiaan_Vrancx_-_Reitergefecht_am_Fuss_eines_Hugels.jpg",
+                            "wiki", 
+                            "Sebastiaan_Vrancx_-_Reitergefecht_am_Fuß_eines_Hügels.jpg", 
+                            "Cavalry engagement at the foot of a hill, <br/>cr. 1601-15, Sebastiaen Vrancx, Fleminsh"); 
+    insert_into_images("horsemen/Jan_Brueghel_I_and_Sebastian_Vrancx_-_Assault_on_a_Convoy.jpg",
+                            "wiki", 
+                            "Jan_Brueghel_(I)_and_Sebastian_Vrancx_-_Assault_on_a_Convoy.jpg", 
+                            "Assault on a Convoy, <br/>cr. 1612, Jan Brueghel the Elder and Sebastiaen Vrancx, Fleminsh"); 
+    insert_into_images("horsemen/Sebastiaan_Vrancx_-_The_battle_of_Leckerbeetje.jpg",
+                            "wiki", 
+                            "Sebastiaan_Vrancx_-_The_battle_of_Leckerbeetje.jpg", 
+                            "The battle of Leckerbeetje, <br/>cr. 1600-47, Sebastiaen Vrancx, Fleminsh"); 
+    insert_into_images("horsemen/Jan_Fyt_and_Pieter_Thijs_-_Atalanta_and_Meleager_Hunt_the_Calydonian_Boar.jpg",
+                            "wiki", 
+                            "Jan_Fyt_and_Pieter_Thijs_-_Atalanta_and_Meleager_Hunt_the_Calydonian_Boar.jpg", 
+                            "Atalanta and Meleager Hunt the Calydonian Boar, <br/>1648, Jan Fyt and Pieter Thijs, Fleminsh"); 
+    insert_into_images("horsemen/French_knights_jousting_-_Froissarts_Chronicles_Volume_IV_part_1_1470-1475_f.19v_-_BL_Harley_MS_4379.jpg",
+                            "wiki", 
+                            "French_knights_jousting_-_Froissart%27s_Chronicles_(Volume_IV,_part_1)_(1470-1475),_f.19v_-_BL_Harley_MS_4379.jpg", 
+                            "Joust between Pierre de Courtenay and the Sire de Clary, <br/>cr. 1470-5, Fleminsh"); 
+    insert_into_images("horsemen/Bernardo_OHiggins_Jose_de_San_Martin.jpeg",
+                            "wiki", 
+                            "Estatua_de_Bernardo_O%27Higgins_y_José_de_San_Martín_en_Templo_Votivo_de_Maipú.JPG", 
+                            "The Statue Of Bernardo O'Higgins and José de San Martín, <br/>second half of the 20th century, ?, Chile"); 
+/*    insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
+                            "vivirtlatelolco.blogspot.com", 
+                            "http://vivirtlatelolco.blogspot.com/2011/07/quien-es-el-senor-san-thiago-patrono-de.html", 
+                            "Equestrian statue of José de San Martín, <br/>1610, Miguel Mauricio, Temple of Tlatelolco, Mexico"); 
+
+
+QuijoteNubesChapultepec.jpg
+Estatua_Ecuestre_de_Pedro_Ascencio_de_Alquisiras.jpg
+Estatua_de_Pancho_Villa_en_el_Cerro_de_la_Bufa.jpg */
 }
 ?>
