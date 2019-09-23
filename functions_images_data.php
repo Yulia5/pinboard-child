@@ -5024,6 +5024,27 @@ function populate_images() {
                             "RC", 
                             "400100", 
                             "The Battle of Nördlingen, <br/>1634-5, Jan van den Hoecke, Flemish");   
+    insert_into_images("horsemen/Portrait_of_Sebastian_Vrancx.jpg",
+                            "wiki", 
+                            "Portrait_of_Sebastian_Vrancx.jpg", 
+                            "Portrait of Sebastiaan Vrancx, <br/>1615-41, Anthony van Dyck, Flemish"); 
+    insert_into_images("horsemen/Peter_Paul_Rubens_-_Portret_van_Peeter_Snayers.jpg",
+                            "wiki", 
+                            "Peter_Paul_Rubens_-_Portret_van_Peeter_Snayers.jpg", 
+                            "Portrait of Peeter Snayers, <br/>cr. 1626, Peter Paul Rubens, Flemish"); 
+    insert_into_images("horsemen/Snayers_Pieter_-_Cavalry_Skirmish_-_Google_Art_Project.jpg",
+                            "wiki", 
+                            "Snayers,_Pieter_-_Cavalry_Skirmish_-_Google_Art_Project.jpg", 
+                            "Cavalry Skirmish, <br/>cr.1610-41, Peter Snayers, Flemish"); 
+    insert_into_images("horsemen/Peter_Paul_Rubens_Pieter_Snayers_-_Henry_IV_at_the_battle_of_Ivry.jpg",
+                            "wiki", 
+                            "Peter_Paul_Rubens,_Pieter_Snayers_-_Henry_IV_at_the_battle_of_Ivry.jpg", 
+                            "Henri IV at the battle of Ivry, <br/>1624-6, Peter Paul Rubens and Peter Snayers, Flemish"); 
+    insert_into_images("horsemen/Het_afdanken.jpg",
+                            "wiki", 
+                            "Het_afdanken_der_waardgelders_door_prins_Maurits_op_de_Neude_te_Utrecht,_31_juli_1618_(Joost_Cornelisz._Droochsloot,_1625).jpg", 
+                            "The disbanding of the 'waardgelders' by Prince Maurits in Utrecht, 1618, <br/>Joost Cornelisz Droochsloot, 1625, Dutch");   
+
 /*    insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
                             "vivirtlatelolco.blogspot.com", 
                             "http://vivirtlatelolco.blogspot.com/2011/07/quien-es-el-senor-san-thiago-patrono-de.html", 
