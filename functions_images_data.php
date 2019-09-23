@@ -4629,7 +4629,7 @@ function populate_images() {
     insert_into_images("horsemen/Low_Countries_1700.png", 
                             "wiki", 
                             "Low_Countries_1700.png", 
-                            "Map of the Low Countries cr. 1700");
+                            "Map of Flandres (Spanish Netherlands), cr. 1700");
     insert_into_images("horsemen/Flandres.png", 
                             "Google Maps", 
                             "https://www.google.com/maps/place/Flanders,+Belgium/@51.0747751,1.9854573,7z/", 
@@ -4951,15 +4951,15 @@ function populate_images() {
     insert_into_images("horsemen/Vincent-Adriaenssen-Leckerbetien-il-Manciola-Anversa-1595-1675-Roma-_-Battaglia-tra-cavalieri-turchi-e-cristiani-_-Paintings-oil-_-Christies.png",
                             "Christies", 
                             "vincent-adriaenssen-leckerbetien-il-manciola-battaglia-tra-5317258", 
-                            "Battle between Turkish and Christian horsemen, <br/>cr. 1610-1675, Vincent Adriaenssen, Fleminsh"); 
+                            "Battle between Turkish and Christian horsemen, <br/>cr. 1610-1675, Vincent Adriaenssen, Flemish/Italian"); 
     insert_into_images("horsemen/Vincent_Adriaenssen_-_Cavalry_battle_scene.jpg",
                             "wiki", 
                             "Vincent_Adriaenssen_-_Cavalry_battle_scene.jpg", 
-                            "Cavalry battle scene, <br/>cr. 1610-1675, Vincent Adriaenssen, Fleminsh"); 
+                            "Cavalry battle scene, <br/>cr. 1610-1675, Vincent Adriaenssen, Flemish/Italian"); 
     insert_into_images("horsemen/Vincent_Adriaenssen_-_Cavalry_battle_between_Turks_and_Christians.jpg",
                             "wiki", 
                             "Vincent_Adriaenssen_-_Cavalry_battle_between_Turks_and_Christians.jpg", 
-                            "Cavalry battle between Turkishs and Christians, <br/>cr. 1610-1675, Vincent Adriaenssen, Fleminsh"); 
+                            "Cavalry battle between Turkishs and Christians, <br/>cr. 1610-1675, Vincent Adriaenssen, Flemish/Italian"); 
     insert_into_images("horsemen/Martin_de_Mujica.jpg",
                             "wiki", 
                             "Martin_de_Mujica.jpg", 
@@ -4975,7 +4975,7 @@ function populate_images() {
     insert_into_images("horsemen/Frederik_Hendrik_and_Maurits_as_generals_by_Thomas_Willeboirts_Bosschaert.jpg",
                             "wiki", 
                             "Frederik_Hendrik_and_Maurits_as_generals,_by_Thomas_Willeboirts_Bosschaert.jpg", 
-                            "Frederik Hendrik and Maurits as generals, with the Battle of Flanders in the distance, <br/>1650, Thomas Willeboirts Bosschaert, Fleminsh"); 
+                            "Frederik Hendrik and Maurits as generals, with the Battle of Flanders in the distance, <br/>1650, Thomas Willeboirts Bosschaert, Flemish"); 
     insert_into_images("horsemen/Maurits_1567-1625_prins_van_Oranje_in_de_slag_bij_Nieuwpoort_1600.jpg",
                             "wiki", 
                             "Maurits_(1567-1625),_prins_van_Oranje,_in_de_slag_bij_Nieuwpoort_(1600).jpg", 
@@ -4983,31 +4983,47 @@ function populate_images() {
     insert_into_images("horsemen/Sebastiaan_Vrancx_1573-1647_-_De_plundering_van_Wommelgem_1625-1630_-_Düsseldorf_Museum_Kunstpalast_15-08-2012_15-08-12.jpeg",
                             "wiki", 
                             "Sebastiaan_Vrancx_(1573-1647)_-_De_plundering_van_Wommelgem_(1625-1630)_-_Düsseldorf_Museum_Kunstpalast_15-08-2012_15-08-12.JPG", 
-                            "Looting of a village, possibly Wommelgem in 1589, <br/>cr. 1600-1650, Sebastiaen Vrancx, Fleminsh"); 
+                            "Looting of a village, possibly Wommelgem in 1589, <br/>cr. 1600-1650, Sebastiaen Vrancx, Flemish"); 
     insert_into_images("horsemen/Sebastiaan_Vrancx_-_Reitergefecht_am_Fuss_eines_Hugels.jpg",
                             "wiki", 
                             "Sebastiaan_Vrancx_-_Reitergefecht_am_Fuß_eines_Hügels.jpg", 
-                            "Cavalry engagement at the foot of a hill, <br/>cr. 1601-15, Sebastiaen Vrancx, Fleminsh"); 
+                            "Cavalry engagement at the foot of a hill, <br/>cr. 1601-15, Sebastiaen Vrancx, Flemish"); 
     insert_into_images("horsemen/Jan_Brueghel_I_and_Sebastian_Vrancx_-_Assault_on_a_Convoy.jpg",
                             "wiki", 
                             "Jan_Brueghel_(I)_and_Sebastian_Vrancx_-_Assault_on_a_Convoy.jpg", 
-                            "Assault on a Convoy, <br/>cr. 1612, Jan Brueghel the Elder and Sebastiaen Vrancx, Fleminsh"); 
+                            "Assault on a Convoy, <br/>cr. 1612, Jan Brueghel the Elder and Sebastiaen Vrancx, Flemish"); 
     insert_into_images("horsemen/Sebastiaan_Vrancx_-_The_battle_of_Leckerbeetje.jpg",
                             "wiki", 
                             "Sebastiaan_Vrancx_-_The_battle_of_Leckerbeetje.jpg", 
-                            "The battle of Leckerbeetje, <br/>cr. 1600-47, Sebastiaen Vrancx, Fleminsh"); 
+                            "The battle of Leckerbeetje, <br/>cr. 1600-47, Sebastiaen Vrancx, Flemish"); 
     insert_into_images("horsemen/Jan_Fyt_and_Pieter_Thijs_-_Atalanta_and_Meleager_Hunt_the_Calydonian_Boar.jpg",
                             "wiki", 
                             "Jan_Fyt_and_Pieter_Thijs_-_Atalanta_and_Meleager_Hunt_the_Calydonian_Boar.jpg", 
-                            "Atalanta and Meleager Hunt the Calydonian Boar, <br/>1648, Jan Fyt and Pieter Thijs, Fleminsh"); 
+                            "Atalanta and Meleager Hunt the Calydonian Boar, <br/>1648, Jan Fyt and Pieter Thijs, Flemish"); 
     insert_into_images("horsemen/French_knights_jousting_-_Froissarts_Chronicles_Volume_IV_part_1_1470-1475_f.19v_-_BL_Harley_MS_4379.jpg",
                             "wiki", 
                             "French_knights_jousting_-_Froissart%27s_Chronicles_(Volume_IV,_part_1)_(1470-1475),_f.19v_-_BL_Harley_MS_4379.jpg", 
-                            "Joust between Pierre de Courtenay and the Sire de Clary, <br/>cr. 1470-5, Fleminsh"); 
+                            "Joust between Pierre de Courtenay and the Sire de Clary, <br/>cr. 1470-5, Flemish"); 
     insert_into_images("horsemen/Bernardo_OHiggins_Jose_de_San_Martin.jpeg",
                             "wiki", 
                             "Estatua_de_Bernardo_O%27Higgins_y_José_de_San_Martín_en_Templo_Votivo_de_Maipú.JPG", 
                             "The Statue Of Bernardo O'Higgins and José de San Martín, <br/>second half of the 20th century, ?, Chile"); 
+    insert_into_images("horsemen/Paulus_van_Hillegaert_I_001.jpg",
+                            "wiki", 
+                            "Paulus_van_Hillegaert_(I)_001.jpg", 
+                            "The Princes of Orange and their Families on Horseback, Riding Out from The Buitenhof, The Hague, <br/>1621-2, Pauwels van Hillegaert, Dutch"); 
+    insert_into_images("horsemen/Prins_Maurits_en_prins_Frederik_Hendrik_te_paard_Rijksmuseum_SK-A-568.jpeg",
+                            "wiki", 
+                            "Prins_Maurits_en_prins_Frederik_Hendrik_te_paard_Rijksmuseum_SK-A-568.jpeg", 
+                            "Princes Maurits and Frederik Hendrik on horseback, <br/>1630-5, Pauwels van Hillegaert, Dutch"); 
+    insert_into_images("horsemen/Prins_Frederik_Hendrik_te_paard.jpeg",
+                            "wiki", 
+                            "Prins_Frederik_Hendrik_te_paard_voor_de_vesting_%27s-Hertogenbosch,_1629_Rijksmuseum_SK-A-4112.jpeg", 
+                            "Prince Frederik Hendrik on horseback outside the fortifications of 's-Hertogenbosch, <br/>1632-5, Pauwels van Hillegaert, Dutch"); 
+    insert_into_images("horsemen/478551-1409327906.jpg",
+                            "RC", 
+                            "400100", 
+                            "The Battle of Nördlingen, <br/>1634-5, Jan van den Hoecke, Flemish");   
 /*    insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
                             "vivirtlatelolco.blogspot.com", 
                             "http://vivirtlatelolco.blogspot.com/2011/07/quien-es-el-senor-san-thiago-patrono-de.html", 
