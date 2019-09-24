@@ -5043,7 +5043,77 @@ function populate_images() {
     insert_into_images("horsemen/Het_afdanken.jpg",
                             "wiki", 
                             "Het_afdanken_der_waardgelders_door_prins_Maurits_op_de_Neude_te_Utrecht,_31_juli_1618_(Joost_Cornelisz._Droochsloot,_1625).jpg", 
-                            "The disbanding of the 'waardgelders' by Prince Maurits in Utrecht, 1618, <br/>Joost Cornelisz Droochsloot, 1625, Dutch");   
+                            "The disbanding of the 'waardgelders' by Prince Maurits in Utrecht, 1618, <br/>Joost Cornelisz Droochsloot, 1625, Dutch");  
+    insert_into_images("horsemen/VaclavGelnhausenovekodexu.jpg",
+                            "wiki", 
+                            "VaclavGelnhausenovekodexu.jpg", 
+                            "Wenceslaus I of Bohemia, <br/>early 15th century, Iglau, Bohemia, now Jihlava, Czech Republic");  
+    insert_into_images("horsemen/Roger_II_Sicily.jpg",
+                            "wiki", 
+                            "Roger_II_Sicily.jpg", 
+                            "Roger II of Sicily from the 'Liber ad honorem Augusti' of Petrus of Ebulo, <br/>1196, Palermo, Sicily");  
+    insert_into_images("horsemen/1191_-_Fridrich_Barbarossa.jpg",
+                            "wiki", 
+                            "1191_-_Fridrich_Barbarossa.jpg", 
+                            "Crusaders of Frederick Barbarossa from the 'Liber ad honorem Augusti' of Petrus of Ebulo, <br/>1196, Palermo, Sicily");  
+    insert_into_images("horsemen/Diepold_Schweinspeunt.jpg",
+                            "wiki", 
+                            "Diepold_Schweinspeunt.jpg", 
+                            "Diepold from Schweinspeunt from the 'Liber ad honorem Augusti' of Petrus of Ebulo, <br/>1196, Palermo, Sicily");  
+    insert_into_images("horsemen/Arte_De_Athletica_V2_4a.jpg",
+                            "wiki", 
+                            "Arte_De_Athletica_V2_4a.jpg", 
+                            "Illustration of 'The Art of Athletics' by Paulus Hector Mair, <br/>mid 16th century, Augsburg, Holy Roman Empire");  
+    insert_into_images("horsemen/B_Valladolid_93.jpg",
+                            "wiki", 
+                            "B_Valladolid_93.jpg", 
+                            "Four Horsemen Of Apocalypse, illustration of 'Beato of Valcavado', <br/>970, Oveco, Palencia, Spain");  
+    insert_into_images("horsemen/B_Facundus_240.jpg",
+                            "wiki", 
+                            "B_Facundus_240.jpg", 
+                            "Four Horsemen Of Heaven, illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Spain");  
+    insert_into_images("horsemen/B_Facundus_135.jpg",
+                            "wiki", 
+                            "B_Facundus_135.jpg", 
+                            "Four Horsemen Of Apocalypse, illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Spain");  
+    insert_into_images("horsemen/Barb372-100.png",
+                            "Digital Vatican Library", 
+                            "https://digi.vatlib.it/view/MSS_Barb.gr.372", 
+                            "Saint Constantine the Great as warrior, illustration of 'Barberini psalter', <br/>11th century, Constantinople (?), Byzantine Empire");  
+    insert_into_images("horsemen/Barb372-112.png",
+                            "Digital Vatican Library", 
+                            "https://digi.vatlib.it/view/MSS_Barb.gr.372", 
+                            "Vision of Saint Procopius, illustration of 'Barberini psalter', <br/>11th century, Constantinople (?), Byzantine Empire");  
+    insert_into_images("horsemen/Barb372-166.png",
+                            "Digital Vatican Library", 
+                            "https://digi.vatlib.it/view/MSS_Barb.gr.372", 
+                            "Vision of Saint Eustathius, illustration of 'Barberini psalter', <br/>11th century, Constantinople (?), Byzantine Empire");
+    insert_into_images("horsemen/Liber_ad_honorem_Augusti_f105r.jpg",
+                            "wiki", 
+                            "Liber_ad_honorem_Augusti_f105r.jpg", 
+                            "The enthronement of emperor Henry VI, illustration of 'Liber ad honorem Augusti' by Peter of Eboli, <br/>1196, Palermo, Sicily");  
+    insert_into_images("horsemen/Diepold_Schweinspeunt.jpg",
+                            "wiki", 
+                            "Diepold_Schweinspeunt.jpg", 
+                            "Portrait of Diepold von Schweinspeunt, illustration of 'Liber ad honorem Augusti' by Peter of Eboli, <br/>1196, Palermo, Sicily");  
+    insert_into_images("horsemen/1191_-_Fridrich_Barbarossa.jpg",
+                            "wiki", 
+                            "1191_-_Fridrich_Barbarossa.jpg", 
+                            "Frederick Barbarossa and his crusaders, illustration of 'Liber ad honorem Augusti' by Peter of Eboli, <br/>1196, Palermo, Sicily");
+    insert_into_images("horsemen/La_Spezia_-_Giuseppe_Garibaldi.jpg",
+                            "wiki", 
+                            "La_Spezia_-_Giuseppe_Garibaldi.jpg", 
+                            "Monument to Giuseppe Garibaldi, <br/>1913, Antonio Garella, La Spezia, Italy");
+    insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
+                            "wiki", 
+                            "Francesco_fanelli,_san_giorgio,_bronzo_dorato,_XVII_sec.JPG", 
+                            "Saint George, <br/>cr. 1600-41, Francesco Fanelli, Italy/England");
+    insert_into_images("horsemen/Provincia_di_Prato-Stemma.png",
+                            "wikipedia.org", 
+                            "https://it.wikipedia.org/wiki/File:Provincia_di_Prato-Stemma.png", 
+                            "Coat of arms of the province of Prato, <br/>Tuscany, Italy");
+    
+
 
 /*    insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
                             "vivirtlatelolco.blogspot.com", 
