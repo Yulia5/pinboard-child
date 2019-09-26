@@ -5104,10 +5104,6 @@ function populate_images() {
                             "wiki", 
                             "La_Spezia_-_Giuseppe_Garibaldi.jpg", 
                             "Monument to Giuseppe Garibaldi, <br/>1913, Antonio Garella, La Spezia, Italy");
-    insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
-                            "wiki", 
-                            "Francesco_fanelli,_san_giorgio,_bronzo_dorato,_XVII_sec.JPG", 
-                            "Saint George, <br/>cr. 1600-41, Francesco Fanelli, Italy/England");
     insert_into_images("horsemen/Provincia_di_Prato-Stemma.png",
                             "wikipedia.org", 
                             "https://it.wikipedia.org/wiki/File:Provincia_di_Prato-Stemma.png", 
@@ -5115,7 +5111,11 @@ function populate_images() {
     
 
 
-/*    insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
+/*  insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
+                            "wiki", 
+                            "Francesco_fanelli,_san_giorgio,_bronzo_dorato,_XVII_sec.JPG", 
+                            "Saint George, <br/>cr. 1600-41, Francesco Fanelli, Italy/England");
+    insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
                             "vivirtlatelolco.blogspot.com", 
                             "http://vivirtlatelolco.blogspot.com/2011/07/quien-es-el-senor-san-thiago-patrono-de.html", 
                             "Equestrian statue of José de San Martín, <br/>1610, Miguel Mauricio, Temple of Tlatelolco, Mexico"); 

@@ -131,9 +131,10 @@ function MY_VERY_OWN_J_lines($attr, $content = null) {
 }
 add_shortcode('j_lines', 'MY_VERY_OWN_J_lines');
 
-/**
- * The recept generator
- */
+/******************************************************************************
+ *                               The recept generator                         *
+ *****************************************************************************/
+
 function replace_br($content) {
 	//$result = preg_replace('<br\W*?\/>*$','', $content);
 	$result = preg_replace("/<br\W*?\/>/", ";</li><li>", trim($content));
@@ -187,6 +188,32 @@ function MY_VERY_OWN_recept($attr, $content = null) {
 	return $result;
 }
 add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
+
+/******************************************************************************
+ *                             General Purpose                                *
+ *****************************************************************************/
+
+// source: https://www.codepicky.com/wordpress-table-of-contents/
+function yu_generate_TOC($content ) {
+    $tableOfContents = "<h1>Table of Contents</h1><div>";
+    $index = 1;
+    // Insert the IDs and create the TOC.
+    $content = preg_replace_callback('#<(h[1-6])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents) {
+        $tag = $matches[1];
+        $title = strip_tags($matches[3]);
+        $hasId = preg_match('/id=(["\'])(.*?)\1[\s>]/si', $matches[2], $matchedIds);
+        $id = $hasId ? $matchedIds[2] : $index++ . '-' . sanitize_title($title);
+        $tableOfContents .= "<div class='item-$tag'><a href='#$id'>$title</a></div>";
+        if ($hasId) {
+            return $matches[0];
+        }
+        return sprintf('<%s%s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag);
+    }, $content);
+    $tableOfContents .= '</div>';
+    $result = str_replace('[yu_TOC]', $tableOfContents, $content);
+    return $result;
+}
+add_filter( 'the_content', 'yu_generate_TOC');
 
 /**
  * MY_VERY_OWN_h
