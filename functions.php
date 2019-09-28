@@ -195,8 +195,18 @@ add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
 
 // source: https://www.codepicky.com/wordpress-table-of-contents/
 function yu_generate_one_TOC($content) {
-	$tableOfContents = "";
     $index = 1 + rand(0, 1000); // better chance of non-clashing references
+
+	$title = 'Table Of Contents';
+    if (substr_count($content, '"') == 2) {
+    	$start_title = strpos($content, '"') + 1;
+    	$length_title = strpos($content, '"', $start_title + 1) - $start_title;
+    	$title = substr($content, $start_title, $length_title);
+    }
+    $id = $index++ . '-' . sanitize_title($title);
+    $result = "<h1><a href='#$id'>$title</a></h1>";
+
+	$tableOfContents = "";
     // Insert the IDs and create the TOC.
     $content = preg_replace_callback('#<(h[1-6])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents) {
         $tag = $matches[1];
@@ -210,17 +220,13 @@ function yu_generate_one_TOC($content) {
         return sprintf('<%s%s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag);
     }, $content);
 
-    error_log( "print_r(content in yu_generate_one_TOC, TRUE) < " );
-	error_log( print_r($content, TRUE) );
-	error_log( " > print_r(content, TRUE)" );
-
-    $result = $content[0];
-    $result = "<div>" . $tableOfContents . '</div>' . $result; 
+	$start_text = strpos($content[0], ']') + 1;
+    $result = $result . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 
     return $result;
 }
 
-function yu_generate_TOCs($content ) {
-	$result = preg_replace_callback('/\[yu_TOC\].+?(?=\[yu_TOC\]|$)/s', 'yu_generate_one_TOC', $content);
+function yu_generate_TOCs($content) {
+	$result = preg_replace_callback('/\[yu_TOC.*?(?=\])\].+?(?=\[yu_TOC|$)/s', 'yu_generate_one_TOC', $content);
     return $result;
 }
 add_filter('the_content', 'yu_generate_TOCs');
