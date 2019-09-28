@@ -194,9 +194,9 @@ add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
  *****************************************************************************/
 
 // source: https://www.codepicky.com/wordpress-table-of-contents/
-function yu_generate_TOC($content ) {
-    $tableOfContents = "<h1>Table of Contents</h1><div>";
-    $index = 1;
+function yu_generate_one_TOC($content) {
+	$tableOfContents = "";
+    $index = 1 + rand(0, 1000); // better chance of non-clashing references
     // Insert the IDs and create the TOC.
     $content = preg_replace_callback('#<(h[1-6])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents) {
         $tag = $matches[1];
@@ -209,25 +209,21 @@ function yu_generate_TOC($content ) {
         }
         return sprintf('<%s%s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag);
     }, $content);
-    $tableOfContents .= '</div>';
-    $result = str_replace('[yu_TOC]', $tableOfContents, $content);
+
+    error_log( "print_r(content in yu_generate_one_TOC, TRUE) < " );
+	error_log( print_r($content, TRUE) );
+	error_log( " > print_r(content, TRUE)" );
+
+    $result = $content[0];
+    $result = "<div>" . $tableOfContents . '</div>' . $result; 
     return $result;
 }
-add_filter( 'the_content', 'yu_generate_TOC');
 
-/**
- * MY_VERY_OWN_h
- */
-function MY_VERY_OWN_h($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'a' => ''
-	), $attr));
-	
-	$result = '<h1><a name="' . $a . '"><span style="font-weight:normal;">' . $content . '</span></a></h1>';	
-	return $result;
+function yu_generate_TOCs($content ) {
+	$result = preg_replace_callback('/\[yu_TOC\].+?(?=\[yu_TOC\]|$)/s', 'yu_generate_one_TOC', $content);
+    return $result;
 }
-add_shortcode('yu_h', 'MY_VERY_OWN_h');
+add_filter('the_content', 'yu_generate_TOCs');
 
 /**
  * MY_VERY_OWN_clearfloats
