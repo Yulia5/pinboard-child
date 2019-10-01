@@ -195,20 +195,22 @@ add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
 
 // source: https://www.codepicky.com/wordpress-table-of-contents/
 function yu_generate_one_TOC($content) {
-    $index = 1 + rand(0, 1000); // better chance of non-clashing references
+    $index = rand(1, 1000); // better chance of non-clashing references
 
+    $start_text = strpos($content[0], ']') + 1;
 	$title = 'Table Of Contents';
-    if (substr_count($content, '"') == 2) {
+    if (substr_count($content[0], '"', 0, $start_text) === 2) {
     	$start_title = strpos($content, '"') + 1;
     	$length_title = strpos($content, '"', $start_title + 1) - $start_title;
     	$title = substr($content, $start_title, $length_title);
     }
     $id = $index++ . '-' . sanitize_title($title);
-    $result = "<h1><a href='#$id'>$title</a></h1>";
+    $title_a = "<a href='#$id'>↑ UP </a>";
+    $result = "<h1><a id='#$id'>$title</a></h1>";
 
 	$tableOfContents = "";
     // Insert the IDs and create the TOC.
-    $content = preg_replace_callback('#<(h[1-6])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents) {
+    $content = preg_replace_callback('#<(h[1-6])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$title_a) {
         $tag = $matches[1];
         $title = strip_tags($matches[3]);
         $hasId = preg_match('/id=(["\'])(.*?)\1[\s>]/si', $matches[2], $matchedIds);
@@ -217,10 +219,9 @@ function yu_generate_one_TOC($content) {
         if ($hasId) {
             return $matches[0];
         }
-        return sprintf('<%s%s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag);
+        return sprintf(('<%s%s id="%s">%s</%s>' . $title_a), $tag, $matches[2], $id, $matches[3], $tag);
     }, $content);
-
-	$start_text = strpos($content[0], ']') + 1;
+	
     $result = $result . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 
     return $result;
 }

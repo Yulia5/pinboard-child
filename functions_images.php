@@ -193,7 +193,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
  * @param string $content Optional. Shortcode content.
  * @return string
  */
-function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
+/*function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 
 	extract(shortcode_atts(array(
 		'height' => '',
@@ -208,11 +208,12 @@ function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
 	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name);	
 	return $result;
 }
-add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');
+add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');*/
 
 /**
  * yu_image
  */
+/*
 function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 
 	extract(shortcode_atts(array(
@@ -230,6 +231,7 @@ function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
 	return $result;
 }
 add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
+*/
 
 /**
  * yu_image_DB
@@ -269,27 +271,10 @@ add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
  * yu_images_DB
  */
 function add_db_images($image_params_name) {
-    $image_params_name_array = explode ('|', $image_params_name);
+    $image_params_name_array = explode ('|', $image_params_name[0]);
     $image_name = array_pop($image_params_name_array);
     $image_params = ' ' . implode(' ', $image_params_name_array);
     $result = do_shortcode('[yu_image_DB' . $image_params . ']' . $image_name . "[/yu_image_DB]");
-    return $result;
-}
-
-function transform_regex($regex_pattern, $content, $transform_func) {
-    preg_match_all($regex_pattern, $content, $matches, PREG_OFFSET_CAPTURE);
-    $start = 0;
-    $end = 0;
-    $result = '';
-    foreach($matches[0] as $match) {
-      $end = $match[1];
-      if ($start < $end) {
-          $ss = substr($content, $start, $end - $start);
-          $result = $result . $transform_func($ss); // concatenate transformed unmatched part
-      }
-      $result = $result . $match[0]; // concatenate matched part
-      $start = $end + strlen($match[0]);
-    }
     return $result;
 }
 
@@ -308,12 +293,8 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
         $style = ' imgwidth = "' . $imgwidth . '"'. $style;
     }
     
-    $content = $content . ' ';  // add a space at the back for convenience, to avoid treating special case
-    $content = preg_replace("/<br\W*?\/>/", "\n", $content); // again for convenience, 
-                                                             // not treating <br>'s as a special case in regex
-    // "(\[\s*yu_image_DB([^\]]*)\]([^\[]+)\[\s*\/\s*yu_image_DB\s*\])"
-    $result = transform_regex('/([\s\r\t\n]+)(?!\s\r\t\n)/', $content, 'add_db_images');
-
+    $content = preg_replace("/<br\W*?\/>/", "\n", $content); // for convenience, not treating <br>'s as a special case in regex
+    $result = preg_replace_callback('/[^\s\r\t\n]+?(?=\s|\r|\t|\n|$)/s', 'add_db_images', $content);
     $result = str_replace("\n", "<br/>", $result); // adding <br>'s back
     
     // adding div's
@@ -321,8 +302,8 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
     if (!! $flushright) {
         $result = '<div class="flushright2">' . $result . "</div>";
     }   
-
     $result = '<p class="clearfloats"></p>' . $result; // clear previous floats
+
     return $result;
 }
 add_shortcode('yu_images_DB', 'MY_VERY_OWN_images_DB_shortcode');
@@ -444,8 +425,11 @@ function yu_make_content_images_responsive( $content ) {
     
     return $content;
 }
-add_filter( 'the_content', 'yu_make_content_images_responsive', 20 );
+add_filter( 'the_content', 'yu_make_content_images_responsive', 1 );
 
+/*
+ * used by function_images_data.php
+ */
 function create_table($new_table_name, $new_table_columns) {
     
     global $wpdb;
@@ -460,6 +444,9 @@ function create_table($new_table_name, $new_table_columns) {
     }
 }
 
+/*
+ * used by function_images_data.php
+ */
 function images_tables_create() {
 
    create_table("images_sources", 
@@ -491,6 +478,9 @@ function images_tables_create() {
 }
 add_action( 'init', 'images_tables_create');
 
+/*
+ * used by function_images_data.php
+ */
 function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     global $wpdb;
     $sql = "INSERT INTO " . $wpdb->images_sources . " (src, srcname, srchref_before, srchref_after) VALUES (%s, %s, %s, %s) 
@@ -499,6 +489,9 @@ function insert_into_src($src, $srcname, $srchref_before, $srchref_after = ''){
     $wpdb->query($sql);
 }
 
+/*
+ * used by function_images_data.php
+ */
 function insert_into_images($filename, $src_or_srcname, $id_or_srchref, $caption = ''){
     global $wpdb;
     $sql = "INSERT INTO " . $wpdb->images_sources_captions . " (filename, ";
@@ -513,6 +506,7 @@ function insert_into_images($filename, $src_or_srcname, $id_or_srchref, $caption
     $wpdb->query($sql);
 } 
 
+/*
 function update_srcsets($force_update = false) { //not used
     global $wpdb;
     $sql = "SELECT filename FROM " . $wpdb->images_sources_captions;
@@ -528,8 +522,11 @@ function update_srcsets($force_update = false) { //not used
         $sql2 = $wpdb->prepare($sql, $srcset, $filename);
         $wpdb->query($sql2);
     }  
-}
+}*/
 
+/*
+ * used by yu_image_DB
+ */
 function select_image($filename) {
     global $wpdb;
     $sql = "SELECT 
@@ -558,6 +555,7 @@ function select_image($filename) {
     return $result; 
 }
 
+/*
 function generate_img_source_name_href($src, $id) {
     global $wpdb;
     $sql = "SELECT srcname, CONCAT(srchref_before, %s, srchref_after) ) AS srchref FROM " . $wpdb->images_sources . " WHERE src = %s";
@@ -569,5 +567,5 @@ function generate_img_source_name_href($src, $id) {
     }   
     return $result; 
 }
-
+*/
 ?>
