@@ -195,31 +195,28 @@ add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
 
 // source: https://www.codepicky.com/wordpress-table-of-contents/
 function yu_generate_one_TOC($content) {
-    $index = rand(1, 1000); // better chance of non-clashing references
 
-    $start_text = strpos($content[0], ']') + 1;
-	$title = 'Table Of Contents';
-    if (substr_count($content[0], '"', 0, $start_text) === 2) {
-    	$start_title = strpos($content, '"') + 1;
-    	$length_title = strpos($content, '"', $start_title + 1) - $start_title;
-    	$title = substr($content, $start_title, $length_title);
-    }
-    $id = $index++ . '-' . sanitize_title($title);
-    $title_a = "<a href='#$id'>↑ UP </a>";
-    $result = "<h1><a id='#$id'>$title</a></h1>";
+    $start_text = strpos($content[0], '}') + 1;
 
+	$hasTitle = preg_match('/\{yu_TOC title=("|&#8221;)(.*?)\1\s*\}/', $content[0], $matchedTitle);
+    $toc_title = ($hasTitle) ? $matchedTitle[2] : 'Table Of Contents';
+    $id_title = sanitize_title($toc_title);
+    $toc_title_a = "<a href='#$id_title'>↑ Back To The Table Of Contents ↑</a>";
+    $result = "<h1><a id='#$id_title'>$toc_title</a></h1>";
+
+    $index = 1;
 	$tableOfContents = "";
     // Insert the IDs and create the TOC.
-    $content = preg_replace_callback('#<(h[1-6])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$title_a) {
+    $content = preg_replace_callback('#<(h[1-6])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$toc_title_a, &$id_title) {
         $tag = $matches[1];
-        $title = strip_tags($matches[3]);
+        $toc_entry_title = strip_tags($matches[3]);
         $hasId = preg_match('/id=(["\'])(.*?)\1[\s>]/si', $matches[2], $matchedIds);
-        $id = $hasId ? $matchedIds[2] : $index++ . '-' . sanitize_title($title);
-        $tableOfContents .= "<div class='item-$tag'><a href='#$id'>$title</a></div>";
+        $id = $id_title . ($hasId ? $matchedIds[2] : $index++ . '-' . sanitize_title($toc_entry_title));
+        $tableOfContents .= "<div class='item-$tag'><a href='#$id'>$toc_entry_title</a></div>";
         if ($hasId) {
             return $matches[0];
         }
-        return sprintf(('<%s%s id="%s">%s</%s>' . $title_a), $tag, $matches[2], $id, $matches[3], $tag);
+        return sprintf(('<%s%s id="%s">%s</%s>' . $toc_title_a), $tag, $matches[2], $id, $matches[3], $tag);
     }, $content);
 	
     $result = $result . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 
@@ -227,7 +224,7 @@ function yu_generate_one_TOC($content) {
 }
 
 function yu_generate_TOCs($content) {
-	$result = preg_replace_callback('/\[yu_TOC.*?(?=\])\].+?(?=\[yu_TOC|$)/s', 'yu_generate_one_TOC', $content);
+	$result = preg_replace_callback('/\{yu_TOC.*?(?=\})\}.+?(?=\{yu_TOC|$)/s', 'yu_generate_one_TOC', $content);
     return $result;
 }
 add_filter('the_content', 'yu_generate_TOCs');
