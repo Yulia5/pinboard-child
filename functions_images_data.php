@@ -2235,7 +2235,7 @@ function populate_images() {
     insert_into_images("horsemen/Trump_Jackson.jpg", 
                             "wiki", 
                             "Trump_speaking_with_Putin_oval_office.jpg", 
-                            "Trump speaking with Putin in Oval Office with two depictions of Andrew Jackson on the background, <br/>28 January 2017");
+                            "Trump speaking with Putin in Oval Office with statuettes of horsemen on rearing horses in the background, <br/>28 January 2017");
     insert_into_images("horsemen/Two_Horseman_Nestor_and_Demetrius_c._1062_from_S.Michael_monastery_in_Kiev_GTG_by_shakko_01.jpg", 
                             "wiki", 
                             "Two_Horseman_(Nestor_and_Demetrius),_c._1062_(from_S.Michael_monastery_in_Kiev,_GTG)_by_shakko_01.jpg", 

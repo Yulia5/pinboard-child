@@ -185,55 +185,6 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 }
 
 /**
- * The Caption shortcode equivalent.
- * The supported attributes for the shortcode are 'height', 'width', 
- * 'caption', 'sourcename' and 'sourcehrf'.
- *
- * @param array $attr Attributes attributed to the shortcode.
- * @param string $content Optional. Shortcode content.
- * @return string
- */
-/*function MY_VERY_OWN_img_caption_shortcode($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'sourcename' => '', 
-		'sourcehrf' => '',
-		'comp' => '', 
-		'folder_name' => ''
-	), $attr));
-
-	$result = generate_caption_HTML($content, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name);	
-	return $result;
-}
-add_shortcode('yu_caption', 'MY_VERY_OWN_img_caption_shortcode');*/
-
-/**
- * yu_image
- */
-/*
-function MY_VERY_OWN_image_caption_shortcode($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'height' => '',
-		'width'	=> '',
-		'caption' => '',
-		'src' => '',
-		'id' => '',
-		'comp' => '', 
-        'folder_name' => ''
-	), $attr));
-	
-	$name_href = generate_img_source_name_href($src, $id);
-	$result = generate_caption_HTML($content, $height, $width, $caption, $name_href->srcname, $name_href->srchref, $comp, $folder_name);	
-	return $result;
-}
-add_shortcode('yu_image', 'MY_VERY_OWN_image_caption_shortcode');
-*/
-
-/**
  * yu_image_DB
  */
 function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
@@ -311,6 +262,8 @@ add_shortcode('yu_images_DB', 'MY_VERY_OWN_images_DB_shortcode');
 
 /* get images metas given their names and folders */
 function get_images_meta_id_srcset( $filenames ) {
+
+    error_log('count filenames ' . count($filenames));
         
     $filenames_as_params = array();
     $posts_per_filename = array();
@@ -327,6 +280,7 @@ function get_images_meta_id_srcset( $filenames ) {
             ));
         $posts_per_filename[$fn] = 0;
     }
+    error_log('count posts_per_filename ' . count($posts_per_filename));
     
     $metas = array();
     $counter = 0;
@@ -357,7 +311,7 @@ function get_images_meta_id_srcset( $filenames ) {
             }
         }
     }
-    
+   
     $potential_problems = array();
     foreach ($posts_per_filename as $fn => $nb_metas) {
         if ($nb_metas !== 1) {
@@ -378,6 +332,8 @@ function get_images_meta_id_srcset( $filenames ) {
             $selected_images_srcset[ $image_with_folder ] = $srcset[0];
         }       
     } 
+    error_log('count selected_images_srcset ' . count($selected_images_srcset));
+    error_log('matches selected_images_srcset ' . print_r($selected_images_srcset, true));
     
     $result['potential_problems'] = $potential_problems;   
     $result['selected_images_srcset'] = $selected_images_srcset;   
@@ -388,17 +344,22 @@ function get_images_meta_id_srcset( $filenames ) {
 
 /**
  * Filters 'img' elements in post content to add 'srcset' and 'sizes' attributes.
- *
- * @since 4.4.0
- *
- * @see wp_image_add_srcset_and_sizes()
- *
- * @param string $content The raw post content to be filtered.
- * @return string Converted content with 'srcset' and 'sizes' attributes added to images.
  */
 function yu_make_content_images_responsive( $content ) {
+    //error_log('yu_make_content_images_responsive 1 ' . print_r(substr($content, 0, 1000)));
+
+    //$content = preg_replace_callback('/\[yu_images_DB.*?(?=\])\].+?(?=\[)\[\/yu_images_DB\]/s', 'do_shortcode', $content);    
+
+    //error_log('yu_make_content_images_responsive 2 ' . print_r(substr($content, 0, 10000)));
+
+    //$content = preg_replace_callback('/\[yu_image_DB.*?(?=\])\].+?(?=\[)\[\/yu_image_DB\]/s', 'do_shortcode', $content);    
+
+    //error_log('yu_make_content_images_responsive 3 ' . print_r(substr($content, 0, 10000)));
+
     $pattern = '`<img[^>]+src\s*=\s*\"' . preg_quote (trailingslashit(wp_upload_dir()['url']), '/' ) . '([^\"]*)\"([^>]*)>`';
-    if ( ! preg_match_all( $pattern, $content, $matches ) ) {
+    $has_matches = preg_match_all( $pattern, $content, $matches );
+    error_log('has_matches img ' . count($matches));
+    if ( ! $has_matches ) {
         return $content;
     }
     // extract src if not srcset ??? '/<img [^>]+>/'
@@ -420,12 +381,13 @@ function yu_make_content_images_responsive( $content ) {
     $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
     foreach ( $selected_images_srcset as $image => $image_srcset) {
         $pattern =  'src="' . $an_upload_dir . $image . '"';
+        //error_log('has_matches pattern ' . $pattern . ' ' . $image_srcset . ' ');
         $content = str_replace($pattern, $pattern . ' ' . $image_srcset . ' ', $content );
     }
     
     return $content;
 }
-add_filter( 'the_content', 'yu_make_content_images_responsive', 1 );
+add_filter( 'the_content', 'yu_make_content_images_responsive', 100 );
 
 /*
  * used by function_images_data.php
@@ -504,25 +466,7 @@ function insert_into_images($filename, $src_or_srcname, $id_or_srchref, $caption
                             $src_or_srcname, $id_or_srchref, $caption, 
                             $src_or_srcname, $id_or_srchref, $caption);
     $wpdb->query($sql);
-} 
-
-/*
-function update_srcsets($force_update = false) { //not used
-    global $wpdb;
-    $sql = "SELECT filename FROM " . $wpdb->images_sources_captions;
-    if (! $force_update) {
-        $sql = $wpdb->prepare($sql . " WHERE srcset = %s", '');
-    }
-    $filenames_to_update = $wpdb->get_col($sql); 
-    
-    $images_meta_id_srcset = get_images_meta_id_srcset( $filenames_to_update );
-    $selected_images_srcset = $result['selected_images_srcset']; 
-    $sql = "UPDATE " . $wpdb->images_sources_captions . " SET srcset = %s WHERE filename = %s";
-    foreach($selected_images_srcset as $filename => $srcset) {
-        $sql2 = $wpdb->prepare($sql, $srcset, $filename);
-        $wpdb->query($sql2);
-    }  
-}*/
+}
 
 /*
  * used by yu_image_DB
@@ -555,17 +499,4 @@ function select_image($filename) {
     return $result; 
 }
 
-/*
-function generate_img_source_name_href($src, $id) {
-    global $wpdb;
-    $sql = "SELECT srcname, CONCAT(srchref_before, %s, srchref_after) ) AS srchref FROM " . $wpdb->images_sources . " WHERE src = %s";
-    $sql = $wpdb->prepare($sql, $id, $src);        
-    $result = $wpdb->get_row($sql); 
-    if ($result === null) {
-        error_log('generate_img_source_name_href 2 ' . $sql);
-        error_log('generate_img_source_name_href result is null ');
-    }   
-    return $result; 
-}
-*/
 ?>
