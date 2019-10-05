@@ -207,7 +207,7 @@ function populate_images() {
     insert_into_images("horsemen/1024px-Alexander_Sarcophagus.jpg", 
                             "wiki", 
                             "Alexander_Sarcophagus.jpg", 
-                            "Detail of the Alexander Sarcophagus, <br/>circa 320 BC");
+                            "Detail of the Alexander Sarcophagus showing the battle of Issus, <br/>circa 320 BC, Ionian or Rhodian workmanchip, Hellenistic");
     insert_into_images("horsemen/1024px-Augustai.jpg", 
                             "wiki", 
                             "Augustai.jpg", 
@@ -2656,7 +2656,7 @@ function populate_images() {
     insert_into_images("horsemen/gods_jul08_5.jpg__600x0_q85_upscale.jpg", 
                             "Smithsonian Magazine", 
                             "http://www.smithsonianmag.com/arts-culture/true-colors-17888/?no-ist", 
-                            "Detail of the Alexander Sarcophagus, <br/>circa 320 BC, painted replica");
+                            "Detail of the Alexander Sarcophagus showing the battle of Issus, <br/>painted replica (original - circa 320 BC), Ionian or Rhodian workmanchip, Hellenistic");
     insert_into_images("horsemen/goldenhorseman.jpg", 
                             "wiki", 
                             "Dresden_GoldenerReiter_(2005).jpg", 
@@ -5108,9 +5108,10 @@ function populate_images() {
                             "wikipedia.org", 
                             "https://it.wikipedia.org/wiki/File:Provincia_di_Prato-Stemma.png", 
                             "Coat of arms of the province of Prato, <br/>Tuscany, Italy");
-    
-
-
+    insert_into_images("horsemen/AlexanderSarcophaguslionhunt.jpg",
+                            "dosseman @ pbase.com", 
+                            "https://www.pbase.com/dosseman/image/39181465", 
+                            "Alexander sarcophagus showing a lion hunt, with (l-r) Hephaestion, Abdalonymos and Alexander the Great, <br/>circa 320 BC, Ionian or Rhodian workmanchip, Hellenistic");    
 /*  insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
                             "wiki", 
                             "Francesco_fanelli,_san_giorgio,_bronzo_dorato,_XVII_sec.JPG", 
