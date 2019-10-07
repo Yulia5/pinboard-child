@@ -5155,7 +5155,7 @@ function populate_images() {
     insert_into_images("horsemen/Apokalipsis_trekhtolkoviy_1909_13_-_First_seal.jpg",
                             "wiki", 
                             "Apokalipsis_trekhtolkoviy_(1909)_13_-_First_seal.jpg", 
-                            "First Horseman of the Apocalypse, book of Apocalypse illustration, <br/>1909, Moscow");
+                            "First Horseman of the Apocalypse, book of Apocalypse illustration, <br/>1909 (print of a manuscript that dates to 1600-1650), Moscow");
     insert_into_images("horsemen/ApocalypseStSeverFol108v109r4Horsemen.jpg",
                             "wiki", 
                             "ApocalypseStSeverFol108v109r4Horsemen.jpg", 
@@ -5164,6 +5164,10 @@ function populate_images() {
                             "wiki", 
                             "184_MS_65_F90_V.jpg", 
                             "Forth Horseman of the Apocalypse, illustration of The Very Rich Hours of the Duke of Berry, <br/>1411-6, Limbourg brothers, Paris, France");
+    insert_into_images("horsemen/Death_on_the_Pale_Horse_by_B.West_(1817).jpg",
+                            "wiki", 
+                            "Death_on_the_Pale_Horse_by_B.West_(1817).jpg", 
+                            "Death on the Pale Horse, <br/>1817, Benjamin West, England (artist born in the U.S.A.)");
 /*
 
 279383001.jpg
