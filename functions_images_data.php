@@ -5116,7 +5116,61 @@ function populate_images() {
                             "wiki", 
                             "AlexanderSarcophagus1.jpg", 
                             "Alexander sarcophagus, long side showing the battle of Issus, <br/>circa 320 BC, Ionian or Rhodian workmanchip, Hellenistic");
-/*  insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
+    insert_into_images("horsemen/William_Blake_-_Death_on_a_Pale_Horse_-_Butlin_517.jpg",
+                            "wiki", 
+                            "William_Blake_-_Death_on_a_Pale_Horse_-_Butlin_517.jpg", 
+                            "Death on a Pale Horse (Forth Horseman of the Apocalypse), <br/>cr. 1800, William Blake, England");
+    insert_into_images("horsemen/Vasiliy_Korens_Apocalypse_p.22_-_Horsemen.jpg",
+                            "wiki", 
+                            "Vasiliy_Koren%27s_Apocalypse_p.22_-_Horsemen.jpg", 
+                            "Four Horsemen of the Apocalypse, illustration of the Koren Picture-Bible for poor people, <br/>1692-6, Vasily Koren, Moscow");
+    insert_into_images("horsemen/Second_Horseman_Battistero_di_Padova.jpg",
+                            "wiki", 
+                            "Second_Horseman,_Battistero_di_Padova.jpg", 
+                            "Second Horseman of the Apocalypse, fresco in the Baptistry, <br/>14th century, Giusto de' Menabuoi, Padua, Italy");
+    insert_into_images("horsemen/Liber_Floridus_musee_Conde_MS724_-_folio11v.jpg",
+                            "wiki", 
+                            "Liber_Floridus,_musée_Condé,_MS724_-_folio11v.jpg", 
+                            "Four Horsemen of the Apocalypse, illustration of Liber Floridus par Lambert de Saint-Omer, <br/>15th century, Jean Mansel, France");
+    insert_into_images("horsemen/John_Hamilton_Mortimer_-_Death_on_a_Pale_Horse_-_Google_Art_Project.jpg",
+                            "wiki", 
+                            "John_Hamilton_Mortimer_-_Death_on_a_Pale_Horse_-_Google_Art_Project.jpg", 
+                            "Death on a Pale Horse (Forth Horseman of the Apocalypse), <br/>cr. 1775, John Hamilton Mortimer, England");
+    insert_into_images("horsemen/First_Horseman_Battistero_di_Padova.jpg",
+                            "wiki", 
+                            "First_Horseman,_Battistero_di_Padova.jpg", 
+                            "First Horseman of the Apocalypse, fresco in the Baptistry, <br/>14th century, Giusto de' Menabuoi, Padua, Italy");
+    insert_into_images("horsemen/Elizabeth_Day_McCormick_Apocalypse_f51r_-_Second_Horseman.jpg",
+                            "wiki", 
+                            "Elizabeth_Day_McCormick_Apocalypse,_f51r_-_Second_Horseman.jpg", 
+                            "Second Horseman of the Apocalypse, illustration of Elizabeth Day McCormick Apocalypse, <br/>17th century, Greek");
+    insert_into_images("horsemen/Douce_Apocalypse_-_Bodleian_Ms180_-_p.014_Second_Horseman.jpg",
+                            "wiki", 
+                            "Douce_Apocalypse_-_Bodleian_Ms180_-_p.014_Second_Horseman.jpg", 
+                            "Second Horseman of the Apocalypse, illustration of Douce Apocalypse, <br/>1265-70, England");
+    insert_into_images("horsemen/B_Osma_85v.jpg",
+                            "wiki", 
+                            "B_Osma_85v.jpg", 
+                            "Four Horsemen of the Apocalypse, illustration of Burgo de Osma, <br/>1086, Martinus, Castille-et-León, Spain");
+    insert_into_images("horsemen/Apokalipsis_trekhtolkoviy_1909_13_-_First_seal.jpg",
+                            "wiki", 
+                            "Apokalipsis_trekhtolkoviy_(1909)_13_-_First_seal.jpg", 
+                            "First Horseman of the Apocalypse, book of Apocalypse illustration, <br/>1909, Moscow");
+    insert_into_images("horsemen/ApocalypseStSeverFol108v109r4Horsemen.jpg",
+                            "wiki", 
+                            "ApocalypseStSeverFol108v109r4Horsemen.jpg", 
+                            "Four Horsemen of the Apocalypse, illustration of the Apocalypse of Saint-Sever, <br/>11th century, French");
+    insert_into_images("horsemen/184_MS_65_F90_V.jpg",
+                            "wiki", 
+                            "184_MS_65_F90_V.jpg", 
+                            "Forth Horseman of the Apocalypse, illustration of The Very Rich Hours of the Duke of Berry, <br/>1411-6, Limbourg brothers, Paris, France");
+/*
+
+279383001.jpg
+ParthianHorseman.jpg
+
+
+  insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
                             "wiki", 
                             "Francesco_fanelli,_san_giorgio,_bronzo_dorato,_XVII_sec.JPG", 
                             "Saint George, <br/>cr. 1600-41, Francesco Fanelli, Italy/England");
