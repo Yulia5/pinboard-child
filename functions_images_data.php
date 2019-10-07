@@ -1235,7 +1235,7 @@ function populate_images() {
     insert_into_images("horsemen/Alexander_the_Great_mosaic.jpg", 
                             "wiki", 
                             "Alexander_the_Great_mosaic.jpg", 
-                            "Detail of the Alexander the Great Mosaic, <br/>circa 100 BC, Pompeii");
+                            "Mosaic showing the battle of Issus, detail showing Alexander the Great, <br/>circa 100 BC, Pompeii, Roman empire, perhaps after an earlier Greek painting of Philoxenus of Eretria (4th-3rd century BC)");
     insert_into_images("horsemen/Alexandr_Makedonsky.jpg", 
                             "wiki", 
                             "Alexandr_Makedonský.JPG", 
@@ -2699,7 +2699,7 @@ function populate_images() {
                             "Bronze medallion with Saint George, <br/>9th–12th century, Byzantine");
     insert_into_images("rs2G9A1355-sml-narrow.jpg", 
                             "Sergei Riaboff", 
-                            "http://serhi001.weebly.com/", 
+                            "https://www.instagram.com/serhi001", 
                             "Me, April 2017");
     insert_into_images("germany/hungry-girl-kimmelman-1925.jpg", 
                             "The New York Review of Books", 
@@ -4122,10 +4122,6 @@ function populate_images() {
                             "Art Institute of Chicago", 
                             "https://www.artic.edu/artworks/122101", 
                             "Marcus Curtius Leaping into the Abyss, <br/>cr. 1530, Pseudo-Pacchia, Siena");
-    insert_into_images("rs2G9A1355-sml-narrow.jpg", 
-                            "Sergei Riaboff", 
-                            "https://www.instagram.com/serhi001", 
-                            "Me, April 2017");
     insert_into_images("horsemen/20493560.jpeg", 
                             "HAM", 
                             "244723", 
@@ -5111,7 +5107,15 @@ function populate_images() {
     insert_into_images("horsemen/AlexanderSarcophaguslionhunt.jpg",
                             "dosseman @ pbase.com", 
                             "https://www.pbase.com/dosseman/image/39181465", 
-                            "Alexander sarcophagus showing a lion hunt, with (l-r) Hephaestion, Abdalonymos and Alexander the Great, <br/>circa 320 BC, Ionian or Rhodian workmanchip, Hellenistic");    
+                            "Alexander sarcophagus, long side showing a lion hunt, with (l-r) Hephaestion, Abdalonymos and Alexander the Great, <br/>circa 320 BC, Ionian or Rhodian workmanchip, Hellenistic");    
+    insert_into_images("horsemen/Battle_of_Issus.jpg",
+                            "wiki", 
+                            "Battle_of_Issus.jpg", 
+                            "Mosaic showing the battle of Issus, <br/>circa 100 BC, Pompeii, Roman empire, perhaps after an earlier Greek painting of Philoxenus of Eretria (4th-3rd century BC)");  
+    insert_into_images("horsemen/AlexanderSarcophagus1.jpg",
+                            "wiki", 
+                            "AlexanderSarcophagus1.jpg", 
+                            "Alexander sarcophagus, long side showing the battle of Issus, <br/>circa 320 BC, Ionian or Rhodian workmanchip, Hellenistic");
 /*  insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
                             "wiki", 
                             "Francesco_fanelli,_san_giorgio,_bronzo_dorato,_XVII_sec.JPG", 
