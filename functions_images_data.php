@@ -5164,14 +5164,93 @@ function populate_images() {
                             "wiki", 
                             "184_MS_65_F90_V.jpg", 
                             "Forth Horseman of the Apocalypse, illustration of The Very Rich Hours of the Duke of Berry, <br/>1411-6, Limbourg brothers, Paris, France");
-    insert_into_images("horsemen/Death_on_the_Pale_Horse_by_B.West_(1817).jpg",
+    insert_into_images("horsemen/Death_on_the_Pale_Horse_by_B.West_1817.jpg",
                             "wiki", 
                             "Death_on_the_Pale_Horse_by_B.West_(1817).jpg", 
                             "Death on the Pale Horse, <br/>1817, Benjamin West, England (artist born in the U.S.A.)");
+    insert_into_images("horsemen/Saint_Demetrius_bulgarian_icon.jpg",
+                            "wiki", 
+                            "Saint_Demetrius_(bulgarian_icon).jpg", 
+                            "Saint Demetrius, <br/>1824, Bulgaria");
+    insert_into_images("horsemen/Saint_Demetrius_school_of_Andreas_Ritzos_16th_c._Pushkin_museum.jpg",
+                            "wiki", 
+                            "Saint_Demetrius,_school_of_Andreas_Ritzos_(16th_c.,_Pushkin_museum).jpg", 
+                            "Saint Demetrius, <br/>1500-50, school of Andreas Ritzos, Macedonia");
+    insert_into_images("horsemen/Miracle_of-Dimiltri_Solunski.jpg",
+                            "wiki", 
+                            "Чудо_Дмитрия_Солунского.jpg", 
+                            "Saint Demetrius, <br/>18th century, Russia");
+    insert_into_images("horsemen/MiracleOfSaintGeorgeAndSaintDimitri.jpg",
+                            "wiki", 
+                            "Чудо_Георгия_о_змие_и_чудо_Димитрия_Солунского.jpg", 
+                            "Saint Demetrius And Saint George, <br/>1670, Nikita Pavlovec, Moscow, Russia");
+    insert_into_images("horsemen/SaintIlia.jpeg",
+                            "wiki", 
+                            "Огненное_восхождение_пророка_Илии_многочастная_1800.jpeg", 
+                            "Military Saints, <br/>1800, Russia");
+    insert_into_images("horsemen/St_Dmitrij_02.jpg",
+                            "wiki", 
+                            "St_Dmitrij_02.jpg", 
+                            "Saint Demetrius, <br/>17th century, Bulgaria");
+    insert_into_images("horsemen/St_Dmitrij_03.jpg",
+                            "wiki", 
+                            "St_Dmitrij_03.jpg", 
+                            "Saint Demetrius, <br/>1500-50, Russia");
+    insert_into_images("horsemen/Deisis_with_S.George_Greece.jpg",
+                            "wiki", 
+                            "Deisis_with_S.George_(Greece).jpg", 
+                            "Deisis with Saint George and Saint Demetrius, <br/>16th century (?), Greece");
+    insert_into_images("horsemen/Chanter_Angelos_Akotandos_-_St_George_on_Horseback_Slaying_the_Dragon_-_Google_Art_Project.jpg",
+                            "wiki", 
+                            "Chanter_Angelos_Akotandos_-_St_George_on_Horseback,_Slaying_the_Dragon_-_Google_Art_Project.jpg", 
+                            "Saint George on Horseback, Slaying the Dragon, <br/>1425 - 1450, Angelos Akotandos, Cretan School, Byzantine");
+    insert_into_images("horsemen/Miracle_of_st._Dmitry.jpg",
+                            "wiki", 
+                            "Miracle_of_st._Dmitry.jpg", 
+                            "Saint Demetrius, <br/>early 19th century, Yaroslavl, Russia");
+    insert_into_images("horsemen/Mary_with_George_and_Dimitry_Greece_1754.jpg",
+                            "wiki", 
+                            "Mary_with_George_and_Dimitry_(Greece,_1754).jpg", 
+                            "Mary with Saint George and Saint Demetrius, <br/>1754, Greece");
+    insert_into_images("horsemen/St._Demetrios_Killing_Soldier_and_Saving_Besieged_City_of_Thessalonica_3443941835.jpg",
+                            "wiki", 
+                            "St._Demetrios_Killing_Soldier_and_Saving_Besieged_City_of_Thessalonica_(3443941835).jpg", 
+                            "St. Demetrios Killing Soldier and Saving Besieged City of Thessalonica, <br/>1852, Gallipoli, modern Turkey");
+    insert_into_images("horsemen/Theodore_and_George_Military_Saints_3443905783.jpg",
+                            "wiki", 
+                            "Theodore_and_George,_Military_Saints_(3443905783).jpg", 
+                            "Relief showing Military Saints Theodore and George, <br/>13th century, Amaseia, modern Turkey");
+    insert_into_images("horsemen/ParthianHorseman.jpg",
+                            "wiki", 
+                            "ParthianHorseman.jpg", 
+                            "Parthian horseman performing a shot, <br/>1660-1713, Jean Chardin, French/British");
+    insert_into_images("horsemen/279383001.jpg",
+                            "BM", 
+                            "247021", 
+                            "Silver bowl showing four hunters, <br/>460-479, Hephthalite");
+    insert_into_images("horsemen/AN01559952_001_l.jpg",
+                            "BM", 
+                            "247021", 
+                            "Sculpture depicting warrior riding a rearing horse and a foot soldier, <br/>3rd-5th centuries, Yemen");
+/*
+Piero_della_Francesca_038.jpg
+Piero_della_Francesca_021.jpg
+Paolo_Uccello_016.jpg
+The_Master_of_Marradi_A_Cassone_panel_with_Caesars_army_triumphing_in_battle.jpg
+Uccello_Battle_of_San_Romano_Uffizi.jpg
+
+Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg
+Pulaski-Szmurlo.jpg
+Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
+3565192353_628d7ef0bd_c.jpg
+3565212709_60f4c31fb3_c.jpg
+Pittore_di_amphiaraos_gruppo_pontico_oinochoe_etrusca_con_cavalieri_al_galoppo_dalla_177_della_necr._dellosteria_540-510_ac_ca.jpg
+etst-2014-0012-Abb-05.jpg
+DP102381.jpg
+26738428861_2078b5b6c8_b.jpg
 /*
 
-279383001.jpg
-ParthianHorseman.jpg
+
 
 
   insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
