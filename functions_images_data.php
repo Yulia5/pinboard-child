@@ -5231,7 +5231,15 @@ function populate_images() {
     insert_into_images("horsemen/AN01559952_001_l.jpg",
                             "BM", 
                             "247021", 
-                            "Sculpture depicting warrior riding a rearing horse and a foot soldier, <br/>3rd-5th centuries, Yemen");
+                            "Relief depicting warrior riding a rearing horse and a foot soldier, <br/>3rd-5th centuries, Yemen");
+    insert_into_images("horsemen/spp290_horse_rider_statuette.png",
+                            "sino-platonic.org", 
+                            "http://www.sino-platonic.org/complete/spp290_horse_rider_statuette.pdf", 
+                            "Sculpture of a horseman on a rearing horse, <br/>end of the 5th century, Alchon Hunnic, Northern Afghanistan");
+    insert_into_images("horsemen/Sukhra_defeating_the_Hephthalites.jpg",
+                            "Met", 
+                            "452176", 
+                            "Sukhra's Victory over the Hephthalites in 486-8 (detail), illustration of Shahnameh, <br/>cr. 1530–35, Abu'l Qasim Firdausi, Tabriz, Persia");
 /*
 Piero_della_Francesca_038.jpg
 Piero_della_Francesca_021.jpg
