@@ -1599,7 +1599,7 @@ function populate_images() {
     insert_into_images("horsemen/Giovanni_Bellini_-_Pesaro_Altarpiece_predella_-_WGA01680.jpg", 
                             "wiki", 
                             "Giovanni_Bellini_-_Pesaro_Altarpiece_(predella)_-_WGA01680.jpg", 
-                            "Pesaro Altarpiece (predella), <br/>1471-4, Giovanni Bellini");
+                            "Pesaro Altarpiece (predella), <br/>1471-4, Giovanni Bellini, Venice");
     insert_into_images("horsemen/Gonzales_Coques_-_An_equestrian_portrait_of_an_elegant_gentleman_and_lady_in_a_wooded_landscape.jpg", 
                             "wiki", 
                             "Gonzales_Coques_-_An_equestrian_portrait_of_an_elegant_gentleman_and_lady_in_a_wooded_landscape.jpg", 
@@ -5219,7 +5219,7 @@ function populate_images() {
     insert_into_images("horsemen/Theodore_and_George_Military_Saints_3443905783.jpg",
                             "wiki", 
                             "Theodore_and_George,_Military_Saints_(3443905783).jpg", 
-                            "Relief showing Military Saints Theodore and George, <br/>13th century, Amaseia, modern Turkey");
+                            "Relief showing Military Saints Theodore and George, the exterior decor of a church, <br/>13th century, Amaseia, modern Turkey");
     insert_into_images("horsemen/ParthianHorseman.jpg",
                             "wiki", 
                             "ParthianHorseman.jpg", 
@@ -5230,7 +5230,7 @@ function populate_images() {
                             "Silver bowl showing four hunters, <br/>460-479, Hephthalite");
     insert_into_images("horsemen/AN01559952_001_l.jpg",
                             "BM", 
-                            "247021", 
+                            "3584109", 
                             "Relief depicting warrior riding a rearing horse and a foot soldier, <br/>3rd-5th centuries, Yemen");
     insert_into_images("horsemen/spp290_horse_rider_statuette.png",
                             "sino-platonic.org", 
@@ -5240,6 +5240,31 @@ function populate_images() {
                             "Met", 
                             "452176", 
                             "Sukhra's Victory over the Hephthalites in 486-8 (detail), illustration of Shahnameh, <br/>cr. 1530–35, Abu'l Qasim Firdausi, Tabriz, Persia");
+    insert_into_images("horsemen/DP102381.jpg",
+                            "Met", 
+                            "255157", 
+                            "Terracotta hydria (water jar) with two horsemen, <br/>cr. 520–510 BC, Caere, Etruria");
+    insert_into_images("horsemen/26738428861_2078b5b6c8_b.jpg",
+                            "hiveminer.com", 
+                            "https://hiveminer.com/Tags/hydria%2Cpottery", 
+                            "Terracotta hydria showing battle of Greeks and Amazons (Amazonomachy), was used as a cinerary urn, <br/>cr. 325-300 BC, Kastri (Amphipolis), Attica, Greece");
+    insert_into_images("horsemen/etst-2014-0012-Abb-05.jpg",
+                            "degruyter.com", 
+                            "https://www.degruyter.com/view/j/etst.2014.17.issue-2/etst-2014-0012/graphic/etst-2014-0012-Abb-05.jpg", 
+                            "Terracotta hydria showing hare hunt, <br/>6th century BC, Caere, Etruria");
+    insert_into_images("horsemen/Pittore_di_amphiaraos_gruppo_pontico_oinochoe_etrusca_con_cavalieri_al_galoppo_dalla_177_della_necr._dellosteria_540-510_ac_ca.jpg
+",
+                            "wiki", 
+                            "Pittore_di_amphiaraos,_gruppo_pontico,_oinochoe_etrusca_con_cavalieri_al_galoppo,_dalla_177_della_necr._dell%27osteria,_540-510_ac_ca.jpg", 
+                            "Oinochoe showing galloping cavalrymen, <br/>540-510 BC, Etruria");
+    insert_into_images("horsemen/3565192353_628d7ef0bd_c.jpg",
+                            "peterjr1961 @ flickr", 
+                            "https://www.flickr.com/photos/peterjr1961/3565212709", 
+                            "Equestrian statue depicting Cuban patriot and author José Martí, <br/>cr. 1958, Anna Vaughn Hyatt Huntington, Central Park, New York, U.S.A.");
+    insert_into_images("horsemen/3565212709_60f4c31fb3_c.jpg",
+                            "peterjr1961 @ flickr", 
+                            "https://www.flickr.com/photos/peterjr1961/3565212709", 
+                            "Equestrian statue depicting Argentine general José de San Martín, <br/>replica of a statue by French sculptor Louis Joseph Daumas 1862, Central Park, New York, U.S.A.");
 /*
 Piero_della_Francesca_038.jpg
 Piero_della_Francesca_021.jpg
@@ -5250,16 +5275,6 @@ Uccello_Battle_of_San_Romano_Uffizi.jpg
 Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg
 Pulaski-Szmurlo.jpg
 Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
-3565192353_628d7ef0bd_c.jpg
-3565212709_60f4c31fb3_c.jpg
-Pittore_di_amphiaraos_gruppo_pontico_oinochoe_etrusca_con_cavalieri_al_galoppo_dalla_177_della_necr._dellosteria_540-510_ac_ca.jpg
-etst-2014-0012-Abb-05.jpg
-DP102381.jpg
-26738428861_2078b5b6c8_b.jpg
-/*
-
-
-
 
   insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
                             "wiki", 
