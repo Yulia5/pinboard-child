@@ -5247,24 +5247,79 @@ function populate_images() {
     insert_into_images("horsemen/26738428861_2078b5b6c8_b.jpg",
                             "hiveminer.com", 
                             "https://hiveminer.com/Tags/hydria%2Cpottery", 
-                            "Terracotta hydria showing battle of Greeks and Amazons (Amazonomachy), was used as a cinerary urn, <br/>cr. 325-300 BC, Kastri (Amphipolis), Attica, Greece");
+                            "Terracotta hydria showing battle of Greeks and Amazons (Amazonomachy), was used as a cinerary urn, <br/>cr. 325-300 BC, Attic style, Kastri (Amphipolis), Central Macedonia, Greece");
     insert_into_images("horsemen/etst-2014-0012-Abb-05.jpg",
                             "degruyter.com", 
                             "https://www.degruyter.com/view/j/etst.2014.17.issue-2/etst-2014-0012/graphic/etst-2014-0012-Abb-05.jpg", 
                             "Terracotta hydria showing hare hunt, <br/>6th century BC, Caere, Etruria");
-    insert_into_images("horsemen/Pittore_di_amphiaraos_gruppo_pontico_oinochoe_etrusca_con_cavalieri_al_galoppo_dalla_177_della_necr._dellosteria_540-510_ac_ca.jpg
-",
+    insert_into_images(
+        "horsemen/Pittore_di_amphiaraos_gruppo_pontico_oinochoe_etrusca_con_cavalieri_al_galoppo_dalla_177_della_necr._dellosteria_540-510_ac_ca.jpg",
                             "wiki", 
                             "Pittore_di_amphiaraos,_gruppo_pontico,_oinochoe_etrusca_con_cavalieri_al_galoppo,_dalla_177_della_necr._dell%27osteria,_540-510_ac_ca.jpg", 
                             "Oinochoe showing galloping cavalrymen, <br/>540-510 BC, Etruria");
     insert_into_images("horsemen/3565192353_628d7ef0bd_c.jpg",
                             "peterjr1961 @ flickr", 
-                            "https://www.flickr.com/photos/peterjr1961/3565212709", 
+                            "https://www.flickr.com/photos/peterjr1961/3565192353", 
                             "Equestrian statue depicting Cuban patriot and author José Martí, <br/>cr. 1958, Anna Vaughn Hyatt Huntington, Central Park, New York, U.S.A.");
     insert_into_images("horsemen/3565212709_60f4c31fb3_c.jpg",
                             "peterjr1961 @ flickr", 
                             "https://www.flickr.com/photos/peterjr1961/3565212709", 
                             "Equestrian statue depicting Argentine general José de San Martín, <br/>replica of a statue by French sculptor Louis Joseph Daumas 1862, Central Park, New York, U.S.A.");
+    insert_into_images("horsemen/apulia_urn.jpg",
+                            "szepmuveszeti.hu", 
+                            "http://www2.szepmuveszeti.hu/antik_gyujtemeny/evszak_mutargya/evszak_en.php?id=643", 
+                            "Krater showing the Duel of Life and Death (Etruscan symbolism), <br/>cr. 320-280 BC, Canosa, Apulia");
+    insert_into_images("horsemen/Avesalom_palatina.jpg",
+                            "wiki", 
+                            "Avesalom_palatina.jpg", 
+                            "The lament of King David over his son Absalom (detail), <br/>18th century, Santi Cardini and Pietro Casamassima, Palermo, Sicily");
+    insert_into_images("horsemen/20217899123_bcb314bdda_b.jpg",
+                            "jjamv @ flickr", 
+                            "https://www.flickr.com/photos/jjamv/20217899123", 
+                            "The lament of King David over his son Absalom (detail), <br/>18th century, Santi Cardini and Pietro Casamassima, Palermo, Sicily");
+    insert_into_images("horsemen/Exarchate_of_Ravenna_600_AD.png",
+                            "wiki", 
+                            "Exarchate_of_Ravenna_600_AD.png", 
+                            "Map of Exarchate of Ravenna in 600 AD");
+    insert_into_images("horsemen/Byzantine_and_Sassanid_Empires_in_600_CE.png",
+                            "wiki", 
+                            "Byzantine_and_Sassanid_Empires_in_600_CE.png", 
+                            "Map of Byzantine and Sassanid Empires in 600 AD");
+    insert_into_images("horsemen/Georgy_capp.jpeg",
+                            "wiki", 
+                            "Georgy_capp.JPG", 
+                            "Saint George and Saint Theodore of Amasea, killing the dragon, Frescoes on a wall of cave church, <br/>12th century, Yilanli Church, Goreme, Cappadocia, Turkey");
+    insert_into_images("horsemen/JohannesFresken.jpg",
+                            "wiki", 
+                            "JohannesFresken.jpg", 
+                            "Saint George and Saint Theodore of Amasea, killing the dragons, Frescoes on a wall of cave church, <br/>cr. 1212, Saint John's Church, Gülşehir, Cappadocia, Turkey");
+    insert_into_images("horsemen/louvre-saint-georges-combattant-dragon.jpg",
+                            "Le Louvre", 
+                            "https://www.louvre.fr/en/oeuvre-notices/saint-george-and-dragon", 
+                            "Relief showing Saint George fighting the dragon, <br/>1509-10, Michel Colombe, Tours, France");
+    insert_into_images("horsemen/St_Theodore_detail_on_Campiello_dellAnconeta.jpeg",
+                            "wiki", 
+                            "St_Theodore_detail_on_Campiello_dell%27Anconeta.JPG", 
+                            "Relief showing Theodore of Amasea (or Saint George?) fighting the dragon, <br/>?, Campiello dell'Anconeta, Cannaregio, Venice");
+    insert_into_images("horsemen/1georg_6.jpg",
+                            "wga.hu", 
+                            "https://www.wga.hu/html_m/d/donatell/1_early/orsanmic/1georg_6.html", 
+                            "Saint George and the Dragon, <br/>cr. 1416, Donatello, Florence, Italy");
+    insert_into_images("horsemen/Sv_Flor_i_Lavr_16v_Novgorodskie_zemli_Sobranie_S.N.png",
+                            "wiki", 
+                            "Sv_Flor_i_Lavr_16v_Novgorodskie_zemli_Sobranie_S.N.png", 
+                            "Saint Flor and Lavr, <br/>16th century, Novgorod, Russia");
+    insert_into_images("horsemen/46520978995_8e302c7673_h.jpg",
+                            "Dan Diffendale @ flickr", 
+                            "https://www.flickr.com/photos/7945858@N08/46520978995",
+                            "Amphora with riding youths, <br/>Greek, probably made in South Italy");
+    insert_into_images("horsemen/47435986421_78725109a2_h.jpg ",
+                            "Dan Diffendale @ flickr", 
+                            "https://www.flickr.com/photos/7945858@N08/47435986421", 
+                            "Panathenaic (?) amphora with a horseback acrobat, <br/>cr. 320-300 BC, Lucania, Basilicata, Italy");
+
+
+
 /*
 Piero_della_Francesca_038.jpg
 Piero_della_Francesca_021.jpg
