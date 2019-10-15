@@ -531,7 +531,7 @@ function populate_images() {
     insert_into_images("horsemen/3.jpg", 
                             "Old Prague", 
                             "http://www.old-prague.com/", 
-                            "Colour lithograph,<br/>1908, J.Jílovský");
+                            "Saint George killing the dragon, colour lithograph (a postcard),<br/>1908, J.Jílovský, Prague, Austro-Hungarian Empire");
     insert_into_images("horsemen/312490-1449137345.jpg", 
                             "RC", 
                             "441145", 
@@ -5003,7 +5003,7 @@ function populate_images() {
     insert_into_images("horsemen/Bernardo_OHiggins_Jose_de_San_Martin.jpeg",
                             "wiki", 
                             "Estatua_de_Bernardo_O%27Higgins_y_José_de_San_Martín_en_Templo_Votivo_de_Maipú.JPG", 
-                            "The Statue Of Bernardo O'Higgins and José de San Martín, <br/>second half of the 20th century, ?, Chile"); 
+                            "The Statue Of Bernardo O'Higgins and José de San Martín, <br/>1968, Galvarino Ponce Morel, Maipú, Chile"); 
     insert_into_images("horsemen/Paulus_van_Hillegaert_I_001.jpg",
                             "wiki", 
                             "Paulus_van_Hillegaert_(I)_001.jpg", 
