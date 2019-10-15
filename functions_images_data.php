@@ -2343,7 +2343,7 @@ function populate_images() {
     insert_into_images("horsemen/Yuhanna-Mercurius.jpg", 
                             "wiki", 
                             "Yuhanna-Mercurius.jpg", 
-                            "Saint Mercurius, <br/>cr. 1778, painted by Yuhanna al-Armani, Ottoman Egypt");
+                            "Saint Mercurius spearing emperor Julian the Apostate, <br/>cr. 1778, painted by Yuhanna al-Armani, Ottoman Egypt");
     insert_into_images("horsemen/ZauerveydNA_Petr1UsmirDA19.jpg", 
                             "wiki", 
                             "ZauerveydNA_Petr1UsmirDA19.jpg", 
@@ -5195,7 +5195,7 @@ function populate_images() {
     insert_into_images("horsemen/St_Dmitrij_03.jpg",
                             "wiki", 
                             "St_Dmitrij_03.jpg", 
-                            "Saint Demetrius, <br/>1500-50, Russia");
+                            "Saint Demetrius of Thessaloniki spearing king Kaloyan of Bulgaria, <br/>1500-50, Russia");
     insert_into_images("horsemen/Deisis_with_S.George_Greece.jpg",
                             "wiki", 
                             "Deisis_with_S.George_(Greece).jpg", 
