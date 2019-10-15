@@ -307,7 +307,7 @@ function populate_images() {
     insert_into_images("horsemen/1280px-Paolo_Uccello_047b.jpg", 
                             "wiki", 
                             "Paolo_Uccello_047b.jpg", 
-                            "Saint George and the Dragon, <br/>Paolo Uccello, 1470");
+                            "Saint George and the Dragon, <br/>1470, Paolo Uccello, Florence, Italy");
     insert_into_images("horsemen/1280px-Strasbourg_walter_gustave_adolphe.jpg", 
                             "wiki", 
                             "Strasbourg_walter_gustave_adolphe.JPG", 
@@ -1655,7 +1655,7 @@ function populate_images() {
     insert_into_images("horsemen/Hunt_in_the_forest_by_paolo_uccello.jpg", 
                             "wiki", 
                             "Hunt_in_the_forest_by_paolo_uccello.jpg", 
-                            "The Hunt in the Forest,<br/>cr.1470, Paolo Uccello, tempera, oil and gold on panel");
+                            "The Hunt in the Forest,<br/>cr. 1470, Paolo Uccello, Florence, Italy");
     insert_into_images("horsemen/IMG_2797a.jpg", 
                             "romehistory.co.uk", 
                             "http://romehistory.co.uk/VILLA/villaromanadelca.html", 
@@ -3192,7 +3192,7 @@ function populate_images() {
     insert_into_images("horsemen/1280px-San_Romano_Battle_Paolo_Uccello_London_01.jpg", 
                             "wiki", 
                             "San_Romano_Battle_(Paolo_Uccello,_London)_01.jpg", 
-                            "The Battle of San Romano,<br/>cr.1438-40, Paolo Uccello, tempera on panel");
+                            "The Battle of San Romano,<br/>cr.1438-40, Paolo Uccello, Florence, Italy");
     insert_into_images("horsemen/253796.png", 
                             "Met", 
                             "253796", 
@@ -4337,7 +4337,7 @@ function populate_images() {
     insert_into_images("horsemen/uccello_st_georges.jpg", 
                             "The Jacquemart-André Museum", 
                             "https://www.musee-jacquemart-andre.com/en/oeuvres/saint-georges-and-dragon", 
-                            "St. George and the Dragon, <br/>cr. 1430-35, Paolo Uccello, Italy");
+                            "St. George and the Dragon, <br/>cr. 1430-35, Paolo Uccello, Florence, Italy");
     insert_into_images("horsemen/Pieter_Bruegel_the_Elder_-_Massacre_of_the_Innocents_-_Google_Art_Project.jpg", 
                             "wiki", 
                             "Pieter_Bruegel_the_Elder_-_Massacre_of_the_Innocents_-_Google_Art_Project.jpg", 
@@ -4701,7 +4701,7 @@ function populate_images() {
     insert_into_images("horsemen/sisinios_amulet.jpg", 
                             "HAM", 
                             "191293", 
-                            "Amulet with Holy Rider (St. Sisinios) and Virgin Enthroned, <br/>5th-7th century, Byzantium"); 
+                            "Amulet with Holy Rider (St. Sisinios) and Virgin Enthroned, <br/>5th-7th century, Byzantine"); 
     insert_into_images("horsemen/Vase-with-hunting-scenes.jpg", 
                             "Prado", 
                             "vase-with-hunting-scenes/5a18363c-0ad2-462e-8a5a-6c3a4f1fe84e?searchid=13704edd-6a8c-e67a-dc8d-bfa4e5b8d2da", 
@@ -5272,11 +5272,11 @@ function populate_images() {
     insert_into_images("horsemen/Avesalom_palatina.jpg",
                             "wiki", 
                             "Avesalom_palatina.jpg", 
-                            "The lament of King David over his son Absalom (detail), <br/>18th century, Santi Cardini and Pietro Casamassima, Palermo, Sicily");
+                            "The lament of King David over his son Absalom (detail), <br/>cr. 1832, Santi Cardini and Pietro Casamassima, Palermo, Sicily");
     insert_into_images("horsemen/20217899123_bcb314bdda_b.jpg",
                             "jjamv @ flickr", 
                             "https://www.flickr.com/photos/jjamv/20217899123", 
-                            "The lament of King David over his son Absalom (detail), <br/>18th century, Santi Cardini and Pietro Casamassima, Palermo, Sicily");
+                            "The lament of King David over his son Absalom (detail), <br/>cr. 1832, Santi Cardini and Pietro Casamassima, Palermo, Sicily");
     insert_into_images("horsemen/Exarchate_of_Ravenna_600_AD.png",
                             "wiki", 
                             "Exarchate_of_Ravenna_600_AD.png", 
@@ -5309,6 +5309,75 @@ function populate_images() {
                             "wiki", 
                             "Sv_Flor_i_Lavr_16v_Novgorodskie_zemli_Sobranie_S.N.png", 
                             "Saint Flor and Lavr, <br/>16th century, Novgorod, Russia");
+    insert_into_images("horsemen/Paolo_Uccello_016.jpg",
+                            "wiki", 
+                            "Paolo_Uccello_016.jpg", 
+                            "The Decisive Attack of Micheletto Attendolo at San Romano, <br/>1438, Paolo Uccello, Florence, Italy");
+    insert_into_images("horsemen/Uccello_Battle_of_San_Romano_Uffizi.jpg",
+                            "wiki", 
+                            "Uccello_Battle_of_San_Romano_Uffizi.jpg", 
+                            "Niccolò Mauruzi da Tolentino unseats Bernardino della Ciarda at the Battle of San Romano, <br/>cr. 1436-40, Paolo Uccello, Florence, Italy");
+    insert_into_images("horsemen/Piero_della_Francesca_038.jpg",
+                            "wiki", 
+                            "Piero_della_Francesca_038.jpg", 
+                            "The Battle of Milvian Bridge (between the Roman Emperors Constantine I and Maxentius, in 312), <br/>cr. 1452-66, Piero della Francesca, Arezzo, Italy");
+    insert_into_images("horsemen/Piero_della_Francesca_021.jpg",
+                            "wiki", 
+                            "Piero_della_Francesca_021.jpg", 
+                            "The Battle of Nineveh (between Khosrau II and Heraclius, in 627), <br/>cr. 1452-66, Piero della Francesca, Arezzo, Italy");
+    insert_into_images("horsemen/Schwabhausen_bei_Landsberg_Heilig_Kreuz_559.jpg",
+                            "wiki", 
+                            "Schwabhausen_bei_Landsberg_Heilig_Kreuz_559.jpg", 
+                            "The Battle of the Milvian Bridge, <br/>cr. 1779, Vitus Felix Rigl, Schwabhausen bei Landsberg, Bavaria, Germany");
+    insert_into_images("horsemen/Lingelbach_Johannes_-_Schlacht_an_der_Milvischen_Brücke_-_c._1650.jpg",
+                            "wiki", 
+                            "Lingelbach,_Johannes_-_Schlacht_an_der_Milvischen_Brücke_-_c._1650.jpg", 
+                            "The Battle of the Milvian Bridge, <br/>cr. 1650, Johannes Lingelbach, Dutch school");
+    insert_into_images("horsemen/Figural_composition_designed_in_1622_by_Peter_Paul_Rubens_-_Tapestry_showing_the_Triumph_of_Constantine_over_Maxentius_at_the_Battle_of_the_Milvian_Bridge_-_Google_Art_Project.jpg",
+                            "wiki", 
+                            "Figural_composition_designed_in_1622_by_Peter_Paul_Rubens_-_Tapestry_showing_the_Triumph_of_Constantine_over_Maxentius_at_the_Battle_of_the_Milvian_Bridge_-_Google_Art_Project.jpg", 
+                            "Tapestry showing the Triumph of Constantine over Maxentius at the Battle of the Milvian Bridge, <br/>1622, Peter Paul Rubens, Flemish");
+    insert_into_images("horsemen/Constantine_the_Great_at_the_Milvian_Bridge.jpg",
+                            "wiki", 
+                            "Constantine_the_Great_at_the_Milvian_Bridge.jpg", 
+                            "Constantine the Great at the Milvian Bridge, <br/>cr. 1640, After Giulio Romano, Flemish");
+    insert_into_images("horsemen/Battle_of_the_Milvian_Bridge_by_Giulio_Romano_1520-24.jpg",
+                            "wiki", 
+                            "Battle_of_the_Milvian_Bridge_by_Giulio_Romano,_1520-24.jpg", 
+                            "The Battle of the Milvian Bridge, <br/>1520-4, Giulio Romano, designed by Raphael, Vatican, Italy");
+    insert_into_images("horsemen/Battle_at_the_Milvian_Bridge_Gerard_Audran_after_Charles_Le_Brun_1666.jpg",
+                            "wiki", 
+                            "Battle_at_the_Milvian_Bridge,_Gérard_Audran_after_Charles_Le_Brun,_1666.jpg", 
+                            "The Battle of the Milvian Bridge, <br/>1666, Gérard Audran after Charles Le Brun, France");
+    insert_into_images("horsemen/ArcoCostTondiAdrS3-4.jpg",
+                            "wiki", 
+                            "ArcoCostTondiAdrS3-4.jpg", 
+                            "Arch of Constantine (detail), <br/>315, Rome");
+    insert_into_images("horsemen/Arco_di_Costantino_-_Roma_34.jpg",
+                            "wiki", 
+                            "Arco_di_Costantino_-_Roma_34.jpg", 
+                            "Arch of Constantine (detail), <br/>315, Rome");
+    insert_into_images("horsemen/Arco_de_Constantino_relieves._01.png",
+                            "wiki", 
+                            "Arco_de_Constantino_relieves._01.JPG", 
+                            "Arch of Constantine (detail), <br/>315, Rome");
+    insert_into_images("horsemen/Arc_de_Constantin_et_Colisee_Rome.jpg",
+                            "wiki", 
+                            "Arc_de_Constantin_et_Colisée_(Rome).jpg", 
+                            "Arch of Constantine and Colosseum in the background, <br/>315, Rome");
+    insert_into_images("horsemen/682px-Reichenkirchen_St._Michael_Deckenmalerei_056.jpg",
+                            "wiki", 
+                            "Reichenkirchen_St._Michael_Deckenmalerei_056.jpg", 
+                            "The Battle of the Milvian Bridge, <br/>1755-6, Franz Joseph Aiglsdorfer, Fraunberg, Bavaria, Germany");
+
+/* The_Master_of_Marradi_A_Cassone_panel_with_Caesars_army_triumphing_in_battle.jpg
+Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg
+Pulaski-Szmurlo.jpg
+Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
+
+
+
+
     insert_into_images("horsemen/46520978995_8e302c7673_h.jpg",
                             "Dan Diffendale @ flickr", 
                             "https://www.flickr.com/photos/7945858@N08/46520978995",
@@ -5318,18 +5387,6 @@ function populate_images() {
                             "https://www.flickr.com/photos/7945858@N08/47435986421", 
                             "Panathenaic (?) amphora with a horseback acrobat, <br/>cr. 320-300 BC, Lucania, Basilicata, Italy");
 
-
-
-/*
-Piero_della_Francesca_038.jpg
-Piero_della_Francesca_021.jpg
-Paolo_Uccello_016.jpg
-The_Master_of_Marradi_A_Cassone_panel_with_Caesars_army_triumphing_in_battle.jpg
-Uccello_Battle_of_San_Romano_Uffizi.jpg
-
-Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg
-Pulaski-Szmurlo.jpg
-Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
 
   insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
                             "wiki", 
