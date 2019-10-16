@@ -5247,7 +5247,7 @@ function populate_images() {
     insert_into_images("horsemen/26738428861_2078b5b6c8_b.jpg",
                             "hiveminer.com", 
                             "https://hiveminer.com/Tags/hydria%2Cpottery", 
-                            "Terracotta hydria showing battle of Greeks and Amazons (Amazonomachy), was used as a cinerary urn, <br/>cr. 325-300 BC, Attic style, Kastri (Amphipolis), Central Macedonia, Greece");
+                            "Terracotta hydria showing battle of Greeks and Amazons (Amazonomachy), <br/>cr. 325-300 BC, Attic style, Kastri (Amphipolis), Central Macedonia, Greece");
     insert_into_images("horsemen/etst-2014-0012-Abb-05.jpg",
                             "degruyter.com", 
                             "https://www.degruyter.com/view/j/etst.2014.17.issue-2/etst-2014-0012/graphic/etst-2014-0012-Abb-05.jpg", 
@@ -5369,24 +5369,33 @@ function populate_images() {
                             "wiki", 
                             "Reichenkirchen_St._Michael_Deckenmalerei_056.jpg", 
                             "The Battle of the Milvian Bridge, <br/>1755-6, Franz Joseph Aiglsdorfer, Fraunberg, Bavaria, Germany");
-
-/* The_Master_of_Marradi_A_Cassone_panel_with_Caesars_army_triumphing_in_battle.jpg
-Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg
-Pulaski-Szmurlo.jpg
-Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
-
-
-
-
     insert_into_images("horsemen/46520978995_8e302c7673_h.jpg",
                             "Dan Diffendale @ flickr", 
                             "https://www.flickr.com/photos/7945858@N08/46520978995",
                             "Amphora with riding youths, <br/>Greek, probably made in South Italy");
-    insert_into_images("horsemen/47435986421_78725109a2_h.jpg ",
+    insert_into_images("horsemen/47435986421_78725109a2_h.jpg",
                             "Dan Diffendale @ flickr", 
                             "https://www.flickr.com/photos/7945858@N08/47435986421", 
-                            "Panathenaic (?) amphora with a horseback acrobat, <br/>cr. 320-300 BC, Lucania, Basilicata, Italy");
+                            "Panathenaic (?) amphora with a horseback acrobat, <br/>cr. 320-300 BC, Lucanian school, south of Italy");
+    insert_into_images("horsemen/Naqsh-e_Rostam_III_3291730501.jpg",
+                            "wiki", 
+                            "Naqsh-e_Rostam_III_(3291730501).jpg", 
+                            "Equestrian reliefs of Bahram II,  necropolis of Naqsh-e Rostam, <br/>cr. 276–293, Sasanian, Naqsh-e Rostam, Persia");
+    insert_into_images("horsemen/Naghsh-e_rostam_Iran_2016-09-24_DD_10.jpg",
+                            "wiki", 
+                            "Naghsh-e_rostam,_Irán,_2016-09-24,_DD_10.jpg", 
+                            "Equestrian reliefs of Bahram II,  necropolis of Naqsh-e Rostam, <br/>cr. 276–293, Sasanian, Naqsh-e Rostam, Persia");
+    insert_into_images("horsemen/IranNaqshIRustamAchGr2.jpg",
+                            "wiki", 
+                            "IranNaqshIRustamAchGr2.jpg", 
+                            "Necropolis of Naqsh-e Rostam, with two Achaemenid tombs and three Sasanian reliefs, <br/>5th century BC and cr. 276–293, Achaemenid and Sasanian, Naqsh-e Rostam, Persia");
 
+/* 
+
+The_Master_of_Marradi_A_Cassone_panel_with_Caesars_army_triumphing_in_battle.jpg
+Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg
+Pulaski-Szmurlo.jpg
+Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
 
   insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
                             "wiki", 
