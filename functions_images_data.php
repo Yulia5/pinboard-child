@@ -1343,7 +1343,7 @@ function populate_images() {
     insert_into_images("horsemen/Carlo_Emmanuele_III_equestrian_portrait.jpg", 
                             "wiki", 
                             "Carlo_Emmanuele_III_equestrian_portrait.jpg", 
-                            "Equestrian portrait of Charles Emmanuel III of Sardinia,<br/>1720-61, Maria Giovanna Clementi");
+                            "Equestrian portrait of Charles Emmanuel III, Duke of Savoy and King of Sardinia,<br/>1720-61, Maria Giovanna Clementi, Turin, Italy");
     insert_into_images("horsemen/Carlo_Emmanuele_II_of_Savoy_with_his_son_and_hier_Vittorio_Amedeo_Prince_of_Piedmont.jpg", 
                             "wiki", 
                             "Carlo_Emmanuele_II_of_Savoy_with_his_son_and_hier_Vittorio_Amedeo,_Prince_of_Piedmont.jpg", 
@@ -2255,11 +2255,7 @@ function populate_images() {
     insert_into_images("horsemen/Van_dyck_tomaso_1634_1635.jpg", 
                             "wiki", 
                             "Van_dyck_tomaso_1634_1635.jpg", 
-                            "Equestrian portrait of Prince Tomaso of Savoy-Carignan, <br/>1634-5, Anthony van Dyck");
-    insert_into_images("horsemen/Van_dyck_tomaso_1634_1635.jpg", 
-                            "wiki", 
-                            "Van_dyck_tomaso_1634_1635.jpg", 
-                            "Equestrian portrait of Prince Tomaso of Savoy-Carignan, <br/>1634-5, Anthony van Dyck");
+                            "Equestrian portrait of Prince Tomaso of Savoy-Carignan, son of Charles Emmanuel I, Duke of Savoy, <br/>1634-5, Anthony van Dyck");
     insert_into_images("horsemen/Veronese.Marcus_Curtius01.jpg", 
                             "wiki", 
                             "Veronese.Marcus_Curtius01.jpg", 
@@ -4883,7 +4879,7 @@ function populate_images() {
     insert_into_images("horsemen/864px-Buffi_-_Equestrian_portrait_of_Marie_Jeanne_of_Savoy-Nemours_-_Palazzo_Madama.jpg", 
                             "wiki", 
                             "Buffi_-_Equestrian_portrait_of_Marie_Jeanne_of_Savoy-Nemours_-_Palazzo_Madama.jpg", 
-                            "Equestian portrait of Marie Jeanne Baptiste of Savoy-Nemours, <br/>1660-75, Giovanni Luigi Buffi, Duchy of Savoy");
+                            "Equestian portrait of Marie Jeanne Baptiste of Savoy-Nemours, Duchess of Savoy, <br/>1660-75, Giovanni Luigi Buffi, Duchy of Savoy");
     insert_into_images("horsemen/AN00941716_001_l.jpg", 
                             "BM", 
                             "930274", 
@@ -5372,7 +5368,7 @@ function populate_images() {
     insert_into_images("horsemen/46520978995_8e302c7673_h.jpg",
                             "Dan Diffendale @ flickr", 
                             "https://www.flickr.com/photos/7945858@N08/46520978995",
-                            "Amphora with riding youths, <br/>Greek, probably made in South Italy");
+                            "Amphora with riding youths, <br/>cr. 550-540 BC, Reggio di Calabria");
     insert_into_images("horsemen/47435986421_78725109a2_h.jpg",
                             "Dan Diffendale @ flickr", 
                             "https://www.flickr.com/photos/7945858@N08/47435986421", 
