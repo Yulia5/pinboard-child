@@ -3192,7 +3192,7 @@ function populate_images() {
     insert_into_images("horsemen/1280px-San_Romano_Battle_Paolo_Uccello_London_01.jpg", 
                             "wiki", 
                             "San_Romano_Battle_(Paolo_Uccello,_London)_01.jpg", 
-                            "The Battle of San Romano,<br/>cr.1438-40, Paolo Uccello, Florence, Italy");
+                            "Niccolò Mauruzi da Tolentino at the Battle of San Romano,<br/>cr.1438-40, Paolo Uccello, Florence, Italy");
     insert_into_images("horsemen/253796.png", 
                             "Met", 
                             "253796", 
@@ -5389,11 +5389,71 @@ function populate_images() {
                             "wiki", 
                             "IranNaqshIRustamAchGr2.jpg", 
                             "Necropolis of Naqsh-e Rostam, with two Achaemenid tombs and three Sasanian reliefs, <br/>5th century BC and cr. 276–293, Achaemenid and Sasanian, Naqsh-e Rostam, Persia");
-
+    insert_into_images("horsemen/The_Master_of_Marradi_A_Cassone_panel_with_Caesars_army_triumphing_in_battle.jpg",
+                            "wiki", 
+                            "The_Master_of_Marradi_A_Cassone_panel_with_Caesar%27s_army_triumphing_in_battle.jpg", 
+                            "A cassone panel with Caesar's army triumphing in battle, <br/>cr. 1450-1500, Florence, Italy");
+    insert_into_images("horsemen/Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg",
+                            "wiki", 
+                            "Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg", 
+                            "A cassone panel with the Battle of Pydna, <br/>cr. 1475, Andrea Verrocchio, Florence, Italy");
+    insert_into_images("horsemen/Hart_Hunting.jpg",
+                            "wiki", 
+                            "Hart_Hunting.jpg", 
+                            "Hart-hunting with greyhounds and raches, illustration of The Hunting Book of Gaston Phebus, <br/>early 15th century, France");
+    insert_into_images("horsemen/Gaston_Phoebus_2.jpg",
+                            "wiki", 
+                            "Gaston_Phoebus_2.jpg", 
+                            "Deer-hunting with greyhounds, illustration of The Hunting Book of Gaston Phebus, <br/>early 15th century, France");
+    insert_into_images("horsemen/Raphael_-_Heliodore_chasse_du_Temple.jpg",
+                            "wiki", 
+                            "Raphaël_-_Héliodore_chassé_du_Temple.jpg", 
+                            "Expulsion of Heliodorus from the temple (detail), <br/>1511, fresco, Raphael, Vatican, Italy");
+    insert_into_images("horsemen/Cacciata_di_eliodoro_dal_tempio_01.jpg",
+                            "wiki", 
+                            "Cacciata_di_eliodoro_dal_tempio_01.jpg", 
+                            "Expulsion of Heliodorus from the temple, <br/>1511, fresco, Raphael, Vatican, Italy");
+    insert_into_images("horsemen/apollonio-di-giovanni-1095517.jpg",
+                            "Dorotheum GmbH & Co KG", 
+                            "https://www.dorotheum.com/en/l/1095517/", 
+                            "Cassone panel depicting the battle of Pharsalus, <br/>1438-1465, Apollonio di Giovanni, Florence, Italy");
+    insert_into_images("horsemen/ag-obj-6082-002-pub-large.jpg",
+                            "Yale University Art Gallery", 
+                            "https://artgallery.yale.edu/collections/objects/6082", 
+                            "Cassone with painted front panel depicting the battle of Greeks and Amazons before the walls of Troy, <br/>cr. 1460, Paolo Uccello, Florence, Italy");
+    insert_into_images("horsemen/ag-obj-6082-004-pub-large.jpg",
+                            "Yale University Art Gallery", 
+                            "https://artgallery.yale.edu/collections/objects/6082", 
+                            "Cassone with painted front panel depicting the battle of Greeks and Amazons before the walls of Troy (detail), <br/>cr. 1460, Paolo Uccello, Florence, Italy");
+    insert_into_images("horsemen/Maestro_di_anghiari_presa_di_pisa_national_gallery_of_ireland.jpg",
+                            "wiki", 
+                            "Maestro_di_anghiari,_presa_di_pisa,_national_gallery_of_ireland.jpg", 
+                            "Cassone panel depicting the taking of Pisa, <br/>cr. 1460-70, Florence, Italy");
+    insert_into_images("horsemen/Maestro_di_anghiari_battaglia_di_anghiari_national_gallery_of_ireland.jpg",
+                            "wiki", 
+                            "Maestro_di_anghiari,_battaglia_di_anghiari,_national_gallery_of_ireland.jpg", 
+                            "Cassone panel depicting the battle of Anghiari, <br/>cr. 1460-70, Florence, Italy");
+    insert_into_images("horsemen/DP106672.jpg",
+                            "Met", 
+                            "192693", 
+                            "Cassone with painted front panel depicting the Conquest of Trebizond, <br/>cr. 1461-5, workshop of Apollonio di Giovanni di Tomaso, Florence, Italy");
+    insert_into_images("horsemen/DP106674.jpg",
+                            "Met", 
+                            "192693", 
+                            "Cassone with painted front panel depicting the Conquest of Trebizond (detail), <br/>cr. 1461-5, workshop of Apollonio di Giovanni di Tomaso, Florence, Italy");
+    insert_into_images("horsemen/5737209588_46bd99e5fa_b.jpg",
+                            "The Seattle Art Museum", 
+                            "http://art.seattleartmuseum.org/objects/13945/episodes-from-the-aeneid", 
+                            "Cassone panel depicting episodes from the Aeneid, <br/>cr. 1470, Paolo Uccello, Florence, Italy");
+    insert_into_images("horsemen/Maitre_des_Cassoni_Campana-_prise_dAthenes.jpg",
+                            "wiki", 
+                            "Maître_des_Cassoni_Campana-_prise_d%27Athènes.jpg", 
+                            "Cassone panel depicting the taking of Athens, <br/>cr. 1510, Italy");
 /* 
 
-The_Master_of_Marradi_A_Cassone_panel_with_Caesars_army_triumphing_in_battle.jpg
-Andrea_del_Verrocchio_-_The_Battle_of_Pydna_-_WGA24993.jpg
+Terracotta_relief_probably_from_a_funnel_vase_MET_DP277926.jpg Rude-ChasseDeMeleagre.jpg La_chasse_de_Meleagre_Madrid_musee_du_Prado.jpg
+
+
 Pulaski-Szmurlo.jpg
 Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
 
