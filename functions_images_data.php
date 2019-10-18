@@ -3849,7 +3849,7 @@ function populate_images() {
     insert_into_images("horsemen/Takemitsu.jpg", 
                             "Kikuchi Story", 
                             "https://www.city.kikuchi.lg.jp/kankou/en/aview/190/2038.html", 
-                            "Takemitsu statue, <br/>1992, Kikuchi city, Kumamoto prefecture, Japan");
+                            "Kikuchi Takemitsu statue, <br/>1992, Kikuchi city, Kumamoto prefecture, Japan");
     insert_into_images("horsemen/kremlin_senate.jpg", 
                             "wiki", 
                             "Russia-2007-Moscow-Kremlin Senate at night.jpg", 
