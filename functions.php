@@ -201,41 +201,26 @@ function yu_generate_one_TOC($content) {
 	$hasTitle = preg_match('/\{yu_TOC title=("|&#8221;)(.*?)\1\s*\}/', $content[0], $matchedTitle);
     $toc_title = ($hasTitle) ? $matchedTitle[2] : 'Table Of Contents';
     $id_title = sanitize_title($toc_title);
-    $toc_title_h0 = "<a href='#$id_title'>↑ Back To The Table Of Contents ↑</a>";
-    $toc_title_h1 = $toc_title_h0;
-    $toc_title_h2 = "";
-    $toc_title_h3 = "";
+
+    $toc_title_h = array("", "", "", "", "", "", "", "", "", "");
+    $toc_title_h[0] = "<a href='#$id_title'>↑ Back To The Table Of Contents ↑</a>";
+    $toc_title_h[1] = $toc_title_h0;
+
     $result = "<h1><a id='$id_title'>$toc_title</a></h1>";
 
     $index = 1;
 	$tableOfContents = "";
     // Insert the IDs and create the TOC.
-    $content = preg_replace_callback('#<(h[1-4])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$toc_title_h0, &$toc_title_h1, &$toc_title_h2, &$toc_title_h3, &$id_title) {
+    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$toc_title_h, &$id_title) {
         $tag = $matches[1];
         $toc_entry_title = strip_tags($matches[3]);
         $hasId = preg_match('/id=(["\'])(.*?)\1[\s>]/si', $matches[2], $matchedIds);
-        $id = $id_title . ($hasId ? $matchedIds[2] : $index++ . '-' . sanitize_title($toc_entry_title));
+        $id = $id_title . '-' . ($hasId ? $matchedIds[2] : $index++ . '-' . sanitize_title($toc_entry_title));
         $tableOfContents .= "<div class='item-$tag'><a href='#$id'>$toc_entry_title</a></div>";
-        if ($hasId) {
-            return $matches[0];
-        }
-        $toc_title_a = $toc_title_h0;
-        $toc_title_next = "<a href='#$id_title'>↑ Back To $toc_entry_title ↑</a>";
-        if ($tag === 1) {
-        	$toc_title_h1 = $toc_title_next;
-        }
-        if ($tag === 2) {
-        	$toc_title_a = $toc_title_h1;
-        	$toc_title_h2 = $toc_title_next;        	
-        }
-        if ($tag === 3) {
-        	$toc_title_a = $toc_title_h2;
-        	$toc_title_h3 = $toc_title_next;
-        }
-        if ($tag === 4) {
-        	$toc_title_a = $toc_title_h3;        	
-        }
-        return sprintf(('<%s%s id="%s">%s</%s>' . $toc_title_a), $tag, $matches[2], $id, $matches[3], $tag);
+        $tag_int = intval($tag[1]);
+        $toc_title_h[$tag_int] = "<a href='#$id'>↑ Back To $toc_entry_title ↑</a>";
+
+        return ($hasId ? $matches[0] : ( sprintf('<%s %s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag))) . $toc_title_h[$tag_int-1] ;
     }, $content);
 	
     $result = $result . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 

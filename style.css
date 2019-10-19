@@ -12,25 +12,47 @@
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
+/******************************************************************************
+ *                      Table Of Contents And Headers                         *
+ *****************************************************************************/
 
-h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active, h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover, h2 a:active, 
-h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover, h3 a:active, h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover, h4 a:active { 
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active, 
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover, h2 a:active, 
+h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover, h3 a:active, 
+h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover, h4 a:active, 
+h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover, h5 a:active { 
 	color: #000000;
 	cursor: text;
 	font-weight:normal;
 	text-decoration: underline; 
 }
 
-h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover, h1 a:active, .item-h1 {
 	text-transform: uppercase;
 }
 
-h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover, h2 a:active, 
-h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover, h3 a:active, 
-h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover, h4 a:active {
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover, h2 a:active, .item-h2,
+h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover, h3 a:active, .item-h3,
+h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover, h4 a:active, .item-h4,
+h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover, h5 a:active, .item-h5 {
 	text-transform: capitalize;
 }
 
+.item-h1 {
+  padding-left: 15px;
+}
+.item-h2 {
+  padding-left: 30px;
+}
+.item-h3 {
+  padding-left: 45px;
+}
+.item-h4 {
+  padding-left: 60px;
+}
+.item-h5 {
+  padding-left: 75px;
+}
 /******************************************************************************
  *                                  Table                                     *
  *****************************************************************************/
@@ -87,21 +109,7 @@ table th {
     vertical-align: top;
 }
 
-/******************************************************************************
- *                           Table Of Contents                                *
- *****************************************************************************/
-.item-h1 {
-  padding-left: 15px;
-}
-.item-h2 {
-  padding-left: 30px;
-}
-.item-h3 {
-  padding-left: 45px;
-}
-.item-h4 {
-  padding-left: 60px;
-}
+
 /******************************************************************************
  *                           Image and Anchor                                 *
  *****************************************************************************/
