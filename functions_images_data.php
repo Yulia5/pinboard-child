@@ -31,6 +31,7 @@ function generate_src() {
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
     insert_into_src("MLM",      "The Morgan Library And Museum",                'https://www.themorgan.org/drawings/item/');
     insert_into_src("Peru",     "ARCHI - Archivo Digital de Arte Peruano",      'http://www.archi.pe/index.php/foto/index/');
+    insert_into_src("ES",       "Equestrian Statues",                           'https://equestrianstatue.org/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
@@ -1683,7 +1684,7 @@ function populate_images() {
     insert_into_images("horsemen/Jeanne_dArc.jpg", 
                             "wiki", 
                             "Montebourg_-_Statue_équestre_de_Jeanne_d%27Arc.JPG", 
-                            "Jeanne d'Arc Statue,<br/>1899, Montebourg, France");
+                            "Jeanne d'Arc Statue,<br/>1899, Mathurin Moreau, Montebourg, France");
     insert_into_images("horsemen/Johann_Gottfried_Tannauer_02.jpeg", 
                             "wiki", 
                             "Johann_Gottfried_Tannauer_02.jpeg", 
@@ -4729,15 +4730,15 @@ function populate_images() {
     insert_into_images("horsemen/VirginiaBotticelli.jpg", 
                             "wiki", 
                             "VirginiaBotticelli.jpg", 
-                            "The Story of Virginia, <br/>cr. 1496-1504, Sandro Botticelli, Florence, Germany");
+                            "The Story of Virginia, <br/>cr. 1496-1504, Sandro Botticelli, Florence, Italy");
     insert_into_images("horsemen/Botticelli_Prado_103.jpg", 
                             "wiki", 
                             "Botticelli_Prado_103.jpg", 
-                            "The Story of Nastagio degli Onesti I, <br/>1482-3, Sandro Botticelli, Florence, Germany");
+                            "The Story of Nastagio degli Onesti I, <br/>1482-3, Sandro Botticelli, Florence, Italy");
     insert_into_images("horsemen/Sandro_Botticelli_075.jpg", 
                             "wiki", 
                             "Botticelli_Prado_103.jpg", 
-                            "The Story of Nastagio Degli Onesti: The Banquet in the Pine Forest, <br/>1482-3, Sandro Botticelli, Florence, Germany");
+                            "The Story of Nastagio Degli Onesti: The Banquet in the Pine Forest, <br/>1482-3, Sandro Botticelli, Florence, Italy");
     insert_into_images("horsemen/Luca_Signorelli_-_Sint_Joris_en_de_draak.jpg", 
                             "wiki", 
                             "Luca_Signorelli_-_Sint_Joris_en_de_draak.jpg", 
@@ -5445,9 +5446,49 @@ function populate_images() {
                             "wiki", 
                             "Maître_des_Cassoni_Campana-_prise_d%27Athènes.jpg", 
                             "Cassone panel depicting the taking of Athens, <br/>cr. 1510, Italy");
+    insert_into_images("horsemen/La_chasse_de_Meleagre_Madrid_musee_du_Prado.jpg",
+                            "wiki", 
+                            "La_chasse_de_Méléagre,_Madrid,_musée_du_Prado.jpg", 
+                            "The hunt of Meleager and Atalante, <br/>cr. 1634-9, French, painted in Rome");
+    insert_into_images("horsemen/Rude-ChasseDeMeleagre.jpg",
+                            "sculpturepublique.be", 
+                            "http://www.sculpturepublique.be/1000b/Rude-ChasseDeMeleagre.htm", 
+                            "The hunt of Meleager, <br/>?, François Rude (1784-1855), French");
+    insert_into_images("horsemen/AN00072427_001_l.jpg",
+                            "BM", 
+                            "584032", 
+                            "Battle of Adwa, with Emperor Menelik II and Saint George on rearing horses, <br/>1940-1949, Ethiopia");
+    insert_into_images("horsemen/image04123.jpg",
+                            "numisbids", 
+                            "4123&sid=415", 
+                            "Gold Aureus of Octavian, <br/>32-31 BC, the last type to be issued before the Battle of Actium, Rome");
+    insert_into_images("horsemen/Kim.jpg",
+                            "theeconomist @ instagram", 
+                            "https://www.instagram.com/p/B3uI046AsxX/?igshid=1xaczsb8mvvb2", 
+                            "Kim Jong Un, <br/>17 October 2019, Mount Paektu, North Korea");
+    insert_into_images("horsemen/Brexit.jpg",
+                            "britainbitesbackofficial @ facebook", 
+                            "https://www.facebook.com/britainbitesbackofficial/posts/933028220429175", 
+                            "Pro-Brexit poster, <br/>17 October 2019, England, United Kingdom");
+    insert_into_images("horsemen/5654258234_cc8d4d72c1_h.jpg",
+                            "britainbitesbackofficial @ facebook", 
+                            "https://www.facebook.com/britainbitesbackofficial/posts/933028220429175", 
+                            "Statue of Napoléon I, <br/>1865, Gabriel Vital Dubray, Rouen, France");
+    insert_into_images("horsemen/Bolivarperu.jpeg",
+                            "wiki", 
+                            "Bolivarperu.JPG", 
+                            "Statue of Simon Bolivar, <br/>1859, Adamo Tadolini, Lima, Peru");
+/*    insert_into_images("horsemen/India-Hubli-Kitturu-Chennamma-3-1024x756.jpg",
+                            "ES", 
+                            "Bolivarperu.JPG", 
+                            "Statue of Simon Bolivar, <br/>1859, Adamo Tadolini, Lima, Peru");
+
+
+      India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
+
 /* 
 
-Terracotta_relief_probably_from_a_funnel_vase_MET_DP277926.jpg Rude-ChasseDeMeleagre.jpg La_chasse_de_Meleagre_Madrid_musee_du_Prado.jpg
+Terracotta_relief_probably_from_a_funnel_vase_MET_DP277926.jpg 
 
 
 Pulaski-Szmurlo.jpg
