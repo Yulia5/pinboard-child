@@ -562,17 +562,17 @@ function populate_images() {
                             "465514", 
                             "Mosaic showing Meleager on horseback spearing a leopard,<br/>4th century, Villa of Charidemos, Halicarnassus (Bordum), Turkey");
     insert_into_images("horsemen/380356.jpg", 
-                            "artchive.ru", 
-                            "https://artchive.ru/artists/3589~Vasilij_Kandinskij/works/467290~Amazonka_s_golubymi_lvami", 
-                            "Amazon with Blue Lions, <br/>1918, Wassily Kandinsky");
+                            "State Russian Museum", 
+                            "http://rmgallery.ru/en/5829", 
+                            "Amazon with Blue Lions, <br/>1918, Wassily Kandinsky, Russia");
     insert_into_images("horsemen/3803622x.jpg", 
-                            "artchive.ru", 
-                            "https://artchive.ru/artists/3589~Vasilij_Kandinskij/works/467293~Amazonka_v_gorakh", 
-                            "Amazon in the Mountains, <br/>1918, Wassily Kandinsky");
+                            "State Russian Museum", 
+                            "http://rmgallery.ru/en/5831", 
+                            "Amazon in the Mountains, <br/>1918, Wassily Kandinsky, Russia");
     insert_into_images("horsemen/384798Amazonka_na_kone.jpg", 
-                            "artchive.ru", 
-                            "https://artchive.ru/artists/3589~Vasilij_Kandinskij/works/384798~Amazonka_na_kone", 
-                            "A Riding Amazon, <br/>1911, Wassily Kandinsky");
+                            "wassilykandinsky.net", 
+                            "https://www.wassilykandinsky.net/work-177.php", 
+                            "A Riding Amazon, <br/>1917, Wassily Kandinsky, Russia");
     insert_into_images("horsemen/3874058997_dcbb10d2ae_o.jpg", 
                             "Flickr - Arnaldo Bolla", 
                             "https://www.flickr.com/photos/36085855@N05/3874058997", 
@@ -1008,7 +1008,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00244648_001_l.jpg", 
                             "BM", 
                             "367668", 
-                            "Ceramic relief plaque of a mounted Parthian archer, <br/>1stC-3rdC");
+                            "Ceramic relief plaque of a mounted Parthian archer, <br/>1st century - 3rd century");
     insert_into_images("horsemen/AN00258120_001_l.jpg", 
                             "BM", 
                             "399039", 
@@ -5478,11 +5478,23 @@ function populate_images() {
                             "wiki", 
                             "Bolivarperu.JPG", 
                             "Statue of Simon Bolivar, <br/>1859, Adamo Tadolini, Lima, Peru");
-/*    insert_into_images("horsemen/India-Hubli-Kitturu-Chennamma-3-1024x756.jpg",
-                            "ES", 
-                            "Bolivarperu.JPG", 
-                            "Statue of Simon Bolivar, <br/>1859, Adamo Tadolini, Lima, Peru");
-
+    insert_into_images("horsemen/lakshmibai-ID62_l.jpg",
+                            "dollsofindia.com", 
+                            "https://www.dollsofindia.com/product/rani-lakshmibai-ID62.html", 
+                            "Queen Lakshmibai, <br/>2014 or earlier, India");
+    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
+                            "dollsofindia.com", 
+                            "https://www.dollsofindia.com/product/people-posters/lakshmibai-rani-of-jhansi-reprint-on-paper-GA64.html", 
+                            "Queen Lakshmibai, <br/>2014 or earlier, India");
+    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
+                            "realbharat.org", 
+                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
+                            "Kittur Chennamma, <br/>2010 or earlier, India");
+    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
+                            "realbharat.org", 
+                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
+                            "Kittur Chennamma, <br/>2010 or earlier, India");
+/*
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
 
