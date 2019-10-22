@@ -5494,6 +5494,53 @@ function populate_images() {
                             "realbharat.org", 
                             "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
                             "Kittur Chennamma, <br/>2010 or earlier, India");
+    insert_into_images("horsemen/YaqubLeisSaffaridStatue.jpg",
+                            "https://www.quora.com/How-did-Iran-manage-to-retain-their-Persian-heritage-while-Egypt-and-Syria-became-mostly-Arabic", 
+                            "quora.com", 
+                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");
+    insert_into_images("horsemen/YaqubLeisSaffaridStatue.jpg",
+                            "https://www.quora.com/How-did-Iran-manage-to-retain-their-Persian-heritage-while-Egypt-and-Syria-became-mostly-Arabic", 
+                            "quora.com", 
+                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");
+    insert_into_images("horsemen/Sint-Joris_-_by_frank_wouters.jpg",
+                            "Sint-Joris_-_by_frank_wouters.jpg", 
+                            "wiki", 
+                            "Statue of Saint George on top of Grote Markt 7 building, <br/>1893, Jef Lambeaux, Antwerp, Belgium");
+    insert_into_images("horsemen/Meester_van_het_Mechelse_Sint-Jorisgilde_-_De_leden_van_het_gilde_van_de_grote_kruisboog_te_Mechelen_ca.1500_-_kmska_28-02-2010_13-43-37.jpg",
+                            "Meester_van_het_Mechelse_Sint-Jorisgilde_-_De_leden_van_het_gilde_van_de_grote_kruisboog_te_Mechelen_(ca.1500)_-_kmska_28-02-2010_13-43-37.jpg", 
+                            "wiki", 
+                            "The Members of the Guild of the Grand Crossbow, with their patron Saint George and two saints, Saint Rombout and Saint Libertus, <br/>1495-8, Mechelen, Belgium");
+    insert_into_images("horsemen/LiZicheng.png",
+                            "李自成行宫.png", 
+                            "wiki", 
+                            "Statue of Li Zicheng, <br/>?, Yulin, Shaanxi, China");
+    insert_into_images("horsemen/3703319083_e91f5be725_b.jpg",
+                            "acullador @ flickr", 
+                            "https://www.flickr.com/photos/acullador/3703319083", 
+                            "Statue of Gabriela Silang, <br/>1971, Manila, Philippines");
+    insert_into_images("horsemen/St_George_Melbourne.jpg",
+                            "", 
+                            "wiki", 
+                            "Statue of Saint George and The Dragon, <br/>");
+    insert_into_images("horsemen/St_George_and_The_Dragon.jpg",
+                            "", 
+                            "wiki", 
+                            "Statue of Saint George and The Dragon, <br/>");
+    insert_into_images("horsemen/Germany-00481_-_St._George_and_the_Dragon_30249260381.jpg",
+                            "Germany-00481_-_St._George_and_the_Dragon_(30249260381).jpg", 
+                            "wiki", 
+                            "Statue of Saint George and The Dragon, <br/>1855, August Kiss, Berlin, Germany");
+    insert_into_images("horsemen/Estatua_de_San_Jorge_y_el_dragon.jpg",
+                            "Estatua_de_San_Jorge_y_el_dragón.jpg", 
+                            "wiki", 
+                            "Statue of Saint George and The Dragon, <br/>1963, José Rodriguez, Cáceres, Spain");
+    insert_into_images("horsemen/Slovakia-03212_-_St._George_32288601125.jpg",
+                            "Slovakia-03212_-_St._George_(32288601125).jpg", 
+                            "wiki", 
+                            "Statue of Saint George and The Dragon, <br/>?, Bratislava, Slovakia");
+
+
+           
 /*
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
