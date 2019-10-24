@@ -5519,13 +5519,13 @@ function populate_images() {
                             "https://www.flickr.com/photos/acullador/3703319083", 
                             "Statue of Gabriela Silang, <br/>1971, Manila, Philippines");
     insert_into_images("horsemen/St_George_Melbourne.jpg",
-                            "", 
+                            "St_George_Melbourne.jpg", 
                             "wiki", 
-                            "Statue of Saint George and The Dragon, <br/>");
+                            "Statue of Saint George and The Dragon, <br/>1889, Joseph Edgar Boehm, Melbourne, Australia");
     insert_into_images("horsemen/St_George_and_The_Dragon.jpg",
-                            "", 
+                            "St_George_and_The_Dragon.jpg", 
                             "wiki", 
-                            "Statue of Saint George and The Dragon, <br/>");
+                            "Statue of Saint George and The Dragon, <br/>1887, Anton Dominik Fernkorn, Zagreb, Croatia");
     insert_into_images("horsemen/Germany-00481_-_St._George_and_the_Dragon_30249260381.jpg",
                             "Germany-00481_-_St._George_and_the_Dragon_(30249260381).jpg", 
                             "wiki", 
@@ -5537,10 +5537,31 @@ function populate_images() {
     insert_into_images("horsemen/Slovakia-03212_-_St._George_32288601125.jpg",
                             "Slovakia-03212_-_St._George_(32288601125).jpg", 
                             "wiki", 
-                            "Statue of Saint George and The Dragon, <br/>?, Bratislava, Slovakia");
-
-
-           
+                            "Statue of Saint George and The Dragon, <br/>?, Bratislava, Slovakia");   
+    insert_into_images("horsemen/Laxmibais_statue_in_Solapur.jpeg",
+                            "Laxmibai%27s_statue_in_Solapur.JPG", 
+                            "wiki", 
+                            "Rani Lakshmibai's statue, <br/>Solapur, India");   
+    insert_into_images("horsemen/Beram_Maria_im_Fels_-_Heiliger_Georg.jpg",
+                            "Beram_Maria_im_Fels_-_Heiliger_Georg.jpg", 
+                            "wiki", 
+                            "Saint George and The Dragon, <br/>1474, Vincent of Kastav, Beram, Croatia");   
+    insert_into_images("horsemen/San_Giorgio_e_la_principessa_Antonio_Cicognara.jpg",
+                            "San_Giorgio_e_la_principessa_(Antonio_Cicognara).jpg", 
+                            "wiki", 
+                            "Saint George and The Princess, <br/>1475, Antonio Cicognara, Ferrara (?), Italy");   
+    insert_into_images("horsemen/Antwerpen_Grote_Markt_7_Huis_Spaengien_oeg4035_foto4_2014-12-14_11.23.jpg",
+                            "Antwerpen,_Grote_Markt_7_Huis_Spaengien_oeg4035_foto4_2014-12-14_11.23.jpg", 
+                            "wiki", 
+                            "Grote Markt 7 building with the statue of Saint George on top, <br/>Antwerp, Belgium");   
+    insert_into_images("horsemen/Gillis_Coignet_-_St_George_the_Great.jpg",
+                            "Gillis_Coignet_-_St_George_the_Great.jpg", 
+                            "wiki", 
+                            "Saint George and The Dragon, <br/>1581, Gillis Coignet, Flemish school");   
+    insert_into_images("horsemen/Sano_di_pietro_s.giorgio_da_pala_di_san_cristoforo_1444_ca._da_s._cristoforo_01.jpg",
+                            "Sano_di_pietro,_s.giorgio,_da_pala_di_san_cristoforo,_1444_ca.,_da_s._cristoforo,_01.JPG", 
+                            "wiki", 
+                            "Saint George and The Dragon, <br/>Sano di Pietro, 1444, Siena, Italy");
 /*
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
