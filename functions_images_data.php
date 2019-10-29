@@ -1884,7 +1884,7 @@ function populate_images() {
     insert_into_images("horsemen/Monumento_al_General_San_Martin.jpg", 
                             "wiki", 
                             "Monumento_al_General_San_Martín.jpg", 
-                            "Monument to General San Martin, <br/>completed in 1860, dedicated in 1863, Buenos Aires, Argentina");
+                            "Monument to José de San Martín, <br/>completed in 1860, dedicated in 1863, Buenos Aires, Argentina");
     insert_into_images("horsemen/Murat_by_Gros.jpg", 
                             "wiki", 
                             "Murat_by_Gros.jpg", 
@@ -3684,9 +3684,9 @@ function populate_images() {
                             "https://www.aftenposten.no/verden/i/MLpQB/Lommerusk-avslorer-deg#&gid=1&pid=2", 
                             "Promotional poster for 'Live and Let Die', the 8th Bond movie");
     insert_into_images("horsemen/7818_Kelly-Tan-iPhone-Photos-9_w1120.jpg", 
-                            "iPhone Photography School", 
-                            "https://iphonephotographyschool.com/kelly-tan/", 
-                            "I Have A Dream, <br/>2014 or earlier, Kelly Tan");
+                            "lovepaperplane @ instagram.com", 
+                            "https://www.instagram.com/p/432xJUyrkD/", 
+                            "I Have A Dream, <br/>2014 or earlier, Kelly Tan, Malaysia");
      insert_into_images("horsemen/Naprous_GoT.png", 
                             "@anastasiatl", 
                             "https://www.instagram.com/p/Bxc_bpinB0b/", 
@@ -4586,7 +4586,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00353274_001_l.jpg", 
                             "BM", 
                             "3068677", 
-                            "Satire: Louis XIV, holding out coins, runs after Charles II who holding the sceptre of peace and rides a prancing horse, <br/>1670-80, Romeyn de Hooghe, Netherlands");
+                            "Satire: Louis XIV, holding out coins, runs after Charles II who holds the sceptre of peace and rides a prancing horse, <br/>1670-80, Romeyn de Hooghe, Netherlands");
     insert_into_images("horsemen/Triptych-of-the-Adoration-of-the-Magi.jpg", 
                             "wiki", 
                             "Hieronymus_Bosch_-_Triptych_of_the_Adoration_of_the_Magi_-_WGA2606.jpg", 
@@ -5261,7 +5261,7 @@ function populate_images() {
     insert_into_images("horsemen/3565212709_60f4c31fb3_c.jpg",
                             "peterjr1961 @ flickr", 
                             "https://www.flickr.com/photos/peterjr1961/3565212709", 
-                            "Equestrian statue depicting Argentine general José de San Martín, <br/>replica of a statue by French sculptor Louis Joseph Daumas 1862, Central Park, New York, U.S.A.");
+                            "Equestrian statue depicting Argentine general José de San Martín, <br/>replica of a statue by French sculptor Louis Joseph Daumas, 1863, Central Park, New York, U.S.A.");
     insert_into_images("horsemen/apulia_urn.jpg",
                             "szepmuveszeti.hu", 
                             "http://www2.szepmuveszeti.hu/antik_gyujtemeny/evszak_mutargya/evszak_en.php?id=643", 
@@ -5562,6 +5562,14 @@ function populate_images() {
                             "Sano_di_pietro,_s.giorgio,_da_pala_di_san_cristoforo,_1444_ca.,_da_s._cristoforo,_01.JPG", 
                             "wiki", 
                             "Saint George and The Dragon, <br/>Sano di Pietro, 1444, Siena, Italy");
+    insert_into_images("horsemen/betty.jpg",
+                            "https://www.slam.org/collection/objects/23250/", 
+                            "Saint Louis Art Museum", 
+                            "Betty, <br/>1988, Gerhard Richter, Dresden, East Germany");   
+    insert_into_images("horsemen/four_horsewomen-1.jpg",
+                            "https://grrrgraphics.com/the-four-horsewomen-of-the-apocalypse", 
+                            "Ben Garrison / GrrrGraphics political cartoons and art", 
+                            "Four Horsewomen of the Democrat Apocalypse, <br/>Ben Garrison, July 2019, U.S.A.");
 /*
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
