@@ -52,7 +52,7 @@ function populate_images() {
     insert_into_images("horsemen/0010-005-Preobrazovanija-Petra-1.jpg", 
                             "fenixforum.ru", 
                             "http://fenixforum.ru/viewtopic.php?f=6&t=10&start=140", 
-                            "Peter I on horseback, <br/>A.Orlowski, 1824");
+                            "Peter I on horseback, <br/>1824, A.Orlowski");
     insert_into_images("horsemen/00133-12110_large.jpg", 
                             "doubletake gallery", 
                             "http://doubletakeart.com/salvador_dali/St_George_and_the_Dragon-12110.html", 
@@ -60,7 +60,7 @@ function populate_images() {
     insert_into_images("horsemen/001Bratislava_Kral_Svatopluk1.jpg", 
                             "wiki", 
                             "001Bratislava_Kral_Svatopluk1.jpg", 
-                            "Statue of Svatopluk, 2010, Bratislava");
+                            "Statue of Svatopluk, <br/>2010, Bratislava, Slovakia");
     insert_into_images("horsemen/01-016323.jpg", 
                             "RMN", 
                             "01-016323-2C6NU0GWWZZP", 
@@ -1200,7 +1200,7 @@ function populate_images() {
     insert_into_images("horsemen/Absalon_statue.jpg", 
                             "wiki", 
                             "Absalon_statue.jpg", 
-                            "Statue of Absalon, <br/>1902, Copenhagen");
+                            "Statue of Absalon, <br/>1902, Copenhage, Denmark");
     insert_into_images("horsemen/AdamclisiMetope.jpg", 
                             "wiki", 
                             "AdamclisiMetope.jpg", 
@@ -1828,7 +1828,7 @@ function populate_images() {
     insert_into_images("horsemen/Macedonia-02786_-_Warrior_on_a_Horse_10904983734.jpg", 
                             "wiki", 
                             "Macedonia-02786_-_Warrior_on_a_Horse_(10904983734).jpg", 
-                            "Warrior on a Horse, <br/>Skopje, Macedonia, 2014");
+                            "Warrior on a Horse, <br/>2014, Skopje, Macedonia");
     insert_into_images("horsemen/Madame_La_Comtesse_de_Saint_Geran.jpg", 
                             "wiki", 
                             "Ryttarporträtt_på_Madame_La_Comtesse_de_Saint_Geran,_1670-tal_-_Livrustkammaren_-_100377.tif", 
@@ -3782,7 +3782,7 @@ function populate_images() {
     insert_into_images("horsemen/davos_rider.jpeg", 
                             "The Financial Times", 
                             "https://www.ft.com/content/7b5d6d18-20af-11e9-b2f7-97e4dbd3580d", 
-                            "Davos 2019: No more heroes for the global elite,<br/>2019, James Ferguson for the Financial Times");
+                            "Davos 2019: No more heroes for the global elite,<br/>January 2019, James Ferguson for the Financial Times");
     insert_into_images("horsemen/Bond007_WilliamIII.png", 
                             "The Moonraker", 
                             "https://www.imdb.com/title/tt0079574", 
@@ -4162,7 +4162,7 @@ function populate_images() {
     insert_into_images("horsemen/Jan_Van_der_Straet_known_as_Giovanni_Stradano_-_Horse_joust_in_Piazza_Santa_Croce_-_Google_Art_Project.jpg", 
                             "wiki", 
                             "Jan_Van_der_Straet_(known_as_Giovanni_Stradano)_-_Horse_joust_in_Piazza_Santa_Croce_-_Google_Art_Project.jpg", 
-                            "Horse joust in Piazza Santa Croce, <br/>1561 - 1562, Stradanus, Palazzo Vecchio, Florence");
+                            "Horse joust in Piazza Santa Croce, <br/>1561 - 1562, Jan Van der Straet, Palazzo Vecchio, Florence");
     insert_into_images("horsemen/AN01349906_001_l.jpg", 
                             "BM", 
                             "39568", 
@@ -5570,6 +5570,38 @@ function populate_images() {
                             "https://grrrgraphics.com/the-four-horsewomen-of-the-apocalypse", 
                             "Ben Garrison / GrrrGraphics political cartoons and art", 
                             "Four Horsewomen of the Democrat Apocalypse, <br/>Ben Garrison, July 2019, U.S.A.");
+    insert_into_images("horsemen/12_Estancia_de_Heliodoro_Encuentro_entre_León_Magno_y_Atila.jpg",
+                            "wiki", 
+                            "12_Estancia_de_Heliodoro_(Encuentro_entre_León_Magno_y_Atila).jpg", 
+                            "The Meeting of Leo the Great and Attila, <br/>1514, fresco, Raphael, Vatican, Italy");
+    insert_into_images("horsemen/Statua_Marco_Aurelio_Musei_Capitolini.jpeg",
+                            "wiki", 
+                            "Statua_Marco_Aurelio_Musei_Capitolini.JPG", 
+                            "Equestrian Statue of Marcus Aurelius, <br/>cr. 175 AD, Rome");
+    insert_into_images("horsemen/Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg",
+                            "wiki", 
+                            "Bartolomeo_Colleoni_by_Andrea_del_Verrocchio.jpg", 
+                            "Equestrian statue of Bartolomeo Colleon, <br/>1480–88, Andrea del Verrocchio, Venice, Italy");
+    insert_into_images("horsemen/Triumphzug_Kaiser_Maximilians_1.jpg",
+                            "wiki", 
+                            "Triumphzug_Kaiser_Maximilians_1.jpg", 
+                            "Triumph of Emperor Maximilian I (detail), <br/>1526, Ulg Lis or Hans Burgkmair, Vienna, Holy Roman Empire");
+    insert_into_images("horsemen/15508_22447.jpeg",
+                            "europeana.eu", 
+                            "https://www.europeana.eu/portal/en/record/15508/22447.html", 
+                            "Project for an equestrian statue for Emperor Maximilian I, <br/>1509-10, Hans Burgkmair, Vienna, Holy Roman Empire");
+    insert_into_images("horsemen/DP834039-scaled.jpg",
+                            "Met", 
+                            "431135", 
+                            "Emperor Maximilian I on Horseback, <br/>1508-18, Hans Burgkmair, Vienna, Holy Roman Empire");
+    insert_into_images("horsemen/charlesV_CL-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-162", 
+                            "Emperor Charles V on Horseback, <br/>1508-18, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Vienna, Holy Roman Empire");
+
+    
+
+     Philip_de_Lalaing_Count_of_Hoogstraten_by_Hans_Liefrinck_I_before_1550.jpg     
 /*
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 

@@ -215,12 +215,14 @@ function yu_generate_one_TOC($content) {
         $tag = $matches[1];
         $toc_entry_title = strip_tags($matches[3]);
         $hasId = preg_match('/id=(["\'])(.*?)\1[\s>]/si', $matches[2], $matchedIds);
-        $id = $id_title . '-' . ($hasId ? $matchedIds[2] : $index++ . '-' . sanitize_title($toc_entry_title));
+        $id = $hasId ? $matchedIds[2] : ($id_title . '-' . $index++ . '-' . sanitize_title($toc_entry_title));
+        
         $tableOfContents .= "<div class='item-$tag'><a href='#$id'>$toc_entry_title</a></div>";
-        $tag_int = intval($tag[1]);
-        $toc_title_h[$tag_int] = "<a href='#$id'>↑ Back To $toc_entry_title ↑</a>";
 
-        return ($hasId ? $matches[0] : ( sprintf('<%s %s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag))) . $toc_title_h[$tag_int-1] ;
+        $tag_int = intval($tag[1]);
+        $toc_title_h[$tag_int] = "<a href='#$id'>↑ Back To $toc_entry_title ↑</a>"; // will be used later
+
+        return sprintf('<%s %s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag) . $toc_title_h[$tag_int-1] ;
     }, $content);
 	
     $result = $result . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 
@@ -408,4 +410,20 @@ function MY_VERY_OWN_academia_link($attr, $content = null) {
 }
 add_shortcode('yu_acad', 'MY_VERY_OWN_academia_link');
 
+/**
+ * MY_VERY_OWN_quote
+ */
+function MY_VERY_OWN_quote($attr, $content = null) {
+
+    extract(shortcode_atts(array(
+        'url' => '',
+        'text' => '',
+        'author' => ''
+    ), $attr));
+      
+    $result = '<div style="max-width: 50%; text-align: right; float: right;"><blockquote cite="' . $url . '">' . $text . '</blockquote><p style="font-size: smaller;">' . $author . '</p></div>';
+    
+    return $result;
+}
+add_shortcode('yu_quote', 'MY_VERY_OWN_quote');
 ?>
