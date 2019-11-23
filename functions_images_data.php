@@ -856,7 +856,7 @@ function populate_images() {
     insert_into_images("horsemen/863px-Carlos_V_en_Muehlberg_by_Titian_from_Prado_in_Google_Earth.jpg", 
                             "wiki", 
                             "Carlos_V_en_Mühlberg,_by_Titian,_from_Prado_in_Google_Earth.jpg", 
-                            "Equestrian Portrait of Charles V,<br/>1548, Titian");
+                            "Equestrian Portrait of Charles V,<br/>1548, Titian, Augsburg, Germany");
     insert_into_images("horsemen/87-002438.jpg", 
                             "RMN", 
                             "87-002438-2C6NU0H207NK", 
@@ -5630,11 +5630,38 @@ function populate_images() {
                             "RJK", 
                             "RP-P-1932-179", 
                             "Henry VIII, king of England, on Horseback, <br/>1536-40, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");    
-    insert_into_images("horsemen/RP-P-1932-155-scaled.jpg",
+    insert_into_images("horsemen/RP-P-BI-6235B-scaled.jpg",
                             "RJK", 
                             "RP-P-BI-6235B", 
                             "Gertruida van Saksen, Robrecht I de Fries, Godfried Hunchback and Dirk V, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
-
+    insert_into_images("horsemen/RP-P-BI-6235I-1.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235I", 
+                            "Ada, Willem I, Floris IV and Willem II, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-BI-6235C-1.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235C", 
+                            "Arnulf, Dirk III, Dirk IV and Floris I, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-BI-6235-1.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235", 
+                            "Mary of Burgundy, Maximilian I, Philip the Fair and Charles V, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-BI-6235F-1.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235F", 
+                            "Floris V, Jan I, Jan II and Willem III, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-BI-6235D-1.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235D", 
+                            "Floris II, Dirk VI, Floris III and Dirk VII, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-BI-6235AX-scaled.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235AX", 
+                            "Charles the Bold, Mary of Burgundy, Maximilian I, Philip the Fair and Charles V, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-BI-6235A-scaled.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235A", 
+                            "Arnulf, Dirk III, Dirk IV en Floris I, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
           
 /*
 
