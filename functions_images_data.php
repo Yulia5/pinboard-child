@@ -1637,10 +1637,6 @@ function populate_images() {
                             "wiki", 
                             "Gustavus_Adolphus_at_the_Battle_at_Breitenfeld.jpg", 
                             "Gustavus II Adolphus at the Battle at Breitenfeld, <br/>17th century, ?");
-    insert_into_images("horsemen/Hans_Liefrinck_001.jpg", 
-                            "wiki", 
-                            "Hans_Liefrinck_001.jpg", 
-                            "Henry VIII of England on Horseback, <br/>1561-99, Hans Liefrinck");
     insert_into_images("horsemen/Heijnen_S_FIGURE-1.png", 
                             "The Post Hole", 
                             "http://www.theposthole.org/read/article/375", 
@@ -3090,10 +3086,6 @@ function populate_images() {
                             "In Search Of Saint George", 
                             "https://insearchofsaintgeorge.com/chapter-2/", 
                             "Silver gilt icon of St George with the prostrate figure of Diocletian, <br/>?");
-    insert_into_images("horsemen/tacca_savoy.jpg", 
-                            "From a book", 
-                            NULL, 
-                            "Equestrian monument of Carlo Emmanuele, Duke of Savoy,<br/>1619-21, Pietro Tacca");
     insert_into_images("horsemen/tacca_savoy.jpg", 
                             "From a book", 
                             NULL, 
@@ -5597,11 +5589,53 @@ function populate_images() {
     insert_into_images("horsemen/charlesV_CL-scaled.jpg",
                             "RJK", 
                             "RP-P-1932-162", 
-                            "Emperor Charles V on Horseback, <br/>1508-18, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Vienna, Holy Roman Empire");
+                            "Emperor Charles V on Horseback, <br/>1538-45, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-147-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-147", 
+                            "Charles, Duke of Orleans, on Horseback, <br/>1538-45, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-146-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-146", 
+                            "Ferdinand I, king of Austria, on Horseback, <br/>1538-42, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-164-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-164", 
+                            "Henry VIII, king of England, on Horseback, <br/>1538-48, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-156-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-156", 
+                            "Francis I, king of France, on Horseback, <br/>1542-44, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-161-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-161", 
+                            "Henry II, king of France, on Horseback, <br/>1542-43, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-161-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-161", 
+                            "Henry II, king of France, on Horseback, <br/>1542-43, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/Philip_de_Lalaing_Count_of_Hoogstraten_by_Hans_Liefrinck_I_before_1550.jpg",
+                            "RJK", 
+                            "RP-P-1932-168", 
+                            "Philip de Lalaing, Count of Hoogstraten, on Horseback, <br/>1544-73, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-155-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-155", 
+                            "Emmanuel Philibert, duke of Savoy, on Horseback, <br/>1546-50, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-155-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1932-160", 
+                            "Emmanuel Philibert, duke of Savoy, on Horseback, <br/>1546-50, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");
+    insert_into_images("horsemen/Hans_Liefrinck_001.jpg", 
+                            "RJK", 
+                            "RP-P-1932-179", 
+                            "Henry VIII, king of England, on Horseback, <br/>1536-40, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");    
+    insert_into_images("horsemen/RP-P-1932-155-scaled.jpg",
+                            "RJK", 
+                            "RP-P-BI-6235B", 
+                            "Gertruida van Saksen, Robrecht I de Fries, Godfried Hunchback and Dirk V, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
 
-    
-
-     Philip_de_Lalaing_Count_of_Hoogstraten_by_Hans_Liefrinck_I_before_1550.jpg     
+          
 /*
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
