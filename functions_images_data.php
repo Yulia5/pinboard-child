@@ -5662,7 +5662,46 @@ function populate_images() {
                             "RJK", 
                             "RP-P-BI-6235A", 
                             "Arnulf, Dirk III, Dirk IV en Floris I, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
-          
+    insert_into_images("horsemen/437833205.jpeg",
+                            "HAM", 
+                            "317895", 
+                            "Arthus, Charles the Great (Charlemagne), Godfrey of Bouillon (the Christian heroes on horseback), <br/>cr. 1520, Lucas van Leyden, Amsterdam, Netherlands");
+    insert_into_images("horsemen/437833197.jpeg",
+                            "HAM", 
+                            "317895", 
+                            "Joshua, David, Judas Maccabeus (the biblical heroes on horseback), <br/>cr. 1520, Lucas van Leyden, Amsterdam, Netherlands");
+    insert_into_images("horsemen/437833201.jpeg",
+                            "HAM", 
+                            "317895", 
+                            "Hector of Troy, Alexander of Macedon, Julius Caesar (the pagan heroes on horseback), <br/>cr. 1520, Lucas van Leyden, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-1932-144-2.jpg", 
+                            "RJK", 
+                            "RP-P-1932-144", 
+                            "Philip II, king of Spain, on Horseback, <br/>1543-44, Cornelis Anthonisz (manner of) and Hans Liefrinck (I), Antwerp, Netherlands");    
+    insert_into_images("horsemen/RP-P-BI-120-2.jpg", 
+                            "RJK", 
+                            "RP-P-BI-120", 
+                            "Willem van Gulik, duke of Gelre, on Horseback, <br/>1538-42, Cornelis Anthonisz., Antwerp, Netherlands");    
+    insert_into_images("horsemen/RP-P-1932-157-2.jpg", 
+                            "RJK", 
+                            "RP-P-1932-157", 
+                            "John II, king of Portugal, on Horseback, <br/>1540-44, Cornelis Anthonisz (manner of) and Sylvester van Parijs, Antwerp, Netherlands");    
+    insert_into_images("horsemen/Turkish_Horseman_with_sabre.jpg", 
+                            "wiki", 
+                            "Turkish_Horseman_with_sabre.jpg", 
+                            "Turkish Horseman with sabre, <br/>cr. 1530, Niklas Stoer, Germany");    
+    insert_into_images("horsemen/Turkish_Horseman_2.jpg", 
+                            "wiki", 
+                            "Turkish_Horseman_(2).jpg", 
+                            "Turkish Horseman, <br/>cr. 1530, Niklas Stoer, Germany");    
+    insert_into_images("horsemen/Turkish_Archer.jpg", 
+                            "wiki", 
+                            "Turkish_Archer.jpg", 
+                            "Turkish Archer, <br/>cr. 1530, Niklas Stoer, Germany");    
+
+ 
+
+  
 /*
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
