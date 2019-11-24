@@ -5698,6 +5698,10 @@ function populate_images() {
                             "wiki", 
                             "Turkish_Archer.jpg", 
                             "Turkish Archer, <br/>cr. 1530, Niklas Stoer, Germany");    
+    insert_into_images("horsemen/charles5.jpg", 
+                            "wga.hu", 
+                            "https://www.wga.hu/html_m/d/daucher/hans/charles5.html", 
+                            "Charles V on Horseback, <br/>1522, Hans Daucher, Augsburg, Germany");    
 
  
 
