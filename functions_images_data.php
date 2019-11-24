@@ -5474,26 +5474,14 @@ function populate_images() {
                             "dollsofindia.com", 
                             "https://www.dollsofindia.com/product/rani-lakshmibai-ID62.html", 
                             "Queen Lakshmibai, <br/>2014 or earlier, India");
-    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
+    /*insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "dollsofindia.com", 
                             "https://www.dollsofindia.com/product/people-posters/lakshmibai-rani-of-jhansi-reprint-on-paper-GA64.html", 
                             "Queen Lakshmibai, <br/>2014 or earlier, India");
-    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
-                            "realbharat.org", 
-                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
-                            "Kittur Chennamma, <br/>2010 or earlier, India");
-    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
-                            "realbharat.org", 
-                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
-                            "Kittur Chennamma, <br/>2010 or earlier, India");
     insert_into_images("horsemen/YaqubLeisSaffaridStatue.jpg",
                             "https://www.quora.com/How-did-Iran-manage-to-retain-their-Persian-heritage-while-Egypt-and-Syria-became-mostly-Arabic", 
                             "quora.com", 
-                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");
-    insert_into_images("horsemen/YaqubLeisSaffaridStatue.jpg",
-                            "https://www.quora.com/How-did-Iran-manage-to-retain-their-Persian-heritage-while-Egypt-and-Syria-became-mostly-Arabic", 
-                            "quora.com", 
-                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");
+                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");*/
     insert_into_images("horsemen/Sint-Joris_-_by_frank_wouters.jpg",
                             "Sint-Joris_-_by_frank_wouters.jpg", 
                             "wiki", 
@@ -5706,11 +5694,64 @@ function populate_images() {
                             "RC", 
                             "612900", 
                             "Charles V, Holy Roman Emperor, on Horseback, <br/>cr. 1579-1637, Crispijn van de Passe, Netherlands");    
-
- 
-
+    insert_into_images("horsemen/Santiago_Matamoros_-_Valladolid_-_20140707.jpg", 
+                            "wiki", 
+                            "Santiago_Matamoros_-_Valladolid_-_20140707.jpg", 
+                            "Santiago Matamoros, <br/>second half of 17th century, Juan de Ávila (1652-1702), church of Santiago Apóstol, Valladolid, Spain");   
+    insert_into_images("horsemen/Santiago_Matamoro_Cordoba_Spain.jpeg", 
+                            "wiki", 
+                            "Santiago_Matamoro,_Cordoba,_Spain.JPG", 
+                            "Santiago Matamoros, <br/>?, Mezquita Cathedral, Cordoba, Spain");   
+    insert_into_images("horsemen/Santiago_Matamoros.jpeg", 
+                            "wiki", 
+                            "Santiago_Matamoros.JPG", 
+                            "Santiago Matamoros, <br/>?, Altarpiece of the Chapel of St. John the Baptist and St. James, Cathedral of Burgos, Spain");   
+    insert_into_images("horsemen/Santiago_de_Compostela_18e_iuwsk_byld_fan_Jakobus_de_Moarendeader.jpg", 
+                            "wiki", 
+                            "Santiago_de_Compostela,_18e_iuwsk_byld_fan_Jakobus_de_Moarendeader.jpg", 
+                            "Santiago Matamoros, <br/>18th century, Altarpiece of Santiago de Compostela Cathedral, Spain");   
+    insert_into_images("horsemen/Santiago_Museo_das_Peregrinacions_06-28a.jpg", 
+                            "wiki", 
+                            "Santiago,_Museo_das_Peregrinacións_06-28a.JPG", 
+                            "Santiago Matamoros, <br/>17th century, ?, Spain");   
+    insert_into_images("horsemen/Zaragoza_-_Casa_de_Miguel_Donlope_-_Estatua_de_Santiago_Matamoros.jpg", 
+                            "wiki", 
+                            "Zaragoza_-_Casa_de_Miguel_Donlope_-_Estatua_de_Santiago_Matamoros.jpg", 
+                            "Santiago Matamoros, <br/>?, Zaragoza, Spain");   
+    insert_into_images("horsemen/Ermua_-_Iglesia_de_Santiago_12.jpeg", 
+                            "wiki", 
+                            "Ermua_-_Iglesia_de_Santiago_12.JPG", 
+                            "Santiago Matamoros, <br/>?, Ermua (Vizcaya), Spain");   
+    insert_into_images("horsemen/Calahorra_-_Santiago_15.jpeg", 
+                            "wiki", 
+                            "Calahorra_-_Santiago_15.JPG", 
+                            "Santiago Matamoros, <br/>?, Calahorra, La Rioja, Spain");   
+    insert_into_images("horsemen/Madrid_-_Iglesia_Arzobispal_Castrense_10.jpg", 
+                            "wiki", 
+                            "Madrid_-_Iglesia_Arzobispal_Castrense_10.jpg", 
+                            "Santiago Matamoros, <br/>?, Iglesia Arzobispal Castrense, Madrid, Spain");   
+    insert_into_images("horsemen/Santiago_Matamoros_20120405.jpg", 
+                            "wiki", 
+                            "Santiago_Matamoros_20120405.jpg", 
+                            "Santiago Matamoros, <br/>?, Losar de la Vera, Cáceres, Spain");   
+    insert_into_images("horsemen/Baiona_-_Capela_da_Misericordia_22.jpeg", 
+                            "wiki", 
+                            "Baiona_-_Capela_da_Misericordia_22.JPG", 
+                            "Santiago Matamoros, <br/>?, Capela da Misericordia, Baiona, Spain");   
+    insert_into_images("horsemen/Sasamon_BURGOS_Iglesia_de_Santa_Maria_la_Real._47.jpg", 
+                            "wiki", 
+                            "Sasamón_(BURGOS)_Iglesia_de_Santa_María_la_Real._47.JPG", 
+                            "Santiago Matamoros, <br/>16th century, Church of Santa María la Real, Sasamón, Burgos, Castile and León, Spain");   
   
 /*
+    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
+                            "realbharat.org", 
+                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
+                            "Kittur Chennamma, <br/>2010 or earlier, India");
+    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
+                            "realbharat.org", 
+                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
+                            "Kittur Chennamma, <br/>2010 or earlier, India");
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
 
