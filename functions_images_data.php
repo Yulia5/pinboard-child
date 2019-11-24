@@ -5702,6 +5702,10 @@ function populate_images() {
                             "wga.hu", 
                             "https://www.wga.hu/html_m/d/daucher/hans/charles5.html", 
                             "Charles V on Horseback, <br/>1522, Hans Daucher, Augsburg, Germany");    
+    insert_into_images("horsemen/416786-1379493297.jpg", 
+                            "RC", 
+                            "612900", 
+                            "Charles V, Holy Roman Emperor, on Horseback, <br/>cr. 1579-1637, Crispijn van de Passe, Netherlands");    
 
  
 
