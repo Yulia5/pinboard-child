@@ -16,7 +16,7 @@ function generate_src() {
     insert_into_src("Getty",    'The J.Paul Getty Museum Open Contents Program','http://www.getty.edu/art/collection/objects/'); 
     insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'http://www.mfa.org/collections/object/');  
     insert_into_src("WAM",      'The Walters Art Museum',                       'https://art.thewalters.org/detail/');    
-    insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objektdb/detail/');
+    insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objekt-datenbank/detail/');
     insert_into_src("HAM",      'Harvard Art Museums',                          'http://www.harvardartmuseums.org/collections/object/');
     insert_into_src("Ben",      '© Benaki Museum',                              'https://www.benaki.gr/index.php?option=com_collectionitems&amp;view=collectionitem&amp;id=', '&amp;lang=en');
     insert_into_src("CBd",      'Campbell Bonner Magical Gems Database',        'http://www2.szepmuveszeti.hu/talismans/cbd/');
@@ -5758,10 +5758,6 @@ function populate_images() {
                             "wiki", 
                             "Burgos_-_Hospital_del_Rey-Universidad_de_Burgos_12.jpg", 
                             "Santiago Matamoros, <br/>?, Hospital del Rey-Universidad, Burgos, Castilla y León, Spain");
-    insert_into_images("horsemen/Burgos_-_Hospital_del_Rey-Universidad_de_Burgos_12.jpg", 
-                            "wiki", 
-                            "Burgos_-_Hospital_del_Rey-Universidad_de_Burgos_12.jpg", 
-                            "Santiago Matamoros, <br/>?, Hospital del Rey-Universidad, Burgos, Castilla y León, Spain");
     insert_into_images("horsemen/Guitiriz_Labrada_01-06a2.jpg", 
                             "wiki", 
                             "Guitiriz,_Labrada_01-06a2.jpg", 
@@ -5786,6 +5782,24 @@ function populate_images() {
                             "wiki", 
                             "Santiago_batallando_con_los_moros_-_Lucas_Valdés.jpg", 
                             "Apostle Santiago fighting the moors, <br/>1690, Lucas de Valdés, Córdoba, Spain");
+    insert_into_images("horsemen/HuntingParty.jpg", 
+                            "Prado", 
+                            "hunting-party/24b55758-796d-48ca-a295-65d0f93bfb0b", 
+                            "Hunting Party, <br/>1775, Francisco Goya");
+    insert_into_images("horsemen/DP841414.jpg", 
+                            "Met", 
+                            "383708", 
+                            "The Stag-Hunt, <br/>1506, Lucas Cranach the Elder, Germany");
+    insert_into_images("horsemen/Lucas_Cranach_the_Elder_Stag_Hunt.jpg", 
+                            "KHM", 
+                            "532", 
+                            "The Stag-Hunt, <br/>1529, Lucas Cranach the Elder, Germany");
+    insert_into_images("horsemen/Lucas_Cranach_-_Hunting_near_Hartenfels_Castle_-_1958.425_-_Cleveland_Museum_of_Art.tiff.jpg", 
+                            "wiki", 
+                            "Lucas_Cranach_-_Hunting_near_Hartenfels_Castle_-_1958.425_-_Cleveland_Museum_of_Art.tiff", 
+                            "Hunting near Hartenfels Castle, <br/>1540, Lucas Cranach the Elder, Germany");
+
+       
                                  
   
 /*
