@@ -5741,7 +5741,52 @@ function populate_images() {
     insert_into_images("horsemen/Sasamon_BURGOS_Iglesia_de_Santa_Maria_la_Real._47.jpg", 
                             "wiki", 
                             "Sasamón_(BURGOS)_Iglesia_de_Santa_María_la_Real._47.JPG", 
-                            "Santiago Matamoros, <br/>16th century, Church of Santa María la Real, Sasamón, Burgos, Castile and León, Spain");   
+                            "Santiago Matamoros, <br/>16th century, Church of Santa María la Real, Sasamón, Burgos, Castile and León, Spain");
+    insert_into_images("horsemen/Mataro_-_Hospital_de_Sant_Jaume_i_Santa_Magdalena_4.jpg", 
+                            "wiki", 
+                            "Mataró_-_Hospital_de_Sant_Jaume_i_Santa_Magdalena_4.jpg", 
+                            "Santiago Matamoros, <br/>?, Hospital de Sant Jaume i Santa Magdalena, Mataró, Barcelona, Spain");
+    insert_into_images("horsemen/Convento_de_las_Comendadoras_de_Santiago_Madrid_01.jpg", 
+                            "wiki", 
+                            "Convento_de_las_Comendadoras_de_Santiago_(Madrid)_01.jpg", 
+                            "Santiago Matamoros, <br/>?, Convento de las Comendadoras de Santiago, Madrid, Spain");
+    insert_into_images("horsemen/Colegio_Mayor_de_Santiago_el_Zebedeo8.jpeg", 
+                            "wiki", 
+                            "Colegio_Mayor_de_Santiago_el_Zebedeo8.JPG", 
+                            "Santiago Matamoros, <br/>?, Colegio Mayor de Santiago el Zebedeo, Salamanca, Castilla y León, Spain");
+    insert_into_images("horsemen/Burgos_-_Hospital_del_Rey-Universidad_de_Burgos_12.jpg", 
+                            "wiki", 
+                            "Burgos_-_Hospital_del_Rey-Universidad_de_Burgos_12.jpg", 
+                            "Santiago Matamoros, <br/>?, Hospital del Rey-Universidad, Burgos, Castilla y León, Spain");
+    insert_into_images("horsemen/Burgos_-_Hospital_del_Rey-Universidad_de_Burgos_12.jpg", 
+                            "wiki", 
+                            "Burgos_-_Hospital_del_Rey-Universidad_de_Burgos_12.jpg", 
+                            "Santiago Matamoros, <br/>?, Hospital del Rey-Universidad, Burgos, Castilla y León, Spain");
+    insert_into_images("horsemen/Guitiriz_Labrada_01-06a2.jpg", 
+                            "wiki", 
+                            "Guitiriz,_Labrada_01-06a2.jpg", 
+                            "Santiago Matamoros, <br/>15th century, Santa María de Labrada, Guitiriz, Lugo, Spain");
+    insert_into_images("horsemen/Santiago_en_la_Batalla_de_Clavijo_obra_de_Antonio_Gonzalez_Ruiz_presidiendo_la_Escalera_principal.jpg", 
+                            "wiki", 
+                            "20070415_-_Monasterio_de_Uclés_-_La_Aparición_del_Apóstol_Santiago_en_la_Batalla_de_Clavijo,_obra_de_Antonio_González_Ruiz,_presidiendo_la_Escalera_principal.jpg", 
+                            "Apparition of Apostle Santiago in the battle of Clavijo, <br/>18th century, Antonio González Ruiz, Cuenca, Spain");
+    insert_into_images("horsemen/El_apostol_Santiago_en_la_batalla_de_Clavijo_Capilla_de_Santiago_de_la_catedral_de_Sevilla.jpg", 
+                            "wiki", 
+                            "El_apóstol_Santiago_en_la_batalla_de_Clavijo_(Capilla_de_Santiago_de_la_catedral_de_Sevilla).jpg", 
+                            "Apostle Santiago in the battle of Clavijo, <br/>1609, Juan de las Roelas, Cathedral of Seville, Spain");
+    insert_into_images("horsemen/Mateo_Perez_de_Alesio_001.jpg", 
+                            "wiki", 
+                            "Mateo_Pérez_de_Alesio_001.jpg", 
+                            "Apostle Santiago in the battle of Clavijo, <br/>end of the 16th century, Mateo Pérez de Alesio, Church of Saint James, Seville, Spain");
+    insert_into_images("horsemen/Santiago_en_la_batalla_de_Clavijo_de_Gines_Andres_de_Aguirre_Real_Academia_de_Bellas_Artes_de_San_Fernando.jpg", 
+                            "wiki", 
+                            "Santiago_en_la_batalla_de_Clavijo,_de_Ginés_Andrés_de_Aguirre_(Real_Academia_de_Bellas_Artes_de_San_Fernando).jpg", 
+                            "Apostle Santiago in the battle of Clavijo, <br/>cr. 1753-62, Ginés Andrés de Aguirre, after Corrado Giaquinto, Spain");
+    insert_into_images("horsemen/Santiago_batallando_con_los_moros_-_Lucas_Valdes.jpg", 
+                            "wiki", 
+                            "Santiago_batallando_con_los_moros_-_Lucas_Valdés.jpg", 
+                            "Apostle Santiago fighting the moors, <br/>1690, Lucas de Valdés, Córdoba, Spain");
+                                 
   
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
