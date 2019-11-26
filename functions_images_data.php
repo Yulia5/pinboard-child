@@ -5830,6 +5830,14 @@ function populate_images() {
                             "wiki", 
                             "1674_Gérard_de_Lairesse_-_Expulsion_of_Heliodorus_from_the_Temple.jpg", 
                             "Expulsion of Heliodorus from the Temple, <br/>1674, Gerard de Lairesse, Netherlands");
+    insert_into_images("horsemen/Gouda_st._janskerk_vetrata_08_cacciata_di_eliodoro_di_Wouter_Pietersz._Crabeth_I_1566_03.jpg",
+                            "wiki", 
+                            "Gouda,_st._janskerk,_vetrata_08_cacciata_di_eliodoro,_di_Wouter_Pietersz._Crabeth_(I),_1566,_03.jpg", 
+                            "Expulsion of Heliodorus from the Temple, <br/>1566, Wouter Crabeth, Bloemendaal, Gouda, Netherlands");
+    insert_into_images("horsemen/Giuseppe_Tortelli_Heliodorus.jpg",
+                            "artsandculture.google.com", 
+                            "https://artsandculture.google.com/asset/the-expulsion-of-heliodorus-from-the-temple/xwFpMU6z6EQ7IQ", 
+                            "Expulsion of Heliodorus from the Temple, <br/>1700, Giuseppe Tortelli, Brescia, Italy");
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "realbharat.org", 
