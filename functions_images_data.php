@@ -5798,10 +5798,38 @@ function populate_images() {
                             "wiki", 
                             "Lucas_Cranach_-_Hunting_near_Hartenfels_Castle_-_1958.425_-_Cleveland_Museum_of_Art.tiff", 
                             "Hunting near Hartenfels Castle, <br/>1540, Lucas Cranach the Elder, Germany");
-
-       
-                                 
-  
+    insert_into_images("horsemen/DP818720-scaled.jpg", 
+                            "Met", 
+                            "342514", 
+                            "Battle scene in a landscape, after Raphael's designs for the fresco of 'The Battle of the Milvian Bridge', <br/>cr. 1520, Marco Dente, Italy");
+    insert_into_images("horsemen/370812.jpg", 
+                            "arthive.com", 
+                            "https://arthive.com/raphael/works/464428", 
+                            "Sketch the four horsemen and captive warrior to paint the library Piccolomini in Siena, <br/>1503, Raphael Sanzio, Italy");
+    insert_into_images("horsemen/The-Expulsion-Of-Heliodorus-From-The-Temple126069-The-Expulsion-of-Heliodorus-from-the-Temple-c_1650-oil-on-canvas-Cavallino-Bernardo.png",
+                            "fineartamerica.com", 
+                            "https://fineartamerica.com/featured/the-expulsion-of-heliodorus-from-the-temple-bernardo-cavallino.html", 
+                            "Expulsion Of Heliodorus From The Temple, <br/>cr. 1650, Bernardo Cavallino, Naples, Italy");
+    insert_into_images("horsemen/louvre-heliodore-chasse-temple.jpg",
+                            "wiki", 
+                            "Francesco_Solimena_-_Expulsion_of_Heliodorus_from_the_Temple_-_WGA21625.jpg", 
+                            "Expulsion of Heliodorus from the Temple, <br/>cr. 1725, Francesco Solimena, Naples, Italy");
+    insert_into_images("horsemen/Eugene_Delacroix_-_Heliodoros_Driven_from_the_Temple_-_WGA06222.jpg",
+                            "wiki", 
+                            "Eugène_Delacroix_-_Heliodoros_Driven_from_the_Temple_-_WGA06222.jpg", 
+                            "Heliodorus Driven from the Temple, <br/>cr. 1854-61, Eugène Delacroix, Paris, France");
+    insert_into_images("horsemen/Bertholet_Flemal_-_Heliodorus_Driven_from_the_Temple.jpg",
+                            "wiki", 
+                            "Bertholet_Flémal_-_Heliodorus_Driven_from_the_Temple.jpg", 
+                            "Heliodorus Driven from the Temple, <br/>cr. 1658-62, Bertholet Flemalle, Liège, Belgium");
+    insert_into_images("horsemen/Antonio_Tempesta_-_Cacada_de_Heliodoro.jpg",
+                            "wiki", 
+                            "Antonio_Tempesta_-_Caçada_de_Heliodoro.jpg", 
+                            "Expulsion of Heliodorus from the Temple, <br/>16th-17th centuries, Antonio Tempesta, Italy");
+    insert_into_images("horsemen/1674_Gerard_de_Lairesse_-_Expulsion_of_Heliodorus_from_the_Temple.jpg",
+                            "wiki", 
+                            "1674_Gérard_de_Lairesse_-_Expulsion_of_Heliodorus_from_the_Temple.jpg", 
+                            "Expulsion of Heliodorus from the Temple, <br/>1674, Gerard de Lairesse, Netherlands");
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "realbharat.org", 
