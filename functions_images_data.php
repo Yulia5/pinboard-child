@@ -5922,6 +5922,86 @@ function populate_images() {
                             "RJK", 
                             "SK-C-1596", 
                             "The Crucifixion with Mary, John, Mary Magdalene, St Longinus and the Converted Centurion, <br/>cr. 1447, Giovanni di Paolo di Grazia, Siena, Italy");
+    insert_into_images("horsemen/Giovanni_di_Paolo_-_Calvary.jpg",
+                            "wiki", 
+                            "Giovanni_di_Paolo_-_Calvary_(Christ_Church_College,_Oxford).jpg", 
+                            "Calvary, <br/>cr. 1450, Giovanni di Paolo di Grazia, Siena, Italy");
+    insert_into_images("horsemen/Antiphonary_IV_Office_of_the_Dead_ca._1442_Biblioteca_Comunale_degli_Intronati_Siena.jpg",
+                            "wiki", 
+                            "Antiphonary_IV,_Office_of_the_Dead_(ca._1442)_Biblioteca_Comunale_degli_Intronati,_Siena.jpg", 
+                            "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
+    insert_into_images("horsemen/The_Arabs_drive_the_Byzantines_to_flight_at_Azazion.jpg",
+                            "wiki", 
+                            "Antiphonary_IV,_Office_of_the_Dead_(ca._1442)_Biblioteca_Comunale_degli_Intronati,_Siena.jpg", 
+                            "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
+    insert_into_images("horsemen/Siege_of_Amorium.jpg",
+                            "wiki", 
+                            "Antiphonary_IV,_Office_of_the_Dead_(ca._1442)_Biblioteca_Comunale_degli_Intronati,_Siena.jpg", 
+                            "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
+    insert_into_images("horsemen/Prince_Leo_offers_a_knife_to_his_father_Emperor_Basil_I.jpg",
+                            "wiki", 
+                            "Antiphonary_IV,_Office_of_the_Dead_(ca._1442)_Biblioteca_Comunale_degli_Intronati,_Siena.jpg", 
+                            "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
+    insert_into_images("horsemen/6a00d8341c464853ef01a510efe190970c-500wi.jpg",
+                            "The British Library", 
+                            "https://blogs.bl.uk/digitisedmanuscripts/2014/01/the-three-living-and-the-three-dead.html", 
+                            "Miniature of the Three Living and the Three Dead on a tipped-in leaf, <br/>first half of the 16th century, Psalter, Augsburg?, Germany");
+    insert_into_images("horsemen/6a00d8341c464853ef01a510efdb43970c-500wi.jpg",
+                            "The British Library", 
+                            "https://blogs.bl.uk/digitisedmanuscripts/2014/01/the-three-living-and-the-three-dead.html", 
+                            "Detail of a miniature of the Three Living and the Three Dead at the beginning of the Office of the Dead, <br/>cr. 1500, the Hours of Joanna I of Castile, Ghent?, Southern Netherlands");
+    insert_into_images("horsemen/Freres_Limbourg_-_Tres_Riches_Heures_du_duc_de_Berry_-_mois_de_mai_-_Google_Art_Project.jpg",
+                            "wiki", 
+                            "Frères_Limbourg_-_Très_Riches_Heures_du_duc_de_Berry_-_mois_de_mai_-_Google_Art_Project.jpg", 
+                            "Month of May, illustration of The Very Rich Hours of the Duke of Berry, <br/>1412-6, Limbourg brothers, Paris, France");
+    insert_into_images("horsemen/Emanuel-van-Meteren-Historien-der-Nederlanden-tot-1612_MG_9969.tif.jpg",
+                            "wiki", 
+                            "Emanuel-van-Meteren-Historien-der-Nederlanden-tot-1612_MG_9969.tif", 
+                            "Maurice, Prince of Orange, <br/>1591 - 1632, Hessel Gerritsz, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-1948-328-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1948-328", 
+                            "François-Hercule de Valois, Duke of Anjou, <br/>1591 - 1632, Hessel Gerritsz, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-OB-52.610-scaled.jpg",
+                            "RJK", 
+                            "RP-P-OB-52.610", 
+                            "Alessandro Farnese, Duke of Parma, <br/>1591 - 1632, Hessel Gerritsz, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-1948-325-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1948-325", 
+                            "John of Austria, <br/>1591 - 1632, Hessel Gerritsz, Amsterdam, Netherlands");
+    insert_into_images("horsemen/RP-P-1948-324-scaled.jpg",
+                            "RJK", 
+                            "RP-P-1948-324", 
+                            "Fernando Álvarez de Toledo, 3rd Duke of Alba, <br/>1591 - 1632, Hessel Gerritsz, Amsterdam, Netherlands");
+    insert_into_images("horsemen/obama.jpg",
+                            "jeffreyhill.typepad.com", 
+                            "https://jeffreyhill.typepad.com/english/2009/12/cartoon-napoleon-obama.html#.XeA1-ZP7TjA", 
+                            "'I have to pop over to Oslo to pick up my peace prize', <br/>December 2009, Morten Morland for 'The Times', Great Britain");
+    insert_into_images("horsemen/Moran_macron.jpg",
+                            "Bob Moran @ twitter.com", 
+                            "https://twitter.com/bobscartoons/status/1043191694894800899", 
+                            "Emmanuel Macron calling Brexit campaign leaders 'liars', <br/>September 2018, Bob Moran for 'The Telegraph', Great Britain");
+    insert_into_images("horsemen/methode_times_prod_web_bin_a48473ea-0204-11e9-9685-be54be25c61a.jpg",
+                            "The Times", 
+                            "https://www.thetimes.co.uk/article/january-february-v28cv5vks", 
+                            "Entente cordiale, <br/>January 2018, Peter Brookes for 'The Times', Great Britain");
+    insert_into_images("horsemen/methode_times_prod_web_bin_4d814eaa-0205-11e9-9685-be54be25c61a.jpg",
+                            "The Times", 
+                            "https://www.thetimes.co.uk/article/january-february-v28cv5vks", 
+                            "Emmanuel the Conqueror, <br/>January 2018, Peter Brookes for 'The Times', Great Britain");
+    insert_into_images("horsemen/macron-president.jpg",
+                            "cartooningforpeace.org", 
+                            "https://www.cartooningforpeace.org/editos/france-lavenement-demmanuel-macron/?lang=en", 
+                            "Advent of Emmanuel Macron, <br/>May 2017, Kichka, Israel");
+    insert_into_images("horsemen/macron_guardian.jpg",
+                            "The Guardian", 
+                            "https://www.theguardian.com/commentisfree/series/guardian-comment-cartoon/2018/jan/18/all", 
+                            "Theresa May's meeting with Emmanuel Macron, <br/>January 2018, Steve Bell for 'The Guardian', Great Britain");
+    insert_into_images("horsemen/20180609_EUD000_0.jpeg",
+                            "The Economist", 
+                            "https://www.economist.com/europe/2018/06/09/frances-plans-for-euro-zone-reform-get-a-lukewarm-german-response", 
+                            "France's plans for euro-zone reform get a lukewarm German response, <br/>June 2018, Peter Schrank for 'The Economist', Great Britain");
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "realbharat.org", 
