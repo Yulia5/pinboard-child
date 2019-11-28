@@ -5841,7 +5841,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00254420_001_l.jpg",
                             "BM", 
                             "714128", 
-                            "Expulsion of Heliodorus from the Temple, <br/1607-64, Jacopo Vignali, Florence, Italy");
+                            "Expulsion of Heliodorus from the Temple, <br/>1607-64, Jacopo Vignali, Florence, Italy");
     insert_into_images("horsemen/AN00076706_001_l.jpg",
                             "BM", 
                             "1457159", 
@@ -5849,7 +5849,7 @@ function populate_images() {
     insert_into_images("horsemen/The_death_of_Absalom6.jpg",
                             "wiki", 
                             "The_death_of_Absalom6.jpg", 
-                            "Death of Absalom, <br/>1332, From Jacob van Maerlant's "Rhimebible" of Utrecht, Netherlands");
+                            "Death of Absalom, <br/>1332, From Jacob van Maerlant's 'Rhimebible' of Utrecht, Netherlands");
     insert_into_images("horsemen/Muerte_de_absalon_en_el_CESEDEN.jpg",
                             "wiki", 
                             "Muerte_de_absalon_en_el_CESEDEN.jpg", 
@@ -5877,7 +5877,7 @@ function populate_images() {
     insert_into_images("horsemen/Absalomova_smrt_panjska_koncnica_1889.jpg",
                              "wiki", 
                             "Absalomova_smrt_(panjska_končnica,_1889).jpg", 
-                            "Death of Absalom, <br/>1889, peasant folk culture, Slovenia");
+                            "Death of Absalom (painted hive ending), <br/>1889, peasant folk culture, Slovenia");
     insert_into_images("horsemen/AN01323700_001_l.jpg",
                             "BM", 
                             "1536542", 
@@ -5914,6 +5914,10 @@ function populate_images() {
                             "BM", 
                             "1448520", 
                             "Death of Absalom, <br/>1532-40, printed in 1550, Georg Lemberger and Hans Lufft, Wittenberg, Germany");
+    insert_into_images("horsemen/Maestro_della_morte_di_assalonne.jpeg",
+                            "wiki", 
+                            "Maestro_della_morte_di_assalonne,_morte_di_assalonne,_1450-1500_ca..JPG", 
+                            "Death of Absalom, <br/>cr. 1450-1500, Georg Lemberger and Hans Lufft, Wittenberg, Germany");
     insert_into_images("horsemen/SK-C-1596.jpg",
                             "RJK", 
                             "SK-C-1596", 
