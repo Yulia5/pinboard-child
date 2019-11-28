@@ -5838,6 +5838,86 @@ function populate_images() {
                             "artsandculture.google.com", 
                             "https://artsandculture.google.com/asset/the-expulsion-of-heliodorus-from-the-temple/xwFpMU6z6EQ7IQ", 
                             "Expulsion of Heliodorus from the Temple, <br/>1700, Giuseppe Tortelli, Brescia, Italy");
+    insert_into_images("horsemen/AN00254420_001_l.jpg",
+                            "BM", 
+                            "714128", 
+                            "Expulsion of Heliodorus from the Temple, <br/1607-64, Jacopo Vignali, Florence, Italy");
+    insert_into_images("horsemen/AN00076706_001_l.jpg",
+                            "BM", 
+                            "1457159", 
+                            "Death of Absalom, <br/>1520-80, Germany");
+    insert_into_images("horsemen/The_death_of_Absalom6.jpg",
+                            "wiki", 
+                            "The_death_of_Absalom6.jpg", 
+                            "Death of Absalom, <br/>1332, From Jacob van Maerlant's "Rhimebible" of Utrecht, Netherlands");
+    insert_into_images("horsemen/Muerte_de_absalon_en_el_CESEDEN.jpg",
+                            "wiki", 
+                            "Muerte_de_absalon_en_el_CESEDEN.jpg", 
+                            "Death of Absalom, <br/>cr. 1762, Corrado Giaquinto, Madrid, Spain");
+    insert_into_images("horsemen/Melk_Rathausplatz_8.jpg",
+                            "wiki", 
+                            "Melk_Rathausplatz_8.jpg", 
+                            "Death of Absalom, <br/>cr. 1577, Melk, Austria");
+    insert_into_images("horsemen/Leaf_from_the_Morgan_Picture_Bible_-_Google_Art_Project.jpg",
+                            "Getty", 
+                            "1342", 
+                            "Death of Absalom, <br/>cr. 1250, Leaf from the Morgan Picture Bible, Northern France");
+    insert_into_images("horsemen/Death_of_Absalom4.jpg",
+                            "wiki", 
+                            "Death_of_Absalom4.jpg", 
+                            "Death of Absalom, <br/>1660-61, Francois Chauveau, Paris, France");
+    insert_into_images("horsemen/Death_of_Absalom3.jpg",
+                            "wiki", 
+                            "Death_of_Absalom3.jpg", 
+                            "Death of Absalom, <br/>1851-60, Julius Schnorr von Carolsfeld, from 'Bibel in Bildern', Leipzig, Germany");
+    insert_into_images("horsemen/Brockhaus_and_Efron_Jewish_Encyclopedia_e1_217-0.jpg",
+                            "wiki", 
+                            "Brockhaus_and_Efron_Jewish_Encyclopedia_e1_217-0.jpg", 
+                            "Death of Absalom, <br/>1769, illustration published in Yiddish, 'Yosippon', Fürth, Germany");
+    insert_into_images("horsemen/Absalomova_smrt_panjska_koncnica_1889.jpg",
+                             "wiki", 
+                            "Absalomova_smrt_(panjska_končnica,_1889).jpg", 
+                            "Death of Absalom, <br/>1889, peasant folk culture, Slovenia");
+    insert_into_images("horsemen/AN01323700_001_l.jpg",
+                            "BM", 
+                            "1536542", 
+                            "Death of Absalom, <br/>1613, Antonio Tempesta, Rome, Italy");
+    insert_into_images("horsemen/AN01317548_001_l.jpg",
+                            "BM", 
+                            "3465430", 
+                            "Death of Absalom, <br/>cr. 1652, Maarten de Vos and Johannes Wierix, Amsterdam, Netherlands");
+    insert_into_images("horsemen/AN01298806_001_l.jpg",
+                            "BM", 
+                            "1589393", 
+                            "Death of Absalom, <br/>1613-18, Antonio Tempesta, Antwerpen, Belgium");
+    insert_into_images("horsemen/AN01008460_001_l.jpg",
+                            "BM", 
+                            "3369432", 
+                            "Death of Absalom, <br/>cr. 1645, Christoffel van Sichem III, Netherlands");
+    insert_into_images("horsemen/AN00787647_001_l.jpg",
+                            "BM", 
+                            "1606458", 
+                            "Death of Absalom, <br/>1574-78, Theodosius Rihel and Tobias Stimmer, Strassbourg, Switzerland/Germany");
+    insert_into_images("horsemen/AN00708246_001_l.jpg",
+                            "BM", 
+                            "1632985", 
+                            "Death of Absalom, <br/>1670-71, Sébastien Leclerc I, Paris, France");
+    insert_into_images("horsemen/AN00611848_001_l.jpg",
+                            "BM", 
+                            "1607658", 
+                            "Death of Absalom, <br/>1625-30, Matthäus Merian I, Frankfurt am Main, Germany");
+    insert_into_images("horsemen/AN00175871_001_l.jpg",
+                            "BM", 
+                            "1625673", 
+                            "Death of Absalom, <br/>cr. 1585, Maarten de Vos and Johannes Wierix, Netherlands");
+    insert_into_images("horsemen/AN00084190_001_l.jpg",
+                            "BM", 
+                            "1448520", 
+                            "Death of Absalom, <br/>1532-40, printed in 1550, Georg Lemberger and Hans Lufft, Wittenberg, Germany");
+    insert_into_images("horsemen/SK-C-1596.jpg",
+                            "RJK", 
+                            "SK-C-1596", 
+                            "The Crucifixion with Mary, John, Mary Magdalene, St Longinus and the Converted Centurion, <br/>cr. 1447, Giovanni di Paolo di Grazia, Siena, Italy");
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "realbharat.org", 
@@ -5850,7 +5930,6 @@ function populate_images() {
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
 
-/* 
 
 Terracotta_relief_probably_from_a_funnel_vase_MET_DP277926.jpg 
 
