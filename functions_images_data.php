@@ -5937,7 +5937,7 @@ function populate_images() {
     insert_into_images("horsemen/Siege_of_Amorium.jpg",
                             "wiki", 
                             "Siege_of_Amorium.jpg", 
-                            "Siege_of_Amorium (838), <br/>11th-13th centuries, illustration of Madrid Skylitzes, Sicily, Italy");
+                            "Siege of Amorium (838), <br/>11th-13th centuries, illustration of Madrid Skylitzes, Sicily, Italy");
     insert_into_images("horsemen/Prince_Leo_offers_a_knife_to_his_father_Emperor_Basil_I.jpg",
                             "wiki", 
                             "Prince_Leo_offers_a_knife_to_his_father,_Emperor_Basil_I.jpg", 
@@ -6002,7 +6002,7 @@ function populate_images() {
                             "The Economist", 
                             "https://www.economist.com/europe/2018/06/09/frances-plans-for-euro-zone-reform-get-a-lukewarm-german-response", 
                             "France's plans for euro-zone reform get a lukewarm German response, <br/>June 2018, Peter Schrank for 'The Economist', Great Britain");
-/*    insert_into_images("horsemen/RP-P-1936-151.jpg",
+    insert_into_images("horsemen/RP-P-1936-151.jpg",
                             "RJK", 
                             "RP-P-1936-151", 
                             "Capture of Tunis, 1535, from the series 'The victories of Emperor Charles V', <br/>1555-56, Dirck Volckertszoon Coornhert and Maarten van Heemskerck, Haarlem and Antwerp, Netherlands");
