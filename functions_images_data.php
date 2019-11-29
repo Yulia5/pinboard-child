@@ -5932,16 +5932,16 @@ function populate_images() {
                             "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
     insert_into_images("horsemen/The_Arabs_drive_the_Byzantines_to_flight_at_Azazion.jpg",
                             "wiki", 
-                            "Antiphonary_IV,_Office_of_the_Dead_(ca._1442)_Biblioteca_Comunale_degli_Intronati,_Siena.jpg", 
-                            "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
+                            "The_Arabs_drive_the_Byzantines_to_flight_at_Azazion.jpg", 
+                            "The Arabs drive the Byzantines to flight at Azazion, <br/>11th-13th centuries, illustration of Madrid Skylitzes, Sicily, Italy");
     insert_into_images("horsemen/Siege_of_Amorium.jpg",
                             "wiki", 
-                            "Antiphonary_IV,_Office_of_the_Dead_(ca._1442)_Biblioteca_Comunale_degli_Intronati,_Siena.jpg", 
-                            "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
+                            "Siege_of_Amorium.jpg", 
+                            "Siege_of_Amorium (838), <br/>11th-13th centuries, illustration of Madrid Skylitzes, Sicily, Italy");
     insert_into_images("horsemen/Prince_Leo_offers_a_knife_to_his_father_Emperor_Basil_I.jpg",
                             "wiki", 
-                            "Antiphonary_IV,_Office_of_the_Dead_(ca._1442)_Biblioteca_Comunale_degli_Intronati,_Siena.jpg", 
-                            "Antiphonary IV, Office of the Dead, <br/>cr. 1442, Giovanni di Paolo di Grazia, Siena, Italy");
+                            "Prince_Leo_offers_a_knife_to_his_father,_Emperor_Basil_I.jpg", 
+                            "The future Leo VI the Wise offers a knife to his father, Emperor Basil I the Macedonian, <br/>11th-13th centuries, illustration of Madrid Skylitzes, Sicily, Italy");
     insert_into_images("horsemen/6a00d8341c464853ef01a510efe190970c-500wi.jpg",
                             "The British Library", 
                             "https://blogs.bl.uk/digitisedmanuscripts/2014/01/the-three-living-and-the-three-dead.html", 
@@ -6002,6 +6002,19 @@ function populate_images() {
                             "The Economist", 
                             "https://www.economist.com/europe/2018/06/09/frances-plans-for-euro-zone-reform-get-a-lukewarm-german-response", 
                             "France's plans for euro-zone reform get a lukewarm German response, <br/>June 2018, Peter Schrank for 'The Economist', Great Britain");
+/*    insert_into_images("horsemen/RP-P-1936-151.jpg",
+                            "RJK", 
+                            "RP-P-1936-151", 
+                            "Capture of Tunis, 1535, from the series 'The victories of Emperor Charles V', <br/>1555-56, Dirck Volckertszoon Coornhert and Maarten van Heemskerck, Haarlem and Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1936-142.jpg",
+                            "RJK", 
+                            "RP-P-1936-142", 
+                            "The capturing of Francis I at the Battle of Pavia, 1525, from the series 'The victories of Emperor Charles V', <br/>1555-56, Dirck Volckertszoon Coornhert and Maarten van Heemskerck, Haarlem and Antwerp, Netherlands");
+    insert_into_images("horsemen/RP-P-1936-149.jpg",
+                            "RJK", 
+                            "RP-P-1936-149", 
+                            "Relief of Vienna, 1529, from the series 'The victories of Emperor Charles V', <br/>1555-56, Dirck Volckertszoon Coornhert and Maarten van Heemskerck, Haarlem and Antwerp, Netherlands");
+
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "realbharat.org", 
