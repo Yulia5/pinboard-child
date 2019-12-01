@@ -32,6 +32,7 @@ function generate_src() {
     insert_into_src("MLM",      "The Morgan Library And Museum",                'https://www.themorgan.org/drawings/item/');
     insert_into_src("Peru",     "ARCHI - Archivo Digital de Arte Peruano",      'http://www.archi.pe/index.php/foto/index/');
     insert_into_src("ES",       "Equestrian Statues",                           'https://equestrianstatue.org/');
+    insert_into_src("Gallica",  "Gallica at bibliothèque nationale de France",  'https://gallica.bnf.fr/ark:/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
@@ -6014,6 +6015,31 @@ function populate_images() {
                             "RJK", 
                             "RP-P-1936-149", 
                             "Relief of Vienna, 1529, from the series 'The victories of Emperor Charles V', <br/>1555-56, Dirck Volckertszoon Coornhert and Maarten van Heemskerck, Haarlem and Antwerp, Netherlands");
+    insert_into_images("horsemen/BnF_25516_f21.png",
+                            "Gallica", 
+                            "12148/btv1b84516032/f21.highres", 
+                            "French novel illustration, <br/>1275-90, Maître du Graal, North France");
+    insert_into_images("horsemen/BnF_25516_f233.png",
+                            "Gallica", 
+                            "12148/btv1b84516032/f233.highres", 
+                            "French novel illustration, <br/>1275-90, Maître du Graal, North France");
+    insert_into_images("horsemen/BnF_25516_f48.png",
+                            "Gallica", 
+                            "12148/btv1b84516032/f48.highres", 
+                            "French novel illustration, <br/>1275-90, Maître du Graal, North France");
+    insert_into_images("horsemen/BnF_25516_f113.png",
+                            "Gallica", 
+                            "12148/btv1b84516032/f113.highres", 
+                            "French novel illustration, <br/>1275-90, Maître du Graal, North France");
+    insert_into_images("horsemen/BnF_25516_f350.png",
+                            "Gallica", 
+                            "12148/btv1b84516032/f350.highres", 
+                            "French novel illustration, <br/>1275-90, Maître du Graal, North France");
+/*
+
+
+    Chronicon_Pictum_P014_Atilla_Aquileiat_ostromolja.jpeg Decameron_BNF_MS_Italien_63_f_186v.jpg Opening_the_Fourth_Seal_The_Fourth_Horseman_-_Google_Art_Project_-_crop.jpg Nuova_cronica._f.137v.jpg BeneventoVillani.jpg Battle_of_Mons-en-Pevele.jpg ArrestoBonifac8.jpg Villani_Benevento.jpg TzimiskesPreslavBasileiosPliska.jpg Paolo_Uccello_044.jpg Gattamelata.jpg Firenze.Duomo_.Tolentino.jpeg Ferrara_monumento_equestre_28mar06_03.jpg Chronicon_Pictum_P85_Mogyorodi_csata.jpeg Chronicon_Pictum_-_Battle_of_Posada.png 42-manasses-chronicle.jpg
+
 
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
