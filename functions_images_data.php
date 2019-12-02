@@ -6094,18 +6094,46 @@ function populate_images() {
     insert_into_images("horsemen/Regisole_di_V._Brunelli_1817.jpeg",
                             "wiki", 
                             "Regisole,_di_V._Brunelli,_1817.JPG", 
-                            "A souvenir print showing destructed Regisole, <br/>3rd-6th centuries (?), drawing made in 1817 by V. Brunelli,  Ravenna/Padua, Italy");
+                            "A souvenir print showing destructed Regisole, <br/>3rd-6th centuries (?), drawing made in 1817 by V. Brunelli, Ravenna/Padua, Italy");
     insert_into_images("horsemen/Decameron_BNF_MS_Italien_63_f_186v.jpg",
                             "Gallica", 
                             "12148/btv1b84268111/f394.item", 
                             "Boccaccio, Decameron: the story of Nastagio degli Onesti, <br/>1401-24, Ludovico Ceffini, Florence, Italy");
     insert_into_images("horsemen/Opening_the_Fourth_Seal_The_Fourth_Horseman_-_Google_Art_Project_-_crop.jpg",
-                            "wiki", 
-                            "Opening_the_Fourth_Seal;_The_Fourth_Horseman_-_Google_Art_Project_-_crop.jpg", 
+                            "Getty", 
+                            "3049", 
                             "The Opening of the Fourth Seal: The Fourth Horseman, <br/>1255-60, London (?), England");
- 
-/*
-              
+    insert_into_images("horsemen/Pulaski-Szmurlo.jpg",
+                            "wiki", 
+                            "Pulaski-Szmurlo.jpg", 
+                            "Casimir Pulaski Monument at Patterson Park in Baltimore, Maryland, <br/>1951, Hans Schuler and A. C. Radziszewski, U.S.A.");
+    insert_into_images("horsemen/Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg",
+                            "wiki", 
+                            "Regisole,_di_V._Brunelli,_1817.JPG", 
+                            "Equestrian statue of Casimir Pulaski in Roger Williams Park, Providence Rhode Island, U.S.A., <br/>1953, Guido Nincheri, Canada");
+    insert_into_images("horsemen/Savannah_1779.png",
+                            "wiki", 
+                            "Savannah_1779.png", 
+                            "Casimir Pulaski death near savannah, <br/>1933, Stanisław Kaczor-Batowski, Lviv, Ukraine");
+    insert_into_images("horsemen/Kazimierz_Pulaski_pod_Czestochowa.png",
+                            "wiki", 
+                            "Kazimierz_Pułaski_pod_Częstochową.PNG", 
+                            "Casimir Pulaski in defense of Czestochowa, <br/>1883, Juliusz Kossak, Kraków, Poland");
+    insert_into_images("horsemen/Susenyos_Wellcome_L0031387_cropped.jpg",
+                            "wiki", 
+                            "Susenyos_Wellcome_L0031387_(cropped).jpg", 
+                            "Susenyos I as Saint Sisinios, <br/>17th century or later, Ethiopia");
+    insert_into_images("horsemen/elsa_water_horse.jpg",
+                            "hallmark.com", 
+                            "https://www.hallmark.com/ornaments/keepsake-ornaments/disney-frozen-2-elsa-and-nokk-ornament-1899QXD6459.html", 
+                            "Elsa taming Nokk (Christmas decoration), <br/>2019, U.S.A.");
+/*    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
+                            "wiki", 
+                            "Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg", 
+                            "Battle of Lens (1648), <br/>2019, Pierre Franque, France");
+
+    DP318357_small.jpg 00296401.jpg  WilliamIII_MK.jpg   Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg  Johannes_Voorhout_-_Willem_III_te_paard_-1670-2.jpg Deruet_Claude_-_Fire_-_before_1642.jpeg Claude_Deruet_-_Allegory_of_the_Marriage_of_Louis_XIV_in_1631.jpg AN00332744_001_l.jpg
+
 
 
 /*
@@ -6124,8 +6152,6 @@ function populate_images() {
 Terracotta_relief_probably_from_a_funnel_vase_MET_DP277926.jpg 
 
 
-Pulaski-Szmurlo.jpg
-Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg
 
   insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
                             "wiki", 
