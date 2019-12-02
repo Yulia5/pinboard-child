@@ -333,7 +333,7 @@ function populate_images() {
     insert_into_images("horsemen/13-manasses-chronicle.jpg", 
                             "wiki", 
                             "13-manasses-chronicle.jpg", 
-                            "Alexander the Great and Ptolemy I Soter attacking, <br/>14th century, Constantine Manasses Chronicle");
+                            "Alexander the Great and Ptolemy I Soter attacking, <br/>14th century, Constantine Manasses Chronicle, Byzantine empire");
     insert_into_images("horsemen/1352987_original.jpg", 
                             "history-gatchina.ru", 
                             "http://history-gatchina.ru/article/pavel_svita.htm", 
@@ -6035,10 +6035,77 @@ function populate_images() {
                             "Gallica", 
                             "12148/btv1b84516032/f350.highres", 
                             "French novel illustration, <br/>1275-90, Maître du Graal, North France");
+    insert_into_images("horsemen/Villani_Benevento.jpg",
+                            "wiki", 
+                            "Villani_Benevento.jpg", 
+                            "Nuova cronica illustration (Battle of Benevento, 1266), <br/>mid 14th century, Pacino di Buonaguida, Florence, Italy");
+    insert_into_images("horsemen/BeneventoVillani.jpg",
+                            "wiki", 
+                            "BeneventoVillani.jpg", 
+                            "Nuova cronica illustration (battle of Benevento, 1266), <br/>mid 14th century, Pacino di Buonaguida, Florence, Italy");
+    insert_into_images("horsemen/Nuova_cronica._f.137v.jpg",
+                            "wiki", 
+                            "Nuova_cronica._f.137v.jpg", 
+                            "Nuova cronica illustration (Peter III of Aragon is wounded, 1285), <br/>mid 14th century, Pacino di Buonaguida, Florence, Italy");
+    insert_into_images("horsemen/ArrestoBonifac8.jpg",
+                            "wiki", 
+                            "ArrestoBonifac8.jpg", 
+                            "Nuova cronica illustration (attack of Pope Boniface VII at his Palace in Anagni, 1303), <br/>mid 14th century, Pacino di Buonaguida, Florence, Italy");
+    insert_into_images("horsemen/Battle_of_Mons-en-Pevele.jpg",
+                            "wiki", 
+                            "Battle_of_Mons-en-Pevele.jpg", 
+                            "Nuova cronica illustration (battle of Mons-en-Pevele, 1304), <br/>mid 14th century, Pacino di Buonaguida, Florence, Italy");
+    insert_into_images("horsemen/42-manasses-chronicle.jpg",
+                            "wiki", 
+                            "42-manasses-chronicle.jpg", 
+                            "Emperor Heraclius attacks a Persian fortress, while the Persians attack Constantinople, <br/>14th century, Constantine Manasses Chronicle, Byzantine empire");
+    insert_into_images("horsemen/TzimiskesPreslavBasileiosPliska.jpg",
+                            "wiki", 
+                            "TzimiskesPreslavBasileiosPliska.jpg", 
+                            "Tzimiskes in Preslav and Basileios in Pliska, <br/>14th century, Constantine Manasses Chronicle, Byzantine empire");
+    insert_into_images("horsemen/Chronicon_Pictum_P014_Atilla_Aquileiat_ostromolja.jpeg",
+                            "wiki", 
+                            "Chronicon_Pictum_P014_Atilla_Aquileiát_ostromolja.JPG", 
+                            "Attila besieges Aquileia (452), <br/>1350-73, Chronicon Pictum, Kingdom of Hungary");
+    insert_into_images("horsemen/Chronicon_Pictum_-_Battle_of_Posada.png",
+                            "wiki", 
+                            "Viennese_Illuminated_Chronicle_Posada.jpg", 
+                            "The battle of Posada (1330), <br/>1350-73, Chronicon Pictum, Kingdom of Hungary");
+    insert_into_images("horsemen/Chronicon_Pictum_P85_Mogyorodi_csata.jpeg",
+                            "wiki", 
+                            "Chronicon_Pictum_P85_Mógyoródi_csata.JPG", 
+                            "The battle of Mogyoród (1074), <br/>1350-73, Chronicon Pictum, Kingdom of Hungary");
+    insert_into_images("horsemen/Firenze.Duomo_.Tolentino.jpeg",
+                            "wiki", 
+                            "Firenze.Duomo.Tolentino.JPG", 
+                            "Painted Equestrian statue of Niccolò da Tolentino (fresco), <br/>1456, Florence Cathedral, Italy");
+    insert_into_images("horsemen/Paolo_Uccello_044.jpg",
+                            "wiki", 
+                            "Paolo_Uccello_044.jpg", 
+                            "Painted Equestrian statue of Sir John Hawkwood (fresco), <br/>1436, Florence Cathedral, Italy");
+    insert_into_images("horsemen/Gattamelata.jpg",
+                            "wiki", 
+                            "Gattamelata.jpg", 
+                            "Equestrian statue of Gattamelata, <br/>1453, Donatello, Padua,  Republic of Venice (modern Italy)");
+    insert_into_images("horsemen/Ferrara_monumento_equestre_28mar06_03.jpg",
+                            "wiki", 
+                            "Ferrara_monumento_equestre_28mar06_03.jpg", 
+                            "The reproduction of the monument to Niccolò III d'Este, <br/>original created in early 1440s (?) and destructed by 1796, Leon Battista Alberti (?), Ferrara, Italy");
+    insert_into_images("horsemen/Regisole_di_V._Brunelli_1817.jpeg",
+                            "wiki", 
+                            "Regisole,_di_V._Brunelli,_1817.JPG", 
+                            "A souvenir print showing destructed Regisole, <br/>3rd-6th centuries (?), drawing made in 1817 by V. Brunelli,  Ravenna/Padua, Italy");
+    insert_into_images("horsemen/Decameron_BNF_MS_Italien_63_f_186v.jpg",
+                            "Gallica", 
+                            "12148/btv1b84268111/f394.item", 
+                            "Boccaccio, Decameron: the story of Nastagio degli Onesti, <br/>1401-24, Ludovico Ceffini, Florence, Italy");
+    insert_into_images("horsemen/Opening_the_Fourth_Seal_The_Fourth_Horseman_-_Google_Art_Project_-_crop.jpg",
+                            "wiki", 
+                            "Opening_the_Fourth_Seal;_The_Fourth_Horseman_-_Google_Art_Project_-_crop.jpg", 
+                            "The Opening of the Fourth Seal: The Fourth Horseman, <br/>1255-60, London (?), England");
+ 
 /*
-
-
-    Chronicon_Pictum_P014_Atilla_Aquileiat_ostromolja.jpeg Decameron_BNF_MS_Italien_63_f_186v.jpg Opening_the_Fourth_Seal_The_Fourth_Horseman_-_Google_Art_Project_-_crop.jpg Nuova_cronica._f.137v.jpg BeneventoVillani.jpg Battle_of_Mons-en-Pevele.jpg ArrestoBonifac8.jpg Villani_Benevento.jpg TzimiskesPreslavBasileiosPliska.jpg Paolo_Uccello_044.jpg Gattamelata.jpg Firenze.Duomo_.Tolentino.jpeg Ferrara_monumento_equestre_28mar06_03.jpg Chronicon_Pictum_P85_Mogyorodi_csata.jpeg Chronicon_Pictum_-_Battle_of_Posada.png 42-manasses-chronicle.jpg
+              
 
 
 /*
