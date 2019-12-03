@@ -1254,7 +1254,7 @@ function populate_images() {
     insert_into_images("horsemen/Amadeo.jpg", 
                             "Flickr, Ario Gaviore", 
                             "https://www.flickr.com/photos/ario_gaviore/2806448751", 
-                            "Monument to Amedeo of Savoy, Duke of Aosta,<br/>1902, Davide Calandra, Turin, Italy");
+                            "Monument to Amedeo of Savoy, Duke of Aosta and Amadeo I of Spain,<br/>1902, Davide Calandra, Turin, Italy");
     insert_into_images("horsemen/Amazonomachia_Pio-Clementino_Inv896.jpg", 
                             "wiki", 
                             "Amazonomachia_Pio-Clementino_Inv896.jpg", 
@@ -6110,7 +6110,7 @@ function populate_images() {
                             "Casimir Pulaski Monument at Patterson Park in Baltimore, Maryland, <br/>1951, Hans Schuler and A. C. Radziszewski, U.S.A.");
     insert_into_images("horsemen/Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg",
                             "wiki", 
-                            "Regisole,_di_V._Brunelli,_1817.JPG", 
+                            "Statue_of_Casimir_Pulaski_in_Roger_Williams_Park_in_Providence.jpg", 
                             "Equestrian statue of Casimir Pulaski in Roger Williams Park, Providence Rhode Island, U.S.A., <br/>1953, Guido Nincheri, Canada");
     insert_into_images("horsemen/Savannah_1779.png",
                             "wiki", 
@@ -6164,6 +6164,39 @@ function populate_images() {
                             "wiki", 
                             "Claude_Deruet_-_Allegory_of_the_Marriage_of_Louis_XIV_in_1631.jpg", 
                             "Allegory of the Peace Treaty of the Pyrenees, <br/>1659, Claude Deruet, France");
+    insert_into_images("horsemen/00296401.jpg",
+                            "Getty", 
+                            "2685", 
+                            "Saint George and the Dragon, accompanying a prayer to Saint George, <br/>cr. 1450–55, Ghent (?), Belgium");
+    insert_into_images("horsemen/Richard_Marshal_unhorses_Baldwin_Guines_at_a_skirmish_by_Matthew_Paris.jpg",
+                            "wiki", 
+                            "Richard_Marshal_unhorses_Baldwin_Guines_at_a_skirmish_by_Matthew_Paris.jpg", 
+                            "Richard Marshal unhorses Baldwin Guines at a skirmish before the Battle of Monmouth, 1233, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
+    insert_into_images("horsemen/EdmundIronside_Canutethe_Dane1.jpg",
+                            "wiki", 
+                            "EdmundIronside_Canutethe_Dane1.jpg", 
+                            "Edmund Ironside (left) and Cnut the Great at the battle of Assandun, 1016, illustration to Chronica Majora, <br/>14th century, St. Albans, England");
+    insert_into_images("horsemen/Bouvines1214.jpg",
+                            "wiki", 
+                            "Bouvines1214.jpg", 
+                            "Battle of Bouvines, 1214, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
+    insert_into_images("horsemen/Cavaliere_Capodilista_vestito_di_giallo.jpg",
+                            "wiki", 
+                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_"De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae".jpg', 
+                            "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
+    insert_into_images("horsemen/Cavaliere_Capodilista_2.jpg",
+                            "wiki", 
+                            'Cavaliere_Capodilista_2_in_"De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae".jpg', 
+                            "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
+    insert_into_images("horsemen/51ucBDK4RJL.jpg",
+                            "amazon.com", 
+                            'https://www.amazon.com/Knight-Capodilista-Manuscript-Illumination-Biblioteca/dp/B017FXNKII', 
+                            "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
+    insert_into_images("horsemen/51tdq-lWFCL._SY450_.jpg",
+                            "amazon.com", 
+                            'https://www.amazon.com/Knight-Yellow-Capodilista-Manuscripts-Library/dp/B00PIGCDYW', 
+                            "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
+
 
 /*    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
                             "wiki", 
@@ -6175,8 +6208,9 @@ function populate_images() {
 knight.png 12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg
 
         
+ MoorandChristianBattle.png Higueruela.jpg  
+  Battle_of_Higueruela.jpg Battle_of_Clavijo_by_Martin_Shongauer.png  
 
-00296401.jpg
 
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
