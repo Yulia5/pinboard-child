@@ -5476,14 +5476,14 @@ function populate_images() {
                             "dollsofindia.com", 
                             "https://www.dollsofindia.com/product/rani-lakshmibai-ID62.html", 
                             "Queen Lakshmibai, <br/>2014 or earlier, India");
-    /*insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
+    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "dollsofindia.com", 
                             "https://www.dollsofindia.com/product/people-posters/lakshmibai-rani-of-jhansi-reprint-on-paper-GA64.html", 
                             "Queen Lakshmibai, <br/>2014 or earlier, India");
     insert_into_images("horsemen/YaqubLeisSaffaridStatue.jpg",
-                            "https://www.quora.com/How-did-Iran-manage-to-retain-their-Persian-heritage-while-Egypt-and-Syria-became-mostly-Arabic", 
                             "quora.com", 
-                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");*/
+                            "https://www.quora.com/How-did-Iran-manage-to-retain-their-Persian-heritage-while-Egypt-and-Syria-became-mostly-Arabic", 
+                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");
     insert_into_images("horsemen/Sint-Joris_-_by_frank_wouters.jpg",
                             "Sint-Joris_-_by_frank_wouters.jpg", 
                             "wiki", 
@@ -5501,56 +5501,56 @@ function populate_images() {
                             "https://www.flickr.com/photos/acullador/3703319083", 
                             "Statue of Gabriela Silang, <br/>1971, Manila, Philippines");
     insert_into_images("horsemen/St_George_Melbourne.jpg",
-                            "St_George_Melbourne.jpg", 
                             "wiki", 
+                            "St_George_Melbourne.jpg", 
                             "Statue of Saint George and The Dragon, <br/>1889, Joseph Edgar Boehm, Melbourne, Australia");
     insert_into_images("horsemen/St_George_and_The_Dragon.jpg",
-                            "St_George_and_The_Dragon.jpg", 
                             "wiki", 
+                            "St_George_and_The_Dragon.jpg", 
                             "Statue of Saint George and The Dragon, <br/>1887, Anton Dominik Fernkorn, Zagreb, Croatia");
     insert_into_images("horsemen/Germany-00481_-_St._George_and_the_Dragon_30249260381.jpg",
-                            "Germany-00481_-_St._George_and_the_Dragon_(30249260381).jpg", 
                             "wiki", 
+                            "Germany-00481_-_St._George_and_the_Dragon_(30249260381).jpg", 
                             "Statue of Saint George and The Dragon, <br/>1855, August Kiss, Berlin, Germany");
     insert_into_images("horsemen/Estatua_de_San_Jorge_y_el_dragon.jpg",
-                            "Estatua_de_San_Jorge_y_el_dragón.jpg", 
                             "wiki", 
+                            "Estatua_de_San_Jorge_y_el_dragón.jpg", 
                             "Statue of Saint George and The Dragon, <br/>1963, José Rodriguez, Cáceres, Spain");
     insert_into_images("horsemen/Slovakia-03212_-_St._George_32288601125.jpg",
-                            "Slovakia-03212_-_St._George_(32288601125).jpg", 
                             "wiki", 
+                            "Slovakia-03212_-_St._George_(32288601125).jpg", 
                             "Statue of Saint George and The Dragon, <br/>?, Bratislava, Slovakia");   
     insert_into_images("horsemen/Laxmibais_statue_in_Solapur.jpeg",
-                            "Laxmibai%27s_statue_in_Solapur.JPG", 
                             "wiki", 
+                            "Laxmibai%27s_statue_in_Solapur.JPG", 
                             "Rani Lakshmibai's statue, <br/>Solapur, India");   
     insert_into_images("horsemen/Beram_Maria_im_Fels_-_Heiliger_Georg.jpg",
-                            "Beram_Maria_im_Fels_-_Heiliger_Georg.jpg", 
                             "wiki", 
+                            "Beram_Maria_im_Fels_-_Heiliger_Georg.jpg", 
                             "Saint George and The Dragon, <br/>1474, Vincent of Kastav, Beram, Croatia");   
     insert_into_images("horsemen/San_Giorgio_e_la_principessa_Antonio_Cicognara.jpg",
-                            "San_Giorgio_e_la_principessa_(Antonio_Cicognara).jpg", 
                             "wiki", 
+                            "San_Giorgio_e_la_principessa_(Antonio_Cicognara).jpg", 
                             "Saint George and The Princess, <br/>1475, Antonio Cicognara, Ferrara (?), Italy");   
     insert_into_images("horsemen/Antwerpen_Grote_Markt_7_Huis_Spaengien_oeg4035_foto4_2014-12-14_11.23.jpg",
-                            "Antwerpen,_Grote_Markt_7_Huis_Spaengien_oeg4035_foto4_2014-12-14_11.23.jpg", 
                             "wiki", 
+                            "Antwerpen,_Grote_Markt_7_Huis_Spaengien_oeg4035_foto4_2014-12-14_11.23.jpg", 
                             "Grote Markt 7 building with the statue of Saint George on top, <br/>Antwerp, Belgium");   
     insert_into_images("horsemen/Gillis_Coignet_-_St_George_the_Great.jpg",
-                            "Gillis_Coignet_-_St_George_the_Great.jpg", 
                             "wiki", 
+                            "Gillis_Coignet_-_St_George_the_Great.jpg", 
                             "Saint George and The Dragon, <br/>1581, Gillis Coignet, Flemish school");   
     insert_into_images("horsemen/Sano_di_pietro_s.giorgio_da_pala_di_san_cristoforo_1444_ca._da_s._cristoforo_01.jpg",
-                            "Sano_di_pietro,_s.giorgio,_da_pala_di_san_cristoforo,_1444_ca.,_da_s._cristoforo,_01.JPG", 
                             "wiki", 
+                            "Sano_di_pietro,_s.giorgio,_da_pala_di_san_cristoforo,_1444_ca.,_da_s._cristoforo,_01.JPG", 
                             "Saint George and The Dragon, <br/>Sano di Pietro, 1444, Siena, Italy");
     insert_into_images("horsemen/betty.jpg",
-                            "https://www.slam.org/collection/objects/23250/", 
                             "Saint Louis Art Museum", 
+                            "https://www.slam.org/collection/objects/23250/", 
                             "Betty, <br/>1988, Gerhard Richter, Dresden, East Germany");   
     insert_into_images("horsemen/four_horsewomen-1.jpg",
+                            "Ben Garrison of GrrrGraphics political cartoons and art", 
                             "https://grrrgraphics.com/the-four-horsewomen-of-the-apocalypse", 
-                            "Ben Garrison / GrrrGraphics political cartoons and art", 
                             "Four Horsewomen of the Democrat Apocalypse, <br/>Ben Garrison, July 2019, U.S.A.");
     insert_into_images("horsemen/12_Estancia_de_Heliodoro_Encuentro_entre_León_Magno_y_Atila.jpg",
                             "wiki", 
@@ -6182,11 +6182,11 @@ function populate_images() {
                             "Battle of Bouvines, 1214, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
     insert_into_images("horsemen/Cavaliere_Capodilista_vestito_di_giallo.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_"De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae".jpg', 
+                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_&quot;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae&quot;.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/Cavaliere_Capodilista_2.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_2_in_"De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae".jpg', 
+                            'Cavaliere_Capodilista_2_in_&quot;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae&quot;.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/51ucBDK4RJL.jpg",
                             "amazon.com", 
@@ -6196,6 +6196,22 @@ function populate_images() {
                             "amazon.com", 
                             'https://www.amazon.com/Knight-Yellow-Capodilista-Manuscripts-Library/dp/B00PIGCDYW', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
+    insert_into_images("horsemen/MoorandChristianBattle.png",
+                            "Wikipedia", 
+                            "https://en.wikipedia.org/wiki/File:MoorandChristianBattle.png", 
+                            "Battle of Marrakesh, from Cantigas de Santa Maria by Alfonso X of Castile El Sabio (?), <br/>1221–84, Castile, Spain");
+    insert_into_images("horsemen/Higueruela.jpg",
+                            "wiki", 
+                            "Higueruela.jpg", 
+                            "The Battle of Higueruela (1431) in the Gallery of Battles, <br/>cr. 1582, Fabrizio Castello, Orazio Cambiaso and Lazzaro Tavarone, Royal Monastery of San Lorenzo de El Escorial, Madrid, Spain");
+    insert_into_images("horsemen/Battle_of_Higueruela.jpg",
+                            "wiki", 
+                            "Battle_of_Higueruela.jpg", 
+                            "The Battle of Higueruela (1431) in the Gallery of Battles, <br/>cr. 1582, Fabrizio Castello, Orazio Cambiaso and Lazzaro Tavarone, Royal Monastery of San Lorenzo de El Escorial, Madrid, Spain");
+    insert_into_images("horsemen/Battle_of_Clavijo_by_Martin_Shongauer.png",
+                            "wiki", 
+                            "Battle_of_Clavijo_by_Martin_Shongauer.png", 
+                            "The Battle of Clavijo (mythical, 844), <br/>autumn 1471 - spring 1473, Alsace, Germany");
 
 
 /*    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
@@ -6206,13 +6222,7 @@ function populate_images() {
                             Collections-_-National-Museum-of-African-Art.png
 
 knight.png 12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg
-
-        
- MoorandChristianBattle.png Higueruela.jpg  
-  Battle_of_Higueruela.jpg Battle_of_Clavijo_by_Martin_Shongauer.png  
-
-
-/*
+     
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "realbharat.org", 
                             "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
