@@ -33,6 +33,7 @@ function generate_src() {
     insert_into_src("Peru",     "ARCHI - Archivo Digital de Arte Peruano",      'http://www.archi.pe/index.php/foto/index/');
     insert_into_src("ES",       "Equestrian Statues",                           'https://equestrianstatue.org/');
     insert_into_src("Gallica",  "Gallica at bibliothèque nationale de France",  'https://gallica.bnf.fr/ark:/');
+    insert_into_src("NT",       "National Trust Collection",                    'http://www.nationaltrustcollections.org.uk/object/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
@@ -6127,14 +6128,55 @@ function populate_images() {
                             "hallmark.com", 
                             "https://www.hallmark.com/ornaments/keepsake-ornaments/disney-frozen-2-elsa-and-nokk-ornament-1899QXD6459.html", 
                             "Elsa taming Nokk (Christmas decoration), <br/>2019, U.S.A.");
+    insert_into_images("horsemen/AN00332744_001_l.jpg",
+                            "BM", 
+                            "332744001", 
+                            "Equestrian portrait of William III of Orange Nassau, <br/>1672, Romeyn de Hooghe, Netherlands");
+    insert_into_images("horsemen/WilliamIII_MK.jpg",
+                            "the-saleroom.com", 
+                            "https://www.the-saleroom.com/en-gb/auction-catalogues/mellors-and-kirk/catalogue-id-srmel10063/lot-0932aaf3-e8d5-4f9d-83b9-a507012160e8", 
+                            "Equestrian portrait of William III at the Battle of the Boyne, <br/>1690-1702, Studio of Jan Wick, England");
+    insert_into_images("horsemen/Johannes_Voorhout_-_Willem_III_te_paard_-1670-2.jpg",
+                            "wiki", 
+                            "Johannes_Voorhout_-_Willem_III_te_paard_-1670-2.jpg", 
+                            "Equestrian portrait of William III, <br/>second half of the 17th century, Johannes Voorhout, Netherlands");
+    insert_into_images("horsemen/AN00401225_001_l.jpg",
+                            "BM", 
+                            "3069943", 
+                            "Equestrian portrait of William III, <br/>cr. 1689, John Smith after Sir Godfrey Kneller, England (?)");
+    insert_into_images("horsemen/King-William-III-by-Godfrey-Kneller.png",
+                            "artnet.com", 
+                            "http://www.artnet.com/artists/godfrey-kneller/an-equestrian-portrait-of-king-william-iii-1650-gJXuILa2g9tdTMqIvH10Lw2", 
+                            "Equestrian portrait of William III, <br/>second half of the 17th century, circle of Godfrey Kneller, England");
+    insert_into_images("horsemen/King-William-III-1650–1702-on-his-Favourite-Horse-Sorrel-631075-_-National-Trust-Collections.png",
+                            "NT", 
+                            "631075", 
+                            "King William III on his favourite horse Sorrel , <br/>second half of the 17th century (?), manner of Jan Wyck, England (?)");
+    insert_into_images("horsemen/DP318357_small.jpg",
+                            "Met", 
+                            "436182", 
+                            "Triumph of the Amazons, <br/>1620s, Claude Deruet, Nancy, France");
+    insert_into_images("horsemen/Deruet_Claude_-_Fire_-_before_1642.jpeg",
+                            "wiki", 
+                            "Deruet,_Claude_-_Fire_-_before_1642.JPG", 
+                            "Four elements: Fire, <br/>before 1642, Claude Deruet, France");
+    insert_into_images("horsemen/Claude_Deruet_-_Allegory_of_the_Marriage_of_Louis_XIV_in_1631.jpg",
+                            "wiki", 
+                            "Claude_Deruet_-_Allegory_of_the_Marriage_of_Louis_XIV_in_1631.jpg", 
+                            "Allegory of the Peace Treaty of the Pyrenees, <br/>1659, Claude Deruet, France");
+
 /*    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
                             "wiki", 
                             "Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg", 
                             "Battle of Lens (1648), <br/>2019, Pierre Franque, France");
 
-    DP318357_small.jpg 00296401.jpg  WilliamIII_MK.jpg   Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg  Johannes_Voorhout_-_Willem_III_te_paard_-1670-2.jpg Deruet_Claude_-_Fire_-_before_1642.jpeg Claude_Deruet_-_Allegory_of_the_Marriage_of_Louis_XIV_in_1631.jpg AN00332744_001_l.jpg
+                            Collections-_-National-Museum-of-African-Art.png
 
+knight.png 12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg
 
+        
+
+00296401.jpg
 
 /*
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
