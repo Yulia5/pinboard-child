@@ -6182,11 +6182,11 @@ function populate_images() {
                             "Battle of Bouvines, 1214, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
     insert_into_images("horsemen/Cavaliere_Capodilista_vestito_di_giallo.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_%34;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%34;.jpg', 
+                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_%22;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%22;.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/Cavaliere_Capodilista_2.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_2_in_%34;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%34;.jpg', 
+                            'Cavaliere_Capodilista_2_in_%22;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%22;.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/51ucBDK4RJL.jpg",
                             "amazon.com", 
@@ -6215,7 +6215,7 @@ function populate_images() {
     insert_into_images("horsemen/Jerusalem_1999.png",
                             "wiki", 
                             "Siege_of_Jerusalem_1099_2.jpg", 
-                            "Siege of Jerusalem, 1099, <br/>1295, ?");
+                            "Siege of Jerusalem, 1099, illustration to History of Jerusalem by William of Tyre, <br/>1295, Kingdom of Jerusalem");
     insert_into_images("horsemen/Siege_of_Tripoli_Painting_1289.jpg",
                             "wiki", 
                             "Siege_of_Tripoli_Painting_(1289).jpg", 
@@ -6223,11 +6223,11 @@ function populate_images() {
     insert_into_images("horsemen/Saladin_Guy.jpg",
                             "wiki", 
                             "Saladin_Guy.jpg", 
-                            "The Battle of Hattin, 1187, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
+                            "The Battle of Hattin, 4 July 1187, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
     insert_into_images("horsemen/Nur_ad-Din_Zangi.jpg",
                             "wiki", 
                             "Nur_ad-Din_Zangi.jpg", 
-                            "Nureddin, Sultan of Damascus, illustration to The Histoire d'Outremer, <br/>1232-1261, (Picardy?), North France");
+                            "Nureddin, Sultan of Damascus (1118–1174), illustration to The Histoire d'Outremer, <br/>1232-1261, Picardy (?), North France");
     insert_into_images("horsemen/BattleOfInab.jpg",
                             "wiki", 
                             "BattleOfInab.jpg", 
@@ -6239,7 +6239,7 @@ function populate_images() {
     insert_into_images("horsemen/Battle_of_Cresson.jpg",
                             "wiki", 
                             "Battle_of_Cresson.jpg", 
-                            "Battle of Cresson, 1187, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
+                            "Battle of Cresson, 1 May 1187, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
     insert_into_images("horsemen/Batalha_do_Salado.png",
                             "wiki", 
                             "Batalha_do_Salado_(Roque_Gameiro,_Quadros_da_História_de_Portugal,_1917).png", 
@@ -6247,7 +6247,7 @@ function populate_images() {
     insert_into_images("horsemen/Bataille_de_Tyr_1187.jpeg",
                             "wiki", 
                             "Français_5594,_fol._205_haut,_Bataille_de_Tyr_(1187).jpeg", 
-                            "Battle of Tyre, 1187, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
+                            "Battle of Tyre, 12 Nov 1187 - 1 Jan 1188, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
     insert_into_images("horsemen/683566.jpg",
                             "wiki", 
                             "Battle_in_front_of_Antioch.jpg", 
