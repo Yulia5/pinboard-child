@@ -1260,9 +1260,9 @@ function populate_images() {
                             "Amazonomachia_Pio-Clementino_Inv896.jpg", 
                             "Sarcophagus with an Amazonomachy scene, <br/>cr. 160–170, Rome");
     insert_into_images("horsemen/Andres_Marzal_De_Sax_-_Retable_of_St_George_detail_-_WGA14171.jpg", 
-                            "wiki", 
-                            "Andrés_Marzal_De_Sax_-_Retable_of_St_George_(detail)_-_WGA14171.jpg", 
-                            "Retable of St George (detail), <br/>circa 1400, Andrés Marzal De Sax");
+                            "VA", 
+                            "O17807", 
+                            "Retable of St George (detail), <br/>1400-25, Valencia, Spain");
     insert_into_images("horsemen/Anne_de_Souvree.jpg", 
                             "wiki", 
                             "Porträtt_på_Anne_de_Souvree,_1670-tal_-_Skoklosters_slott_-_100373.tif", 
@@ -6211,7 +6211,7 @@ function populate_images() {
     insert_into_images("horsemen/Battle_of_Clavijo_by_Martin_Shongauer.png",
                             "wiki", 
                             "Battle_of_Clavijo_by_Martin_Shongauer.png", 
-                            "The Battle of Clavijo (mythical, 844), <br/>autumn 1471 - spring 1473, Alsace, Germany");
+                            "The Battle of Clavijo (mythical, 844), <br/>autumn 1471 - spring 1473, Martin Shongauer, Alsace, Germany");
     insert_into_images("horsemen/Jerusalem_1999.png",
                             "wiki", 
                             "Siege_of_Jerusalem_1099_2.jpg", 
@@ -6248,10 +6248,47 @@ function populate_images() {
                             "wiki", 
                             "Français_5594,_fol._205_haut,_Bataille_de_Tyr_(1187).jpeg", 
                             "Battle of Tyre, 12 Nov 1187 - 1 Jan 1188, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
+    insert_into_images("horsemen/Francais_5594_fol._193v_haut_Mort_dEtienne_Hagiochristophorites.jpeg",
+                            "wiki", 
+                            "Français_5594,_fol._205_haut,_Bataille_de_Tyr_(1187).jpeg", 
+                            "Murder of Stephen Hagiochristophorites by Isaac II Angelos, 11 September 1185, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
+    insert_into_images("horsemen/Bataille_de_Nicopolis_Archives_B.N._1.jpg",
+                            "wiki", 
+                            "Bataille_de_Nicopolis_(Archives_B.N.)_1.jpg", 
+                            "Battle of Nicopolis, 25 September 1396, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
     insert_into_images("horsemen/683566.jpg",
                             "wiki", 
                             "Battle_in_front_of_Antioch.jpg", 
                             "Siege of Antioch, 1097-98, <br/>14th century, ?");
+    insert_into_images("horsemen/Retaule_de_sant_Jordi_de_Xerica.jpeg",
+                            "wiki", 
+                            "Retaule_de_sant_Jordi_de_Xèrica.JPG", 
+                            "Altarpiece of St. George, <br/>1430-31, Berenguer Mateu, Valencia, Spain");
+    insert_into_images("horsemen/Morgan-bible-fl23.jpg",
+                            "wiki", 
+                            "Morgan-bible-fl23.jpg", 
+                            "Illustration to Crusader Bible, <br/>mid-1240s, Paris, France");
+    insert_into_images("horsemen/Morgan-bible-fl-29.jpg",
+                            "wiki", 
+                            "Morgan-bible-fl-29.jpg", 
+                            "Illustration to Crusader Bible, <br/>mid-1240s, Paris, France");
+    insert_into_images("horsemen/Morgan_Bible_10r.jpg",
+                            "wiki", 
+                            "Morgan_Bible_10r.jpg", 
+                            "Illustration to Crusader Bible, <br/>mid-1240s, Paris, France");
+    insert_into_images("horsemen/Maciejowski_Bible.jpeg",
+                            "wiki", 
+                            "Maciejowski_Bible.JPG", 
+                            "Illustration to Crusader Bible, <br/>mid-1240s, Paris, France");
+    insert_into_images("horsemen/Biblia_de_Maciejowski_miniatura_h10.jpg",
+                            "wiki", 
+                            "Biblia_de_Maciejowski_miniatura_h10.jpg", 
+                            "Illustration to Crusader Bible, <br/>mid-1240s, Paris, France");
+    insert_into_images("horsemen/Kruciata.jpg",
+                            "wiki", 
+                            "Kruciata.jpg", 
+                            "Illustration to Crusader Bible, <br/>mid-1240s, Paris, France");
+
 /*     insert_into_images("horsemen/",
                             "wiki", 
                             "", 
@@ -6260,8 +6297,6 @@ function populate_images() {
                             "wiki", 
                             "", 
                             ", <br/>, ");
-
-    11380564686_3f00720db5_b.jpg
 
 
    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
