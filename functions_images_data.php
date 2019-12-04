@@ -5154,7 +5154,7 @@ function populate_images() {
     insert_into_images("horsemen/184_MS_65_F90_V.jpg",
                             "wiki", 
                             "184_MS_65_F90_V.jpg", 
-                            "Forth Horseman of the Apocalypse, illustration of The Very Rich Hours of the Duke of Berry, <br/>1411-6, Limbourg brothers, Paris, France");
+                            "Forth Horseman of the Apocalypse, illustration of The Very Rich Hours of the Duke of Berry, <br/>1411-6, Jean Colombe, Paris, France");
     insert_into_images("horsemen/Death_on_the_Pale_Horse_by_B.West_1817.jpg",
                             "wiki", 
                             "Death_on_the_Pale_Horse_by_B.West_(1817).jpg", 
@@ -5955,7 +5955,7 @@ function populate_images() {
     insert_into_images("horsemen/Freres_Limbourg_-_Tres_Riches_Heures_du_duc_de_Berry_-_mois_de_mai_-_Google_Art_Project.jpg",
                             "wiki", 
                             "Frères_Limbourg_-_Très_Riches_Heures_du_duc_de_Berry_-_mois_de_mai_-_Google_Art_Project.jpg", 
-                            "Month of May, illustration of The Very Rich Hours of the Duke of Berry, <br/>1412-6, Limbourg brothers, Paris, France");
+                            "Month of May, illustration of The Very Rich Hours of the Duke of Berry, <br/>1412-6, Jean Colombe, Paris, France");
     insert_into_images("horsemen/Emanuel-van-Meteren-Historien-der-Nederlanden-tot-1612_MG_9969.tif.jpg",
                             "wiki", 
                             "Emanuel-van-Meteren-Historien-der-Nederlanden-tot-1612_MG_9969.tif", 
@@ -6182,11 +6182,11 @@ function populate_images() {
                             "Battle of Bouvines, 1214, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
     insert_into_images("horsemen/Cavaliere_Capodilista_vestito_di_giallo.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_&quot;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae&quot;.jpg', 
+                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_%34;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%34;.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/Cavaliere_Capodilista_2.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_2_in_&quot;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae&quot;.jpg', 
+                            'Cavaliere_Capodilista_2_in_%34;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%34;.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/51ucBDK4RJL.jpg",
                             "amazon.com", 
@@ -6212,9 +6212,59 @@ function populate_images() {
                             "wiki", 
                             "Battle_of_Clavijo_by_Martin_Shongauer.png", 
                             "The Battle of Clavijo (mythical, 844), <br/>autumn 1471 - spring 1473, Alsace, Germany");
+    insert_into_images("horsemen/Jerusalem_1999.png",
+                            "wiki", 
+                            "Siege_of_Jerusalem_1099_2.jpg", 
+                            "Siege of Jerusalem, 1099, <br/>1295, ?");
+    insert_into_images("horsemen/Siege_of_Tripoli_Painting_1289.jpg",
+                            "wiki", 
+                            "Siege_of_Tripoli_Painting_(1289).jpg", 
+                            "The fall of Tripoli to the Mamluks, April 1289, <br/>13th-14th centuries (?), ?");
+    insert_into_images("horsemen/Saladin_Guy.jpg",
+                            "wiki", 
+                            "Saladin_Guy.jpg", 
+                            "The Battle of Hattin, 1187, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
+    insert_into_images("horsemen/Nur_ad-Din_Zangi.jpg",
+                            "wiki", 
+                            "Nur_ad-Din_Zangi.jpg", 
+                            "Nureddin, Sultan of Damascus, illustration to The Histoire d'Outremer, <br/>1232-1261, (Picardy?), North France");
+    insert_into_images("horsemen/BattleOfInab.jpg",
+                            "wiki", 
+                            "BattleOfInab.jpg", 
+                            "Battle Of Inab, 1149, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
+    insert_into_images("horsemen/Battle-Damietta.jpg",
+                            "wiki", 
+                            "Battle-Damietta.jpg", 
+                            "Battle of Damietta, 1218, illustration to Chronica Majora, <br/>13th century, St. Albans, England");        
+    insert_into_images("horsemen/Battle_of_Cresson.jpg",
+                            "wiki", 
+                            "Battle_of_Cresson.jpg", 
+                            "Battle of Cresson, 1187, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
+    insert_into_images("horsemen/Batalha_do_Salado.png",
+                            "wiki", 
+                            "Batalha_do_Salado_(Roque_Gameiro,_Quadros_da_História_de_Portugal,_1917).png", 
+                            "Battle of Salado, in 'Pictures of the History of Portugal', <br/>1917, Roque Gameiro, Portugal");
+    insert_into_images("horsemen/Bataille_de_Tyr_1187.jpeg",
+                            "wiki", 
+                            "Français_5594,_fol._205_haut,_Bataille_de_Tyr_(1187).jpeg", 
+                            "Battle of Tyre, 1187, illustration to Passages d'outremer, <br/>1472-75, Jean Colombe, Paris, France");
+    insert_into_images("horsemen/683566.jpg",
+                            "wiki", 
+                            "Battle_in_front_of_Antioch.jpg", 
+                            "Siege of Antioch, 1097-98, <br/>14th century, ?");
+/*     insert_into_images("horsemen/",
+                            "wiki", 
+                            "", 
+                            ", <br/>, ");
+    insert_into_images("horsemen/",
+                            "wiki", 
+                            "", 
+                            ", <br/>, ");
+
+    11380564686_3f00720db5_b.jpg
 
 
-/*    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
+   insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
                             "wiki", 
                             "Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg", 
                             "Battle of Lens (1648), <br/>2019, Pierre Franque, France");
