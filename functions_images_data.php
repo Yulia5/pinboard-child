@@ -5110,7 +5110,7 @@ function populate_images() {
     insert_into_images("horsemen/William_Blake_-_Death_on_a_Pale_Horse_-_Butlin_517.jpg",
                             "wiki", 
                             "William_Blake_-_Death_on_a_Pale_Horse_-_Butlin_517.jpg", 
-                            "Death on a Pale Horse (Forth Horseman of the Apocalypse), <br/>cr. 1800, William Blake, England");
+                            "Death on a Pale Horse (Fourth Horseman of the Apocalypse), <br/>cr. 1800, William Blake, England");
     insert_into_images("horsemen/Vasiliy_Korens_Apocalypse_p.22_-_Horsemen.jpg",
                             "wiki", 
                             "Vasiliy_Koren%27s_Apocalypse_p.22_-_Horsemen.jpg", 
@@ -5126,7 +5126,7 @@ function populate_images() {
     insert_into_images("horsemen/John_Hamilton_Mortimer_-_Death_on_a_Pale_Horse_-_Google_Art_Project.jpg",
                             "wiki", 
                             "John_Hamilton_Mortimer_-_Death_on_a_Pale_Horse_-_Google_Art_Project.jpg", 
-                            "Death on a Pale Horse (Forth Horseman of the Apocalypse), <br/>cr. 1775, John Hamilton Mortimer, England");
+                            "Death on a Pale Horse (Fourth Horseman of the Apocalypse), <br/>cr. 1775, John Hamilton Mortimer, England");
     insert_into_images("horsemen/First_Horseman_Battistero_di_Padova.jpg",
                             "wiki", 
                             "First_Horseman,_Battistero_di_Padova.jpg", 
@@ -5154,7 +5154,7 @@ function populate_images() {
     insert_into_images("horsemen/184_MS_65_F90_V.jpg",
                             "wiki", 
                             "184_MS_65_F90_V.jpg", 
-                            "Forth Horseman of the Apocalypse, illustration of The Very Rich Hours of the Duke of Berry, <br/>1411-6, Jean Colombe, Paris, France");
+                            "Fourth Horseman of the Apocalypse, illustration of The Very Rich Hours of the Duke of Berry, <br/>1411-6, Jean Colombe, Paris, France");
     insert_into_images("horsemen/Death_on_the_Pale_Horse_by_B.West_1817.jpg",
                             "wiki", 
                             "Death_on_the_Pale_Horse_by_B.West_(1817).jpg", 
@@ -6292,6 +6292,14 @@ function populate_images() {
                             "wiki", 
                             "12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg", 
                             "Hunt of the Hare, fresco painting on mural transferred to canvas, <br/>cr. 1125, Hermitage of San Baudelio, Casillas de Berlanga, Soria, Spain");
+     insert_into_images("horsemen/Elephant_and_Castle_Fresco_in_San_Baudelio_Spain.jpg",
+                            "wiki", 
+                            "Elephant_and_Castle_(Fresco_in_San_Baudelio,_Spain).jpg", 
+                            "Elephant and Castle, fresco painting on mural transferred to canvas, <br/>cr. 1125, Hermitage of San Baudelio, Casillas de Berlanga, Soria, Spain");
+     insert_into_images("horsemen/B_Facundus_174v.jpg",
+                            "wiki", 
+                            "B_Facundus_174v.jpg", 
+                            "Four Horsemen Of Apocalypse (Sixth trumpet scene), illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Spain");
     insert_into_images("horsemen/knight.png",
                             "wiki", 
                             "Cressac_16_Temple_Peinture_murale_Croisé_La_Bocquée_2014.JPG", 
@@ -6299,11 +6307,12 @@ function populate_images() {
     insert_into_images("horsemen/Basilica_di_aquilieia_cripta_affreschi_registro_inferiore_03.jpeg",
                             "wiki", 
                             "Basilica_di_aquilieia,_cripta,_affreschi_registro_inferiore_03.JPG", 
-                            "Clash between an Arab knight and a Christian knight during the Crusades, fresco, <br/>12th century, Patriarchal Basilica of Santa Maria Assunta, Aquileia, Iraly");
+                            "Clash between an Arab knight and a Christian knight during the Crusades, fresco, <br/>12th century, Patriarchal Basilica of Santa Maria Assunta, Aquileia, Italy");
     insert_into_images("horsemen/Sv._Stefana_Zanigrad.jpg",
                             "wiki", 
                             "Detajl_freske_v_cerkvi_sv._Štefana,_Zanigrad.jpg", 
                             "A knight, fresco, <br/>14th century, St. Stephen's Church, Zanigrad, Slovenia");
+
     insert_into_images("horsemen/KakasFotoThalerTamas.jpg",
                             "wiki", 
                             "KakasFotoThalerTamas.JPG", 
@@ -6366,12 +6375,17 @@ function populate_images() {
     insert_into_images("horsemen/AN00261686_001_l.jpg",
                             "BM", 
                             "578007", 
-                            "King Sahle Sellase of Shewa mounted on a white horse, painting on woven nylon material, <br/>20th century, Ethiopia");
+                            "King Sahle Sellase of Shewa mounted on a white horse at the battle of Adwa (?), <br/>20th century, painting on woven nylon material, Ethiopia");
+    insert_into_images("horsemen/Adwa.png",
+                            "auctions.swelco.co.za", 
+                            "https://auctions.swelco.co.za/lots/view/1-1ZLFES/solomon-belachew-the-battle-of-adwa-1940s", 
+                            "Emperor Menelik II after fighting the BAD Italians through the gift of God with the help of Saint George after defeating the Italians returned to Addis Ababa in victory, <br/>1940s, Solomon Belachew, Ethiopia");
+
     insert_into_images("horsemen/LSE_HOM_2003_22-001.jpg",
                             "ArtUK", 
                             "scene-of-george-and-the-dragon-194060", 
                             "Ethiopian king (?) as Saint George spearing the dragon, <br/>?, Ethiopia");
-    
+
     insert_into_images("horsemen/Collections-_-National-Museum-of-African-Art.png",
                             "africa.si.edu", 
                             "https://africa.si.edu/collections/view/objects/asitem/items$0040:16680", 
