@@ -6288,25 +6288,114 @@ function populate_images() {
                             "wiki", 
                             "Kruciata.jpg", 
                             "Illustration to Crusader Bible, <br/>mid-1240s, Paris, France");
-
-/*     insert_into_images("horsemen/",
+     insert_into_images("horsemen/12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg",
                             "wiki", 
-                            "", 
-                            ", <br/>, ");
-    insert_into_images("horsemen/",
+                            "12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg", 
+                            "Hunt of the Hare, fresco painting on mural transferred to canvas, <br/>cr. 1125, Hermitage of San Baudelio, Casillas de Berlanga, Soria, Spain");
+    insert_into_images("horsemen/knight.png",
                             "wiki", 
-                            "", 
-                            ", <br/>, ");
+                            "Cressac_16_Temple_Peinture_murale_Croisé_La_Bocquée_2014.JPG", 
+                            "Knight of the Cross attacking Sarrazins at the battle of La Bocquée (1163), fresco, <br/>end of the 12th century, Templar chapel at Cressac, France");
+    insert_into_images("horsemen/Basilica_di_aquilieia_cripta_affreschi_registro_inferiore_03.jpeg",
+                            "wiki", 
+                            "Basilica_di_aquilieia,_cripta,_affreschi_registro_inferiore_03.JPG", 
+                            "Clash between an Arab knight and a Christian knight during the Crusades, fresco, <br/>12th century, Patriarchal Basilica of Santa Maria Assunta, Aquileia, Iraly");
+    insert_into_images("horsemen/Sv._Stefana_Zanigrad.jpg",
+                            "wiki", 
+                            "Detajl_freske_v_cerkvi_sv._Štefana,_Zanigrad.jpg", 
+                            "A knight, fresco, <br/>14th century, St. Stephen's Church, Zanigrad, Slovenia");
+    insert_into_images("horsemen/KakasFotoThalerTamas.jpg",
+                            "wiki", 
+                            "KakasFotoThalerTamas.JPG", 
+                            "Saint Ladislaus legend, fresco, <br/>14th century, Church of Saint Catherine of Alexandria, Veľká Lomnica, Slovakia");
+    insert_into_images("horsemen/Derzs4.jpg",
+                            "wiki", 
+                            "Derzs4.jpg", 
+                            "Ladislaus I of Hungary legend, fresco, <br/>1419, Paul of Ung, fortified church of Dârjiu, Romania");
+    insert_into_images("horsemen/RimBana4FotoThalerTamasJPG.jpg",
+                            "wiki", 
+                            "RimBana4FotoThalerTamas.JPG", 
+                            "Ladislaus I of Hungary legend, fresco, <br/>end of the 13th century, church in Rimavská Baňa, Slovakia");
+    insert_into_images("horsemen/Klosterkirche_Türje_Fresko_St._Ladislaus.tiff.png",
+                            "wiki", 
+                            "Klosterkirche_Türje_Fresko_St._Ladislaus.tiff", 
+                            "Scene from the St. Ladislaus legend, fresco, <br/>first decades of the 14th century, monastery church of Türje, Hungary");
+    insert_into_images("horsemen/Laszlo_kapelle.jpeg",
+                            "wiki", 
+                            "Laszlo_kapelle.JPG", 
+                            "Ladislaus I of Hungary legend, fresco, <br/>?, Károly Lotz (1833-1904), interior of the Matthias Church, Budapest, Hungary");
+    insert_into_images("horsemen/05galati.jpg",
+                            "wga.hu", 
+                            "https://www.wga.hu/html_m/m/master/xunk_it/xunk_it2c/05galati.html", 
+                            "Fourth Horseman of the Apocalypse, fresco, <br/>1420s, Santa Caterina, Galatina, Apulia, Italy");
+
+    insert_into_images("horsemen/Canosan_bonhams.png",
+                            "Bonhams", 
+                            "21928/lot/24/", 
+                            "Terracotta horse and rider, <br/>4th - 3rd century BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/The-Merrin-Gallery-Terracotta-Rider-Canosan-Hellenistic-Periodca-323-BC.jpeg",
+                            "merringallery.com", 
+                            "https://www.pinterest.co.uk/pin/552676185500109148/", 
+                            "Terracotta horse and rider, <br/>cr. 323 BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/cd72aa4a4edebd84908570399ef5744f.jpg",
+                            "Ancient artifacts", 
+                            "https://www.pinterest.co.uk/pin/383720830733037675/", 
+                            "Terracotta horse and rider, <br/>3rd century BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/AN01532789_001_l.jpg",
+                            "BM", 
+                            "399562", 
+                            "Terracotta relief attachment from an askos, showing a warrior on horseback, <br/>cr. 270-200 BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/AN01533041_001_l.jpg",
+                            "BM", 
+                            "463430", 
+                            "Terracotta relief attachment from an askos, showing a hunter on horseback, <br/>cr. 270-200 BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/Terracotta_relief_probably_from_a_funnel_vase_MET_DP277926.jpg",
+                            "Met", 
+                            "248731", 
+                            "Terracotta relief, probably from a funnel vase, <br/>late 3rd–early 2nd century BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/DP277927.jpg",
+                            "Met", 
+                            "248735", 
+                            "Terracotta relief, probably from a funnel vase, <br/>late 3rd–early 2nd century BC, Canosa, Apulia, Italy");
 
 
+    insert_into_images("horsemen/LSE_HOM_1972_250-001.jpg",
+                            "ArtUK", 
+                            "the-battle-of-adwa-1896-194051", 
+                            "The Battle of Adwa, 1896, <br/>19th century, Ethiopia");
+    insert_into_images("horsemen/AN00261686_001_l.jpg",
+                            "BM", 
+                            "578007", 
+                            "King Sahle Sellase of Shewa mounted on a white horse, painting on woven nylon material, <br/>20th century, Ethiopia");
+    insert_into_images("horsemen/LSE_HOM_2003_22-001.jpg",
+                            "ArtUK", 
+                            "scene-of-george-and-the-dragon-194060", 
+                            "Ethiopian king (?) as Saint George spearing the dragon, <br/>?, Ethiopia");
+    
+    insert_into_images("horsemen/Collections-_-National-Museum-of-African-Art.png",
+                            "africa.si.edu", 
+                            "https://africa.si.edu/collections/view/objects/asitem/items$0040:16680", 
+                            "An icon showing St George, <br/>15th-16th century, Ethiopia");
+    insert_into_images("horsemen/pl1_366_opn_tr_t01ii.jpg",
+                            "WAM", 
+                            "30807", 
+                            "Triptych with Mary and Her Son, Archangels, Scenes from Life of Christ and Saints, <br/>early 16th century, Ethiopia");
+    insert_into_images("horsemen/Athiopien_Grosses_Triptychon_Museum_Rietberg_EFA_15_img01.jpg",
+                            "wiki", 
+                            "Äthiopien_Grosses_Triptychon_Museum_Rietberg_EFA_15_img01.jpg", 
+                            "Great Triptych, tempera on fabric on wood, <br/>cr. 1700, Ethiopia");
+    insert_into_images("horsemen/Ethiopian.triptych.Gondar.Museum.of_.Russian.icon_.png",
+                            "wiki", 
+                            "Ethiopian.triptych.Gondar.Museum.of.Russian.icon.png", 
+                            "Triptych, showing St George, <br/>18-19th century, Gondar school, Ethiopia");
+
+               
+/*
    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
                             "wiki", 
                             "Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg", 
-                            "Battle of Lens (1648), <br/>2019, Pierre Franque, France");
-
-                            Collections-_-National-Museum-of-African-Art.png
-
-knight.png 12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg
+                            "Battle of Lens (1648), <br/>?, Pierre Franque, France");
+ 
      
     insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
                             "realbharat.org", 
@@ -6317,11 +6406,7 @@ knight.png 12th-century_unknown_painters_-_Hunt_of_the_Hare_-_WGA19758.jpg
                             "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
                             "Kittur Chennamma, <br/>2010 or earlier, India");
 
-      India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg 
-
-
-Terracotta_relief_probably_from_a_funnel_vase_MET_DP277926.jpg 
-
+      India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg
 
 
   insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
