@@ -6403,7 +6403,23 @@ function populate_images() {
                             "Ethiopian.triptych.Gondar.Museum.of.Russian.icon.png", 
                             "Triptych, showing St George, <br/>18-19th century, Gondar school, Ethiopia");
 
-               
+    insert_into_images("horsemen/AN00034587_001_l.jpg",
+                            "BM", 
+                            "466991", 
+                            "Terracotta female head partially imitating a vase (lekythos), <br/>325-300BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/AN00208815_001_l.jpg",
+                            "BM", 
+                            "463438", 
+                            "Pottery askos painted with a female head rising up from a flower, with terracotta statuettes of Erotes added above, <br/>cr. 310-290BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/E5648CR-d1.jpg",
+                            "MFA", 
+                            "154144", 
+                            "Askos with the monster Skylla, <br/>cr. 300 BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/AN00033248_001_l.jpg",
+                            "BM", 
+                            "399510", 
+                            "Askos with with three terracotta Nikai, the foreparts of two horses, reliefs showing the head of Medusa and a dancing maenad, <br/>cr. 270-200 BC, Canosa, Apulia, Italy");
+
 /*
    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
                             "wiki", 
