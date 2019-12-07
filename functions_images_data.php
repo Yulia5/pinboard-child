@@ -6437,7 +6437,7 @@ function populate_images() {
     insert_into_images("horsemen/Codex_Manesse_Heinrich_von_Breslau.jpg",
                             "wiki", 
                             "Codex_Manesse_Heinrich_von_Breslau.jpg", 
-                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+                            "A knight receiving a lady's favour at a tournament, illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
     insert_into_images("horsemen/Codex_Manesse_Hartmann_von_Aue.jpg",
                             "wiki", 
                             "Codex_Manesse_Hartmann_von_Aue.jpg", 
@@ -6466,6 +6466,23 @@ function populate_images() {
                             "wiki", 
                             "Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg", 
                             "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+
+    insert_into_images("horsemen/Rene_dAnjou_Livre_des_tournois.jpg",
+                            "wiki", 
+                            "Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Azzo_di_Masetto_-_Tournament_and_Hunting_Scenes_-_Google_Art_Project.jpg",
+                            "wiki", 
+                            "Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+
+
+     Jorg_Breu_Sr_Tournament.jpg Hausbuch_Wolfegg_21v_22r_Scharfrennen.jpg harley_ms_4205_f021v.jpg harley_ms_4205_f015v.jpg harley_ms_4205_f010r.jpg
+
+
+tour-ferrande103.jpg tour-ferrande101.jpg 01_1501.jpg Harley_MS_4431_knights_jousting_Pizan.png 
+
+e-codices_snm-SH000228_056_small.jpg tour-ferrande104.jpg
 
 /*
    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
