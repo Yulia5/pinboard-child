@@ -14,7 +14,7 @@ function generate_src() {
     insert_into_src("BM",       '© Trustees of the British Museum',             'http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=', '&partId=1'); 
     insert_into_src("LA",       'The Los Angeles County Museum of Art',         'http://collections.lacma.org/node/'); 
     insert_into_src("Getty",    'The J.Paul Getty Museum Open Contents Program','http://www.getty.edu/art/collection/objects/'); 
-    insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'http://www.mfa.org/collections/object/');  
+    insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'https://collections.mfa.org/objects/');  
     insert_into_src("WAM",      'The Walters Art Museum',                       'https://art.thewalters.org/detail/');    
     insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objekt-datenbank/detail/');
     insert_into_src("HAM",      'Harvard Art Museums',                          'http://www.harvardartmuseums.org/collections/object/');
@@ -5054,15 +5054,15 @@ function populate_images() {
     insert_into_images("horsemen/B_Valladolid_93.jpg",
                             "wiki", 
                             "B_Valladolid_93.jpg", 
-                            "Four Horsemen Of Apocalypse, illustration of 'Beato of Valcavado', <br/>970, Oveco, Palencia, Spain");  
+                            "Four Horsemen Of Apocalypse, illustration of 'Beato of Valcavado', <br/>970, Oveco, Palencia, Al-Andalus (now Spain)");  
     insert_into_images("horsemen/B_Facundus_240.jpg",
                             "wiki", 
                             "B_Facundus_240.jpg", 
-                            "Four Horsemen Of Heaven, illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Spain");  
+                            "Four Horsemen Of Heaven, illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Al-Andalus (now Spain)");  
     insert_into_images("horsemen/B_Facundus_135.jpg",
                             "wiki", 
                             "B_Facundus_135.jpg", 
-                            "Four Horsemen Of Apocalypse, illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Spain");  
+                            "Four Horsemen Of Apocalypse, illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Al-Andalus (now Spain)");  
     insert_into_images("horsemen/Barb372-100.png",
                             "Digital Vatican Library", 
                             "https://digi.vatlib.it/view/MSS_Barb.gr.372", 
@@ -6182,11 +6182,11 @@ function populate_images() {
                             "Battle of Bouvines, 1214, illustration to Chronica Majora, <br/>13th century, St. Albans, England");
     insert_into_images("horsemen/Cavaliere_Capodilista_vestito_di_giallo.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_%22;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%22;.jpg', 
+                            'Cavaliere_Capodilista_vestito_di_giallo_su_cavallo_vestito_di_azzurro_in_%22De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%22.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/Cavaliere_Capodilista_2.jpg",
                             "wiki", 
-                            'Cavaliere_Capodilista_2_in_%22;De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%22;.jpg', 
+                            'Cavaliere_Capodilista_2_in_%22De_viris_illustribus_familiae_Transelgardorum_Forzatè_et_Capitislistae%22.jpg', 
                             "Illustration to Codex Capodilista by Giovan Francesco Capodilista, 1433-1459, <br/>?, Padua, Italy");
     insert_into_images("horsemen/51ucBDK4RJL.jpg",
                             "amazon.com", 
@@ -6299,7 +6299,7 @@ function populate_images() {
      insert_into_images("horsemen/B_Facundus_174v.jpg",
                             "wiki", 
                             "B_Facundus_174v.jpg", 
-                            "Four Horsemen Of Apocalypse (Sixth trumpet scene), illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Spain");
+                            "Four Horsemen Of Apocalypse (Sixth trumpet scene), illustration of 'Beato of Valcavado', <br/>1047, Beato of Facundus, León, Al-Andalus (now Spain)");
     insert_into_images("horsemen/knight.png",
                             "wiki", 
                             "Cressac_16_Temple_Peinture_murale_Croisé_La_Bocquée_2014.JPG", 
@@ -6312,7 +6312,6 @@ function populate_images() {
                             "wiki", 
                             "Detajl_freske_v_cerkvi_sv._Štefana,_Zanigrad.jpg", 
                             "A knight, fresco, <br/>14th century, St. Stephen's Church, Zanigrad, Slovenia");
-
     insert_into_images("horsemen/KakasFotoThalerTamas.jpg",
                             "wiki", 
                             "KakasFotoThalerTamas.JPG", 
@@ -6419,6 +6418,54 @@ function populate_images() {
                             "BM", 
                             "399510", 
                             "Askos with with three terracotta Nikai, the foreparts of two horses, reliefs showing the head of Medusa and a dancing maenad, <br/>cr. 270-200 BC, Canosa, Apulia, Italy");
+    insert_into_images("horsemen/San_Baudelio_Frontal.jpg",
+                            "wiki", 
+                            "San_Baudelio_Frontal.jpg", 
+                            "Hermitage of San Baudelio, <br/>11th century, Casillas de Berlanga, Soria, Spain");
+    insert_into_images("horsemen/Der_von_Suonegge.jpg",
+                            "wiki", 
+                            "Der_von_Suonegge.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_Johann_von_Brabant.jpg",
+                            "wiki", 
+                            "Codex_Manesse_Johann_von_Brabant.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_Heinrich_von_Rugge.jpg",
+                            "wiki", 
+                            "Codex_Manesse_Heinrich_von_Rugge.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_Heinrich_von_Breslau.jpg",
+                            "wiki", 
+                            "Codex_Manesse_Heinrich_von_Breslau.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_Hartmann_von_Aue.jpg",
+                            "wiki", 
+                            "Codex_Manesse_Hartmann_von_Aue.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_Der_wilde_Alexander_f412r.jpg",
+                            "wiki", 
+                            "Codex_Manesse_Der_wilde_Alexander_f412r.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_397v_Durner.jpg",
+                            "wiki", 
+                            "Codex_Manesse_397v_Dürner.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_316v_Friedrich_der_Knecht.jpg",
+                            "wiki", 
+                            "Codex_Manesse_316v_Friedrich_der_Knecht.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_197v_Goesli_von_Ehenheim.jpg",
+                            "wiki", 
+                            "Codex_Manesse_197v_Goesli_von_Ehenheim.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_166v_Walther_von_Metze.jpg",
+                            "wiki", 
+                            "Codex_Manesse_166v_Walther_von_Metze.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+    insert_into_images("horsemen/Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg",
+                            "wiki", 
+                            "Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg", 
+                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
 
 /*
    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
