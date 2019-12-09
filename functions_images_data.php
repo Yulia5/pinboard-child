@@ -5647,7 +5647,7 @@ function populate_images() {
     insert_into_images("horsemen/RP-P-BI-6235AX-scaled.jpg",
                             "RJK", 
                             "RP-P-BI-6235AX", 
-                            "Charles the Bold, Mary of Burgundy, Maximilian I, Philip the Fair and Charles V, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
+                            "Charles the Bold, Mary of Burgundy, Maximilian I, Philip the Fair and future Charles V, <br/>1518, Jacob Cornelisz van Oostsanen, Amsterdam, Netherlands");
     insert_into_images("horsemen/RP-P-BI-6235A-scaled.jpg",
                             "RJK", 
                             "RP-P-BI-6235A", 
@@ -6467,22 +6467,86 @@ function populate_images() {
                             "Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg", 
                             "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
 
+    insert_into_images("horsemen/tour-ferrande101.jpg",
+                            "horizon-provence.com", 
+                            "https://www.horizon-provence.com/pernes-les-fontaines/index_english.htm", 
+                            "Frescoes illustrating the conquest of the Kingdom of Naples and Sicily by the Count of Provence Charles of Anjou, <br/>13th century, The Ferrande Tower, Pernes-les-Fontaines, Provence, France");
+    insert_into_images("horsemen/tour-ferrande103.jpg",
+                            "horizon-provence.com", 
+                            "https://www.horizon-provence.com/pernes-les-fontaines/index_english.htm", 
+                            "Frescoes illustrating the conquest of the Kingdom of Naples and Sicily by the Count of Provence Charles of Anjou, <br/>13th century, The Ferrande Tower, Pernes-les-Fontaines, Provence, France");
+    insert_into_images("horsemen/tour-ferrande104.jpg",
+                            "horizon-provence.com", 
+                            "https://www.horizon-provence.com/pernes-les-fontaines/index_english.htm", 
+                            "Frescoes illustrating the conquest of the Kingdom of Naples and Sicily by the Count of Provence Charles of Anjou, <br/>13th century, The Ferrande Tower, Pernes-les-Fontaines, Provence, France");
+    insert_into_images("horsemen/Azzo_di_Masetto_-_Tournament_and_Hunting_Scenes_-_Google_Art_Project_cropped.jpg",
+                            "wiki", 
+                            "Azzo_di_Masetto_-_Tournament_and_Hunting_Scenes_-_Google_Art_Project.jpg", 
+                            "Tournament scene, fresco, <br/>1289, Azzo di Masetto, Palazzo Comunale, San Gimignano, Italy");
+    insert_into_images("horsemen/Harley_MS_4431_knights_jousting_Pizan.png",
+                            "Wikipedia", 
+                            "https://en.wikipedia.org/wiki/File:Harley_MS_4431_knights_jousting_Pizan.png", 
+                            "Ladies watching knights jousting, illustrating 'Le Duc des vrais amants', from a collection of works presented in 1414 by Christine de Pizan to Isabeau of Bavaria, <br/>1410 - cr. 1414, Paris (?), France");
+    insert_into_images("horsemen/harley_ms_4205_f021v.jpg",
+                            "bl.uk", 
+                            "https://www.bl.uk/catalogues/illuminatedmanuscripts/record.asp?MSID=6579&CollID=8&NStart=4205", 
+                            "Illustration of Sir Thomas Holme's Book of Arms, <br/>cr. 1446, before 1448, London (?), South-East England");
+    insert_into_images("horsemen/harley_ms_4205_f015v.jpg",
+                            "bl.uk", 
+                            "https://www.bl.uk/catalogues/illuminatedmanuscripts/record.asp?MSID=6579&CollID=8&NStart=4205", 
+                            "Illustration of Sir Thomas Holme's Book of Arms, <br/>cr. 1446, before 1448, London (?), South-East England");
+    insert_into_images("horsemen/harley_ms_4205_f010r.jpg",
+                            "bl.uk", 
+                            "https://www.bl.uk/catalogues/illuminatedmanuscripts/record.asp?MSID=6579&CollID=8&NStart=4205", 
+                            "Illustration of Sir Thomas Holme's Book of Arms, <br/>cr. 1446, before 1448, London (?), South-East England");
     insert_into_images("horsemen/Rene_dAnjou_Livre_des_tournois.jpg",
                             "wiki", 
-                            "Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg", 
-                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
-    insert_into_images("horsemen/Azzo_di_Masetto_-_Tournament_and_Hunting_Scenes_-_Google_Art_Project.jpg",
+                            "René_d%27Anjou_Livre_des_tournois_France_Provence_XVe_siècle_Barthélemy_d%27Eyck.jpg", 
+                            "Illustration of Livre des tournois France Provence by René d'Anjou, <br/>cr. 1460, Barthélemy d'Eyck, Provence, France");
+    insert_into_images("horsemen/01_1501.jpg",
+                            "wga.hu", 
+                            "https://www.wga.hu/html_m/zgothic/miniatur/1501-550/4other/01_1501.html", 
+                            "Illustration of the Tournament Book (Ross 711), <br/>cr. 1500, German");
+    insert_into_images("horsemen/Hausbuch_Wolfegg_21v_22r_Scharfrennen.jpg",
                             "wiki", 
-                            "Codex_Manesse_073r_Ulrich_von_Gutenburg.jpg", 
-                            "Illustration of Codex Manesse, <br/>cr. 1304 or cr. 1340, Zürich, Switzerland");
+                            "Hausbuch_Wolfegg_21v_22r_Scharfrennen.jpg", 
+                            "Illustration of the Medieval House Book of Wolfegg Castle, <br/>cr. 1480, German");
+    insert_into_images("horsemen/e-codices_snm-SH000228_056_small.jpg",
+                            "e-codices.unifr.ch", 
+                            "http://www.e-codices.unifr.ch/en/snm/SH000228/56", 
+                            "Illustration of the Housebook of the Lords of Hallwil, <br/>second half of the 16th century, German (now Switzerland)");
+
+    insert_into_images("horsemen/inx960x640.jpg",
+                            "kompravda.eu", 
+                            "https://www.kompravda.eu/daily/27010.1/4073567/", 
+                            "Saint George on the facade of Polytechnic Museum, <br/>created in 1872, restaured in 2019, Moscow, Russia");   
+    insert_into_images("horsemen/Polytechnical_Museum_after_reconstruction.jpg",
+                            "wiki", 
+                            "Polytechnical_Museum_after_reconstruction.jpg", 
+                            "Facade of Polytechnic Museum, <br/>created in 1872, restaured in 2019, Moscow, Russia");
+    insert_into_images("horsemen/Saint_George-Blazon_of_Moscow-City_Hall-Tverskaya_str.13.jpg",
+                            "wiki", 
+                            "Saint_George-Blazon_of_Moscow-City_Hall-Tverskaya_str.,13.jpg", 
+                            "Saint George on the facade of New Moscow City Hall, <br/>1990s, Moscow, Russia");
+    insert_into_images("horsemen/2014_Moscow_city_hall.jpg",
+                            "wiki", 
+                            "2014_Moscow_city_hall_Мэрия_Москвы.JPG", 
+                            "New Moscow City Hall, <br/>created in 1782 by Matvey Kazakoff, restaured in 1990s, Moscow, Russia");
+
+    insert_into_images("horsemen/TripoliGreece6.jpg",
+                            "wiki", 
+                            "TripoliGreece6.jpg", 
+                            "Statue of Theodoros Kolokotronis, <br/>1993 (?), Tripoli, Greece");
+    insert_into_images("horsemen/Frizis_Chalkida_1.jpg",
+                            "wiki", 
+                            "Frizis_Chalkida_1.jpg", 
+                            "Statue of Mordechai Frizis, <br/>?, Chalcis, Greece");
+    insert_into_images("horsemen/panoramio.jpg",
+                            "wiki", 
+                            "Γεώργιος_Καραϊσκάκης,_Ζάππειο_-_panoramio.jpg", 
+                            "Statue of Georgios Karaiskakis, <br/>1966, Georgios Karaiskakis, Athens, Greece");
 
 
-     Jorg_Breu_Sr_Tournament.jpg Hausbuch_Wolfegg_21v_22r_Scharfrennen.jpg harley_ms_4205_f021v.jpg harley_ms_4205_f015v.jpg harley_ms_4205_f010r.jpg
-
-
-tour-ferrande103.jpg tour-ferrande101.jpg 01_1501.jpg Harley_MS_4431_knights_jousting_Pizan.png 
-
-e-codices_snm-SH000228_056_small.jpg tour-ferrande104.jpg
 
 /*
    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
