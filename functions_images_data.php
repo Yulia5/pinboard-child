@@ -2010,7 +2010,7 @@ function populate_images() {
     insert_into_images("horsemen/Rani-Jhansi-Statue-installed1.jpg", 
                             "Hill Post", 
                             "http://hillpost.in/2010/11/rani-jhansi-statue-installed-at-shimla/23050/", 
-                            "Statue of Rani of Jhansi, <br/>2010, Shimla, India");
+                            "Statue of Rani of Jhansi, <br/>2010, Fakir Chandra Parida, Shimla, India");
     insert_into_images("horsemen/Raphael_-_Saint_George_and_the_Dragon.jpg", 
                             "wiki", 
                             "Raphael_-_Saint_George_and_the_Dragon.jpg", 
@@ -2383,7 +2383,7 @@ function populate_images() {
     insert_into_images("horsemen/anita.jpg", 
                             "wiki", 
                             "20110327_Roma_Gianicolo_Anita_Garibaldi_-_foto_1.jpg", 
-                            "Anita Garibaldi Statue,<br/>1932, Rome");
+                            "Monument to Anita Garibaldi,<br/>1932, Mario Rutelli, Rome, Italy");
     insert_into_images("horsemen/armerina_horseman.jpg", 
                             "romehistory.co.uk", 
                             "http://romehistory.co.uk/VILLA/villaromanadelca.html", 
@@ -5483,18 +5483,18 @@ function populate_images() {
     insert_into_images("horsemen/YaqubLeisSaffaridStatue.jpg",
                             "quora.com", 
                             "https://www.quora.com/How-did-Iran-manage-to-retain-their-Persian-heritage-while-Egypt-and-Syria-became-mostly-Arabic", 
-                            "Statue of Yaqub Leis Saffarid, <br/>?, Dezful, Iran");
+                            "Statue of Ya'qub ibn al-Layth al-Saffar, <br/>?, Dezful, Iran");
     insert_into_images("horsemen/Sint-Joris_-_by_frank_wouters.jpg",
-                            "Sint-Joris_-_by_frank_wouters.jpg", 
                             "wiki", 
+                            "Sint-Joris_-_by_frank_wouters.jpg", 
                             "Statue of Saint George on top of Grote Markt 7 building, <br/>1893, Jef Lambeaux, Antwerp, Belgium");
     insert_into_images("horsemen/Meester_van_het_Mechelse_Sint-Jorisgilde_-_De_leden_van_het_gilde_van_de_grote_kruisboog_te_Mechelen_ca.1500_-_kmska_28-02-2010_13-43-37.jpg",
-                            "Meester_van_het_Mechelse_Sint-Jorisgilde_-_De_leden_van_het_gilde_van_de_grote_kruisboog_te_Mechelen_(ca.1500)_-_kmska_28-02-2010_13-43-37.jpg", 
-                            "wiki", 
+                             "wiki", 
+                           "Meester_van_het_Mechelse_Sint-Jorisgilde_-_De_leden_van_het_gilde_van_de_grote_kruisboog_te_Mechelen_(ca.1500)_-_kmska_28-02-2010_13-43-37.jpg", 
                             "The Members of the Guild of the Grand Crossbow, with their patron Saint George and two saints, Saint Rombout and Saint Libertus, <br/>1495-8, Mechelen, Belgium");
     insert_into_images("horsemen/LiZicheng.png",
-                            "李自成行宫.png", 
                             "wiki", 
+                            "李自成行宫.png", 
                             "Statue of Li Zicheng, <br/>?, Yulin, Shaanxi, China");
     insert_into_images("horsemen/3703319083_e91f5be725_b.jpg",
                             "acullador @ flickr", 
