@@ -6609,31 +6609,59 @@ function populate_images() {
                             "wiki", 
                             "Heim,_François-Joseph_-_Louis-Philippe_Opening_the_Galerie_des_Batailles_-_1837.jpg", 
                             "Louis-Philippe Opening the Galerie des Batailles (1837), <br/>1837, François Joseph Heim, Versailles, France");
-
+    insert_into_images("horsemen/QuijoteNubesChapultepec.jpg",
+                            "wiki", 
+                            "QuijoteNubesChapultepec.JPG", 
+                            "Don Quixote in the Clouds, <br/>1989, Chapultepec Park, Mexico City, Mexico");
+    insert_into_images("horsemen/Estatua_Ecuestre_de_Pedro_Ascencio_de_Alquisiras.jpg",
+                            "wiki", 
+                            "Estatua_Ecuestre_de_Pedro_Ascencio_de_Alquisiras.jpg", 
+                            "Statue of Pedro Ascencio Alquisiras, <br/>?, Martín Enríquez Loza, ?, Mexico");
+    insert_into_images("horsemen/Estatua_de_Pancho_Villa_en_el_Cerro_de_la_Bufa.jpg",
+                            "wiki", 
+                            "Estatua_de_Pancho_Villa_en_el_Cerro_de_la_Bufa.JPG", 
+                            "Statue of Pancho Villa, <br/>?, Bufa Hill, Zacatecas, Mexico");
+    insert_into_images("horsemen/StatueJoseSanMartinDF.jpeg",
+                            "wiki", 
+                            "StatueJoseSanMartinDF.JPG", 
+                            "Statue of José de San Martin, <br/>1973, after the statue of Louis Joseph Daumas (1862, Buenos Aires, Argentina), Mexico City, Mexico");
+    insert_into_images("horsemen/Don_Jose_Maria_Morelos.jpg",
+                            "wiki", 
+                            "Don_José_María_Morelos.jpg", 
+                            "Statue of José María Morelos, <br/>?, Morelos Park, La Mesa, Baja California, Mexico");
+    insert_into_images("horsemen/Zapata1.jpg",
+                            "wiki", 
+                            "Zapata1.jpg", 
+                            "Statue of Emiliano Zapata, <br/>?, Cuernavaca Morelos, Mexico");
+    insert_into_images("horsemen/zapata.jpg",
+                            "planoinformativo.com", 
+                            "https://planoinformativo.com/515405/conmemoran-aniversario-luctuoso-de-emiliano-zapata-slp", 
+                            "Statue of Emiliano Zapata, <br/>?, Soledad de Graciano Sánchez, Mexico");
+    insert_into_images("horsemen/mexi5370EZG.jpg",
+                            "planoinformativo.com", 
+                            "https://planoinformativo.com/515405/conmemoran-aniversario-luctuoso-de-emiliano-zapata-slp", 
+                            "Statue of José María Morelos, <br/>?, Toluca, Mexico");
+    insert_into_images("horsemen/31_big.jpg",
+                            "wikimapia.org", 
+                            "https://wikimapia.org/4294600/Statue-of-Emiliano-Zapata-Salazar", 
+                            "Statue of Emiliano Zapata, <br/>?, Culiacan, Mexico");
+    insert_into_images("horsemen/6591358649_c2469dd595_h.jpg",
+                            "acuarela08 @ flickr.com", 
+                            "https://www.flickr.com/photos/acuarela08/6591358649", 
+                            "Statue of Santiago Matamoros, <br/>?, Santiago de Querétaro, Querétaro, México");
+    insert_into_images("horsemen/13889907782_e95373d99f_b.jpg",
+                            "acuarela08 @ flickr.com", 
+                            "https://www.flickr.com/photos/acuarela08/6591358649", 
+                            "Statue of Emiliano Zapata, <br/>?, Culiacán, Sinaloa, México");
 
 /*
 
-Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg  IMG_0396.jpg BRIDAL_VEIL_FALLS.jpg  
+Charles_Le_Brun_Le_Passage_du_Granique_1665.png Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg Charles_Le_Brun_-_Banishment_of_Iliadore.jpeg Valenciennes_remportee_dassaut.jpg Prise_de_Saint-Omer.jpg Bataille_de_Cassel.jpg
 
+      6591358649_c2469dd595_h.jpg
 
+Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg  IMG_0396.jpg BRIDAL_VEIL_FALLS.jpg
 
-Edit | Delete Permanently | View
-Yulia V (Unattached)
-Attach  
-—No comments    58 seconds ago
-Select StatueJoseSanMartinDF    
-StatueJoseSanMartinDF
-File name:StatueJoseSanMartinDF.jpeg
-
-     
-
-
-    insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
-                            "vivirtlatelolco.blogspot.com", 
-                            "http://vivirtlatelolco.blogspot.com/2011/07/quien-es-el-senor-san-thiago-patrono-de.html", 
-                            "Equestrian statue of José de San Martín, <br/>1610, Miguel Mauricio, Temple of Tlatelolco, Mexico"); 
-
-
- */
+*/
 }
 ?>
