@@ -1995,9 +1995,9 @@ function populate_images() {
                             "wildwinds.com", 
                             "http://www.wildwinds.com/coins/greece/macedonia/kings/alexander_III/t.html", 
                             "Coin of Alexander the Great, <br/>cr. 320 BC");
-    insert_into_images("horsemen/RANI_LAXMIBAI_STATUE_VIEW_2_NEAR_SHIVRANJINI_AHMEDABAD_GUFRAN_KHAN.jpg", 
-                            "wiki", 
-                            "RANI_LAXMIBAI_STATUE_VIEW_2_NEAR_SHIVRANJINI,_AHMEDABAD_GUFRAN_KHAN.jpg", 
+    insert_into_images("horsemen/rani_junction.jpg", 
+                            "ahmedabadsale.com", 
+                            "http://www.ahmedabadsale.com/html/photos/Ahmedabad_City_Photographs/Shivranjani_S.G.Highway/1.html", 
                             "Statue of Rani of Jhansi, <br/>2013, Ahmedabad, India");
     insert_into_images("horsemen/RGM063.jpg", 
                             "wiki", 
@@ -5523,7 +5523,7 @@ function populate_images() {
     insert_into_images("horsemen/Laxmibais_statue_in_Solapur.jpeg",
                             "wiki", 
                             "Laxmibai%27s_statue_in_Solapur.JPG", 
-                            "Rani Lakshmibai's statue, <br/>Solapur, India");   
+                            "Statue of Rani Lakshmibai, <br/>?, Solapur, India");   
     insert_into_images("horsemen/Beram_Maria_im_Fels_-_Heiliger_Georg.jpg",
                             "wiki", 
                             "Beram_Maria_im_Fels_-_Heiliger_Georg.jpg", 
@@ -6545,7 +6545,38 @@ function populate_images() {
                             "wiki", 
                             "Γεώργιος_Καραϊσκάκης,_Ζάππειο_-_panoramio.jpg", 
                             "Statue of Georgios Karaiskakis, <br/>1966, Georgios Karaiskakis, Athens, Greece");
-
+    insert_into_images("horsemen/main-qimg-3879b9f05c3dcb054aa7abd992eb19e6.jpeg",
+                            "realbharat.org", 
+                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
+                            "Kittur Chennamma, <br/>2010 or earlier, India");
+    insert_into_images("horsemen/Chennamma_circle_hubli.jpg",
+                            "Wikipedia", 
+                            "https://en.wikipedia.org/wiki/File:Chennamma_circle_hubli.jpg", 
+                            "Statue of Kittur Chennamma, <br/>?, Ganesh and Prakash Patkar, Hubli, Karnataka, India");
+    insert_into_images("horsemen/India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2.jpg",
+                            "ES", 
+                            "chennamma-3", 
+                            "Statue of Kittur Chennamma, <br/>2008, Jasu Shilpi, Kakati, Karnataka, India");
+    insert_into_images("horsemen/Rani_Laxmi_Bai_Statue_At_Laxmi_Bai_National_University_of_Physical_Education_Gwalior_-_panoramio.jpg",
+                            "wiki", 
+                            "Rani_Laxmi_Bai_Statue_At_Laxmi_Bai_National_University_of_Physical_Education_Gwalior_-_panoramio.jpg", 
+                            "Statue of Rani Lakshmibai, <br/>2008, Laxmi Bai National University of Physical Education, Gwalior, India");
+    insert_into_images("horsemen/Statue_of_Maharani_Laxmi_Bai_Samadhi_Gwalior_-_panoramio.jpg",
+                            "wiki", 
+                            "Statue_of_Maharani_Laxmi_Bai_Samadhi_Gwalior_-_panoramio.jpg", 
+                            "Statue of Rani Lakshmibai, <br/>2006, Jasu Shilpi, Gwalior, India");
+    insert_into_images("horsemen/India-Jhansi-Lakshmibai-2.jpg",
+                            "ES", 
+                            "lakshmibai-rani-of-jhansi-6", 
+                            "Statue of Rani Lakshmibai, <br/>1995, Jhansi, Uttar Pradesh, India");
+    insert_into_images("horsemen/4101741327_7dd5a52ef0_b.jpg",
+                            "Kenneth John @ flickr.com", 
+                            "https://www.flickr.com/photos/23052799@N06/4101741327/", 
+                            "Statue of Rani Lakshmibai, <br/>?, Swarna Jayanti Park, Ghaziabad, Uttar Pradesh, India");
+    insert_into_images("horsemen/tumblr_n5c7n6qM2O1qi1raio1_1280.jpg",
+                            "rheadaniel @ tumblr.com", 
+                            "https://rheadaniel.tumblr.com/post/99625741455/", 
+                            "Rani Lakshmibai, <br/>2014, Rhea Daniel, Mumbai, India");
 
 
 /*
@@ -6553,16 +6584,11 @@ function populate_images() {
                             "wiki", 
                             "Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg", 
                             "Battle of Lens (1648), <br/>?, Pierre Franque, France");
- 
-     
-    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
-                            "realbharat.org", 
-                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
-                            "Kittur Chennamma, <br/>2010 or earlier, India");
-    insert_into_images("horsemen/rani-jhansi-GA64_l.jpg",
-                            "realbharat.org", 
-                            "https://www.realbharat.org/first-freedom-fighter-of-india-kittur-rani-chennamma/", 
-                            "Kittur Chennamma, <br/>2010 or earlier, India");
+
+
+
+Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg  IMG_0396.jpg BRIDAL_VEIL_FALLS.jpg 
+
 
       India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg
 
