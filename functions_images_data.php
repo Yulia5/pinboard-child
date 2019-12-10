@@ -6577,34 +6577,63 @@ function populate_images() {
                             "rheadaniel @ tumblr.com", 
                             "https://rheadaniel.tumblr.com/post/99625741455/", 
                             "Rani Lakshmibai, <br/>2014, Rhea Daniel, Mumbai, India");
-
-
-/*
+    insert_into_images("horsemen/Bataille-de-Mons-en-Pevele.jpg",
+                            "wiki", 
+                            "Bataille-de-Mons-en-Pévèle.jpg", 
+                            "Battle of Mons-en-Pévèle (1304), <br/>cr. 1839, Charles-Philippe Larivière, Galerie des Batailles, Versailles, France");
+    insert_into_images("horsemen/HeimBattleRocroy.jpg",
+                            "wiki", 
+                            "HeimBattleRocroy.jpg", 
+                            "Battle of Rocroi (1643), <br/>cr. 1834, François Joseph Heim, Galerie des Batailles, Versailles, France");
    insert_into_images("horsemen/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
                             "wiki", 
                             "Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg", 
-                            "Battle of Lens (1648), <br/>?, Pierre Franque, France");
-
-
-
-Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg  IMG_0396.jpg BRIDAL_VEIL_FALLS.jpg 
-
-
-      India-Gwalior-Lakshmibai-9-768x1024.jpg India-Gwalior-Lakshmibai-2-4-1024x768.jpg India-Belgaum-region-Kitturu-Chennamma-in-Kakati-2-1024x768.jpg India-Agra-Lakshmibai-10-1024x807.jpg
-
-
-  insert_into_images("horsemen/Francesco_fanelli_san_giorgio_bronzo_dorato_XVII_sec.jpg",
+                            "Battle of Lens (1648), <br/>cr. 1835, Pierre Franque, Galerie des Batailles, Versailles, France");
+    insert_into_images("horsemen/LariviereBatailleDunes.jpg",
                             "wiki", 
-                            "Francesco_fanelli,_san_giorgio,_bronzo_dorato,_XVII_sec.JPG", 
-                            "Saint George, <br/>cr. 1600-41, Francesco Fanelli, Italy/England");
+                            "LariviereBatailleDunes.jpg", 
+                            "Battle of the Dunes at the siege of Dunkirk (1658), <br/>1837, Charles-Philippe Larivière, Galerie des Batailles, Versailles, France");
+    insert_into_images("horsemen/Vendome-and-PhilipV.jpg",
+                            "wiki", 
+                            "Vendome-and-PhilipV.jpg", 
+                            "Battle of Villaviciosa (1710), <br/>1836, Jean Alaux, Galerie des Batailles, Versailles, France");
+    insert_into_images("horsemen/Bataille_de_Fleurus_1794.jpeg",
+                            "wiki", 
+                            "Bataille_de_Fleurus_1794.JPG", 
+                            "Battle of Fleurus (1794), <br/>1837, Jean-Baptiste Mauzaisse, Galerie des Batailles, Versailles, France");
+    insert_into_images("horsemen/Iena.jpg",
+                            "wiki", 
+                            "Iena.jpg", 
+                            "Battle of Jena (1806), <br/>1836, Horace Vernet, Galerie des Batailles, Versailles, France");
+    insert_into_images("horsemen/Heim_Francois-Joseph_-_Louis-Philippe_Opening_the_Galerie_des_Batailles_-_1837.jpg",
+                            "wiki", 
+                            "Heim,_François-Joseph_-_Louis-Philippe_Opening_the_Galerie_des_Batailles_-_1837.jpg", 
+                            "Louis-Philippe Opening the Galerie des Batailles (1837), <br/>1837, François Joseph Heim, Versailles, France");
+
+
+/*
+
+Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg  IMG_0396.jpg BRIDAL_VEIL_FALLS.jpg  
+
+
+
+Edit | Delete Permanently | View
+Yulia V (Unattached)
+Attach  
+—No comments    58 seconds ago
+Select StatueJoseSanMartinDF    
+StatueJoseSanMartinDF
+File name:StatueJoseSanMartinDF.jpeg
+
+     
+
+
     insert_into_images("horsemen/16590282550_5c6e1166ee_o.jpg", 
                             "vivirtlatelolco.blogspot.com", 
                             "http://vivirtlatelolco.blogspot.com/2011/07/quien-es-el-senor-san-thiago-patrono-de.html", 
                             "Equestrian statue of José de San Martín, <br/>1610, Miguel Mauricio, Temple of Tlatelolco, Mexico"); 
 
 
-QuijoteNubesChapultepec.jpg
-Estatua_Ecuestre_de_Pedro_Ascencio_de_Alquisiras.jpg
-Estatua_de_Pancho_Villa_en_el_Cerro_de_la_Bufa.jpg */
+ */
 }
 ?>
