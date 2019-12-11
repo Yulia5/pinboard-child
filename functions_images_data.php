@@ -6638,8 +6638,8 @@ function populate_images() {
                             "https://planoinformativo.com/515405/conmemoran-aniversario-luctuoso-de-emiliano-zapata-slp", 
                             "Statue of Emiliano Zapata, <br/>?, Soledad de Graciano Sánchez, Mexico");
     insert_into_images("horsemen/mexi5370EZG.jpg",
-                            "planoinformativo.com", 
-                            "https://planoinformativo.com/515405/conmemoran-aniversario-luctuoso-de-emiliano-zapata-slp", 
+                            "travelbymexico.com", 
+                            "http://en.travelbymexico.com/toluca/places-to-visit/?nom=ktolteatromorelos", 
                             "Statue of José María Morelos, <br/>?, Toluca, Mexico");
     insert_into_images("horsemen/31_big.jpg",
                             "wikimapia.org", 
@@ -6650,15 +6650,14 @@ function populate_images() {
                             "https://www.flickr.com/photos/acuarela08/6591358649", 
                             "Statue of Santiago Matamoros, <br/>?, Santiago de Querétaro, Querétaro, México");
     insert_into_images("horsemen/13889907782_e95373d99f_b.jpg",
-                            "acuarela08 @ flickr.com", 
-                            "https://www.flickr.com/photos/acuarela08/6591358649", 
-                            "Statue of Emiliano Zapata, <br/>?, Culiacán, Sinaloa, México");
+                            "Peter Bogdanovich @ flickr.com", 
+                            "https://www.flickr.com/photos/110822877@N06/13889907782", 
+                            "Statue of Emiliano Zapata, <br/>1985 (?), Tulancingo, Hidalgo, Mexico");
 
 /*
 
 Charles_Le_Brun_Le_Passage_du_Granique_1665.png Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg Charles_Le_Brun_-_Banishment_of_Iliadore.jpeg Valenciennes_remportee_dassaut.jpg Prise_de_Saint-Omer.jpg Bataille_de_Cassel.jpg
 
-      6591358649_c2469dd595_h.jpg
 
 Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg  IMG_0396.jpg BRIDAL_VEIL_FALLS.jpg
 
