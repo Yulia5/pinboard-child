@@ -6661,11 +6661,30 @@ function populate_images() {
                             "Rua dos Navegantes", 
                             "http://ruadosnavegantes.blogspot.com/2011/05/estatua-que-veio-de-macau-para-lisboa.html", 
                             "Statue of João Maria Ferreira do Amaral, <br/>1935, Maximiano Alves, Portugal");
-    
+    insert_into_images("horsemen/Elazig2.jpeg",
+                            "wiki", 
+                            "Elazığ2.JPG", 
+                            "Statue of Belek Ghazi, <br/>1964, Nurettin Orhan, Elazig, Turkey");
+    insert_into_images("horsemen/1911326323850.jpg",
+                            "musilgazetesi.com", 
+                            "http://musilgazetesi.com/haber/akkus-birlik-ve-beraberlik-mesaji-verdi--24193.html", 
+                            "Statue of Sultan Alp Arslan, <br/>?, Malazgirt, Turkey");
+    insert_into_images("horsemen/5c895100b81a771347b3655a007fa6fa.jpg",
+                            "aydindenge.com.tr", 
+                            "http://www.aydindenge.com.tr/guncel/27/08/2013/aydin-sultan-alparslanla-saha-kalkti/galeri/2", 
+                            "Statue of Sultan Alp Arslan, <br/>2013, Mustafa Tunçay, Aydin, Turkey");
+    insert_into_images("horsemen/32_big.jpg",
+                            "wikimapia.org", 
+                            "http://wikimapia.org/8254727/Statue-of-Atat%C3%BCrk", 
+                            "Statue of Mustafa Kemal Atatürk, <br/>?, Bodrum, Turkey");
+    insert_into_images("horsemen/south_africa.jpg",
+                            "boerenbrit.com", 
+                            "https://www.boerenbrit.com/archives/34915", 
+                            "Statue of Christiaan de Wet, <br/>1954, Coert Steynberg, Bloemfontein, Turkey");
+
 /*
 
 Charles_Le_Brun_Le_Passage_du_Granique_1665.png Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg Charles_Le_Brun_-_Banishment_of_Iliadore.jpeg Valenciennes_remportee_dassaut.jpg Prise_de_Saint-Omer.jpg Bataille_de_Cassel.jpg
-
 
 Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg   
 
