@@ -1202,7 +1202,7 @@ function populate_images() {
     insert_into_images("horsemen/Absalon_statue.jpg", 
                             "wiki", 
                             "Absalon_statue.jpg", 
-                            "Statue of Absalon, <br/>1902, Copenhage, Denmark");
+                            "Statue of Absalon, <br/>1902, Vilhelm Bissen, Copenhagen, Denmark");
     insert_into_images("horsemen/AdamclisiMetope.jpg", 
                             "wiki", 
                             "AdamclisiMetope.jpg", 
@@ -1826,7 +1826,7 @@ function populate_images() {
     insert_into_images("horsemen/Macedonia-02786_-_Warrior_on_a_Horse_10904983734.jpg", 
                             "wiki", 
                             "Macedonia-02786_-_Warrior_on_a_Horse_(10904983734).jpg", 
-                            "Warrior on a Horse, <br/>2014, Skopje, Macedonia");
+                            "Warrior on a Horse (detail), <br/>2011, Valentina Stevanovska, Skopje, Macedonia");
     insert_into_images("horsemen/Madame_La_Comtesse_de_Saint_Geran.jpg", 
                             "wiki", 
                             "Ryttarporträtt_på_Madame_La_Comtesse_de_Saint_Geran,_1670-tal_-_Livrustkammaren_-_100377.tif", 
@@ -5499,7 +5499,7 @@ function populate_images() {
     insert_into_images("horsemen/3703319083_e91f5be725_b.jpg",
                             "acullador @ flickr", 
                             "https://www.flickr.com/photos/acullador/3703319083", 
-                            "Statue of Gabriela Silang, <br/>1971, Manila, Philippines");
+                            "Statue of Gabriela Silang, <br/>1971, José M. Mendoza, Makati City, Philippines");
     insert_into_images("horsemen/St_George_Melbourne.jpg",
                             "wiki", 
                             "St_George_Melbourne.jpg", 
@@ -6681,8 +6681,18 @@ function populate_images() {
                             "boerenbrit.com", 
                             "https://www.boerenbrit.com/archives/34915", 
                             "Statue of Christiaan de Wet, <br/>1954, Coert Steynberg, Bloemfontein, Turkey");
+    insert_into_images("horsemen/Macedonia_Square_Skopje_NMK.jpg",
+                            "wiki", 
+                            "Macedonia_Square,_Skopje,_NMK.jpg", 
+                            "Warrior on a Horse, <br/>2011, Valentina Stevanovska, Skopje, Macedonia");
+    insert_into_images("horsemen/Guerrero_a_caballo_Skopie_Macedonia_2014-04-17_DD_109.jpg",
+                            "wiki", 
+                            "Guerrero_a_caballo,_Skopie,_Macedonia,_2014-04-17,_DD_109.JPG", 
+                            "Warrior on a Horse, <br/>2011, Valentina Stevanovska, Skopje, Macedonia");
 
 /*
+
+
 
 Charles_Le_Brun_Le_Passage_du_Granique_1665.png Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg Charles_Le_Brun_-_Banishment_of_Iliadore.jpeg Valenciennes_remportee_dassaut.jpg Prise_de_Saint-Omer.jpg Bataille_de_Cassel.jpg
 
