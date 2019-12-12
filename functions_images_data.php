@@ -62,7 +62,7 @@ function populate_images() {
     insert_into_images("horsemen/001Bratislava_Kral_Svatopluk1.jpg", 
                             "wiki", 
                             "001Bratislava_Kral_Svatopluk1.jpg", 
-                            "Statue of Svatopluk, <br/>2010, Bratislava, Slovakia");
+                            "Statue of Svätopluk, <br/>2010, Ján Kulich, Bratislava, Slovakia");
     insert_into_images("horsemen/01-016323.jpg", 
                             "RMN", 
                             "01-016323-2C6NU0GWWZZP", 
