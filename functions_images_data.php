@@ -6689,10 +6689,43 @@ function populate_images() {
                             "wiki", 
                             "Guerrero_a_caballo,_Skopie,_Macedonia,_2014-04-17,_DD_109.JPG", 
                             "Warrior on a Horse, <br/>2011, Valentina Stevanovska, Skopje, Macedonia");
-
+    insert_into_images("horsemen/gabriela.png",
+                            "kapisanancentre.com", 
+                            "http://www.kapisanancentre.com/blog/2013/04/25/clutch-vol-5-fight-like-a-girl", 
+                            "Gabriela Silang fighting against Spanish forces, <br/>?, Francisco V. Coching (1919 – 1998), Philippines");
+    insert_into_images("horsemen/main-qimg-4324ec7a70f3f798af7885cd3376af74.jpeg",
+                            "liberationnews.org", 
+                            "https://www.liberationnews.org/07-04-27-gabriela-silang-anticolonial-f-html/", 
+                            "Gabriela Silang fighting against Spanish forces, <br/>?, Philippines");
+    insert_into_images("horsemen/David_of_Sasun_Yerevan.jpg",
+                            "wiki", 
+                            "David_of_Sasun_Yerevan.jpg", 
+                            "Statue of David of Sassoun, <br/>1959, Yervand Kochar, Yerevan, Armenia");
+    insert_into_images("horsemen/Sasuntsi_Davit__Relief.jpg",
+                            "wiki", 
+                            "%20Sasuntsi_Davit%20_Relief.jpg", 
+                            "Relief showing David of Sassoun, <br/>?, Artashes Hovsepyan, Cafesjian Center for the Arts, Armenia");
+    insert_into_images("horsemen/Hakob_Kojoyan._David_of_Sassoun.jpg",
+                            "wiki", 
+                            "Hakob_Kojoyan._David_of_Sassoun.jpg", 
+                            "David of Sassoun, <br/>1922, Hakob Kojoyan, Armenia");
+    insert_into_images("horsemen/07932.jpg",
+                            "UNESCO Intangible Cultural Heritage", 
+                            "https://ich.unesco.org/en/RL/performance-of-the-armenian-epic-of-daredevils-of-sassoun-or-david-of-sassoun-00743", 
+                            "David of Sassoun, <br/>2012 or earlier, 13 years-old Armen Adyan, Armenia");
+    insert_into_images("horsemen/lira.png",
+                            "Numista", 
+                            "https://en.numista.com/catalogue/pieces1339.html", 
+                            "5 Lira large type showing Atatürk on horseback on obverse, <br/>minted in 1974-1979, Turkey");
+    insert_into_images("horsemen/RP-P-OB-1140-scaled.jpg",
+                            "RJK", 
+                            "RP-P-OB-1140", 
+                            "Fight between two wild men on horseback, <br/>1455 - 1503, Israhel van Meckenem, after Meester of the Amsterdam Cabinet, Bocholt, Germany");
+    insert_into_images("horsemen/RP-P-OB-915-scaled.jpg",
+                            "RJK", 
+                            "RP-P-OB-915", 
+                            "Wild woman on a unicorn, <br/>1473 - 1477, Israhel van Meckenem, Master of the Amsterdam Cabinet, Germany");
 /*
-
-
 
 Charles_Le_Brun_Le_Passage_du_Granique_1665.png Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg Charles_Le_Brun_-_Banishment_of_Iliadore.jpeg Valenciennes_remportee_dassaut.jpg Prise_de_Saint-Omer.jpg Bataille_de_Cassel.jpg
 
