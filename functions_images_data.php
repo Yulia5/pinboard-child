@@ -2163,10 +2163,6 @@ function populate_images() {
                             "wiki", 
                             "Statue_Eugenio_of_Savoy_Heldenplatz_Vienna_Austria.jpg", 
                             "Statue of Prince Eugene of Savoy, <br/>1865, Vienna");
-    insert_into_images("horsemen/Statue_Eugenio_of_Savoy_Heldenplatz_Vienna_Austria.jpg", 
-                            "wiki", 
-                            "Statue_Eugenio_of_Savoy_Heldenplatz_Vienna_Austria.jpg", 
-                            "Statue of Prince Eugene of Savoy, <br/>1865, Vienna");
     insert_into_images("horsemen/Stele_funeraire_du_soldat_Comnisca_sept_2013_01.jpg", 
                             "wiki", 
                             "Stèle_funéraire_du_soldat_Comnisca_sept_2013_01.jpg", 
@@ -5812,10 +5808,10 @@ function populate_images() {
                             "fineartamerica.com", 
                             "https://fineartamerica.com/featured/the-expulsion-of-heliodorus-from-the-temple-bernardo-cavallino.html", 
                             "Expulsion Of Heliodorus From The Temple, <br/>cr. 1650, Bernardo Cavallino, Naples, Italy");
-    insert_into_images("horsemen/louvre-heliodore-chasse-temple.jpg",
+    insert_into_images("horsemen/Francesco_Solimena_-_Cacciata_di_Eliodoro_dal_Tempio.jpg",
                             "wiki", 
-                            "Francesco_Solimena_-_Expulsion_of_Heliodorus_from_the_Temple_-_WGA21625.jpg", 
-                            "Expulsion of Heliodorus from the Temple, <br/>cr. 1725, Francesco Solimena, Naples, Italy");
+                            "Francesco_Solimena_-_Cacciata_di_Eliodoro_dal_Tempio.JPG", 
+                            "Expulsion of Heliodorus from the Temple (fresco), <br/>cr. 1725, Francesco Solimena, Naples, Italy");
     insert_into_images("horsemen/Eugene_Delacroix_-_Heliodoros_Driven_from_the_Temple_-_WGA06222.jpg",
                             "wiki", 
                             "Eugène_Delacroix_-_Heliodoros_Driven_from_the_Temple_-_WGA06222.jpg", 
@@ -6703,7 +6699,7 @@ function populate_images() {
                             "Statue of David of Sassoun, <br/>1959, Yervand Kochar, Yerevan, Armenia");
     insert_into_images("horsemen/Sasuntsi_Davit__Relief.jpg",
                             "wiki", 
-                            "%20Sasuntsi_Davit%20_Relief.jpg", 
+                            "%22Sasuntsi_Davit%22_Relief.jpg", 
                             "Relief showing David of Sassoun, <br/>?, Artashes Hovsepyan, Cafesjian Center for the Arts, Armenia");
     insert_into_images("horsemen/Hakob_Kojoyan._David_of_Sassoun.jpg",
                             "wiki", 
@@ -6725,12 +6721,43 @@ function populate_images() {
                             "RJK", 
                             "RP-P-OB-915", 
                             "Wild woman on a unicorn, <br/>1473 - 1477, Israhel van Meckenem, Master of the Amsterdam Cabinet, Germany");
+    insert_into_images("horsemen/Charles_Le_Brun_Le_Passage_du_Granique_1665.png",
+                            "wiki", 
+                            "Charles_Le_Brun,_Le_Passage_du_Granique,_1665.png", 
+                            "Le Passage du Granique, <br/>1665, Charles Le Brun, Paris, France");
+    insert_into_images("horsemen/Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg",
+                            "wiki", 
+                            "Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg", 
+                            "Alexander and Porus, <br/>1665, Charles Le Brun, Paris, France");
+    insert_into_images("horsemen/Charles_Le_Brun_-_Expulsion_Of_Heliodorus-scaled.jpeg",
+                            "wiki", 
+                            "Charles_Le_Brun_-_Banishment_of_Iliadore.JPG", 
+                            "Expulsion Of Heliodorus, <br/>before 1690, Charles Le Brun, Paris, France");
+    insert_into_images("horsemen/Valenciennes_remportee_dassaut.jpg",
+                            "wiki", 
+                            "Valenciennes_remportée_d%27assaut.jpg", 
+                            "Regaining Valenciennes, <br/>1720, Louis Surugue after Van der Meulen and Charles Le Brun, Paris, France");
+    insert_into_images("horsemen/Prise_de_Saint-Omer.jpg",
+                            "wiki", 
+                            "Prise_de_Saint-Omer.jpg", 
+                            "Battle of Saint-Omer, <br/>1720, Louis Surugue after Van der Meulen and Charles Le Brun, Paris, France");
+    insert_into_images("horsemen/Bataille_de_Cassel.jpg",
+                            "wiki", 
+                            "Bataille_de_Cassel.jpg", 
+                            "Battle of Cassel, <br/>1720, Louis Surugue after Van der Meulen and Charles Le Brun, Paris, France");
+    insert_into_images("horsemen/Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg",
+                            "wiki", 
+                            "Valdivia,_Villagra_y_Alderete_segun_Ovalle.JPG", 
+                            "Pedro de Valdivia, illustration to 'Historical relationship of the Kingdom de Chile and the missions and misteries exercised by the Society of Jesus' by Alonso de Ovalle <br/>1646, Chile");
+    insert_into_images("horsemen/Gamboa_Sarvia_y_sotomayor.jpeg",
+                            "wiki", 
+                            "Gamboa,_Sarvia_y_sotomayor.JPG", 
+                            "Martín Ruiz de Gamboa, Melchor Bravo de Saravia and Alonso de Sotomayor, Spanish conquistadors, illustration to 'Historical relationship of the Kingdom de Chile and the missions and misteries exercised by the Society of Jesus' by Alonso de Ovalle, <br/>1646, Chile");
+    insert_into_images("horsemen/Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg",
+                            "wiki", 
+                            "Batalla_ente_españoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg", 
+                            "Battle between Spaniards and Mapuches during the Arauco War, illustration to 'Tabula geographica Regni Chile' by Alonso de Ovalle, <br/>1646, Chile");
 /*
-
-Charles_Le_Brun_Le_Passage_du_Granique_1665.png Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg Charles_Le_Brun_-_Banishment_of_Iliadore.jpeg Valenciennes_remportee_dassaut.jpg Prise_de_Saint-Omer.jpg Bataille_de_Cassel.jpg
-
-Valdivia_Villagra_y_Alderete_segun_Ovalle.jpeg   Gamboa_Sarvia_y_sotomayor.jpeg Batalla_ente_espanoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg   
-
 */
 }
 ?>
