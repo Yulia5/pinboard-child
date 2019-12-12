@@ -6766,6 +6766,87 @@ function populate_images() {
                             "wiki", 
                             "Lucas_Cranach_d.Ä._-_Der_heilige_Georg_im_Kampf_mit_dem_Drachen_(Vienna).jpg", 
                             "Saint George Fighting the Dragon, <br/>cr. 1510-20, workshop of Lucas Cranach the Elder, Germany");
+insert_into_images("horsemen/ikmk_coin_18201481.jpg", 
+                            "ikmk", 
+                            "18201481", 
+                            "As showing the emperor on horseback on reverse, <br/>minted in 350 AD under Nepotianus, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18204280.jpg", 
+                            "ikmk", 
+                            "18204280", 
+                            " showing  on horseback on reverse, <br/>minted in  under , Roman Republic Empire");
+insert_into_images("horsemen/ikmk_coin_18201471.jpg", 
+                            "ikmk", 
+                            "18201471", 
+                            "As showing the emperor on horseback on reverse, <br/>minted in 350-351 AD under Magnentius, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18236941.jpg", 
+                            "ikmk", 
+                            "18236941", 
+                             "As showing a horseman on reverse, <br/>minted in 27 BC-14 AD under Augustus, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18236949.jpg", 
+                            "ikmk", 
+                            "18236949", 
+                            "As showing a horseman on reverse, <br/>minted in 27 BC-14 AD under Augustus, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18230064.jpg", 
+                            "ikmk", 
+                            "18230064", 
+                            "Sestertius showing Titus on horseback on reverse, <br/>minted in 72-73 AD under Titus, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18219808.jpg", 
+                            "ikmk", 
+                            "18219808", 
+                            "Sestertius showing an equestrian statue on reverse, <br/>minted in 42-43 AD under Claudius, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18236701.jpg", 
+                            "ikmk", 
+                            "18236701", 
+                            "Solidus showing Crispus on horseback on reverse, <br/>minted in 324-325 AD under Constantine I, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18201473.jpg", 
+                            "ikmk", 
+                            "18201473", 
+                            "As showing the emperor on horseback on reverse, <br/>minted in 350-351 AD under Magnentius, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18204280.jpg", 
+                            "ikmk", 
+                            "18204280", 
+                            "Aureus showing the emperor on horseback on reverse, <br/>minted in 166 AD under Lucius Verus, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18232830.jpg", 
+                            "ikmk", 
+                            "18232830", 
+                            "Sestertius showing the emperor on horseback on reverse, <br/>minted in 87 AD under Domitian, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18220883.jpg", 
+                            "ikmk", 
+                            "18220883", 
+                            "Sestertius showing Nero on horseback on reverse, <br/>minted in 64 AD under Nero, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18250418.jpg", 
+                            "ikmk", 
+                            "18250418", 
+                            "As showing Magnentius on horseback on reverse, <br/>minted in 350-351 under Magnentius, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18201363.jpg", 
+                            "ikmk", 
+                            "18201363", 
+                            "Denarius showing a horseman on reverse, <br/>minted in 116-115 BC, Roman Republic");
+insert_into_images("horsemen/ikmk_coin_18201547.jpg", 
+                            "ikmk", 
+                            "18201547", 
+                            "Denarius showing a horseman on horseback on reverse, <br/>minted in 90 BC, Roman Republic");
+insert_into_images("horsemen/ikmk_coin_18201832.jpg", 
+                            "ikmk", 
+                            "18201832", 
+                            "Denarius showing a horseman on horseback on reverse, <br/>minted in 67 BC, Roman Republic");
+insert_into_images("horsemen/ikmk_coin_18201843.jpg", 
+                            "ikmk", 
+                            "18201843", 
+                            "Denarius showing an equestrian statue on reverse, <br/>minted in 56 BC, Roman Republic");
+insert_into_images("horsemen/ikmk_coin_18206785.jpg", 
+                            "ikmk", 
+                            "18206785", 
+                            "Aureus showing Augustus on horseback on reverse, <br/>minted in 32-29 BC under Augustus, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18202573.jpg", 
+                            "ikmk", 
+                            "18202573", 
+                            "Aureus showing Augustus on horseback on reverse, <br/>minted in 8 BC under Augustus, Roman Empire");
+insert_into_images("horsemen/ikmk_coin_18231792.jpg", 
+                            "ikmk", 
+                            "18231792", 
+                            "Aureus showing Domitian on horseback on reverse, <br/>minted in 73-75 AD under Vespasian, Roman Republic Empire");
+
 /* 
 
  1-45.jpg iStock-614121224.jpg 1184426265.jpg 1158546957.jpg 
