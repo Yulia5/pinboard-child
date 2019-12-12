@@ -26,7 +26,8 @@ function generate_src() {
     insert_into_src("Prado",    'Museo del Prado',                              'https://www.museodelprado.es/en/the-collection/art-work/');
     insert_into_src("Seals",    'Seals @ mernick.org.uk/seals',                 'http://www.mernick.org.uk/seals/');   
     insert_into_src("numisbids",'NumisBids',                                    'https://www.numisbids.com/n.php?p=lot&');    
-    insert_into_src("moneta",   'Монеты России (Coins of Russia)',              'http://moneta-russia.ru/');    
+    insert_into_src("moneta",   'Монеты России (Coins of Russia)',              'http://moneta-russia.ru/');   
+    insert_into_src("numista",  'Numista',                                      'https://en.numista.com/catalogue/', '.html');   
     insert_into_src("ikmk",     'Munzkabinett, Staatliche Museen zu Berlin',    'http://ikmk.smb.museum/object?lang=en&id='); 
     insert_into_src("RJK",      'Rijksmuseum Amsterdam',                        'https://www.rijksmuseum.nl/en/collection/');
     insert_into_src("MLM",      "The Morgan Library And Museum",                'https://www.themorgan.org/drawings/item/');
@@ -6710,8 +6711,8 @@ function populate_images() {
                             "https://ich.unesco.org/en/RL/performance-of-the-armenian-epic-of-daredevils-of-sassoun-or-david-of-sassoun-00743", 
                             "David of Sassoun, <br/>2012 or earlier, 13 years-old Armen Adyan, Armenia");
     insert_into_images("horsemen/lira.png",
-                            "Numista", 
-                            "https://en.numista.com/catalogue/pieces1339.html", 
+                            "numista", 
+                            "pieces1339", 
                             "5 Lira large type showing Atatürk on horseback on obverse, <br/>minted in 1974-1979, Turkey");
     insert_into_images("horsemen/RP-P-OB-1140-scaled.jpg",
                             "RJK", 
@@ -6724,7 +6725,7 @@ function populate_images() {
     insert_into_images("horsemen/Charles_Le_Brun_Le_Passage_du_Granique_1665.png",
                             "wiki", 
                             "Charles_Le_Brun,_Le_Passage_du_Granique,_1665.png", 
-                            "Le Passage du Granique, <br/>1665, Charles Le Brun, Paris, France");
+                            "Battle of the Granicus, <br/>1665, Charles Le Brun, Paris, France");
     insert_into_images("horsemen/Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg",
                             "wiki", 
                             "Charles_Le_Brun_-_Alexander_and_Porus_-_WGA12530.jpg", 
@@ -6757,7 +6758,19 @@ function populate_images() {
                             "wiki", 
                             "Batalla_ente_españoles_y_mapuches_-_por_Alonso_de_Ovalle.jpg", 
                             "Battle between Spaniards and Mapuches during the Arauco War, illustration to 'Tabula geographica Regni Chile' by Alonso de Ovalle, <br/>1646, Chile");
-/*
+    insert_into_images("horsemen/crown_1935.png",
+                            "numista", 
+                            "pieces10337", 
+                            "One Crown commemorating George V Silver Jubilee showing St. George on horseback on reverse, <br/>minted in 1935, United Kingdom");
+    insert_into_images("horsemen/Lucas_Cranach_d.A._-_Der_heilige_Georg_im_Kampf_mit_dem_Drachen_Vienna.jpg",
+                            "wiki", 
+                            "Lucas_Cranach_d.Ä._-_Der_heilige_Georg_im_Kampf_mit_dem_Drachen_(Vienna).jpg", 
+                            "Saint George Fighting the Dragon, <br/>cr. 1510-20, workshop of Lucas Cranach the Elder, Germany");
+/* 
+
+ 1-45.jpg iStock-614121224.jpg 1184426265.jpg 1158546957.jpg 
+  
+ Wise10.1_Fig.03.jpg  Stgeorge-dragon.jpg Saint_George_Arsen_Birch.png Saint_George_Adrian_Buba.png Olaf_Rude_1918_Sankt_Georg.jpg Modernist-Art-Deco-Style-Painting-of-St_-George-and-the-Dragon-Signed-Dana.png
 */
 }
 ?>
