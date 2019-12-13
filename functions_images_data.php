@@ -6858,11 +6858,36 @@ insert_into_images("horsemen/pieces34406.png",
                             "numista", 
                             "pieces34406", 
                             "Denarius showing Dioscuri brothers on horseback on reverse, <br/>minted in 136 BC, Roman Republic");
+insert_into_images("horsemen/Wise10.1_Fig.03.jpg", 
+                            "jhna.org", 
+                            "https://jhna.org/articles/cycles-memory-circular-compassion-germanic-passion-diptych/", 
+                            "Saint George and the dragon, <br/>cr. 1470, southern Germany");
+insert_into_images("horsemen/Stgeorge-dragon.jpg", 
+                            "wiki", 
+                            "Stgeorge-dragon.jpg", 
+                            "Saint George and the dragon, <br/>1889-90, Gustave Moreau, Paris, France");
+insert_into_images("horsemen/Saint_George_Arsen_Birch.png", 
+                            "saatchiart.com", 
+                            "https://www.saatchiart.com/art/Painting-Victory-of-Saint-George/1159947/4641547/view", 
+                            "Saint George and the dragon, <br/>2010s, Arsen Birch, Ukraine");
+insert_into_images("horsemen/Saint_George_Adrian_Buba.png", 
+                            "saatchiart.com", 
+                            "https://www.saatchiart.com/art/Painting-Saint-George-and-the-Dragon/829920/4495992/view", 
+                            "Saint George and the dragon, <br/>?, Adrian Buba (b. 1953), France");
+insert_into_images("horsemen/Olaf_Rude_1918_Sankt_Georg.jpg", 
+                            "Wikipedia", 
+                            "https://en.wikipedia.org/wiki/File:Olaf_Rude,_1918,_Sankt_Georg_og_dragen_(Saint_George_and_the_dragon),_oil_on_canvas,_99.7_x_79.9_cm,_ARoS_Aarhus_Kunstmuseum.jpg", 
+                            "Saint George and the dragon, <br/>1918, Olaf Rude, Denmark");
+insert_into_images("horsemen/Modernist-Art-Deco-Style-Painting-of-St_-George-and-the-Dragon-Signed-Dana.png", 
+                            "1stdibs.com", 
+                            "https://www.1stdibs.com/furniture/wall-decorations/paintings/modernist-art-deco-style-painting-st-george-dragon-signed-dana/id-f_1813892/", 
+                            "Saint George and the dragon, <br/>cr. 1960s, signed: Dana, United States");
 /*
 
  1-45.jpg iStock-614121224.jpg 1184426265.jpg 1158546957.jpg 
   
- Wise10.1_Fig.03.jpg  Stgeorge-dragon.jpg Saint_George_Arsen_Birch.png Saint_George_Adrian_Buba.png Olaf_Rude_1918_Sankt_Georg.jpg Modernist-Art-Deco-Style-Painting-of-St_-George-and-the-Dragon-Signed-Dana.png
+  chilean prints, COMP=1|RP-P-OB-915-scaled.jpg cranach
+       
 */
 }
 ?>
