@@ -2219,7 +2219,7 @@ function populate_images() {
     insert_into_images("horsemen/Traianus_denarius_105_90020184.jpg", 
                             "wiki", 
                             "Traianus_denarius_105_90020184.jpg", 
-                            "Sestertius showing emperor Trajan, <br/>105 AD, Rome");
+                            "Sestertius showing Trajan on horseback on reverse, <br/>minted in 105 AD under Trajan, Roman Empire");
     insert_into_images("horsemen/Trajan_column_Rome_September_2015-1.jpg", 
                             "wiki", 
                             "Trajan_column_(Rome)_September_2015-1.jpg", 
@@ -6770,10 +6770,6 @@ insert_into_images("horsemen/ikmk_coin_18201481.jpg",
                             "ikmk", 
                             "18201481", 
                             "As showing the emperor on horseback on reverse, <br/>minted in 350 AD under Nepotianus, Roman Empire");
-insert_into_images("horsemen/ikmk_coin_18204280.jpg", 
-                            "ikmk", 
-                            "18204280", 
-                            " showing  on horseback on reverse, <br/>minted in  under , Roman Republic Empire");
 insert_into_images("horsemen/ikmk_coin_18201471.jpg", 
                             "ikmk", 
                             "18201471", 
@@ -6845,9 +6841,24 @@ insert_into_images("horsemen/ikmk_coin_18202573.jpg",
 insert_into_images("horsemen/ikmk_coin_18231792.jpg", 
                             "ikmk", 
                             "18231792", 
-                            "Aureus showing Domitian on horseback on reverse, <br/>minted in 73-75 AD under Vespasian, Roman Republic Empire");
-
-/* 
+                            "Aureus showing Domitian on horseback on reverse, <br/>minted in 73-75 AD under Vespasian, Roman Empire");
+insert_into_images("horsemen/pieces66918.png", 
+                            "numista", 
+                            "pieces66918", 
+                            "Denarius showing Dioscuri brothers on horseback on reverse, <br/>minted in 122 BC, Roman Republic");
+insert_into_images("horsemen/pieces66751.png", 
+                            "numista", 
+                            "pieces66751", 
+                            "Denarius showing Dioscuri brothers on horseback on reverse, <br/>minted in 206 - 200 BC, Roman Republic");
+insert_into_images("horsemen/pieces49982.png", 
+                            "numista", 
+                            "pieces49982", 
+                            "Denarius showing Dioscuri brothers on horseback and a dog on reverse, <br/>minted in 146 BC, Roman Republic");
+insert_into_images("horsemen/pieces34406.png", 
+                            "numista", 
+                            "pieces34406", 
+                            "Denarius showing Dioscuri brothers on horseback on reverse, <br/>minted in 136 BC, Roman Republic");
+/*
 
  1-45.jpg iStock-614121224.jpg 1184426265.jpg 1158546957.jpg 
   
