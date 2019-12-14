@@ -2505,10 +2505,6 @@ function populate_images() {
                             "Twitter, @drzarrow", 
                             "https://twitter.com/drzarrow/status/591027611066888192", 
                             "Commodus on horseback in a venatio, spearing panther, <br/>185, Rome");
-    insert_into_images("horsemen/commodusGoldCoin.jpg", 
-                            "Roma Numismatics", 
-                            "http://romanumismatics.com/auction/lot/0585/", 
-                            "Commodus AV Aureus, <br/>181-182, Rome");
     insert_into_images("horsemen/commodus_vatican.jpg", 
                             "From a book", 
                             NULL, 
@@ -5449,10 +5445,6 @@ function populate_images() {
                             "BM", 
                             "584032", 
                             "Battle of Adwa, with Emperor Menelik II and Saint George on rearing horses, <br/>1940-1949, Ethiopia");
-    insert_into_images("horsemen/image04123.jpg",
-                            "numisbids", 
-                            "4123&sid=415", 
-                            "Gold Aureus of Octavian, <br/>32-31 BC, the last type to be issued before the Battle of Actium, Rome");
     insert_into_images("horsemen/Kim.jpg",
                             "theeconomist @ instagram", 
                             "https://www.instagram.com/p/B3uI046AsxX/?igshid=1xaczsb8mvvb2", 
@@ -6830,10 +6822,10 @@ insert_into_images("horsemen/ikmk_coin_18201843.jpg",
                             "ikmk", 
                             "18201843", 
                             "Denarius showing an equestrian statue on reverse, <br/>minted in 56 BC, Roman Republic");
-insert_into_images("horsemen/ikmk_coin_18206785.jpg", 
+insert_into_images("horsemen/image04123.jpg", 
                             "ikmk", 
                             "18206785", 
-                            "Aureus showing Augustus on horseback on reverse, <br/>minted in 32-29 BC under Augustus, Roman Empire");
+                            "Aureus showing Augustus on horseback on reverse, <br/>minted in 32-29 BC under Augustus, the last type to be issued before the Battle of Actium, Roman Empire");
 insert_into_images("horsemen/ikmk_coin_18202573.jpg", 
                             "ikmk", 
                             "18202573", 
@@ -6858,6 +6850,10 @@ insert_into_images("horsemen/pieces34406.png",
                             "numista", 
                             "pieces34406", 
                             "Denarius showing Dioscuri brothers on horseback on reverse, <br/>minted in 136 BC, Roman Republic");
+insert_into_images("horsemen/180620003bz.jpg", 
+                            "ma-shops.com", 
+                            "https://www.ma-shops.com/loechte/item.php?id=180620003", 
+                            "Aureus showing Commodus on horseback spearing a panther on reverse, <br/>minted in 184-5 under Commodus, Roman empire");
 insert_into_images("horsemen/Wise10.1_Fig.03.jpg", 
                             "jhna.org", 
                             "https://jhna.org/articles/cycles-memory-circular-compassion-germanic-passion-diptych/", 
@@ -6882,11 +6878,34 @@ insert_into_images("horsemen/Modernist-Art-Deco-Style-Painting-of-St_-George-and
                             "1stdibs.com", 
                             "https://www.1stdibs.com/furniture/wall-decorations/paintings/modernist-art-deco-style-painting-st-george-dragon-signed-dana/id-f_1813892/", 
                             "Saint George and the dragon, <br/>cr. 1960s, signed: Dana, United States");
+insert_into_images("horsemen/Wilhelm_von_Diez_Sankt_Georg_der_Drachentoter_1897.jpg", 
+                            "wiki", 
+                            "Wilhelm_von_Diez_Sankt_Georg_der_Drachentöter_1897.jpg", 
+                            "Saint George and the dragon, <br/>1897, Wilhelm von Diez, Munich, Germany");
+insert_into_images("horsemen/AN00047780_001_l.jpg", 
+                            "BM", 
+                            "1419286", 
+                            "Saint George and the dragon, <br/>1507-8, Lucas Cranach the Elder, Germany");
+insert_into_images("horsemen/Meister_des_Dobelner_Hochaltars_-_Der_Heilige_Georg_Hamburger_Kunsthalle.jpg", 
+                            "wiki", 
+                            "Meister_des_Döbelner_Hochaltars_-_Der_Heilige_Georg_(Hamburger_Kunsthalle).jpg", 
+                            "Saint George and the dragon, <br/>cr. 1511-13, circle of Lucas Cranach the Elder, Germany");
+insert_into_images("horsemen/cranach-lucas-saint-george-on-ho-___-prints.png", 
+                            "Sothebys", 
+                            "2012/old-master-modern-contemporary-prints/lot.5.html", 
+                            "Saint George and the dragon, <br/>1512, Lucas Cranach the Elder, Germany");
+insert_into_images("horsemen/Die_Bekehrung_des_Heiligen_Paulus.jpg", 
+                            "wiki", 
+                            "Die_Bekehrung_des_Heiligen_Paulus.jpg", 
+                            "The Conversion of Saint Paul, <br/>cr. 1547-9, Lucas Cranach the Younger, Germany");
+insert_into_images("horsemen/Lucas_Cranach_d.J._-_Die_Bekehrung_des_Saulus_1549_Germanisches_Nationalmuseum.jpg", 
+                            "wiki", 
+                            "Lucas_Cranach_d.J._-_Die_Bekehrung_des_Saulus_(1549,_Germanisches_Nationalmuseum).jpg", 
+                            "The Conversion of Saul, <br/>1549, Lucas Cranach the Younger, Germany");
 /*
-
- 1-45.jpg iStock-614121224.jpg 1184426265.jpg 1158546957.jpg 
+ COMP=1|RP-P-OB-915-scaled.jpg ; 1-45.jpg iStock-614121224.jpg 1184426265.jpg 1158546957.jpg 
   
-  chilean prints, COMP=1|RP-P-OB-915-scaled.jpg cranach
+  chilean prints,  cranach
        
 */
 }
