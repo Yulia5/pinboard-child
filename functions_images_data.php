@@ -35,6 +35,7 @@ function generate_src() {
     insert_into_src("ES",       "Equestrian Statues",                           'https://equestrianstatue.org/');
     insert_into_src("Gallica",  "Gallica at bibliothèque nationale de France",  'https://gallica.bnf.fr/ark:/');
     insert_into_src("NT",       "National Trust Collection",                    'http://www.nationaltrustcollections.org.uk/object/');
+    insert_into_src("dreamstime",  "Copyright © Dreamstime",                    'https://www.dreamstime.com/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
@@ -6116,7 +6117,7 @@ function populate_images() {
     insert_into_images("horsemen/elsa_water_horse.jpg",
                             "hallmark.com", 
                             "https://www.hallmark.com/ornaments/keepsake-ornaments/disney-frozen-2-elsa-and-nokk-ornament-1899QXD6459.html", 
-                            "Elsa taming Nokk (Christmas decoration), <br/>2019, U.S.A.");
+                            "Elsa taming Nokk, Frozen 2-themed Christmas decoration, <br/>2019, U.S.A.");
     insert_into_images("horsemen/AN00332744_001_l.jpg",
                             "BM", 
                             "332744001", 
@@ -6713,7 +6714,7 @@ function populate_images() {
     insert_into_images("horsemen/RP-P-OB-915-scaled.jpg",
                             "RJK", 
                             "RP-P-OB-915", 
-                            "Wild woman on a unicorn, <br/>1473 - 1477, Israhel van Meckenem, Master of the Amsterdam Cabinet, Germany");
+                            "Wild woman on a unicorn, <br/>1473 - 1477, Master of the Amsterdam Cabinet, Germany");
     insert_into_images("horsemen/Charles_Le_Brun_Le_Passage_du_Granique_1665.png",
                             "wiki", 
                             "Charles_Le_Brun,_Le_Passage_du_Granique,_1665.png", 
@@ -6902,10 +6903,71 @@ insert_into_images("horsemen/Lucas_Cranach_d.J._-_Die_Bekehrung_des_Saulus_1549_
                             "wiki", 
                             "Lucas_Cranach_d.J._-_Die_Bekehrung_des_Saulus_(1549,_Germanisches_Nationalmuseum).jpg", 
                             "The Conversion of Saul, <br/>1549, Lucas Cranach the Younger, Germany");
+insert_into_images("horsemen/256585-1330623098.jpg", 
+                            "RC", 
+                            "800082", 
+                            "A woman abducted by a man on a unicorn, <br/>1516, Albrecht Dürer, Germany");
+insert_into_images("horsemen/puss_on_unicorn.png", 
+                            "redbubble.com", 
+                            "https://www.redbubble.com/people/liquegifts/works/28357437", 
+                            "Cat riding a unicorn, <br/>?, Lique (?)");
+insert_into_images("horsemen/death_on_unicorn.png", 
+                            "redbubble.com", 
+                            "https://www.redbubble.com/people/underheaven/works/34246859", 
+                            "Grim Reaper riding a unicorn, <br/>?,  Nikolay Todorov (?)");
+insert_into_images("horsemen/ClipartKey_1040913.png", 
+                            "clipartkey.com", 
+                            "https://www.clipartkey.com/view/oRxwwm_santa-riding-a-unicorn/", 
+                            "Santa riding a unicorn, <br/>?,  Douislouis (?)");
+insert_into_images("horsemen/8831bbd049433a1ebe5996df72e581dd.jpg", 
+                            "pinterest.com", 
+                            "https://www.pinterest.com/pin/528187862528329017", 
+                            "Thor riding a unicorn, <br/>?,  Rae (?)");
+insert_into_images("horsemen/37c39e7b7504b1145e88df19c4c15f5b.jpg", 
+                            "pinterest.com", 
+                            "https://www.pinterest.com/pin/216032113346654782", 
+                            "Jesus riding a unicorn, <br/>?,  Alejandro Valdés (?)");
+insert_into_images("horsemen/f5513b0a56ad06843442cb176b75fc1a.jpg", 
+                            "pinterest.com", 
+                            "https://www.pinterest.com/pin/487092515940058379", 
+                            "Girl Riding a Unicorn, <br/>?");
+insert_into_images("horsemen/boy-unicorn-art-vector-cartoon-design-58370450.jpg", 
+                            "dreamstime", 
+                            "58370450", 
+                            "Boy Riding a Unicorn, <br/>Martinus Sumbaji, ?");
+insert_into_images("horsemen/iStock-614121224.jpg", 
+                            "dreamstime", 
+                            "78761255", 
+                            "Unicorn start up, <br/>Aleutie, ?");
+insert_into_images("horsemen/1-45.jpg", 
+                            "dreamstime", 
+                            "143373347", 
+                            "Unicorn start up, <br/>Rudall30, ?");
+insert_into_images("horsemen/businessman-riding-unicorn-arrow-symbol-successful-achievement-leadership-career-vector-illustration-flat-162506430.jpg", 
+                            "dreamstime", 
+                            "162506430", 
+                            "Businessman riding a unicorn on arrow, <br/>Pishit Kamsink, ?");
+insert_into_images("horsemen/homosexual-men-riding-unicorn-rainbow-colors-minimalist-style-cartoon-flat-raster-homosexual-men-riding-unicorn-155404435.jpg", 
+                            "dreamstime", 
+                            "155404435", 
+                            "Gay couple riding a unicorn, <br/>Pishit Kamsink, ?");
+insert_into_images("horsemen/young-woman-riding-unicorn-19815300.jpg", 
+                            "dreamstime", 
+                            "19815300", 
+                            "Young woman riding a unicorn, <br/>Viktoriia Panchenko, ?");
+insert_into_images("horsemen/784-7845670_deadpool-clipart-sticker-cutting-deadpool-riding-a-unicorn.jpg", 
+                            "NicePNG", 
+                            "https://www.nicepng.com/ourpic/u2t4r5r5o0e6a9i1_deadpool-clipart-sticker-cutting-deadpool-riding-a-unicorn/", 
+                            "Deadpool riding a unicorn, <br/>?");
+insert_into_images("horsemen/Postumia_4_96_BC_56081.jpg", 
+                            "wiki", 
+                            "Postumia_4_96_BC_56081.jpg", 
+                            "Postumia denarius showing three horsemen over fallen warrior on reverse, <br/>minted in 96 BC, Roman Republic");
 /*
- COMP=1|RP-P-OB-915-scaled.jpg ; 1-45.jpg iStock-614121224.jpg 1184426265.jpg 1158546957.jpg 
+
+   
   
-  chilean prints,  cranach
+  chilean prints
        
 */
 }
