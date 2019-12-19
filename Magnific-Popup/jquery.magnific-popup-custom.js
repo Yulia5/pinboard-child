@@ -10,6 +10,15 @@ jQuery(document).ready(function($) {
         } );
     }
 
+    function show_hide_div(an_ID) {
+        var an_element = document.getElementById(an_ID);
+        if (an_element.style.display === "none") {
+            an_element.style.display = "inline";
+        } else {
+            an_element.style.display = "none";
+        }
+    }
+
     $('.images img').each(function() {
 
         var imgwidth = get_float_attribute($(this).closest('.images'), 'imgwidth');

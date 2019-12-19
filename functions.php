@@ -58,136 +58,9 @@ function pinboard_child_theme_setup() {
     /* include image-related collection of functions */
     locate_template( array( 'functions_images.php' ), true, true );
     locate_template( array( 'functions_images_data.php' ), true, true );
+    locate_template( array( 'functions_post_specific.php' ), true, true );
 }
 add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
-
-/******************************************************************************
- *        Lines (old English and modern English) for Romeo and Juliet         *
- *****************************************************************************/
-
-/**
- * The shortcode for OM_Text.
- *
- * @return string
- */
-function MY_VERY_OWN_OM_Text($attr, $content = null) {
-
-	$result = '<div style="display: flex; padding: 0px;"><div class="oldEnglish"><b><font color="gray">ORIGINAL TEXT</font></b></div><div class="newEnglish"><b><font color="gray">MODERN TEXT</font></b></div></div>';	
-	return $result;
-}
-add_shortcode('om_text', 'MY_VERY_OWN_OM_Text'); 
-  
-function generate_RJ_lines($hrf, $character, $directions)
-{
-	
-	$separator_line = strpos($hrf, '|');
-	$line_old = substr($hrf, 0, $separator_line);
-	$line_new = substr($hrf, $separator_line+1);
-	
-	if ( strlen($directions) > 0 ) {
-		$separator_dir = strpos($directions, '|');
-		$dir_old = substr($directions, 0, $separator_dir);
-		$dir_new = substr($directions, $separator_dir + 1);
-		$line_old = '<i>(' . $dir_old . ')</i> ' . $line_old;
-		$line_new = '<i>(' . $dir_new . ')</i> ' . $line_new;
-	}
-		
-	$character = '<b>' . strtoupper($character) . '</b><br>';
-
-	return '<div style="display: flex; padding: 0px;"><div class="oldEnglish">' . $character . $line_old . '</div><div class="newEnglish">' . $character . $line_new . '</div></div>';
-}
-
-/**
- * The shortcode for R lines.
- * The supported attribute for the shortcode is 'directions' (optional).
- *
- * @param array $attr Attributes attributed to the shortcode.
- * @param string $content Optional. Shortcode content.
- * @return string
- */
-function MY_VERY_OWN_R_lines($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'directions' => ''
-	), $attr));
-
-	$result = generate_RJ_lines($content, 'Romeo', $directions);	
-	return $result;
-}
-add_shortcode('r_lines', 'MY_VERY_OWN_R_lines');
-
-/**
- * The shortcode for J lines.
- * The supported attribute for the shortcode is 'directions' (optional).
- */
-function MY_VERY_OWN_J_lines($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'directions' => ''
-	), $attr));
-
-	$result = generate_RJ_lines($content, 'Juliet', $directions);	
-	return $result;
-}
-add_shortcode('j_lines', 'MY_VERY_OWN_J_lines');
-
-/******************************************************************************
- *                               The recept generator                         *
- *****************************************************************************/
-
-function replace_br($content) {
-	//$result = preg_replace('<br\W*?\/>*$','', $content);
-	$result = preg_replace("/<br\W*?\/>/", ";</li><li>", trim($content));
-	//remove ";</li><li>|" at the end of the line
-	$result = $result . '|';
-	$result = str_replace(";</li><li>|", "", $result);
-	$result = str_replace("|", "", $result);
-	return $result;
-}
-
-function MY_VERY_OWN_recept($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'last_section' => ''
-	), $attr));
-
-	$result = "";
-
-	$recept_parts = preg_replace("/\|<br\W*?\/>/", "|", $content);
-	$recept_parts = preg_replace("/#<br\W*?\/>/", "#", $recept_parts);
-	$recept_parts = preg_replace("/<br\W*?\/>\|/", "|", $recept_parts);
-	$recept_parts = preg_replace("/<br\W*?\/>#/", "#", $recept_parts);
-	$recept_parts = explode ('|', $recept_parts);	
-
-	if (!! $recept_parts[0]) {
-		$result = $result . do_shortcode("[yu_images_DB flushright='1']" . $recept_parts[0] . '[/yu_images_DB]');
-	}
-	if (!! $recept_parts[1]) {
-		$result = $result . '<h9>Utensils</h9><ul class="utensils_ul"><li>' . replace_br($recept_parts[1]) . '.</li></ul>';
-	}
-	if (!! $recept_parts[2]) {
-		$ingredients_parts = explode ('#', $recept_parts[2]);
-		$result = $result . '<h9>Ingredients</h9>';
-		if (!! $ingredients_parts[0]) {
-			$result = $result . '<ul class="ingredients_ul"><li>' . replace_br($ingredients_parts[0]) . '.</li></ul>';
-		}
-		if (!! $ingredients_parts[1]) {
-			$result = $result . '<ul class="spices_ul"><li>' . replace_br($ingredients_parts[1]) . '.</li></ul>';
-		}
-		if (!! $ingredients_parts[2]) {
-			$result = $result . '<ul class="to_serve_ul"><li>' . replace_br($ingredients_parts[2]) . '.</li></ul>';
-		}
-	}
-	if (!! $recept_parts[3]) {
-		$result = $result . '<h9>Directions</h9><ol class="directions_ol"><li>' . replace_br($recept_parts[3]) . '.</li></ol>';
-	}
-	if (!! $recept_parts[4]) {
-		$result = $result . '<h9>' . $last_section . '</h9><ul class="to_try"><li>' . replace_br($recept_parts[4]) . '.</li></ul>';
-	}
-/**/
-	return $result;
-}
-add_shortcode('yu_recept', 'MY_VERY_OWN_recept');
 
 /******************************************************************************
  *                             General Purpose                                *
@@ -202,30 +75,35 @@ function yu_generate_one_TOC($content) {
     $toc_title = ($hasTitle) ? $matchedTitle[2] : 'Table Of Contents';
     $id_title = sanitize_title($toc_title);
 
-    $toc_title_h = array("", "", "", "", "", "", "", "", "", "");
-    $toc_title_h[0] = "<a href='#$id_title'>↑ Back To The Table Of Contents ↑</a>";
-    $toc_title_h[1] = $toc_title_h0;
-
-    $result = "<h1><a id='$id_title'>$toc_title</a></h1>";
-
     $index = 1;
 	$tableOfContents = "";
+	$old_level = 0;
     // Insert the IDs and create the TOC.
-    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$toc_title_h, &$id_title) {
+    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$old_level, &$id_title, &$toc_title) {
         $tag = $matches[1];
         $toc_entry_title = strip_tags($matches[3]);
-        $hasId = preg_match('/id=(["\'])(.*?)\1[\s>]/si', $matches[2], $matchedIds);
+        $hasId = preg_match('#id=("|&#8221;)(.*?)\1[\s>]#si', $matches[2], $matchedIds);
         $id = $hasId ? $matchedIds[2] : ($id_title . '-' . $index++ . '-' . sanitize_title($toc_entry_title));
-        
-        $tableOfContents .= "<div class='item-$tag'><a href='#$id'>$toc_entry_title</a></div>";
 
-        $tag_int = intval($tag[1]);
-        $toc_title_h[$tag_int] = "<a href='#$id'>↑ Back To $toc_entry_title ↑</a>"; // will be used later
+        $new_level = intval($tag[1]);
+        $tableOfContents_entry = "<div class='item-$tag' id='toc_item_$id'><a href='#$id'>$toc_entry_title</a></div>";
+  // //       if ($new_level > $current_level) {
+		// // 	$tableOfContents_entry = $tableOfContents_entry . "<button onclick='show_hide_div(div_toc_$id)'>-</button><div id='div_toc_$id' class='div_toc_initial'>";
+		// // }
+  // //       else {
+  // //       	for ($x = $new_level; $x < $current_level; $x++) {
+  // //   			$tableOfContents_entry = $tableOfContents_entry . "</div>";
+		// // 	}			
+		// // }
+         
+        $tableOfContents .= $tableOfContents_entry;
+        $old_level = $new_level;
 
-        return sprintf('<%s %s id="%s">%s</%s>', $tag, $matches[2], $id, $matches[3], $tag) . $toc_title_h[$tag_int-1] ;
-    }, $content);
+        return "<$tag $matches[2] id='$id'>$matches[3]</$tag><a href='#toc_item_$id'>↑ Back To $toc_title ↑</a>";
+     }, $content);
 	
-    $result = $result . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 
+    $result = "<h1><a id='$id_title'>$toc_title</a></h1>" . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 
+	//$result = "";
     return $result;
 }
 

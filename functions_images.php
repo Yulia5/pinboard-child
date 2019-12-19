@@ -1,59 +1,6 @@
 <?php
 
 /******************************************************************************
- *                          German Arrows                                     *
- *****************************************************************************/
- 
-function DE_row_shortcode($attr, $content = null) {
-
-    extract(shortcode_atts(array(
-        'f1' => '',
-        'f11' => '',
-        'w1' => '225',
-        'f2' => '',
-        'w2' => '225',        
-        'dir' => ''), $attr)); 
-        
-    $im1 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f1 . '[/yu_image_DB]');
-    $im2 = do_shortcode('[yu_image_DB width="' . $w2 . '"]' . $f2 . '[/yu_image_DB]');
-    if (!! $f11) {
-        $im11 = do_shortcode('[yu_image_DB width="' . $w1 . '"]' . $f11 . '[/yu_image_DB]');
-        $im1 = '<table id="table_g2"><tbody><tr><td>' . $im1 . '<br/>' . $im11 . '</td></tr></tbody></table>';       
-    } else {
-        $arrow_d = '<br/>' . do_shortcode('[yu_image_DB height="100"]arrowd.png[/yu_image_DB]');
-        if ($dir === 'R') {
-            $im2 = $im2 . $arrow_d; 
-        }
-        if ($dir === 'L') {
-            $im1 = $im1 . $arrow_d; 
-        }
-    }
-    $arrow_m = do_shortcode('[yu_image_DB width="100"]arrow' . $dir . '.png[/yu_image_DB]');
-    $result = '<tr><td>' . $im1 . '</td><td width="110" >' . $arrow_m . '</td><td >' . $im2 . '</td></tr>';
-  
-    return $result;
-}
-add_shortcode('DE_row', 'DE_row_shortcode');
-
-function DE_row_TB_shortcode($attr, $content = null) {
-
-	extract(shortcode_atts(array(
-		'dir' => '',
-		'w' => '225',
-        'f' => '',
-		'va' => ''), $attr));	
-    
-    $arrow_v = do_shortcode('[yu_image_DB width="100"                            ]arrow' . $dir . '.png[/yu_image_DB]');
-    $arrow_iv= do_shortcode('[yu_image_DB width="100"  style="visibility: hidden"]arrow' . $dir . '.png[/yu_image_DB]');
-    $im      =  do_shortcode('[yu_image_DB width="' . $w . '"]' . $f . '[/yu_image_DB]');
-
-    $result = '<tr><td colspan="3"><table><tbody><tr><td style="vertical-align:'. $va .';" >' . $arrow_v . '</td><td>'
-                         . $im . '</td><td>' . $arrow_iv . '</td></tr></tbody></table></td></tr>'; 
-	return $result;
-}
-add_shortcode('DE_row_TB', 'DE_row_TB_shortcode');
- 
-/******************************************************************************
  *                          Image Caption                                     *
  *****************************************************************************/
  
