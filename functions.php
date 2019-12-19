@@ -78,25 +78,36 @@ function yu_generate_one_TOC($content) {
     $index = 1;
 	$tableOfContents = "";
 	$old_level = 0;
+	$maybe_button = "";
+	$after_maybe_button = "";
     // Insert the IDs and create the TOC.
-    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$old_level, &$id_title, &$toc_title) {
+    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$old_level, &$id_title, &$toc_title, &$maybe_button, &$after_maybe_button) {
         $tag = $matches[1];
         $toc_entry_title = strip_tags($matches[3]);
         $hasId = preg_match('#id=("|&#8221;)(.*?)\1[\s>]#si', $matches[2], $matchedIds);
         $id = $hasId ? $matchedIds[2] : ($id_title . '-' . $index++ . '-' . sanitize_title($toc_entry_title));
 
         $new_level = intval($tag[1]);
-        $tableOfContents_entry = "<div class='item-$tag' id='toc_item_$id'><a href='#$id'>$toc_entry_title</a></div>";
-  // //       if ($new_level > $current_level) {
-		// // 	$tableOfContents_entry = $tableOfContents_entry . "<button onclick='show_hide_div(div_toc_$id)'>-</button><div id='div_toc_$id' class='div_toc_initial'>";
-		// // }
-  // //       else {
-  // //       	for ($x = $new_level; $x < $current_level; $x++) {
-  // //   			$tableOfContents_entry = $tableOfContents_entry . "</div>";
-		// // 	}			
-		// // }
-         
-        $tableOfContents .= $tableOfContents_entry;
+        $tableOfContents_entry = "<div class='item-$tag' id='toc_item_$id'><a href='#$id'>$toc_entry_title</a>";
+        if ($new_level > $old_level) {
+        	// adding a button + other html from the previous iteration
+        	$tableOfContents .= $maybe_button . $after_maybe_button . $tableOfContents_entry;
+        	// creating html in case it is needed at the next iteration
+        	$maybe_button = '<button class="toc_button" id="button_toc_' . $id . '"  type="button">+</button>';
+        	$after_maybe_button = "</div><div class='div_toc_initial' id='div_button_toc_$id'>";
+		} else {
+        	// adding a button + other html from the previous iteration
+        	$tableOfContents .= $after_maybe_button;
+			$tableOfContents_entry .= "</div>";
+ 	      	for ($x = $new_level; $x < $old_level; $x++) {
+     			$tableOfContents_entry = "</div>" . $tableOfContents_entry;
+		 	}
+		 	$tableOfContents .= $tableOfContents_entry;			
+        	// creating html in case it is needed at the next iteration
+ 			$maybe_button = "";
+			$after_maybe_button = "";
+		}    
+        
         $old_level = $new_level;
 
         return "<$tag $matches[2] id='$id'>$matches[3]</$tag><a href='#toc_item_$id'>↑ Back To $toc_title ↑</a>";

@@ -10,14 +10,17 @@ jQuery(document).ready(function($) {
         } );
     }
 
-    function show_hide_div(an_ID) {
+    $('.toc_button').click(function(){
+        an_ID = 'div_' + this.id;
         var an_element = document.getElementById(an_ID);
-        if (an_element.style.display === "none") {
-            an_element.style.display = "inline";
-        } else {
+        if (an_element.style.display !== "none") {
             an_element.style.display = "none";
+            $(this).text("+");
+        } else {
+            an_element.style.display = "inline";
+            $(this).text("-");
         }
-    }
+    })
 
     $('.images img').each(function() {
 
