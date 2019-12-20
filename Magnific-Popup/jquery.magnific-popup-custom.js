@@ -10,17 +10,17 @@ jQuery(document).ready(function($) {
         } );
     }
 
-    $('.toc_button').click(function(){
+    $('.toc_button').click(function() {
         an_ID = 'div_' + this.id;
         var an_element = document.getElementById(an_ID);
-        if (an_element.style.display !== "none") {
+        if ($(this).val() === "-") {
             an_element.style.display = "none";
-            $(this).text("+");
+            $(this).val("+");
         } else {
             an_element.style.display = "inline";
-            $(this).text("-");
+            $(this).val("-");
         }
-    })
+    });    
 
     $('.images img').each(function() {
 

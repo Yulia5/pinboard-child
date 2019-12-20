@@ -73,48 +73,48 @@ function yu_generate_one_TOC($content) {
 
 	$hasTitle = preg_match('/\{yu_TOC title=("|&#8221;)(.*?)\1\s*\}/', $content[0], $matchedTitle);
     $toc_title = ($hasTitle) ? $matchedTitle[2] : 'Table Of Contents';
-    $id_title = sanitize_title($toc_title);
+	$id_title = sanitize_title($toc_title);
 
     $index = 1;
 	$tableOfContents = "";
 	$old_level = 0;
 	$maybe_button = "";
-	$after_maybe_button = "";
-    // Insert the IDs and create the TOC.
-    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$old_level, &$id_title, &$toc_title, &$maybe_button, &$after_maybe_button) {
+	// Insert the IDs and create the TOC.
+    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$old_level, &$id_title, &$toc_title, &$maybe_button) {
         $tag = $matches[1];
         $toc_entry_title = strip_tags($matches[3]);
         $hasId = preg_match('#id=("|&#8221;)(.*?)\1[\s>]#si', $matches[2], $matchedIds);
-        $id = $hasId ? $matchedIds[2] : ($id_title . '-' . $index++ . '-' . sanitize_title($toc_entry_title));
+		$id = $hasId ? $matchedIds[2] : ($id_title . '-' . $index++ . '-' . sanitize_title($toc_entry_title));
 
         $new_level = intval($tag[1]);
+        
         $tableOfContents_entry = "<div class='item-$tag' id='toc_item_$id'><a href='#$id'>$toc_entry_title</a>";
-        if ($new_level > $old_level) {
+        if ($new_level > $old_level) { // $new_level = $old_level + 1
         	// adding a button + other html from the previous iteration
-        	$tableOfContents .= $maybe_button . $after_maybe_button . $tableOfContents_entry;
-        	// creating html in case it is needed at the next iteration
-        	$maybe_button = '<button class="toc_button" id="button_toc_' . $id . '"  type="button">+</button>';
-        	$after_maybe_button = "</div><div class='div_toc_initial' id='div_button_toc_$id'>";
+        	$tableOfContents .= $maybe_button . $tableOfContents_entry;
 		} else {
-        	// adding a button + other html from the previous iteration
-        	$tableOfContents .= $after_maybe_button;
-			$tableOfContents_entry .= "</div>";
- 	      	for ($x = $new_level; $x < $old_level; $x++) {
+        	for ($x = $new_level; $x < $old_level; $x++) {
      			$tableOfContents_entry = "</div>" . $tableOfContents_entry;
 		 	}
-		 	$tableOfContents .= $tableOfContents_entry;			
-        	// creating html in case it is needed at the next iteration
- 			$maybe_button = "";
-			$after_maybe_button = "";
+		 	$tableOfContents .= "</div>" . $tableOfContents_entry;	
 		}    
+        	
+        // creating html in case it is needed at the next iteration
+        $maybe_button = '<input class="toc_button" id="button_toc_' . $id . '"  type="button" value="+" /></div><div class="div_toc_initial" id="div_button_toc_' . $id . '">';
         
         $old_level = $new_level;
 
         return "<$tag $matches[2] id='$id'>$matches[3]</$tag><a href='#toc_item_$id'>↑ Back To $toc_title ↑</a>";
      }, $content);
+
+    // make sure all divs are closed
+    $nb_opening_divs = preg_match_all('/<div(.*?)>/i', $tableOfContents, $matches);
+    $nb_closing_divs = preg_match_all('/<\/div>/i', $tableOfContents, $matches);
+    for ($x = $nb_closing_divs; $x < $nb_opening_divs; $x++) {
+     	$tableOfContents .= "</div>";
+	}
 	
     $result = "<h1><a id='$id_title'>$toc_title</a></h1>" . '<div>' . $tableOfContents . '</div>' . trim(substr($content[0], $start_text)); 
-	//$result = "";
     return $result;
 }
 
