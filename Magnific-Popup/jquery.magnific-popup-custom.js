@@ -106,6 +106,32 @@ jQuery(document).ready(function($) {
         return 0;
     }
 
+    function get_title(an_image) {
+        var sourcehrf = get_attribute(an_image, 'sourcehrf');
+        var sourcename = get_attribute(an_image, 'sourcename');
+        var caption = get_attribute(an_image, 'caption');
+        var result = 'Image credit: ';
+
+        if (sourcehrf) {
+            if (!sourcename) {
+                sourcename = sourcehrf;
+            }
+            result += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' + sourcename + '</a>';
+        } else if (sourcename) {
+            result += sourcename;
+        } else {
+            result += 'me';
+        }
+
+        if (caption) {
+            result = '<strong>' + caption + '</strong>.<br>' + result;
+        }
+        if (result !== '') {
+            result = result + '<br /> &nbsp <br /> &nbsp';
+        }
+        return result; 
+    }
+
     $('.magnific-image').magnificPopup({
         type : 'image',
         closeOnContentClick : true,
@@ -116,31 +142,7 @@ jQuery(document).ready(function($) {
             verticalFit : true,
             titleSrc : function(item) {
                 var an_image = item.el.find('img');
-                var sourcehrf = get_attribute(an_image, 'sourcehrf');
-                var sourcename = get_attribute(an_image, 'sourcename');
-                var caption = get_attribute(an_image, 'caption');
-                var result = 'Image credit: ';
-
-                if (sourcehrf) {
-                    if (!sourcename) {
-                        sourcename = sourcehrf;
-                    }
-                    result += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' + sourcename + '</a>';
-                } else if (sourcename) {
-                    result += sourcename;
-                } else {
-                    result += 'me';
-                }
-
-                if (caption) {
-                    result = '<strong>' + caption + '</strong>.<br>' + result;
-                }
-
-                if (result !== '') {
-                    result = result + '<br /> &nbsp';
-                }
-
-                return result; 
+                return get_title(an_image);
             }
         }
     });
@@ -160,26 +162,8 @@ jQuery(document).ready(function($) {
             type : 'image',
             image : {
                 titleSrc : function(item) {
-                    var sourcehrf = item.el.find('img').attr('sourcehrf');
-                    var sourcename = item.el.find('img').attr('sourcename');
-                    var caption = item.el.find('img').attr('caption');
-                    var imagecredit = 'Image credit: ';
-                    if (caption) {
-                        imagecredit = '.<br>' + imagecredit;
-                    }
-
-                    if (sourcehrf) {
-                        if (!sourcename) {
-                            sourcename = 'this website';
-                        }
-                        imagecredit += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' + sourcename + '</a>';
-                    } else if (sourcename) {
-                        imagecredit += sourcename;
-                    } else {
-                        imagecredit = '';
-                    }
-
-                    return '<strong>' + caption + '</strong>' + imagecredit + '<br /> &nbsp';
+                    var an_image = item.el.find('img');
+                    return get_title(an_image);
                 }
             },
             gallery : {
