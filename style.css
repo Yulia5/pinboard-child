@@ -189,6 +189,64 @@ table .images {
 	vertical-align: top; 
 }
 
+#aLightboxModal_outside_image {
+  padding:5px;
+  max-width:100%;
+  max-height:100%;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#aLightboxModal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background:rgba(0,0,0,0.3);
+  justify-content: center;
+}
+
+.close_cursor: hover {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#aLightboxModal_title{
+   height:auto;
+   flex:1;
+   padding:5px;
+   display: inline-flex;
+}
+
+#aLightboxModal_content{
+   height:auto;
+   flex:1;
+   padding:5px;
+   text-align:center;
+   position:relative;
+   display: inline-flex;
+   justify-content: center;
+}
+
+#aLightboxModal_container {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  justify-content: center;
+}
+
+#aLightboxModal_image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
 h2:before, h1:before, h3:before, .flushright:after, .clearfloats:before {
   content: "";
   clear: both;

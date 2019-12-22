@@ -12,15 +12,15 @@ jQuery(document).ready(function($) {
 
     $('.toc_button').click(function() {
         an_ID = 'div_' + this.id;
-        var an_element = document.getElementById(an_ID);
         if ($(this).val() === "-") {
-            an_element.style.display = "none";
+            $(an_ID).style.display = "none";
             $(this).val("+");
         } else {
-            an_element.style.display = "inline";
+            $(an_ID).style.display = "inline";
             $(this).val("-");
         }
     });    
+
 
     $('.images img').each(function() {
 
@@ -124,13 +124,24 @@ jQuery(document).ready(function($) {
         }
 
         if (caption) {
-            result = '<strong>' + caption + '</strong>.<br>' + result;
-        }
-        if (result !== '') {
-            result = result + '<br /> &nbsp <br /> &nbsp';
+            result = '<strong>' + caption + '</strong><br/>' + result;
         }
         return result; 
     }
+
+    $('.outside_image img').click(function() {
+        img_src = $(this).attr('src');
+        caption = $(this).closest('.wp-caption-text').text();
+        $("#aLightboxModal_image").attr("src", img_src);
+        $("#aLightboxModal_title").text(caption);
+        $("#aLightboxModal").show();
+    });
+
+    $('.close_cursor').click(function() {
+        $("#aLightboxModal").hide();
+        $("#aLightboxModal_image").attr("src", "");
+        $("#aLightboxModal_title").text("");
+    });
 
     $('.magnific-image').magnificPopup({
         type : 'image',
