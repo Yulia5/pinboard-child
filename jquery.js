@@ -11,14 +11,12 @@ jQuery(document).ready(function($) {
     }
 
     $('.toc_button').click(function() {
-        an_ID = 'div_' + this.id;
         if ($(this).val() === "-") {
-            $(an_ID).style.display = "none";
             $(this).val("+");
         } else {
-            $(an_ID).style.display = "inline";
-            $(this).val("-");
+            $(this).val("-");          
         }
+        $('#div_' + this.id).toggle();
     });    
 
 
@@ -131,7 +129,7 @@ jQuery(document).ready(function($) {
 
     $('.outside_image img').click(function() {
         img_src = $(this).attr('src');
-        caption = $(this).closest('.wp-caption-text').text();
+        caption = $(this).closest('.outside_image').find('.wp-caption-text').text();
         $("#aLightboxModal_image").attr("src", img_src);
         $("#aLightboxModal_title").text(caption);
         $("#aLightboxModal").show();
@@ -141,47 +139,6 @@ jQuery(document).ready(function($) {
         $("#aLightboxModal").hide();
         $("#aLightboxModal_image").attr("src", "");
         $("#aLightboxModal_title").text("");
-    });
-
-    $('.magnific-image').magnificPopup({
-        type : 'image',
-        closeOnContentClick : true,
-        closeOnBgClick : true,
-        closeBtnInside : true,
-        mainClass : 'mfp-no-margins', // class to remove default margin from left and right side
-        image : {
-            verticalFit : true,
-            titleSrc : function(item) {
-                var an_image = item.el.find('img');
-                return get_title(an_image);
-            }
-        }
-    });
-
-    // initialize magnific popup galleries with titles and descriptions
-    $('.images').each(function() {
-        $(this).magnificPopup({
-            callbacks : {
-                open : function() {
-                    $('.mfp-description').append(this.currItem.el.attr('title'));
-                },
-                afterChange : function() {
-                    $('.mfp-description').empty().append(this.currItem.el.attr('title'));
-                }
-            },
-            delegate : 'a',
-            type : 'image',
-            image : {
-                titleSrc : function(item) {
-                    var an_image = item.el.find('img');
-                    return get_title(an_image);
-                }
-            },
-            gallery : {
-                enabled : true,
-                navigateByImgClick : true
-            }
-        });
     });
 
 });
