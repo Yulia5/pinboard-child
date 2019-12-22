@@ -20,13 +20,10 @@ function enqueue_styles_and_scripts() {
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 	
 	/* Magnific popup - http://dimsemenov.com/plugins/magnific-popup/ */
-    $magnific_style = 'magnific-style';
-    wp_enqueue_style($magnific_style, get_stylesheet_directory_uri().'/magnific-popup/magnific-popup.css', array($parent_style));
-    wp_enqueue_script('magnific_popup_script', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup.min.js', array('jquery'));
-    wp_enqueue_script('magnific_popup_script_custom', get_stylesheet_directory_uri().'/magnific-popup/jquery.magnific-popup-custom.js', array('jquery'));
+    wp_enqueue_script('aux_script', get_stylesheet_directory_uri().'/jquery.js', array('jquery'));
 		
 	/* child theme style */
-    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $magnific_style ) );
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css?family=Permanent Marker', false );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
