@@ -165,17 +165,6 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
 }
 add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
 
-function MY_VERY_OWN_lightbox_modal() {
-    $result = '<div id="aLightboxModal" class="lightboxModal"> 
-                    <div class="close_cursor">Close ×</div><br/>
-                    <div id="aLightboxModal_outside_image">
-                    <div id="aLightboxModal_content"><div class="aLightboxModal_container"><img id="aLightboxModal_image" src=""></div></div>  
-                    <div id="aLightboxModal_title"></div></div>
-               </div>';
-    return $result; 
-}
-add_shortcode('yu_lightbox_modal', 'MY_VERY_OWN_lightbox_modal');
-
 /**
  * yu_images_DB
  */
