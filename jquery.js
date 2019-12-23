@@ -10,6 +10,8 @@ jQuery(document).ready(function($) {
         } );
     }
 
+    $("#aLightboxModal").hide();
+
     $('.toc_button').click(function() {
         if ($(this).val() === "-") {
             $(this).val("+");
@@ -18,7 +20,6 @@ jQuery(document).ready(function($) {
         }
         $('#div_' + this.id).toggle();
     });    
-
 
     $('.images img').each(function() {
 
@@ -104,7 +105,7 @@ jQuery(document).ready(function($) {
         return 0;
     }
 
-    function get_title(an_image) {
+    function get_caption(an_image) {
         var sourcehrf = get_attribute(an_image, 'sourcehrf');
         var sourcename = get_attribute(an_image, 'sourcename');
         var caption = get_attribute(an_image, 'caption');
@@ -129,16 +130,16 @@ jQuery(document).ready(function($) {
 
     $('.outside_image img').click(function() {
         img_src = $(this).attr('src');
-        caption = $(this).closest('.outside_image').find('.wp-caption-text').text();
+        caption = get_caption($(this));
         $("#aLightboxModal_image").attr("src", img_src);
-        $("#aLightboxModal_title").text(caption);
+        $("#aLightboxModal_title").html(caption);
         $("#aLightboxModal").show();
     });
 
     $('.close_cursor').click(function() {
         $("#aLightboxModal").hide();
         $("#aLightboxModal_image").attr("src", "");
-        $("#aLightboxModal_title").text("");
+        $("#aLightboxModal_title").html("");
     });
 
 });
