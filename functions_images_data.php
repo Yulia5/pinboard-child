@@ -6963,11 +6963,44 @@ insert_into_images("horsemen/Postumia_4_96_BC_56081.jpg",
                             "wiki", 
                             "Postumia_4_96_BC_56081.jpg", 
                             "Postumia denarius showing three horsemen over fallen warrior on reverse, <br/>minted in 96 BC, Roman Republic");
+insert_into_images("horsemen/Allegory-of-the-Treasures-of-the-Sea.png", 
+                            "Christies", 
+                            "circle-of-jacopo-zucchi-florence-c-1540-c-5630035", 
+                            "Allegory of the Treasures of the Sea, <br/>?, Circle of Jacopo Zucchi (cr. 1540-1596), Italy");
+insert_into_images("horsemen/aaf4e9ca-361b-4fcb-b494-d56ac0fc9cd4.jpg", 
+                            "SKD", 
+                            "118150", 
+                            "Pendant with Saint George as a dragon slayer, <br/>late 16th century, Germany");
+insert_into_images("horsemen/AN01454027_001_l.jpg", 
+                            "BM", 
+                            "39073", 
+                            "Pendant with a cupid riding a horse, <br/>1550-1600, Germany (?)");
+insert_into_images("horsemen/fullsizeoutput_1ac4.jpeg", 
+                            "Renée DeVoe Mertz", 
+                            "https://www.reneedevoemertz.com/visual-writer/tag/Firenze", 
+                            "Pendant with a cupid riding a horse, <br/>late 16th century or 17th century, ?");
+insert_into_images("horsemen/298ac344-5a78-11e3-8a83-80a98ade4a2a.jpg", 
+                            "catawiki.com", 
+                            "https://www.catawiki.com/l/255445-wwi-john-hassall-ye-berlyn-tapestrie-wilhelm-s-invasion-of-flanders-1915", 
+                            "Ye Berlyn Tapestrie: Wilhelm’s Invasion of Flanders, <br/>1915, John Hassall, Ye Studio Offices, London, the U.K.");
+insert_into_images("horsemen/AN01595688_001_l.jpg", 
+                            "BM", 
+                            "40416",
+                            "Silver tankard showing cavaliers including a marshal, probably the Stadtholder (later William III of England) (detail), <br/>cr.1830-70, Berlin (?), Germany");
+insert_into_images("horsemen/AN01595684_001_l.jpg", 
+                            "BM", 
+                            "40416", 
+                            "Silver tankard showing cavaliers including a marshal, probably the Stadtholder (later William III of England) (detail), <br/>cr.1830-70, Berlin (?), Germany");
+insert_into_images("horsemen/Brueghel_y_stalbemt-david-prado.jpg", 
+                            "wiki", 
+                            "Brueghel_y_stalbemt-david-prado.jpg", 
+                            "Pieter Brueghel el Joven and Adriaen van Stalbent, <br/>cr. 1818-19, Antwerp, Flemish");
+insert_into_images("horsemen/La_infanta_Isabel_Clara_Eugenia_en_el_sitio_de_Breda_Museo_del_Prado.jpg", 
+                            "wiki", 
+                            "La_infanta_Isabel_Clara_Eugenia_en_el_sitio_de_Breda_(Museo_del_Prado).jpg", 
+                            "Isabel Clara Eugenia on the Breda Site, <br/>cr. 1628, Peter Snayers, Flemish");
 /*
-
-   
-  
-  chilean prints
+  chilean prints Postumia_4_96_BC_56081.jpg
        
 */
 }
