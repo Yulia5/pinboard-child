@@ -6975,7 +6975,7 @@ insert_into_images("horsemen/AN01454027_001_l.jpg",
                             "BM", 
                             "39073", 
                             "Pendant with a cupid riding a horse, <br/>1550-1600, Germany (?)");
-insert_into_images("horsemen/fullsizeoutput_1ac4.jpeg", 
+insert_into_images("horsemen/pitti_2560.jpg", 
                             "Renée DeVoe Mertz", 
                             "https://www.reneedevoemertz.com/visual-writer/tag/Firenze", 
                             "Pendant with a cupid riding a horse, <br/>late 16th century or 17th century, ?");
