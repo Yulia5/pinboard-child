@@ -72,18 +72,28 @@ function yu_generate_one_TOC($content) {
     $toc_title = ($hasTitle) ? $matchedTitle[2] : 'Table Of Contents';
 	$id_title = sanitize_title($toc_title);
 
-    $index = 1;
+    $indices = array(0, 0, 0, 0, 0, 0, 0, 0, 0);
 	$tableOfContents = "";
 	$old_level = 0;
 	$maybe_button = "";
 	// Insert the IDs and create the TOC.
-    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$index, &$tableOfContents, &$old_level, &$id_title, &$toc_title, &$maybe_button) {
+    $content = preg_replace_callback('#<(h[1-9])(.*?)>(.*?)</\1>#si', function ($matches) use (&$indices, &$tableOfContents, &$old_level, &$id_title, &$toc_title, &$maybe_button) {
         $tag = $matches[1];
         $toc_entry_title = strip_tags($matches[3]);
-        $hasId = preg_match('#id=("|&#8221;)(.*?)\1[\s>]#si', $matches[2], $matchedIds);
-		$id = $hasId ? $matchedIds[2] : ($id_title . '-' . $index++ . '-' . sanitize_title($toc_entry_title));
 
         $new_level = intval($tag[1]);
+        $indices[$new_level - 1]++;
+        for ($l = $new_level; $l < 9; $l++) {
+    		$indices[$l] = 0;
+		}
+		$id_candidate = $id_title . '-' ;
+        for ($l = 0; $l < $new_level; $l++) {
+    		$id_candidate .= strval($indices[$l]) . '-' ;
+		}
+		$id_candidate .= sanitize_title($toc_entry_title);
+
+        $hasId = preg_match('#id=("|&#8221;)(.*?)\1[\s>]#si', $matches[2], $matchedIds);
+		$id = $hasId ? $matchedIds[2] : $id_candidate;
         
         $tableOfContents_entry = "<div class='item-$tag' id='toc_item_$id'><a href='#$id'>$toc_entry_title</a>";
         if ($new_level > $old_level) { // $new_level = $old_level + 1
