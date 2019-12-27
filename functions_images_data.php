@@ -6069,15 +6069,15 @@ function populate_images() {
     insert_into_images("horsemen/Firenze.Duomo_.Tolentino.jpeg",
                             "wiki", 
                             "Firenze.Duomo.Tolentino.JPG", 
-                            "Painted Equestrian statue of Niccolò da Tolentino (fresco), <br/>1456, Florence Cathedral, Italy");
+                            "Painted Equestrian statue of Niccolò da Tolentino (fresco), <br/>1456, Andrea del Castagno, Florence Cathedral, Italy");
     insert_into_images("horsemen/Paolo_Uccello_044.jpg",
                             "wiki", 
                             "Paolo_Uccello_044.jpg", 
-                            "Painted Equestrian statue of Sir John Hawkwood (fresco), <br/>1436, Florence Cathedral, Italy");
+                            "Painted Equestrian statue of Sir John Hawkwood (fresco), <br/>1436, Paolo Uccello, Florence Cathedral, Italy");
     insert_into_images("horsemen/Gattamelata.jpg",
                             "wiki", 
                             "Gattamelata.jpg", 
-                            "Equestrian statue of Gattamelata, <br/>1453, Donatello, Padua,  Republic of Venice (modern Italy)");
+                            "Equestrian statue of Gattamelata, <br/>1453, Donatello, Padua, Republic of Venice (modern Italy)");
     insert_into_images("horsemen/Ferrara_monumento_equestre_28mar06_03.jpg",
                             "wiki", 
                             "Ferrara_monumento_equestre_28mar06_03.jpg", 
@@ -6999,8 +6999,41 @@ insert_into_images("horsemen/La_infanta_Isabel_Clara_Eugenia_en_el_sitio_de_Bred
                             "wiki", 
                             "La_infanta_Isabel_Clara_Eugenia_en_el_sitio_de_Breda_(Museo_del_Prado).jpg", 
                             "Isabel Clara Eugenia on the Breda Site, <br/>cr. 1628, Peter Snayers, Flemish");
+insert_into_images("horsemen/ikmk_coin_18207157.jpg", 
+                            "ikmk", 
+                            "18207157", 
+                            "Quincunx showing a rider on horseback on reverse, <br/>minted in cr. 210-175, Samnium, part of Roman Republic");
+insert_into_images("horsemen/AN00065704_001_l.jpg", 
+                            "BM", 
+                            "230882", 
+                            "A manuscript page showing a hunter on horseback, <br/>cr. 1540, Muzaffar 'Ali, Tabriz, Persia (now Iran)");
+insert_into_images("horsemen/urn_cambridge.org_id_binary_77242_20160629113719329-0168_03224fig17_1.png", 
+                            "cambridge.org", 
+                            "https://www.cambridge.org/core/books/cambridge-companion-to-the-roman-republic/roman-culture/8A1C82ECB09F6480FEBA228F646D90AB", 
+                            "Reconstruction of the monument of Aemilius Paullus, <br/>shortly after 167 BC, Delphi, part of Roman Republic (now Greece)");
+insert_into_images("horsemen/DgSI0JhW4AAk8hA.jpg", 
+                            "drjeball @ twitter.com", 
+                            "https://twitter.com/drjeball/status/1010082889076297733?lang=en", 
+                            "Reliefs from the monument of Aemilius Paullus (current state), <br/>shortly after 167 BC, Delphi, part of Roman Republic (now Greece)");
+insert_into_images("horsemen/e195ab07c13c489d1f19670b73593405.jpg", 
+                            "Pinterest (image now removed)", 
+                            "", 
+                            "Reconstruction of reliefs on the monument of Aemilius Paullus, <br/>shortly after 167 BC, Delphi, part of Roman Republic (now Greece)");
+insert_into_images("horsemen/TiberiusFlaviusMiccalus.jpeg", 
+                            "Pinterest", 
+                            "https://www.pinterest.co.uk/pin/467459636324490628/", 
+                            "Facade relief from the tomb monument of Tiberius Flavius Miccalus, <br/>50-1 BC, Kamaradere, Perinthus, Roman");
+insert_into_images("horsemen/Glanum-mausolee.jpg", 
+                            "wiki", 
+                            "Glanum-mausolee.jpg", 
+                            "Mausoleum of the Julii, <br/>cr. 40 BC, Glanum, part of Roman Republic (now Saint-Rémy de Provence, France)");
+insert_into_images("horsemen/Glanum_Mausoleum_north_face.jpeg", 
+                            "wiki", 
+                            "Glanum_Mausoleum_north_face.JPG", 
+                            "North face relief, mausoleum of the Julii, <br/>cr. 40 BC, Glanum, part of Roman Republic (now Saint-Rémy de Provence, France)");
+
 /*
-  chilean prints Postumia_4_96_BC_56081.jpg
+   
        
 */
 }

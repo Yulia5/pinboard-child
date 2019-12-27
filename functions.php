@@ -271,7 +271,7 @@ function MY_VERY_OWN_self_link($attr, $content = null) {
         'post' => ''
     ), $attr));
       
-    $result = '<a title="' . $text . '" href="http://www.yu51a5.com/' . $post . '" target="_blank">' . $text . '</a>';   
+    $result = '<a title="' . $text . '" href="http://www.yu51a5.com/' . $post . '" target="_blank" rel="noopener noreferrer">' . $text . '</a>';   
     return $result;
 }
 add_shortcode('yu_self', 'MY_VERY_OWN_self_link');
