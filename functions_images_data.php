@@ -7031,9 +7031,36 @@ insert_into_images("horsemen/Glanum_Mausoleum_north_face.jpeg",
                             "wiki", 
                             "Glanum_Mausoleum_north_face.JPG", 
                             "North face relief, mausoleum of the Julii, <br/>cr. 40 BC, Glanum, part of Roman Republic (now Saint-Rémy de Provence, France)");
+insert_into_images("horsemen/Il_Gesu.jpg", 
+                            "wiki", 
+                            "Il_Gesu.jpg", 
+                            "Il Gesù, motherchurch of the Society of Jesus, <br/>consecrated in 1584, Giacomo Barozzi da Vignola and Giacomo della Porta, Rome, Italy");
+insert_into_images("horsemen/Il-concilio-di-Trento-dipinto-di-Pasquale-Cati-1588.jpg", 
+                            "wiki", 
+                            "Council_of_Trent_by_Pasquale_Cati.jpg", 
+                            "Council of Trent, <br/>1588, Pasquale Cati, Santa Maria in Trastvere, Rome, Italy");
+insert_into_images("horsemen/Westfaelischer_Friede_in_Muenster_Gerard_Terborch_1648.jpg", 
+                            "wiki", 
+                            "Westfaelischer_Friede_in_Muenster_(Gerard_Terborch_1648).jpg", 
+                            "Ratification of the Treaty of Münster, 15 May 1648, <br/>1648, Gerard ter Borch, Dutch Republic");
+insert_into_images("horsemen/Schuttersmaaltijd_ter_viering_van_de_Vrede_van_Munster_Rijksmuseum_SK-C-2.jpeg.jpeg", 
+                            "wiki", 
+                            "Schuttersmaaltijd_ter_viering_van_de_Vrede_van_Munster_Rijksmuseum_SK-C-2.jpeg", 
+                            "Banquet at the Crossbowmen's Guild in Celebration of the Treaty of Munster, <br/>1648, Bartholomeus van der Helst, Dutch Republic");
+insert_into_images("horsemen/Netherlands-4253_-_Drinking_Horn_-_Banquet_at_the_Crossbowmens_Guild_11715762574.jpg", 
+                            "wiki", 
+                            "Netherlands-4253_-_Drinking_Horn_-_Banquet_at_the_Crossbowmen%27s_Guild_(11715762574).jpg", 
+                            "Detail showing a drinking horn decorated with a horseman on a rearing horse, Banquet at the Crossbowmen's Guild in Celebration of the Treaty of Munster, <br/>1648, Bartholomeus van der Helst, Dutch Republic");
+insert_into_images("horsemen/La_plaza_del_mercado_de_Haarlem_durante_una_fiesta_por_Cornelis_Beelt.jpg", 
+                            "wiki", 
+                            "La_plaza_del_mercado_de_Haarlem_durante_una_fiesta,_por_Cornelis_Beelt.jpg", 
+                            "Marketplace in Harlem during the celebration of the Treaty of Münster, <br/>1670-90, Cornelis Beelt, Dutch Republic");
+insert_into_images("horsemen/Europe_in_1648_Peace_of_Westphalia.jpg", 
+                            "wiki", 
+                            "Europe_in_1648_(Peace_of_Westphalia).jpg", 
+                            "Map of Europe by the end of 1648, <br/>1884, 'An Historical Atlas' by Robert H. Labberton");
 
 /*
-   
        
 */
 }
