@@ -6081,7 +6081,7 @@ function populate_images() {
     insert_into_images("horsemen/Ferrara_monumento_equestre_28mar06_03.jpg",
                             "wiki", 
                             "Ferrara_monumento_equestre_28mar06_03.jpg", 
-                            "The reproduction of the monument to Niccolò III d'Este, <br/>original created in early 1440s (?) and destructed by 1796, Leon Battista Alberti (?), Ferrara, Italy");
+                            "The reproduction of the monument to Niccolò III d'Este, <br/>original created in 1451 (?) and destructed by 1796, Leon Battista Alberti or Niccolò Baroncelli and Antonio di Cristoforo (?), Ferrara, Italy");
     insert_into_images("horsemen/Regisole_di_V._Brunelli_1817.jpeg",
                             "wiki", 
                             "Regisole,_di_V._Brunelli,_1817.JPG", 
@@ -7059,9 +7059,33 @@ insert_into_images("horsemen/Europe_in_1648_Peace_of_Westphalia.jpg",
                             "wiki", 
                             "Europe_in_1648_(Peace_of_Westphalia).jpg", 
                             "Map of Europe by the end of 1648, <br/>1884, 'An Historical Atlas' by Robert H. Labberton");
+insert_into_images("horsemen/Luperoncaballo.jpeg", 
+                            "wiki", 
+                            "Luperoncaballo.JPG", 
+                            "Equestrian Statue of General Gregorio Luperón, <br/>1944 (?), Dominican Republic");
+insert_into_images("horsemen/2017_Santiago_de_Chile_-_Estatua_Ecuestre_de_Jose_de_San_Martin_-_Avenida_Libertador_Bernardo_OHiggins.jpg", 
+                            "wiki", 
+                            "2017_Santiago_de_Chile_-_Estatua_Ecuestre_de_José_de_San_Martín_-_Avenida_Libertador_Bernardo_O%27Higgins.jpg", 
+                            "Equestrian statue of José de San Martin, <br/>1859, Louis Joseph Daumas, Santiago de Chile, Chile");
+insert_into_images("horsemen/drinking-horn-Guild-of-St-George-Rijksmuseum.jpg", 
+                            "britannica.com", 
+                            "https://www.britannica.com/topic/drinking-horn", 
+                            "Silver drinking horn of the St. George or Crossbow Civic Guards, <br/>1566, Frederik Jans, Amsterdam, Netherlands");
+insert_into_images("horsemen/Estatua_del_Libetador_Bernardo_Ohiggins.jpg", 
+                            "wiki", 
+                            "Estatua_del_Libetador_Bernardo_O%27higgins.JPG", 
+                            "Equestrian statue of Bernardo O'Higgins, <br/>after 1957 (?), Chillán, Chile");
+insert_into_images("horsemen/Chile-Santiago-Bernardo-OHiggins-16-886x1024-1.jpg", 
+                            "ES", 
+                            "o-higgins-bernardo-4", 
+                            "Equestrian statue of Bernardo O'Higgins, <br/>1872, Albert-Ernest Carrier-Belleuse, Santiago de Chile, Chile");
 
 /*
-       
+shivajimemorialconcepte.jpg
+Shivaji-Poster-1.jpg
+    otvos06.jpg
+    
+11767474_bukobject.jpg
 */
 }
 ?>
