@@ -1884,7 +1884,7 @@ function populate_images() {
     insert_into_images("horsemen/Monumento_al_General_San_Martin.jpg", 
                             "wiki", 
                             "Monumento_al_General_San_Martín.jpg", 
-                            "Monument to José de San Martín, <br/>completed in 1860, dedicated in 1863, Buenos Aires, Argentina");
+                            "Monument to José de San Martín, <br/>completed in 1860, dedicated in 1863, Louis Joseph Daumas, Buenos Aires, Argentina");
     insert_into_images("horsemen/Murat_by_Gros.jpg", 
                             "wiki", 
                             "Murat_by_Gros.jpg", 
@@ -7075,16 +7075,21 @@ insert_into_images("horsemen/Estatua_del_Libetador_Bernardo_Ohiggins.jpg",
                             "wiki", 
                             "Estatua_del_Libetador_Bernardo_O%27higgins.JPG", 
                             "Equestrian statue of Bernardo O'Higgins, <br/>after 1957 (?), Chillán, Chile");
-insert_into_images("horsemen/Chile-Santiago-Bernardo-OHiggins-16-886x1024-1.jpg", 
+insert_into_images("horsemen/BernardoOHiggins.jpg", 
                             "ES", 
                             "o-higgins-bernardo-4", 
                             "Equestrian statue of Bernardo O'Higgins, <br/>1872, Albert-Ernest Carrier-Belleuse, Santiago de Chile, Chile");
+insert_into_images("horsemen/shivajimemorialconcepte.jpg", 
+                            "indianexpress.com", 
+                            "https://indianexpress.com/article/india/for-shivaji-memorial-maharashtra-makes-sculpture-shorter-sword-taller-5261027/", 
+                            "The heights of the sculpture of Chhatrapati Shivaji, original and reduced in 2018");
+insert_into_images("horsemen/Shivaji-Poster-1.jpg", 
+                            "roadsandkingdoms.com", 
+                            "https://roadsandkingdoms.com/2018/the-statue-thats-splitting-mumbai/", 
+                            "Equestrian statue of Chhatrapati Shivaji (digital rendering), <br/>to be completed in 2021 (?), Ram V. Sutar and Anil Sutar, Mumbai, India");
 
-/*
-shivajimemorialconcepte.jpg
-Shivaji-Poster-1.jpg
-    otvos06.jpg
-    
+/* 
+otvos06.jpg
 11767474_bukobject.jpg
 */
 }
