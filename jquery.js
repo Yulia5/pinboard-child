@@ -10,12 +10,12 @@ jQuery(document).ready(function($) {
         } );
     }
 
-    $(document.body).append('<div id="aLightboxModal" class="lightboxModal">\
-                                 <div class="close_cursor">Close ×</div><br/>\
+    $(document.body).append('<div id="aLightboxModalOutside"><div id="aLightboxModal" class="lightboxModal">\
+                                 <div class="close_cursor">X</div><br/>\
                                  <div id="aLightboxModal_outside_image">\
                                  <div id="aLightboxModal_content"><div class="aLightboxModal_container"><img id="aLightboxModal_image" src=""></div></div>\
                                  <div id="aLightboxModal_title"></div></div>\
-                             </div>');
+                             </div></div>');
     $("#aLightboxModal").hide();
 
     $('.toc_button').click(function() {
