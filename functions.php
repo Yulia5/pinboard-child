@@ -142,6 +142,17 @@ function MY_VERY_OWN_clearfloats($attr, $content = null) {
 add_shortcode('yu_clearfloats', 'MY_VERY_OWN_clearfloats');
 
 /**
+ * MY_VERY_OWN_link
+ */
+function MY_VERY_OWN_link($href, $text, $title) {
+	if ( ! $title ) {
+		$title = $text;
+	}
+	$result = '<a title="' . $title . '" href="' . $href . '" target="_blank" rel="noopener noreferrer">' . $text . '</a>';	
+	return $result;
+}
+
+/**
  * MY_VERY_OWN_wiki_link
  */
 function MY_VERY_OWN_wiki_link($attr, $content = null) {
@@ -156,13 +167,10 @@ function MY_VERY_OWN_wiki_link($attr, $content = null) {
 	if ( ! $wikilink ) {
 		$wikilink = $text;
 	}
-	if ( ! $title ) {
-		$title = $text;
-	}
 	if ( ! $language ) {
 		$language = 'en';
 	}	
-	$result = '<a title="' . $title . '" href="http://' . $language . '.wikipedia.org/wiki/' . $wikilink . '" target="_blank">' . $text . '</a>';	
+	$result = MY_VERY_OWN_link('http://' . $language . '.wikipedia.org/wiki/' . $wikilink, $text, $title);
 	return $result;
 }
 add_shortcode('yu_wiki', 'MY_VERY_OWN_wiki_link');
@@ -177,10 +185,7 @@ function MY_VERY_OWN_instagram_link($attr, $content = null) {
 		'title' => ''
 	), $attr));
 	
-	if ( ! $title ) {
-		$title = $account;
-	}
-	$result = '<a title="@' . $title . '" href="https://www.instagram.com/' . $account . '" target="_blank" rel="noopener noreferrer">@' . $account . '</a>';	
+	$result = MY_VERY_OWN_link('https://www.instagram.com/' . $account, '@' . $account, $title);
 	return $result;
 }
 add_shortcode('yu_insta', 'MY_VERY_OWN_instagram_link');
@@ -195,12 +200,8 @@ function MY_VERY_OWN_book($attr, $content = null) {
 		'text' => '',
 		'title' => ''
 	), $attr));
-	
-	if ( ! $title ) {
-		$title = $text;
-	}
 
-	$result = '<a title="' . $title . '" href="https://www.worldcat.org/oclc/' . $id . '" target="_blank" rel="noopener noreferrer">' . $text . '</a>';	
+	$result = MY_VERY_OWN_link('https://www.worldcat.org/oclc/' . $id, $text, $title);
 	return $result;
 }
 add_shortcode('yu_book', 'MY_VERY_OWN_book');
@@ -232,7 +233,7 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 	$youtube_shortcode = '[youtube https://www.youtube.com/watch?v=' . $youtube_id . '&start=' . $start . ']';	
 	
 	if ( $imdb_id )
-		$before_video = '<a title="' . $title . '" href="http://www.imdb.com/title/' . $imdb_id . '/" target="_blank">"' . $title . '"</a>';
+		$before_video = MY_VERY_OWN_link('http://www.imdb.com/title/' . $imdb_id . '/', $title, $title);
 	else
 		$before_video = $title;
 
@@ -266,7 +267,7 @@ function MY_VERY_OWN_amazon($attr, $content = null) {
 		'id' => ''
 	), $attr));
 	
-	$result = '<a title="' . $title . '" href="https://www.amazon.co.uk/dp/' . $id . '" target="_blank">"' . $title . '"</a>';
+	$result = MY_VERY_OWN_link('https://www.amazon.co.uk/dp/' . $id, $title, $title);
 	return $result;
 }
 add_shortcode('yu_amazon', 'MY_VERY_OWN_amazon');
@@ -281,7 +282,7 @@ function MY_VERY_OWN_self_link($attr, $content = null) {
         'post' => ''
     ), $attr));
       
-    $result = '<a title="' . $text . '" href="http://www.yu51a5.com/' . $post . '" target="_blank" rel="noopener noreferrer">' . $text . '</a>';   
+    $result = MY_VERY_OWN_link(wp_upload_dir()['baseurl'] . '/' . $post, $text, $text);  
     return $result;
 }
 add_shortcode('yu_self', 'MY_VERY_OWN_self_link');
@@ -296,12 +297,8 @@ function MY_VERY_OWN_academia_link($attr, $content = null) {
         'text' => '',
         'id' => ''
     ), $attr));
-      
-    if ( ! $title ) {
-        $title = $text;
-    }
-    
-    $result = '<a title="' . $title . '" href="https://www.academia.edu/' . $id . '" target="_blank">' . $text . '</a>';   
+         
+    $result = MY_VERY_OWN_link('https://www.academia.edu/' . $id, $text, $title);
     return $result;
 }
 add_shortcode('yu_acad', 'MY_VERY_OWN_academia_link');

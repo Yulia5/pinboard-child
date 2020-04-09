@@ -351,7 +351,7 @@ function populate_images() {
                             "Rudolf II introducing the Liberal Arts to Bohemia, <br/>1609, Adriaen de Vries, Prague");
     insert_into_images("horsemen/139-53-1.jpg", 
                             "MFA", 
-                            "boy-on-horseback-53424", 
+                            "53424", 
                             "Boy on horseback,<br/>cr. 1753-5, probably by Vauxhall Manufactory");
     insert_into_images("horsemen/1394384194_6.jpg", 
                             "respublikarso.org", 
@@ -1523,7 +1523,7 @@ function populate_images() {
                             "Miniature of an armed knight of Prato on horseback (a manuscript illustration), <br/>c. 1335-40, Pacino di Buonaguida (attribution), Italy");
     insert_into_images("horsemen/E6577.jpg", 
                             "MFA", 
-                            "situla-with-an-amazonomachy-scene-154123", 
+                            "154123", 
                             "Situla with an Amazonomachy scene, <br/>340–330 BC, Apulia");
     insert_into_images("horsemen/Edward_III_of_England_Order_of_the_Garter.jpg", 
                             "wiki", 
@@ -2035,55 +2035,55 @@ function populate_images() {
                             "The Miracle of Saint George and the Dragon, <br/>mid-14th century, Novgorod, Russia");
     insert_into_images("horsemen/SC115764.jpg", 
                             "MFA", 
-                            "mixing-bowl-bell-krater-154121", 
+                            "154121", 
                             "Bell-krater showing a battle of Troilus and Achilles, <br/>cr. 380–370 BC, the Hoppin Painter, Apulia");
     insert_into_images("horsemen/SC246821.jpg", 
                             "MFA", 
-                            "stater-of-taras-tarentum-with-the-dioskouroi-on-horses-struck-under-sodamos-957", 
+                            "957", 
                             "Stater of Sodamos, showing Dioscuri,<br/>cr. 281–272 BC, Taras (Tarentum), Calabria (Hellenistic)");
     insert_into_images("horsemen/SC247577.jpg", 
                             "MFA", 
-                            "tetradrachm-of-kingdom-of-paionia-with-head-of-patraos-1308", 
+                            "1308", 
                             "Tetradrachm of King Paionia, <br/>335–315 BC, Paeonia");
     insert_into_images("horsemen/SC249640.jpg", 
                             "MFA", 
-                            "stater-of-kingdom-of-macedonia-with-horse-and-rider-struck-under-archelaos-i-2957", 
+                            "2957", 
                             "Stater with horse and rider, struck under Archelaos I, <br/>413–399 BC, Macedonia");
     insert_into_images("horsemen/SC249728.jpg", 
                             "MFA", 
-                            "coin-of-kingdom-of-macedonia-with-filleted-head-struck-under-philip-ii-3782", 
+                            "3782", 
                             "Coin with a filleted head, struck under Philip II, <br/>359–336 BC, Macedonia");
     insert_into_images("horsemen/SC250259.jpg", 
                             "MFA", 
-                            "coin-of-kingdom-of-macedonia-with-male-head-struck-in-the-name-of-alexander-the-great-3979", 
+                            "3979", 
                             "Coin with a male head, struck in the name of Alexander the Great, <br/>cr. 316–297 BC, Macedonia");
     insert_into_images("horsemen/SC250271.jpg", 
                             "MFA", 
-                            "coin-of-kingdom-of-macedonia-with-head-of-apollo-struck-under-alexander-v-2971", 
+                            "2971", 
                             "Coin with the head of Apollo, struck under Alexander V, <br/>295 BC, Macedonia");
     insert_into_images("horsemen/SC250836.jpg", 
                             "MFA", 
-                            "drachm-of-larissa-with-galloping-bull-3571", 
+                            "3571", 
                             "Drachm with galloping bull,<br/>cr. 370 BC, Larissa, Thessaly");
     insert_into_images("horsemen/SC250951.jpg", 
                             "MFA", 
-                            "drachm-of-pelinna-with-horse-and-rider-3369", 
+                            "3369", 
                             "Drachm with a horse and a rider,<br/>cr. 450–400 BC, Pelinna, Thessaly");
     insert_into_images("horsemen/SC250984.jpg", 
                             "MFA", 
-                            "stater-of-pherai-with-head-of-hekate-struck-under-alexander-4050", 
+                            "4050", 
                             "Stater with the head of Hekate, struck under Alexander, <br/>cr. 369–357 BC, Pherai, Thessaly");
     insert_into_images("horsemen/SC263507.jpg", 
                             "MFA", 
-                            "drachm-of-pharsalos-with-head-of-athena-signed-by-telephantos-3472", 
+                            "3472", 
                             "Drachm with the head of Athena, signed by Telephantos, <br/>cr. 425–405 BC, Pharsalos, Thessaly");
     insert_into_images("horsemen/SC268043-1.jpg", 
                             "MFA", 
-                            "stater-of-kingdom-of-macedonia-with-head-of-demetrios-poliorketes-3238", 
+                            "3238", 
                             "Stater with the head of Demetrios Poliorketes, <br/>cr. 290–289 BC, Macedonia");
     insert_into_images("horsemen/SC304264-1.jpg", 
                             "MFA", 
-                            "scaraboid-with-bellerophon-riding-pegasos-and-attacking-the-chimaera-260168", 
+                            "260168", 
                             "Scaraboid with Bellerophon riding Pegasus and attacking the Chimaera, <br/>400–375 BC, Greek");
     insert_into_images("horsemen/SC44777.jpg", 
                             "Met", 
@@ -2091,11 +2091,11 @@ function populate_images() {
                             "Textile fragment with a hunting scene, <br/>8th century, Egypt or Syria");
     insert_into_images("horsemen/SC47844.jpg", 
                             "MFA", 
-                            "drinking-cup-kylix-153712", 
+                            "153712", 
                             "Drinking cup (kylix) with the depiction of an Arimaspean on horseback and a gryphon, <br/>cr. 4th century BC, Attica");
     insert_into_images("horsemen/SC70606.jpg", 
                             "MFA", 
-                            "fragment-of-an-oinochoe-154084", 
+                            "154084", 
                             "Fragment of an Oinochoe with Bellerophon mounted on Pegasus (white) attacking the Chimaera, <br/>cr. 350–340 BC, Italy, Apulia (Greek culture)");
     insert_into_images("horsemen/Saint_George_Puglia.png", 
                             "paradoxplace.com", 
@@ -2492,11 +2492,11 @@ function populate_images() {
                             "Fourth seal of Charles II (19 April 1672 - 21 Oct 1685)");
     insert_into_images("horsemen/coin-of-corinth-with-head-of-aphrodite-struck-under-q-caecilius-niger-and-c-heius-pamphilus-259879-1.jpg", 
                             "MFA", 
-                            "coin-of-corinth-with-head-of-aphrodite-struck-under-q-caecilius-niger-and-c-heius-pamphilus-259879", 
+                            "259879", 
                             "Coin with the head of Aphrodite, struck under Q. Caecilius Niger and C. Heius Pamphilus, <br/>34–31 BC, Corinth, Roman culture");
     insert_into_images("horsemen/coin-of-thyatira-with-bust-of-severus-alexander-struck-under-mar-pollianus-264438.jpg", 
                             "MFA", 
-                            "coin-of-thyatira-with-bust-of-severus-alexander-struck-under-mar-pollianus-264438", 
+                            "264438", 
                             "Coin with a bust of Severus Alexander, reverse shows Bellerophon on Pegasus brandishing spear, <br/>222–235 AD, Thyatira, Lydia (modern Turkey), Roman culture");
     insert_into_images("horsemen/coloured_tombstone.jpeg", 
                             "Lancashire County Council", 
@@ -2544,11 +2544,11 @@ function populate_images() {
                             "Vessel-fitting, <br/>cr. 510 BC-490 BC");
     insert_into_images("horsemen/drachm-of-aspendos-with-horseman-hurling-spear-3297.jpg", 
                             "MFA", 
-                            "drachm-of-aspendos-with-horseman-hurling-spear-3297", 
+                            "3297", 
                             "Drachm with horseman hurling spear, <br/>cr. 450 BC, Aspendos, Pamphylia");
     insert_into_images("horsemen/drachm-of-kibyra-with-head-of-youth-3507.jpg", 
                             "MFA", 
-                            "drachm-of-kibyra-with-head-of-youth-3507", 
+                            "3507", 
                             "Drachm with the head of youth, <br/>cr. 166–84 BC, Kibyra, Phrygia (Hellenistic)");
     insert_into_images("germany/durers-rhino1.jpg", 
                             "SKD", 
@@ -2860,7 +2860,7 @@ function populate_images() {
                             "Silver Medallion representing Bellerophon killing a Chimera, <br/>5th-7th century AD, European (Visigothic?)");
     insert_into_images("horsemen/mfa_154065.jpg", 
                             "MFA", 
-                            "pitcher-oinochoe-with-battle-of-the-greeks-and-amazons-154065", 
+                            "154065", 
                             "Pitcher (oinochoe) with a battle of the Greeks and Amazons, <br/>cr. 320–310 BC, Apulia");
     insert_into_images("berets/moulin-de-la-galette.jpg", 
                             "guggenheim.org", 
@@ -2876,11 +2876,11 @@ function populate_images() {
                             "The Çan Sarcophagus, detail of hunting scene, <br/>beginning of the 4th century BC");
     insert_into_images("horsemen/nommos-of-taras-tarentum-with-horse-and-rider-2945.jpg", 
                             "MFA", 
-                            "nommos-of-taras-tarentum-with-horse-and-rider-2945", 
+                            "2945", 
                             "Nommos with horse and rider,<br/>cr. 390 BC, Taras, Apulia");
     insert_into_images("horsemen/oil-flask-aryballos-with-bellerophon-attacking-the-chimaera-185364.jpg", 
                             "MFA", 
-                            "oil-flask-aryballos-with-bellerophon-attacking-the-chimaera-185364", 
+                            "185364", 
                             "Oil flask (aryballos) with Bellerophon attacking the Chimaera, <br/>cr. 650 BC, Corinth, Greece");
     insert_into_images("germany/paper-nazis.jpg", 
                             "Time Out", 
@@ -2980,7 +2980,7 @@ function populate_images() {
                             "Le Comte Duc d'Orléans, <br/>1986, Salvador Dalí");
     insert_into_images("horsemen/sarcofagus.jpg", 
                             "MFA", 
-                            "sarcophagus-and-lid-with-husband-and-wife-151377", 
+                            "151377", 
                             "Sarcophagus and lid with husband and wife with two pairs of horsemen and foot soldiers in combat, <br/>350–300 BC, Italian/Etruscan");
     insert_into_images("horsemen/sasanian_hunt.jpg", 
                             "The Smithsonian's Museum of Asian Art", 
@@ -3040,31 +3040,31 @@ function populate_images() {
                             "Saint Mercurius, <br/>?");
     insert_into_images("horsemen/stater-of-kelenderis-with-youth-riding-horse-2761.jpg", 
                             "MFA", 
-                            "stater-of-kelenderis-with-youth-riding-horse-2761", 
+                            "2761", 
                             "Stater with a youth riding horse,<br/>450–400 BC, Kelenderis, Cilicia");
     insert_into_images("horsemen/stater-of-kyzikos-with-horse-and-rider-above-tunny-fish-3299.jpg", 
                             "MFA", 
-                            "stater-of-kyzikos-with-horse-and-rider-above-tunny-fish-3299", 
+                            "3299", 
                             "Stater with horse and rider above tunny fish, <br/>cr. 460–400 BC, Kyzikos, Mysia");
     insert_into_images("horsemen/stater-of-taras-tarentum-with-horse-and-rider-951.jpg", 
                             "MFA", 
-                            "stater-of-taras-tarentum-with-horse-and-rider-951", 
+                            "951", 
                             "Stater,<br/>334–302 BC, Taras, Apulia");
     insert_into_images("horsemen/stater-of-taras-tarentum-with-horse-and-rider-struck-under-philokles-955.jpg", 
                             "MFA", 
-                            "stater-of-taras-tarentum-with-horse-and-rider-struck-under-philokles-955", 
+                            "955", 
                             "Stater struck under Philokles,<br/>302–281 BC, Taras, Apulia");
     insert_into_images("horsemen/stater-of-taras-tarentum-with-rider-vaulting-from-horse-942.jpg", 
                             "MFA", 
-                            "stater-of-taras-tarentum-with-rider-vaulting-from-horse-942", 
+                            "942", 
                             "Stater  with a rider vaulting from a horse,<br/>420–380 BC, Taras, Apulia");
     insert_into_images("horsemen/stater-of-taras-tarentum-with-rider-vaulting-from-horse-943.jpg", 
                             "MFA", 
-                            "stater-of-taras-tarentum-with-rider-vaulting-from-horse-943", 
+                            "943", 
                             "Stater with a rider vaulting from a horse,<br/>380–344 BC, Taras, Apulia");
     insert_into_images("horsemen/stater-of-taras-tarentum-with-warrior-on-horseback-crowned-by-victory-struck-under-kallikrates-885.jpg", 
                             "MFA", 
-                            "stater-of-taras-tarentum-with-warrior-on-horseback-crowned-by-victory-struck-under-kallikrates-885", 
+                            "885", 
                             "Stater with a warrior on horseback crowned by Victory, struck under Kallikrates,<br/>cr. 240–228 BC, Taras, Apulia");
     insert_into_images("horsemen/stgeorgedragon1.jpg", 
                             "The Second Website of Bob Speel", 
@@ -3108,7 +3108,7 @@ function populate_images() {
                             "Roman gravestone showing a soldier Insus holding the severed head of a barbarian,<br/>cr. 100 AD, discovered in Lancashire, UK");
     insert_into_images("horsemen/trihemidrachm-of-corinth-with-bellerophon-riding-pegasos-1451.jpg", 
                             "MFA", 
-                            "trihemidrachm-of-corinth-with-bellerophon-riding-pegasos-1451", 
+                            "1451", 
                             "Trihemidrachm of Corinth with Bellerophon riding Pegasus, <br/>338–280 BC, Corinth, Greek culture");
     insert_into_images("horsemen/trump_cartoon.jpg", 
                             "The Guardian", 
@@ -3224,7 +3224,7 @@ function populate_images() {
                             "A Meissen Equestrian Figure,<br/>cr. 1745-50");
     insert_into_images("horsemen/augustus-iii.jpg", 
                             "Langeloh", 
-                            "http://www.yu51a5.com/wp-content/uploads/we_2753_reiterstandbild_eng.pdf", 
+                            "http://www.yu51a5.org/wp-content/uploads/we_2753_reiterstandbild_eng.pdf", 
                             "Augustus III porcelain figurine<br/>Model by Johann J. Kaendler,<br/>Meissen 1745");
     insert_into_images("horsemen/ausutus1m.jpg", 
                             "wiki", 
