@@ -118,8 +118,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
     }
     
     if ( $no_image ) {
-        $result_no_image = '<a class="magnific-image" href=' . $hrf . ' title="' . $caption_no_br . '" >'
-                    . $caption_no_br . '<img '. $img_attr . 'src=' . $hrf . '/></a>' . $invisible_a_to_check_broken_links;
+        $result_no_image = '<a href="' . $sourcehrf . '" target="_blank" rel="noopener noreferrer">' . $caption_no_br . '</a>';
         return $result_no_image;
     }
     
