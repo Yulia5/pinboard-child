@@ -10,13 +10,13 @@ jQuery(document).ready(function($) {
         } );
     }
 
-    $(document.body).append('<div id="aLightboxModalOutside"><div id="aLightboxModal" class="lightboxModal">\
+    $(document.body).append('<div id="aLightboxModalOutside"><div id="aLightboxModal">\
                                  <div class="close_cursor">X</div><br/>\
                                  <div id="aLightboxModal_outside_image">\
                                  <div id="aLightboxModal_content"><div class="aLightboxModal_container"><img id="aLightboxModal_image" src=""></div></div>\
                                  <div id="aLightboxModal_title"></div></div>\
                              </div></div>');
-    $("#aLightboxModal").hide();
+    $("#aLightboxModalOutside").hide();
 
     $('.toc_button').click(function() {
         if ($(this).val() === "-") {
@@ -139,11 +139,11 @@ jQuery(document).ready(function($) {
         caption = get_caption($(this));
         $("#aLightboxModal_image").attr("src", img_src);
         $("#aLightboxModal_title").html(caption);
-        $("#aLightboxModal").show();
+        $("#aLightboxModalOutside").show();
     });
 
     $('.close_cursor').click(function() {
-        $("#aLightboxModal").hide();
+        $("#aLightboxModalOutside").hide();
         $("#aLightboxModal_image").attr("src", "");
         $("#aLightboxModal_title").html("");
     });
