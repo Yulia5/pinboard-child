@@ -117,10 +117,10 @@ table th {
  *                           Image and Anchor                                 *
  *****************************************************************************/
 
-a img, .entry-content a img {
-    display: block;
-    margin: 0 auto;
-   	border: none;
+ a img {  
+  display: block;
+  margin: 0 auto;
+  border: none;
 	-moz-border-radius: 0px;
 	-khtml-border-radius: 0px;
 	-webkit-border-radius: 0px;
@@ -130,7 +130,7 @@ a img, .entry-content a img {
 	border-width: 0;
 	outline:none;
 	box-shadow: none;
-	object-fit: contain;
+  object-fit: contain;
 }
 
 .outside_image a img, .wp-caption {
@@ -138,15 +138,15 @@ a img, .entry-content a img {
 }
 
 .outside_image {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 a {
 	cursor: pointer;
 	text-decoration: none;
 	transition: none;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .wp-caption {
@@ -177,16 +177,30 @@ table .images {
 }
 
 .images {
-    display: table; 
+    display: inline-table;
     margin: 5px auto;
     vertical-align: top;
     text-align: center;
-    max-width: 80%;
+    max-width: 80vw;
 }
 
 .images .outside_image {
 	display: inline-block; 
 	vertical-align: top; 
+}
+
+h2:before, h1:before, h3:before, .flushright:after, .clearfloats:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfloats {
+  font-size: 1px;
+}
+
+.flushright .images , .flushright2 .images  {
+  float: right;
 }
 
 /******************************************************************************
@@ -273,20 +287,6 @@ table .images {
     text-decoration:none;
     color: #000 !important;
     cursor: pointer;
-}
-
-h2:before, h1:before, h3:before, .flushright:after, .clearfloats:before {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.clearfloats {
-	font-size: 1px;
-}
-
-.flushright .images, .flushright2 .images {
-	float: right;
 }
 
 /******************************************************************************
