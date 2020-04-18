@@ -13,6 +13,8 @@ jQuery(document).ready(function($) {
     $(document.body).append('<div id="aLightboxModalOutside"><div id="aLightboxModal">\
                                  <div class="close_cursor">X</div><br/>\
                                  <div id="aLightboxModal_outside_image">\
+                                 <a class="prev" onclick="go_back()">&#10094;</a>\
+                                 <a class="next" onclick="go_forward()">&#10095;</a>\
                                  <div id="aLightboxModal_content"><div class="aLightboxModal_container"><img id="aLightboxModal_image" src=""></div></div>\
                                  <div id="aLightboxModal_title"></div></div>\
                              </div></div>');
@@ -59,7 +61,7 @@ jQuery(document).ready(function($) {
             }
         }
 
-        $(this).load(function() {  
+        $(this).on('load', function() {  
             var imgheight = get_float_attribute($(this).closest('.images'), 'imgheight');
             if (imgheight !== false) {
                 var new_width = calculate_max_width($(this), imgheight);
@@ -147,5 +149,40 @@ jQuery(document).ready(function($) {
         $("#aLightboxModal_image").attr("src", "");
         $("#aLightboxModal_title").html("");
     });
+
+    // Next/previous controls
+
+    function go_back() {
+        return 0;
+    }
+
+    function go_forward() {
+        return 0;
+    }
+/*
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }*/
 
 });

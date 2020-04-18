@@ -1,30 +1,17 @@
 <?php
 
-/******************************************************************************
- *                                 theme                                      *
- *****************************************************************************/
-if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
-function my_jquery_enqueue() {
-   wp_deregister_script('jquery');
-   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js", false, null);
-   wp_enqueue_script('jquery');
-} 
  
 function enqueue_styles_and_scripts() {
 	
-	/* prevent jetpack from adding "scale" 
-	wp_dequeue_script( 'devicepx' );*/
-	
-	/* parent theme style */
-    $parent_style = 'parent-style';
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-	
-	/* Magnific popup - http://dimsemenov.com/plugins/magnific-popup/ */
-    wp_enqueue_script('aux_script', get_stylesheet_directory_uri().'/jquery.js', array('jquery'));
-		
-	/* child theme style */
-    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
+	/* general */
 	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css?family=Permanent Marker', false );
+	
+	/* parent theme */
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );	
+		
+	/* child theme */
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_script('aux_script', get_stylesheet_directory_uri().'/jquery.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);
 
@@ -254,7 +241,6 @@ function MY_VERY_OWN_youtube($attr, $content = null) {
 
 	return $result;
 }
-
 add_shortcode('yu_tube', 'MY_VERY_OWN_youtube');
 
 /**
@@ -319,4 +305,5 @@ function MY_VERY_OWN_quote($attr, $content = null) {
     return $result;
 }
 add_shortcode('yu_quote', 'MY_VERY_OWN_quote');
+
 ?>
