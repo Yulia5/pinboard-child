@@ -1,5 +1,7 @@
 <?php
 
+require_once( __DIR__ . '/functions_common.php');
+
 /******************************************************************************
  *                          Image Caption                                     *
  *****************************************************************************/
@@ -64,8 +66,8 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
     $caption_no_br = preg_replace("/<br\W*?\/>/", "\n", $caption);
 
     $hrf = trim($hrf, " ");
-    if ( substr( $hrf, 0, 7 ) !== "http://" ) {
-        $hrf = trailingslashit(wp_upload_dir()['url']) . $hrf;
+    if ( substr( $hrf, 0, 4 ) !== "http" ) {
+        $hrf = yu_upload_dir() . $hrf;
     }
     if (! $folder_name) {
         $folder_name = get_folder_name();
@@ -118,7 +120,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
     }
     
     if ( $no_image ) {
-        $result_no_image = '<a href="' . $sourcehrf . '" target="_blank" rel="noopener noreferrer">' . $caption_no_br . '</a>';
+        $result_no_image = MY_VERY_OWN_link($sourcehrf, $caption_no_br); 
         return $result_no_image;
     }
     
@@ -302,7 +304,7 @@ function yu_make_content_images_responsive( $content ) {
 
     //error_log('yu_make_content_images_responsive 3 ' . print_r(substr($content, 0, 10000)));
 
-    $pattern = '`<img[^>]+src\s*=\s*\"' . preg_quote (trailingslashit(wp_upload_dir()['url']), '/' ) . '([^\"]*)\"([^>]*)>`';
+    $pattern = '`<img[^>]+src\s*=\s*\"' . preg_quote (yu_upload_dir(), '/' ) . '([^\"]*)\"([^>]*)>`';
     $has_matches = preg_match_all( $pattern, $content, $matches );
     error_log('has_matches img ' . count($matches));
     if ( ! $has_matches ) {
@@ -324,9 +326,8 @@ function yu_make_content_images_responsive( $content ) {
         update_meta_cache( 'post', $attachment_ids );
     }
     
-    $an_upload_dir = trailingslashit(wp_upload_dir()['url']);
     foreach ( $selected_images_srcset as $image => $image_srcset) {
-        $pattern =  'src="' . $an_upload_dir . $image . '"';
+        $pattern =  'src="' . yu_upload_dir() . $image . '"';
         //error_log('has_matches pattern ' . $pattern . ' ' . $image_srcset . ' ');
         $content = str_replace($pattern, $pattern . ' ' . $image_srcset . ' ', $content );
     }
