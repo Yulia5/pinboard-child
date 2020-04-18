@@ -154,7 +154,7 @@ function MY_VERY_OWN_quote($attr, $content = null) {
         'author' => ''
     ), $attr));
       
-    $result = '<div style="max-width: 50%; text-align: right; float: right;"><blockquote cite="' . $url . '">' . $text . '</blockquote><p style="font-size: smaller;">' . $author . '</p></div>';
+    $result = '<div class="yu_quote"><blockquote cite="' . $url . '">' . $text . '</blockquote><p class="yu_p_quote">' . $author . '</p></div>';
     
     return $result;
 }

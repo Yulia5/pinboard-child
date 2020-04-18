@@ -2,6 +2,7 @@
 
 /**
  * MY_VERY_OWN_link
+ * generates a link that opens in a new tab
  */
 function MY_VERY_OWN_link($href, $text, $title) {
 	if ( ! $title ) {
@@ -11,9 +12,13 @@ function MY_VERY_OWN_link($href, $text, $title) {
 	return $result;
 }
 
-
+/**
+ * yu_upload_dir via https
+ */
 function yu_upload_dir() {
-    return trailingslashit(wp_upload_dir()['url']);
+	$result = trailingslashit(wp_upload_dir()['url']);
+	$result = str_replace('http://', 'https://', $result);
+    return $result;
 }
 
 ?>

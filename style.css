@@ -12,6 +12,32 @@
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
+
+.clearfloats {
+  font-size: 1px;
+}
+
+.yu_quote {
+  max-width: 50%; 
+  text-align: right; 
+  float: right;
+}
+
+.yu_p_quote {
+  font-size: smaller;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: none;
+  font-weight: bold;
+}
+
+div .center, table .center {
+    margin: auto;
+}
+
 /******************************************************************************
  *                      Table Of Contents And Headers                         *
  *****************************************************************************/
@@ -56,6 +82,13 @@ h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover, h5 a:active, .item-h5 {
 .div_toc_initial {
   display: none;
 }
+
+h2:before, h1:before, h3:before, .flushright:after, .clearfloats:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /******************************************************************************
  *                                  Table                                     *
  *****************************************************************************/
@@ -112,7 +145,6 @@ table th {
     vertical-align: top;
 }
 
-
 /******************************************************************************
  *                           Image and Anchor                                 *
  *****************************************************************************/
@@ -142,13 +174,6 @@ table th {
   width: 100%;
 }
 
-a {
-	cursor: pointer;
-	text-decoration: none;
-	transition: none;
-  font-weight: bold;
-}
-
 .wp-caption {
  	margin: 0 auto; 
  	padding: 10px;
@@ -163,7 +188,7 @@ a {
 	padding: 0px 10px 10px 10px;
 }
 
-div .center, table .center, .wp-caption-text, .outside_image {
+.wp-caption-text, .outside_image {
     margin: auto;
 }
 
@@ -187,16 +212,6 @@ table .images {
 .images .outside_image {
 	display: inline-block; 
 	vertical-align: top; 
-}
-
-h2:before, h1:before, h3:before, .flushright:after, .clearfloats:before {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.clearfloats {
-  font-size: 1px;
 }
 
 .flushright .images , .flushright2 .images  {

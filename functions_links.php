@@ -127,7 +127,7 @@ function MY_VERY_OWN_self_link($attr, $content = null) {
         'post' => ''
     ), $attr));
       
-    $result = MY_VERY_OWN_link(yu_upload_dir() . $post, $text, $text);  
+    $result = MY_VERY_OWN_link(home_url( $path = '/', $scheme = https ) . $post, $text, $text);  
     return $result;
 }
 add_shortcode('yu_self', 'MY_VERY_OWN_self_link');
