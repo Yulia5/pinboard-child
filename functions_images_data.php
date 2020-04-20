@@ -16,7 +16,7 @@ function generate_src() {
     insert_into_src("Getty",    'The J.Paul Getty Museum Open Contents Program','http://www.getty.edu/art/collection/objects/'); 
     insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'https://collections.mfa.org/objects/');  
     insert_into_src("WAM",      'The Walters Art Museum',                       'https://art.thewalters.org/detail/');    
-    insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objekt-datenbank/detail/');
+    insert_into_src("KHM",      'Kunsthistorisches Museum Vienna',              'https://www.khm.at/objektdb/detail/');
     insert_into_src("HAM",      'Harvard Art Museums',                          'http://www.harvardartmuseums.org/collections/object/');
     insert_into_src("Ben",      '© Benaki Museum',                              'https://www.benaki.gr/index.php?option=com_collectionitems&amp;view=collectionitem&amp;id=', '&amp;lang=en');
     insert_into_src("CBd",      'Campbell Bonner Magical Gems Database',        'http://www2.szepmuveszeti.hu/talismans/cbd/');
@@ -3224,7 +3224,7 @@ function populate_images() {
                             "A Meissen Equestrian Figure,<br/>cr. 1745-50");
     insert_into_images("horsemen/augustus-iii.jpg", 
                             "Langeloh", 
-                            "http://www.yu51a5.org/wp-content/uploads/we_2753_reiterstandbild_eng.pdf", 
+                            "https://www.yu51a5.org/wp-content/uploads/we_2753_reiterstandbild_eng.pdf", 
                             "Augustus III porcelain figurine<br/>Model by Johann J. Kaendler,<br/>Meissen 1745");
     insert_into_images("horsemen/ausutus1m.jpg", 
                             "wiki", 

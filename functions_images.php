@@ -15,11 +15,12 @@ function post_ID_to_folder_name($post_id)
             return 'similar_different';
         case 1895: 
             return 'rj';
-        case 1522:
-        case 3750: 
+        case 6463: 
+        case 6468:
+        case 6471:
+        case 6474:
+        case 6477:
         case 4737:
-        case 4971:
-        case 5771:
             return 'horsemen';
         case 13: 
             return 'hamlet';
