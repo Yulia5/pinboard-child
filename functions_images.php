@@ -21,6 +21,14 @@ function post_ID_to_folder_name($post_id)
         case 6474:
         case 6477:
         case 4737:
+        case 6490:
+        case 6492:
+        case 6495:
+        case 6497:
+        case 6500:
+        case 6503:
+        case 6506:
+        case 6526:
             return 'horsemen';
         case 13: 
             return 'hamlet';
@@ -56,13 +64,8 @@ function get_folder_name() {
     return $folder_name;
 }
 
-// Function for basic field validation (present and neither empty nor only white space)
-function is_empty_string($question) {
-    return (!isset($question) || trim($question)==='');
-}
-
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, 
-                                $srcset = null, $style = null, $class = null, $no_image = null)
+                                $srcset, $style, $class, $no_image)
 {    
     $caption_no_br = preg_replace("/<br\W*?\/>/", "\n", $caption);
 

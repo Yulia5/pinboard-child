@@ -35,11 +35,14 @@ function generate_src() {
     insert_into_src("ES",       "Equestrian Statues",                           'https://equestrianstatue.org/');
     insert_into_src("Gallica",  "Gallica at bibliothèque nationale de France",  'https://gallica.bnf.fr/ark:/');
     insert_into_src("NT",       "National Trust Collection",                    'http://www.nationaltrustcollections.org.uk/object/');
+    insert_into_src("Kremlin",  "The Moscow Kremlin State Historical and Cultural Museum and Heritage Site",                    
+                                                                                'https://collectiononline.kreml.ru/iss2/items?info=');
     insert_into_src("dreamstime",  "Copyright © Dreamstime",                    'https://www.dreamstime.com/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
     insert_into_src("Sothebys", 'Sotheby’s',                                    'http://www.sothebys.com/en/auctions/ecatalogue/');  
+    insert_into_src("PA",       'Pushkin Antiques',                             'https://www.pushkinantiques.com/');  
 
     insert_into_src("Yoga Outlet",       "Yoga Outlet",                         "http://www.yogaoutlet.com/guides/how-to-do-");    
 } 
@@ -628,7 +631,7 @@ function populate_images() {
     insert_into_images("horsemen/499182.jpg", 
                             "RC", 
                             "35456", 
-                            "Equestrian statuette of Gustavus II Adolphus of Sweden, <br/>1625-35, Daniel Lang");
+                            "Equestrian statuette of Gustavus II Adolphus of Sweden, <br/>1635, Daniel Lang, Augsburg, Germany");
     insert_into_images("horsemen/515910-1424169269.jpg", 
                             "RC", 
                             "440084", 
@@ -780,7 +783,7 @@ function populate_images() {
     insert_into_images("horsemen/8213_1682924.jpg", 
                             "The Art Institute of Chicago", 
                             "http://www.artic.edu/aic/collections/artwork/181145", 
-                            "Horse and Rider,<br/>1630, Hans Ludwig Kienle");
+                            "Horse and Rider,<br/>1630, Hans Ludwig Kienle, Ulm, Germany");
     insert_into_images("horsemen/821px-King_William_III_from_NPG.jpg", 
                             "wiki", 
                             "King_William_III_from_NPG.jpg", 
@@ -2571,9 +2574,9 @@ function populate_images() {
                             "https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=16&ved=0ahUKEwiG14PUhPvLAhXEsxQKHXlZBFQQFgh_MA8&url=http%3A%2F%2Fservicios.mpr.es%2Fdocumentacion%2Fvisordocumentosicopo.aspx%3FNIPO%3D723120099%26SUBNIPO%3D0002&usg=AFQjCNHwEwi8H8AFDtLibldU-iL-0idtKg&sig2=B2CZ2bTATBHBoIRKCTt5aQ", 
                             "Carlos II on Horseback, <br/>erected 1684, destroyed in 1848, Andrea and Gaspare Romano (based on Giacomo Serpotta's model), Messina, Sicily");
     insert_into_images("horsemen/ex11Kaz15-bv.jpg", 
-                            "The Moscow Kremlin Museum", 
+                            "The Moscow Kremlin State Historical and Cultural Museum and Heritage Site", 
                             "http://www.kreml.ru/en-Us/exhibitions/russian-exhibitions/kreml-ot-moskovskogo-tsarstva-do-posledney-koronatsii/", 
-                            "TABLE FIGURINE 'RIDING WARRIOR', <br/>1665-1669, Heinrich Mannlich");
+                            "Table figurine 'Riding Warrior', <br/>1665-1669, Heinrich Mannlich, Augsburg, Germany");
     insert_into_images("horsemen/f22f227e754b93409c8a70d4ad9599b5.jpg", 
                             "BM", 
                             "461496", 
@@ -7087,7 +7090,82 @@ insert_into_images("horsemen/Shivaji-Poster-1.jpg",
                             "roadsandkingdoms.com", 
                             "https://roadsandkingdoms.com/2018/the-statue-thats-splitting-mumbai/", 
                             "Equestrian statue of Chhatrapati Shivaji (digital rendering), <br/>to be completed in 2021 (?), Ram V. Sutar and Anil Sutar, Mumbai, India");
-
+insert_into_images("horsemen/92d98cc2-41d7-452d-9bc9-d4507436c6b3.jpg", 
+                            "SKD", 
+                            "117542", 
+                            "Automation with the figure of Saint George, <br/>cr. 1618-1622, Joachim Fries, Augsburg, Germany");
+insert_into_images("horsemen/Saint_George_by_Jakob_Miller_the_elder.jpg", 
+                            "wiki", 
+                            "Saint_George,_by_Jakob_Miller_the_elder,_Augsburg,_c._1615_AD,_silver,_partly_gilt,_paint_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-DSC00506.jpg", 
+                            "Automation with the figure of Saint George, <br/>cr. 1615, Jakob Miller the elder, Augsburg, Germany");
+insert_into_images("horsemen/animals.png", 
+                            "Sothebys", 
+                            "2015/treasures-l15303/lot.13.html", 
+                            "Parcel-gilt silver equestrian figure of St. George, <br/>cr. 1640, Melchior Gelb I, Augsburg, Germany");
+insert_into_images("horsemen/download.png", 
+                            "nationalmuseum.se", 
+                            "http://emp-web-84.zetcom.ch/eMP/eMuseumPlus;jsessionid=F95C51C8F61DF39D983EB840D587518F.node1?service=direct/1/ResultDetailView/result.inline.list.t1.collection_list.$TspTitleImageLink.link&sp=13&sp=Sartist&sp=SelementList&sp=0&sp=0&sp=999&sp=SdetailView&sp=0&sp=Sdetail&sp=1&sp=T&sp=0&sp=SdetailList&sp=0&sp=T&sp=0#artistReferences", 
+                            "Drinking cup/centrepiece, modelled as Gustavus Adolphus II King of Sweden, <br/>1644-1647, David Schwestermüller I, Augsburg, Germany");
+insert_into_images("horsemen/DP258114-scaled.jpg", 
+                            "Met", 
+                            "186527", 
+                            "Equestrian figure of Charles I Stuart, King of England, electrotype after a 1639-1649 original, <br/>19th century, Elkington & Co., Birmingham, United Kingdom");
+insert_into_images("horsemen/le-lion-du-nord-gustave-adolp-___-silver.png", 
+                            "Sothebys", 
+                            "2008/european-silver-gold-boxes-and-objects-of-vertu-pf8013/lot.164.html", 
+                            "Drinking cup/centrepiece modelled as Gustavus Adolphus II King of Sweden, <br/>1880, Germany");
+insert_into_images("horsemen/60728.png", 
+                            "Kremlin", 
+                            "60728", 
+                            "Drinking cup/centrepiece modelled as mounted warrior, <br/> Second half of the 17th century, Augsburg, Germany");
+insert_into_images("horsemen/61288.png", 
+                            "Kremlin", 
+                            "61288", 
+                            "Drinking cup/centrepiece modelled as a horseman, <br/>1680-1684, Lorenz I Biller, Augsburg, Germany");
+insert_into_images("horsemen/61290.png", 
+                            "Kremlin", 
+                            "61290", 
+                            "Drinking cup/centrepiece modelled as Charles I Stuart, King of England, <br/>1639-1649, David Schwestermüller, Augsburg, Germany");
+insert_into_images("horsemen/61389.png", 
+                            "Kremlin", 
+                            "61389", 
+                            "Drinking cup/centrepiece modelled as a warrior on horseback, <br/>1673, Mannlich Heinrich, Augsburg, Germany");
+insert_into_images("horsemen/baroque_rider-scaled.jpg", 
+                            "veryimportantlot.com", 
+                            "https://veryimportantlot.com/de/lot/view/monumentales-trinkspiel-eines-barocken-reiters-auf-237669", 
+                            "A drinking game with a figure of a horseman, <br/>cr. 1900, Neresheimer, Hanau, Germany");
+insert_into_images("horsemen/ANTIQUE_HORSEMAN_c1900.jpg", 
+                            "PA", 
+                            "sold-german/antique-20thc-german-solid-silver-pair-of-huge-knight-horseman-figures-c1900", 
+                            "Solid silver pair of knight horseman figures, <br/>cr. 1900, Georg Roth & Co, Hanau, Germany");
+insert_into_images("horsemen/20thC_SILVER_KNIGHT_c1910-01.jpg", 
+                            "PA", 
+                            "sold-german/antique-20thc-german-solid-silver-large-knight-horseman-figure-c1910", 
+                            "Solid silver large knight horseman figure, <br/>cr. 1910, Germany");
+insert_into_images("horsemen/2015_07_07_19_0124-6330.jpg", 
+                            "PA", 
+                            "sold-german/antique-20thc-german-solid-silver-pair-of-huge-knight-horseman-figures-c1920-2", 
+                            "Solid silver pair of knight horseman figures, <br/>cr. 1920, Germany");
+insert_into_images("horsemen/SIGISMUND.png", 
+                            "The Granger Collection LTD", 
+                            "https://www.granger.com/results.asp?inline=true&image=0165964&wwwflag=4&itemx=1", 
+                            "Drinking horn belonging to Sigismund, Holy Roman Emperor (detail), <br/>cr. 1400, possibly a gift from the Order of Teutonic Knights");
+insert_into_images("horsemen/otvos06.jpg", 
+                            "hung-art.hu", 
+                            "https://www.hung-art.hu/frames-e.html?/english/zmisc/otvosseg/index.html", 
+                            "Drinking horn belonging to Sigismund, Holy Roman Emperor (detail), <br/>cr. 1400, possibly a gift from the Order of Teutonic Knights");
+insert_into_images("horsemen/11767473_fullsize-scaled.jpg", 
+                            "bukowskis.com", 
+                            "https://www.bukowskis.com/en/auctions/E424/lots/1186752-a-german-silver-drinking-horn-jd-schleissner-sohne-hanau-around-1900", 
+                            "Silver drinking horn, <br/>cr. 1900, JD Schleissner & Söhne, Hanau, Germany");
+insert_into_images("horsemen/Holy_Roman_Empire_1648.png", 
+                            "wiki", 
+                            "Holy_Roman_Empire_1648.png", 
+                            "Map of the Holy Roman Empire in 1648, after the Peace of Westphalia.");
+insert_into_images("horsemen/lh_presse_die_furie_auf_sprengendem_pferd_1610.jpg", 
+                            "liebieghaus.de", 
+                            "https://www.liebieghaus.de/en/exhibitions/white-wedding", 
+                            "Fury on a Charging Horse, <br/>1610, Furienmeister, probably Salzburg, Austria");
 /* 
 otvos06.jpg
 11767474_bukobject.jpg

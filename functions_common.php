@@ -21,4 +21,11 @@ function yu_upload_dir() {
     return $result;
 }
 
+/**
+ * Function for basic field validation (present and neither empty nor only white space)
+ */
+function is_empty_string($question) {
+    return (!isset($question) || trim($question)==='');
+}
+
 ?>
