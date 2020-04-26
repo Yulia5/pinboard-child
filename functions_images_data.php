@@ -7118,7 +7118,7 @@ insert_into_images("horsemen/60728.png",
                             "Kremlin", 
                             "60728", 
                             "Drinking cup/centrepiece modelled as mounted warrior, <br/> Second half of the 17th century, Augsburg, Germany");
-insert_into_images("horsemen/61288.png", 
+insert_into_images("horsemen/61288.png",
                             "Kremlin", 
                             "61288", 
                             "Drinking cup/centrepiece modelled as a horseman, <br/>1680-1684, Lorenz I Biller, Augsburg, Germany");
@@ -7167,8 +7167,8 @@ insert_into_images("horsemen/lh_presse_die_furie_auf_sprengendem_pferd_1610.jpg"
                             "https://www.liebieghaus.de/en/exhibitions/white-wedding", 
                             "Fury on a Charging Horse, <br/>1610, Furienmeister, probably Salzburg, Austria");
 /* 
-otvos06.jpg
-11767474_bukobject.jpg
+11767474_bukobject.jpg 
+
 */
 }
 ?>

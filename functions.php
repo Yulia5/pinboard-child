@@ -39,14 +39,14 @@ function pinboard_child_theme_setup() {
     add_image_size( 'w500', 500);
     
     /* include php files */
-    $php_file_names = array('functions_images', 'functions_images_data', 
-                              'functions_post_specific', 'functions_links');
+    $php_file_names = array('functions_common', 'functions_images_div', 'functions_images_database', 
+                              'functions_images_data', 'functions_post_specific', 'functions_links');
     foreach ($php_file_names as $php_file_name) {
         locate_template( array( $php_file_name . '.php' ), true, true );
     }
 }
 add_action( 'after_setup_theme', 'pinboard_child_theme_setup', 11);
-
+add_filter( 'big_image_size_threshold', '__return_false' );
 /******************************************************************************
  *                         Table Of Contents                                  *
  *****************************************************************************/
