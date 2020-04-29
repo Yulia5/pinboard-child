@@ -4,12 +4,20 @@ function enqueue_styles_and_scripts() {
 	
 	/* general */
 	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css?family=Permanent Marker', false );
+
+	/* dequeue */
+	$to_remove_style = 'pinboard';
+	wp_dequeue_style( $to_remove_style );
+    wp_deregister_style( $to_remove_style );
 	
 	/* parent theme */
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );	
+	$parent_style = 'parent-style';
+    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );	
 		
 	/* child theme */
-    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css',
+                      array( $parent_style ),
+                      wp_get_theme()->get('Version') );
 	wp_enqueue_script('aux_script', get_stylesheet_directory_uri().'/jquery.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_and_scripts', 999);

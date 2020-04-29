@@ -8,10 +8,7 @@
  Version:        1.0.0
 */
  
-@import url("../pinboard/style.css");
- 
-/* =Theme customization starts here
-------------------------------------------------------- */
+/* ------------------------------------------------------- */
 
 .clearfloats {
   font-size: 1px;
@@ -197,25 +194,35 @@ img .center {
     margin: auto;
 }
 
-table .images {
+table .images_center {
     display: inline-block; 
 }
 
-.images {
-    display: inline-table;
-    margin: 5px auto;
-    vertical-align: top;
+.images_center {
     text-align: center;
+    margin:auto;
+    vertical-align: top;
     max-width: 80vw;
 }
-
-.images .outside_image {
-	display: inline-block; 
-	vertical-align: top; 
+.images_right {
+    text-align: right;
+    float: right;
+    vertical-align: top;
+    max-width: 80vw;  
 }
+.images_left {
+    text-align: left;
+    float: left;
+    vertical-align: top;
+    max-width: 80vw;  
+} 
 
-.flushright .images , .flushright2 .images  {
-  float: right;
+.images_center .outside_image, .images_right .outside_image, .images_left .outside_image {
+  vertical-align: top; 
+  margin: auto 1px;
+  text-align:center;
+  overflow:auto;
+  display:inline-block;    
 }
 
 /******************************************************************************

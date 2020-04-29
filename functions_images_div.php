@@ -188,6 +188,7 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
         'imgheight' => '',
         'imgwidth' => '',
         'flushright' => '' 
+        'flushleft' => '' 
     ), $attr));
 
     $style = "";
@@ -203,11 +204,14 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
     $result = str_replace("\n", "<br/>", $result); // adding <br>'s back
     
     // adding div's
-    $result = '<div class="images" ' . $style . '>' . $result . "</div>";  
+    $result =  $style . '>' . $result . "</div>";  
     if (!! $flushright) {
-        $result = '<div class="flushright2">' . $result . "</div>";
-    }   
-    $result = '<p class="clearfloats"></p>' . $result; // clear previous floats
+        $result = '<p style="clear:right"></p><div class="images_right" ' . $result;
+    } elseif (!! $flushleft) {
+        $result = '<p style="clear:left"></p><div class="images_left" ' . $result;
+    } else {
+    	$result = '<div class="images_center" ' . $result;
+    }  
 
     return $result;
 }
