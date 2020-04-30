@@ -187,7 +187,7 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
     extract(shortcode_atts(array(
         'imgheight' => '',
         'imgwidth' => '',
-        'flushright' => '' 
+        'flushright' => '',
         'flushleft' => '' 
     ), $attr));
 
