@@ -29,13 +29,14 @@ jQuery(document).ready(function($) {
         $('#div_' + this.id).toggle();
     });    
 
-    $('.outside_image').each(function() {
+    $('.outside_image img').each(function() {
+        var img = $(this);
+        var outside_image = $(this).parent();
 
-        var imgwidth = get_float_attribute($(this).parent(), 'imgwidth');
-        var imgheight = get_float_attribute($(this).parent(), 'imgheight');
-        var nb_siblinds = $(this).siblings('.outside_image').length;
-        var is_flushright = object_exists($(this).parent('.images_right').prop('outerHTML'));
-        var img = $(this).find("img").first();
+        var imgwidth = get_desired_image_size(img, 'width');
+        var imgheight = get_desired_image_size(img, 'height');
+        var nb_siblinds = outside_image.siblings('.outside_image').length;
+        var is_flushright = object_exists(outside_image.parent('.images_right').prop('outerHTML'));
 
         // default values
         if (imgwidth == false && imgheight == false) {
@@ -62,8 +63,9 @@ jQuery(document).ready(function($) {
         }
 
         $(this).on('load', function() {  
-            var imgheight = get_float_attribute($(this).parent(), 'imgheight');
-            var img = $(this).find("img").first();
+            var img = $(this);
+            var imgheight = get_desired_image_size(img, 'height');
+
             if (imgheight !== false) {
                 var new_width = calculate_max_width(img, imgheight);
                 resize_outside_image(img, new_width);
@@ -81,6 +83,9 @@ jQuery(document).ready(function($) {
     function resize_outside_image(an_image, max_image_width) {
         an_image.closest('.outside_image').each(function() {
             set_max_size($(this), max_image_width + 5, 'width'); 
+            $(this).find('.wp-caption-text').each(function() {
+                set_max_size($(this), max_image_width, 'width');
+            });
         });
     }
 
@@ -106,6 +111,18 @@ jQuery(document).ready(function($) {
             return parseFloat(text_attribute);
         }
         return false;
+    }
+
+    function get_desired_image_size(img, attr_name) {
+
+        var outside_image = img.parent();
+        var imgsize = get_float_attribute(outside_image, attr_name);
+
+        if (imgsize == false) {
+            var gallery = outside_image.parent();
+            imgsize = get_float_attribute(gallery, 'img' + attr_name);
+        }
+        return imgsize;
     }
 
     function set_max_size(an_object, a_size, a_size_name) {
