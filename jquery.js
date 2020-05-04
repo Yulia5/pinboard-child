@@ -56,7 +56,7 @@ jQuery(document).ready(function($) {
             set_max_size(img, imgheight, 'height');
 
             // resize_outside_image if the image sizes are known
-            if (img.complete) {
+            if (this.complete) {
                 var new_width = calculate_max_width($(this), imgheight);
                 resize_outside_image(img, new_width);
             }
