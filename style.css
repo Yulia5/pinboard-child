@@ -198,13 +198,13 @@ table .images_center {
     display: inline-block; 
 }
 
-.images_center {
+.images_center, .images {
     text-align: center;
     margin:auto;
     vertical-align: top;
     max-width: 80vw;
 }
-.images_right {
+.images_right, .flushright .images, .flushright2 .images {
     text-align: right;
     float: right;
     vertical-align: top;
@@ -217,7 +217,7 @@ table .images_center {
     max-width: 80vw;  
 } 
 
-.images_center .outside_image, .images_right .outside_image, .images_left .outside_image {
+.images_center .outside_image, .images_right .outside_image, .images_left .outside_image, .flushright .images .outside_image {
   vertical-align: top; 
   margin: auto 1px;
   text-align:center;
