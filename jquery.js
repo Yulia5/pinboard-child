@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
 
         if (imgwidth !== false) {
             set_max_size(img, imgwidth, 'width');
-            resize_outside_image(img, imgwidth);
+            resize_outside_image(outside_image, imgwidth);
         }
 
         if (imgheight !== false) {
@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
             // resize_outside_image if the image sizes are known
             if (this.complete) {
                 var new_width = calculate_max_width($(this), imgheight);
-                resize_outside_image(img, new_width);
+                resize_outside_image(outside_image, new_width);
             }
         }
 
@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
 
             if (imgheight !== false) {
                 var new_width = calculate_max_width(img, imgheight);
-                resize_outside_image(img, new_width);
+                resize_outside_image(outside_image, new_width);
             }
         });
     });
@@ -80,12 +80,16 @@ jQuery(document).ready(function($) {
         return new_width;
     }
 
-    function resize_outside_image(an_image, max_image_width) {
-        an_image.closest('.outside_image').each(function() {
-            set_max_size($(this), max_image_width + 5, 'width'); 
-            $(this).find('.wp-caption-text').each(function() {
-                set_max_size($(this), max_image_width, 'width');
-            });
+    function resize_outside_image(outside_image, max_image_width) {
+        width_to_use = max_image_width;
+        add_caption_width = get_float_attribute(outside_image, 'add_caption_width');
+        if (add_caption_width !== false) {
+            width_to_use += add_caption_width;
+        }
+
+        set_max_size(outside_image, width_to_use + 5, 'width'); 
+        outside_image.find('.wp-caption-text').each(function() {
+            set_max_size($(this), width_to_use, 'width');
         });
     }
 
@@ -114,9 +118,16 @@ jQuery(document).ready(function($) {
     }
 
     function get_desired_image_size(img, attr_name) {
+     
+        var imgsize = get_float_attribute(img, attr_name);
+        if (imgsize == false) {
+            imgsize = get_float_attribute(img, 'max-' + attr_name);
+        }
 
         var outside_image = img.parent();
-        var imgsize = get_float_attribute(outside_image, attr_name);
+        if (imgsize == false) {
+            imgsize = get_float_attribute(outside_image, 'img' + attr_name);
+        }
 
         if (imgsize == false) {
             var gallery = outside_image.parent();
