@@ -196,7 +196,7 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
     } elseif (!! $flushleft) {
         $result = '<p style="clear:left"></p><div class="images_left" ' . $result;
     } else {
-    	$result = '<div class="images_center" ' . $result;
+    	$result = '<p style="clear:left"></p><p style="clear:right"></p><div class="images_center" ' . $result;
     }  
 
     return $result;

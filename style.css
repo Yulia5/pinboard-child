@@ -217,7 +217,7 @@ table .images_center {
     max-width: 80vw;  
 } 
 
-.images_center .outside_image, .images_right .outside_image, .images_left .outside_image, .flushright .images .outside_image {
+.images_center .outside_image, .images_right .outside_image, .images_left .outside_image, .flushright .images .outside_image, .images .outside_image {
   vertical-align: top; 
   margin: auto 1px;
   text-align:center;
