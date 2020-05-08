@@ -162,13 +162,8 @@ table th {
   object-fit: contain;
 }
 
-.outside_image a img, .wp-caption {
-	width: 100%;
-}
-
 .outside_image {
   text-align: center;
-  width: 100%;
 }
 
 .wp-caption {
