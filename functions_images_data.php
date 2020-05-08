@@ -12,6 +12,7 @@ function generate_src() {
 
     insert_into_src("SKD",      '© Staatliche Kunstsammlungen Dresden',         'https://skd-online-collection.skd.museum/Details/Index/');    
     insert_into_src("BM",       '© Trustees of the British Museum',             'http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=', '&partId=1'); 
+    insert_into_src("BM2",      '© Trustees of the British Museum',             'https://www.britishmuseum.org/collection/object/'); 
     insert_into_src("LA",       'The Los Angeles County Museum of Art',         'http://collections.lacma.org/node/'); 
     insert_into_src("Getty",    'The J.Paul Getty Museum Open Contents Program','http://www.getty.edu/art/collection/objects/'); 
     insert_into_src("MFA",      'Museum of Fine Arts, Boston',                  'https://collections.mfa.org/objects/');  
@@ -455,15 +456,15 @@ function populate_images() {
     insert_into_images("horsemen/2006AE5094_jpg_l.jpg", 
                             "VA", 
                             "O89319", 
-                            "Nessus and Deianira, <br/>1635-1645, Francesco Fanelli");
+                            "Nessus and Deianira, <br/>1635-1645, Francesco Fanelli, Anglo-Italian");
     insert_into_images("horsemen/2006AE5094_jpg_l.jpg", 
                             "VA", 
                             "O89319", 
-                            "Nessus and Deianira, <br/>1635-1645, Francesco Fanelli");
+                            "Nessus and Deianira, <br/>1635-1645, Francesco Fanelli, Anglo-Italian");
     insert_into_images("horsemen/2006AE9418_jpg_l.jpg", 
                             "VA", 
                             "O89281", 
-                            "Cupid on a horse, <br/>cr.1640, Francesco Fanelli");
+                            "Cupid on a horse, <br/>cr.1640, Francesco Fanelli, Anglo-Italian");
     insert_into_images("horsemen/2006AE9419_jpg_l.jpg", 
                             "VA", 
                             "O89560", 
@@ -471,7 +472,7 @@ function populate_images() {
     insert_into_images("horsemen/2006AM5729_jpg_l.jpg", 
                             "VA", 
                             "O77804", 
-                            "St George and the Dragon, <br/>cr.1640, Francesco Fanelli");
+                            "St George and the Dragon, <br/>cr.1640, Francesco Fanelli, Anglo-Italian");
     insert_into_images("horsemen/2006BB2180_jpg_l.jpg", 
                             "VA", 
                             "O311616", 
@@ -7161,13 +7162,53 @@ insert_into_images("horsemen/11767473_fullsize-scaled.jpg",
 insert_into_images("horsemen/Holy_Roman_Empire_1648.png", 
                             "wiki", 
                             "Holy_Roman_Empire_1648.png", 
-                            "Map of the Holy Roman Empire in 1648, after the Peace of Westphalia.");
+                            "Map of the Holy Roman Empire in 1648, after the Peace of Westphalia");
 insert_into_images("horsemen/lh_presse_die_furie_auf_sprengendem_pferd_1610.jpg", 
                             "liebieghaus.de", 
                             "https://www.liebieghaus.de/en/exhibitions/white-wedding", 
                             "Fury on a Charging Horse, <br/>1610, Furienmeister, probably Salzburg, Austria");
+insert_into_images("horsemen/AN00308777_001_l.jpg", 
+                            "BM2", 
+                            "H_1885-1113-9051-9060", 
+                            "Inlay floor tile showing Richard I (Coeur de Lion) in combat with his adversary Saladin, <br/>1250s, Chertsey, England");
+insert_into_images("horsemen/AN00195539_001_l.jpg", 
+                            "BM2", 
+                            "H_1885-1113-9104", 
+                            "Inlay floor tile showing a knight on horseback, charging and firing a crossbow, <br/> 13th century, Chertsey, England");
+insert_into_images("horsemen/AN00072823_001_l.jpg", 
+                            "BM2", 
+                            "H_1980-0307-28", 
+                            "Inlay floor tile showing Richard I (Coeur de Lion) in combat with his adversary Saladin, <br/>1845-1860, Chertsey, England");
+insert_into_images("horsemen/2016JB7015_jpg_l.jpg", 
+                            "VA", 
+                            "O314335", 
+                            "A mounted Turk attacked by a Lion, <br/>cr. 1635-1640, Francesco Fanelli, Anglo-Italian");
+insert_into_images("horsemen/2013GA0300_jpg_l.jpg", 
+                            "VA", 
+                            "O165191", 
+                            "Medallion with St. George and the Dragon, <br/>late 15th - early 16th century, Germany");
+insert_into_images("horsemen/2010EC8520_jpg_l.jpg", 
+                            "VA", 
+                            "O182762", 
+                            "Porcelain group showing a naked boy sitting on a lion's skin on a galloping horse, <br/>ca. 1753-1755, Vauxhall porcelain factory, London, Great Britain");
+insert_into_images("horsemen/2007BN4070_jpg_l.jpg", 
+                            "VA", 
+                            "O134010", 
+                            "Impressed tile showing a knight on horsebacke, <br/>cr. 1250-75, Germany");
+insert_into_images("horsemen/2006BB1006_jpg_l.jpg", 
+                            "VA", 
+                            "O119695", 
+                            "The Conversion of St. Paul, <br/>ca. 1525, Giovanni Francesco Rustici, Italy");
+insert_into_images("horsemen/2006AE5122_jpg_l.jpg", 
+                            "VA", 
+                            "O66313", 
+                            "Henry IV destroying his enemies, <br/>ca. 1603, Barthélémy Prieur, France");
+insert_into_images("horsemen/110781776_mediaitem110779426.jpg", 
+                            "BBC", 
+                            "https://www.bbc.com/news/uk-england-bristol-51383434", 
+                            "George Medal awarded for saving Princess Anne from kidnap, <br/>1974, the U.K.");
 /* 
-11767474_bukobject.jpg 
+
 
 */
 }
