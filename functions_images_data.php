@@ -39,6 +39,7 @@ function generate_src() {
     insert_into_src("Kremlin",  "The Moscow Kremlin State Historical and Cultural Museum and Heritage Site",                    
                                                                                 'https://collectiononline.kreml.ru/iss2/items?info=');
     insert_into_src("dreamstime",  "Copyright © Dreamstime",                    'https://www.dreamstime.com/');
+    insert_into_src("Google",   "Google Arts And Culture",                      'https://artsandculture.google.com/asset/');
 
     insert_into_src("Bonhams",  'Bonhams',                                      'https://www.bonhams.com/auctions/');     
     insert_into_src("Christies",'Christie’s',                                   'http://www.christies.com/lotfinder/Lot/', '-details.aspx');     
@@ -4312,8 +4313,8 @@ function populate_images() {
                             "Vasari_and_Stradano_-_St_George_and_the_dragon.jpg", 
                             "St. George and the Dragon, <br/>cr. 1560, Giorgio Vasari, Italy");
     insert_into_images("horsemen/StGeorgeandtheDragonLelioOrsi.png", 
-                            "Google Arts And Culture", 
-                            "https://artsandculture.google.com/asset/ZQH5VlbtTTRUxg", 
+                            "Google", 
+                            "ZQH5VlbtTTRUxg", 
                             "St. George and the Dragon, <br/>1550, Lelio Orsi, Italy");
     insert_into_images("horsemen/96-004222.jpg", 
                             "RMN", 
@@ -5831,8 +5832,8 @@ function populate_images() {
                             "Gouda,_st._janskerk,_vetrata_08_cacciata_di_eliodoro,_di_Wouter_Pietersz._Crabeth_(I),_1566,_03.jpg", 
                             "Expulsion of Heliodorus from the Temple, <br/>1566, Wouter Crabeth, Bloemendaal, Gouda, Netherlands");
     insert_into_images("horsemen/Giuseppe_Tortelli_Heliodorus.jpg",
-                            "artsandculture.google.com", 
-                            "https://artsandculture.google.com/asset/the-expulsion-of-heliodorus-from-the-temple/xwFpMU6z6EQ7IQ", 
+                            "Google", 
+                            "the-expulsion-of-heliodorus-from-the-temple/xwFpMU6z6EQ7IQ", 
                             "Expulsion of Heliodorus from the Temple, <br/>1700, Giuseppe Tortelli, Brescia, Italy");
     insert_into_images("horsemen/AN00254420_001_l.jpg",
                             "BM", 
@@ -7207,9 +7208,49 @@ insert_into_images("horsemen/110781776_mediaitem110779426.jpg",
                             "BBC", 
                             "https://www.bbc.com/news/uk-england-bristol-51383434", 
                             "George Medal awarded for saving Princess Anne from kidnap, <br/>1974, the U.K.");
-/* 
-
-
-*/
+insert_into_images("horsemen/515910-1424169269.jpg", 
+                            "RC", 
+                            "440084", 
+                            "Emperor Alexander II of Russia's badge of the Order of the Garter, <br/>1867, Robert Garrard II, the U.K.");
+insert_into_images("horsemen/164686-1297670079.jpg", 
+                            "RC", 
+                            "441144", 
+                            "Great George (badge of the Order of the Garter), <br/>1775-1800, Belonged to King George III, the U.K.");
+insert_into_images("horsemen/404246-1375178244.jpg", 
+                            "RC", 
+                            "442086", 
+                            "Gold enamelled Great George of the Garter, <br/>19th century, the U.K.");
+insert_into_images("horsemen/219382-1574427351.jpg", 
+                            "RC", 
+                            "442208", 
+                            "Hat badge with St George and the dragon, <br/>cr. 1520, Flemish");
+insert_into_images("horsemen/D9_QMhYX4AAOM39.jpeg", 
+                            "@wabbey on twitter.com", 
+                            "https://twitter.com/wabbey/status/1143861747989778433", 
+                            "An inlay tile showing a hunter on horseback and a dog, <br/>medieval, Chapter House, Westminster Abbey, London, U.K.");
+insert_into_images("horsemen/GRUEBY.jpeg", 
+                            "Bonhams", 
+                            "16946/lot/2000", 
+                            "A cuenca and cuerda seca tile depicting St George and the dragon, <br/>cr. 1900, Grueby Faience Company, U.S.A. ");
+insert_into_images("horsemen/grueby-tile-knight-on-horse.jpeg", 
+                            "@dinathequeenofeverything on wordpress.com", 
+                            "https://dinathequeenofeverything.wordpress.com/2016/11/27/thanksgiving-made-great/", 
+                            "A tile showing a knight on horseback (still decorating a floor), <br/>cr. 1910, Grueby Faience Company, U.S.A.");
+insert_into_images("horsemen/Grueby_kinight.png", 
+                            "holtonframes.com", 
+                            "https://www.holtonframes.com/portfolio-piece/grueby-knight-tile/", 
+                            "A tile showing a knight on horseback (framed, on sale in a picture gallery), <br/>cr. 1910, Grueby Faience Company, U.S.A.");
+insert_into_images("horsemen/Crusader_Image_on_Tile_in_the_Triforium_of_Temple_Church.jpg", 
+                            "wiki", 
+                            "Crusader_Image_on_Tile_in_the_Triforium_of_Temple_Church.jpg", 
+                            "An inlay tile showing a crusader, <br/>after 1185, Triforium of Temple Church, London, U.K.");
+insert_into_images("horsemen/174tileRichardAndSaladinCXnice.jpg", 
+                            "mfuller @ users.stlcc.edu", 
+                            "http://users.stlcc.edu/mfuller/glastonburytiles.html", 
+                            "An inlay tile showing a knight, <br/>medieval, Glastonbury Abbey, U.K.");
+insert_into_images("horsemen/princess-playing-polo-jodhpur.png", 
+                            "Google", 
+                            "ZAH6WqN3erBfRg", 
+                            "Princess Playing Polo, <br/>18th century, Dana, Jodhpur, India");
 }
 ?>
