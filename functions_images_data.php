@@ -7171,15 +7171,15 @@ insert_into_images("horsemen/lh_presse_die_furie_auf_sprengendem_pferd_1610.jpg"
 insert_into_images("horsemen/AN00308777_001_l.jpg", 
                             "BM2", 
                             "H_1885-1113-9051-9060", 
-                            "Inlay floor tile showing Richard I (Coeur de Lion) in combat with his adversary Saladin, <br/>1250s, Chertsey, England");
+                            "Inlaid floor tile showing Richard I (Coeur de Lion) in combat with his adversary Saladin, <br/>1250s, Chertsey Abbey, Chertsey, England");
 insert_into_images("horsemen/AN00195539_001_l.jpg", 
                             "BM2", 
                             "H_1885-1113-9104", 
-                            "Inlay floor tile showing a knight on horseback, charging and firing a crossbow, <br/> 13th century, Chertsey, England");
+                            "Lead-glazed inlaid floor tile showing a knight on horseback, charging and firing a crossbow, <br/> 13th century, Chertsey Abbey, Chertsey, England");
 insert_into_images("horsemen/AN00072823_001_l.jpg", 
                             "BM2", 
                             "H_1980-0307-28", 
-                            "Inlay floor tile showing Richard I (Coeur de Lion) in combat with his adversary Saladin, <br/>1845-1860, Chertsey, England");
+                            "Lead-glazed inlaid floor tile showing a knight on horseback, <br/>1845-1860, Chertsey, England");
 insert_into_images("horsemen/2016JB7015_jpg_l.jpg", 
                             "VA", 
                             "O314335", 
@@ -7195,7 +7195,7 @@ insert_into_images("horsemen/2010EC8520_jpg_l.jpg",
 insert_into_images("horsemen/2007BN4070_jpg_l.jpg", 
                             "VA", 
                             "O134010", 
-                            "Impressed tile showing a knight on horsebacke, <br/>cr. 1250-75, Germany");
+                            "Impressed floor tile showing a knight on horsebacke, <br/>cr. 1250-75, Germany");
 insert_into_images("horsemen/2006BB1006_jpg_l.jpg", 
                             "VA", 
                             "O119695", 
@@ -7208,10 +7208,6 @@ insert_into_images("horsemen/110781776_mediaitem110779426.jpg",
                             "BBC", 
                             "https://www.bbc.com/news/uk-england-bristol-51383434", 
                             "George Medal awarded for saving Princess Anne from kidnap, <br/>1974, the U.K.");
-insert_into_images("horsemen/515910-1424169269.jpg", 
-                            "RC", 
-                            "440084", 
-                            "Emperor Alexander II of Russia's badge of the Order of the Garter, <br/>1867, Robert Garrard II, the U.K.");
 insert_into_images("horsemen/164686-1297670079.jpg", 
                             "RC", 
                             "441144", 
@@ -7227,30 +7223,58 @@ insert_into_images("horsemen/219382-1574427351.jpg",
 insert_into_images("horsemen/D9_QMhYX4AAOM39.jpeg", 
                             "@wabbey on twitter.com", 
                             "https://twitter.com/wabbey/status/1143861747989778433", 
-                            "An inlay tile showing a hunter on horseback and a dog, <br/>medieval, Chapter House, Westminster Abbey, London, U.K.");
+                            "Inlaid tile showing a hunter on horseback and a dog, <br/>medieval, Chapter House, Westminster Abbey, London, U.K.");
 insert_into_images("horsemen/GRUEBY.jpeg", 
                             "Bonhams", 
                             "16946/lot/2000", 
-                            "A cuenca and cuerda seca tile depicting St George and the dragon, <br/>cr. 1900, Grueby Faience Company, U.S.A. ");
+                            "Cuenca and cuerda seca floor tile depicting St George and the dragon, <br/>cr. 1900, Grueby Faience Company, U.S.A. ");
 insert_into_images("horsemen/grueby-tile-knight-on-horse.jpeg", 
                             "@dinathequeenofeverything on wordpress.com", 
                             "https://dinathequeenofeverything.wordpress.com/2016/11/27/thanksgiving-made-great/", 
-                            "A tile showing a knight on horseback (still decorating a floor), <br/>cr. 1910, Grueby Faience Company, U.S.A.");
-insert_into_images("horsemen/Grueby_kinight.png", 
+                            "Floor tile showing a knight on horseback (still decorating a floor), <br/>cr. 1910, Grueby Faience Company, U.S.A.");
+insert_into_images("horsemen/140-on-tile-Grueby-Knight-web1200.jpg", 
                             "holtonframes.com", 
                             "https://www.holtonframes.com/portfolio-piece/grueby-knight-tile/", 
-                            "A tile showing a knight on horseback (framed, on sale in a picture gallery), <br/>cr. 1910, Grueby Faience Company, U.S.A.");
+                            "Floor tile showing a knight on horseback (framed, on sale in a picture gallery), <br/>cr. 1910, Grueby Faience Company, U.S.A.");
 insert_into_images("horsemen/Crusader_Image_on_Tile_in_the_Triforium_of_Temple_Church.jpg", 
                             "wiki", 
                             "Crusader_Image_on_Tile_in_the_Triforium_of_Temple_Church.jpg", 
-                            "An inlay tile showing a crusader, <br/>after 1185, Triforium of Temple Church, London, U.K.");
+                            "Inlaid floor tile showing a crusader, <br/>after 1185, Triforium of Temple Church, London, U.K.");
 insert_into_images("horsemen/174tileRichardAndSaladinCXnice.jpg", 
                             "mfuller @ users.stlcc.edu", 
                             "http://users.stlcc.edu/mfuller/glastonburytiles.html", 
-                            "An inlay tile showing a knight, <br/>medieval, Glastonbury Abbey, U.K.");
+                            "An inlaid tile showing Richard I attacking Saladin, <br/>medieval, Glastonbury Abbey, U.K.");
 insert_into_images("horsemen/princess-playing-polo-jodhpur.png", 
                             "Google", 
                             "ZAH6WqN3erBfRg", 
                             "Princess Playing Polo, <br/>18th century, Dana, Jodhpur, India");
+insert_into_images("horsemen/Reims_-_basilique_Saint-Remi_dallage_22.jpeg", 
+                            "wiki", 
+                            "Reims_-_basilique_Saint-Remi,_dallage_(22).JPG", 
+                            "Inlaid (limestone incrusted with lead) tile showing three knights (a scene from the Old Testament), <br/>13th century, Saint Eligius chapel, in the former Saint Nicasius church of Reims, Marne, France");
+insert_into_images("horsemen/neath-tiles.jpg", 
+                            "walesonline.co.uk", 
+                            "https://www.walesonline.co.uk/lifestyle/nostalgia/welsh-history-month-neath-abbeys-3663534", 
+                            "Inlaid tile showing the battle of Richard I and Saladin, <br/>cr. 1340, Neath Abbey, Wales, U.K.");
+insert_into_images("horsemen/dsc_0011.jpg", 
+                            "thehistoryjar.com", 
+                            "https://thehistoryjar.com/2014/08/10/cleeve-abbey/", 
+                            "Inlaid tile showing the battle of Richard I and Saladin, <br/>cr. 1250-70, Cleeve Abbey, Somerset, U.K.");
+insert_into_images("horsemen/DH000256.png", 
+                            "wrexham.com", 
+                            "http://www.wrexham.com/news/medieval-treasures-show-wrexham-museum-4758.html", 
+                            "Inlaid tiles showing the battle of Richard I and Saladin, <br/>cr. 1340, Neath Abbey, Wales, U.K.");
+insert_into_images("horsemen/Carreau_medieval_Laon_030208_06.jpg", 
+                            "wiki", 
+                            "Carreau_médiéval_Laon_030208_06.jpg", 
+                            "Inlaid tile showing a hunter with a dog, <br/>13th-15th century, Laon region, France");
+insert_into_images("horsemen/7985782539_c402a1445a_b.jpg", 
+                            "historienerrant @ wordpress.com", 
+                            "https://historienerrant.wordpress.com/2012/09/14/thirteenth-century-floor-tiles-at-cleeve-abbey-and-elsewhere/", 
+                            "Inlaid tiles showing the battle of Richard I and Saladin, <br/>cr. 1250-70, Cleeve Abbey, Somerset, U.K");
+insert_into_images("horsemen/04-000341.jpg", 
+                            "RMN", 
+                            "04-000341-2C6NU04XY4F7", 
+                            "Inlaid tile showing a horseman brandishing a spear, <br/>15th century, Burgundy, France");
 }
 ?>
