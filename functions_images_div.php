@@ -80,10 +80,23 @@ function add_int_if_not_empty($label, $contents) {
 }
 
 function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $sourcehrf, $comp, $folder_name, 
-                                $srcset, $style, $class, $add_caption_width)
-{    
+                                $srcset, $style, $class, $add_caption_width, $capitals)
+{
+	// $caption and $img_attr
+	if ( $comp ) {
+		$caption = 'COMPARANDUM: ' . $caption;
+    }
+    if (! is_empty_string2($capitals)) {
+        $caption = strtoupper($capitals) . ' <br/>' . $caption;
+    } 
+	
     $caption_no_br = preg_replace("/<br\W*?\/>/", "\n", $caption);
+    $caption_no_linebreaks = preg_replace("/<br\W*?\/>/", "", $caption);
+    $img_attr = add_if_not_empty('style', $style) . add_if_not_empty('class', $class) 
+    	      . add_if_not_empty('alt', $caption_no_linebreaks) . add_if_not_empty('caption', $caption_no_br)
+    	      . add_if_not_empty('sourcename', $sourcename) . add_if_not_empty('sourcehrf', $sourcehrf) . add_if_not_empty('srcset', $srcset);
 
+    // $hrf's   
     $hrf = trim($hrf, " ");
     if ( substr( $hrf, 0, 4 ) !== "http" ) {
         $hrf = yu_upload_dir() . $hrf;
@@ -94,35 +107,22 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
     if (!! $folder_name) {
         $index_slash = strrpos($hrf, "/");
         $hrf = substr($hrf, 0, $index_slash) . "/" . $folder_name . substr($hrf, $index_slash);
-    }
-    $hrf = '"' . $hrf . '" ';
-    
-    	
-    $img_attr = add_if_not_empty('style', $style) . add_if_not_empty('class', $class) 
-    	      . add_if_not_empty('alt', $caption_no_br) . add_if_not_empty('caption', $caption_no_br)
-    	      . add_if_not_empty('sourcename', $sourcename) . add_if_not_empty('sourcehrf', $sourcehrf) . add_if_not_empty('srcset', $srcset);
+    }	
 
-    $invisible_a_to_check_broken_links = ' <a href=' . $hrf . ' style="display:none">Invisible, to help broken links check</a>';                           
+    $invisible_a_to_check_broken_links = ' <a href="' . $hrf . '" style="display:none">Invisible, to help broken links check</a>';                           
     if (! is_empty_string2($sourcehrf)) {
         $invisible_a_to_check_broken_links .= 
         	' <a href="' . $sourcehrf . '" style="display:none">Invisible, to help broken links check</a>';
-    }    
-     
-	if ( $comp ) {
-		$caption = 'COMPARANDUM: ' . $caption;
     }
-    /*
-    if ( $no_image ) {
-        $result_no_image = MY_VERY_OWN_link($sourcehrf, $caption_no_br); 
-        return $result_no_image;
-    }*/
     
+    // $div_attr
     $div_attr = add_int_if_not_empty('imgheight', $height) 
               . add_int_if_not_empty('imgwidth', $width) 
               . add_int_if_not_empty('add_caption_width', $add_caption_width);
 
+    // $result_image
 	$result_image = '<div class="outside_image"' . $div_attr . '> ' 
-                    . '<img '. $img_attr . 'src=' . $hrf . ' />' 
+                    . '<img '. $img_attr . 'src="' . $hrf . '" />' 
                     . '<div class="wp-caption-text">' . $caption . '</div>'
                     . $invisible_a_to_check_broken_links . '</div>';
     
@@ -142,7 +142,8 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
         'folder_name' => '',
         'style' => '',
         'class' => '',
-        'add_caption_width' => '' 
+        'add_caption_width' => '',
+        'capitals' => '' 
     ), $attr));
     
     $content = trim($content);
@@ -159,7 +160,7 @@ function MY_VERY_OWN_image_DB_shortcode($attr, $content = null) {
 
     $result = generate_caption_HTML($content, $height, $width, 
                     $image_info_from_DB->caption, $image_info_from_DB->srcname, $image_info_from_DB->srchref, 
-                    $comp, $folder_name, $image_info_from_DB->srcset, $style, $class, $add_caption_width);    
+                    $comp, $folder_name, $image_info_from_DB->srcset, $style, $class, $add_caption_width, $capitals);    
     return $result;
 }
 add_shortcode('yu_image_DB', 'MY_VERY_OWN_image_DB_shortcode');
