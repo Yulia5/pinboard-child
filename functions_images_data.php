@@ -865,11 +865,11 @@ function populate_images() {
     insert_into_images("horsemen/863px-Carlos_V_en_Muehlberg_by_Titian_from_Prado_in_Google_Earth.jpg", 
                             "wiki", 
                             "Carlos_V_en_Mühlberg,_by_Titian,_from_Prado_in_Google_Earth.jpg", 
-                            "Equestrian Portrait of Charles V,<br/>1548, Titian, Augsburg, Germany");
+                            "Equestrian Portrait of Charles V at the battle of Mühlberg, <br/>1548, Titian, Augsburg, Germany");
     insert_into_images("horsemen/87-002438.jpg", 
                             "RMN", 
                             "87-002438-2C6NU0H207NK", 
-                            "Louis XIV on horseback dressed à la française,<br/>after a model commissioned in 1685 (?), Gobert Thomas");
+                            "Louis XIV on horseback dressed à la française, <br/>after a model commissioned in 1685 (?), Gobert Thomas");
     insert_into_images("horsemen/87-005682.jpg", 
                             "RMN", 
                             "87-005682-2C6NU0HLP7YE", 
@@ -7276,5 +7276,9 @@ insert_into_images("horsemen/04-000341.jpg",
                             "RMN", 
                             "04-000341-2C6NU04XY4F7", 
                             "Inlaid tile showing a horseman brandishing a spear, <br/>15th century, Burgundy, France");
+insert_into_images("horsemen/Schlacht_am_Weissen_Berg_C-K_063.jpg", 
+                            "wiki", 
+                            "Schlacht_am_Weißen_Berg_C-K_063.jpg", 
+                            "Battle of White Mountain, <br/>1620, Peter Snayers, Flemish");
 }
 ?>
