@@ -10,14 +10,14 @@ jQuery(document).ready(function($) {
         } );
     }
 
-    $(document.body).append('<div id="aLightboxModalOutside"><div id="aLightboxModal">\
-                                 <div class="close_cursor">X</div><br/>\
+    $(document.body).append('<div id="aLightboxModalOutside" onclick="close_lightbox()"><div id="aLightboxModal">\
+                                 <div class="close_cursor" onclick="close_lightbox()">X</div><br/>\
                                  <div id="aLightboxModal_outside_image">\
-                                 <a class="prev" onclick="go_back()">&#10094;</a>\
-                                 <a class="next" onclick="go_forward()">&#10095;</a>\
+                                 <a class="prev" onclick="go_back(event)">&#10094;</a>\
+                                 <a class="next" onclick="go_forward(event)">&#10095;</a>\
                                  <div id="aLightboxModal_content"><div class="aLightboxModal_container"><img id="aLightboxModal_image" src=""></div></div>\
                                  <div id="aLightboxModal_title"></div></div>\
-                             </div></div>');
+                             </div><div id="target"></div></div>');
     $("#aLightboxModalOutside").hide();
 
     $('.toc_button').click(function() {
@@ -142,76 +142,163 @@ jQuery(document).ready(function($) {
         return 0;
     }
 
-    function get_caption(an_image) {
-        var sourcehrf = get_attribute(an_image, 'sourcehrf');
-        var sourcename = get_attribute(an_image, 'sourcename');
-        var caption = get_attribute(an_image, 'caption');
-        var result = 'Image credit: ';
+    function get_caption(sourcename, sourcehrf, caption) {
+      var result = '';
+      if (caption) {
+        result = '<strong>' + caption + '</strong><br/>' + result;
+      }
 
-        if (sourcehrf) {
-            if (!sourcename) {
-                sourcename = sourcehrf;
-            }
-            result += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' + sourcename + '</a>';
-        } else if (sourcename) {
-            result += sourcename;
-        } else {
-            result += 'me';
+      result += 'Image credit: '
+      if (sourcehrf) {
+        if (!sourcename) {
+          sourcename = sourcehrf;
         }
+        result += '<a title="' + sourcename + '" href="' + sourcehrf + '" target="_blank">' + sourcename + '</a>';
+      } else if (sourcename) {
+        result += sourcename;
+      } else {
+        result += 'me';
+      }
 
-        if (caption) {
-            result = '<strong>' + caption + '</strong><br/>' + result;
+      return result;
+    }
+
+    function concatenateAttributes($images) {
+      let $attribute_labels = get_attribute_labels()
+      let attribute_values = "";
+      for (let i = 0; i < $images.length; i++) {
+        for (let a = 0; a < $attribute_labels.length; a++) {
+          attribute_values += $images[i].getAttribute($attribute_labels[a]) + '|';
         }
-        return result; 
+      }
+
+      let $target = $("#target")[0];
+      $target.setAttribute('attributes', attribute_values);
+    }
+
+    function deconcatenateAttributes() {
+      let $attribute_labels = get_attribute_labels()
+      let $target = $("#target")[0];
+      let $attribute_values = $target.getAttribute('attributes');
+
+      let result = [];
+      let i = -1
+      let a = 0
+      let s = -1
+      while (true) {
+        let new_s = $attribute_values.indexOf("|", s + 1);
+        if (new_s === -1) {
+          if (i > 0) {
+            result[i]['after'] = false
+          }
+          break;
+        }
+        if (a === 0) {
+          i++;
+          result.push({
+            before: (i > 0),
+            after: true
+          }); // added i-th element
+        }
+        result[i][$attribute_labels[a]] = $attribute_values.substring(s + 1, new_s);
+        s = new_s
+        a = (a + 1) % $attribute_labels.length
+      }
+      i = 0
+      return result;
+    }
+
+    function get_attribute_labels() {
+      let $attribute_labels = ['caption', 'sourcehrf', 'sourcename', 'src'];
+      return $attribute_labels
+    }
+
+    function display_in_lightbox(an_image_before_after) {
+      $("#aLightboxModal_image").attr('src', an_image_before_after['src']);
+
+      let full_caption = get_caption(
+        an_image_before_after['sourcename'],
+        an_image_before_after['sourcehrf'],
+        an_image_before_after['caption']);
+      $("#aLightboxModal_title").html(full_caption);
+
+      if (an_image_before_after['before']) {
+        $(".prev").show();
+      } else {
+        $(".prev").hide();
+      }
+      if (an_image_before_after['after']) {
+        $(".next").show();
+      } else {
+        $(".next").hide();
+      }
+    }
+
+    function check_there_is_an_image_before_after(img_src) {
+      let result = {
+        before: null,
+        after: null
+      }
+
+      let $all_img_attributes = deconcatenateAttributes()
+
+      for (let i = 0; i < $all_img_attributes.length; i++) {
+        if (img_src === $all_img_attributes[i]['src']) {
+          if (i > 0) {
+            result['before'] = $all_img_attributes[i - 1]
+          }
+          if (i < ($all_img_attributes.length - 1)) {
+            result['after'] = $all_img_attributes[i + 1]
+          }
+          break;
+        }
+      }
+
+      return result
+    }
+
+    function go_back(event) {
+      event.stopPropagation();
+      let img_src = $("#aLightboxModal_image").attr('src');
+      let $before_after = check_there_is_an_image_before_after(img_src);
+      display_in_lightbox($before_after['before'])
+    }
+
+    function go_forward(event) {
+      event.stopPropagation();
+      let img_src = $("#aLightboxModal_image").attr('src');
+      let $before_after = check_there_is_an_image_before_after(img_src);
+      display_in_lightbox($before_after['after'])
+      $("#aLightboxModalOutside").show();
     }
 
     $('.outside_image img').click(function() {
-        img_src = $(this).attr('src');
-        caption = get_caption($(this));
-        $("#aLightboxModal_image").attr("src", img_src);
-        $("#aLightboxModal_title").html(caption);
-        $("#aLightboxModalOutside").show();
+
+      let $all_images = $(this).parent().parent().find('img');
+
+      concatenateAttributes($all_images)
+
+      b_a = check_there_is_an_image_before_after($(this).attr('src'))
+      let $this_image_before_after = {
+        before: !!(b_a['before']),
+        after: !!(b_a['after'])
+      }
+      let $attribute_labels = get_attribute_labels()
+      for (al = 0; al < $attribute_labels.length; al++) {
+        $this_image_before_after[$attribute_labels[al]] = $(this).attr($attribute_labels[al]);
+      }
+
+      display_in_lightbox($this_image_before_after)
+      $("#aLightboxModalOutside").show();
     });
 
-    $('.close_cursor').click(function() {
-        $("#aLightboxModalOutside").hide();
-        $("#aLightboxModal_image").attr("src", "");
-        $("#aLightboxModal_title").html("");
-    });
+    function close_lightbox() {
+      $("#aLightboxModalOutside").hide();
+      $("#aLightboxModal_image").attr("src", "");
+      $("#aLightboxModal_hidden_images").html("");
+      $("#aLightboxModal_title").html("");
+    };
 
-    // Next/previous controls
 
-    function go_back() {
-        return 0;
-    }
-
-    function go_forward() {
-        return 0;
-    }
-/*
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
-    }*/
 
 });
