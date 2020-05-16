@@ -330,13 +330,6 @@ table .images_center {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover,
-.close_cursor:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 /******************************************************************************
  *                         Header and Widgets                                 *
  *****************************************************************************/
@@ -424,8 +417,8 @@ body.custom-background {
 	background-color: #ffffff  !important;
 }
 
-a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta a:hover {
-	color: #aac744;
+a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta a:hover, .close_cursor:hover {
+	color: #aac744 !important;
 }
 
 #access li.current_page_item > a, #access li.current-menu-item > a {
@@ -439,6 +432,13 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 #header, #nav, #access:target .menu, #copyright, #access{
     background-color: #000 !important;
     color: #ffffff !important;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover,
+.close_cursor:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /******************************************************************************
