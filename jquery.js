@@ -10,11 +10,11 @@ jQuery(document).ready(function($) {
         } );
     }
 
-    $(document.body).append('<div id="aLightboxModalOutside" onclick="close_lightbox()"><div id="aLightboxModal">\
-                                 <div class="close_cursor" onclick="close_lightbox()">X</div><br/>\
+    $(document.body).append('<div id="aLightboxModalOutside"><div id="aLightboxModal">\
+                                 <div class="close_cursor">X</div><br/>\
                                  <div id="aLightboxModal_outside_image">\
-                                 <a class="prev" onclick="go_back(event)">&#10094;</a>\
-                                 <a class="next" onclick="go_forward(event)">&#10095;</a>\
+                                 <a class="prev">&#10094;</a>\
+                                 <a class="next">&#10095;</a>\
                                  <div id="aLightboxModal_content"><div class="aLightboxModal_container"><img id="aLightboxModal_image" src=""></div></div>\
                                  <div id="aLightboxModal_title"></div></div>\
                              </div><div id="target"></div></div>');
@@ -141,7 +141,6 @@ jQuery(document).ready(function($) {
         an_object.attr('style', style_img); //$(this).css('max-width', a_width);
         return 0;
     }
-
     function get_caption(sourcename, sourcehrf, caption) {
       var result = '';
       if (caption) {
@@ -257,25 +256,22 @@ jQuery(document).ready(function($) {
       return result
     }
 
-    function go_back(event) {
-      event.stopPropagation();
+    function display_prev_or_next(which_one_to_show) {
       let img_src = $("#aLightboxModal_image").attr('src');
       let $before_after = check_there_is_an_image_before_after(img_src);
-      display_in_lightbox($before_after['before'])
+      display_in_lightbox($before_after[which_one_to_show])
     }
 
-    function go_forward(event) {
-      event.stopPropagation();
-      let img_src = $("#aLightboxModal_image").attr('src');
-      let $before_after = check_there_is_an_image_before_after(img_src);
-      display_in_lightbox($before_after['after'])
-      $("#aLightboxModalOutside").show();
-    }
+    $(".prev").click(function() {
+      display_prev_or_next('before');
+    });
+    $(".next").click(function() {
+      display_prev_or_next('after');
+    });
 
     $('.outside_image img').click(function() {
 
       let $all_images = $(this).parent().parent().find('img');
-
       concatenateAttributes($all_images)
 
       b_a = check_there_is_an_image_before_after($(this).attr('src'))
@@ -296,9 +292,17 @@ jQuery(document).ready(function($) {
       $("#aLightboxModalOutside").hide();
       $("#aLightboxModal_image").attr("src", "");
       $("#aLightboxModal_hidden_images").html("");
-      $("#aLightboxModal_title").html("");
+      concatenateAttributes([]); // clean the gallery info
     };
 
+    $(".close_cursor").click(function() {
+      close_lightbox();
+    });
 
+    $("#aLightboxModalOutside").click(function(e) {
+      if ($(e.target).is("div")) {
+        close_lightbox();
+      }
+    });
 
 });
