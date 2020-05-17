@@ -7280,5 +7280,95 @@ insert_into_images("horsemen/Schlacht_am_Weissen_Berg_C-K_063.jpg",
                             "wiki", 
                             "Schlacht_am_Weißen_Berg_C-K_063.jpg", 
                             "Battle of White Mountain, <br/>1620, Peter Snayers, Flemish");
+insert_into_images("horsemen/Albrecht_Altdorfer_044.jpg", 
+                            "wiki", 
+                            "Albrecht_Altdorfer_044.jpg", 
+                            "Triumphal procession of Emperor Maximilian, scene: Imperial banner and Imperial sword, <br/>1513-15, Albrecht Altdorfer, Bavaria, Germany");
+insert_into_images("horsemen/Bataille_entre_mongols__chinois.jpeg", 
+                            "wiki", 
+                            "Bataille_entre_mongols_%26_chinois_(1211).jpeg", 
+                            "Battle between Chinese and Mongolian armies (1211), illustration of Jami' al-tawarikh, <br/>1430, Sayf al-Vâhidî, Persia");
+insert_into_images("horsemen/SC194553.jpg", 
+                            "MFA", 
+                            "148654", 
+                            "Hunting Scene: Prince and Princess on Horseback, <br/>18th century, Mughal Empire");
+insert_into_images("horsemen/Archery_Competition-Mughal-India.jpg", 
+                            "wiki", 
+                            "Archery_Competition-Mughal-India.jpg", 
+                            "Archery Competition, <br/>cr. 1600, Mughal Empire");
+insert_into_images("horsemen/2009BX3652_2500.jpg", 
+                            "VA", 
+                            "O9298", 
+                            "The victory of Khan Zaman (Ali Quli Khan) over the Afghans on the banks of the river Jumna in 1561, illustration of Akbarnama (Book of Akbar), <br/>cr. 1590-95, Kanha and Khiman Sangtarash, Mughal Empire");
+insert_into_images("horsemen/2013GJ0286_2500.jpg", 
+                            "VA", 
+                            "O433463", 
+                            "Mughal noble on horseback, <br/>cr. 1790, Mughal Empire");
+insert_into_images("horsemen/FS-5809_03.jpg", 
+                            "asia.si.edu", 
+                            "https://asia.si.edu/object/F1907.197/", 
+                            "A Prince and princess on horseback, <br/>18th century, Mughal Empire");
+insert_into_images("horsemen/Battle_of_Mohacs.jpg", 
+                            "wiki", 
+                            "Battle_of_Mohács.jpg", 
+                            "Battle of Mohács, <br/>16th century, Ottoman Empire");
+insert_into_images("horsemen/Duel_before_the_Battle_of_Mohacs.jpg", 
+                            "wiki", 
+                            "Duel_before_the_Battle_of_Mohács.jpg", 
+                            "Duel before the Battle of Mohács, <br/>16th century, Ottoman Empire");
+insert_into_images("horsemen/Suleiman_I_after_the_victory_at_Mohacs.jpg", 
+                            "wiki", 
+                            "Suleiman_I_after_the_victory_at_Mohács.jpg", 
+                            "Suleiman I after the victory at Mohács, <br/>16th century, Ottoman Empire");
+insert_into_images("horsemen/Surname-i_huemayun_gazi.jpg", 
+                            "wiki", 
+                            "Surname-i_huemayun_gazi.jpg", 
+                            "Parade of two riding Gazi (veterans from Rumelia) in front of Sultan Murat III, <br/>16th century, Nakkaş Osman and/or other painters of the Nakkaşhane, Ottoman Empire");
+insert_into_images("horsemen/Battle_at_Lipova_1551.jpg", 
+                            "wiki", 
+                            "Battle_at_Lipova,_1551.jpg", 
+                            "Battle_at_Lipova, 1551, <br/>second half of the 16th century, Ottoman Empire");
+insert_into_images("horsemen/Topkapi_Sarayi.jpg", 
+                            "wiki", 
+                            "Topkapı_Sarayı.jpg", 
+                            "Topkapi palace, <br/>1523, Istanbul, Ottoman Empire");
+insert_into_images("horsemen/Dinastia_han_lastra_parietale_a_uso_funerario_con_scena_di_caccia_206_a.c.-220_dc._ca_02.jpeg", 
+                            "wiki", 
+                            "Dinastia_han,_lastra_parietale_a_uso_funerario_con_scena_di_caccia,_206_a.c.-220_dc._ca,_02.JPG", 
+                            "Grave stelae with a hunting scene, Han dynasty, <br/>cr. 206 BC-220 AD, China");
+insert_into_images("horsemen/Drawing-landscape-scenes-chariot-canopy-fitting-Hebei", 
+                            "Encyclopædia Britannica", 
+                            "https://www.britannica.com/art/Chinese-painting/images-videos", 
+                            "Landscape scene from a bronze fitting of a chariot canopy, <br/>cr. 2nd – 1st century BC, Dingxian, Hebei province, China");
+insert_into_images("horsemen/Polo-player-detail-Xianyang-mural-tomb-ad.jpg", 
+                            "Encyclopædia Britannica", 
+                            "https://www.britannica.com/art/Chinese-painting/images-videos", 
+                            "Polo player, detail of a mural from the tomb of Li Xian (the crown prince Zhanghuai), <br/>706, near Xianyang, Shaanxi province, China");
+insert_into_images("horsemen/Journey-Minghuang-Shu-ink-colour-silk-style.jpg", 
+                            "comuseum.com", 
+                            "https://www.comuseum.com/painting/masters/li-zhaodao/emperor-minghuangs-journey-to-shu/", 
+                            "Emperor Minghuang’s Journey to Shu, <br/>early 8th century, Tang Empire (modern China)");
+
+insert_into_images("horsemen/Theofilos_Palaiologos.jpg", 
+                            "wiki", 
+                            "Theofilos_Palaiologos.jpg", 
+                            "Fall of Constantinople (1453), <br/>1932, Theophilos Hatzimihail, Greece");
+/*
+:Zama_battle.png
+:Lempertz-1002-1117-Old-Masters-and-19th-Century-1000th-Auction-Master-of-the-Wuerzburg-Battle-follower-of-BATTLE-SCENE-WITH-LANDSQUENETS.jpg
+:Autor_nieznany.jpg
+:2013GJ0286_2500.jpg
+:2009BX3652_2500.jpg
+:16th-century_unknown_painters_-_The_Battle_of_the_Ticino_-_WGA23949.jpg
+:4.jpg
+:rom2019_17003_1.jpg
+
+:DT614.jpg
+:92-003541.jpg
+:92-003487-02.jpg
+:91-005181-02.jpg
+:90-003788.jpg
+:12-507650.jpg
+:09-562706.jpg*/
 }
 ?>
