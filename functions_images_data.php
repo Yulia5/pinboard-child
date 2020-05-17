@@ -4555,7 +4555,7 @@ function populate_images() {
     insert_into_images("horsemen/DT8442.jpg", 
                             "Met", 
                             "453276", 
-                            "The Battle of Shahbarghan, illustration of Padshahnama by Abdul Hamid Lahori, <br/>1646-1700, India");
+                            "The Battle of Shahbarghan, illustration of Padshahnama by Abdul Hamid Lahori, <br/>1646-1700, Mughal Empire");
     insert_into_images("horsemen/AN00225812_001_l.jpg", 
                             "BM", 
                             "717305", 
@@ -7247,7 +7247,7 @@ insert_into_images("horsemen/174tileRichardAndSaladinCXnice.jpg",
 insert_into_images("horsemen/princess-playing-polo-jodhpur.png", 
                             "Google", 
                             "ZAH6WqN3erBfRg", 
-                            "Princess Playing Polo, <br/>18th century, Dana, Jodhpur, India");
+                            "Princess Playing Polo, <br/>18th century, Dana, Jodhpur, Mughal Empire");
 insert_into_images("horsemen/Reims_-_basilique_Saint-Remi_dallage_22.jpeg", 
                             "wiki", 
                             "Reims_-_basilique_Saint-Remi,_dallage_(22).JPG", 
@@ -7287,7 +7287,7 @@ insert_into_images("horsemen/Albrecht_Altdorfer_044.jpg",
 insert_into_images("horsemen/Bataille_entre_mongols__chinois.jpeg", 
                             "wiki", 
                             "Bataille_entre_mongols_%26_chinois_(1211).jpeg", 
-                            "Battle between Chinese and Mongolian armies (1211), illustration of Jami' al-tawarikh, <br/>1430, Sayf al-Vâhidî, Persia");
+                            "Battle between Chinese and Mongolian armies (1211), illustration of Jami' al-tawarikh, <br/>1430, Sayf al-Vâhidî, Herat, Persia");
 insert_into_images("horsemen/SC194553.jpg", 
                             "MFA", 
                             "148654", 
