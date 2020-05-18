@@ -4550,8 +4550,8 @@ function populate_images() {
                             "Battle Between Iranians and Turanians, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1562–83, Shiraz, Persia");
     insert_into_images("horsemen/DP159385.jpg", 
                             "Met", 
-                            "451089", 
-                            "Rustam Seizes Afrasiyab by the Girdle and Lifts him from the Saddle, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1430–40, India");
+                            "447297", 
+                            "Rustam Seizes Afrasiyab by the Girdle and Lifts him from the Saddle, illustration of the Book of Kings by Ferdawsi, <br/>cr. 1430–40, India (?)");
     insert_into_images("horsemen/DT8442.jpg", 
                             "Met", 
                             "453276", 
@@ -7283,7 +7283,7 @@ insert_into_images("horsemen/Schlacht_am_Weissen_Berg_C-K_063.jpg",
 insert_into_images("horsemen/Albrecht_Altdorfer_044.jpg", 
                             "wiki", 
                             "Albrecht_Altdorfer_044.jpg", 
-                            "Triumphal procession of Emperor Maximilian, scene: Imperial banner and Imperial sword, <br/>1513-15, Albrecht Altdorfer, Bavaria, Germany");
+                            "Triumph of Emperor Maximilian I, detail: Imperial banner and Imperial sword, <br/>1513-15, Albrecht Altdorfer, Bavaria, Germany");
 insert_into_images("horsemen/Bataille_entre_mongols__chinois.jpeg", 
                             "wiki", 
                             "Bataille_entre_mongols_%26_chinois_(1211).jpeg", 
@@ -7336,7 +7336,7 @@ insert_into_images("horsemen/Dinastia_han_lastra_parietale_a_uso_funerario_con_s
                             "wiki", 
                             "Dinastia_han,_lastra_parietale_a_uso_funerario_con_scena_di_caccia,_206_a.c.-220_dc._ca,_02.JPG", 
                             "Grave stelae with a hunting scene, Han dynasty, <br/>cr. 206 BC-220 AD, China");
-insert_into_images("horsemen/Drawing-landscape-scenes-chariot-canopy-fitting-Hebei", 
+insert_into_images("horsemen/Drawing-landscape-scenes-chariot-canopy-fitting-Hebei.jpg", 
                             "Encyclopædia Britannica", 
                             "https://www.britannica.com/art/Chinese-painting/images-videos", 
                             "Landscape scene from a bronze fitting of a chariot canopy, <br/>cr. 2nd – 1st century BC, Dingxian, Hebei province, China");
@@ -7348,27 +7348,62 @@ insert_into_images("horsemen/Journey-Minghuang-Shu-ink-colour-silk-style.jpg",
                             "comuseum.com", 
                             "https://www.comuseum.com/painting/masters/li-zhaodao/emperor-minghuangs-journey-to-shu/", 
                             "Emperor Minghuang’s Journey to Shu, <br/>early 8th century, Tang Empire (modern China)");
-
 insert_into_images("horsemen/Theofilos_Palaiologos.jpg", 
                             "wiki", 
                             "Theofilos_Palaiologos.jpg", 
                             "Fall of Constantinople (1453), <br/>1932, Theophilos Hatzimihail, Greece");
-/*
-:Zama_battle.png
-:Lempertz-1002-1117-Old-Masters-and-19th-Century-1000th-Auction-Master-of-the-Wuerzburg-Battle-follower-of-BATTLE-SCENE-WITH-LANDSQUENETS.jpg
-:Autor_nieznany.jpg
-:2013GJ0286_2500.jpg
-:2009BX3652_2500.jpg
-:16th-century_unknown_painters_-_The_Battle_of_the_Ticino_-_WGA23949.jpg
-:4.jpg
-:rom2019_17003_1.jpg
+insert_into_images("horsemen/Zama_battle.png", 
+                            "© The Pushkin State Museum of Fine Arts", 
+                            "https://pushkinmuseum.art/data/fonds/europe_and_america/j/1001_2000/zh_3144/index.php?lang=en", 
+                            "The Battle of Zama (202 BC), <br/>last third of the 16th century, Rome, Italy");
+insert_into_images("horsemen/16th-century_unknown_painters_-_The_Battle_of_the_Ticino_-_WGA23949.jpg", 
+                            "wiki", 
+                            "16th-century_unknown_painters_-_The_Battle_of_the_Ticino_-_WGA23949.jpg", 
+                            "Battle of Ticinus (218 BC), <br/>1550s, Mantua, Italy");
+insert_into_images("horsemen/Lempertz-1002-1117-Old-Masters-and-19th-Century-1000th-Auction-Master-of-the-Wuerzburg-Battle-follower-of-BATTLE-SCENE-WITH-LANDSQUENETS.jpg", 
+                            "© 2020 Auction house Lempertz", 
+                            "https://www.lempertz.com/en/catalogues/lot/1002-1/1117-master-of-the-wuerzburg-battle-follower-of.html", 
+                            "Battle scene with landsquenets, <br/>cr. 1525-30, South Germany");
+insert_into_images("horsemen/Autor_nieznany.jpg", 
+                            "wiki", 
+                            "Autor_nieznany_(malarz_z_kręgu_Lukasa_Cranacha_Starszego),_Bitwa_pod_Orszą.jpg", 
+                            "Battle of Orsha (1514), <br/>cr. 1524-30, Hans Krell, Germany");
+insert_into_images("horsemen/4.jpg", 
+                            "The Metropolitan Museum of Art", 
+                            "https://www.metmuseum.org/blogs/now-at-the-met/2018/delacroix-conversation-asher-miller", 
+                            "Collision of Arab Horsemen, <br/>cr. 1833–34, Eugène Delacroix, France");
+insert_into_images("horsemen/rom2019_17003_1.jpg", 
+                            "Royal Ontario Museum", 
+                            "https://www.rom.on.ca/en/blog/safavid-tile-project-iv-the-artist-behind-the-arches", 
+                            "Cuerda seca tile Arch, <br/>cr. 1685, Isfahan, Iran");
+insert_into_images("horsemen/DT614.jpg", 
+                            "Met", 
+                            "https://www.rom.on.ca/en/blog/safavid-tile-project-iv-the-artist-behind-the-arches", 
+                            "Otto, Count of Nassau and his Wife Adelheid van Vianen (a tapestry design), <br/>1530–35, Bernard van Orley, Brussels, Flanders");
+insert_into_images("horsemen/92-003541.jpg", 
+                            "RMN", 
+                            "92-003487-02-2C6NU0H1TOHQ", 
+                            "A tapestry 'The month of March, aries: the departure for bird hunting' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
+insert_into_images("horsemen/92-003487-02.jpg", 
+                            "RMN", 
+                            "92-003541-2C6NU0H1L6KR", 
+                            "A tapestry 'The month of December, capricorn: attack of the wild boar' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
+insert_into_images("horsemen/91-005181-02.jpg", 
+                            "RMN", 
+                            "91-005181-02-2C6NU0H40BF7", 
+                            "A tapestry design 'The cavalry attack and the assault of the arquebusiers' from the series 'The Battle of Pavia', <br/>16th century, Bernard van Orley, Brussels, Flanders");
+insert_into_images("horsemen/90-003788.jpg", 
+                            "RMN", 
+                            "90-003788-2C6NU0H407AU", 
+                            "A tapestry design 'The month of December, capricorn: attack of the wild boar' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
+insert_into_images("horsemen/09-562706.jpg", 
+                            "RMN", 
+                            "09-562706-2C6NU0K1R6CR", 
+                            "A tapestry design 'Allegory of September: deer hunting, the boat' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
+insert_into_images("horsemen/12-507650.jpg", 
+                            "RMN", 
+                            "12-507650-2C6NU0ZSC7KM", 
+                            "Rider on a rearing horse, in a wooded area, <br/>16th century, after Bernard van Orley, Brussels, Flanders");
 
-:DT614.jpg
-:92-003541.jpg
-:92-003487-02.jpg
-:91-005181-02.jpg
-:90-003788.jpg
-:12-507650.jpg
-:09-562706.jpg*/
 }
 ?>
