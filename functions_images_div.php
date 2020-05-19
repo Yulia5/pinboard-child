@@ -183,24 +183,22 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
         'flushright' => '',
         'flushleft' => '' 
     ), $attr));
-
-    $style = add_int_if_not_empty('imgheight', $imgheight) . add_int_if_not_empty('imgwidth', $imgwidth);
     
     $content = preg_replace("/<br\s*?\/?>/", "\n", $content); // for convenience, not treating <br>'s as a special case in regex
     $content = preg_replace("/<p\s*?\/?>/", "", $content); // ignoring new paragraphs markups automatically added by wordpress editor!
-    $result = preg_replace_callback('/[^\s]+?(?=\s|$)/s', 'add_db_images', $content);
-    $result = str_replace("\n", "<br/>", $result); // adding <br>'s back
+    $content = preg_replace_callback('/[^\s]+?(?=\s|$)/s', 'add_db_images', $content);
+    $content = str_replace("\n", "<br/>", $content); // adding <br>'s back
     
     // adding div's
-    $result =  $style . '>' . $result . "</div>";  
     if (!! $flushright) {
-        $result = '<p style="clear:right"></p><div class="images_right" ' . $result;
+        $result = '<p style="clear:right"></p><div class="images_right" ';
     } elseif (!! $flushleft) {
-        $result = '<p style="clear:left"></p><div class="images_left" ' . $result;
+        $result = '<p style="clear:left"></p><div class="images_left" ';
     } else {
-    	$result = '<p style="clear:left"></p><p style="clear:right"></p><div class="images_center" ' . $result;
+    	$result = '<p style="clear:both"></p><div class="images_center" ';
     }  
-
+    $result .=  add_int_if_not_empty('imgheight', $imgheight) . add_int_if_not_empty('imgwidth', $imgwidth) . '>' . $content . "</div>";  
+    
     return $result;
 }
 add_shortcode('yu_images_DB', 'MY_VERY_OWN_images_DB_shortcode');

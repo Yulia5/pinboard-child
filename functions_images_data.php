@@ -7280,6 +7280,10 @@ insert_into_images("horsemen/Schlacht_am_Weissen_Berg_C-K_063.jpg",
                             "wiki", 
                             "Schlacht_am_Weißen_Berg_C-K_063.jpg", 
                             "Battle of White Mountain, <br/>1620, Peter Snayers, Flemish");
+insert_into_images("horsemen/White_mountain_detail.png", 
+                            "wiki", 
+                            "Schlacht_am_Weißen_Berg_C-K_063.jpg", 
+                            "Battle of White Mountain (detail), <br/>1620, Peter Snayers, Flemish");
 insert_into_images("horsemen/Albrecht_Altdorfer_044.jpg", 
                             "wiki", 
                             "Albrecht_Altdorfer_044.jpg", 
@@ -7378,7 +7382,7 @@ insert_into_images("horsemen/rom2019_17003_1.jpg",
                             "Cuerda seca tile Arch, <br/>cr. 1685, Isfahan, Iran");
 insert_into_images("horsemen/DT614.jpg", 
                             "Met", 
-                            "https://www.rom.on.ca/en/blog/safavid-tile-project-iv-the-artist-behind-the-arches", 
+                            "337487", 
                             "Otto, Count of Nassau and his Wife Adelheid van Vianen (a tapestry design), <br/>1530–35, Bernard van Orley, Brussels, Flanders");
 insert_into_images("horsemen/92-003541.jpg", 
                             "RMN", 
