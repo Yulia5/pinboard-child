@@ -7387,11 +7387,11 @@ insert_into_images("horsemen/DT614.jpg",
 insert_into_images("horsemen/92-003541.jpg", 
                             "RMN", 
                             "92-003487-02-2C6NU0H1TOHQ", 
-                            "A tapestry 'The month of March, aries: the departure for bird hunting' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
+                            "A tapestry 'The month of December, capricorn: attack of the wild boar' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
 insert_into_images("horsemen/92-003487-02.jpg", 
                             "RMN", 
                             "92-003541-2C6NU0H1L6KR", 
-                            "A tapestry 'The month of December, capricorn: attack of the wild boar' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
+                            "A tapestry 'The month of March, aries: the departure for bird hunting' from the series 'The Hunting of Maximilian' called 'Beautiful hunts of Guise', <br/>cr. 1530, after Bernard van Orley, Brussels, Flanders");
 insert_into_images("horsemen/91-005181-02.jpg", 
                             "RMN", 
                             "91-005181-02-2C6NU0H40BF7", 
@@ -7408,6 +7408,13 @@ insert_into_images("horsemen/12-507650.jpg",
                             "RMN", 
                             "12-507650-2C6NU0ZSC7KM", 
                             "Rider on a rearing horse, in a wooded area, <br/>16th century, after Bernard van Orley, Brussels, Flanders");
-
+insert_into_images("horsemen/bernart_von_orley_arazzi_della_battaglia_di_pavia_attacco_alla_gendarmeria_francese_IGMN144483_1526-31.jpeg", 
+                            "wiki", 
+                            "Manif._di_bruxelles_su_dis.di_bernart_von_orley,_arazzi_della_battaglia_di_pavia,_attacco_alla_gendarmeria_francese,_IGMN144483,_1526-31.JPG", 
+                            "The advance of the imperial army and attack on the French gendarmerie led by Francis I, the first of the seven tapestries representing the Battle of Pavia, <br/>1528-31, Bernard van Orley, Brussels, Flanders");
+insert_into_images("horsemen/bernart_von_orley_arazzi_della_battaglia_di_pavia_fuga_dei_francesi_e_diniego_degli_svizzeri_IGMN144485_1526-31.jpeg", 
+                            "wiki", 
+                            "Manif._di_bruxelles_su_dis.di_bernart_von_orley,_arazzi_della_battaglia_di_pavia,_fuga_dei_francesi_e_diniego_degli_svizzeri,_IGMN144485,_1526-31.JPG", 
+                            "The escape of the French army and retreat of Duke D'Aleçon beyond Ticino, the sixth of the seven tapestries representing the Battle of Pavia, <br/>1528-31, Bernard van Orley, Brussels, Flanders");
 }
 ?>
