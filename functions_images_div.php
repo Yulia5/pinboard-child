@@ -186,8 +186,9 @@ function MY_VERY_OWN_images_DB_shortcode($attr, $content = null) {
 
     $style = add_int_if_not_empty('imgheight', $imgheight) . add_int_if_not_empty('imgwidth', $imgwidth);
     
-    $content = preg_replace("/<br\W*?\/>/", "\n", $content); // for convenience, not treating <br>'s as a special case in regex
-    $result = preg_replace_callback('/[^\s\r\t\n]+?(?=\s|\r|\t|\n|$)/s', 'add_db_images', $content);
+    $content = preg_replace("/<br\s*?\/?>/", "\n", $content); // for convenience, not treating <br>'s as a special case in regex
+    $content = preg_replace("/<p\s*?\/?>/", "", $content); // ignoring new paragraphs markups automatically added by wordpress editor!
+    $result = preg_replace_callback('/[^\s]+?(?=\s|$)/s', 'add_db_images', $content);
     $result = str_replace("\n", "<br/>", $result); // adding <br>'s back
     
     // adding div's
