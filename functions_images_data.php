@@ -2700,8 +2700,8 @@ function populate_images() {
                             "http://www.nybooks.com/articles/archives/2014/jun/19/art-hitler-hated/", 
                             "Hungry Girl,<br/>Kimmelman, 1925<br/>(represents WWI)");
     insert_into_images("horsemen/hunting.jpg", 
-                            "wiki", 
-                            "Baldassare_Manara_-_Dish_with_Lion_Hunt_-_Walters_481499.jpg", 
+                            "WAM", 
+                            "36602", 
                             "Dish depicting a Lion Hunt, <br/>cr. 1520-47, Baldassare Manara, Faenza");
     insert_into_images("horsemen/ikmk-18200577.jpg", 
                             "ikmk", 
@@ -4769,8 +4769,8 @@ function populate_images() {
                             "Moroccan_Horseman_Crossing_a_Ford_by_Eugène_Delacroix,_c._1850.JPG", 
                             "Moroccan Horseman Crossing a Ford, <br/>cr. 1850, Delacroix Eugène, France");
     insert_into_images("horsemen/Collision_of_Moorish_Horsemen_-_Walters_376.jpg", 
-                            "wiki", 
-                            "Eugène_Delacroix_-_Collision_of_Moorish_Horsemen_-_Walters_376.jpg", 
+                            "WAM", 
+                            "3792", 
                             "Collision of Moorish Horsemen, <br/>1843-4, Delacroix Eugène, France");
     insert_into_images("horsemen/Arab-lion.jpg", 
                             "wiki", 
@@ -7416,5 +7416,59 @@ insert_into_images("horsemen/bernart_von_orley_arazzi_della_battaglia_di_pavia_f
                             "wiki", 
                             "Manif._di_bruxelles_su_dis.di_bernart_von_orley,_arazzi_della_battaglia_di_pavia,_fuga_dei_francesi_e_diniego_degli_svizzeri,_IGMN144485,_1526-31.JPG", 
                             "The escape of the French army and retreat of Duke D'Aleçon beyond Ticino, the sixth of the seven tapestries representing the Battle of Pavia, <br/>1528-31, Bernard van Orley, Brussels, Flanders");
+
+insert_into_images("horsemen/Stag_hunt_Franco-Flemish_Gothic_mille-fleurs_tapestry_woven_c._1500_AD_-_Hearst_Castle_-_DSC06346.jpg", 
+                            "wiki", 
+                            "Stag_hunt,_Franco-Flemish_Gothic,_mille-fleurs_tapestry,_woven_c._1500_AD_-_Hearst_Castle_-_DSC06346.JPG", 
+                            "Stag hunt mille-fleurs tapestry, <br/>cr. 1500, Franco-Flemish");
+insert_into_images("horsemen/La_guerre_contre_Gondebaud_et_Alaric_II.jpg", 
+                            "wiki", 
+                            "La_guerre_contre_Gondebaud_et_Alaric_II.jpg", 
+                            "The War with Gondebaud (tapestry series 'The History of Clovis'), <br/>15th century, Arras, France");
+insert_into_images("horsemen/Wandbehang_makffm_6809_05.jpg", 
+                            "wiki", 
+                            "Wandbehang_makffm_6809_05.jpg", 
+                            "Love Story of William of Orlens and the King of England's daughter Amelie, <br/>cr. 1410-30, Middle Rhine region, Germany");
+insert_into_images("horsemen/ps1_829_vwc_dd_t10.jpg", 
+                            "WAM", 
+                            "610", 
+                            "Meleager and Atalanta Setting Out to Hunt the Calydonian Boar, <br/>cr. 1475, Netherlandish or Flemish");
+insert_into_images("horsemen/Sarcofago_con_caccia_calidoniaII-III_sec._01.jpg", 
+                            "wiki", 
+                            "Sarcofago_con_caccia_calidonia,II-III_sec._01.JPG", 
+                            "Sarcophagus with relief depicting the hunt for the Calydonian boar, <br/>201-250 AD, Roman");
+insert_into_images("horsemen/Sarcofago_13_di_fedra_e_ippolito_riutilizzato_per_beatrice_di_lotaringia_fine_II_sec._01.jpeg", 
+                            "wiki", 
+                            "Sarcofago_13_di_fedra_e_ippolito_riutilizzato_per_beatrice_di_lotaringia_(fine_II_sec.),_01.JPG", 
+                            "Sarcophagus with scenes of myth of Phaedra and Hippolytus, <br/>cr. 180 AD, Roman");
+insert_into_images("horsemen/1ere_chargeDreux.jpg", 
+                            "wiki", 
+                            "1ere_chargeDreux.jpg", 
+                            "First attack of the battle of Dreux, series 'Quarante Tableaux', <br/>1570, Jacques Tortorel and Jean Perrissin, Lion, France and Geneve, Switzerland");
+insert_into_images("horsemen/so_von_dem_Barbarossen_vertrieben_mit_kriegsrustun_RP-P-OB-78.784-2.jpg", 
+                            "RJK", 
+                            "RP-P-OB-78.784-2", 
+                            "Skirmish between the Turks and the Imperial Troops, series 'Journey from Charles V to Tunis, 1535', <br/>1574-78, Frans Hogenberg, after Jan Cornelisz Vermeyen, Cologne, Germany");
+insert_into_images("horsemen/so_von_dem_Barbarossen_vert_RP-P-OB-78.784-5.jpg", 
+                            "RJK", 
+                            "RP-P-OB-78.784-5", 
+                            "Turks kneel before Charles V, series 'Journey from Charles V to Tunis, 1535', <br/>1570-74, Frans Hogenberg, after Jan Cornelisz Vermeyen, Cologne, Germany");
+insert_into_images("horsemen/Van_Eyck_-_The_Crucifixion_The_Last_Judgment.jpg", 
+                            "wiki", 
+                            "Van_Eyck_-_The_Crucifixion;_The_Last_Judgment.jpg", 
+                            "The Crucifixion and The Last Judgment, diptych, <br/>cr. 1430, Jan van Eyck, Netherlandish");
+insert_into_images("horsemen/Van_eyck_crucifixion.png", 
+                            "wiki", 
+                            "Van_Eyck_-_The_Crucifixion;_The_Last_Judgment.jpg", 
+                            "The Crucifixion and The Last Judgment, diptych (detail), <br/>cr. 1430, Jan van Eyck, Netherlandish");
+insert_into_images("horsemen/530.jpg", 
+                            "Museum of Fine Arts, Budapest", 
+                            "https://www.mfab.hu/artworks/the-way-to-calvary-2/", 
+                            "The Way to Calvary, <br/>cr. 1505–15, Jan van Eyck (after), Netherlandish");
+insert_into_images("horsemen/Van_eyck_calvary.png", 
+                            "Museum of Fine Arts, Budapest", 
+                            "https://www.mfab.hu/artworks/the-way-to-calvary-2/", 
+                            "The Way to Calvary (detail), <br/>cr. 1505–15, Jan van Eyck (after), Netherlandish");
+
 }
 ?>
