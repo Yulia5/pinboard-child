@@ -85,13 +85,19 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
 	// $caption and $img_attr
 	if ( $comp ) {
 		$caption = 'COMPARANDUM: ' . $caption;
+
     }
+    
     if (! is_empty_string2($capitals)) {
-        $caption = strtoupper($capitals) . ' <br/>' . $caption;
-    } 
+        $caption_with_links =  '<a href="https://en.wikipedia.org/wiki/' . $capitals . '">' . str_replace('_', ' ', strtoupper($capitals)) . '</a><br/>' . $caption;
+        $caption_attr = str_replace('_', ' ', strtoupper($capitals)) . '<br/>' . $caption;
+    } else {
+    	$caption_with_links = $caption;
+		$caption_attr = $caption;    	
+    }
 	
-    $caption_no_br = preg_replace("/<br\W*?\/>/", "\n", $caption);
-    $caption_no_linebreaks = preg_replace("/<br\W*?\/>/", "", $caption);
+    $caption_no_br = preg_replace("/<br\W*?\/>/", "\n", $caption_attr);
+    $caption_no_linebreaks = preg_replace("/<br\W*?\/>/", "", $caption_attr);
     $img_attr = add_if_not_empty('style', $style) . add_if_not_empty('class', $class) 
     	      . add_if_not_empty('alt', $caption_no_linebreaks) . add_if_not_empty('caption', $caption_no_br)
     	      . add_if_not_empty('sourcename', $sourcename) . add_if_not_empty('sourcehrf', $sourcehrf) . add_if_not_empty('srcset', $srcset);
@@ -123,7 +129,7 @@ function generate_caption_HTML($hrf, $height, $width, $caption, $sourcename, $so
     // $result_image
 	$result_image = '<div class="outside_image"' . $div_attr . '> ' 
                     . '<img '. $img_attr . 'src="' . $hrf . '" />' 
-                    . '<div class="wp-caption-text">' . $caption . '</div>'
+                    . '<div class="wp-caption-text">' . $caption_with_links . '</div>'
                     . $invisible_a_to_check_broken_links . '</div>';
     
 	return $result_image;
