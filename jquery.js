@@ -10,11 +10,12 @@ jQuery(document).ready(function($) {
         } );
     }
 
-    $(document.body).append('<div id="aLightboxModalOutside"><div id="aLightboxModal">\
-                                 <div class="close_cursor">X</div><br/>\
-                                 <div id="aLightboxModal_outside_image">\
+    $(document.body).append('<div id="aLightboxModalOutside" display:none>\
                                  <a class="prev">&#10094;</a>\
                                  <a class="next">&#10095;</a>\
+                                 <div id="aLightboxModal">\
+                                 <div class="close_cursor">X</div><br/>\
+                                 <div id="aLightboxModal_outside_image">\
                                  <div id="aLightboxModal_content"><div class="aLightboxModal_container"><img id="aLightboxModal_image" src=""></div></div>\
                                  <div id="aLightboxModal_title"></div></div>\
                              </div><div id="target"></div></div>');

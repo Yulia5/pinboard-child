@@ -225,7 +225,7 @@ table .images_center {
  *****************************************************************************/
 
 #aLightboxModalOutside {
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, 0.8);
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -439,6 +439,10 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 .next:hover,
 .close_cursor:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev, .next {
+  color: #21759b;
 }
 
 /******************************************************************************
