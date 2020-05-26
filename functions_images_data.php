@@ -6915,55 +6915,55 @@ insert_into_images("horsemen/256585-1330623098.jpg",
 insert_into_images("horsemen/puss_on_unicorn.png", 
                             "redbubble.com", 
                             "https://www.redbubble.com/people/liquegifts/works/28357437", 
-                            "Cat riding a unicorn, <br/>?, Lique (?)");
+                            "Cat riding a unicorn, <br/>2010s, Lique (?)");
 insert_into_images("horsemen/death_on_unicorn.png", 
                             "redbubble.com", 
                             "https://www.redbubble.com/people/underheaven/works/34246859", 
-                            "Grim Reaper riding a unicorn, <br/>?,  Nikolay Todorov (?)");
+                            "Grim Reaper riding a unicorn, <br/>2010s,  Nikolay Todorov (?)");
 insert_into_images("horsemen/ClipartKey_1040913.png", 
                             "clipartkey.com", 
                             "https://www.clipartkey.com/view/oRxwwm_santa-riding-a-unicorn/", 
-                            "Santa riding a unicorn, <br/>?,  Douislouis (?)");
+                            "Santa riding a unicorn, <br/>2010s, Douislouis (?)");
 insert_into_images("horsemen/8831bbd049433a1ebe5996df72e581dd.jpg", 
                             "pinterest.com", 
                             "https://www.pinterest.com/pin/528187862528329017", 
-                            "Thor riding a unicorn, <br/>?,  Rae (?)");
+                            "Thor riding a unicorn, <br/>2010s, Rae (?)");
 insert_into_images("horsemen/37c39e7b7504b1145e88df19c4c15f5b.jpg", 
                             "pinterest.com", 
                             "https://www.pinterest.com/pin/216032113346654782", 
-                            "Jesus riding a unicorn, <br/>?,  Alejandro Valdés (?)");
+                            "Jesus riding a unicorn, <br/>2010s, Alejandro Valdés (?)");
 insert_into_images("horsemen/f5513b0a56ad06843442cb176b75fc1a.jpg", 
                             "pinterest.com", 
                             "https://www.pinterest.com/pin/487092515940058379", 
-                            "Girl Riding a Unicorn, <br/>?");
+                            "Girl Riding a Unicorn, <br/>2010s");
 insert_into_images("horsemen/boy-unicorn-art-vector-cartoon-design-58370450.jpg", 
                             "dreamstime", 
                             "58370450", 
-                            "Boy Riding a Unicorn, <br/>Martinus Sumbaji, ?");
+                            "Boy Riding a Unicorn, <br/>Martinus Sumbaji, 2010s");
 insert_into_images("horsemen/iStock-614121224.jpg", 
                             "dreamstime", 
                             "78761255", 
-                            "Unicorn start up, <br/>Aleutie, ?");
+                            "Unicorn start up, <br/>Aleutie, 2010s");
 insert_into_images("horsemen/1-45.jpg", 
                             "dreamstime", 
                             "143373347", 
-                            "Unicorn start up, <br/>Rudall30, ?");
+                            "Unicorn start up, <br/>Rudall30, 2010s");
 insert_into_images("horsemen/businessman-riding-unicorn-arrow-symbol-successful-achievement-leadership-career-vector-illustration-flat-162506430.jpg", 
                             "dreamstime", 
                             "162506430", 
-                            "Businessman riding a unicorn on arrow, <br/>Pishit Kamsink, ?");
+                            "Businessman riding a unicorn on arrow, <br/>Pishit Kamsink, 2010s");
 insert_into_images("horsemen/homosexual-men-riding-unicorn-rainbow-colors-minimalist-style-cartoon-flat-raster-homosexual-men-riding-unicorn-155404435.jpg", 
                             "dreamstime", 
                             "155404435", 
-                            "Gay couple riding a unicorn, <br/>Pishit Kamsink, ?");
+                            "Gay couple riding a unicorn, <br/>Pishit Kamsink, 2010s");
 insert_into_images("horsemen/young-woman-riding-unicorn-19815300.jpg", 
                             "dreamstime", 
                             "19815300", 
-                            "Young woman riding a unicorn, <br/>Viktoriia Panchenko, ?");
+                            "Young woman riding a unicorn, <br/>Viktoriia Panchenko, 2010s");
 insert_into_images("horsemen/784-7845670_deadpool-clipart-sticker-cutting-deadpool-riding-a-unicorn.jpg", 
                             "NicePNG", 
                             "https://www.nicepng.com/ourpic/u2t4r5r5o0e6a9i1_deadpool-clipart-sticker-cutting-deadpool-riding-a-unicorn/", 
-                            "Deadpool riding a unicorn, <br/>?");
+                            "Deadpool riding a unicorn, <br/>2010s");
 insert_into_images("horsemen/Postumia_4_96_BC_56081.jpg", 
                             "wiki", 
                             "Postumia_4_96_BC_56081.jpg", 
