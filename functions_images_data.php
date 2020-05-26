@@ -477,7 +477,7 @@ function populate_images() {
     insert_into_images("horsemen/2006BB2180_jpg_l.jpg", 
                             "VA", 
                             "O311616", 
-                            "Victory crowning a Prince, probably Louis XIV, <br/>early 18th century, Willem de Groff");
+                            "Victory crowning a Prince, probably Louis XIV, <br/>early 18th century, Guillielmus de Grof, Bavaria");
     insert_into_images("horsemen/2008BT0526_2500.jpg", 
                             "VA", 
                             "O159931", 
@@ -1421,7 +1421,11 @@ function populate_images() {
     insert_into_images("horsemen/D52028_JM.jpg", 
                             "Bavarian National Museum", 
                             "http://www.bayerisches-nationalmuseum.de/index.php?id=487&L=1%2527&tx_paintingdb_pi%5Bp%5D=21", 
-                            "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks,<br/>1714, Guillielmus de Grof");
+                            "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks, <br/>1714, Guillielmus de Grof, Bavaria");
+    insert_into_images("horsemen/R_3973_D70658_Detail.jpg", 
+                            "Bavarian National Museum", 
+                            "http://www.bayerisches-nationalmuseum.de/index.php?id=487&L=1%2527&tx_paintingdb_pi%5Bp%5D=21", 
+                            "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks (detail), <br/>1714, Guillielmus de Grof, Bavaria");
     insert_into_images("horsemen/DBP_1990_1445_Postverbindungen.jpg", 
                             "wiki", 
                             "DBP_1990_1445_Postverbindungen.jpg", 
@@ -1601,11 +1605,11 @@ function populate_images() {
     insert_into_images("horsemen/GericaultHorseman.jpg", 
                             "wiki", 
                             "GericaultHorseman.jpg", 
-                            "An Officer of the Imperial Horse Guards Charging, <br/>1812, <br/>Jean Louis Théodore Géricault");
+                            "An Officer of the Imperial Horse Guards Charging, <br/>1812, Jean Louis Théodore Géricault");
     insert_into_images("horsemen/Giovanni_Battista_Tiepolo_-_The_Force_of_Eloquence_-_WGA22255.jpg", 
                             "wiki", 
                             "Giovanni_Battista_Tiepolo_-_The_Force_of_Eloquence_-_WGA22255.jpg", 
-                            "The Force of Eloquence, <br/>cr. 1723, 	<br/>Giovanni Battista Tiepolo, Venice (Italy)");
+                            "The Force of Eloquence, <br/>cr. 1723, Giovanni Battista Tiepolo, Venice, Italy");
     insert_into_images("horsemen/Giovanni_Bellini_-_Pesaro_Altarpiece_predella_-_WGA01680.jpg", 
                             "wiki", 
                             "Giovanni_Bellini_-_Pesaro_Altarpiece_(predella)_-_WGA01680.jpg", 
@@ -2563,10 +2567,6 @@ function populate_images() {
                             "Seals", 
                             "angevin/edward3.htm", 
                             "Fourth seal of Edward III (1341-60 and 1370-2)");
-    insert_into_images("horsemen/electorGrof.jpg", 
-                            "From a book", 
-                            NULL, 
-                            "Elector Maximilian II Emanuel of Bavaria as Victor over the Turks (detail), <br/>1714, Guillielmus de Grof");
     insert_into_images("horsemen/elizaveta.jpeg", 
                             "SKD", 
                             "118426", 
