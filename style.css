@@ -477,6 +477,10 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
     vertical-align: top;
 }
 
+#riddle_horsemen_table img{
+    width: 150px;
+}
+
 .ingredients_ul, .utensils_ul, .spices_ul, .to_serve_ul, .to_try, .checkmark {
  	list-style: none;
  	li {

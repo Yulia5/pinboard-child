@@ -5950,7 +5950,7 @@ function populate_images() {
     insert_into_images("horsemen/Freres_Limbourg_-_Tres_Riches_Heures_du_duc_de_Berry_-_mois_de_mai_-_Google_Art_Project.jpg",
                             "wiki", 
                             "Frères_Limbourg_-_Très_Riches_Heures_du_duc_de_Berry_-_mois_de_mai_-_Google_Art_Project.jpg", 
-                            "Month of May, illustration of The Very Rich Hours of the Duke of Berry, <br/>1412-6, Jean Colombe, Paris, France");
+                            "Month of May, illustration of The Very Rich Hours of the Duke of Berry, <br/>1485-89, Jean Colombe, Paris, France");
     insert_into_images("horsemen/Emanuel-van-Meteren-Historien-der-Nederlanden-tot-1612_MG_9969.tif.jpg",
                             "wiki", 
                             "Emanuel-van-Meteren-Historien-der-Nederlanden-tot-1612_MG_9969.tif", 
@@ -7469,6 +7469,21 @@ insert_into_images("horsemen/Van_eyck_calvary.png",
                             "Museum of Fine Arts, Budapest", 
                             "https://www.mfab.hu/artworks/the-way-to-calvary-2/", 
                             "The Way to Calvary (detail), <br/>cr. 1505–15, Jan van Eyck (after), Netherlandish");
-
+insert_into_images("horsemen/Folio_51v_-_The_Meeting_of_the_Magi.jpg", 
+                            "wiki", 
+                            "Folio_51v_-_The_Meeting_of_the_Magi.jpg", 
+                            "The Meeting of the Magi, illustration of The Very Rich Hours of the Duke of Berry, Folio 51, verso, <br/>1485-89, Jean Colombe, Paris, France");
+insert_into_images("horsemen/66009039_1_x.jpg", 
+                            "antiquesandthearts.com", 
+                            "https://www.antiquesandthearts.com/millea-bros-closes-thaw-collection-with-2-1-million-weekend/", 
+                            "'The Emperor Charles V at a hawking party', tapestry design, <br/>cr. 1535, Bernard Van Orley, Flemish/Netherlandish");
+insert_into_images("horsemen/mayuan.jpeg", 
+                            "wiki", 
+                            "伏波山.JPG", 
+                            "Statue of Ma Yuan, <br/>Guilin, China");
+insert_into_images("horsemen/Cheung_Fei_Temple_Shau_Kei_Wan_09.jpg", 
+                            "wiki", 
+                            "Cheung_Fei_Temple_Shau_Kei_Wan_09.jpg", 
+                            "Statue of Zhang Fei, Zhang Fei temple, <br/>cr. 1981, Shau Kei Wan, Hong Kong");
 }
 ?>
