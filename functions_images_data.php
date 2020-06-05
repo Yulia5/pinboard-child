@@ -7485,5 +7485,9 @@ insert_into_images("horsemen/Cheung_Fei_Temple_Shau_Kei_Wan_09.jpg",
                             "wiki", 
                             "Cheung_Fei_Temple_Shau_Kei_Wan_09.jpg", 
                             "Statue of Zhang Fei, Zhang Fei temple, <br/>cr. 1981, Shau Kei Wan, Hong Kong");
+insert_into_images("kacheli_project-732454-732568.jpg", 
+                            "lurkmo.re", 
+                            "http://lurkmo.re/%D0%A4%D0%B0%D0%B9%D0%BB:Swing_project.png", 
+                            "Что хотел клиент");
 }
 ?>
