@@ -213,7 +213,7 @@ function populate_images() {
     insert_into_images("horsemen/1024px-Aleksandrovska_grobniza.jpg", 
                             "wiki", 
                             "Aleksandrovska_grobniza.JPG", 
-                            "Aleksandrovo tomb near Haskovo district Bulgaria, fragment of a mural, <br/>4th century BC");
+                            "Aleksandrovo tomb, fragment of a mural, <br/>4th century BC, 4th century BC, Haskovo district, Bulgaria");
     insert_into_images("horsemen/1024px-Alexander_Sarcophagus.jpg", 
                             "wiki", 
                             "Alexander_Sarcophagus.jpg", 
@@ -681,7 +681,7 @@ function populate_images() {
     insert_into_images("horsemen/645px-Bernat_Martorell_-_Saint_George_Killing_the_Dragon_-_Google_Art_Project.jpg", 
                             "wiki", 
                             "Bernat_Martorell_-_Saint_George_Killing_the_Dragon_-_Google_Art_Project.jpg", 
-                            "Saint George Killing the Dragon, <br/>1434-5, Bernat Martorell");
+                            "Saint George Killing the Dragon, <br/>1434-5, Bernat Martorell, Barcelona, modern-day Spain");
     insert_into_images("horsemen/6576380263_64ea0b1706_o.jpg", 
                             "coinsweekly.com", 
                             "http://www.coinsweekly.com/en/Archive/8?&id=220&type=a", 
@@ -977,7 +977,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00113857_001_l.jpg", 
                             "BM", 
                             "399074", 
-                            "Detail of the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek");
+                            "Detail of the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek, Xanthos in Lycia, close to present-day Fethiye in Mugla Province, Turkey");
     insert_into_images("horsemen/AN00118222_001_l-1.jpg", 
                             "BM", 
                             "1503554", 
@@ -1013,7 +1013,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00236669_001_l.jpg", 
                             "BM", 
                             "399045", 
-                            "Detail of the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek");
+                            "Detail of the first frieze of the Nereid monument showing heroic combats, <br/>cr. 390-380 BC, classical Greek, Xanthos in Lycia, close to present-day Fethiye in Mugla Province, Turkey");
     insert_into_images("horsemen/AN00244648_001_l.jpg", 
                             "BM", 
                             "367668", 
@@ -1021,7 +1021,7 @@ function populate_images() {
     insert_into_images("horsemen/AN00258120_001_l.jpg", 
                             "BM", 
                             "399039", 
-                            "The reconstructed façade of the Nereid Monument, <br/>cr. 390-380 BC, classical Greek");
+                            "The reconstructed façade of the Nereid Monument, <br/>cr. 390-380 BC, classical Greek, Xanthos in Lycia, close to present-day Fethiye in Mugla Province, Turkey");
     insert_into_images("horsemen/AN00258520_001_l.jpg", 
                             "BM", 
                             "466941", 
@@ -1137,15 +1137,15 @@ function populate_images() {
     insert_into_images("horsemen/AN00540048_001_l.jpg", 
                             "BM", 
                             "460571", 
-                            "Detail of the Amazon Frieze of the Mausoleum at Halicarnassus, <br/>cr. 350 BC, Pytheos (?), classical Greek");
+                            "Detail of the Amazon Frieze of the Mausoleum at Halicarnassus, <br/>cr. 350 BC, Pytheos (?), classical Greek, Halicarnassus (present Bodrum, Turkey)");
     insert_into_images("horsemen/AN00540051_001_l.jpg", 
                             "BM", 
                             "460568", 
-                            "Detail of the Amazon Frieze of the Mausoleum at Halicarnassus, <br/>cr. 350 BC, Pytheos (?), classical Greek");
+                            "Detail of the Amazon Frieze of the Mausoleum at Halicarnassus, <br/>cr. 350 BC, Pytheos (?), classical Greek, Halicarnassus (present Bodrum, Turkey)");
     insert_into_images("horsemen/AN00540059_001_l.jpg", 
                             "BM", 
                             "460558", 
-                            "Detail of the Amazon Frieze of the Mausoleum at Halicarnassus, <br/>cr. 350 BC, Pytheos (?), classical Greek");
+                            "Detail of the Amazon Frieze of the Mausoleum at Halicarnassus, <br/>cr. 350 BC, Pytheos (?), classical Greek,  Halicarnassus (present Bodrum, Turkey)");
     insert_into_images("horsemen/AN00629709_001_l.jpg", 
                             "BM", 
                             "3078090", 
@@ -1177,7 +1177,7 @@ function populate_images() {
     insert_into_images("horsemen/AN01188226_001_l.jpg", 
                             "BM", 
                             "460388", 
-                            "Detail of the architrave frieze of the Nereid Monument showing a dynast at the bear hunt, <br/>cr. 390-380 BC, classical Greek");
+                            "Detail of the architrave frieze of the Nereid Monument showing a dynast at the bear hunt, <br/>cr. 390-380 BC, classical Greek, Xanthos in Lycia, close to present-day Fethiye in Mugla Province, Turkey");
     insert_into_images("horsemen/AN01390171_001_l.jpg", 
                             "BM", 
                             "3509607", 
@@ -1221,7 +1221,11 @@ function populate_images() {
     insert_into_images("horsemen/Aleksandrovo_kurgan.jpg", 
                             "wiki", 
                             "Aleksandrovo_kurgan.jpg", 
-                            "Aleksandrovo tomb near Haskovo district Bulgaria, fragment of a mural, <br/>4th century BC");
+                            "Aleksandrovo tomb, fragment of a mural, <br/>4th century BC, Haskovo district, Bulgaria");
+    insert_into_images("horsemen/Aleksandrovo_grobniza.jpg", 
+                            "wiki", 
+                            "Aleksandrovo_grobniza.jpg", 
+                            "Aleksandrovo tomb, <br/>4th century BC, Haskovo district, Bulgaria");
     insert_into_images("horsemen/Alexander-the-Great.png", 
                             "Le Petit Palais", 
                             "http://www.petitpalais.paris.fr/en/collections/1506/livre-des-conquetes-et-faits-d%E2%80%99alexandre", 
@@ -1441,7 +1445,7 @@ function populate_images() {
     insert_into_images("horsemen/DP119641.jpg", 
                             "Met", 
                             "253595", 
-                            "Bronze cinerary urn with lid, <br/>cr. 500 BC");
+                            "Bronze cinerary urn with lid, <br/>cr. 500 BC, Etruscan");
     insert_into_images("horsemen/DP164779.jpg", 
                             "Met", 
                             "436994", 
@@ -1661,7 +1665,7 @@ function populate_images() {
     insert_into_images("horsemen/House_of_the_Temple-1.jpg", 
                             "wiki", 
                             "House_of_the_Temple.JPG", 
-                            "House of the Temple in Washington, D.C., <br/>1911-5, design based on the mausoleum at Halicarnassus");
+                            "House of the Temple, design based on the Mausoleum at Halicarnassus, <br/>1911-5, Washington, D.C., U.S.A.");
     insert_into_images("horsemen/Hunt_in_the_forest_by_paolo_uccello.jpg", 
                             "wiki", 
                             "Hunt_in_the_forest_by_paolo_uccello.jpg", 
@@ -2033,7 +2037,7 @@ function populate_images() {
     insert_into_images("horsemen/Rogier_van_der_Weyden_-_Saint_George_and_the_Dragon.jpg", 
                             "wiki", 
                             "Rogier_van_der_Weyden_-_Saint_George_and_the_Dragon.jpg", 
-                            "Saint George and the Dragon, <br/>circa 1432-5, Rogier van der Weyden");
+                            "Saint George and the Dragon, <br/>circa 1432-5, Rogier van der Weyden, Netherlandish (present-day Belgium and France)");
     insert_into_images("horsemen/Rudolf.jpg", 
                             "RJK", 
                             "RP-P-OB-5030", 
@@ -2542,7 +2546,7 @@ function populate_images() {
     insert_into_images("horsemen/d8c292099ae2528c989114fb3acece55.jpg", 
                             "BM", 
                             "421430", 
-                            "Bronze cinerary urn with lid, <br/>cr. 500 BC (?)");
+                            "Bronze cinerary urn with lid, <br/>cr. 500 BC (?), Etruscan");
     insert_into_images("horsemen/dali_st_george.jpg", 
                             "Lawrence OP @ flickr.com", 
                             "https://www.flickr.com/photos/paullew/6960089454/", 
@@ -2550,7 +2554,7 @@ function populate_images() {
     insert_into_images("horsemen/de86d6162f2358da8191a446f9fe1ea8.jpg", 
                             "BM", 
                             "466942", 
-                            "Vessel-fitting, <br/>cr. 510 BC-490 BC");
+                            "Vessel-fitting, <br/>cr. 510 BC-490 BC, Etruscan");
     insert_into_images("horsemen/drachm-of-aspendos-with-horseman-hurling-spear-3297.jpg", 
                             "MFA", 
                             "3297", 
@@ -2872,13 +2876,17 @@ function populate_images() {
                             "http://www.guggenheim.org/new-york/collections/collection-online/artwork/3411", 
                             "Moulin de la Galette, <br/>1900, Picasso");
     insert_into_images("horsemen/ndc4400l-142C6657B5C025801C7.jpg", 
-                            "studyblue.com", 
-                            "https://classconnection.s3.amazonaws.com/610/flashcards/4406610/jpg/ndc4400l-142C6657B5C025801C7.jpg", 
-                            "The Çan Sarcophagus, detail of Persian horseman spearing fallen footsoldier, <br/>beginning of the 4th century BC");
+                            "wiki", 
+                            "Altıkulaç_Sarcophagus_Now_in_Troy_Museum_8091.jpg", 
+                            "The Çan Sarcophagus, detail of Persian horseman spearing fallen footsoldier, <br/>400-375 BC, village of Altıkulaç, near Çan, modern-day Turkey");
     insert_into_images("horsemen/ndc4401l-142C665E2583FAEC2BB.jpg", 
-                            "studyblue.com", 
-                            "https://classconnection.s3.amazonaws.com/610/flashcards/4406610/jpg/ndc4401l-142C665E2583FAEC2BB.jpg", 
-                            "The Çan Sarcophagus, detail of hunting scene, <br/>beginning of the 4th century BC");
+                            "wiki", 
+                            "Altıkulaç_Sarcophagus_hunting_scene_(detail).jpg", 
+                            "The Çan Sarcophagus, detail of hunting scene, <br/>400-375 BC, village of Altıkulaç, near Çan, modern-day Turkey");
+    insert_into_images("horsemen/Canakkale_Archaeological_Museum_Sarcophagus.jpg", 
+                            "wiki", 
+                            "Çanakkale_Archaeological_Museum_Sarcophagus.jpg", 
+                            "The Çan Sarcophagus, <br/>400-375 BC, village of Altıkulaç, near Çan, modern-day Turkey");
     insert_into_images("horsemen/nommos-of-taras-tarentum-with-horse-and-rider-2945.jpg", 
                             "MFA", 
                             "2945", 
@@ -3034,7 +3042,7 @@ function populate_images() {
     insert_into_images("horsemen/st-george-killing-the-dragon-1940.jpg", 
                             "PICTIFY", 
                             "http://pictify.saatchigallery.com/121536/giorgio-de-chirico-st-george-killing-the-dragon-1940", 
-                            "St. George Killing the Dragon, <br/>1940, Giorgio de Chirico");
+                            "St. George Killing the Dragon, <br/>1940, Giorgio de Chirico, Italy");
     insert_into_images("horsemen/st-george-xi-cent-svaneti-museum.jpg", 
                             "In Search Of Saint George", 
                             "https://insearchofsaintgeorge.com/chapter-2/", 
@@ -7489,5 +7497,9 @@ insert_into_images("kacheli_project-732454-732568.jpg",
                             "lurkmo.re", 
                             "http://lurkmo.re/%D0%A4%D0%B0%D0%B9%D0%BB:Swing_project.png", 
                             "Что хотел клиент");
+insert_into_images("Ride-horse.jpg", 
+                            "VWPics via Redux and earthjustice.org", 
+                            "https://earthjustice.org/news/press/2020/judge-orders-dakota-access-pipeline-to-shut-down", 
+                            "Stevana Salazar rides with Arlo Standing Bear, <br/>26 August 2016, photo by Terray Sylvester, Standing Rock camp, Dakota, U.S.A.");
 }
 ?>
