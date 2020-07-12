@@ -7497,7 +7497,7 @@ insert_into_images("kacheli_project-732454-732568.jpg",
                             "lurkmo.re", 
                             "http://lurkmo.re/%D0%A4%D0%B0%D0%B9%D0%BB:Swing_project.png", 
                             "Что хотел клиент");
-insert_into_images("Ride-horse.jpg", 
+insert_into_images("horsemen/Ride-horse.jpg", 
                             "VWPics via Redux and earthjustice.org", 
                             "https://earthjustice.org/news/press/2020/judge-orders-dakota-access-pipeline-to-shut-down", 
                             "Stevana Salazar rides with Arlo Standing Bear, <br/>26 August 2016, photo by Terray Sylvester, Standing Rock camp, Dakota, U.S.A.");
