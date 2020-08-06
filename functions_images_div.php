@@ -51,6 +51,8 @@ function post_ID_to_folder_name($post_id)
         case 3920:
         case 4066:
             return 'SocialScience';
+        case 7082:
+            return 'skincare';
     }
     return '';
 } 

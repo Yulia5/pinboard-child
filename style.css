@@ -35,6 +35,10 @@ div .center, table .center {
     margin: auto;
 }
 
+b {
+  font-weight: bold !important;
+}
+
 /******************************************************************************
  *                      Table Of Contents And Headers                         *
  *****************************************************************************/
@@ -481,7 +485,7 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
     width: 150px;
 }
 
-.ingredients_ul, .utensils_ul, .spices_ul, .to_serve_ul, .to_try, .checkmark {
+.ingredients_ul, .utensils_ul, .spices_ul, .to_serve_ul, .to_try, .checkmark, .love, .stop {
  	list-style: none;
  	li {
     	padding-left: 1rem;
@@ -510,11 +514,15 @@ a:hover, #access a:hover, #copyright a:hover, .widget-area a:hover, .entry-meta 
 }
 
 .checkmark li::before {
-    content: "✓ ";
+    content: "✓ "; /*"\2713\0020"*/
 }
 
-ul.checkmark li:before {
-    content:"\2713\0020";
+.love li::before {
+    content: "❤️ ";
+}
+
+.stop li::before {
+    content: "⛔ ";
 }
 
 .directions_ol {
